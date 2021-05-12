@@ -1,0 +1,93 @@
+Program 0x0C
+Party DEFAULT
+Layout "file/%s/hb_co.2ld"
+AreaSettings 0 -1
+	SetProgressFlag 0x106C
+	SetEvent "517" Type 2
+	SetJump Type 1 World HB Area 5 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_09"
+
+Program 0x0D
+Party DEFAULT
+Layout "file/%s/hb_co.2ld"
+AreaSettings 0 -1
+	SetProgressFlag 0x106D
+	SetEvent "518" Type 2
+	SetJump Type 1 World HB Area 13 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+Spawn "g50_"
+
+Program 0x03
+Party DEFAULT
+Layout "file/%s/hb_co.2ld"
+AreaSettings 0 -1
+	SetProgressFlag 0x1045
+	SetUnk05 0x1
+	SetEvent "210" Type 2
+	SetJump Type 1 World HB Area 5 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_03"
+Spawn "e_50"
+Spawn "e_54"
+Spawn "d02_"
+
+Program 0x04
+Party DEFAULT
+Bgm Default Default
+Layout "file/%s/hb_co.2ld"
+AreaSettings 60 -1
+	SetUnk05 0x1
+	SetJump Type 1 World TR Area 0 Entrance 50 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+AreaSettings 0 -1
+	SetProgressFlag 0x1014
+	SetEvent "301" Type 2
+	SetJump Type 1 World HB Area 5 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+
+Program 0x5F
+Party DEFAULT
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x1052
+	SetEvent "503" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 96 FadeType 1
+	SetPartyMenu 0
+
+Program 0x06
+Party DEFAULT
+Layout "file/%s/hb_co.2ld"
+AreaSettings 60 -1
+	SetUnk05 0x1
+	SetJump Type 1 World TR Area 0 Entrance 50 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+AreaSettings 9 -1
+	SetProgressFlag 0x1016
+	SetEvent "303" Type 1
+	SetJump Type 1 World HB Area 5 Entrance 52 LocalSet 0 FadeType 1
+	SetInventory 266 276
+	SetPartyMenu 0
+
+Spawn "e_05"
+Spawn "e_50"
+Spawn "e_51"
+Spawn "d05_"
+Spawn "h01_"
+
+Program 0x08
+Party DEFAULT
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x1019
+	SetEvent "401" Type 2
+	SetJump Type 1 World HB Area 5 Entrance 50 LocalSet 0 FadeType 1
+	SetPartyMenu 0

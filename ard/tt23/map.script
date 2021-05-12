@@ -1,0 +1,10 @@
+Program 0x0D
+MapVisibility 0x0000002d 0x00000000
+AreaSettings 13 -1
+	SetJump Type 1 World TT Area 33 Entrance 0 LocalSet 0 FadeType -1
+	SetPartyMenu 0
+
+Spawn "m_00"
+Spawn "m_10"
+Spawn "m_11"
+Spawn "m_80"

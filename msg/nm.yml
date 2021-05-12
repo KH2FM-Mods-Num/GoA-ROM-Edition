@@ -1,0 +1,19 @@
+- id: 0x49E6
+  en: >-
+    {:unk08 02 00 06}It's an Absent Silhouette, a shadowy presence
+
+    within an emblem.
+
+    {:chardelay 33 00}Who cares?
+
+    {:chardelay A1 00}Let's check it out!
+- id: 0x49E7
+  en: >-
+    {:unk08 02 00 06}Battle Vexen again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A1 00}I'm ready for a fight!
+    

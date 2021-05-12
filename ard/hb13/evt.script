@@ -1,0 +1,25 @@
+Program 0x0C
+Party DEFAULT
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x104E
+	SetEvent "501" Type 2
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 95 FadeType 1
+	SetPartyMenu 0
+
+Program 0x65
+Party DEFAULT
+AreaSettings 15 -1
+	SetUnk05 0x1
+	SetJump Type 1 World HB Area 26 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x08
+Party DEFAULT
+AreaSettings 0 -1
+	SetProgressFlag 0x103B
+	SetEvent "907" Type 66
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 101 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_01"

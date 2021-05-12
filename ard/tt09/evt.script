@@ -1,0 +1,15 @@
+Program 0x04
+Party DEFAULT
+Unk1d 4
+AreaSettings 9 -1
+	SetProgressFlag 0x89E
+	SetEvent "710" Type 1
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 158 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+Spawn "a71_"
+Spawn "b71_"
+Spawn "c71_"
+Spawn "971_"
+

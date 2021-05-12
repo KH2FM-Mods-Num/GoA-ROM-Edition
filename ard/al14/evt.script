@@ -1,0 +1,34 @@
+Program 0x0D
+Party W_FRIEND
+Bgm 128 128
+AreaSettings 0 -1
+	SetProgressFlag 0x1C05
+	SetJump Type 1 World AL Area 14 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_51"
+
+Program 0x0E
+Party W_FRIEND
+Bgm 128 128
+AreaSettings 0 -1
+	SetProgressFlag 0x1C07
+	SetUnk05 0x1
+	SetEvent "253" Type 2
+	SetJump Type 1 World AL Area 14 Entrance 51 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x0F
+Party W_FRIEND
+Bgm 128 128
+AreaSettings 9 -1
+	SetProgressFlag 0x1C0A
+	SetUnk05 0x1
+	SetJump Type 1 World AL Area 14 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_51"
+Spawn "e_52"
+Spawn "e_53"
+Spawn "e_01"
+Spawn "e_02"

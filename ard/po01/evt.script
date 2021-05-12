@@ -1,0 +1,11 @@
+Program 0x03
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x242D
+	SetUnk05 0x1
+	SetEvent "504" Type 2
+	SetJump Type 1 World HB Area 26 Entrance 0 LocalSet 0 FadeType 1
+	SetInventory 285 539
+	SetPartyMenu 0
+
+Spawn "e_50"

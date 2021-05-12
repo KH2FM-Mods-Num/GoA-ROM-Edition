@@ -1,0 +1,35 @@
+Program 0x0A
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x2437
+	SetUnk05 0x1
+	SetEvent "405" Type 2
+	SetJump Type 1 World HB Area 26 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x04
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x2434
+	SetUnk05 0x1
+	SetEvent "106" Type 2
+	SetJump Type 1 World HB Area 26 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x06
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x2435
+	SetUnk05 0x1
+	SetEvent "206" Type 2
+	SetJump Type 1 World HB Area 26 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x08
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x2436
+	SetUnk05 0x1
+	SetEvent "307" Type 2
+	SetJump Type 1 World HB Area 26 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0

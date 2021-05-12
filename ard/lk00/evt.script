@@ -1,0 +1,20 @@
+Program 0x0E
+Party W_FRIEND
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x2831
+	SetUnk05 0x2
+	SetEvent "214" Type 2
+	SetJump Type 1 World HB Area 26 Entrance 27 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x05
+Party W_FRIEND
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x2827
+	SetUnk05 0x2
+	SetEvent "123" Type 2
+	SetJump Type 1 World HB Area 26 Entrance 27 LocalSet 0 FadeType 1
+	SetInventory 302
+	SetPartyMenu 0

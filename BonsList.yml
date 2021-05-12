@@ -1,0 +1,62 @@
+18:
+  Sora:
+    RewardId: 18
+    CharacterId: 1
+    HpIncrease: 5
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 559
+    BonusItem2: 0
+    Unknown0c: 0
+  Donald:
+    RewardId: 18
+    CharacterId: 2
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 419
+    BonusItem2: 0
+    Unknown0c: 0
+  Goofy:
+    RewardId: 18
+    CharacterId: 3
+    HpIncrease: 4
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Unknown0c: 0
+  Jack:
+    RewardId: 18
+    CharacterId: 10
+    HpIncrease: 15
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Unknown0c: 0
+33:
+  Roxas:
+    RewardId: 33
+    CharacterId: 14
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 82
+    BonusItem2: 0
+    Unknown0c: 0

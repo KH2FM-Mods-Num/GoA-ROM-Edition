@@ -1,0 +1,140 @@
+- id: 0x4ECD
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    The World That Never Was.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A1 00}Visit!
+- id: 0x4ECE
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    The Land Of Dragons.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A2 00}Visit!
+- id: 0x4ECF
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Beast's Castle.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A3 00}Visit!
+- id: 0x4ED0
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Halloween Town.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A4 00}Visit!
+- id: 0x4ED1
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Agrabah.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A5 00}Visit!
+- id: 0x4ED2
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Olympus Coliseum.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A6 00}Visit!
+- id: 0x4ED3
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Pride Lands.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A7 00}Visit!
+- id: 0x4ED4
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Twilight Town.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A8 00}Visit!
+- id: 0x4ED5
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Hollow Bastion.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A9 00}Visit!
+- id: 0x4ED6
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Port Royal.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AA 00}Visit!
+- id: 0x4ED7
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Disney Castle.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AB 00}Visit!
+- id: 0x4ED8
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Space Paranoids.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AC 00}Visit!
+- id: 0x4ED9
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Simulated Twilight Town.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AD 00}Visit!
+- id: 0x4EDA
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Radiant Garden.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A9 00}Visit!
+- id: 0x4F0E
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    The World of Nothing.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AE 00}Visit!
+- id: 0x4F0F
+  en: >-
+    Welcome to the Garden
+    
+    of Assemblage Mod!

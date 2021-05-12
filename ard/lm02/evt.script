@@ -1,0 +1,13 @@
+Program 0x0B
+AreaSettings 0 -1
+	SetProgressFlag 0x2C2C
+	SetEvent "411" Type 66
+	SetJump Type 1 World HB Area 26 Entrance 1 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Program 0x05
+AreaSettings 0 -1
+	SetProgressFlag 0x2C0F
+	SetEvent "205" Type 66
+	SetJump Type 1 World HB Area 26 Entrance 1 LocalSet 0 FadeType 1
+	SetPartyMenu 0
