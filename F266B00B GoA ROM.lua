@@ -1,6 +1,6 @@
 --RAM Version Post-Cleanup
---Last Update: Forces 240 Hz
---To Do: Check why Radiant Garden trigger early and check if anything else broke
+--Last Update: HB after STT Bugfix
+--To Do: Check if anything else broke
 
 function _OnInit()
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
@@ -2432,7 +2432,7 @@ if Place == 0x1A04 and ReadByte(Save+0x1CFE) > 0 and Door == 0x21 then
 	end
 end
 --Spawn IDs
-if ReadByte(Save+0x1CFF) == 4 then --Load Spawn ID upon Entering STT
+if ReadByte(Save+0x1CFF) == 2 then --Load Spawn ID upon Entering STT
 	WriteInt(Save+0x353C,0x12121200) --Roxas Only
 	WriteByte(Save+0x1CFF,13) --STT Flag
 	for i = 0,143 do
