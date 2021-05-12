@@ -1057,7 +1057,7 @@ elseif Place == 0x0405 and Events(Null,Null,0x0A) then --Uninvited Guests
 	WriteByte(Save+0x1D3F,10)
 elseif Place == 0x0305 and Events(Null,Null,0x0B) then --Don't Give Up
 	WriteByte(Save+0x1D3F,11)
-elseif Place == 0x0F05 and Events(0x52,0x52,0x52) then --Xaldin's Demise
+elseif Place == 0x0D05 and Events(Null,Null,0x0A) then --The Whirlwind Lancer: Xaldin
 	BitNot(Save+0x1D35,0x01) --BB_216_END (Change Spawn ID in Next Cutscene Properly)
 elseif Place == 0x0605 and Events(Null,Null,0x0B) then --Stay With Me
 	BitOr(Save+0x1D34,0x80)  --BB_FM_XAL_RE_CLEAR (Change Portal Color)
