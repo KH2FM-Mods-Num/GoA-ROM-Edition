@@ -1,7 +1,7 @@
-title: GoA Additions
+title: GoA ROM Edition
 originalAuthor: Various sources credited in the Readme
 game: kh2
-description: Additions to GoA mod. Go into mod.yml and delete lines containing "msg/jp/" for pure Japanese language experience.
+description: Additions to GoA mod. Go into mod.yml and delete lines containing "msg/jp/" for pure Japanese language experience. To use the new item pictures from Televo, use 'KH2FM-Mods-Num/Alternate-Pictures'.
 assets:
 #Detection Saber Model
 - name: obj/W_EX010_Y0.a.fm
