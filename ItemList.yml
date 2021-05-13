@@ -12,7 +12,7 @@ Items:
   ShopSell: 0
   Command: 0
   Slot: 73
-  Picture: 299
+  Picture: 0x12B
   Icon1: 0
   Icon2: 4
 - Id: 44 #Detection Saber
@@ -84,8 +84,8 @@ Items:
   Flag1: 0
   Rank: C
   StatEntry: 0
-  Name: 35554
-  Description: 35554
+  Name: 0x8AE2
+  Description: 0x8AE2
   ShopBuy: 0
   ShopSell: 0
   Command: 0
@@ -99,8 +99,8 @@ Items:
   Flag1: 0
   Rank: C
   StatEntry: 0
-  Name: 35555
-  Description: 35555
+  Name: 0x8AE3
+  Description: 0x8AE3
   ShopBuy: 0
   ShopSell: 0
   Command: 0
@@ -114,8 +114,8 @@ Items:
   Flag1: 0
   Rank: C
   StatEntry: 0
-  Name: 35556
-  Description: 35556
+  Name: 0x8AE4
+  Description: 0x8AE4
   ShopBuy: 0
   ShopSell: 0
   Command: 0
@@ -129,8 +129,8 @@ Items:
   Flag1: 0
   Rank: C
   StatEntry: 0
-  Name: 35559
-  Description: 35559
+  Name: 0x8AE7
+  Description: 0x8AE7
   ShopBuy: 0
   ShopSell: 0
   Command: 0
@@ -144,8 +144,8 @@ Items:
   Flag1: 0
   Rank: C
   StatEntry: 0
-  Name: 35558
-  Description: 35558
+  Name: 0x8AE6
+  Description: 0x8AE6
   ShopBuy: 0
   ShopSell: 0
   Command: 0
@@ -159,8 +159,8 @@ Items:
   Flag1: 0
   Rank: C
   StatEntry: 0
-  Name: 35557
-  Description: 35557
+  Name: 0x8AE5
+  Description: 0x8AE5
   ShopBuy: 0
   ShopSell: 0
   Command: 0
@@ -168,6 +168,97 @@ Items:
   Picture: 20
   Icon1: 0
   Icon2: 26
+#Magic
+- Id: 21
+  Type: Magic
+  Flag0: 0
+  Flag1: 0
+  Rank: C
+  StatEntry: 0
+  Name: 34356
+  Description: 34357
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 49
+  Slot: 20
+  Picture: 324
+  Icon1: 0
+  Icon2: 8
+- Id: 22
+  Type: Magic
+  Flag0: 0
+  Flag1: 1
+  Rank: C
+  StatEntry: 0
+  Name: 34358
+  Description: 34359
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 51
+  Slot: 21
+  Picture: 325
+  Icon1: 0
+  Icon2: 8
+- Id: 23
+  Type: Magic
+  Flag0: 0
+  Flag1: 2
+  Rank: C
+  StatEntry: 0
+  Name: 34360
+  Description: 34361
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 50
+  Slot: 22
+  Picture: 326
+  Icon1: 0
+  Icon2: 8
+- Id: 24
+  Type: Magic
+  Flag0: 0
+  Flag1: 3
+  Rank: C
+  StatEntry: 0
+  Name: 34362
+  Description: 34363
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 52
+  Slot: 23
+  Picture: 327
+  Icon1: 0
+  Icon2: 8
+- Id: 87
+  Type: Magic
+  Flag0: 0
+  Flag1: 4
+  Rank: C
+  StatEntry: 0
+  Name: 34364
+  Description: 34365
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 174
+  Slot: 79
+  Picture: 328
+  Icon1: 0
+  Icon2: 8
+- Id: 88
+  Type: Magic
+  Flag0: 0
+  Flag1: 5
+  Rank: C
+  StatEntry: 0
+  Name: 34366
+  Description: 34367
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 177
+  Slot: 80
+  Picture: 329
+  Icon1: 0
+  Icon2: 8
 #Abilities
 - Id: 94
   Type: Ability
@@ -2737,7 +2828,7 @@ Items:
 
 Stats:
 - Id: 116 #FAKE Stats
-  Ability: 414
+  Ability: 0x19E
   Attack: 3
   Magic: 1
   Defense: 0
@@ -2751,7 +2842,7 @@ Stats:
   GeneralResistance: 100
   Unknown: 0
 - Id: 83 #Detection Saber Stats
-  Ability: 138
+  Ability: 0x08A
   Attack: 4
   Magic: 2
   Defense: 0
@@ -2765,7 +2856,7 @@ Stats:
   GeneralResistance: 100
   Unknown: 0
 - Id: 84 #Edge of Ultima Stats
-  Ability: 421
+  Ability: 0x1A5
   Attack: 5
   Magic: 4
   Defense: 0

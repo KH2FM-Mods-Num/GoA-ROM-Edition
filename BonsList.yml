@@ -10,7 +10,7 @@
     ArmorSlotUpgrade: 0
     BonusItem1: 559
     BonusItem2: 0
-    Unknown0c: 0
+    Padding: 0
   Donald:
     RewardId: 18
     CharacterId: 2
@@ -22,7 +22,7 @@
     ArmorSlotUpgrade: 0
     BonusItem1: 419
     BonusItem2: 0
-    Unknown0c: 0
+    Padding: 0
   Goofy:
     RewardId: 18
     CharacterId: 3
@@ -34,7 +34,7 @@
     ArmorSlotUpgrade: 0
     BonusItem1: 0
     BonusItem2: 0
-    Unknown0c: 0
+    Padding: 0
   Jack:
     RewardId: 18
     CharacterId: 10
@@ -46,7 +46,7 @@
     ArmorSlotUpgrade: 0
     BonusItem1: 0
     BonusItem2: 0
-    Unknown0c: 0
+    Padding: 0
 33:
   Roxas:
     RewardId: 33
@@ -59,4 +59,4 @@
     ArmorSlotUpgrade: 0
     BonusItem1: 82
     BonusItem2: 0
-    Unknown0c: 0
+    Padding: 0

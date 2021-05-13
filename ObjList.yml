@@ -6,20 +6,28 @@
   WeaponJoint: 0
   ModelName: F_EX030
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 325:
   ObjectId: 325
   ObjectType: TREASURE
@@ -28,20 +36,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_TR
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 826:
   ObjectId: 826
   ObjectType: TREASURE
@@ -50,20 +66,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_BB
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 827:
   ObjectId: 827
   ObjectType: TREASURE
@@ -72,20 +96,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_HE
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 828:
   ObjectId: 828
   ObjectType: TREASURE
@@ -94,20 +126,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_AL
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 829:
   ObjectId: 829
   ObjectType: TREASURE
@@ -116,20 +156,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_CA
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 830:
   ObjectId: 830
   ObjectType: TREASURE
@@ -138,20 +186,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_NM
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 831:
   ObjectId: 831
   ObjectType: TREASURE
@@ -160,20 +216,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_MU
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 832:
   ObjectId: 832
   ObjectType: TREASURE
@@ -182,20 +246,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_PO
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 833:
   ObjectId: 833
   ObjectType: TREASURE
@@ -204,20 +276,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_DC
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 834:
   ObjectId: 834
   ObjectType: TREASURE
@@ -226,20 +306,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_WI
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 835:
   ObjectId: 835
   ObjectType: TREASURE
@@ -248,20 +336,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_EH
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 2133:
   ObjectId: 2133
   ObjectType: TREASURE
@@ -270,20 +366,28 @@
   WeaponJoint: 0
   ModelName: F_EX050
   AnimationName: F_EX050.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 2143:
   ObjectId: 2143
   ObjectType: TREASURE
@@ -292,20 +396,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_NM_XMAS
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 2236:
   ObjectId: 2236
   ObjectType: TREASURE
@@ -314,20 +426,28 @@
   WeaponJoint: 0
   ModelName: F_EX030_TT
   AnimationName: F_EX030_TT.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 2540:
   ObjectId: 2540
   ObjectType: TREASURE
@@ -336,18 +456,25 @@
   WeaponJoint: 0
   ModelName: F_EX030_EH
   AnimationName: F_EX030.mset
-  Flag: 0
-  TargetType: 0
+  Flags: 0
+  ObjectTargetType: M
   Padding: 0
   NeoStatus: 0
   NeoMoveset: 0
   Weight: 0
   SpawnLimiter: 0
   Page: 0
-  ShadowSize: 0
-  CommandMenuOption: Default
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
   SpawnObject3: 0
   SpawnObject4: 0
-  
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
