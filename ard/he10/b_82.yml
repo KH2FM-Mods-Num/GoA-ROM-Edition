@@ -21,7 +21,7 @@
     Serial: 52
     Argument1: 0
     Argument2: 0
-    ReactionCommand: 1886
+    ReactionCommand: 0x75E
     SpawnDelay: 0
     Command: 30
     SpawnRange: 0

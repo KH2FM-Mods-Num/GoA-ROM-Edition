@@ -2,7 +2,7 @@
   Flag: 0
   Id: 7
   Teleport:
-    Place: 2
+    Place: 0x02
     Door: 0
     World: 2
     Unknown: 0

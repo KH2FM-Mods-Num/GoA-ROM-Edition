@@ -9,7 +9,7 @@
   Unk20: 0
   Unk24: 0
   Entities:
-  - ObjectId: 75
+  - ObjectId: 0x04B
     PositionX: 745.09197998046875
     PositionY: -0
     PositionZ: -2140.830078125
@@ -27,7 +27,7 @@
     SpawnRange: 0
     Level: 0
     Medal: 0
-  - ObjectId: 75
+  - ObjectId: 0x04B
     PositionX: 749.73101806640625
     PositionY: -0
     PositionZ: -2340.77001953125
@@ -45,7 +45,7 @@
     SpawnRange: 0
     Level: 0
     Medal: 0
-  - ObjectId: 75
+  - ObjectId: 0x04B
     PositionX: 754.3690185546875
     PositionY: -0
     PositionZ: -2540.719970703125
@@ -114,7 +114,7 @@
   Unk20: 0
   Unk24: 0
   Entities:
-  - ObjectId: 75
+  - ObjectId: 0x04B
     PositionX: 2000
     PositionY: 795.771484375
     PositionZ: -1400
@@ -183,7 +183,7 @@
   Unk20: 0
   Unk24: 0
   Entities:
-  - ObjectId: 75
+  - ObjectId: 0x04B
     PositionX: 2200
     PositionY: 538.04400634765625
     PositionZ: -2200
@@ -252,7 +252,7 @@
   Unk20: 0
   Unk24: 0
   Entities:
-  - ObjectId: 75
+  - ObjectId: 0x04B
     PositionX: -150
     PositionY: 79.91290283203125
     PositionZ: 250
@@ -270,7 +270,7 @@
     SpawnRange: 0
     Level: 0
     Medal: 0
-  - ObjectId: 75
+  - ObjectId: 0x04B
     PositionX: 50
     PositionY: 82.991401672363281
     PositionZ: 250
@@ -339,7 +339,7 @@
   Unk20: 0
   Unk24: 0
   Entities:
-  - ObjectId: 75
+  - ObjectId: 0x04B
     PositionX: 150
     PositionY: -500
     PositionZ: 2800
@@ -357,7 +357,7 @@
     SpawnRange: 0
     Level: 0
     Medal: 0
-  - ObjectId: 75
+  - ObjectId: 0x04B
     PositionX: -50
     PositionY: -500
     PositionZ: 2650
@@ -375,7 +375,7 @@
     SpawnRange: 0
     Level: 0
     Medal: 0
-  - ObjectId: 75
+  - ObjectId: 0x04B
     PositionX: -250
     PositionY: -500
     PositionZ: 2800

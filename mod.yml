@@ -471,7 +471,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb01/evt.script
-  - name: j52e #Donald -> Save Point, Goofy -> Moogle Shop
+  - name: j52e #Sephiroth Spawn
     type: areadataspawn
     method: spawnpoint
     source:
@@ -502,7 +502,7 @@ assets:
 - name: ard/hb05.ard #Ansem's Study (Remove Computer, Skip SP, Early Sleeping Lion, Skip HB)
   method: binarc
   source:
-  - name: m_50 #Computer to Space Paranoids
+  - name: m_50 #Computer to Space Paranoids Despawn
     type: areadataspawn
     method: spawnpoint
     source:

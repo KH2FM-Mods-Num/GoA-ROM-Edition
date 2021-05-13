@@ -9,7 +9,7 @@
   Unk20: 0
   Unk24: 0
   Entities:
-  - ObjectId: 0
+  - ObjectId: 0x000
     PositionX: -1000
     PositionY: -95
     PositionZ: -1410

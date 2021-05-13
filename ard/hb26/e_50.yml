@@ -27,7 +27,7 @@
     SpawnRange: 0
     Level: 0
     Medal: 0
-  - ObjectId: 570 #Save Point
+  - ObjectId: 0x23A #Save Point
     PositionX: 0
     PositionY: 460
     PositionZ: -900
@@ -45,7 +45,7 @@
     SpawnRange: 0
     Level: 0
     Medal: 0
-  - ObjectId: 1185 #Shop
+  - ObjectId: 0x4A1 #Shop
     PositionX: 0
     PositionY: 460
     PositionZ: 900

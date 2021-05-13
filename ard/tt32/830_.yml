@@ -9,7 +9,7 @@
   Unk20: 0
   Unk24: 0
   Entities:
-  - ObjectId: 1861 #Mickey
+  - ObjectId: 0x745 #Mickey
     PositionX: 2.399744987487793
     PositionY: 1.5950350035990463E-13
     PositionZ: -984.94537353515625
@@ -27,7 +27,7 @@
     SpawnRange: 0
     Level: 0
     Medal: 0
-  - ObjectId: 1075 #Donald
+  - ObjectId: 0x433 #Donald
     PositionX: -609.17156982421875
     PositionY: -9.0594849330716265E-15
     PositionZ: 807.55029296875
@@ -45,7 +45,7 @@
     SpawnRange: 0
     Level: 0
     Medal: 0
-  - ObjectId: 1076 #Goofy
+  - ObjectId: 0x434 #Goofy
     PositionX: 803.2064208984375
     PositionY: -3.6171148643296663E-15
     PositionZ: 778.92242431640625

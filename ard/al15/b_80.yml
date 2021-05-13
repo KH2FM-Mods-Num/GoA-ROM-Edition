@@ -9,7 +9,7 @@
   Unk20: 0
   Unk24: 0
   Entities:
-  - ObjectId: 2419
+  - ObjectId: 0x973
     PositionX: -50
     PositionY: -50
     PositionZ: -300
@@ -21,7 +21,7 @@
     Serial: 40
     Argument1: 0
     Argument2: 0
-    ReactionCommand: 1883
+    ReactionCommand: 0x75B
     SpawnDelay: 0
     Command: 30
     SpawnRange: 0
