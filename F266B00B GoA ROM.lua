@@ -1,9 +1,14 @@
---RAM Version Post-Cleanup
---Last Update: HB after STT Bugfix
+--ROM Version
+--Last Update: Added Version Number
 --To Do: Check if anything else broke
 
 function _OnInit()
+local VersionNum = 'GoA Version 1.51.0'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
+	if ENGINE_VERSION < 3.0 then
+		print('LuaEngine is Outdated. Things might not work properly.')
+	end
+	print(VersionNum)
 	Platform = 'PS2'
 	Now = 0x032BAE0 --Current Location
 	BGM = 0x0347D34 --Background Music
@@ -38,6 +43,10 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	Menu1    = 0x1C5FF18 --Menu 1 (main command menu)
 	NextMenu = 0x4
 elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
+	if ENGINE_VERSION < 4.2 then
+		ConsolePrint('LuaBackend is Outdated. Things might not work properly.',2)
+	end
+	ConsolePrint(VersionNum,0)
 	Platform = 'PC'
 	Now = 0x0714DB8 - 0x56450E
 	BGM = 0x0AB8504 - 0x56450E
