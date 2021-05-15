@@ -43,7 +43,7 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	Menu1    = 0x1C5FF18 --Menu 1 (main command menu)
 	NextMenu = 0x4
 elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
-	if ENGINE_VERSION < 4.2 then
+	if ENGINE_VERSION < 4.1 then
 		ConsolePrint('LuaBackend is Outdated. Things might not work properly.',2)
 	end
 	ConsolePrint(VersionNum,0)
