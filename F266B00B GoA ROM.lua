@@ -1,9 +1,9 @@
 --ROM Version
---Last Update: Added Version Number
+--Last Update: Fixed Heartless Manufactory without Membership Card bug
 --To Do: Check if anything else broke
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.51.0'
+local VersionNum = 'GoA Version 1.51.1'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -1979,6 +1979,7 @@ if ReadShort(Save+0x0650) == 0x0A then
 	WriteShort(Save+0x067C,0x0D) --Restoration Site (Destroyed) MAP (Data Door)
 	WriteShort(Save+0x067E,0x0B) --Restoration Site (Destroyed) BTL
 	WriteShort(Save+0x0684,0x0B) --Bailey (Destroyed) BTL
+	WriteShort(Save+0x20D4,0x0000) --Heartless Manufactory Barrier Removal
 	BitOr(Save+0x1D19,0x10) --HB_508_END
 	BitOr(Save+0x1D1C,0x10) --HB_509_END
 	BitOr(Save+0x1D1C,0x20) --HB_hb09_ms501
@@ -2706,8 +2707,8 @@ if Place == 0x2202 and Events(0x9D,0x9D,0x9D) then
 		Faster(false)
 	end
 end
---Shorter Day 5
-if Place == 0x0B02 and Events(0x01,0x00,0x0C) then --Shorter Day 5
+--[[Shorter Day 5
+if Place == 0x0B02 and Events(0x01,0x00,0x0C) then
 	WriteByte(Save+0x1D0E,8)
 	WriteShort(Save+0x034C,0x02) --Sunset Terrace MAP (After Wonders)
 	WriteShort(Save+0x0350,0x0D) --Sunset Terrace EVT
