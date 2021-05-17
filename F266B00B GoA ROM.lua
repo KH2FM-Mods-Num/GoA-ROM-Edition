@@ -800,7 +800,7 @@ if true then
 	end
 end
 --Enable Secret Movie after All Worlds are Cleared
-if true then
+if Place == 0x0001 then
 	local PostStorySaves = {0x1EDE,0x1D9E,0x1D3E,0x1E5E,0x1D7E,0x1D6E,0x1DDE,0x1CFD,0x1D2E,0x1E9E,0x1E1E,0x1EBE,0x1CFE} --Ordered by Portal Number
 	local Completed = true
 	for index in pairs(PostStorySaves) do
