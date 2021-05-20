@@ -3,7 +3,7 @@
 --To Do: Check if anything else broke
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.51.1'
+local VersionNum = 'GoA Version 1.51.2'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -2750,7 +2750,7 @@ function AW()
 if Place == 0x0009 and Events(0x00,Null,Null) then --0th Visit
 	WriteArray(Save+0x066A,ReadArray(Save+0x0646,6)) --Save Borough Spawn ID
 	WriteArray(Save+0x0664,ReadArray(Save+0x065E,6)) --Save Merlin's House Spawn ID
-elseif Place == 0x0D04 and Events(Null,Null,0x08) and ReadByte(Save+0x1DBF) == 0 then --Lost Memories
+elseif Place == 0x0D04 and Events(0x65,0x65,0x65) and ReadByte(Save+0x1DBF) == 0 then --Lost Memories
 	WriteByte(Save+0x1DBF,1)
 	WriteArray(Save+0x0646,ReadArray(Save+0x066A,6)) --Load Borough Spawn ID
 	WriteArray(Save+0x065E,ReadArray(Save+0x0664,6)) --Load Merlin's House Spawn ID

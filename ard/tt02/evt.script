@@ -3,7 +3,7 @@ Party DEFAULT
 Bgm Default Default
 AreaSettings 0 -1
 	SetProgressFlag 0x8AE
-	SetUnk05 0x2
+	SetUnk05 0x1
 	SetEvent "901" Type 2
 	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 107 FadeType 1
 	SetPartyMenu 0
