@@ -1,9 +1,8 @@
 --ROM Version
---Last Update: Fixed Heartless Manufactory without Membership Card bug
---To Do: Check if anything else broke
+--Last Update: Drive Refill for Data Path & Data Xemnas TT Computer Room Flag Fix
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.51.2'
+local VersionNum = 'GoA Version 1.52.0'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
