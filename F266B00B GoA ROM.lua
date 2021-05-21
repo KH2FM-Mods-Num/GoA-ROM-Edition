@@ -874,7 +874,7 @@ elseif Place == 0x1212 and Events(Null,Null,0x03) then --The Door to Kingdom Hea
 	BitOr(Save+0x1ED6,0x80) --EH_JIMMNY_FULL_OPEN
 elseif Place == 0x0001 and Events(0x3A,0x3A,0x3A) then --The Door to Light
 	WriteInt(Save+0x000C,0x1A04) --Post-Game Save at Garden of Assemblage
-	BitNot(Save+0x1CEE,0x0C) --TT_TT21 (Beam Flag Fix)
+	BitNot(Save+0x1CEE,0x0C) --TT_TT21 (Computer Room Flag Fix)
 end
 --The World that Never Was Post-Story Save
 if Place == 0x1A04 and ReadByte(Save+0x1EDE) > 0 then
@@ -1695,7 +1695,7 @@ elseif Place == 0x0012 and Events(0x77,0x77,0x77) then --Those Who Remain
 	WriteShort(Save+0x021E,0x03) --Computer Room MAP (TT Real)
 	WriteShort(Save+0x0222,0x0F) --Computer Room EVT
 	WriteShort(Save+0x0400,0x0D) --Betwixt & Between MAP (Data Door)
-	BitNot(Save+0x1CEE,0x0C) --TT_TT21 (Beam Flag Fix)
+	BitNot(Save+0x1CEE,0x0C) --TT_TT21 (Computer Room Flag Fix)
 end
 --Twilight Town Post-Story Save
 if Place == 0x1A04 and ReadByte(Save+0x1CFD) > 0 and Door == 0x1C then
@@ -2504,7 +2504,7 @@ if ReadByte(Save+0x1CFF) == 2 then --Load Spawn ID upon Entering STT
 	end
 	WriteByte(Save+0x3FF5,Visit)
 	WriteShort(Save+0x20E4,0x9F42) --Underground Concourse Barrier
-	WriteByte(Save+0x1CFB,0) --Computer Flag Reset
+	WriteByte(Save+0x1CFB,0) --Beam Flag Reset
 	--Load the Proper Spawn ID
 	local SpawnOffset = 0x310 + Room*6
 	if Evt < 0x20 then --Not a Special Event
@@ -2876,13 +2876,15 @@ if Place == 0x2102 and PrevPlace ~= 0x2102 and PrevPlace ~= 0x2002 then
 	WriteByte(Save+0x3FF5,13) --Battle Level Data
 end
 --Revert STT/TT Flags
-if Place == 0x1402 and Events(0xD3,0xD3,0xD3) then --Data Axel
+if Place == 0x1312 and Events(0x67,0x67,0x67) then --Data Xemnas I
+	BitNot(Save+0x1CEE,0x0C) --TT_TT21 (Computer Room Flag Fix)
+elseif Place == 0x1402 and Events(0xD3,0xD3,0xD3) then --Data Axel
 	WriteByte(Save+0x1CFF,0) --Reset TT & STT Flag
 	WriteShort(Save+0x0212,0x00) --Basement Hall MAP (TT Real)
 	WriteShort(Save+0x0214,0x07) --Basement Hall BTL
 	WriteShort(Save+0x021E,0x03) --Computer Room MAP (TT Real)
 	WriteShort(Save+0x0222,0x0F) --Computer Room EVT
-	BitNot(Save+0x1CEE,0x0C) --TT_TT21 (Beam Flag Fix)
+	BitNot(Save+0x1CEE,0x0C) --TT_TT21 (Computer Room Flag Fix)
 elseif Place == 0x1512 and Events(0x71,0x71,0x71) then --Data Roxas
 	WriteByte(Save+0x1CFF,0) --Reset TT & STT Flag
 end
