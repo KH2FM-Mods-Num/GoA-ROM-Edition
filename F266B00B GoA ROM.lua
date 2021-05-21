@@ -2873,7 +2873,6 @@ if true then
 end
 --Prevent Disappearing Summon Softlock
 if Place == 0x2102 and PrevPlace ~= 0x2102 and PrevPlace ~= 0x2002 then
-	WriteShort(Save+0x3524,0)  --Revert/Dismiss
 	WriteByte(Save+0x3FF5,13) --Battle Level Data
 end
 --Revert STT/TT Flags
