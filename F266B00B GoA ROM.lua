@@ -1,8 +1,8 @@
 --ROM Version
---Last Update: Drive Refill for Data Path & Data Xemnas TT Computer Room Flag Fix
+--Last Update: Prevent losing Keyblade after losing to Seifer or Vivi
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.52.0'
+local VersionNum = 'GoA Version 1.52.1'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -2604,6 +2604,8 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 		WriteShort(Save+0x24F0,Struggle)
 	elseif Place == 0x0502 and (Events(0x54,0x54,0x54) or Events(0x55,0x55,0x55) or Events(0x58,0x58,0x58)) then --Struggle Fights
 		WriteShort(Save+0x24F0,Struggle)
+	elseif Place == 0x0502 and ReadShort(Now+0x32) ~= Door and (Door == 0x33 or Door == 0x35) then --Losing to Seifer or Vivi
+		WriteShort(Save+0x24F0,Store)
 	elseif Place == 0x0E02 and Events(0x7F,0x7F,0x7F) then --The Old Mansion Dusk
 		WriteShort(Save+0x24F0,Struggle)
 	elseif Place == 0x1402 then --Axel II (Oblivion is Equipped & Unequipped Automatically)
