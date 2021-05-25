@@ -2294,7 +2294,7 @@ elseif Place == 0x0211 and Events(Null,Null,0x0A) then --Tron's in Danger!
 elseif Place == 0x0411 and Events(Null,Null,0x0A) then --Facing Danger
 	WriteByte(Save+0x1EBF,8)
 	WriteShort(Save+0x19B2,0x0A) --Communications Room EVT
-elseif Place == 0x0811 and Events(Null,Null,0x08) then --The System's Core
+elseif Place == 0x0811 and Events(Null,Null,0x0A) then --The System's Core
 	WriteByte(Save+0x1EBF,9)
 elseif Place == 0x0911 and Events(0x3B,0x3B,0x3B) then --Destroying the MCP
 	BitOr(Save+0x1D27,0x01) --HB_FM_LAR_RE_CLEAR (Change Portal Color)
