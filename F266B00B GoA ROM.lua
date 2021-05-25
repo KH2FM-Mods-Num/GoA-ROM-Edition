@@ -1,8 +1,8 @@
 --ROM Version
---Last Update: Prevent losing Keyblade after losing to Seifer or Vivi
+--Last Update: Fixed MCP Damage
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.52.1'
+local VersionNum = 'GoA Version 1.52.2'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -242,6 +242,8 @@ function NewGame()
 --Before New Game
 if Place == 0xFFFF or Place == 0x0101 or (Place == 0x0102 and Events(0x34,0x34,0x34)) then --In Main Menu, Loop Demo, or Opening
 	WriteShort(Btl0+0x2EB4C,500) --Fast MCP (50% Base HP)
+	WriteShort(Btl0+0x2EB8C,300) --Double Max Damage %
+	WriteShort(Btl0+0x2EB8E,100) --Double Min Damage %
 	--Changed Form's Icons in PC From Analog Stick
 	if Platform == 'PC' then
 		WriteByte(Sys3+0x116DB,0x3B) --Valor
