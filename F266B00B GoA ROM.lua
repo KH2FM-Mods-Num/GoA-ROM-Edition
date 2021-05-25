@@ -1277,8 +1277,8 @@ elseif Place == 0x0307 and Events(Null,Null,0x03) then --Come Back Soon
 	WriteByte(Save+0x1D7F,6)
 elseif ReadByte(Save+0x1D7F) == 6 and ReadByte(Save+0x35C0) > 0 then --2nd Visit
 	WriteByte(Save+0x1D7F,7)
-	WriteShort(Save+0x0A9C,0x00) --Peddler's Shop (Poor) MAP (Remove Treasure)
-	WriteShort(Save+0x0AA0,0x00) --Peddler's Shop (Poor) EVT
+	WriteShort(Save+0x0A9C,0x00) --The Peddler's Shop (Poor) MAP (Remove Treasure)
+	WriteShort(Save+0x0AA0,0x00) --The Peddler's Shop (Poor) EVT
 	WriteShort(Save+0x0AAC,0x0A) --Vault EVT
 elseif Place == 0x0407 and Events(Null,Null,0x0A) then --Jafar's Return
 	WriteByte(Save+0x1D7F,8)
