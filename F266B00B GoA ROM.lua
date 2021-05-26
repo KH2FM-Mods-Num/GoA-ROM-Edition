@@ -326,6 +326,7 @@ if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	BitOr(Save+0x1D13,0x01) --HB_tr_117_END
 	BitOr(Save+0x1D15,0x10) --HB_START2
 	BitOr(Save+0x1D15,0x20) --HB_START_wi_dc
+	BitOr(Save+0x1D16,0x02) --HB_START_Pooh
 	BitOr(Save+0x1D19,0x20) --HB_TR_202_END
 	BitOr(Save+0x1D1A,0x02) --HB_TR_tr04_ms202
 	BitOr(Save+0x1D1A,0x08) --HB_TR_tr09_ms205
@@ -434,25 +435,19 @@ if true then
 	local Bitmask, Visit
 	if World == 0x02 then --Twilight Town & Simulated Twilight Town
 		Visit = ReadByte(Save+0x3FF5)
-		if Visit == 1 then --Day 1
+		if Visit == 1 or Visit == 2 or Visit == 3 then
 			Bitmask = 0x040001
-		elseif Visit == 2 then --Day 2
-			Bitmask = 0x040001
-		elseif Visit == 3 then --Day 3
-			Bitmask = 0x040001
-		elseif Visit == 4 then --Day 4
+		elseif Visit == 4 or Visit == 5 then
 			Bitmask = 0x140001
-		elseif Visit == 5 then --Day 5
-			Bitmask = 0x140001
-		elseif Visit == 6 then --Day 6
+		elseif Visit == 6 then
 			Bitmask = 0x140401
-		elseif Visit == 7 then --1st Visit
+		elseif Visit == 7 then
 			Bitmask = 0x140C01
-		elseif Visit == 8 then --Mysterious Tower
+		elseif Visit == 8 then
 			Bitmask = 0x141C01
-		elseif Visit == 9 then --2nd Visit
+		elseif Visit == 9 then
 			Bitmask = 0x143D01
-		elseif Visit == 10 then --3rd Visit
+		elseif Visit == 10 then
 			Bitmask = 0x157D79
 		elseif Visit == 13 then --Road to Data
 			Bitmask = 0x060000
@@ -1640,6 +1635,12 @@ elseif Place == 0x1C02 and Events(0x97,0x97,0x97) then --The Evil Fairy's Reviva
 	WriteByte(Save+0x1D0D,6)
 	WriteByte(Save+0x1CFF,0)
 	WriteShort(Save+0x01C4,0x04) --Station Heights MAP (Jobs Unavailable)
+	WriteShort(Save+0x03A8,0x01) --The Tower: Entryway BTL
+	WriteShort(Save+0x03C0,0x01) --Tower: Star Chamber BTL
+	WriteShort(Save+0x03C6,0x01) --Tower: Moon Chamber BTL
+	WriteShort(Save+0x03CC,0x01) --Tower: Wayward Stairs (Lower Level) BTL
+	WriteShort(Save+0x03F6,0x01) --Tower: Wayward Stairs (Middle Level) BTL
+	WriteShort(Save+0x03FC,0x01) --Tower: Wayward Stairs (Upper Level) BTL
 elseif ReadByte(Save+0x1D0D) == 6 and ReadByte(Save+0x363F) > 0 then --2nd Visit
 	WriteByte(Save+0x1D0D,7)
 elseif Place == 0x0702 and Events(0x6B,0x6B,0x6B) then --A Frantic Vivi
@@ -2749,24 +2750,15 @@ end
 end
 
 function AW()
---World Progress
+--0th Visit Adjustments
 if Place == 0x0009 and Events(0x00,Null,Null) then --0th Visit
+	BitNot(Save+0x1D16,0x02) --HB_START_Pooh
 	WriteArray(Save+0x066A,ReadArray(Save+0x0646,6)) --Save Borough Spawn ID
 	WriteArray(Save+0x0664,ReadArray(Save+0x065E,6)) --Save Merlin's House Spawn ID
-elseif Place == 0x0D04 and Events(0x65,0x65,0x65) and ReadByte(Save+0x1DBF) == 0 then --Lost Memories
+elseif Place == 0x0D04 and Events(0x65,0x65,0x65) and PrevPlace == 0x0209 then --Lost Memories
 	WriteByte(Save+0x1DBF,1)
 	WriteArray(Save+0x0646,ReadArray(Save+0x066A,6)) --Load Borough Spawn ID
 	WriteArray(Save+0x065E,ReadArray(Save+0x0664,6)) --Load Merlin's House Spawn ID
-elseif Place == 0x0009 and Events(Null,Null,0x04) then --Piglet's House: Complete
-	WriteByte(Save+0x1DBF,2)
-elseif Place == 0x0009 and Events(Null,Null,0x06) then --Rabbit's House: Complete
-	WriteByte(Save+0x1DBF,3)
-elseif Place == 0x0009 and Events(Null,Null,0x08) then --Kanga and Roo's House: Complete
-	WriteByte(Save+0x1DBF,4)
-elseif Place == 0x0009 and Events(Null,Null,0x0A) then --The Spooky Cave: Complete
-	WriteByte(Save+0x1DBF,5)
-elseif Place == 0x0109 and Events(Null,Null,0x03) then --I'll Always Be With You
-	WriteByte(Save+0x1DBF,6)
 end
 --Prevent Leaving in 0th Visit
 if Place == 0x0009 and ReadByte(Save+0x1DBF) == 0 then
@@ -2780,7 +2772,6 @@ if ReadShort(Save+0x0D90) == 0x00 then
 	WriteByte(Save+0x1DBF,1)
 	WriteShort(Save+0x0D90,0x02) --The Hundred Acre Wood MAP (Pooh's House Only)
 	WriteShort(Save+0x0DA0,0x16) --Pooh's House EVT
-	BitOr(Save+0x1D16,0x02) --HB_START_Pooh
 	BitOr(Save+0x1D16,0x04) --HB_901_END
 	BitOr(Save+0x1D16,0x08) --HB_902_END
 	BitOr(Save+0x1D16,0x20) --HB_903_END
@@ -2822,19 +2813,9 @@ function At()
 if Place == 0x1A04 and ReadByte(Save+0x1DFF) == 0 then --1st Visit
 	Spawn('Short',0x0A,0x23C,0x07)
 end
---World Progress
+--Atlantica Visited
 if Place == 0x020B and Events(Null,Null,0x01) then --The Kingdom Under the Sea
 	WriteByte(Save+0x1DFF,1)
-elseif Place == 0x020B and Events(Null,Null,0x03) then --Let's Cheer Her Up!
-	WriteByte(Save+0x1DFF,2)
-elseif Place == 0x000B and Events(Null,Null,0x01) then --Getting Rid of Worry
-	WriteByte(Save+0x1DFF,3)
-elseif Place == 0x060B and Events(Null,Null,0x02) then --What the Prince Lost
-	WriteByte(Save+0x1DFF,4)
-elseif Place == 0x070B and Events(Null,Null,0x04) then --Ariel's Confession
-	WriteByte(Save+0x1DFF,5)
-elseif Place == 0x040B and Events(0x37,0x37,0x37) and ReadInt(CutLen) == 0xA46 then	--Our Worlds Are All Connected
-	WriteByte(Save+0x1DFF,6)
 end
 end
 
@@ -2956,7 +2937,7 @@ Save+0x1D9F LOD Progress
 Save+0x1DBF AW Progress
 Save+0x1DDE PL Post-Story Save
 Save+0x1DDF PL Progress
-Save+0x1DFF At Progress
+Save+0x1DFF At 0th Visit Flag
 Save+0x1E1E DC Post-Story Save
 Save+0x1E1F DC Progress
 Save+0x1E5E HT Post-Story Save
