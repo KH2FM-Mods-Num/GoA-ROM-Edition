@@ -284,6 +284,7 @@ if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	WriteByte(Slot1+0x1B1,5)   --Starting Drive Current
 	WriteByte(Slot1+0x1B2,5)   --Starting Drive Max
 	--Place Scripts
+	WriteShort(Save+0x023A,0x01) --Roxas' Room EVT
 	WriteShort(Save+0x06AC,0x01) --Garden of Assemblage MAP (Before Computer)
 	WriteShort(Save+0x06B0,0x03) --Garden of Assemblage EVT
 	WriteShort(Save+0x0C10,0x01) --Bamboo Grove MAP (Burning Village)
@@ -1929,6 +1930,10 @@ elseif Place == 0x0604 and Events(0x5E,0x5E,0x5E) then --Radiant Garden
 	BitOr(Save+0x1D26,0x20) --HB_FM_DEM_RE_CLEAR (Change Portal Color)
 	WriteShort(Save+0x1D2E,2) --Post-Story Save
 	WriteShort(Save+0x067C,0x0D) --Restoration Site (Destroyed) MAP (Data Door)
+elseif Place == 0x1904 and Events(Null,0x05,0x04) then --Transport to Remembrance Cleared
+	WriteShort(Save+0x06A8,0x04) --Transport to Remembrance BTL
+	WriteShort(Save+0x06AA,0x00) --Transport to Remembrance EVT
+	BitOr(Save+0x1D27,0x04) --HB_FM_13TSUURO_OUT
 end
 --Hollow Bastion Post-Story Save
 if Place == 0x1A04 and ReadByte(Save+0x1D2E) > 0 then
@@ -2027,12 +2032,6 @@ if Place == 0x0204 and Events(Null,0x02,0x03) and ReadByte(Save+0x36B4) > 0 then
 	WriteShort(Save+0x3EE8,900)
 	WriteShort(Save+0x3EEC,0x03) --Mushroom XII
 	WriteShort(Save+0x3EF0,50)
-end
---Transport to Remembrance Nobodies III Cleared (Skip GoA Stuff After)
-if ReadShort(Save+0x06A8) == 0x05 then
-	WriteShort(Save+0x06A8,0x04) --Transport to Remembrance BTL
-	WriteShort(Save+0x06AA,0x00) --Transport to Remembrance EVT
-	BitOr(Save+0x1D27,0x04) --HB_FM_13TSUURO_OUT
 end
 end
 
@@ -2170,6 +2169,7 @@ elseif Place == 0x000C and Events(Null,Null,0x01) then --Heartless? Here?
 elseif Place == 0x040C and Events(Null,Null,0x02) then --The Strange Door
 	WriteByte(Save+0x1E1F,3)
 	WriteArray(Save+0x065E,ReadArray(Save+0x0664,6)) --Load Merlin's House Spawn ID
+elseif Place == 0x000D and Events(Null,Null,0x07) then --Back to Their Own World
 elseif Place == 0x050C and Events(Null,Null,0x01) then --The Castle is Secure
 	BitOr(Save+0x1D26,0x80) --HB_FM_MAR_RE_CLEAR (Change Portal Color)
 	WriteByte(Save+0x1E1E,3) --Post-Story Save
@@ -2177,9 +2177,9 @@ elseif Place == 0x050C and Events(Null,Null,0x01) then --The Castle is Secure
 elseif Place == 0x2604 and Events(0x7F,0x7F,0x7F) then --Marluxia Defeated
 	WriteShort(Save+0x1230,0x02) --Hall of the Cornerstone (Light) BTL
 elseif ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x1E1E) > 0 and ReadShort(Save+0x1232) == 0x00 then --Proof of Connection, DC Cleared, Terra Locked
-	WriteByte(Save+0x121A,0x11) --Library EVT
-	WriteByte(Save+0x1232,0x02) --Hall of the Cornerstone (Light) EVT
-	WriteByte(Save+0x1238,0x12) --Gummi Hangar EVT
+	WriteShort(Save+0x121A,0x11) --Library EVT
+	WriteShort(Save+0x1232,0x02) --Hall of the Cornerstone (Light) EVT
+	WriteShort(Save+0x1238,0x12) --Gummi Hangar EVT
 	BitOr(Save+0x1CB1,0x02) --ES_FM_URA_MOVIE (BBS Movie 1) (Show Prompt in TWtNW)
 	BitOr(Save+0x1E13,0x80) --DC_FM_NAZO_ON
 end
@@ -2371,14 +2371,9 @@ if Place == 0x1A04 then
 	elseif PostSave == 5 then --Mansion: Computer Room
 		WarpRoom = 0x15
 	end
-	if WarpRoom == 0x01 then
-		Spawn('Short',0x0A,0x1F8,0x02)
-		Spawn('Short',0x0A,0x200,0x38)
-	else
-		Spawn('Short',0x0A,0x1FC,WarpRoom)
-		if WarpRoom == 0x15 and ReadByte(Save+0x1CFB) == 1 then --Computer Room Beam
-			Spawn('Short',0x0A,0x1FE,0x3B)
-		end
+	Spawn('Short',0x0A,0x1FC,WarpRoom)
+	if WarpRoom == 0x15 and ReadByte(Save+0x1CFB) == 1 then --Computer Room Beam
+		Spawn('Short',0x0A,0x1FE,0x3B)
 	end
 end
 --World Progress

@@ -4,4 +4,12 @@ Bgm Default Default
 AreaSettings 0 -1
 	SetProgressFlag 0x816
 	SetJump Type 1 World TT Area 32 Entrance 50 LocalSet 0 FadeType 16386
-	SetPartyMenu 1
+	SetPartyMenu 0
+
+Program 0x01
+Party NO_FRIEND
+Bgm Default Default
+AreaSettings 0 -1
+	SetEvent "100" Type 66
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 56 FadeType 16386
+	SetPartyMenu 0
