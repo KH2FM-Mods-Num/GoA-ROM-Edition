@@ -1,8 +1,8 @@
 --ROM Version
---Last Update: Fixed MCP Damage
+--Last Update: Minor Cleanups
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.52.2'
+local VersionNum = 'GoA Version 1.52.3'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -2584,9 +2584,13 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 		Struggle = 0x1F5 --Struggle Wand
 	elseif ReadByte(Save+0x1CF8) == 3 then
 		Struggle = 0x1F6 --Struggle Hammer
+	elseif not(Place == 0x0402 and Events(0x4C,0x4C,0x4C)) then --No Struggle Weapon Chosen
+		WriteByte(Save+0x1CF8,math.random(3))
 	end
 	if Place == 0x0402 and Events(0x4C,0x4C,0x4C) then --Sandlot Weapons
-		if ReadByte(Save+0x1CF8) == 0 then
+		if Equip ~= 0x180 and Equip ~= 0x1F5 and Equip ~= 0x1F6 then
+			WriteByte(Save+0x1CF8,0) --Reset Struggle Weapon Flag
+		elseif ReadByte(Save+0x1CF8) == 0 then
 			if Equip == 0x180 then --Struggle Sword
 				WriteByte(Save+0x3651,ReadByte(Save+0x3651)+1)
 				WriteByte(Save+0x1CF8,1)
@@ -2822,20 +2826,20 @@ if true then
 		Path = 0
 	elseif Place == 0x1212 then --The Altar of Naught
 		Path = 1
-	elseif Place == 0x0608 then --Ridge
+	elseif Place == 0x0708 then --Summit
 		Path = 2
-	elseif Place == 0x0005 then --Entrance Hall
+	elseif Place == 0x0405 then --Ballroom
 		Path = 3
-	elseif Place == 0x020A then --The King's Den
+	elseif Place == 0x0D0A then --Peak
 		Path = 7
-	elseif Place == 0x1302 and ReadByte(Save+0x1CFF) == 8 then --Mansion: Basement Hall
+	elseif Place == 0x2802 and ReadByte(Save+0x1CFF) == 8 then --Betwixt & Between
 		Path = 8
 		WriteByte(Save+0x3FF5,10) --Battle Level TT3
 	elseif Place == 0x1204 then --Restoration Site (Destroyed)
 		Path = 9
-	elseif Place == 0x0D10 then --Isla de Muerta: Moonlight Nook
+	elseif Place == 0x0A10 then --Isla de Muerta: Treasure Heap
 		Path = 10
-	elseif Place == 0x1602 and ReadByte(Save+0x1CFF) == 13 then --Mansion: Basement Corridor
+	elseif Place == 0x1702 and ReadByte(Save+0x1CFF) == 13 then --Mansion: Pod Room
 		Path = 13
 		WriteByte(Save+0x3FF5,6) --Battle Level Day 6
 	elseif Place == 0x1A04 then --Garden of Assemblage
