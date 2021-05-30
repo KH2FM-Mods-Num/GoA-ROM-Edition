@@ -89,6 +89,7 @@ Slot8  = Slot7 - NextSlot
 Slot9  = Slot8 - NextSlot
 Slot10 = Slot9 - NextSlot
 Slot11 = Slot10 - NextSlot
+Slot12 = Slot11 - NextSlot
 Point2 = Point1 + NxtPoint
 Point3 = Point2 + NxtPoint
 Gauge2 = Gauge1 + NxtGauge
@@ -266,6 +267,7 @@ end
 if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	BitNot(Save+0x1CD2,0x80) --TT_SCENARIO_1_START (Show Gameplay Elements)
 	BitOr(Save+0x1CEA,0x02)  --TT_SORA_OLD_END (Play as KH2 Sora)
+	BitOr(Save+0x1CEB,0x08)  --TT_ROXAS_START (Prepare Roxas' Flag)
 	WriteByte(Pause,0x02) --Disable Pause
 	if ReadInt(CutLen) == 0x246 then --Dusks attack
 		WriteByte(CutSkp,1)
