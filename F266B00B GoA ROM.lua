@@ -258,6 +258,9 @@ end
 if Place == 0x0102 and Events(0x34,0x34,0x34) then --Opening Cutscene
 	WriteShort(Save+0x03D0,0x01) --Station of Serenity MAP (Dream Weapons)
 	WriteShort(Save+0x03D4,0x01) --Station of Serenity EVT
+	if Platform == 'PS2' then
+		Warp(0x02,0x20,0x32,0x01,0x00,0x01) --Not warping here on PS2 causes crash later
+	end
 end
 --Start New Game 2
 if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
@@ -284,7 +287,6 @@ if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	WriteByte(Slot1+0x1B1,5)   --Starting Drive Current
 	WriteByte(Slot1+0x1B2,5)   --Starting Drive Max
 	--Place Scripts
-	WriteShort(Save+0x023A,0x01) --Roxas' Room EVT
 	WriteShort(Save+0x06AC,0x01) --Garden of Assemblage MAP (Before Computer)
 	WriteShort(Save+0x06B0,0x03) --Garden of Assemblage EVT
 	WriteShort(Save+0x0C10,0x01) --Bamboo Grove MAP (Burning Village)
@@ -2371,9 +2373,14 @@ if Place == 0x1A04 then
 	elseif PostSave == 5 then --Mansion: Computer Room
 		WarpRoom = 0x15
 	end
-	Spawn('Short',0x0A,0x1FC,WarpRoom)
-	if WarpRoom == 0x15 and ReadByte(Save+0x1CFB) == 1 then --Computer Room Beam
-		Spawn('Short',0x0A,0x1FE,0x3B)
+	if WarpRoom == 0x01 then
+		Spawn('Short',0x0A,0x1F8,0x02)
+		Spawn('Short',0x0A,0x200,0x38)
+	else
+		Spawn('Short',0x0A,0x1FC,WarpRoom)
+		if WarpRoom == 0x15 and ReadByte(Save+0x1CFB) == 1 then --Computer Room Beam
+			Spawn('Short',0x0A,0x1FE,0x3B)
+		end
 	end
 end
 --World Progress
@@ -2933,7 +2940,7 @@ Save+0x1D7E Ag Post-Story Save
 Save+0x1D7F Ag Progress
 Save+0x1D9E LOD Post-Story Save
 Save+0x1D9F LOD Progress
-Save+0x1DBF AW Progress
+Save+0x1DBF AW 0th Visit Flag
 Save+0x1DDE PL Post-Story Save
 Save+0x1DDF PL Progress
 Save+0x1DFF At 0th Visit Flag
