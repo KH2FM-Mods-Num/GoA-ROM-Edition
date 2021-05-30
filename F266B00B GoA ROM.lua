@@ -860,9 +860,9 @@ if Place == 0x1A04 then
 	Spawn('Short',0x0A,0x07C,WarpRoom)
 end
 --World Progress
-if Place == 0x0412 and Events(Null,Null,0x01) then --A Dead End?
+if Place == 0x0412 and Events(Null,Null,0x02) then --The Path to the Castle
 	WriteByte(Save+0x1EDF,1)
-elseif Place == 0x0612 and Events(Null,Null,0x01) then --The Castle that Never Was
+elseif Place == 0x1012 and Events(Null,Null,0x01) then --Riku!
 	WriteByte(Save+0x1EDF,2)
 elseif Place == 0x1012 and Events(Null,Null,0x02) then --Ansem's Wager
 	WriteByte(Save+0x1EDF,3)
@@ -1522,7 +1522,7 @@ elseif ReadByte(Save+0x1DDF) == 7 and ReadByte(Save+0x35B5) > 0 then --2nd Visit
 	WriteShort(Save+0x0F2C,0x0A) --Savannah EVT
 elseif Place == 0x000A and Events(Null,Null,0x0A) then --Scar's Ghost
 	WriteByte(Save+0x1DDF,9)
-elseif Place == 0x000A and Events(Null,Null,0x0E) then --Pride Lands Cleared
+elseif Place == 0x000A and Events(Null,Null,0x0E) then --The Circle of Life
 	BitOr(Save+0x1EDA,0x01) --EH_FM_SAI_RE_CLEAR (Change Portal Color)
 	WriteByte(Save+0x1DDE,3) --Post-Story Save
 	WriteShort(Save+0x0F5E,0x0D) --Peak MAP (Data Door)
