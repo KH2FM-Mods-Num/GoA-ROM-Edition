@@ -1,6 +1,6 @@
 --ROM Version
---Last Update: Huge Bugfix from the Crash Prevention
---To Do: Check if stuff crashes after STT Beam
+--Last Update: SANCTUARY
+--To Do: Check if stuff crashes after STT Beam or Sanctuary
 
 function _OnInit()
 local VersionNum = 'GoA Version 1.52.5'
@@ -290,6 +290,7 @@ if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	WriteByte(Slot1+0x1B1,5)   --Starting Drive Current
 	WriteByte(Slot1+0x1B2,5)   --Starting Drive Max
 	--Place Scripts
+	WriteShort(Save+0x023A,0x01) --Roxas' Room EVT
 	WriteShort(Save+0x06AC,0x01) --Garden of Assemblage MAP (Before Computer)
 	WriteShort(Save+0x06B0,0x03) --Garden of Assemblage EVT
 	WriteShort(Save+0x0C10,0x01) --Bamboo Grove MAP (Burning Village)
@@ -872,7 +873,8 @@ elseif Place == 0x1012 and Events(Null,Null,0x05) then --Back to His Old Self
 elseif Place == 0x1212 and Events(Null,Null,0x03) then --The Door to Kingdom Hearts
 	BitOr(Save+0x1EDA,0x04)  --EH_FM_XEM_RE_CLEAR (Change Portal Color)
 	WriteByte(Save+0x1EDE,5) --Post-Story Save
-	WriteByte(Save+0x1B24,0x03) --Memory's Skyscraper BTL
+	WriteShort(Save+0x1B24,0x03) --Memory's Skyscraper BTL
+	WriteShort(Save+0x1B7C,0x0D) --The Altar of Naught MAP (Data Door)
 	BitOr(Save+0x1ED6,0x80) --EH_JIMMNY_FULL_OPEN
 elseif Place == 0x0001 and Events(0x3A,0x3A,0x3A) then --The Door to Light
 	WriteInt(Save+0x000C,0x1A04) --Post-Game Save at Garden of Assemblage
@@ -1963,6 +1965,8 @@ if Place == 0x0504 and ReadByte(Save+0x3643) > 0 then
 	Spawn('String',0x01,0x5FC,'m_11')
 	Spawn('Int',0x01,0x950,0xC1C8F) --MAP 0x0F
 	Spawn('String',0x01,0x9A4,'m_11')
+	Spawn('Int',0x01,0x10E0,0xC1C8F) --MAP 0x08
+	Spawn('String',0x01,0x112C,'m_11')
 end
 --After-Demyx Checkpoint
 if ReadByte(Save+0x1D2F) == 8 then
@@ -2376,14 +2380,9 @@ if Place == 0x1A04 then
 	elseif PostSave == 5 then --Mansion: Computer Room
 		WarpRoom = 0x15
 	end
-	if WarpRoom == 0x01 then
-		Spawn('Short',0x0A,0x1F8,0x02)
-		Spawn('Short',0x0A,0x200,0x38)
-	else
-		Spawn('Short',0x0A,0x1FC,WarpRoom)
-		if WarpRoom == 0x15 and ReadByte(Save+0x1CFB) == 1 then --Computer Room Beam
-			Spawn('Short',0x0A,0x1FE,0x3B)
-		end
+	Spawn('Short',0x0A,0x1FC,WarpRoom)
+	if WarpRoom == 0x15 and ReadByte(Save+0x1CFB) == 1 then --Computer Room Beam
+		Spawn('Short',0x0A,0x1FE,0x3B)
 	end
 end
 --World Progress
