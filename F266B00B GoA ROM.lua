@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: SANCTUARY
+--Last Update: Merlin's House Post 100 AW
 --To Do: Check if stuff crashes after STT Beam or Sanctuary
 
 function _OnInit()
@@ -337,6 +337,7 @@ if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	BitOr(Save+0x1D19,0x20) --HB_TR_202_END
 	BitOr(Save+0x1D1A,0x02) --HB_TR_tr04_ms202
 	BitOr(Save+0x1D1A,0x08) --HB_TR_tr09_ms205
+	BitOr(Save+0x1D20,0x10) --HB_POOH_CLEAR
 	BitOr(Save+0x1D21,0x10) --HB_RTN_ON
 	BitOr(Save+0x1D21,0x80) --HB_TR05_HIDDEN_ON
 	BitOr(Save+0x1D22,0x01) --HB_TR05_HIDDEN_OFF
@@ -1955,7 +1956,7 @@ if Place == 0x1A04 and ReadByte(Save+0x1D2E) > 0 then
 	end
 end
 --Remove 100 Acre Wood Book
-if ReadShort(Save+0x065E) == 0x00 then
+if ReadShort(Save+0x065E) == 0x00 or ReadShort(Save+0x065E) == 0x04 then
 	WriteShort(Save+0x065E,0x01) --Merlin's House MAP
 end
 --Heartless Manufactory Early Access with Membership Card
