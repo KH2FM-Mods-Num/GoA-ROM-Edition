@@ -37,7 +37,7 @@
     SpawnType: 1
     SpawnArgument: 50
     Serial: 75
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0

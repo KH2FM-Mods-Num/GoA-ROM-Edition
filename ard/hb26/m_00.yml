@@ -37,7 +37,7 @@
     SpawnType: 1
     SpawnArgument: 21
     Serial: 22
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -91,7 +91,7 @@
     SpawnType: 1
     SpawnArgument: 22
     Serial: 25
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -145,7 +145,7 @@
     SpawnType: 1
     SpawnArgument: 23
     Serial: 28
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -199,7 +199,7 @@
     SpawnType: 1
     SpawnArgument: 24
     Serial: 31
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -253,7 +253,7 @@
     SpawnType: 1
     SpawnArgument: 25
     Serial: 34
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -307,7 +307,7 @@
     SpawnType: 1
     SpawnArgument: 26
     Serial: 37
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -361,7 +361,7 @@
     SpawnType: 1
     SpawnArgument: 27
     Serial: 40
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -415,7 +415,7 @@
     SpawnType: 1
     SpawnArgument: 28
     Serial: 43
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -469,7 +469,7 @@
     SpawnType: 1
     SpawnArgument: 29
     Serial: 46
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -523,7 +523,7 @@
     SpawnType: 1
     SpawnArgument: 30
     Serial: 49
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -577,7 +577,7 @@
     SpawnType: 1
     SpawnArgument: 31
     Serial: 52
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -631,7 +631,7 @@
     SpawnType: 1
     SpawnArgument: 32
     Serial: 55
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -685,7 +685,7 @@
     SpawnType: 1
     SpawnArgument: 33
     Serial: 58
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -754,7 +754,7 @@
     SpawnType: 1
     SpawnArgument: 0
     Serial: 2
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -823,7 +823,7 @@
     SpawnType: 1
     SpawnArgument: 1
     Serial: 5
-    Argument1: 0
+    Argument1: 50
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0

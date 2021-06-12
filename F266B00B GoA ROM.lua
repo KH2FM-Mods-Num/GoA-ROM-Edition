@@ -211,7 +211,7 @@ if true then --Define current values for common addresses
 	PrevPlace = ReadShort(Now+0x30)
 	MSN    = MSNLoad + (ReadInt(MSNLoad+4)+1) * 0x10
 	if Platform == 'PS2' then
-		ARD = ReadInt(0x034ECF4)      --Base ARD Address
+		ARD = ReadInt(0x034ECF4) --Base ARD Address
 	elseif Platform == 'PC' then
 		ARD = ReadLong(0x2A0CEE8 - 0x56450E) --Base ARD Address
 		if GetHertz() < 240 then
