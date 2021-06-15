@@ -11,6 +11,7 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	print(VersionNum)
 	Platform = 'PS2'
 	Now = 0x032BAE0 --Current Location
+	Sve = 0x1D5A970 --Saved Location
 	BGM = 0x0347D34 --Background Music
 	Save = 0x032BB30 --Save File
 	Obj0 = 0x1C94100 --00objentry.bin
@@ -49,6 +50,7 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	ConsolePrint(VersionNum,0)
 	Platform = 'PC'
 	Now = 0x0714DB8 - 0x56450E
+	Sve = 0x2A09C00 - 0x56450E
 	BGM = 0x0AB8504 - 0x56450E
 	Save = 0x09A7070 - 0x56450E
 	Obj0 = 0x2A22B90 - 0x56450E
@@ -877,7 +879,7 @@ elseif Place == 0x1212 and Events(Null,Null,0x03) then --The Door to Kingdom Hea
 	WriteShort(Save+0x1B7C,0x0D) --The Altar of Naught MAP (Data Door)
 	BitOr(Save+0x1ED6,0x80) --EH_JIMMNY_FULL_OPEN
 elseif Place == 0x0001 and Events(0x3A,0x3A,0x3A) then --The Door to Light
-	WriteInt(Save+0x000C,0x1A04) --Post-Game Save at Garden of Assemblage
+	WriteInt(Save+0x000C,0x321A04) --Post-Game Save at Garden of Assemblage
 	BitNot(Save+0x1CEE,0x0C) --TT_TT21 (Computer Room Flag Fix)
 end
 --The World that Never Was Post-Story Save
@@ -1125,7 +1127,7 @@ if Place == 0x1A04 then
 		if Progress == 0 then --1st Visit
 			WarpRoom = 0x04
 			Spawn('Short',0x0A,0x0D6,0x00)
-		elseif Progress == 1 then --[Before Halloween Town Square Heartless I, Before Entering Christmas Town]
+		elseif Progress == 1 then --[Before Halloween Town Square Heartless, Before Entering Christmas Town]
 			WarpRoom = 0x01
 		elseif Progress == 2 then --[Before Candy Cane Lane Heartless, After Candy Cane Lane Heartless]
 			WarpRoom = 0x05
@@ -1143,7 +1145,7 @@ if Place == 0x1A04 then
 			WarpRoom = 0x01
 		elseif Progress == 9 then --Before Lock, Shock, Barrel
 			WarpRoom = 0x08
-		elseif Progress == 10 then --Before Halloween Town Square Heartless II
+		elseif Progress == 10 then --Before Halloween Town Square Presents
 			WarpRoom = 0x05
 		elseif Progress == 11 then --[Before Gift Wrapping, Before the Experiment]
 			WarpRoom = 0x08
@@ -2346,7 +2348,7 @@ if Place == 0x1A04 then
 			WarpRoom = 0x02
 		elseif Progress == 2 then --Munny Collection
 			WarpRoom = 0x02
-		elseif Progress == 3 then --Before Sandlot Nobodies I
+		elseif Progress == 3 then --Before Sandlot Dusk
 			WarpRoom = 0x02
 		elseif Progress == 4 then --Before Twilight Thorn
 			WarpRoom = 0x20
@@ -2474,7 +2476,7 @@ if ReadShort(TxtBox) == 0x76D and PrevPlace == 0x1A04 and ReadByte(Save+0x1CFF) 
 			WriteShort(Save+0x2080,0xC44B) --Central Station Barrier
 			WriteShort(Save+0x20E8,0x9F4A) --The Woods Barrier
 			WriteShort(Save+0x20EC,0x9F49) --Sandlot Barrier
-		elseif Progress == 3 then --Before Sandlot Nobodies I
+		elseif Progress == 3 then --Before Sandlot Dusk
 			Visit = 3
 			WriteShort(Save+0x20EC,0xC44C) --Sandlot Barrier
 		elseif Progress == 4 then --Before Twilight Thorn
@@ -2906,16 +2908,14 @@ if ReadShort(Save+0x03D6) == 15 and Platform == 'PS2' then
 end
 end
 
---[[Notes:
-- Warps into worlds are done by looking at the Event IDs to be loaded (except 1st Visits)
-- Battle Level fixes are done for end of HB and when warping to TT/STT
-- Unused Bytes Repurposed:
+--[[Unused Bytes Repurposed:
 [Save+0x01A0,Save+0x022F] TT Spawn IDs
 [Save+0x0230,Save+0x02BF] STT Spawn IDs
 [Save+0x0664,Save+0x0669] Merlin's House Spawn IDs
 [Save+0x066A,Save+0x066F] Borough Spawn IDs
 Save+0x06B2 Genie Crash Fix
 [Save+0x07F0,Save+0x07FB] Mrs Potts' Minigame Location
+[Save+0x1B13,Save+0x1B15] Promise Charm Warp
 Save+0x1CF1 STT Dodge Roll, STT Trinity Limit
 Save+0x1CF2 STT Fire
 Save+0x1CF3 STT Blizzard
