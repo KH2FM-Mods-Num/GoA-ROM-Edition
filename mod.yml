@@ -257,26 +257,16 @@ assets:
 - name: ard/al10.ard #Treasure Room (Checkpoint)
   method: binarc
   source:
-  - name: map
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/al10/map.script
-  - name: m_01 #Party Spawn
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/al10/m_01.yml
-  - name: m_11 #Room Transition to Treasure Room
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/al10/m_11.yml
   - name: evt
     type: areadatascript
     method: areadatascript
     source:
     - name: ard/al10/evt.script
+  - name: e_50 #Party Spawn
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/al10/e_50.yml
 - name: ard/al14.ard #Sandswept Ruins (Skip Jafar Clone)
   method: binarc
   source:

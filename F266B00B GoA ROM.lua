@@ -3,7 +3,7 @@
 --To Do: Check if stuff crashes after STT Beam or Sanctuary
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.52.5'
+local VersionNum = 'GoA Version 1.52.6'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -34,6 +34,7 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	BtlEnd = 0x1D490C0 --Something about end-of-battle camera
 	TxtBox = 0x1D48D54 --Last Displayed Textbox
 	DemCln = 0x1D48DEC --Demyx Clone Status
+	OogBox = 0x1B11B7C --Oogie Boogie Present Count
 	MSNLoad  = 0x04FA440
 	Slot1    = 0x1C6C750 --Unit Slot 1
 	NextSlot = 0x268
@@ -72,6 +73,7 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	BtlEnd = 0x2A0D3A0 - 0x56450E
 	TxtBox = 0x074BC70 - 0x56450E
 	DemCln = 0x2A0CF74 - 0x56450E
+	OogBox = 0x25978AC - 0x56450E
 	MSNLoad  = 0x0BF08C0 - 0x56450E
 	Slot1    = 0x2A20C58 - 0x56450E
 	NextSlot = 0x278
@@ -271,7 +273,7 @@ if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	BitNot(Save+0x1CD2,0x80) --TT_SCENARIO_1_START (Show Gameplay Elements)
 	BitOr(Save+0x1CEA,0x02)  --TT_SORA_OLD_END (Play as KH2 Sora)
 	BitOr(Save+0x1CEB,0x08)  --TT_ROXAS_START (Prepare Roxas' Flag)
-	WriteByte(Pause,0x02) --Disable Pause
+	WriteByte(Pause,2) --Disable Pause
 	if ReadInt(CutLen) == 0x246 then --Dusks attack
 		WriteByte(CutSkp,1)
 	end
@@ -1209,6 +1211,10 @@ if Place == 0x090E and Events(0x37,0x37,0x37) then
 	WriteInt(Slot3+8,0)
 	WriteInt(Slot4+8,0)
 end]]
+--"Fast" Oogie
+if Place == 0x090E and Events(0x37,0x37,0x37) and math.max(ReadInt(Slot4+8),ReadInt(Slot3+8),ReadInt(Slot2+8)) > 0 then
+	WriteByte(OogBox,11)
+end
 --[[Fast Gift Wrapping
 if Place == 0x0A0E and Events(0x3F,0x3F,0x3F) then
 	WriteString(Obj0+0x0ED70,'F_NM170_XL')
@@ -1276,10 +1282,10 @@ elseif Place == 0x0907 and Events(Null,Null,0x03) then --A Path is Revealed
 elseif Place == 0x0D07 and Events(Null,Null,0x02) then --Beyond the Doors
 	WriteByte(Save+0x1D7F,4)
 elseif Place == 0x0A07 and Events(0x3A,0x3A,0x3A) then --Back to Agrabah!
-	WriteShort(Save+0x0ACC,0x02) --Treasure Room MAP (Transition to The Peddler's Shop (Poor))
+	WriteShort(Save+0x0AD0,0x02) --Treasure Room EVT
 elseif Place == 0x0207 and Events(Null,Null,0x03) then --Behind the Curtain
 	WriteByte(Save+0x1D7F,5)
-	WriteShort(Save+0x0ACC,0x00) --Treasure Room MAP (Regular)
+	WriteShort(Save+0x0AD0,0x00) --Treasure Room EVT
 elseif Place == 0x0307 and Events(Null,Null,0x03) then --Come Back Soon
 	WriteByte(Save+0x1D7F,6)
 elseif ReadByte(Save+0x1D7F) == 6 and ReadByte(Save+0x35C0) > 0 then --2nd Visit
