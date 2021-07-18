@@ -1,9 +1,9 @@
 --ROM Version
---Last Update: Minor Cleanup
+--Last Update: LuaFrontend Support
 --To Do: Check if stuff crashes after STT Beam or Sanctuary
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.52.6'
+local VersionNum = 'GoA Version 1.52.7'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -34,7 +34,6 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	BtlEnd = 0x1D490C0 --Something about end-of-battle camera
 	TxtBox = 0x1D48D54 --Last Displayed Textbox
 	DemCln = 0x1D48DEC --Demyx Clone Status
-	OogBox = 0x1B11B7C --Oogie Boogie Present Count
 	MSNLoad  = 0x04FA440
 	Slot1    = 0x1C6C750 --Unit Slot 1
 	NextSlot = 0x268
@@ -45,8 +44,8 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	Menu1    = 0x1C5FF18 --Menu 1 (main command menu)
 	NextMenu = 0x4
 elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
-	if ENGINE_VERSION < 4.1 then
-		ConsolePrint('LuaBackend is Outdated. Things might not work properly.',2)
+	if ENGINE_VERSION < 5.0 then
+		ConsolePrint('LuaFrontend is Outdated. Things might not work properly.',2)
 	end
 	ConsolePrint(VersionNum,0)
 	Platform = 'PC'
@@ -73,7 +72,6 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	BtlEnd = 0x2A0D3A0 - 0x56450E
 	TxtBox = 0x074BC70 - 0x56450E
 	DemCln = 0x2A0CF74 - 0x56450E
-	OogBox = 0x25978AC - 0x56450E
 	MSNLoad  = 0x0BF08C0 - 0x56450E
 	Slot1    = 0x2A20C58 - 0x56450E
 	NextSlot = 0x278
@@ -136,25 +134,47 @@ if Platform == 'PS2' and ReadInt(ARD) == 0x01524142 and Subfile <= ReadInt(ARD+4
 	elseif Type == 'String' then
 		WriteString(Address,Value)
 	end
-elseif Platform == 'PC' and ReadIntA(ARD) == 0x01524142 and Subfile <= ReadIntA(ARD+4) then
+elseif Platform == 'PC' then
 	local x = ARD&0xFFFFFF000000
-	local y = ReadIntA(Subpoint)&0xFFFFFF
-	Address = x + y + Offset
-	if Type == 'Short' then
-		WriteShortA(Address,Value)
-	elseif Type == 'Float' then
-		WriteFloatA(Address,Value)
-	elseif Type == 'Int' then
-		WriteIntA(Address,Value)
-	elseif Type == 'String' then
-		WriteStringA(Address,Value)
+	if ENGINE_VERSION < 5.0 then --LuaBackend
+		if ReadIntA(ARD) == 0x01524142 and Subfile <= ReadIntA(ARD+4) then
+			local y = ReadIntA(Subpoint)&0xFFFFFF
+			Address = x + y + Offset
+			if Type == 'Short' then
+				WriteShortA(Address,Value)
+			elseif Type == 'Float' then
+				WriteFloatA(Address,Value)
+			elseif Type == 'Int' then
+				WriteIntA(Address,Value)
+			elseif Type == 'String' then
+				WriteStringA(Address,Value)
+			end
+		end
+	else --LuaFrontend
+		if ReadInt(ARD,true) == 0x01524142 and Subfile <= ReadInt(ARD+4,true) then
+			local y = ReadInt(Subpoint,true)&0xFFFFFF
+			Address = x + y + Offset
+			if Type == 'Short' then
+				WriteShort(Address,Value,true)
+			elseif Type == 'Float' then
+				WriteFloat(Address,Value,true)
+			elseif Type == 'Int' then
+				WriteInt(Address,Value,true)
+			elseif Type == 'String' then
+				WriteString(Address,Value,true)
+			end
+		end
 	end
 end
 end
 
 function BitOr(Address,Bit,Abs)
 if Abs and Platform == 'PC' then
-	WriteByteA(Address,ReadByte(Address)|Bit)
+	if ENGINE_VERSION < 5.0 then
+		WriteByteA(Address,ReadByte(Address)|Bit)
+	else
+		WriteByte(Address,ReadByte(Address)|Bit,true)
+	end
 else
 	WriteByte(Address,ReadByte(Address)|Bit)
 end
@@ -162,7 +182,11 @@ end
 
 function BitNot(Address,Bit,Abs)
 if Abs and Platform == 'PC' then
-	WriteByteA(Address,ReadByte(Address)&~Bit)
+	if ENGINE_VERSION < 5.0 then
+		WriteByteA(Address,ReadByte(Address)&~Bit)
+	else
+		WriteByte(Address,ReadByte(Address)&~Bit,true)
+	end
 else
 	WriteByte(Address,ReadByte(Address)&~Bit)
 end
@@ -546,7 +570,11 @@ if true then --No Valor, Wisdom, Master, or Final
 		CurSubmenu = ReadByte(CurSubmenu)
 	elseif Platform == 'PC' then
 		CurSubmenu = ReadLong(Menu2)
-		CurSubmenu = ReadByteA(CurSubmenu)
+		if ENGINE_VERSION < 5.0 then
+			CurSubmenu = ReadByteA(CurSubmenu)
+		else
+			CurSubmenu = ReadByte(CurSubmenu,true)
+		end
 	end
 	if CurSubmenu == 7 and ReadByte(Save+0x36C0)&0x56 == 0x00 then --In Summon menu without Forms
 		BitOr(Save+0x36C0,0x02) --Add Valor Form
@@ -1211,10 +1239,6 @@ if Place == 0x090E and Events(0x37,0x37,0x37) then
 	WriteInt(Slot3+8,0)
 	WriteInt(Slot4+8,0)
 end]]
---"Fast" Oogie
-if Place == 0x090E and Events(0x37,0x37,0x37) and math.max(ReadInt(Slot4+8),ReadInt(Slot3+8),ReadInt(Slot2+8)) > 0 then
-	WriteByte(OogBox,11)
-end
 --[[Fast Gift Wrapping
 if Place == 0x0A0E and Events(0x3F,0x3F,0x3F) then
 	WriteString(Obj0+0x0ED70,'F_NM170_XL')
@@ -2025,30 +2049,30 @@ if ReadShort(Save+0x0650) == 0x0A then
 end
 --Mushroom XIII Unlocked
 if Place == 0x0204 and Events(Null,0x02,0x03) and ReadByte(Save+0x36B4) > 0 then
-	WriteShort(Save+0x3E94,0x03) --Mushroom I
-	WriteShort(Save+0x3E98,99)
-	WriteShort(Save+0x3E9C,0x03) --Mushroom II
-	WriteShort(Save+0x3EA0,99)
-	WriteShort(Save+0x3EA4,0x03) --Mushroom III
-	WriteShort(Save+0x3EA8,500)
-	WriteShort(Save+0x3EAC,0x03) --Mushroom IV
-	WriteShort(Save+0x3EB0,99)
-	WriteShort(Save+0x3EB4,0x04) --Mushroom V
-	WriteShort(Save+0x3EB8,180)
-	WriteShort(Save+0x3EBC,0x04) --Mushroom VI
-	WriteShort(Save+0x3EC0,1860)
-	WriteShort(Save+0x3EC4,0x04) --Mushroom VII
-	WriteShort(Save+0x3EC8,180)
-	WriteShort(Save+0x3ECC,0x03) --Mushroom VIII
-	WriteShort(Save+0x3ED0,99)
-	WriteShort(Save+0x3ED4,0x03) --Mushroom IX
-	WriteShort(Save+0x3ED8,99)
-	WriteShort(Save+0x3EDC,0x04) --Mushroom X
-	WriteShort(Save+0x3EE0,2160)
-	WriteShort(Save+0x3EE4,0x04) --Mushroom XI
-	WriteShort(Save+0x3EE8,900)
-	WriteShort(Save+0x3EEC,0x03) --Mushroom XII
-	WriteShort(Save+0x3EF0,50)
+	WriteShort(Save+0x3E94,3) --Mushroom I
+	WriteShort(Save+0x3E98,70)
+	WriteShort(Save+0x3E9C,3) --Mushroom II
+	WriteShort(Save+0x3EA0,80)
+	WriteShort(Save+0x3EA4,3) --Mushroom III
+	WriteShort(Save+0x3EA8,450)
+	WriteShort(Save+0x3EAC,3) --Mushroom IV
+	WriteShort(Save+0x3EB0,85)
+	WriteShort(Save+0x3EB4,4) --Mushroom V
+	WriteShort(Save+0x3EB8,600)
+	WriteShort(Save+0x3EBC,4) --Mushroom VI
+	WriteShort(Save+0x3EC0,2700)
+	WriteShort(Save+0x3EC4,4) --Mushroom VII
+	WriteShort(Save+0x3EC8,600)
+	WriteShort(Save+0x3ECC,3) --Mushroom VIII
+	WriteShort(Save+0x3ED0,85)
+	WriteShort(Save+0x3ED4,3) --Mushroom IX
+	WriteShort(Save+0x3ED8,75)
+	WriteShort(Save+0x3EDC,4) --Mushroom X
+	WriteShort(Save+0x3EE0,3300)
+	WriteShort(Save+0x3EE4,4) --Mushroom XI
+	WriteShort(Save+0x3EE8,1140)
+	WriteShort(Save+0x3EEC,3) --Mushroom XII
+	WriteShort(Save+0x3EF0,40)
 end
 end
 
@@ -2629,7 +2653,7 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 		WriteShort(Save+0x24F0,Struggle)
 	elseif Place == 0x1402 then --Axel II (Oblivion is Equipped & Unequipped Automatically)
 	elseif Equip ~= Store then
-		if ReadByte(Cntrl) == 0x00 then
+		if ReadByte(Cntrl) == 0 then
 			WriteShort(Save+0x1CF9,Equip) --Change Stored Keyblade
 		elseif Store > 0 then
 			WriteShort(Save+0x24F0,Store) --Change Equipped Keyblade
@@ -2808,7 +2832,7 @@ if ReadShort(Save+0x0D90) == 0x00 then
 end
 --Faster A Blustery Rescue
 if Place == 0x0609 then --In Minigame
-	if ReadByte(Cntrl) == 0x00 then --Minigame Started
+	if ReadByte(Cntrl) == 0 then --Minigame Started
 		Faster(true)
 	end
 elseif Place == 0x0409 then --Minigame Ended
@@ -2816,7 +2840,7 @@ elseif Place == 0x0409 then --Minigame Ended
 end
 --Faster Hunny Slider
 if Place == 0x0709 then --In Minigame
-	if ReadByte(Cntrl) == 0x00 then --Minigame Started
+	if ReadByte(Cntrl) == 0 then --Minigame Started
 		Faster(true)
 	end
 elseif Place == 0x0309 then --Minigame Ended
