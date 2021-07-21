@@ -563,11 +563,6 @@ assets:
 - name: ard/hb26.ard #Garden of Assemblage (Various Stuff)
   method: binarc
   source:
-  - name: m_00 #Donald -> Save Point, Goofy -> Moogle Shop
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/hb26/m_00.yml
   - name: m_10 #Event Trigger to 100 Acre Wood
     type: areadataspawn
     method: spawnpoint
@@ -578,7 +573,7 @@ assets:
     method: spawnpoint
     source:
     - name: ard/hb26/m_11.yml
-  - name: m_70 #Chest Relocation
+  - name: m_70 #Chest Relocation, Save Point, Moogle Shop
     type: areadataspawn
     method: spawnpoint
     source:
@@ -588,11 +583,6 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb26/evt.script
-  - name: e_50 #Donald -> Save Point, Goofy -> Moogle Shop
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/hb26/e_50.yml
 - name: ard/hb32.ard #The Old Mansion (AS Warp)
   method: binarc
   source:
