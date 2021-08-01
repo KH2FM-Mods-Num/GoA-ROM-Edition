@@ -103,8 +103,8 @@ assets:
     type: list
     method: listpatch
     source:
-      - name: ItemList.yml
-        type: item
+    - name: ItemList.yml
+      type: item
 #Relocate Twilight Thorn HP Bonus & Unequip Auto Limit
 - name: 00battle.bin
   method: binarc
@@ -113,14 +113,19 @@ assets:
     type: list
     method: listpatch
     source:
-      - name: BonsList.yml
-        type: bons
+    - name: BonsList.yml
+      type: bons
+  - name: enmp
+    type: list
+    method: copy
+    source:
+    - name: Enmp.bin
   - name: plrp
     type: list
     method: listpatch
     source:
-      - name: PlrpList.yml
-        type: plrp
+    - name: PlrpList.yml
+      type: plrp
 #Big Chest -> Small Chest
 - name: 00objentry.bin
   method: listpatch

@@ -270,19 +270,13 @@ end
 
 function NewGame()
 --Before New Game
-if Place == 0xFFFF or Place == 0x0101 or (Place == 0x0102 and Events(0x34,0x34,0x34)) then --In Main Menu, Loop Demo, or Opening
-	WriteShort(Btl0+0x2EB4C,500) --Fast MCP (50% Base HP)
-	WriteShort(Btl0+0x2EB8C,300) --Double Max Damage %
-	WriteShort(Btl0+0x2EB8E,100) --Double Min Damage %
-	--Change Form's Icons in PC From Analog Stick
-	if Platform == 'PC' then
-		WriteByte(Sys3+0x116DB,0x3B) --Valor
-		WriteByte(Sys3+0x116F3,0x3B) --Wisdom
-		WriteByte(Sys3+0x1170B,0x3B) --Limit
-		WriteByte(Sys3+0x11723,0x3B) --Master
-		WriteByte(Sys3+0x1173B,0x3B) --Final
-		WriteByte(Sys3+0x11753,0x3B) --Anti
-	end
+if Platform == 'PC' and ReadByte(Sys3+0x116DB) == 0x19 then --Change Form's Icons in PC From Analog Stick
+	WriteByte(Sys3+0x116DB,0x3B) --Valor
+	WriteByte(Sys3+0x116F3,0x3B) --Wisdom
+	WriteByte(Sys3+0x1170B,0x3B) --Limit
+	WriteByte(Sys3+0x11723,0x3B) --Master
+	WriteByte(Sys3+0x1173B,0x3B) --Final
+	WriteByte(Sys3+0x11753,0x3B) --Anti
 end
 --Start New Game 1
 if Place == 0x0102 and Events(0x34,0x34,0x34) then --Opening Cutscene
