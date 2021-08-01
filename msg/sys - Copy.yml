@@ -1,0 +1,9131 @@
+- id: 479
+  en: '-'
+- id: 480
+  en: Attack
+- id: 481
+  en: Magic
+- id: 482
+  en: Items
+- id: 483
+  en: Drive
+- id: 484
+  en: Revert
+- id: 485
+  en: Valor Form
+- id: 486
+  en: Wisdom Form
+- id: 487
+  en: Master Form
+- id: 488
+  en: Final Form
+- id: 489
+  en: Antiform
+- id: 490
+  en: Talk
+- id: 491
+  en: Examine
+- id: 492
+  en: Reversal
+- id: 493
+  en: Full Swing
+- id: 494
+  en: Tackle
+- id: 495
+  en: Snag
+- id: 496
+  en: Sparkle Ray
+- id: 497
+  en: Open
+- id: 498
+  en: Agrabah
+- id: 499
+  en: Bazaar
+- id: 500
+  en: The Peddler´s Shop
+- id: 501
+  en: The Palace
+- id: 502
+  en: Vault
+- id: 503
+  en: Above Agrabah
+- id: 504
+  en: Palace Walls
+- id: 505
+  en: 'The Cave of Wonders: Entrance'
+- id: 507
+  en: 'The Cave of Wonders: Stone Guardians'
+- id: 508
+  en: 'The Cave of Wonders: Treasure Room'
+- id: 509
+  en: Ruined Chamber
+- id: 510
+  en: 'The Cave of Wonders: Valley of Stone'
+- id: 511
+  en: '{:width 95}The Cave of Wonders: Chasm of Challenges'
+- id: 512
+  en: Sandswept Ruins
+- id: 513
+  en: The Peddler´s Shop
+- id: 514
+  en: Entrance Hall
+- id: 515
+  en: Parlor
+- id: 516
+  en: Belle´s Room
+- id: 517
+  en: The Beast´s Room
+- id: 518
+  en: Ballroom
+- id: 519
+  en: Ballroom
+- id: 520
+  en: Courtyard
+- id: 521
+  en: The East Wing
+- id: 522
+  en: The West Hall
+- id: 523
+  en: The West Wing
+- id: 524
+  en: Dungeon
+- id: 525
+  en: Undercroft
+- id: 526
+  en: Secret Passage
+- id: 527
+  en: Bridge
+- id: 528
+  en: Ballroom
+- id: 529
+  en: World ZZ
+- id: 530
+  en: End of Sea
+- id: 531
+  en: Twilight Town
+- id: 532
+  en: Destiny Islands
+- id: 533
+  en: Hollow Bastion
+- id: 534
+  en: Beast´s Castle
+- id: 535
+  en: Olympus Coliseum
+- id: 536
+  en: Agrabah
+- id: 537
+  en: The Land of Dragons
+- id: 538
+  en: 100 Acre Wood
+- id: 539
+  en: Pride Lands
+- id: 540
+  en: Atlantica
+- id: 541
+  en: Disney Castle
+- id: 542
+  en: Timeless River
+- id: 543
+  en: Halloween Town
+- id: 544
+  en: World FA
+- id: 545
+  en: Port Royal
+- id: 546
+  en: Space Paranoids
+- id: 547
+  en: The World That Never Was
+- id: 548
+  en: Asteroid Sweep
+- id: 549
+  en: Stardust Sweep
+- id: 550
+  en: Broken Highway
+- id: 551
+  en: Ancient Highway
+- id: 552
+  en: Phantom Storm
+- id: 553
+  en: Sunlight Storm
+- id: 554
+  en: Splash Island
+- id: 555
+  en: Floating Island
+- id: 556
+  en: Assault of the Dreadnought
+- id: 563
+  en: Audience Chamber
+- id: 564
+  en: Library
+- id: 565
+  en: Colonnade
+- id: 566
+  en: Courtyard
+- id: 567
+  en: The Hall of the Cornerstone
+- id: 568
+  en: The Hall of the Cornerstone
+- id: 569
+  en: Gummi Hangar
+- id: 570
+  en: The Wilderness
+- id: 571
+  en: Triton´s Throne
+- id: 572
+  en: Ariel´s Grotto
+- id: 573
+  en: Undersea Courtyard
+- id: 574
+  en: Undersea Courtyard
+- id: 575
+  en: 'The Palace: Performance Hall'
+- id: 576
+  en: Sunken Ship
+- id: 577
+  en: The Shore
+- id: 578
+  en: The Shore
+- id: 579
+  en: Bamboo Grove
+- id: 580
+  en: Encampment
+- id: 581
+  en: Checkpoint
+- id: 582
+  en: Mountain Trail
+- id: 583
+  en: Village
+- id: 584
+  en: Village Cave
+- id: 585
+  en: Ridge
+- id: 586
+  en: Summit
+- id: 587
+  en: Imperial Square
+- id: 588
+  en: Palace Gate
+- id: 589
+  en: Antechamber
+- id: 590
+  en: Throne Room
+- id: 591
+  en: Village
+- id: 592
+  en: Pit Cell
+- id: 593
+  en: Canyon
+- id: 594
+  en: Game Grid
+- id: 595
+  en: Dataspace
+- id: 596
+  en: 'I/O Tower: Hallway'
+- id: 597
+  en: 'I/O Tower: Communications Room'
+- id: 598
+  en: Simulation Hangar
+- id: 599
+  en: Solar Sailer Simulation
+- id: 600
+  en: Central Computer Mesa
+- id: 601
+  en: Central Computer Core
+- id: 602
+  en: Solar Sailer Simulation
+- id: 603
+  en: Pride Rock
+- id: 604
+  en: Stone Hollow
+- id: 605
+  en: The King´s Den
+- id: 606
+  en: Wildebeest Valley
+- id: 607
+  en: The Savannah
+- id: 608
+  en: Elephant Graveyard
+- id: 609
+  en: Gorge
+- id: 610
+  en: Wastelands
+- id: 611
+  en: Jungle
+- id: 612
+  en: Oasis
+- id: 613
+  en: Pride Rock
+- id: 614
+  en: Oasis
+- id: 615
+  en: Overlook
+- id: 616
+  en: Peak
+- id: 617
+  en: The Hundred Acre Wood
+- id: 618
+  en: Starry Hill
+- id: 619
+  en: Pooh Bear´s House
+- id: 620
+  en: Rabbit´s House
+- id: 621
+  en: Piglet´s House
+- id: 622
+  en: Kanga´s House
+- id: 623
+  en: A Windsday Tale
+- id: 624
+  en: The Honey Hunt
+- id: 625
+  en: Blossom Valley
+- id: 626
+  en: The Spooky Cave
+- id: 632
+  en: >-
+    Goofy:
+
+    We have to help them!
+- id: 634
+  en: >-
+    Sora:
+
+    We´ve got to get to the palace!
+- id: 635
+  en: ''
+- id: 636
+  en: >-
+    Sora:
+
+    This can´t be right...
+- id: 637
+  en: ''
+- id: 638
+  en: >-
+    Sora:
+
+    C´mon, let´s follow Aladdin!
+- id: 639
+  en: ''
+- id: 642
+  en: >-
+    Ping:
+
+    We need permission from
+
+    the Captain.
+- id: 644
+  en: >-
+    Ping:
+
+    We can´t go into the city
+
+    right now.
+- id: 648
+  en: >-
+    Mulan:
+
+    We better not. We don´t want
+
+    to make anyone angry.
+- id: 652
+  en: >-
+    Mulan:
+
+    Something´s not right. We can´t
+
+    go in from here.
+- id: 662
+  en: >-
+    Sora:
+
+    I don´t think it´s going to open.
+- id: 664
+  en: >-
+    Sora:
+
+    We´ve got to help her!
+- id: 666
+  en: >-
+    Sora:
+
+    We´ve got to help her!
+- id: 668
+  en: >-
+    Sora:
+
+    This isn´t the way to Hades.
+- id: 672
+  en: >-
+    Auron:
+
+    It´s too dangerous to go back now.
+- id: 676
+  en: >-
+    Sora:
+
+    But what about Cerberus?
+- id: 680
+  en: >-
+    Sora:
+
+    Poor Hercules...we can´t
+
+    just leave him.
+- id: 682
+  en: >-
+    Sora:
+
+    Hercules is in a match right now!
+- id: 686
+  en: Cornerstone Hill
+- id: 687
+  en: Pier
+- id: 688
+  en: Waterway
+- id: 689
+  en: Wharf
+- id: 690
+  en: Lilliput
+- id: 691
+  en: Building Site
+- id: 692
+  en: Scene of the Fire
+- id: 693
+  en: Mickey´s House
+- id: 694
+  en: Villain´s Vale
+- id: 695
+  en: The Dark Margin
+- id: 696
+  en: ???
+- id: 697
+  en: Halloween Town Square
+- id: 698
+  en: Dr. Finklestein´s Lab
+- id: 699
+  en: Graveyard
+- id: 700
+  en: Curly Hill
+- id: 701
+  en: Hinterlands
+- id: 702
+  en: Yuletide Hill
+- id: 703
+  en: Candy Cane Lane
+- id: 704
+  en: Christmas Tree Plaza
+- id: 705
+  en: Santa´s House
+- id: 706
+  en: 'Toy Factory: Shipping and Receiving'
+- id: 707
+  en: 'Toy Factory: The Wrapping Room'
+- id: 708
+  en: The Coliseum
+- id: 709
+  en: Coliseum Gates
+- id: 710
+  en: Coliseum Gates
+- id: 711
+  en: Underworld Entrance
+- id: 712
+  en: Coliseum Foyer
+- id: 713
+  en: Valley of the Dead
+- id: 714
+  en: Hades´ Chamber
+- id: 715
+  en: 'Cave of the Dead: Entrance'
+- id: 716
+  en: Well of Captivity
+- id: 717
+  en: The Underdrome
+- id: 718
+  en: 'Cave of the Dead: Inner Chamber'
+- id: 719
+  en: 'Underworld Caverns: Entrance'
+- id: 720
+  en: The Lock
+- id: 721
+  en: The Underdrome
+- id: 722
+  en: Coliseum Gates
+- id: 723
+  en: 'Cave of the Dead: Passage'
+- id: 724
+  en: 'Underworld Caverns: The Lost Road'
+- id: 725
+  en: 'Underworld Caverns: Atrium'
+- id: 726
+  en: Villain´s Vale
+- id: 727
+  en: The Dark Depths
+- id: 728
+  en: The Great Maw
+- id: 729
+  en: Crystal Fissure
+- id: 730
+  en: Castle Gate
+- id: 731
+  en: Ansem´s Study
+- id: 732
+  en: Postern
+- id: 733
+  en: Restoration Site
+- id: 734
+  en: Bailey
+- id: 735
+  en: Borough
+- id: 736
+  en: Beach
+- id: 737
+  en: 'Main Island: Ocean´s Road'
+- id: 738
+  en: 'Main Island: Shore'
+- id: 739
+  en: The Empty Realm
+- id: 740
+  en: Roxas´s Room
+- id: 741
+  en: The Usual Spot
+- id: 742
+  en: Back Alley
+- id: 743
+  en: Sandlot
+- id: 744
+  en: Rampart
+- id: 745
+  en: Harbor
+- id: 746
+  en: Town
+- id: 747
+  en: The Interceptor
+- id: 748
+  en: 'The Interceptor: Ship´s Hold'
+- id: 749
+  en: The Black Pearl
+- id: 750
+  en: 'The Black Pearl: Captain´s Stateroom'
+- id: 751
+  en: The Interceptor
+- id: 752
+  en: 'Isla de Muerta: Rock Face'
+- id: 753
+  en: 'Isla de Muerta: Cave Mouth'
+- id: 754
+  en: 'Isla de Muerta: Treasure Heap'
+- id: 755
+  en: 'Ship Graveyard: The Interceptor´s Hold'
+- id: 756
+  en: 'Isla de Muerta: Powder Store'
+- id: 757
+  en: 'Isla de Muerta: Moonlight Nook'
+- id: 758
+  en: 'Ship Graveyard: Seadrift Keep'
+- id: 759
+  en: 'Ship Graveyard: Seadrift Row'
+- id: 760
+  en: Potion
+- id: 761
+  en: >-
+    Restores 40% of the target´s HP.
+
+    An equippable item.
+- id: 762
+  en: Hi-Potion
+- id: 763
+  en: >-
+    Restores 60% of the target´s HP.
+
+    An equippable item.
+- id: 764
+  en: Ether
+- id: 765
+  en: >-
+    {:width 90}Fully restores target´s MP. Restores Charge
+
+    Gauge during MP Charge. An equippable item.{:reset}
+- id: 766
+  en: Elixir
+- id: 767
+  en: >-
+    Fully restores target´s HP and MP.
+
+    An equippable item.
+- id: 768
+  en: Mega-Potion
+- id: 769
+  en: >-
+    Restores 40% of the Party´s HP.
+
+    An equippable item.
+- id: 770
+  en: Mega-Ether
+- id: 771
+  en: >-
+    {:width 90}Fully restores Party´s MP. Restores Charge
+
+    Gauge during MP Charge. An equippable item.{:reset}
+- id: 772
+  en: Megalixir
+- id: 773
+  en: >-
+    Fully restores Party´s HP and MP.
+
+    An equippable item.
+- id: 1093
+  en: '{:position 30,28}OK'
+- id: 1094
+  en: '{:position 30,28}Yes'
+- id: 1095
+  en: '{:position 25,28}No'
+- id: 1096
+  en: –––
+- id: 1097
+  en: 	None
+- id: 1098
+  en: There are no items.
+- id: 1099
+  en: Items
+- id: 1100
+  en: Equip
+- id: 1101
+  en: Abilities
+- id: 1102
+  en: Party
+- id: 1103
+  en: Status
+- id: 1104
+  en: Journal
+- id: 1105
+  en: Customize
+- id: 1106
+  en: Option
+- id: 1107
+  en: Make a Selection.
+- id: 1108
+  en: '{:icon button-triangle}'
+- id: 1109
+  en: Stock
+- id: 1110
+  en: Use
+- id: 1111
+  en: Throw away
+- id: 1112
+  en: Unused
+- id: 1113
+  en: Select item.
+- id: 1114
+  en: There are no items.
+- id: 1115
+  en: Weapons
+- id: 1116
+  en: Change main weapon.
+- id: 1117
+  en: Valor
+- id: 1118
+  en: Change Sub-Weapon used in Valor Form.
+- id: 1119
+  en: Master
+- id: 1120
+  en: Change Sub-Weapon used in Master Form.
+- id: 1121
+  en: Final
+- id: 1122
+  en: Change Sub-Weapon used in Final Form.
+- id: 1123
+  en: Armor
+- id: 1124
+  en: Change Armor.
+- id: 1125
+  en: Accessories
+- id: 1126
+  en: Change Accessories.
+- id: 1127
+  en: Items
+- id: 1128
+  en: Change Items.
+- id: 1129
+  en: Unequip items.
+- id: 1130
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+     If the {:icon auto-equip}{:color #00FF0080}auto-reload{:reset} function is turned
+     off for this item, all equipped items of 
+     the same type will be unequipped also.
+     Turn {:icon auto-equip}{:color #00FF0080}auto-reload{:reset} function Off?
+- id: 1131
+  en: Select Party Member.
+- id: 1132
+  en: Switch Party Member.
+- id: 1133
+  en: '{:color #F0F00080}Party Members have been switched.{:reset}'
+- id: 1134
+  en: Party In
+- id: 1135
+  en: Party Out
+- id: 1136
+  en: Goofy´s equipment has been put in stock.
+- id: 1137
+  en: Sparrow´s equipment has been put in stock.
+- id: 1138
+  en: Auron´s equipment has been put in stock.
+- id: 1139
+  en: Auron cannot be switched at this time.
+- id: 1140
+  en: Mulan cannot be switched at this time.
+- id: 1141
+  en: Aladdin cannot be switched at this time.※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※Beast cannot be switched at this time.
+- id: 1142
+  en: >-
+    Party Members cannot be switched and Summons cannot be
+
+    used until the fight is settled.
+- id: 1143
+  en: ''
+- id: 1144
+  en: Jack cannot be switched at this time.
+- id: 1145
+  en: Simba cannot be switched at this time.
+- id: 1146
+  en: Tron cannot be switched at this time.
+- id: 1147
+  en: Riku cannot be switched at this time.
+- id: 1148
+  en: >-
+    Ping will be joining the party and cannot be
+
+    switched out for some time.
+- id: 1149
+  en: '{:icon button-circle}'
+- id: 1150
+  en: '{:icon button-triangle}'
+- id: 1151
+  en: '{:icon button-square}'
+- id: 1152
+  en: '{:icon button-cross}'
+- id: 1153
+  en: MP Charge
+- id: 1154
+  en: Auto-Reload
+- id: 1155
+  en: Battle Style
+- id: 1156
+  en: Abilities
+- id: 1158
+  en: '{:icon ai-settings}Technic Attack'
+- id: 1159
+  en: '{:icon ai-settings}Target Attack'
+- id: 1160
+  en: '{:icon ai-settings}Huddle Attack'
+- id: 1161
+  en: '{:icon ai-settings}Party Attack'
+- id: 1162
+  en: '{:icon ai-settings}Sora Attack'
+- id: 1163
+  en: '{:icon ai-settings}Relentless Attack'
+- id: 1164
+  en: Twin Howl
+- id: 1165
+  en: Stalwart Fang
+- id: 1166
+  en: Outcry
+- id: 1167
+  en: Last Howl
+- id: 1168
+  en: Bushido
+- id: 1169
+  en: Shooting Star
+- id: 1170
+  en: Banishing Blade
+- id: 1171
+  en: Spiral
+- id: 1172
+  en: Red Rocket
+- id: 1173
+  en: Flametongue
+- id: 1174
+  en: Heat Lance
+- id: 1175
+  en: Red Meteor
+- id: 1176
+  en: Whirli-Goof
+- id: 1177
+  en: Whirli-Goofra
+- id: 1178
+  en: Whirli-Goofga
+- id: 1179
+  en: Ride the Wind
+- id: 1180
+  en: Soar
+- id: 1181
+  en: Cyclone
+- id: 1182
+  en: Guard
+- id: 1183
+  en: Kickback
+- id: 1184
+  en: Full Swing
+- id: 1185
+  en: Jump!
+- id: 1186
+  en: Evade
+- id: 1187
+  en: Dog Paddle
+- id: 1188
+  en: Push
+- id: 1189
+  en: Push Harder
+- id: 1190
+  en: Waken
+- id: 1191
+  en: Release
+- id: 1192
+  en: Reversal
+- id: 1193
+  en: Bump
+- id: 1194
+  en: Meteor Spike
+- id: 1195
+  en: Slide
+- id: 1196
+  en: Vertigo Toss
+- id: 1197
+  en: Hang On
+- id: 1198
+  en: Let Go
+- id: 1199
+  en: Connect
+- id: 1200
+  en: Bat Cry
+- id: 1201
+  en: Lance Tug
+- id: 1202
+  en: Learn
+- id: 1203
+  en: Jump
+- id: 1204
+  en: Wake Up!
+- id: 1205
+  en: Get Up!
+- id: 1206
+  en: Charge
+- id: 1207
+  en: Step Vault
+- id: 1208
+  en: Slingshot
+- id: 1209
+  en: Release
+- id: 1210
+  en: Catch
+- id: 1211
+  en: Pendulum Round
+- id: 1212
+  en: Release
+- id: 1213
+  en: Light
+- id: 1214
+  en: Restore
+- id: 1215
+  en: Sprinkle
+- id: 1216
+  en: Vanquish
+- id: 1217
+  en: Finish
+- id: 1218
+  en: Open The Door
+- id: 1219
+  en: Enter The Book
+- id: 1220
+  en: Leave The Book
+- id: 1221
+  en: Depart
+- id: 1222
+  en: Warp
+- id: 1223
+  en: Shop
+- id: 1224
+  en: Approach
+- id: 1225
+  en: Move
+- id: 1226
+  en: Ask For Help
+- id: 1227
+  en: Approach
+- id: 1228
+  en: Persuade
+- id: 1229
+  en: Report
+- id: 1230
+  en: '{:width 83}Ask About Missions'
+- id: 1231
+  en: '{:width 90}Examine The Book'
+- id: 1232
+  en: Approach
+- id: 1233
+  en: Tinker With It
+- id: 1234
+  en: Approach
+- id: 1235
+  en: Approach
+- id: 1236
+  en: '{:width 90}Enter Tournament'
+- id: 1237
+  en: '{:width 90}Enter Tournament'
+- id: 1238
+  en: Stop
+- id: 1239
+  en: '{:width 75}Go To The Tournament'
+- id: 1240
+  en: '{:width 90}Enter Tournament'
+- id: 1241
+  en: Help Her Up
+- id: 1242
+  en: Train
+- id: 1243
+  en: Approach
+- id: 1244
+  en: Punish
+- id: 1245
+  en: Greet
+- id: 1246
+  en: Greet
+- id: 1247
+  en: Rescue
+- id: 1248
+  en: '{:width 85}Ask For The Bottle'
+- id: 1249
+  en: Greet
+- id: 1250
+  en: Cheer Up
+- id: 1251
+  en: Approach
+- id: 1252
+  en: Question
+- id: 1253
+  en: Interrogate
+- id: 1254
+  en: Depart
+- id: 1255
+  en: ???
+- id: 1256
+  en: Ask For Help
+- id: 1257
+  en: Make Toys
+- id: 1258
+  en: '{:width 90}Access Computer'
+- id: 1259
+  en: '{:width 90}Access Computer'
+- id: 1283
+  en: '?'
+- id: 1284
+  en: Summon
+- id: 1285
+  en: Party
+- id: 1286
+  en: Save
+- id: 1287
+  en: Limit
+- id: 1288
+  en: Fire
+- id: 1289
+  en: Fira
+- id: 1290
+  en: Firaga
+- id: 1291
+  en: Thunder
+- id: 1292
+  en: Thundara
+- id: 1293
+  en: Thundaga
+- id: 1294
+  en: Blizzard
+- id: 1295
+  en: Blizzara
+- id: 1296
+  en: Blizzaga
+- id: 1297
+  en: Cure
+- id: 1298
+  en: Cura
+- id: 1299
+  en: Curaga
+- id: 1300
+  en: Magnet
+- id: 1301
+  en: Magnera
+- id: 1302
+  en: Magnega
+- id: 1303
+  en: Reflect
+- id: 1304
+  en: Reflera
+- id: 1305
+  en: Reflega
+- id: 1308
+  en: Stitch
+- id: 1309
+  en: Genie
+- id: 1311
+  en: Sora
+- id: 1312
+  en: Donald
+- id: 1313
+  en: Goofy
+- id: 1314
+  en: Mickey
+- id: 1315
+  en: Auron
+- id: 1316
+  en: Ping
+- id: 1317
+  en: Mulan
+- id: 1318
+  en: Aladdin
+- id: 1319
+  en: Jack
+- id: 1320
+  en: Beast
+- id: 1321
+  en: Jack
+- id: 1322
+  en: Simba
+- id: 1323
+  en: Tron
+- id: 1324
+  en: Riku
+- id: 1325
+  en: Roxas
+- id: 1331
+  en: >-
+    Sora:
+
+    I don´t think Aladdin´s this way.
+- id: 1332
+  en: ''
+- id: 1333
+  en: >-
+    Sora:
+
+    The peddler´s shop isn´t that way...
+- id: 1334
+  en: ''
+- id: 1335
+  en: >-
+    Sora:
+
+    The peddler´s shop isn´t this way...
+- id: 1336
+  en: ''
+- id: 1337
+  en: >-
+    Iago:
+
+    Hey, what about me!?
+- id: 1338
+  en: ''
+- id: 1339
+  en: >-
+    Sora:
+
+    We should talk to the Beast first.
+- id: 1340
+  en: ''
+- id: 1341
+  en: >-
+    Sora:
+
+    We should talk to the Beast first.
+- id: 1342
+  en: ''
+- id: 1343
+  en: >-
+    Sora:
+
+    We should talk to the Beast first.
+- id: 1344
+  en: ''
+- id: 1345
+  en: >-
+    Sora:
+
+    We should talk to the Beast first.
+- id: 1346
+  en: ''
+- id: 1347
+  en: >-
+    Sora:
+
+    I don´t think it´s going to open.
+- id: 1349
+  en: >-
+    Sora:
+
+    It came from over there!
+- id: 1350
+  en: ''
+- id: 1351
+  en: >-
+    Sora:
+
+    They´re headed into town!
+- id: 1352
+  en: ''
+- id: 1353
+  en: >-
+    Sora:
+
+    Let´s go check out the cave.
+- id: 1354
+  en: ''
+- id: 1358
+  en: ''
+- id: 1359
+  en: >-
+    Sora:
+
+    Wait for Will´s signal!
+- id: 1360
+  en: ''
+- id: 1361
+  en: >-
+    Sora:
+
+    It sounded like it came from
+
+    the port.
+- id: 1375
+  en: >-
+    Minnie:
+
+    That´s not the way to
+
+    the audience chamber.
+- id: 1376
+  en: ''
+- id: 1377
+  en: >-
+    Sora:
+
+    Gotta get to the audience
+
+    chamber, fast!
+- id: 1378
+  en: ''
+- id: 1379
+  en: >-
+    Sora:
+
+    Maybe the Queen should
+
+    come with me.
+- id: 1380
+  en: ''
+- id: 1381
+  en: >-
+    Sora:
+
+    Let´s go into the book
+
+    and see Pooh!
+- id: 1391
+  en: >-
+    Sora:
+
+    Scar must still be around...
+- id: 1393
+  en: >-
+    Sora:
+
+    But that´s Rafiki´s private space.
+- id: 1395
+  en: >-
+    Sora:
+
+    Creepy...let´s stay out of there.
+- id: 1397
+  en: >-
+    Sora:
+
+    Everyone´s waiting at Pride Rock!
+- id: 1399
+  en: >-
+    Sora:
+
+    We can´t go to the savannah.
+- id: 1401
+  en: >-
+    Sora:
+
+    We can´t go into the gorge.
+- id: 1403
+  en: >-
+    Sora:
+
+    Simba sure could use some
+
+    cheering up.
+- id: 1405
+  en: >-
+    Sora:
+
+    How about we try that musical first?
+- id: 1407
+  en: >-
+    Sora:
+
+    C´mon, let´s follow Flounder!
+- id: 1408
+  en: >-
+    Sora:
+
+    This isn´t the right way.
+- id: 1410
+  en: >-
+    Ping:
+
+    What about our assignment?
+- id: 1412
+  en: >-
+    Mushu:
+
+    Shan-Yu went into that cave!
+- id: 1414
+  en: >-
+    Sora:
+
+    Hmm, looks like we can´t
+
+    go this way.
+- id: 1416
+  en: >-
+    Sora:
+
+    Let´s go see Dr. Finklestein.
+- id: 1417
+  en: ''
+- id: 1418
+  en: >-
+    Sora:
+
+    Zero knows where to go!
+- id: 1419
+  en: ''
+- id: 1420
+  en: >-
+    Sora:
+
+    Oogie´s blocked this way off!
+- id: 1421
+  en: Oogie´s blocked this way off!
+- id: 1422
+  en: >-
+    Sora:
+
+    Let´s go get those three jokers!
+- id: 1423
+  en: ''
+- id: 1424
+  en: >-
+    Sora:
+
+    We can´t just go barging in.
+- id: 1425
+  en: ''
+- id: 1426
+  en: >-
+    Sora:
+
+    It won´t open. Is he working
+
+    on something?
+- id: 1427
+  en: ''
+- id: 1428
+  en: >-
+    Sora:
+
+    We can´t get into the lab.
+- id: 1429
+  en: ''
+- id: 1430
+  en: >-
+    Sora:
+
+    I don´t think Pooh is over
+
+    this way.
+- id: 1431
+  en: ''
+- id: 1432
+  en: >-
+    Sora:
+
+    I´d better hear what everyone
+
+    has to say.
+- id: 1433
+  en: >-
+    Sora:
+
+    I need to bring everyone along!
+- id: 1434
+  en: >-
+    Sora:
+
+    Pete isn´t this way!
+- id: 1435
+  en: ''
+- id: 1436
+  en: >-
+    Sora:
+
+    We´ll lose Pete if we
+
+    don´t hurry!
+- id: 1437
+  en: ''
+- id: 1438
+  en: '{:icon exclamation-mark}Please reinsert the Kingdom Hearts {II} game disc.'
+- id: 1452
+  en: Tent
+- id: 1453
+  en: >-
+    Fully restores Party´s HP and MP.
+
+    Usable only from the Main Menu.
+- id: 1474
+  en: Kingdom Key
+- id: 1475
+  en: >-
+    A keychain attached to the Keyblade.
+
+    Halves damage taken in critical situations.
+- id: 1476
+  en: Oathkeeper
+- id: 1477
+  en: >-
+    Enhances magic and increases
+
+    the duration of a Drive Form.
+- id: 1478
+  en: Oblivion
+- id: 1479
+  en: >-
+    Has great strength, and allows
+
+    the Drive Gauge to restore quickly
+
+    during MP Charge.
+- id: 1480
+  en: Detection Saber
+- id: 1481
+  en: >-
+    The longest Keyblade available.
+
+    Detect motion and movement with this
+
+    weapon.
+- id: 1482
+  en: Frontier of Ultima
+- id: 1483
+  en: >-
+    A familiar Keyblade to Sora called
+
+    the Ultima Weapon.
+
+    It can be used for checking movement.
+- id: 1484
+  en: Antiform Dummy
+- id: 1485
+  en: Dummy
+- id: 1486
+  en: Mage´s Staff
+- id: 1487
+  en: A staff fit for a mage.
+- id: 1492
+  en: Knight´s Shield
+- id: 1493
+  en: A shield fit for a knight.
+- id: 1494
+  en: Detection Shield
+- id: 1495
+  en: >-
+    A shield crafted from all shields
+
+    used for detecting motion.
+- id: 1496
+  en: Test the King
+- id: 1497
+  en: A powerful and familiar shield!
+- id: 1498
+  en: Scimitar
+- id: 1499
+  en: >-
+    A sword, light as a feather,
+
+    for quick attacks!
+- id: 1500
+  en: Battlefields of War
+- id: 1501
+  en: Deals various attacks.
+- id: 1502
+  en: '{:width 85}Sword of the Ancestor'
+- id: 1503
+  en: Useful when fighting close enemies.
+- id: 1505
+  en: Dummy
+- id: 1506
+  en: Identity Disk
+- id: 1507
+  en: Attack enemies from afar.
+- id: 1509
+  en: Dummy
+- id: 1510
+  en: Beast´s Claw
+- id: 1511
+  en: ' '
+- id: 1512
+  en: Bone Fist
+- id: 1513
+  en: ' '
+- id: 1514
+  en: Proud Fang
+- id: 1515
+  en: ' '
+- id: 1516
+  en: '{:width 91}Skill and Crossbones'
+- id: 1517
+  en: >-
+    A pirate´s best friend, it can parry
+
+    enemy attacks.
+- id: 1518
+  en: Way to the Dawn
+- id: 1519
+  en: Deals various attacks.
+- id: 1522
+  en: Torn Pages
+- id: 1523
+  en: >-
+    Pages torn from Merlin´s book.
+
+    Try placing them back in the book.
+- id: 1532
+  en: Navigational Map
+- id: 1533
+  en: Navigational map for debug mode.
+- id: 1534
+  en: Castle Map
+- id: 1535
+  en: A map of the area.
+- id: 1536
+  en: Basement Map
+- id: 1537
+  en: A map of the area.
+- id: 1538
+  en: Castle Walls Map
+- id: 1539
+  en: A map of the area.
+- id: 1540
+  en: Coliseum Map
+- id: 1541
+  en: A map of the area.
+- id: 1542
+  en: Underworld Map
+- id: 1543
+  en: A map of the area.
+- id: 1544
+  en: Caverns Map
+- id: 1545
+  en: A map of the area.
+- id: 1546
+  en: Palace Map
+- id: 1547
+  en: A map of the area.
+- id: 1548
+  en: Encampment Area Map
+- id: 1549
+  en: A map of the area.
+- id: 1550
+  en: Village Area Map
+- id: 1551
+  en: A map of the area.
+- id: 1552
+  en: Cornerstone Hill Map
+- id: 1553
+  en: A map of the area.
+- id: 1554
+  en: Window of Time Map 2
+- id: 1555
+  en: A map of the area.
+- id: 1556
+  en: Lilliput Map
+- id: 1557
+  en: A map of the area.
+- id: 1558
+  en: Building Site Map
+- id: 1559
+  en: A map of the area.
+- id: 1560
+  en: Mickey´s House Map
+- id: 1561
+  en: A map of the area.
+- id: 1562
+  en: Disney Castle Map
+- id: 1563
+  en: A map of the area.
+- id: 1564
+  en: Agrabah Map
+- id: 1565
+  en: A map of the area.
+- id: 1566
+  en: Cave of Wonders Map
+- id: 1567
+  en: A map of the area.
+- id: 1568
+  en: Ruins Map
+- id: 1569
+  en: A map of the area.
+- id: 1570
+  en: Undersea Kingdom Map
+- id: 1571
+  en: A map of the area.
+- id: 1572
+  en: Starry Hill
+- id: 1573
+  en: A map of the area.
+- id: 1574
+  en: 100 Acre Wood Map
+- id: 1575
+  en: A map of the area.
+- id: 1576
+  en: Rabbit´s Howse Map
+- id: 1577
+  en: A map of the area.
+- id: 1578
+  en: Piglet´s Howse Map
+- id: 1579
+  en: A map of the area.
+- id: 1580
+  en: Kanga´s Howse Map
+- id: 1581
+  en: A map of the area.
+- id: 1582
+  en: Spooky Cave Map
+- id: 1583
+  en: A map of the area.
+- id: 1588
+  en: Fire Element
+- id: 1589
+  en: >-
+    Flames appear and revolve around you.
+
+    {:width 90}Use from the Magic Command. {:color #F0F00080}MP Cost:{:width 100} 12{:reset}
+- id: 1590
+  en: Blizzard Element
+- id: 1591
+  en: >-
+    Unleashes ice crystals at the target.
+
+    {:width 90}Use from the Magic Command. {:color #F0F00080}MP Cost:{:width 100} 15{:reset}
+- id: 1592
+  en: Thunder Element
+- id: 1593
+  en: >-
+    Drops lightning bolts on the target.
+
+    {:width 90}Use from the Magic Command. {:color #F0F00080}MP Cost:{:width 100} 18{:reset}
+- id: 1594
+  en: Cure Element
+- id: 1595
+  en: >-
+    Restores HP.
+
+    {:width 90}Use from the Magic Command. {:color #F0F00080}MP Cost:{:width 100} All{:reset}
+- id: 1596
+  en: Magnet Element
+- id: 1597
+  en: >-
+    Emits a power that draws in the enemy.
+
+    {:width 90}Use from the Magic Command. {:color #F0F00080}MP Cost:{:width 100} 30{:reset}
+- id: 1598
+  en: Reflect Element
+- id: 1599
+  en: >-
+    Fends and shoots back enemy attacks.
+
+    {:width 90}Use from the Magic Command. {:color #F0F00080}MP Cost:{:width 100} 10{:reset}
+- id: 1600
+  en: Ukulele Charm
+- id: 1601
+  en: >-
+    With the help of two friends, use
+
+    the Summon Command to call forth
+
+    Stitch for a helping hand.
+- id: 1602
+  en: Valor Form
+- id: 1603
+  en: >-
+    With Goofy´s help, use the Drive
+
+    Command to change into Valor Form.
+- id: 1604
+  en: Wisdom Form
+- id: 1605
+  en: >-
+    With Donald´s help, use
+
+    the Drive Command to change
+
+    into Wisdom Form.
+- id: 1606
+  en: Master Form
+- id: 1607
+  en: >-
+    With the help of two friends, use
+
+    the Drive Command to change
+
+    into Master Form.
+- id: 1608
+  en: Final Form
+- id: 1609
+  en: Dummy
+- id: 1610
+  en: Antiform
+- id: 1611
+  en: Dummy
+- id: 1612
+  en: High Jump LV1
+- id: 1613
+  en: >-
+    Jump a little higher than usual.
+
+    The longer {:icon button-circle} is pressed down,
+
+    the higher the jump.
+- id: 1614
+  en: High Jump LV2
+- id: 1615
+  en: >-
+    Jump even higher than before!
+
+    The longer {:icon button-circle} is pressed down,
+
+    the higher the jump.
+- id: 1616
+  en: High Jump LV3
+- id: 1617
+  en: >-
+    Now you can jump really high!
+
+    The longer {:icon button-circle} is pressed down,
+
+    the higher the jump.
+- id: 1618
+  en: High Jump MAX
+- id: 1619
+  en: >-
+    An extreme jump! Jump even higher
+
+    than you thought possible! The longer
+
+    {:icon button-circle} is pressed down, the higher the jump.
+- id: 1620
+  en: Quick Run LV1
+- id: 1621
+  en: >-
+    Tilt the left stick and push {:icon button-square}
+
+    to sprint rapidly. Keep the button
+
+    pressed down for distance.
+- id: 1622
+  en: Quick Run LV2
+- id: 1623
+  en: >-
+    Tilt the left stick and push {:icon button-square}
+
+    to sprint rapidly. Keep the button
+
+    pressed down for distance.
+- id: 1624
+  en: Quick Run LV3
+- id: 1625
+  en: >-
+    Tilt the left stick and push {:icon button-square}
+
+    to sprint rapidly. Keep the button
+
+    pressed down for distance.
+- id: 1626
+  en: Quick Run MAX
+- id: 1627
+  en: >-
+    Tilt the left stick and push {:icon button-square}
+
+    to sprint rapidly. Keep the button
+
+    pressed down for distance.
+- id: 1628
+  en: Aerial Dodge LV1
+- id: 1629
+  en: >-
+    Press {:icon button-circle} in midair to jump again.
+
+    It is useful for dodging enemy attacks.
+- id: 1630
+  en: Aerial Dodge LV2
+- id: 1631
+  en: >-
+    Press {:icon button-circle} in midair to jump again.
+
+    It is useful for dodging enemy attacks.
+- id: 1632
+  en: Aerial Dodge LV3
+- id: 1633
+  en: >-
+    Press {:icon button-circle} in midair to jump again.
+
+    It is useful for dodging enemy attacks.
+- id: 1634
+  en: Aerial Dodge MAX
+- id: 1635
+  en: >-
+    Press {:icon button-circle} in midair to jump again.
+
+    It is useful for dodging enemy attacks.
+- id: 1636
+  en: Glide LV1
+- id: 1637
+  en: >-
+    Press {:icon button-square} in midair to ride the wind.
+
+    Keep the button pressed down for
+
+    longer action.
+- id: 1638
+  en: Glide LV2
+- id: 1639
+  en: >-
+    Press {:icon button-square} in midair to ride the wind
+
+    at a moderate speed. Keep the button
+
+    pressed down for longer action.
+- id: 1640
+  en: Glide LV3
+- id: 1641
+  en: >-
+    Press {:icon button-square} in midair to ride the wind
+
+    at great speed. Keep the button
+
+    pressed down for longer action.
+- id: 1642
+  en: Glide MAX
+- id: 1643
+  en: >-
+    Press {:icon button-square} in midair to ride the wind
+
+    at extreme speed. Keep the button
+
+    pressed down for longer action.
+- id: 1644
+  en: Guard
+- id: 1645
+  en: >-
+    Blocks and shoots back enemy attacks
+
+    using a parrying action with {:icon button-square}.
+- id: 2587
+  en: ''
+- id: 2598
+  en: Bridge
+- id: 2599
+  en: 'Isla de Muerta: Rock Face'
+- id: 2600
+  en: Where Nothing Gathers
+- id: 2601
+  en: Alley to Between
+- id: 2602
+  en: Fragment Crossing
+- id: 2603
+  en: Memory´s Skyscraper
+- id: 2604
+  en: The Brink of Despair
+- id: 2605
+  en: The Soundless Prison
+- id: 2606
+  en: Nothing´s Call
+- id: 2607
+  en: Crooked Ascension
+- id: 2608
+  en: Crooked Ascension
+- id: 2609
+  en: Twilight´s View
+- id: 2610
+  en: Hall of Empty Melodies
+- id: 2611
+  en: Hall of Empty Melodies
+- id: 2612
+  en: Naught´s Skyway
+- id: 2613
+  en: Proof of Existence
+- id: 2614
+  en: Havoc´s Divide
+- id: 2615
+  en: Addled Impasse
+- id: 2616
+  en: Naught´s Approach
+- id: 2617
+  en: Ruin and Creation´s Passage
+- id: 2618
+  en: The Altar of Naught
+- id: 2619
+  en: Memory´s Contortion
+- id: 2620
+  en: The World of Nothing
+- id: 2621
+  en: Station of Awakening
+- id: 2622
+  en: The World of Nothing
+- id: 2623
+  en: Marketplace
+- id: 2624
+  en: Corridors
+- id: 2625
+  en: Heartless Manufactory
+- id: 2626
+  en: Merlin´s House
+- id: 2627
+  en: Castle Oblivion
+- id: 2628
+  en: Ansem´s Study
+- id: 2629
+  en: Ravine Trail
+- id: 2630
+  en: The Great Maw
+- id: 2631
+  en: Scar´s Darkness
+- id: 2632
+  en: The Shore
+- id: 2633
+  en: Wrath of the Sea
+- id: 2634
+  en: Wedding Ship
+- id: 2635
+  en: Palace Gate
+- id: 2636
+  en: Solar Sailer Simulation
+- id: 2637
+  en: Sandlot
+- id: 2638
+  en: 'Market Street: Station Heights'
+- id: 2639
+  en: 'Market Street: Tram Common'
+- id: 2640
+  en: Station Plaza
+- id: 2641
+  en: Central Station
+- id: 2642
+  en: Sunset Terrace
+- id: 2643
+  en: Sunset Station
+- id: 2644
+  en: Sunset Hill
+- id: 2645
+  en: The Woods
+- id: 2646
+  en: The Old Mansion
+- id: 2647
+  en: 'Mansion: Foyer'
+- id: 2648
+  en: 'Mansion: Dining Room'
+- id: 2649
+  en: 'Mansion: Library'
+- id: 2650
+  en: 'Mansion: The White Room'
+- id: 2651
+  en: 'Mansion: Basement Hall'
+- id: 2652
+  en: 'Mansion: Basement Hall'
+- id: 2653
+  en: 'Mansion: Computer Room'
+- id: 2654
+  en: 'Mansion: Basement Corridor'
+- id: 2655
+  en: 'Mansion: Pod Room'
+- id: 2656
+  en: On the Train
+- id: 2657
+  en: The Tower
+- id: 2658
+  en: 'Tower: Entryway'
+- id: 2659
+  en: 'Tower: Sorcerer´s Loft'
+- id: 2660
+  en: 'Tower: Wardrobe'
+- id: 2661
+  en: 'Tower: Star Chamber'
+- id: 2662
+  en: 'Tower: Moon Chamber'
+- id: 2663
+  en: 'Tower: Wayward Stairs'
+- id: 2664
+  en: Station of Serenity
+- id: 2665
+  en: Station of Calling
+- id: 2666
+  en: Station of Awakening
+- id: 2667
+  en: The Mysterial Train
+- id: 2668
+  en: Tunnelway
+- id: 2669
+  en: Underground Concourse
+- id: 2670
+  en: 'Tower: Wayward Stairs'
+- id: 2671
+  en: 'Tower: Wayward Stairs'
+- id: 2672
+  en: Betwixt and Between
+- id: 2673
+  en: World Map
+- id: 2674
+  en:
+- id: 2675
+  en:
+- id: 2676
+  en:
+- id: 2677
+  en:
+- id: 2678
+  en:
+- id: 2679
+  en:
+- id: 2680
+  en:
+- id: 2681
+  en:
+- id: 2682
+  en:
+- id: 2683
+  en: OK
+- id: 2684
+  en: Yes
+- id: 2685
+  en: No
+- id: 2686
+  en: Save
+- id: 2687
+  en: Load
+- id: 2688
+  en: World Map
+- id: 2689
+  en: Title Screen
+- id: 2690
+  en: Jump to World Map?
+- id: 2691
+  en: New File
+- id: 2692
+  en: Game File
+- id: 2693
+  en: Other Game Files
+- id: 2694
+  en: '{:width 81}MEMORY CARD slot 1'
+- id: 2695
+  en: '{:width 81}MEMORY CARD slot 2'
+- id: 2696
+  en: Return to the title screen.
+- id: 2697
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Checking storage for save data...
+- id: 2698
+  en: >-
+    {:icon question-mark}{:color #FF000080}QUESTION{:reset}            {:scale 8}
+
+
+    {:scale 16}Game progress that has not been saved
+
+    will be lost. Proceed?
+- id: 2699
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Failed to save.
+- id: 2700
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Failed to check storage.
+- id: 2701
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Failed to load save data.
+- id: 2702
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    MEMORY CARD in slot {:unk0d }
+
+    is not formatted.
+- id: 2703
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Deleting previous data...
+- id: 2704
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Saving data..
+- id: 2705
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Loading data...
+- id: 2706
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Overwriting save data...
+- id: 2707
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Deleting previous data...
+- id: 2708
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Failed to check storage.
+- id: 2709
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Failed to delete previous data
+
+    from storage.
+- id: 2710
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Failed to delete previous data.
+- id: 2711
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Insufficient free space on storage.
+
+    At least 169 KB is required to save this data.
+- id: 2712
+  en: Not Used
+- id: 2713
+  en: Not Used
+- id: 2714
+  en: Save data is corrupt.
+- id: 2715
+  en: Not Used
+- id: 2716
+  en: Cannot save in new file.
+- id: 2717
+  en: Save new file.
+- id: 2718
+  en: '{:width 90}Insufficient free space.'
+- id: 2719
+  en: There is no data.
+- id: 2721
+  en: >-
+    Select file to save.
+- id: 2722
+  en: >-
+    Select file to load.
+- id: 2723
+  en: Not Used
+- id: 2724
+  en: >-
+    {:icon question-mark}{:color #FF000080}QUESTION{:reset}                                    
+
+
+    Overwrite existing file?
+- id: 2725
+  en: >-
+    {:icon question-mark}{:color #FF000080}QUESTION{:reset}                                    
+
+
+    Load this file?
+- id: 2726
+  en: >-
+    {:icon question-mark}{:color #FF000080}QUESTION{:reset}                                    
+
+
+    Delete selected file?
+- id: 2734
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    File system corrupted.
+- id: 2735
+  en: Load Game
+- id: 2736
+  en: Continue
+- id: 2737
+  en: Retry
+- id: 2738
+  en: Quit
+- id: 2739
+  en: Skip Scene
+- id: 2740
+  en: Continue
+- id: 2741
+  en: I won´t give up!
+- id: 2742
+  en: It´s all over...
+- id: 2743
+  en: Jiminy´s Journal
+- id: 2744
+  en: Wallace´s Weapon Shop
+- id: 2745
+  en: Biggs's Armor Shop
+- id: 2746
+  en: Jessie´s Accessory Shop
+- id: 2747
+  en: Wantz´s Item Shop
+- id: 2748
+  en: Elmina´s Workshop
+- id: 2749
+  en: Huey, Dewey, and Louie´s Weapon Shop
+- id: 2750
+  en: Wedge´s Armor Shop
+- id: 2751
+  en: Huey, Dewey, and Louie´s Accessory Shop
+- id: 2752
+  en: Huey, Dewey, and Louie´s Item Shop
+- id: 2753
+  en: Kupo´s Moogle Shop
+- id: 2754
+  en: Monty´s Moogle Shop
+- id: 2755
+  en: Mosh´s Moogle Shop
+- id: 2756
+  en: Mogjiro´s Moogle Shop
+- id: 2757
+  en: Morlock´s Moogle Shop
+- id: 2758
+  en: Gumo´s Moogle Shop
+- id: 2759
+  en: Mojito´s Moogle Shop
+- id: 2760
+  en: Kumop´s Moogle Shop
+- id: 2761
+  en: Artemicion´s Moogle Shop
+- id: 2762
+  en: Mogtaro´s Moogle Shop
+- id: 2763
+  en: Stiltzkin´s Moogle Shop
+- id: 2764
+  en: Buy
+- id: 2765
+  en: Sell
+- id: 2766
+  en: Quit
+- id: 2767
+  en: Yes
+- id: 2768
+  en: No
+- id: 2769
+  en: Buy Items.
+- id: 2770
+  en: Sell Items in Stock.
+- id: 2771
+  en: Close Shop Menu.
+- id: 2772
+  en: Stock
+- id: 2773
+  en: ''
+- id: 2774
+  en: '{:scale 12}{:color #FAF00080} Munny'
+- id: 2775
+  en: >-
+    Buy how many?
+
+
+    Use up/down buttons to select 1,
+
+    and left/right buttons to select 10.
+- id: 2776
+  en: >-
+    Sell how many?
+
+
+    Use up/down buttons to select 1,
+
+    and left/right buttons to select 10.
+- id: 2777
+  en: Purchase?
+- id: 2778
+  en: There are no items.
+- id: 2779
+  en: Sell?
+- id: 2780
+  en: FAKE
+- id: 2781
+  en: ''
+- id: 2782
+  en: Strength Increased!
+- id: 2783
+  en: Magic Increased!
+- id: 2784
+  en: Defense Increased!
+- id: 2785
+  en: Maximum AP Increased!
+- id: 2786
+  en: Maximum HP Increased!
+- id: 2787
+  en: Maximum MP Increased!
+- id: 2788
+  en: Drive Gauge Powered Up!
+- id: 2789
+  en: Gained Item Slot!
+- id: 2790
+  en: Gained Accessory Slot!
+- id: 2791
+  en: Gained Armor Slot!
+- id: 2792
+  en: '{:unk0d }!'
+- id: 2793
+  en: Radiant Garden
+- id: 6430
+  en: Beginner Mode
+- id: 6431
+  en: Proud Mode
+- id: 7490
+  en: >-
+    Sora:
+
+    Authorized personnel only, eh?
+- id: 7492
+  en: >-
+    Sora:
+
+    This isn´t the way to
+
+    Merlin´s house.
+- id: 7496
+  en: >-
+    Sora:
+
+    It doesn´t look like it´ll open.
+- id: 7500
+  en: >-
+    Sora:
+
+    We can´t give up now!
+- id: 7503
+  en: '{:width 90}Go To The Rescue'
+- id: 7504
+  en: Examine
+- id: 7505
+  en: Examine
+- id: 7506
+  en: Translate
+- id: 7507
+  en: Translate
+- id: 7508
+  en: '{:width 90}Examine The Wall'
+- id: 7517
+  en: '{:width 90}Access Computer'
+- id: 7533
+  en: Learn
+- id: 7650
+  en: Speed Trap
+- id: 7658
+  en: '{:icon button-r1}Episode List'
+- id: 7659
+  en: Summary of Events
+- id: 7660
+  en: Next Objective
+- id: 7661
+  en: '{:icon button-triangle}Jiminy Memo'
+- id: 7662
+  en: '{:icon button-l1}{:width 95}Select landing area'
+- id: 7663
+  en: Press
+- id: 7664
+  en: Takedown
+- id: 7665
+  en: '{:width 90}Access Computer'
+- id: 7666
+  en: '{:width 90}Access Computer'
+- id: 7667
+  en: '{:width 90}Access Computer'
+- id: 7670
+  en: Launch
+- id: 7671
+  en: Remove Shortcut settings.
+- id: 7672
+  en: '{:icon magic}MP Charge'
+- id: 7673
+  en: '{:icon magic-nocharge}Don´t MP Charge'
+- id: 7674
+  en: >-
+    If there is not enough MP to use this
+
+    magic spell, wait a while and MP will
+
+    begin to regenerate until full.
+- id: 7675
+  en: >-
+    This magic spell cannot be used when
+
+    there is not enough MP.
+- id: 7676
+  en: '{:icon auto-equip}{:scale 14}{:width 90}Auto-Reload ON'
+- id: 7677
+  en: '{:icon item-consumable}{:scale 14}{:width 90}Auto-Reload OFF'
+- id: 7678
+  en: >-
+    {:width 95}If an item is used in battle, the same item
+
+    will be reloaded after battle, if in stock.{:reset}
+- id: 7679
+  en: >-
+    This item will not be set in a slot once
+
+    it´s been used.
+- id: 7752
+  en: Grab On
+- id: 7753
+  en: Hang On
+- id: 7754
+  en: Hit
+- id: 7755
+  en: Fore!
+- id: 7756
+  en: Move center
+- id: 7758
+  en: '{:icon ai-mode-frequent}Free'
+- id: 7759
+  en: '{:icon ai-mode-moderate}Well-Balanced'
+- id: 7760
+  en: '{:icon ai-mode-rare}Rare'
+- id: 7761
+  en: '{:icon ai-mode-frequent}{:scale 13}{:width 90}Often'
+- id: 7762
+  en: '{:icon ai-mode-rare}{:scale 13}{:width 90}Last hope!'
+- id: 7763
+  en: Comet
+- id: 7764
+  en: Comet Rain
+- id: 7765
+  en: >-
+    Party Members fight with their
+
+    individual techniques.
+- id: 7766
+  en: >-
+    Party Members concentrate attacks on
+
+    Sora´s target.
+- id: 7767
+  en: Party Members fight close to Sora.
+- id: 7768
+  en: >-
+    Party Members will fight a target other
+
+    than Sora´s.
+- id: 7769
+  en: >-
+    While Sora attacks, Party Members will
+
+    support him.
+- id: 7770
+  en: >-
+    Party Members defeat their target
+
+    before attacking another.
+- id: 7771
+  en: >2-
+
+    Use this ability freely.
+- id: 7772
+  en: >2-
+
+    Use this ability conservatively.
+- id: 7773
+  en: >2-
+
+    Use this ability in special situations.
+- id: 7774
+  en: >2-
+
+    Use this item often.
+- id: 7775
+  en: >2-
+
+    Use this item only in an emergency!
+- id: 7776
+  en: Upper Slash
+- id: 7777
+  en: >-
+    Knocks a target into the air
+
+    during a combo with {:icon button-square}.
+- id: 7998
+  en: >-
+    Roxas:
+
+    Not this way!
+- id: 7999
+  en: >-
+    Roxas:
+
+    This isn´t the right way.
+- id: 8000
+  en: >-
+    Roxas:
+
+    Not over here...
+- id: 8001
+  en: >-
+    Roxas:
+
+    Wait, this isn´t right.
+- id: 8002
+  en: >-
+    Roxas:
+
+    Looks like it goes through,
+
+    but I can´t use it now.
+- id: 8003
+  en: >-
+    Roxas:
+
+    We better not run away!
+- id: 8004
+  en: >-
+    Roxas:
+
+    We better stand up for ourselves.
+- id: 8005
+  en: >-
+    Roxas:
+
+    No running away, now!
+- id: 8006
+  en: >-
+    Roxas:
+
+    Gotta follow him!
+- id: 8007
+  en: >-
+    Roxas:
+
+    I don´t think I can go there yet.
+- id: 8008
+  en: >-
+    Roxas:
+
+    There aren´t any jobs this way.
+- id: 8009
+  en: >-
+    Roxas:
+
+    I´ve got a job to do!
+- id: 8010
+  en: >-
+    Roxas:
+
+    I need to make some munny...
+- id: 8011
+  en: >-
+    Roxas:
+
+    They sell tickets inside the station.
+- id: 8012
+  en: >-
+    Roxas:
+
+    We could get on if we had tickets.
+- id: 8013
+  en: >-
+    Sora:
+
+    Doesn´t look like it´s ready yet.
+- id: 8014
+  en: >-
+    Sora:
+
+    I can´t just barge in.
+- id: 8015
+  en: >-
+    Sora:
+
+    This doesn´t feel right...
+- id: 8016
+  en: >-
+    Sora:
+
+    Something´s not letting us leave.
+- id: 8051
+  en: Scan
+- id: 8052
+  en: Inspects the target´s current HP.
+- id: 8058
+  en: '{:width 90}Access Computer'
+- id: 8143
+  en: OK
+- id: 8144
+  en: Yes
+- id: 8145
+  en: No
+- id: 8301
+  en: Aero Blade
+- id: 8302
+  en: Select Landing Area
+- id: 8303
+  en: Episode List
+- id: 8304
+  en: Warp Snipe
+- id: 8307
+  en: Adamant Shield
+- id: 8308
+  en: >-
+    A shield that excels in defense rather
+
+    than strength. Blocks various attacks.
+- id: 8309
+  en: Chain Gear
+- id: 8310
+  en: >-
+    A large shield that blocks various
+
+    attacks. Can also be used for attacking.
+- id: 8311
+  en: Ogre Shield
+- id: 8312
+  en: >-
+    A shield with great strength that also
+
+    blocks various attacks. Increases defense
+
+    by {:color #F0F00080}3{:reset} in critical situations.
+- id: 8313
+  en: Falling Star
+- id: 8314
+  en: >-
+    A small, easy-to-handle shield used
+
+    solely for attacking.
+- id: 8315
+  en: Dreamcloud
+- id: 8316
+  en: >-
+    A shield with great strength used
+
+    solely for attacking.
+- id: 8317
+  en: Knight Defender
+- id: 8318
+  en: >-
+    A shield with great strength used
+
+    solely for attacking.
+- id: 8319
+  en: Genji Shield
+- id: 8320
+  en: >-
+    A shield with great strength and
+
+    defense. Quickly revives wielder when
+
+    fallen, and restores much of their HP.
+- id: 8321
+  en: Akashic Record
+- id: 8322
+  en: >-
+    A shield with great strength.
+
+    Increases MP restoration speed
+
+    by {:color #F0F00080}25%{:reset} when all MP is consumed.
+- id: 8323
+  en: Nobody Guard
+- id: 8324
+  en: >-
+    {:width 95}A shield with great strength. Restores MP
+
+    relative to the amount of damage taken.
+- id: 8847
+  en: Hammer Staff
+- id: 8848
+  en: A staff used for its strength.
+- id: 8849
+  en: Victory Bell
+- id: 8850
+  en: >-
+    A staff used to increase strength.
+
+    Also increases magic.
+- id: 8851
+  en: Meteor Staff
+- id: 8852
+  en: >-
+    A staff of great strength that increases
+
+    magic. Increases damage done with
+
+    thunder-based attacks by {:color #F0F00080}20%{:reset}.
+- id: 8853
+  en: Comet Staff
+- id: 8854
+  en: >-
+    A staff used for its strength and
+
+    magic, inspired by the stars.
+- id: 8855
+  en: Lord´s Broom
+- id: 8856
+  en: >-
+    A staff used to increase strength
+
+    and magic.
+- id: 8857
+  en: Wisdom Wand
+- id: 8858
+  en: >
+    A staff with great magic and strength.
+- id: 8859
+  en: Rising Dragon
+- id: 8860
+  en: >-
+    A staff with great strength and magic.
+
+    Increases damage done with fire-based
+
+    attacks by {:color #F0F00080}20%{:reset}.
+- id: 8861
+  en: Nobody Lance
+- id: 8862
+  en: >-
+    A lance with great strength and magic.
+
+    Increases the effect of restoration
+
+    items used on the field by {:color #F0F00080}50%{:reset}.
+- id: 8863
+  en: Shaman´s Relic
+- id: 8864
+  en: >-
+    A staff with great magic and strength.
+
+    Increases damage done with ice-based
+
+    attacks by {:color #F0F00080}20%{:reset}.
+- id: 8869
+  en: Buy Tickets
+- id: 8870
+  en: Touch The Light
+- id: 8871
+  en: Learn The Rules
+- id: 8872
+  en: Approach
+- id: 8873
+  en: '{:width 90}Examine The Table'
+- id: 8874
+  en: '{:width 80}Listen to the story'
+- id: 8875
+  en: Approach
+- id: 8876
+  en: Touch The Beam
+- id: 8877
+  en: 'Isla de Muerta: Treasure Heap'
+- id: 8993
+  en: Enter Password
+- id: 8995
+  en: Key Counter
+- id: 8996
+  en: Lunarsault
+- id: 8997
+  en: Break Raid
+- id: 9020
+  en: Rising Sun
+- id: 9928
+  en: Duel Stance
+- id: 9929
+  en: The End
+- id: 9933
+  en: Fail-Safe
+- id: 9934
+  en: Scapegoat
+- id: 9945
+  en: Jump!
+- id: 10328
+  en: Aerial Recovery
+- id: 10329
+  en: >-
+    Quickly regains balance with {:icon button-circle} when
+
+    knocked down.
+- id: 10330
+  en: Peter Pan
+- id: 10331
+  en: Lamp Charm
+- id: 10332
+  en: >-
+    With the help of two friends, use
+
+    the Summon Command to call forth
+
+    Genie for a helping hand.
+- id: 10333
+  en: Feather Charm
+- id: 10334
+  en: >-
+    With the help of two friends, use
+
+    the Summon Command to call forth
+
+    Peter Pan for a helping hand.
+- id: 10335
+  en: Pinball
+- id: 10337
+  en: The Black Pearl
+- id: 10338
+  en: The Black Pearl
+- id: 10339
+  en: The Black Pearl
+- id: 10340
+  en: The Interceptor
+- id: 10341
+  en: The Interceptor
+- id: 10414
+  en: Air Twister
+- id: 10415
+  en: Tornado Ride
+- id: 10416
+  en: Quick Blade
+- id: 10419
+  en: Dodge Roll
+- id: 10428
+  en: Begin Game
+- id: 10429
+  en: Stop Dice
+- id: 10433
+  en: Aura Guard
+- id: 10434
+  en: Dismiss
+- id: 10435
+  en: 'The Black Pearl: Captain´s Stateroom'
+- id: 10439
+  en: Open The Door
+- id: 10441
+  en: Root Ravager
+- id: 10442
+  en: Clear Shot
+- id: 10443
+  en: Big Ben
+- id: 10444
+  en: >-
+    Sora:
+
+    Let´s get to Merlin´s house.
+- id: 10445
+  en: ''
+- id: 12068
+  en: ◯
+- id: 12069
+  en: ✕
+- id: 12070
+  en: >-
+    Sora:
+
+    I hope Pooh´s all right...
+- id: 12071
+  en: ''
+- id: 12072
+  en: Hop On
+- id: 12073
+  en: Shift Shot
+- id: 12074
+  en: Heal Stomp
+- id: 12080
+  en: Restoration Site
+- id: 12081
+  en: Bailey
+- id: 12082
+  en: Get Off
+- id: 12083
+  en: Staff of Detection
+- id: 12084
+  en: >-
+    A powerless staff, its only use is
+
+    to detect movement.
+- id: 12086
+  en: Wind Dance
+- id: 12087
+  en: High Climb
+- id: 12088
+  en: Needle Dive
+- id: 12090
+  en: Help
+- id: 12092
+  en: Pegasus Run
+- id: 12093
+  en: Juggle Parry
+- id: 12094
+  en: Overhand
+- id: 12096
+  en: Knocksmash
+- id: 12097
+  en: Duo Raid
+- id: 12098
+  en: Cosmo Boost
+- id: 12131
+  en: Combo Plus
+- id: 12132
+  en: >-
+    Increases maximum combo by 1 when
+
+    on the ground.
+
+    Equip more to enable more combos.
+- id: 12133
+  en: Air Combo Plus
+- id: 12134
+  en: >-
+    Increases maximum combo by 1 when
+
+    in midair.
+
+    Equip more to enable more combos.
+- id: 12135
+  en: >-
+    Sora:
+
+    Our assignment is over
+
+    the mountain trail!
+- id: 12885
+  en: Rocket Flare
+- id: 12932
+  en: Phil One-Two
+- id: 12998
+  en: Coliseum Gates
+- id: 13026
+  en: Speedster
+- id: 13027
+  en: Quickplay
+- id: 13028
+  en: Trickster
+- id: 13030
+  en: Return Fire
+- id: 13031
+  en: Bluff
+- id: 13032
+  en: Slasher
+- id: 13033
+  en: Jackknife
+- id: 13034
+  en: Final Trap
+- id: 13036
+  en: Lion
+- id: 13037
+  en: Weapons
+- id: 13038
+  en: Action
+- id: 13039
+  en: Growth
+- id: 13040
+  en: Support
+- id: 13043
+  en: Donald Fire
+- id: 13044
+  en: >-
+    Unleashes a firestorm that attacks
+
+    nearby enemies. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 13045
+  en: Donald Blizzard
+- id: 13046
+  en: >-
+    Unleashes a barrage of ice at
+
+    the enemy. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 13047
+  en: Donald Thunder
+- id: 13048
+  en: >-
+    Call down a bombardment of lightning
+
+    bolts on your target! {:color #F0F00080}MP Cost: 10{:reset}
+- id: 13049
+  en: Donald Cure
+- id: 13050
+  en: >-
+    Cures Party Member´s HP.
+
+    {:color #F0F00080}MP Cost: All{:reset}
+- id: 13065
+  en: Healing Water
+- id: 13066
+  en: >-
+    Restores the Party´s HP.
+     {:color #F0F00080}MP Cost: 99{:reset}
+- id: 13067
+  en: Furious Shout
+- id: 13068
+  en: >-
+    Knocks down nearby enemies with
+
+    enraged shouts. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 13086
+  en: Cure Potion
+- id: 13087
+  en: >-
+    Restores the Party´s HP.
+     {:color #F0F00080}MP Cost: 99{:reset}
+- id: 13092
+  en: Healing Herb
+- id: 13093
+  en: >-
+    Restores the Party´s HP using
+
+    the powers of nature. {:color #F0F00080}MP Cost: 99{:reset}
+- id: 13102
+  en: Slow 3
+- id: 13103
+  en: (Delete)
+- id: 13109
+  en: Trinity Limit
+- id: 13110
+  en: >-
+    A Limit Command that uses teamwork
+
+    to unleash the powerful Trinity attack.
+
+    Consumes all of Sora´s MP.
+- id: 13111
+  en: Fantasia
+- id: 13112
+  en: >-
+    A Limit Command that unleashes
+
+    Donald´s powerful Comet spell.
+
+    Consumes all of Sora´s MP.
+- id: 13113
+  en: Flare Force
+- id: 13114
+  en: >-
+    A Limit Command that unleashes
+
+    Donald´s powerful Duck Flare spell.
+
+    Consumes all of Sora´s MP.
+- id: 13115
+  en: Tornado Fusion
+- id: 13116
+  en: >-
+    A Limit Command that unleashes Goofy´s
+
+    spinning attack, Whirli-Goof.
+
+    Consumes all of Sora´s MP.
+- id: 13117
+  en: Teamwork
+- id: 13118
+  en: >-
+    A Limit Command that unleashes Goofy
+
+    and Sora´s joint attack, Knocksmash.
+
+    Consumes all of Sora´s MP.
+- id: 13119
+  en: Trick Fantasy
+- id: 13120
+  en: >-
+    A Limit Command that unleashes Aladdin
+
+    and Sora´s joint attack, Speedster.
+
+    Consumes all of Sora´s MP.
+- id: 13121
+  en: Overdrive
+- id: 13122
+  en: >-
+    A Limit Command that unleashes Auron
+
+    and Sora´s joint attack, Bushido.
+
+    Consumes all of Sora´s MP.
+- id: 13123
+  en: Howling Moon
+- id: 13124
+  en: >-
+    A Limit Command that unleashes Beast
+
+    and Sora´s joint attack, Twin Howl.
+
+    Consumes all of Sora´s MP.
+- id: 13125
+  en: Applause, Applause
+- id: 13126
+  en: >-
+    A Limit Command that unleashes Jack
+
+    and Sora´s joint attack, Dance Call.
+
+    Consumes all of Sora´s MP.
+- id: 13127
+  en: Dragonblaze
+- id: 13128
+  en: >-
+    A Limit Command that unleashes Mulan
+
+    and Sora´s joint attack, Red Rocket.
+
+    Consumes all of Sora´s MP.
+- id: 13129
+  en: Eternal Session
+- id: 13130
+  en: >-
+    A Limit Command that unleashes Riku
+
+    and Sora´s joint attack, Session.
+
+    Consumes all of Sora´s MP.
+- id: 13131
+  en: King´s Pride
+- id: 13132
+  en: >-
+    A Limit Command that unleashes Simba
+
+    and Sora´s joint attack, Wildcat.
+
+    Consumes all of Sora´s MP.
+- id: 13133
+  en: Treasure Isle
+- id: 13134
+  en: >-
+    A Limit Command that unleashes Jack
+
+    Sparrow and Sora´s joint attack, Bluff.
+
+    Consumes all of Sora´s MP.
+- id: 13135
+  en: '{:width 90}Complete Compilement'
+- id: 13136
+  en: >-
+    A Limit Command that unleashes Tron
+
+    and Sora´s joint attack, Setup.
+
+    Consumes all of Sora´s MP.
+- id: 13139
+  en: Wisdom
+- id: 13170
+  en: There are no Abilities.
+- id: 13171
+  en: '{:icon button-square}Items'
+- id: 13847
+  en: Config
+- id: 13848
+  en: Log
+- id: 13849
+  en: '{:icon button-square}Abilities'
+- id: 13850
+  en: '{:icon button-l2}{:icon button-r2}Switch'
+- id: 13861
+  en: Pulsing Thunder
+- id: 13862
+  en: >-
+    Releases electricity to attack
+
+    nearby enemies. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 13863
+  en: 	Equip
+- id: 13864
+  en: Equip this ability.
+- id: 13865
+  en: 	Don´t Equip
+- id: 13866
+  en: Don´t equip this ability.
+- id: 13868
+  en: >-
+    Minnie:
+
+    That´s not the way to
+
+    the audience chamber.
+- id: 13869
+  en: ''
+- id: 13870
+  en: >-
+    Minnie:
+
+    We´ve got to hurry to
+
+    the audience chamber.
+- id: 13875
+  en: Brave Shot
+- id: 13876
+  en: >-
+    Unleashes a powerful finishing combo
+
+    move and knocks a single target off
+
+    its feet.
+- id: 13877
+  en: Brave Beat
+- id: 13878
+  en: >-
+    Unleashes a powerful finishing combo
+
+    move that successively attacks several
+
+    targets at once.
+- id: 13879
+  en: Sonic Strike
+- id: 13880
+  en: >-
+    Unleashes a powerful finishing combo
+
+    move that pierces through a single
+
+    target.
+- id: 13881
+  en: Sonic End
+- id: 13882
+  en: >-
+    Unleashes a powerful finishing combo
+
+    move in a rapid midair attack to
+
+    several targets at once.
+- id: 13883
+  en: Wisdom Shot
+- id: 13884
+  en: Changes the command Attack to Shoot.
+- id: 13885
+  en: Mobile Action
+- id: 13886
+  en: Actions will be enabled while moving.
+- id: 13889
+  en: Synch Blade
+- id: 13890
+  en: >-
+    Equips a Keyblade in each hand.
+
+    The ability of the left hand weapon
+
+    becomes available as well.
+- id: 13891
+  en: Magic Haste
+- id: 13892
+  en: >-
+    Shortens magic casting time and
+
+    enables rapid magic combos.
+- id: 13893
+  en: Magic Spice
+- id: 13894
+  en: >-
+    Powers up the finishing move of
+
+    magic combos.
+- id: 13896
+  en: Backshuffle
+- id: 13951
+  en: Rockshatter
+- id: 13952
+  en: Stomp Bomb
+- id: 13953
+  en: Air Slash
+- id: 13965
+  en: Shoot
+- id: 13966
+  en: Leap
+- id: 13967
+  en: >-
+    Sora:
+
+    C´mon, into the cave!
+- id: 13968
+  en: ''
+- id: 13969
+  en: Dispel
+- id: 13970
+  en: Rodeo
+- id: 13971
+  en: Grand Cross
+- id: 14002
+  en: Rapid Blow
+- id: 14004
+  en: >-
+    Sora:
+
+    Let´s return to Hollow Bastion.
+- id: 14005
+  en: ''
+- id: 14006
+  en: >-
+    Sora:
+
+    We have to keep going!
+- id: 14007
+  en: The World of Nothing
+- id: 14008
+  en: The World of Nothing
+- id: 14009
+  en: Capture
+- id: 14010
+  en: Secret Ansem Report 1
+- id: 14011
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14012
+  en: Secret Ansem Report 2
+- id: 14013
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14014
+  en: Secret Ansem Report 3
+- id: 14015
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14016
+  en: Secret Ansem Report 4
+- id: 14017
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14018
+  en: Secret Ansem Report 5
+- id: 14019
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14020
+  en: Secret Ansem Report 6
+- id: 14021
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14022
+  en: Secret Ansem Report 7
+- id: 14023
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14024
+  en: Secret Ansem Report 8
+- id: 14025
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14026
+  en: Secret Ansem Report 9
+- id: 14027
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14028
+  en: Secret Ansem Report 10
+- id: 14029
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14030
+  en: Secret Ansem Report 11
+- id: 14031
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14032
+  en: Secret Ansem Report 12
+- id: 14033
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14034
+  en: Secret Ansem Report 13
+- id: 14035
+  en: >-
+    A secret report written by Ansem.
+
+    It can be viewed in Jiminy´s Journal.
+- id: 14088
+  en: Musical
+- id: 14089
+  en: Wildcat
+- id: 14090
+  en: High Fang
+- id: 14091
+  en: X-Claw
+- id: 14092
+  en: Proud Roar
+- id: 14093
+  en: >-
+    Equip weapons and armor,
+
+    or use items in stock.
+- id: 14094
+  en: Equip Guide
+- id: 14095
+  en: Equip Abilities.
+- id: 14096
+  en: Switch Party Members.
+- id: 14097
+  en: Show Status.
+- id: 14098
+  en: Read Jiminy´s Journal.
+- id: 14099
+  en: Change Character settings.
+- id: 14100
+  en: Option Guide
+- id: 14101
+  en: Change Game settings.
+- id: 14102
+  en: See Obtained Items and Abilities.
+- id: 14103
+  en: Field Camera
+- id: 14104
+  en: Right Stick
+- id: 14105
+  en: Navigational Map
+- id: 14106
+  en: Vibration
+- id: 14107
+  en: Sound
+- id: 14108
+  en: Command Menu
+- id: 14109
+  en: Game Mode
+- id: 14110
+  en: Auto
+- id: 14111
+  en: Manual
+- id: 14112
+  en: >-
+    The field camera will move
+
+    automatically. The camera will remain
+
+    fixed when the R2 button is held down.
+- id: 14113
+  en: >-
+    The field camera will remain fixed.
+
+    The camera will move automatically
+
+    when the R2 button is held down.
+- id: 14114
+  en: Camera
+- id: 14115
+  en: Command Menu
+- id: 14116
+  en: >-
+    {:width 87}Set the right stick to control the camera.
+
+    The right stick can be used for commands
+
+    while the L2 button is held down.
+- id: 14117
+  en: >-
+    {:width 87}Set the right stick for commands.
+
+    The right stick can be used to control
+
+    the camera while the L2 button is held down.
+- id: 14118
+  en: ON
+- id: 14119
+  en: OFF
+- id: 14120
+  en: >-
+    Display navigational map in the top
+
+    right corner.
+- id: 14121
+  en: >-
+    The navigational map will not be
+
+    displayed.
+- id: 14122
+  en: ON
+- id: 14124
+  en: Enable vibration function.
+- id: 14125
+  en: Disable vibration function.
+- id: 14126
+  en: Stereo
+- id: 14127
+  en: Pro Logic II
+- id: 14128
+  en: Mono
+- id: 14129
+  en: Play with Stereo sound.
+- id: 14130
+  en: >-
+    Play with Dolby Pro Logic II.
+
+    Enjoy surround sound with a system
+
+    that supports Dolby Pro Logic II.
+- id: 14131
+  en: Play with Mono sound.
+- id: 14132
+  en: Kingdom Hearts {II}
+- id: 14133
+  en: Kingdom Hearts
+- id: 14134
+  en: >-
+    Have the look of the command menu
+
+    change with each world visited.
+- id: 14135
+  en: >-
+    Keep the look of the original command
+
+    menu.
+- id: 14136
+  en: Beginner Mode
+- id: 14137
+  en: Standard Mode
+- id: 14138
+  en: Proud Mode
+- id: 14139
+  en: >-
+    {:width 95}Easier gameplay for beginners.
+
+    The Game Mode cannot be changed once
+
+    the game has started.
+- id: 14140
+  en: >-
+    {:width 95}Balanced gameplay. Not too hard, not too
+
+    easy. The Game Mode cannot be changed
+
+    once the game has started.
+- id: 14141
+  en: >-
+    {:width 95}Difficult gameplay with stronger enemies.
+
+    The Game Mode cannot be changed once
+
+    the game has started.
+- id: 14158
+  en: Bolt Reversal
+- id: 14162
+  en: OFF
+- id: 14205
+  en: Faith
+- id: 14206
+  en: Report
+- id: 14207
+  en: Apply For Work
+- id: 14208
+  en: '{:width 80}Listen To The Story'
+- id: 14211
+  en: Over the Horizon
+- id: 14212
+  en: >-
+    Leaps towards a target in
+
+    a rapid attack with {:icon button-square}.
+- id: 14213
+  en: Omega Finale
+- id: 14214
+  en: >-
+    Deals finishing combo moves in
+
+    the middle of a combo with {:icon button-square}.
+- id: 14221
+  en: Investigate
+- id: 14225
+  en: >-
+    Roxas:
+
+    Looks iffy in there...
+- id: 14226
+  en: ''
+- id: 14279
+  en: Set the jewel!
+- id: 14284
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Checking storage...
+- id: 14285
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Insufficient free space on storage.
+
+    Start game anyway?
+- id: 14286
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+    No storage found.
+
+    Start game anyway?
+- id: 14287
+  en: Go, Abu!
+- id: 14288
+  en: Call Over
+- id: 14292
+  en: 1
+- id: 14293
+  en: 2
+- id: 14298
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Insufficient free space on storage.
+
+    Start game anyway?
+- id: 14299
+  en: Munny
+- id: 14424
+  en: Save data.
+- id: 14425
+  en: Jump to World Map?
+- id: 14426
+  en: Save data to storage.
+- id: 14427
+  en: Load data from storage.
+- id: 14429
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    No storage found.
+- id: 14431
+  en: Land
+- id: 14432
+  en: Reverse Blade
+- id: 14439
+  en: Stop
+- id: 14440
+  en: Wild Dance
+- id: 14442
+  en: Standard Mode
+- id: 14603
+  en: Spin
+- id: 14604
+  en: ALL
+- id: 14605
+  en: '{:icon weapon-keyblade}'
+- id: 14606
+  en: '{:icon armor}'
+- id: 14607
+  en: '{:icon item-consumable}'
+- id: 14608
+  en: '{:icon item-key}'
+- id: 14612
+  en: Dance Call
+- id: 14613
+  en: '{:width 90}Synchronization'
+- id: 14614
+  en: Downbeat
+- id: 14615
+  en: Finale
+- id: 14619
+  en: Examine
+- id: 14622
+  en: Setup
+- id: 14623
+  en: Cluster Code
+- id: 14624
+  en: Burst Pulse
+- id: 14625
+  en: Reprogram
+- id: 14626
+  en: Urninator
+- id: 14629
+  en: Duck Flare
+- id: 14630
+  en: Megaduck Flare
+- id: 14631
+  en: Halloween Town Map
+- id: 14632
+  en: A map of the area.
+- id: 14633
+  en: Naval Map
+- id: 14634
+  en: A map of the area.
+- id: 14635
+  en: Pride Rock Map
+- id: 14636
+  en: A map of the area.
+- id: 14637
+  en: Marketplace Map
+- id: 14638
+  en: A map of the area.
+- id: 14639
+  en: Pit Cell Area Map
+- id: 14640
+  en: A map of the area.
+- id: 14641
+  en: Twilight Town Map
+- id: 14642
+  en: A map of the area.
+- id: 14643
+  en: Dark City Map
+- id: 14644
+  en: A map of the area.
+- id: 14652
+  en: The Savannah
+- id: 14657
+  en: Use an item.
+- id: 14658
+  en: Throw away one item.
+- id: 14659
+  en: Use on who?
+- id: 14660
+  en: All
+- id: 14661
+  en: Use item on everyone.
+- id: 14670
+  en: The item will be used on {:unk0d }.
+- id: 14671
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Throw {:unk0d }{:unk0d } away?
+- id: 14721
+  en: Master Strike
+- id: 14722
+  en: >-
+    Unleashes a powerful finishing combo
+
+    move that successively attacks
+
+    a single target.
+- id: 14723
+  en: Disaster
+- id: 14724
+  en: >-
+    Unleashes a powerful finishing combo
+
+    move that draws in several enemies
+
+    and successively deals damage.
+- id: 14725
+  en: Endless Magic
+- id: 14726
+  en: Unleashes magic combos endlessly.
+- id: 14729
+  en: Master Magic
+- id: 14730
+  en: Powers up magic.
+- id: 14731
+  en: Slapshot
+- id: 14732
+  en: >-
+    Rapidly attacks a nearby target
+
+    without getting flung back.
+- id: 14733
+  en: Dodge Slash
+- id: 14734
+  en: >-
+    Unleashes an attack that deals damage
+
+    to nearby enemies.
+- id: 14735
+  en: Slide Dash
+- id: 14736
+  en: >-
+    Instantly closes in on and attacks
+
+    a far target.
+- id: 14737
+  en: Guard Break
+- id: 14738
+  en: >-
+    Unleashes a powerful finishing combo
+
+    move that pierces through a target´s
+
+    guard.
+- id: 14739
+  en: Explosion
+- id: 14740
+  en: >-
+    Unleashes a finishing combo move
+
+    that knocks down several enemies.
+
+    Damage dealt is relative to magic skill.
+- id: 14741
+  en: Finishing Leap
+- id: 14742
+  en: >-
+    Unleashes a powerful guard-piercing
+
+    attack at the end of a combo with {:icon button-square}.
+- id: 14743
+  en: Counterguard
+- id: 14744
+  en: >-
+    Counterattacks nearby enemies with
+
+    Attack while performing Guard.
+- id: 14745
+  en: Aerial Sweep
+- id: 14746
+  en: >-
+    Unleashes a powerful leaping attack
+
+    on targets in midair.
+- id: 14747
+  en: Aerial Spiral
+- id: 14748
+  en: >-
+    Closes in on far targets in midair and
+
+    unleashes spinning attacks.
+- id: 14749
+  en: Horizontal Slash
+- id: 14750
+  en: >-
+    Unleashes a powerful attack that hits
+
+    a target from left to right
+
+    during a midair combo with {:icon button-square}.
+- id: 14751
+  en: Aerial Finish
+- id: 14752
+  en: >-
+    Unleashes a powerful finishing combo
+
+    move to a single target in midair.
+- id: 14753
+  en: Retaliating Slash
+- id: 14754
+  en: >-
+    When knocked down, quickly regains
+
+    balance and counterattacks with {:icon button-square}.
+- id: 14770
+  en: Forward March!
+- id: 14771
+  en: Company Halt!
+- id: 14772
+  en: Settle Down!
+- id: 14791
+  en: '{:icon item-consumable}'
+- id: 14792
+  en: '{:icon item-tent}'
+- id: 14793
+  en: '{:icon weapon-keyblade}'
+- id: 14794
+  en: '{:icon weapon-staff}'
+- id: 14795
+  en: '{:icon weapon-shield}'
+- id: 14796
+  en: '{:icon question-mark}'
+- id: 14797
+  en: '{:icon question-mark}'
+- id: 14798
+  en: '{:icon question-mark}'
+- id: 14799
+  en: '{:icon question-mark}'
+- id: 14800
+  en: '{:icon question-mark}'
+- id: 14801
+  en: '{:icon question-mark}'
+- id: 14802
+  en: '{:icon question-mark}'
+- id: 14803
+  en: '{:icon question-mark}'
+- id: 14804
+  en: '{:icon question-mark}'
+- id: 14805
+  en: '{:icon armor}'
+- id: 14806
+  en: '{:icon accessory}'
+- id: 14807
+  en: '{:icon material}'
+- id: 14808
+  en: '{:icon item-key}'
+- id: 14809
+  en: Drive Recovery
+- id: 14810
+  en: >-
+    Restores up to three full Drive Gauges.
+
+    Usable only from the Main Menu.
+- id: 14811
+  en: High Drive Recovery
+- id: 14812
+  en: >-
+    Restores all Drive Gauges.
+
+    Usable only from the Main Menu.
+- id: 14813
+  en: Power Boost
+- id: 14814
+  en: >-
+    Increases Strength by 1.
+
+    Usable only from the Main Menu.
+- id: 14815
+  en: Magic Boost
+- id: 14816
+  en: >-
+    Increases Magic by 1.
+
+    Usable only from the Main Menu.
+- id: 14817
+  en: Defense Boost
+- id: 14818
+  en: >-
+    Increases Defense by 1.
+
+    Usable only from the Main Menu.
+- id: 14819
+  en: AP Boost
+- id: 14820
+  en: >-
+    Raises maximum AP by 1.
+
+    Usable only from the Main Menu.
+- id: 14821
+  en: loop demo
+- id: 14823
+  en: Dark Shard
+- id: 14824
+  en: >-
+    A gem fragment filled with darkness.
+
+    A very common ingredient of
+
+    item synthesis.
+- id: 14825
+  en: Dark Stone
+- id: 14826
+  en: >-
+    A stone filled with darkness.
+
+    A common ingredient of item synthesis.
+- id: 14827
+  en: Dark Gem
+- id: 14828
+  en: >-
+    A gem abundant with darkness.
+
+    A rare ingredient of item synthesis.
+- id: 14829
+  en: Dark Crystal
+- id: 14830
+  en: >-
+    A mysterious crystal abundant with
+
+    darkness. A very rare ingredient of
+
+    item synthesis.
+- id: 14831
+  en: Cannon Bomb
+- id: 14841
+  en: Defeat 50 forms within 40 seconds!
+- id: 14842
+  en: Defeat 10 forms within 15 seconds!
+- id: 14843
+  en: Defeat 100 forms within 80 seconds!
+- id: 14844
+  en: LV
+- id: 14845
+  en: HP
+- id: 14846
+  en: MP
+- id: 14847
+  en: Strength
+- id: 14848
+  en: Magic
+- id: 14849
+  en: Defense
+- id: 14850
+  en: AP
+- id: 14851
+  en: Drive
+- id: 14853
+  en: Wildebeest Valley
+- id: 14863
+  en: Ability Ring
+- id: 14864
+  en: Slightly increases maximum AP.
+- id: 14865
+  en: Engineer´s Ring
+- id: 14866
+  en: Increases maximum AP.
+- id: 14867
+  en: Technician´s Ring
+- id: 14868
+  en: Greatly increases maximum AP.
+- id: 14869
+  en: Expert´s Ring
+- id: 14870
+  en: Exceedingly increases maximum AP.
+- id: 14871
+  en: Sardonyx Ring
+- id: 14872
+  en: >-
+    Increases strength and slightly
+
+    increases maximum AP.
+- id: 14873
+  en: Tourmaline Ring
+- id: 14874
+  en: >-
+    Increases strength and increases
+
+    maximum AP.
+- id: 14875
+  en: Aquamarine Ring
+- id: 14876
+  en: >-
+    Increases strength and greatly
+
+    increases maximum AP.
+- id: 14877
+  en: Garnet Ring
+- id: 14878
+  en: >-
+    Increases strength and extremely
+
+    increases maximum AP.
+- id: 14879
+  en: Diamond Ring
+- id: 14880
+  en: >-
+    Increases strength and drastically
+
+    increases maximum AP.
+- id: 14881
+  en: Silver Ring
+- id: 14882
+  en: >-
+    Increases magic and slightly increases
+
+    maximum AP.
+- id: 14883
+  en: Gold Ring
+- id: 14884
+  en: >-
+    Increases magic and increases
+
+    maximum AP.
+- id: 14885
+  en: Platinum Ring
+- id: 14886
+  en: >-
+    Increases magic and greatly increases
+
+    maximum AP.
+- id: 14887
+  en: Mythril Ring
+- id: 14888
+  en: >-
+    Increases magic and {:width 90}extremely{:width 100} increases
+
+    maximum AP.
+- id: 14889
+  en: Orichalcum Ring
+- id: 14890
+  en: >-
+    Increases magic and drastically
+
+    increases maximum AP.
+- id: 14891
+  en: Master´s Ring
+- id: 14892
+  en: Extraordinarily increases maximum AP.
+- id: 14893
+  en: Moon Amulet
+- id: 14894
+  en: >-
+    Highly increases strength and magic
+
+    and also greatly increases maximum AP.
+- id: 14895
+  en: Star Charm
+- id: 14896
+  en: >-
+    Highly increases strength and magic
+
+    and drastically increases maximum AP.
+- id: 14897
+  en: Skill Ring
+- id: 14898
+  en: Extremely increases maximum AP.
+- id: 14899
+  en: Skillful Ring
+- id: 14900
+  en: Drastically increases maximum AP.
+- id: 14901
+  en: Soldier Earring
+- id: 14902
+  en: >-
+    Highly increases maximum AP and
+
+    strength.
+- id: 14903
+  en: Fencer Earring
+- id: 14904
+  en: >-
+    Highly increases maximum AP and
+
+    strength and also increases magic.
+- id: 14905
+  en: Mage Earring
+- id: 14906
+  en: Highly increases maximum AP and magic.
+- id: 14907
+  en: Slayer Earring
+- id: 14908
+  en: >-
+    Highly increases maximum AP and magic
+
+    and also increases strength.
+- id: 14909
+  en: Cosmic Ring
+- id: 14910
+  en: Tremendously increases maximum AP.
+- id: 14911
+  en: Medal
+- id: 14912
+  en: Increases strength.
+- id: 14913
+  en: Cosmic Arts
+- id: 14914
+  en: >-
+    Highly increases strength and magic and
+
+    extraordinarily increases maximum AP.
+- id: 14915
+  en: Shadow Archive
+- id: 14916
+  en: >-
+    Drastically increases magic and maximum
+
+    AP.
+- id: 14917
+  en: Shadow Archive+
+- id: 14918
+  en: >-
+    Drastically increases magic and maximum
+
+    AP, and restores MP when damage is
+
+    taken. Equip more to increase the effect.
+- id: 14919
+  en: Lucky Ring
+- id: 14920
+  en: >-
+    Brings luck to the wearer, increasing
+
+    the drop rate of items.
+- id: 14921
+  en: Full Bloom
+- id: 14922
+  en: >-
+    Drastically increases strength and
+
+    maximum AP.
+- id: 14923
+  en: Draw Ring
+- id: 14924
+  en: Draws in nearby orbs.
+- id: 14925
+  en: Full Bloom+
+- id: 14926
+  en: >-
+    {:width 95}Drastically increases strength and
+
+    maximum AP. Increases MP restoration
+
+    speed by {:color #F0F00080}25%{:reset} after MP is fully consumed.
+- id: 14927
+  en: Elven Bandanna
+- id: 14928
+  en: Slightly increases defense.
+- id: 14929
+  en: Divine Bandanna
+- id: 14930
+  en: Increases defense.
+- id: 14931
+  en: Power Band
+- id: 14932
+  en: Extremely increases defense.
+- id: 14933
+  en: Buster Band
+- id: 14934
+  en: Has extremely high defense.
+- id: 14935
+  en: Protect Belt
+- id: 14936
+  en: Greatly increases defense.
+- id: 14937
+  en: Gaia Belt
+- id: 14938
+  en: >-
+    Greatly increases defense as well as
+
+    thunder and dark resistance.
+- id: 14939
+  en: Cosmic Belt
+- id: 14940
+  en: Has the greatest defense.
+- id: 14941
+  en: Shock Charm
+- id: 14942
+  en: >-
+    Extremely increases thunder resistance
+
+    and defense.
+- id: 14943
+  en: Shock Charm+
+- id: 14944
+  en: >-
+    Extremely increases thunder resistance
+
+    and defense, and also increases damage
+
+    done by thunder-based attacks by {:color #F0F00080}20%{:reset}.
+- id: 14945
+  en: Grand Ribbon
+- id: 14946
+  en: >-
+    Highly increases all resistances and
+
+    extremely increases defense.
+- id: 14951
+  en: Fire Bangle
+- id: 14952
+  en: >-
+    Increases fire resistance and
+
+    slightly increases defense.
+- id: 14953
+  en: Fira Bangle
+- id: 14954
+  en: >-
+    Increases fire resistance and
+
+    increases defense.
+- id: 14955
+  en: Firaga Bangle
+- id: 14956
+  en: >-
+    Increases fire resistance and
+
+    greatly increases defense.
+- id: 14957
+  en: Firagun Bangle
+- id: 14958
+  en: >-
+    Highly increases fire resistance and
+
+    greatly increases defense.
+- id: 14961
+  en: Blizzard Armlet
+- id: 14962
+  en: >-
+    Increases blizzard resistance and
+
+    slightly increases defense.
+- id: 14963
+  en: Blizzara Armlet
+- id: 14964
+  en: >-
+    Increases blizzard resistance and
+
+    increases defense.
+- id: 14965
+  en: Blizzaga Armlet
+- id: 14966
+  en: >-
+    Increases blizzard resistance and
+
+    greatly increases defense.
+- id: 14967
+  en: Blizzagun Armlet
+- id: 14968
+  en: >-
+    Highly increases blizzard resistance
+
+    and greatly increases defense.
+- id: 14971
+  en: Thunder Trinket
+- id: 14972
+  en: >-
+    Increases thunder resistance and
+
+    slightly increases defense.
+- id: 14973
+  en: Thundara Trinket
+- id: 14974
+  en: >-
+    Increases thunder resistance and
+
+    increases defense.
+- id: 14975
+  en: Thundaga Trinket
+- id: 14976
+  en: >-
+    Increases thunder resistance and
+
+    greatly increases defense.
+- id: 14977
+  en: Thundagun Trinket
+- id: 14978
+  en: >-
+    Highly increases thunder resistance
+
+    and greatly increases defense.
+- id: 14981
+  en: Shadow Anklet
+- id: 14982
+  en: >-
+    Increases dark resistance and
+
+    slightly increases defense.
+- id: 14983
+  en: Dark Anklet
+- id: 14984
+  en: >-
+    Increases dark resistance and
+
+    increases defense.
+- id: 14985
+  en: Midnight Anklet
+- id: 14986
+  en: >-
+    Increases dark resistance and
+
+    greatly increases defense.
+- id: 14987
+  en: Chaos Anklet
+- id: 14988
+  en: >-
+    Highly increases dark resistance and
+
+    greatly increases defense.
+- id: 14991
+  en: Abas Chain
+- id: 14992
+  en: >-
+    Increases fire, blizzard, and thunder
+
+    resistance and slightly increases
+
+    defense.
+- id: 14993
+  en: Aegis Chain
+- id: 14994
+  en: >-
+    Increases fire, blizzard, and thunder
+
+    resistance and increases defense.
+- id: 14995
+  en: Acrisius
+- id: 14996
+  en: >-
+    Increases fire, blizzard, and thunder
+
+    resistance and greatly increases
+
+    defense.
+- id: 14997
+  en: Ribbon
+- id: 14998
+  en: >-
+    Increases all resistances and extremely
+
+    increases defense.
+- id: 14999
+  en: Champion Belt
+- id: 15000
+  en: >-
+    Increases fire, blizzard, and thunder
+
+    resistance.
+- id: 15001
+  en: Petite Ribbon
+- id: 15002
+  en: >-
+    Slightly increases all resistances and
+
+    extremely increases defense.
+- id: 15003
+  en: Acrisius+
+- id: 15004
+  en: >-
+    Highly increases fire, blizzard, and
+
+    thunder resistance and greatly
+
+    increases defense.
+- id: 15005
+  en: Cosmic Chain
+- id: 15006
+  en: >-
+    Greatly increases fire, blizzard, and
+
+    thunder resistance and greatly
+
+    increases defense.
+- id: 15023
+  en: Blazing Shard
+- id: 15024
+  en: >-
+    A gem fragment filled with fire.
+
+    A very common ingredient of item
+
+    synthesis.
+- id: 15025
+  en: Blazing Stone
+- id: 15026
+  en: >-
+    A stone filled with fire.
+
+    A common ingredient of item synthesis.
+- id: 15027
+  en: Blazing Gem
+- id: 15028
+  en: >-
+    A gem abundant with fire.
+
+    A rare ingredient of item synthesis.
+- id: 15029
+  en: Blazing Crystal
+- id: 15030
+  en: >-
+    A mysterious crystal abundant with
+
+    fire. A very rare ingredient of item
+
+    synthesis.
+- id: 15039
+  en: Lightning Shard
+- id: 15040
+  en: >-
+    A gem fragment filled with lightning.
+
+    A very common ingredient of item
+
+    synthesis.
+- id: 15041
+  en: Lightning Stone
+- id: 15042
+  en: >-
+    A stone filled with lightning.
+
+    A common ingredient of item synthesis.
+- id: 15043
+  en: Lightning Gem
+- id: 15044
+  en: >-
+    A gem abundant with lightning.
+
+    A rare ingredient of item synthesis.
+- id: 15045
+  en: Lightning Crystal
+- id: 15046
+  en: >-
+    A mysterious crystal abundant with
+
+    lightning. A very rare ingredient of
+
+    item synthesis.
+- id: 15047
+  en: Power Shard
+- id: 15048
+  en: >-
+    A gem fragment filled with power.
+
+    A very common ingredient of
+
+    item synthesis.
+- id: 15049
+  en: Power Stone
+- id: 15050
+  en: >-
+    A stone filled with power.
+
+    A common ingredient of item synthesis.
+- id: 15051
+  en: Power Gem
+- id: 15052
+  en: >-
+    A gem abundant with power.
+
+    A rare ingredient of item synthesis.
+- id: 15053
+  en: Power Crystal
+- id: 15054
+  en: >-
+    A mysterious crystal abundant with
+
+    power. A very rare ingredient of item
+
+    synthesis.
+- id: 15055
+  en: Lucid Shard
+- id: 15056
+  en: >-
+    A gem fragment filled with brilliance.
+
+    A very common ingredient of
+
+    item synthesis.
+- id: 15057
+  en: Lucid Stone
+- id: 15058
+  en: >-
+    A stone filled with brilliance.
+
+    A common ingredient of item synthesis.
+- id: 15059
+  en: Lucid Gem
+- id: 15060
+  en: >-
+    A gem abundant with brilliance.
+
+    A rare ingredient of item synthesis.
+- id: 15061
+  en: Lucid Crystal
+- id: 15062
+  en: >-
+    A mysterious crystal abundant with
+
+    brilliance. A very rare ingredient of
+
+    item synthesis.
+- id: 15063
+  en: Dense Shard
+- id: 15064
+  en: >-
+    A gem fragment filled with constriction.
+
+    A very common ingredient of
+
+    item synthesis.
+- id: 15065
+  en: Dense Stone
+- id: 15066
+  en: >-
+    A stone filled with constriction.
+
+    A common ingredient of item synthesis.
+- id: 15067
+  en: Dense Gem
+- id: 15068
+  en: >-
+    A gem filled with constriction.
+
+    A rare ingredient of item synthesis.
+- id: 15069
+  en: Dense Crystal
+- id: 15070
+  en: >-
+    A mysterious crystal filled with
+
+    constriction. A very rare ingredient of
+
+    item synthesis.
+- id: 15071
+  en: Twilight Shard
+- id: 15072
+  en: >-
+    A gem fragment filled with twilight.
+
+    A very common ingredient of
+
+    item synthesis.
+- id: 15073
+  en: Twilight Stone
+- id: 15074
+  en: >-
+    A stone filled with twilight.
+
+    A common ingredient of item synthesis.
+- id: 15075
+  en: Twilight Gem
+- id: 15076
+  en: >-
+    A gem filled with twilight.
+
+    A rare ingredient of item synthesis.
+- id: 15077
+  en: Twilight Crystal
+- id: 15078
+  en: >-
+    A mysterious crystal filled with
+
+    twilight. A very rare ingredient of
+
+    item synthesis.
+- id: 15079
+  en: Mythril Shard
+- id: 15080
+  en: >-
+    A fragment of mythril ore.
+
+    A very common ingredient of
+
+    item synthesis.
+- id: 15081
+  en: Mythril Stone
+- id: 15082
+  en: >-
+    A stone made from mythril ore.
+
+    A common ingredient of item synthesis.
+- id: 15083
+  en: Mythril Gem
+- id: 15084
+  en: >-
+    A gem cut from mythril ore.
+
+    A rare ingredient of item synthesis.
+- id: 15085
+  en: Mythril Crystal
+- id: 15086
+  en: >-
+    A mysterious crystal made from
+
+    mythril ore. A very rare ingredient
+
+    of item synthesis.
+- id: 15087
+  en: Bright Shard
+- id: 15088
+  en: >-
+    A gem fragment filled with brightness.
+
+    A very common ingredient of
+
+    item synthesis.
+- id: 15089
+  en: Bright Stone
+- id: 15090
+  en: >-
+    A stone filled with brightness.
+
+    A common ingredient of item synthesis.
+- id: 15091
+  en: Bright Gem
+- id: 15092
+  en: >-
+    A gem abundant with brightness.
+
+    A rare ingredient of item synthesis.
+- id: 15093
+  en: Bright Crystal
+- id: 15094
+  en: >-
+    A mysterious crystal abundant with
+
+    brightness. A very rare ingredient of
+
+    item synthesis.
+- id: 15095
+  en: Energy Shard
+- id: 15096
+  en: >-
+    A gem fragment filled with energy.
+
+    A very common ingredient of
+
+    item synthesis.
+- id: 15097
+  en: Energy Stone
+- id: 15098
+  en: >-
+    A stone filled with energy.
+
+    A common ingredient of item synthesis.
+- id: 15099
+  en: Energy Gem
+- id: 15100
+  en: >-
+    A gem abundant with energy.
+
+    A rare ingredient of item synthesis.
+- id: 15101
+  en: Energy Crystal
+- id: 15102
+  en: >-
+    A mysterious crystal abundant with
+
+    energy. A very rare ingredient of item
+
+    synthesis.
+- id: 15103
+  en: Serenity Shard
+- id: 15104
+  en: >-
+    A gem fragment filled with contentment.
+
+    A very common ingredient of
+
+    item synthesis.
+- id: 15105
+  en: Serenity Stone
+- id: 15106
+  en: >-
+    A stone filled with contentment.
+
+    A common ingredient of item synthesis.
+- id: 15107
+  en: Serenity Gem
+- id: 15108
+  en: >-
+    A gem filled with contentment.
+
+    A rare ingredient of item synthesis.
+- id: 15109
+  en: Serenity Crystal
+- id: 15110
+  en: >-
+    A mysterious crystal filled with
+
+    contentment. A very rare ingredient
+
+    of item synthesis.
+- id: 15111
+  en: Orichalcum+
+- id: 15112
+  en: >-
+    An extremely rare ore.
+
+    An ingredient of item synthesis.
+- id: 15113
+  en: Munny Pouch
+- id: 15114
+  en: >-
+    A handmade pouch.
+
+    It contains 5,000 hard-earned
+
+    munny.
+- id: 15115
+  en: Crystal Orb
+- id: 15116
+  en: >-
+    A pretty crystal.
+
+    It sparkles brightly when held up
+
+    to the sun.
+- id: 15117
+  en: Seifer´s Trophy
+- id: 15118
+  en: >-
+    Trophy obtained from Seifer.
+
+    It is decorated with four
+
+    crystal orbs.
+- id: 15119
+  en: Tournament Poster
+- id: 15120
+  en: >-
+    Poster for the Struggle Tournament.
+
+    It reads, "Get ready for rip-roaring
+
+    excitement!"
+- id: 15121
+  en: Poster
+- id: 15122
+  en: >-
+    An everyday poster.
+
+    It is used for advertisement by
+
+    the folk of Twilight Town.
+- id: 15123
+  en: Letter
+- id: 15124
+  en: >-
+    A letter from one of the part-time jobs.
+
+    Make sure it gets delivered!
+- id: 15125
+  en: Naminé´s Sketches
+- id: 15126
+  en: >-
+    Sketches left by Naminé.
+
+    The drawings appear to have deep
+
+    meaning.
+- id: 15127
+  en: Membership Card
+- id: 15128
+  en: >-
+    A membership card of the {:width 90}Hollow Bastion{:width 100}
+
+    Restoration Committee.
+
+    A rare, honorary membership card.
+- id: 15129
+  en: Olympus Stone
+- id: 15130
+  en: >-
+    A stone held by the gods of Olympus.
+
+    It serves as protection from
+
+    the Underworld´s curse.
+- id: 15131
+  en: Auron´s Statue
+- id: 15132
+  en: >-
+    {:width 95}A statue that looks exactly like Auron.
+
+    It is said to hold his free will. It should
+
+    be returned to Auron immediately.
+- id: 15133
+  en: Cursed Medallion
+- id: 15134
+  en: >-
+    A gold medallion that is cursed.
+
+    It is engraved with a picture of a skull.
+- id: 15135
+  en: Present
+- id: 15136
+  en: >-
+    The present that was stolen.
+
+    It is beautifully wrapped.
+- id: 15137
+  en: Decoy Presents
+- id: 15138
+  en: >-
+    These presents were made as a decoy.
+
+    They´re almost perfect replicas.
+- id: 15139
+  en: Ice Cream
+- id: 15140
+  en: >-
+    Ice cream found inside the box.
+
+    Mmmmmm. It´s refreshing and tastes
+
+    really good.
+- id: 15141
+  en: Picture
+- id: 15142
+  en: >-
+    A picture found inside the box.
+
+    It shows Hayner and the gang in front
+
+    of the old mansion in Twilight Town.
+- id: 15143
+  en: Orichalcum
+- id: 15144
+  en: >-
+    A very rare ore.
+
+    An ingredient of item synthesis.
+- id: 15146
+  en: The World of Nothing
+- id: 15147
+  en: The World of Nothing
+- id: 15171
+  en: Swing
+- id: 15172
+  en: Release
+- id: 15176
+  en: Jump
+- id: 15177
+  en: Jump on
+- id: 15178
+  en: Everyone
+- id: 15179
+  en: Zone Guard
+- id: 15180
+  en: Disc Strike
+- id: 15194
+  en: >-
+    Sora:
+
+    But what about the Heartless?
+- id: 15195
+  en: ''
+- id: 15199
+  en: The World of Nothing
+- id: 15204
+  en: Delete
+- id: 15205
+  en: Cancel
+- id: 15206
+  en: Replace
+- id: 15207
+  en: Clear Light
+- id: 15208
+  en: Burst Frontier
+- id: 15209
+  en: Frost Shard
+- id: 15210
+  en: >-
+    A gem fragment filled with ice.
+
+    A very common ingredient of
+
+    item synthesis.
+- id: 15211
+  en: Frost Stone
+- id: 15212
+  en: >-
+    A stone filled with ice.
+
+    A common ingredient of item synthesis.
+- id: 15213
+  en: Frost Gem
+- id: 15214
+  en: >-
+    A gem abundant with ice.
+
+    A rare ingredient of item synthesis.
+- id: 15215
+  en: Frost Crystal
+- id: 15216
+  en: >-
+    A mysterious crystal abundant with
+
+    ice. A very rare ingredient of item
+
+    synthesis.
+- id: 15217
+  en: Mega-Recipe
+- id: 15218
+  en: >-
+    An ancient synthesis recipe written in
+
+    a language understood only by moogles.
+- id: 15219
+  en: Ghost Ride
+- id: 15220
+  en: Hinder
+- id: 15225
+  en: Chicken Little
+- id: 15226
+  en: Baseball Charm
+- id: 15227
+  en: >-
+    With the help of two friends, use
+
+    the Summon Command to call forth
+
+    Chicken Little for a helping hand.
+- id: 15228
+  en: The World of Nothing
+- id: 15235
+  en: Defeat all of the Heartless!
+- id: 15236
+  en: Defeat all of the Nobodies!
+- id: 15237
+  en: Defeat all of the enemies!
+- id: 15238
+  en: >-
+    Change a character´s equipment.
+
+    To use an item on the field,
+
+    it must be equipped.
+- id: 15239
+  en: >
+    These are items in stock.
+
+    Items can be used or thrown away.
+- id: 15240
+  en: There are no Party Members to switch.
+- id: 15241
+  en: >-
+    Select settings for shortcut commands
+
+    and other various functions.
+- id: 15242
+  en: Change Party Member settings.
+- id: 15243
+  en: Equip each Party Member with Abilities.
+- id: 15244
+  en: >-
+    Confirm Form Ability.
+
+    Form Abilities cannot be changed.
+- id: 15247
+  en: Post
+- id: 15248
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    {:unk0d }{:unk0d } will have no effect
+
+    if used.
+- id: 15249
+  en: Deliver
+- id: 15250
+  en: Jump
+- id: 15252
+  en: Pearl
+- id: 15253
+  en: Mog´s Workshop
+- id: 15254
+  en: Synthesize
+- id: 15279
+  en: D-Charge
+- id: 15280
+  en: Healing Light
+- id: 15281
+  en: Struggle Sword
+- id: 15282
+  en: A toy weapon used in Struggle battles.
+- id: 15283
+  en: Quit
+- id: 15284
+  en: Quit Guide
+- id: 15285
+  en: Synthesize
+- id: 15286
+  en: Synthesize Items.
+- id: 15292
+  en: List of materials handed to Moogle in the past.
+- id: 15295
+  en: Select item to synthesize.
+- id: 15297
+  en: Save
+- id: 15298
+  en: Fill the Drive gauge to use Healing Light!
+- id: 15299
+  en: Use Healing Light to save Sora!
+- id: 15300
+  en: Use Healing Light to trade places with Sora!
+- id: 15302
+  en: Types
+- id: 15303
+  en: 	Total
+- id: 15304
+  en: ''
+- id: 15305
+  en: High Counter
+- id: 15306
+  en: Auto Valor
+- id: 15307
+  en: >-
+    Automatically sets the Reaction
+
+    Command to Valor in a pinch, if
+
+    Valor Form is usable.
+- id: 15308
+  en: Auto Wisdom
+- id: 15309
+  en: >-
+    Automatically sets the Reaction
+
+    Command to Wisdom in a pinch, if
+
+    Wisdom Form is usable.
+- id: 15310
+  en: Auto Master
+- id: 15311
+  en: >-
+    Automatically sets the Reaction
+
+    Command to Master in a pinch, if
+
+    Master Form is usable.
+- id: 15312
+  en: Auto Final
+- id: 15313
+  en: >-
+    Automatically sets the Reaction
+
+    Command to Final in a pinch, if
+
+    Final Form is usable.
+- id: 15314
+  en: Auto Summon
+- id: 15315
+  en: >-
+    {:width 75}When a friend is down, automatically sets
+
+    the Reaction Command to Summon in the Command
+
+    Menu containing Summon, if Summon is usable.
+- id: 15316
+  en: Combo Boost
+- id: 15317
+  en: >-
+    Increases the damage of the finishing
+
+    move on the ground relative to the
+
+    number of hits in the combo.
+- id: 15318
+  en: Air Combo Boost
+- id: 15319
+  en: >-
+    Increases the damage of the finishing
+
+    move in the air relative to the number
+
+    of hits in the combo.
+- id: 15320
+  en: Reaction Boost
+- id: 15321
+  en: >-
+    Increases damage dealt using
+
+    Reaction Commands by {:color #F0F00080}50%{:reset}.
+
+    Equip more to increase the effect.
+- id: 15322
+  en: Finishing Plus
+- id: 15323
+  en: >-
+    Unleash successive finishing moves
+
+    after combos.
+- id: 15324
+  en: Negative Combo
+- id: 15325
+  en: >-
+    Decreases maximum combo on
+
+    the ground and in midair by 1.
+
+    Equip more to increase the effect.
+- id: 15326
+  en: Berserk Charge
+- id: 15327
+  en: >-
+    {:width 90}Increases strength by {:color #F0F00080}2{:reset}{:width 90} during MP Charge
+
+    and enables combos to continue endlessly.
+
+    The combo finishing move becomes unavailable.
+- id: 15328
+  en: Damage Drive
+- id: 15329
+  en: >-
+    {:width 90}Restores the Drive Gauge every time damage
+
+    is taken. The amount restored to the Drive
+
+    Gauge is relative to the damage received.
+- id: 15330
+  en: Drive Boost
+- id: 15331
+  en: >-
+    Allows greater restoration of
+
+    the Drive Gauge during MP Charge.
+
+    Equip more to increase the effect.
+- id: 15332
+  en: Form Boost
+- id: 15333
+  en: >-
+    Increases the duration of each
+
+    Drive Form.
+
+    Equip more to increase the effect.
+- id: 15334
+  en: Summon Boost
+- id: 15335
+  en: >-
+    Increases the amount of time
+
+    the Summon will stay.
+- id: 15336
+  en: Combination Boost
+- id: 15337
+  en: >-
+    Increases the amount of time
+
+    spent for Limits.
+- id: 15338
+  en: Experience Boost
+- id: 15339
+  en: >-
+    Increases experience gained by {:color #F0F00080}100%{:reset}
+
+    when you are at half health or less.
+
+    Equip more to increase the effect.
+- id: 15340
+  en: Leaf Bracer
+- id: 15341
+  en: >-
+    Casting Cure on yourself will continue
+
+    even when attacked.
+- id: 15342
+  en: Magic Lock-On
+- id: 15343
+  en: >-
+    Automatically locks on to a target when
+
+    casting Fire, Blizzard, Thunder, or
+
+    Magnet.
+- id: 15344
+  en: No Experience
+- id: 15345
+  en: Disables the gaining of experience.
+- id: 15346
+  en: Draw
+- id: 15347
+  en: >-
+    Draws in and obtains nearby orbs.
+
+    Equip more to increase the effect.
+- id: 15348
+  en: Jackpot
+- id: 15349
+  en: >-
+    Increases drop rate of munny, and HP
+
+    and MP orbs. Equip the whole Party to
+
+    further increase the drop rate.
+- id: 15350
+  en: Lucky Lucky
+- id: 15351
+  en: >-
+    Will bring luck by increasing the drop
+
+    rate of items. Equip the whole Party
+
+    to further increase the drop rate.
+- id: 15352
+  en: Fire Boost
+- id: 15353
+  en: >-
+    Increases damage done with fire-based
+
+    attacks by {:color #F0F00080}20%{:reset}.
+
+    Equip more to increase the effect.
+- id: 15354
+  en: Blizzard Boost
+- id: 15355
+  en: >-
+    Increases damage done with blizzard-
+
+    based attacks by {:color #F0F00080}20%{:reset}.
+
+    Equip more to increase the effect.
+- id: 15356
+  en: Thunder Boost
+- id: 15357
+  en: >-
+    Increases damage done with thunder-
+
+    based attacks by {:color #F0F00080}20%{:reset}.
+
+    Equip more to increase the effect.
+- id: 15358
+  en: Item Boost
+- id: 15359
+  en: >-
+    Increases effect done with healing items
+
+    on the field by {:color #F0F00080}50%{:reset}.
+
+    Equip more to increase the effect.
+- id: 15360
+  en: MP Rage
+- id: 15361
+  en: >-
+    Restores MP relative to the amount
+
+    of damage taken.
+
+    Equip more to increase the effect.
+- id: 15362
+  en: MP Haste
+- id: 15363
+  en: >-
+    Increases MP restoration speed by 
+
+    {:color #F0F00080}25%{:reset} after MP is fully consumed.
+
+    Equip more to increase the effect.
+- id: 15364
+  en: Defender
+- id: 15365
+  en: >-
+    Increases defense by {:color #F0F00080}3{:reset} in a pinch.
+
+    Equip more to increase the effect.
+- id: 15366
+  en: Second Chance
+- id: 15367
+  en: >-
+    Ensures 1 HP remains after taking
+
+    massive damage.
+- id: 15368
+  en: Once More
+- id: 15369
+  en: >-
+    Ensures 1 HP remains after taking
+
+    damage from a combo.
+- id: 15370
+  en: Auto Limit
+- id: 15371
+  en: >-
+    Automatically sets the Reaction
+
+    Command to Limit, if Limit is usable.
+- id: 15372
+  en: Auto Change
+- id: 15373
+  en: >-
+    Automatically replaces fallen
+
+    Party Members.
+- id: 15374
+  en: Hyper Healing
+- id: 15375
+  en: >-
+    Quickly revives a fallen Party Member
+
+    and greatly restores their HP.
+- id: 15376
+  en: Auto Healing
+- id: 15377
+  en: >-
+    Restores HP while replaced by
+
+    another Party Member with Change.
+- id: 15378
+  en: MP Hastera
+- id: 15379
+  en: >-
+    Increases MP restoration speed by {:color #F0F00080}50%{:reset}
+
+    after MP is fully consumed.
+
+    Equip more to increase the effect.
+- id: 15380
+  en: MP Hastega
+- id: 15381
+  en: >-
+    Increases MP restoration speed by {:color #F0F00080}75%{:reset}
+
+    after MP is fully consumed.
+
+    Equip more to increase the effect.
+- id: 15483
+  en: Aura Sphere
+- id: 15485
+  en: Goofy Tornado
+- id: 15486
+  en: >-
+    Creates a vortex to draw enemies
+
+    close and attack them!{:color #F0F00080} MP Cost: 10{:reset}
+- id: 15489
+  en: Goofy Turbo
+- id: 15490
+  en: >-
+    Dashes through enemies, bouncing
+
+    them towards Sora. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15491
+  en: Slash Frenzy
+- id: 15492
+  en: >-
+    Stops enemy movements with a rapid
+
+    swarm of attacks. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15493
+  en: Quickplay
+- id: 15494
+  en: >-
+    Pounces on the enemy to obtain orbs.
+
+    {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15495
+  en: Divider
+- id: 15496
+  en: >-
+    Attacks nearby enemies while flying
+
+    through the air. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15497
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Handed over all {:color #FFFF0080}synthesis materials{:reset}
+
+    in stock.
+- id: 15498
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Handed over all {:color #FFFF0080}recipes{:reset}
+
+    in stock.
+- id: 15499
+  en: Material Log
+- id: 15500
+  en: Creations
+- id: 15501
+  en: '{:width 90}F{:width 70}ree {:width 90}D{:width 70}evelopment'
+- id: 15502
+  en: Recipes
+- id: 15503
+  en: Quit
+- id: 15504
+  en: Confirm past materials.
+- id: 15505
+  en: Synthesize old items.
+- id: 15506
+  en: Have Moogle develop new items.
+- id: 15507
+  en: Synthesize items using acquired recipes.
+- id: 15508
+  en: Close menu.
+- id: 15509
+  en: Item Synthesis
+- id: 15510
+  en: Goofy Bash
+- id: 15511
+  en: >-
+    {:width 90}An effective ranged attack, throwing a
+
+    shield at the enemy from afar. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15512
+  en: Ferocious Rush
+- id: 15513
+  en: >-
+    Attacks the enemy successively with
+
+    a rush of enraged tackles. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15514
+  en: Blazing Fury
+- id: 15515
+  en: >-
+    Becomes engulfed in flames and chases
+
+    the enemy. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15516
+  en: Icy Terror
+- id: 15517
+  en: >-
+    Ice crystals form around and attack
+
+    the target. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15518
+  en: Bolts of Sorrow
+- id: 15519
+  en: >-
+    Lightning bolts rain down upon
+
+    the target. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15520
+  en: Mushu Fire
+- id: 15521
+  en: >-
+    Mushu attacks nearby enemies by
+
+    breathing fire. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15522
+  en: Flametongue
+- id: 15523
+  en: >-
+    Rushes in and attacks enemies in midair
+
+    {:width 95}while engulfed in Mushu´s fire. {:color #F0F00080}MP Cost: 10{:reset}{:width 100}
+- id: 15524
+  en: Dark Shield
+- id: 15525
+  en: >-
+    Blocks enemy attacks with a shield of
+
+    darkness as commanded. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15528
+  en: Dark Aura
+- id: 15529
+  en: >-
+    Stops enemy movements with dark magic
+
+    spells as commanded when Sora´s
+
+    combo is about to end. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15530
+  en: Fierce Claw
+- id: 15531
+  en: >-
+    Attacks the target successively.
+     {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15532
+  en: Groundshaker
+- id: 15533
+  en: >-
+    Attacks surrounding enemies with an
+
+    earth-shaking battle cry. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15540
+  en: Scouting Disk
+- id: 15541
+  en: >-
+    Releases a disk that automatically
+
+    finds and attacks an enemy. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15542
+  en: Slow 2
+- id: 15543
+  en: (Delete)
+- id: 15544
+  en: No Mercy
+- id: 15545
+  en: >-
+    There is no escaping from this attack!
+     {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15546
+  en: Rain Storm
+- id: 15547
+  en: >-
+    Throws weapons at the enemy
+
+    successively. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15548
+  en: Bone Smash
+- id: 15549
+  en: >-
+    Throws bombs continuously at
+
+    the target. {:color #F0F00080}MP Cost: 10{:reset}
+- id: 15550
+  en: '{:icon rank-c}'
+- id: 15551
+  en: '{:icon rank-b}'
+- id: 15552
+  en: '{:icon rank-a}'
+- id: 15553
+  en: '{:icon rank-s}'
+- id: 15554
+  en: '{:icon gem-dark}'
+- id: 15555
+  en: '{:icon gem-blaze}'
+- id: 15556
+  en: '{:icon gem-frost}'
+- id: 15557
+  en: '{:icon gem-lightning}'
+- id: 15558
+  en: '{:icon gem-power}'
+- id: 15559
+  en: '{:icon gem-lucid}'
+- id: 15560
+  en: '{:icon gem-dense}'
+- id: 15561
+  en: '{:icon gem-twilight}'
+- id: 15562
+  en: '{:icon gem-mythril}'
+- id: 15563
+  en: '{:icon gem-bright}'
+- id: 15564
+  en: '{:icon gem-energy}'
+- id: 15565
+  en: '{:icon gem-serenity}'
+- id: 15566
+  en: '{:icon gem-orichalcum}'
+- id: 15569
+  en: Freeze
+- id: 15570
+  en: Amateur Moogle
+- id: 15571
+  en: Novice Moogle
+- id: 15572
+  en: Junior Moogle
+- id: 15573
+  en: Skilled Moogle
+- id: 15574
+  en: Senior Moogle
+- id: 15575
+  en: Artisan Moogle
+- id: 15576
+  en: Master Moogle
+- id: 15577
+  en: Superior Moogle
+- id: 15578
+  en: Primo Moogle
+- id: 15579
+  en: ???
+- id: 15580
+  en: Not Used
+- id: 15581
+  en: Lists
+- id: 15582
+  en: Confirm completed collection lists.
+- id: 15583
+  en: '{:icon button-square}Collection List'
+- id: 15584
+  en: List of items obtained from Moogle.
+- id: 15585
+  en: '{:icon button-square}Material Log'
+- id: 15587
+  en: '{:width 90}Enter Tournament'
+- id: 15588
+  en: The World of Nothing
+- id: 15589
+  en: There are no items.
+- id: 15590
+  en: List of current synthesis materials in stock.
+- id: 15591
+  en: There are no items.
+- id: 15598
+  en: Never Land
+- id: 15599
+  en: My shadow!
+- id: 15600
+  en: The Flying Boy
+- id: 15601
+  en: Tiny Fairy
+- id: 15602
+  en: Wendy
+- id: 15603
+  en: Anti-Sora
+- id: 15604
+  en: Believe!
+- id: 15605
+  en: Old Rival
+- id: 15606
+  en: Victory
+- id: 15607
+  en: The Clocktower
+- id: 15608
+  en: Present
+- id: 15609
+  en: Journey´s End
+- id: 15615
+  en: Berserk
+- id: 15616
+  en: Star Recipe
+- id: 15617
+  en: >-
+    An ancient synthesis recipe written in
+
+    a language understood only by moogles.
+- id: 15618
+  en: Recovery Recipe
+- id: 15619
+  en: >-
+    An ancient synthesis recipe written in
+
+    a language understood only by moogles.
+- id: 15620
+  en: Skill Recipe
+- id: 15621
+  en: >-
+    An ancient synthesis recipe written in
+
+    a language understood only by moogles.
+- id: 15622
+  en: Guard Recipe
+- id: 15623
+  en: >-
+    An ancient synthesis recipe written in
+
+    a language understood only by moogles.
+- id: 15624
+  en: Dummy
+- id: 15625
+  en: Synthesis Recipe
+- id: 15626
+  en: Dummy
+- id: 15627
+  en: Synthesis Recipe
+- id: 15628
+  en: Dummy
+- id: 15629
+  en: Synthesis Recipe
+- id: 15630
+  en: Dummy
+- id: 15631
+  en: Synthesis Recipe
+- id: 15632
+  en: Dummy
+- id: 15633
+  en: Synthesis Recipe
+- id: 15634
+  en: Dummy
+- id: 15635
+  en: Synthesis Recipe
+- id: 15636
+  en: Dummy
+- id: 15637
+  en: Synthesis Recipe
+- id: 15638
+  en: Dummy
+- id: 15639
+  en: Synthesis Recipe
+- id: 15640
+  en: Dummy
+- id: 15641
+  en: Synthesis Recipe
+- id: 15642
+  en: Dummy
+- id: 15643
+  en: Synthesis Recipe
+- id: 15644
+  en: Dummy
+- id: 15645
+  en: Synthesis Recipe
+- id: 15646
+  en: Road to Discovery
+- id: 15647
+  en: >-
+    A synthesis recipe that requires
+
+    special materials.
+- id: 15648
+  en: '{:width 75}Strength Beyond Strength'
+- id: 15649
+  en: >-
+    A synthesis recipe that requires
+
+    special materials.
+- id: 15650
+  en: Book of Shadows
+- id: 15651
+  en: >-
+    A synthesis recipe that requires
+
+    special materials.
+- id: 15652
+  en: Cloaked Thunder
+- id: 15653
+  en: >-
+    A synthesis recipe that requires
+
+    special materials.
+- id: 15654
+  en: Eternal Blossom
+- id: 15655
+  en: >-
+    A synthesis recipe that requires
+
+    special materials.
+- id: 15656
+  en: Rare Document
+- id: 15657
+  en: >-
+    An ancient synthesis recipe for
+
+    a rare item.
+- id: 15658
+  en: Dummy 23
+- id: 15659
+  en: Synthesis Recipe 23
+- id: 15660
+  en: Dummy 24
+- id: 15661
+  en: Synthesis Recipe 24
+- id: 15662
+  en: Dummy 25
+- id: 15663
+  en: Synthesis Recipe 25
+- id: 15664
+  en: Dummy 26
+- id: 15665
+  en: Synthesis Recipe 26
+- id: 15666
+  en: Dummy 27
+- id: 15667
+  en: Synthesis Recipe 27
+- id: 15668
+  en: Style Recipe
+- id: 15669
+  en: >-
+    An ancient synthesis recipe written in
+
+    a language understood only by moogles.
+- id: 15670
+  en: Moon Recipe
+- id: 15671
+  en: >-
+    An ancient synthesis recipe written in
+
+    a language understood only by moogles.
+- id: 15672
+  en: Queen Recipe
+- id: 15673
+  en: >-
+    An ancient synthesis recipe written in
+
+    a language understood only by moogles.
+- id: 15674
+  en: King Recipe
+- id: 15675
+  en: >-
+    An ancient synthesis recipe written in
+
+    a language understood only by moogles.
+- id: 15676
+  en: Ultimate Recipe
+- id: 15677
+  en: >-
+    An ancient synthesis recipe written in
+
+    a language understood only by moogles.
+- id: 15711
+  en: Run Through
+- id: 15713
+  en: Trinity
+- id: 15714
+  en: Break
+- id: 15715
+  en: Ultima
+- id: 15716
+  en: Major Drive
+- id: 15717
+  en: Begin Combo
+- id: 15729
+  en: Materials
+- id: 15730
+  en: Overtaker
+- id: 15731
+  en: Break
+- id: 15754
+  en: Moogle LV
+- id: 15755
+  en: Next LV
+- id: 15756
+  en: Synthesis Recipe
+- id: 15757
+  en: Item Rank {:unk0d }
+- id: 15758
+  en: Need/Quantity
+- id: 15759
+  en: Stock
+- id: 15760
+  en: '{:icon button-square}Materials'
+- id: 15761
+  en: Synthesize item.
+- id: 15765
+  en: Recovery Run
+- id: 15767
+  en: Grab
+- id: 15768
+  en: Rescue
+- id: 15769
+  en: Grab
+- id: 15770
+  en: Arm-in-Arm
+- id: 15771
+  en: Piggyback
+- id: 15772
+  en: About-Face
+- id: 15773
+  en: Show Stealer
+- id: 15850
+  en: Fend
+- id: 15866
+  en: Star Seeker
+- id: 15867
+  en: >-
+    Increases maximum combo by 1
+
+    when in midair.
+- id: 15868
+  en: Hidden Dragon
+- id: 15869
+  en: >-
+    Restores MP relative to the amount of
+
+    damage taken.
+- id: 15870
+  en: Save the Queen
+- id: 15871
+  en: >-
+    A staff with colossal magic and
+
+    strength. Quickly revives wielder when
+
+    fallen, and restores much of their HP.
+- id: 15872
+  en: Save the King
+- id: 15873
+  en: >-
+    {:width 90}A powerful shield with great strength and
+
+    defense. Increases the effect of
+
+    restoration items used on the field by {:color #F0F00080}50%{:reset}.
+- id: 15906
+  en: '{:width 95}There are no creatable items.'
+- id: 15915
+  en: '{:icon ai-settings}'
+- id: 15918
+  en: Hero´s Crest
+- id: 15919
+  en: >-
+    Increases the damage of the finishing
+
+    move in the air relative to the number
+
+    of hits in the combo.
+- id: 15920
+  en: Monochrome
+- id: 15921
+  en: >-
+    Increases the effect of restoration
+
+    items used on the field by {:color #F0F00080}50%{:reset}.
+- id: 15922
+  en: Follow the Wind
+- id: 15923
+  en: Draws in nearby orbs.
+- id: 15924
+  en: Circle of Life
+- id: 15925
+  en: >-
+    Has great strength, increasing
+
+    MP restoration speed by {:color #F0F00080}25%{:reset}
+
+    after MP is consumed.
+- id: 15926
+  en: Photon Debugger
+- id: 15927
+  en: >-
+    Increases damage done with thunder-
+
+    based attacks by {:color #F0F00080}20%{:reset}.
+- id: 15928
+  en: Gull Wing
+- id: 15929
+  en: >-
+    Increases the amount of experience
+
+    gained by {:color #F0F00080}100%{:reset} when defeating
+
+    an enemy at a critical moment.
+- id: 15930
+  en: Rumbling Rose
+- id: 15931
+  en: >-
+    Has great strength, allowing finishing
+
+    combo moves to be unleashed
+
+    successively.
+- id: 15932
+  en: Guardian Soul
+- id: 15933
+  en: >-
+    Has great strength, increasing the amount
+
+    of damage dealt from Reaction Commands
+
+    by {:color #F0F00080}50%{:reset}.
+- id: 15934
+  en: Wishing Lamp
+- id: 15935
+  en: >-
+    Wishes come true by increasing
+
+    the drop rate of munny, and HP
+
+    and MP orbs.
+- id: 15936
+  en: Decisive Pumpkin
+- id: 15937
+  en: >-
+    The greater number of combos landed,
+
+    the more damage is dealt, leading to
+
+    a strong finishing move!
+- id: 15938
+  en: Sleeping Lion
+- id: 15939
+  en: >-
+    Well-balanced with strength and magic,
+
+    increasing maximum ground-based
+
+    combos by 1.
+- id: 15940
+  en: Sweet Memories
+- id: 15941
+  en: >-
+    Although it does not enhance attack
+
+    strength, it increases the drop rate
+
+    of drive orbs in place of munny.
+- id: 15942
+  en: Mysterious Abyss
+- id: 15943
+  en: >-
+    Enhances magic to increase damage
+
+    dealt with blizzard-based attacks by {:color #F0F00080}20%{:reset}.
+- id: 15944
+  en: Fatal Crest
+- id: 15945
+  en: >-
+    {:width 95}Increases strength by {:color #F0F00080}2{:reset} {:width 95}during MP Charge
+
+    and enables combos to continue endlessly.
+
+    {:width 90}The combo finishing move becomes unavailable.
+- id: 15946
+  en: Bond of Flame
+- id: 15947
+  en: >-
+    Enhances magic to increase damage
+
+    dealt with fire-based attacks by {:color #F0F00080}20%{:reset}.
+- id: 15948
+  en: Fenrir
+- id: 15949
+  en: >-
+    Has great range and strength, but
+
+    maximum ground and midair combos are
+
+    decreased by 1.
+- id: 15950
+  en: Ultima Weapon
+- id: 15951
+  en: >-
+    {:width 95}The Keyblade above all others.
+
+    Increases MP restoration rate by {:color #F0F00080}75%{:reset}
+
+    once all MP has been consumed.
+- id: 15952
+  en: Struggle Wand
+- id: 15953
+  en: A toy wand used in Struggle battles.
+- id: 15954
+  en: Struggle Hammer
+- id: 15955
+  en: A toy club used in Struggle battles.
+- id: 15956
+  en: Save the Queen+
+- id: 15957
+  en: >-
+    A powerful staff with colossal magic
+
+    and strength. Restores MP relative to
+
+    the amount of damage taken.
+- id: 15958
+  en: Save the King+
+- id: 15959
+  en: >-
+    A powerful shield with great strength
+
+    and defense. {:color #F0F00080}Halves{:reset} damage taken
+
+    in critical situations.
+- id: 15972
+  en: Decipher recipes and synthesize items!
+- id: 15973
+  en: Use {:icon gem-bright}Brightness & {:icon gem-energy}Energy Materials!
+- id: 15974
+  en: Use {:icon gem-serenity}Serenity Materials!
+- id: 15975
+  en: Use up to two extra Materials!
+- id: 15976
+  en: Rank {:icon rank-c} recipe Materials cut by half!
+- id: 15977
+  en: Rank {:icon rank-b} recipe Materials cut by half!
+- id: 15978
+  en: Rank {:icon rank-a} recipe Materials cut by half!
+- id: 15979
+  en: Make new items in Free Development!
+- id: 15980
+  en: Rank {:icon rank-s} recipe Materials cut by half!
+- id: 15982
+  en: Get 1 type of Material.
+- id: 15983
+  en: Get 5 types of Materials.
+- id: 15984
+  en: Get 10 types of Materials.
+- id: 15985
+  en: Get 15 types of Materials.
+- id: 15986
+  en: Get 20 types of Materials.
+- id: 15987
+  en: Get 25 types of Materials.
+- id: 15988
+  en: Get 30 types of Materials.
+- id: 15989
+  en: Get 35 types of Materials.
+- id: 15990
+  en: Get 40 types of Materials.
+- id: 15991
+  en: Get 45 types of Materials.
+- id: 15992
+  en: Get all Materials.
+- id: 15993
+  en: Obtain {:width 90}total amount of 50 or more.
+- id: 15994
+  en: Obtain {:width 90}total amount of 100 or more.
+- id: 15995
+  en: Obtain {:width 90}total amount of 250 or more.
+- id: 15996
+  en: Obtain {:width 90}total amount of 500 or more.
+- id: 15997
+  en: Obtain {:width 90}total amount of 1,000 or more.
+- id: 15998
+  en: Obtain all {:icon gem-dense}dense Materials.
+- id: 15999
+  en: Obtain all {:icon gem-twilight}twilight Materials.
+- id: 16000
+  en: Obtain all {:icon gem-mythril}mythril Materials.
+- id: 16001
+  en: Obtain all {:icon gem-bright}bright Materials.
+- id: 16002
+  en: Obtain all {:icon gem-energy}energy Materials.
+- id: 16003
+  en: Obtain all {:icon gem-serenity}serenity Materials.
+- id: 16004
+  en: Obtain all rank {:icon rank-c} Materials.
+- id: 16005
+  en: Obtain all rank {:icon rank-b} Materials.
+- id: 16006
+  en: Obtain all rank {:icon rank-a} Materials.
+- id: 16007
+  en: Obtain all rank {:icon rank-s} Materials.
+- id: 16008
+  en: Obtain 30 or more {:icon gem-dark}Dark Shards.
+- id: 16009
+  en: Obtain 30 or more {:icon gem-blaze}Blazing Shards.
+- id: 16010
+  en: Obtain 30 or more {:icon gem-frost}Frost Shards.
+- id: 16011
+  en: Obtain 30 or more {:icon gem-lightning}Lightning Shards.
+- id: 16012
+  en: Obtain 30 or more {:icon gem-power}Power Shards.
+- id: 16013
+  en: Obtain 30 or more {:icon gem-lucid}Lucid Shards.
+- id: 16014
+  en: Obtain 30 or more {:icon gem-dense}Dense Shards.
+- id: 16015
+  en: Obtain 30 or more {:icon gem-twilight}Twilight Shards.
+- id: 16016
+  en: Obtain 25 or more {:icon gem-dark}Dark Stones.
+- id: 16017
+  en: Obtain 25 or more {:icon gem-blaze}Blazing Stones.
+- id: 16018
+  en: Obtain 25 or more {:icon gem-frost}Frost Stones.
+- id: 16019
+  en: Obtain 25 or more {:icon gem-lightning}Lightning Stones.
+- id: 16020
+  en: Obtain 25 or more {:icon gem-power}Power Stones.
+- id: 16021
+  en: Obtain 25 or more {:icon gem-lucid}Lucid Stones.
+- id: 16022
+  en: Obtain 25 or more {:icon gem-dense}Dense Stones.
+- id: 16023
+  en: Obtain 25 or more {:icon gem-twilight}Twilight Stones.
+- id: 16024
+  en: Obtain 20 or more {:icon gem-dark}Dark Gems.
+- id: 16025
+  en: Obtain 20 or more {:icon gem-blaze}Blazing Gems.
+- id: 16026
+  en: Obtain 20 or more {:icon gem-frost}Frost Gems.
+- id: 16027
+  en: Obtain 20 or more {:icon gem-lightning}Lightning Gems.
+- id: 16028
+  en: Obtain 20 or more {:icon gem-power}Power Gems.
+- id: 16029
+  en: Obtain 20 or more {:icon gem-lucid}Lucid Gems.
+- id: 16030
+  en: Obtain 20 or more {:icon gem-dense}Dense Gems.
+- id: 16031
+  en: Obtain 20 or more {:icon gem-twilight}Twilight Gems.
+- id: 16034
+  en: ''
+- id: 16035
+  en: Corridors
+- id: 16036
+  en: Firagun
+- id: 16037
+  en: Blizzagun
+- id: 16046
+  en: The Interceptor Map
+- id: 16047
+  en: A map of the area.
+- id: 16048
+  en: The Black Pearl Map
+- id: 16049
+  en: A map of the area.
+- id: 16050
+  en: Isla de Muerta Map
+- id: 16051
+  en: A map of the area.
+- id: 16052
+  en: Ship Graveyard Map
+- id: 16053
+  en: A map of the area.
+- id: 16054
+  en: Moogle LV
+- id: 16055
+  en: Status
+- id: 16075
+  en: '{:icon button-square}Creations'
+- id: 16076
+  en: '{:icon button-square}Free Development'
+- id: 16077
+  en: '{:icon button-square}Recipes'
+- id: 16080
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Obtained {:color #FFFF0080}{:unk0d }{:unk0d }{:reset}
+
+    for completing the collection.
+- id: 16081
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Moogle{:color #FFFF0080} leveled up!{:reset}
+
+    {:unk0d }
+- id: 16095
+  en: Jump on
+- id: 16096
+  en: Jump
+- id: 16097
+  en: Christmas Town Map
+- id: 16098
+  en: A map of the area.
+- id: 16099
+  en: Curly Hill Map
+- id: 16100
+  en: A map of the area.
+- id: 16101
+  en: Oasis Map
+- id: 16102
+  en: A map of the area.
+- id: 16103
+  en: Savannah Map
+- id: 16104
+  en: A map of the area.
+- id: 16105
+  en: Castle Perimeter Map
+- id: 16106
+  en: A map of the area.
+- id: 16107
+  en: The Great Maw Map
+- id: 16108
+  en: A map of the area.
+- id: 16109
+  en: I/O Tower Map
+- id: 16110
+  en: A map of the area.
+- id: 16111
+  en: Central Computer Core Map
+- id: 16112
+  en: A map of the area.
+- id: 16113
+  en: Solar Sailer Simulation Map
+- id: 16114
+  en: A map of the area.
+- id: 16116
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    {:color #FFFF0080}{:icon gem-serenity}Serenity{:reset} Materials
+
+    are needed to synthesize this item.
+
+    Check {:color #FFFF0080}{:icon gem-serenity}Serenity{:reset} Materials to continue.
+- id: 16117
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Not enough Materials. Synthesis can be
+
+    performed by checking {:color #FFFF0080}{:icon gem-energy}Energy{:reset} Materials.
+
+    Please check {:color #FFFF0080}{:icon gem-energy}Energy{:reset} Materials to
+
+    continue.
+- id: 16118
+  en: Synthesized item!
+- id: 16134
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Stock is full. Cannot synthesize.
+- id: 16152
+  en: >-
+    Sora:
+
+    We´ve got to go after Auron!
+- id: 16154
+  en: Synthesize
+- id: 16155
+  en: Quit
+- id: 16156
+  en: Synthesize item.
+- id: 16157
+  en: Cancel synthesis.
+- id: 16158
+  en: Increase Moogle's Level.
+- id: 16159
+  en: >-
+    Lessens necessary amount of 
+
+    Materials by half.
+- id: 16160
+  en: >-
+    Synthesize item of a higher 
+
+    rank.
+- id: 16161
+  en: In stock
+- id: 16479
+  en: >-
+    {:color #FFFF0080}Can use {:icon gem-bright}Brightness & {:icon gem-energy}Energy Materials!{:reset}
+
+    Use when synthesizing items!
+- id: 16480
+  en: >-
+    {:color #FFFF0080}Can use {:icon gem-serenity}Serenity Materials!{:reset}
+
+    Use in old creations found in Creations!
+- id: 16481
+  en: '{:color #FFFF0080}Can use up to two extra Materials!{:reset}'
+- id: 16482
+  en: >-
+    {:color #FFFF0080}Rank {:icon rank-c} recipe Materials cut by half!{:reset}
+
+    Items in Creations can be synthesized using
+
+    only half the Materials!
+- id: 16483
+  en: >-
+    {:color #FFFF0080}Rank {:icon rank-b} recipe Materials cut by half!{:reset}
+
+    Items in Creations can be synthesized using
+
+    only half the Materials!
+- id: 16484
+  en: >-
+    {:color #FFFF0080}Rank {:icon rank-a} recipe Materials cut by half!{:reset}
+
+    Items in Creations can be synthesized using
+
+    only half the Materials!
+- id: 16485
+  en: '{:color #FFFF0080}Make new items in Free Development!{:reset}'
+- id: 16486
+  en: >-
+    {:color #FFFF0080}Rank {:icon rank-s} recipe Materials cut by half!{:reset}
+
+    Items in Creations can be synthesized using
+
+    only half the Materials!
+- id: 16510
+  en: Heelflip
+- id: 16511
+  en: Pop-Jump
+- id: 16512
+  en: 360° Spin
+- id: 16513
+  en: Method Grab
+- id: 16514
+  en: Air Walk
+- id: 16515
+  en: Handstand
+- id: 16574
+  en: >-
+    Sora:
+
+    Let´s head up and see
+
+    what´s going on.
+- id: 16668
+  en: >-
+    Sora:
+
+    We´ve got to get that data back!
+- id: 16701
+  en: >-
+    Sora:
+
+    It doesn´t look like we can
+
+    go this way!
+- id: 16702
+  en: ₓₓₓ
+- id: 16703
+  en: >-
+    Sora:
+
+    There´s a lot of fallen rocks.
+
+    It´s probably too dangerous.
+- id: 16705
+  en: >-
+    Sora:
+
+    There's a lot of fallen rocks.
+
+    It's probably too dangerous.
+- id: 16751
+  en: >-
+    Roxas:
+
+    Gotta get to the armor shop!
+- id: 16752
+  en: >-
+    Roxas:
+
+    Better head for the accessory shop.
+- id: 16753
+  en: >-
+    Roxas:
+
+    Let me talk to the owner first.
+- id: 16754
+  en: >-
+    Roxas:
+
+    Gotta get to the candy store!
+- id: 16755
+  en: >-
+    Roxas:
+
+    I should try to find that cat.
+- id: 16756
+  en: >-
+    Roxas:
+
+    But which weapon should I choose?
+- id: 16757
+  en: >-
+    Roxas:
+
+    I´m not about to run away!
+- id: 16758
+  en: >-
+    Roxas:
+
+    I´m not about to run away!
+- id: 16759
+  en: >-
+    Roxas:
+
+    I...think I should stand in that light.
+- id: 16760
+  en: >-
+    Roxas:
+
+    Wonder what's in that chest.
+- id: 16761
+  en: >-
+    Roxas:
+
+    I´m not about to run away!
+- id: 16762
+  en: >-
+    Roxas:
+
+    I´m not about to run away!
+- id: 16763
+  en: >-
+    Roxas:
+
+    I´m not about to run away!
+- id: 16774
+  en: >-
+    Roxas:
+
+    I´m still on the clock!
+- id: 16775
+  en: >-
+    Roxas:
+
+    I´m still on the clock!
+- id: 16776
+  en: >-
+    Roxas:
+
+    I´m still on the clock!
+- id: 16777
+  en: >-
+    Roxas:
+
+    I´m still on the clock!
+- id: 16778
+  en: >-
+    Roxas:
+
+    I´m still on the clock!
+- id: 16779
+  en: >-
+    Roxas:
+
+    I´m still on the clock!
+- id: 16780
+  en: >-
+    Roxas:
+
+    I´ve got to get to the bottom of this!
+- id: 16781
+  en: >-
+    Roxas:
+
+    I´ve got to get to the bottom of this!
+- id: 16782
+  en: >-
+    Roxas:
+
+    I´ve got to get to the bottom of this!
+- id: 16783
+  en: >-
+    Roxas:
+
+    I´ve got to get to the bottom of this!
+- id: 16787
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    {:color #FFFF0080}{:unk0d }{:unk0d }{:reset} can now be purchased at
+
+    shops for completing the collection.
+- id: 16788
+  en: There are no rewards.
+- id: 16826
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Learned to synthesize new items
+
+    through {:color #FFFF0080}Free Development{:reset}, gained
+
+    from completing the collection.
+- id: 16827
+  en: >-
+    Sora:
+
+    Let´s ask Will when
+
+    she´ll be sailing.
+- id: 16835
+  en: '{:unk0d }Free Development'
+- id: 16836
+  en: '{:unk0d }Sell at Shop'
+- id: 16837
+  en: '{:icon ai-settings}'
+- id: 16862
+  en: Ohana!
+- id: 16863
+  en: Window of Time Map
+- id: 16864
+  en: A map of the area.
+- id: 16940
+  en: The Underdrome
+- id: 16941
+  en: Grind
+- id: 16942
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+     This accessory cannot be changed with
+     current abilities equipped. To equip,
+     first unequip abilities from the Ability menu.
+- id: 16943
+  en: Counter
+- id: 16951
+  en: EXP
+- id: 16952
+  en: ''
+- id: 17033
+  en: Shoot
+- id: 17034
+  en: Ukulele
+- id: 17047
+  en: Blast
+- id: 17048
+  en: Berserk
+- id: 17051
+  en: FPS Mode
+- id: 17052
+  en: Balls
+- id: 17053
+  en: Firecracker
+- id: 17054
+  en: End
+- id: 17061
+  en: >-
+    Sora:
+
+    Maybe we should check out
+
+    the monument.
+- id: 17078
+  en: '"Valor" Genie'
+- id: 17079
+  en: '"Wisdom" Genie'
+- id: 17080
+  en: '"Master" Genie'
+- id: 17081
+  en: '"Final" Genie'
+- id: 17088
+  en: >-
+    Sora:
+
+    The ship should be at Port Royal.
+- id: 17089
+  en: >-
+    Sora:
+
+    The ship should be at Isla de Muerta.
+- id: 17090
+  en: >-
+    Sora:
+
+    The ship should be at the ship graveyard.
+- id: 17091
+  en: >-
+    Sora:
+
+    The ship should be at Isla de Muerta.
+- id: 17103
+  en: Berserk
+- id: 17141
+  en: '{:width 98}Camera Up/Down'
+- id: 17142
+  en: '{:width 98}Camera Left/Right'
+- id: 17143
+  en: Summon Effects
+- id: 17144
+  en: Original
+- id: 17145
+  en: Reverse
+- id: 17146
+  en: >-
+    Push the right stick down to look down,
+
+    and push the right stick up to look up.
+- id: 17147
+  en: >-
+    Push the right stick down to look up,
+
+    and push the right stick up to look down.
+- id: 17148
+  en: Original
+- id: 17149
+  en: Reverse
+- id: 17150
+  en: >-
+    Push the right stick left to look left,
+
+    and push the right stick right
+
+    to look right.
+- id: 17151
+  en: >-
+    Push the right stick left to look right,
+
+    and push the right stick right
+
+    to look left.
+- id: 17152
+  en: Full
+- id: 17153
+  en: None
+- id: 17154
+  en: Auto
+- id: 17155
+  en: Show full Summon effects.
+- id: 17156
+  en: Do not show Summon effects.
+- id: 17157
+  en: Show partial Summon effects.
+- id: 17165
+  en: Sonic
+- id: 17166
+  en: Rave
+- id: 17167
+  en: Strike
+- id: 17168
+  en: Judgment
+- id: 17169
+  en: Arcana
+- id: 17170
+  en: Bash
+- id: 17171
+  en: Ragnarok
+- id: 17172
+  en: Impact
+- id: 17194
+  en: Valor
+- id: 17195
+  en: Wisdom
+- id: 17196
+  en: Master
+- id: 17197
+  en: Final
+- id: 17198
+  en: NEW GAME
+- id: 17199
+  en: Begin with these settings?
+- id: 17200
+  en: Select Game Mode.
+- id: 17201
+  en: Beginner Mode
+- id: 17202
+  en: Standard Mode
+- id: 17203
+  en: Proud Mode
+- id: 17204
+  en: >-
+    An easier mode for beginners.
+
+    {:color #F0F00080}(Only the normal ending can be viewed
+
+    in this mode.)
+- id: 17205
+  en: >-
+    A balanced mode that's not too hard
+
+    but not too easy. Best for those
+
+    challenging this game for the first time.
+
+    {:color #F0F00080}(All endings can be viewed in this mode.)
+- id: 17206
+  en: >-
+    A difficult mode with stronger enemies.
+
+    Best for those seeking a challenge.
+
+    {:color #F0F00080}(There is a good chance of unlocking
+
+    the secret ending.)
+- id: 17207
+  en: Select vibration function.
+- id: 17208
+  en: ON
+- id: 17209
+  en: OFF
+- id: 17210
+  en: >-
+    Enable vibration function.
+- id: 17211
+  en: >-
+    Disable vibration function.
+- id: 17212
+  en: Select sound type.
+- id: 17213
+  en: Stereo
+- id: 17214
+  en: Pro Logic II
+- id: 17215
+  en: Monaural
+- id: 17216
+  en: Play with Stereo Sound.
+- id: 17217
+  en: >-
+    Play with Dolby Pro Logic II.
+
+    Enjoy surround sound with a system
+
+    that supports Dolby Pro Logic II.
+- id: 17238
+  en: Play with Mono Sound.
+- id: 17239
+  en: Auto Assault
+- id: 17240
+  en: >-
+    The Keyblade automatically unleashes
+
+    attacks in various situations.
+- id: 17280
+  en: Game Mode
+- id: 17281
+  en: Vibration
+- id: 17282
+  en: Sound
+- id: 17283
+  en: Yes
+- id: 17284
+  en: No
+- id: 17343
+  en: Pick It Up
+- id: 17351
+  en: Take It
+- id: 17394
+  en: Form Gauge Powered Up!
+- id: 17397
+  en: >-
+    Sora:
+
+    We should get out of here.
+- id: 17398
+  en: ''
+- id: 17399
+  en: >-
+    Sora:
+
+    There aren´t any hyenas
+
+    over here.
+- id: 17400
+  en: ''
+- id: 17401
+  en: >-
+    Sora:
+
+    What else did we have to do...?
+- id: 17402
+  en: ''
+- id: 17409
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Items from previously visited shops will
+
+    become available at shops in large towns.
+- id: 17410
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Items from previously visited shops will
+
+    become available at shops in large towns.
+- id: 17445
+  en: Capture
+- id: 17481
+  en: >-
+    Roxas:
+
+    Everyone´s waiting at Market Street!
+- id: 17482
+  en: >-
+    Roxas:
+
+    We´ve gotta buy our tickets!
+- id: 17483
+  en: >-
+    Roxas:
+
+    We need to make some munny
+
+    before we can ride...
+- id: 17484
+  en: >-
+    Roxas:
+
+    We´re meeting at the station, right?
+- id: 17485
+  en: >-
+    Roxas:
+
+    She was headed for the haunted mansion.
+- id: 17486
+  en: >-
+    Roxas:
+
+    Doesn´t look like she´s around here...
+- id: 17487
+  en: >-
+    HP cannot be restored in this Form!
+
+    Return to normal Form when the Form Gauge hits 0,
+
+    or select Revert when there are no enemies in sight!
+- id: 17550
+  en: Materials
+- id: 17551
+  en: Current synthesis materials in stock.
+- id: 17564
+  en: ''
+- id: 17565
+  en: ''
+- id: 17566
+  en: ''
+- id: 17567
+  en: ''
+- id: 17568
+  en: ''
+- id: 17569
+  en: ''
+- id: 17586
+  en: Inside Combo
+- id: 17708
+  en: Save
+- id: 17721
+  en: Journal
+- id: 17722
+  en: Read Roxas´s Journal.
+- id: 17723
+  en: Facedown
+- id: 17724
+  en: Clash
+- id: 17725
+  en: Break Through
+- id: 17726
+  en: Finish
+- id: 17728
+  en: >-
+    Roxas:
+
+    The tournament´s at the sandlot, right?
+- id: 17729
+  en: ''
+- id: 17730
+  en: >-
+    Roxas:
+
+    I´ve gotta get to the Struggle
+
+    Tournament!
+- id: 17731
+  en: ''
+- id: 17732
+  en: >-
+    Roxas:
+
+    I should check out
+
+    the haunted mansion.
+- id: 17733
+  en: ''
+- id: 17734
+  en: >-
+    Roxas:
+
+    That voice said to go to the mansion...
+- id: 17735
+  en: ''
+- id: 17736
+  en: >-
+    Roxas:
+
+    Why don´t I take a look inside...?
+- id: 17737
+  en: ''
+- id: 17738
+  en: >-
+    Sora:
+
+    I´ve got stuff to do.
+- id: 17739
+  en: ''
+- id: 17740
+  en: >-
+    Sora:
+
+    I´ve got to get on that train!
+- id: 17741
+  en: ''
+- id: 17742
+  en: >-
+    Sora:
+
+    We´d better not--not with
+
+    Pete there.
+- id: 17743
+  en: ''
+- id: 17752
+  en: Bounce
+- id: 17753
+  en: LV
+- id: 17754
+  en: '{:width 90}Experience'
+- id: 17755
+  en: Next LV
+- id: 17756
+  en: HP
+- id: 17757
+  en: MP
+- id: 17758
+  en: AP
+- id: 17759
+  en: Drive Gauge
+- id: 17760
+  en: Strength
+- id: 17761
+  en: Magic
+- id: 17762
+  en: Defense
+- id: 17763
+  en: Fire {:width 80}Resistance
+- id: 17764
+  en: '{:width 90}Blizzard {:width 80}Resistance'
+- id: 17765
+  en: '{:width 90}Thunder {:width 80}Resistance'
+- id: 17766
+  en: Dark {:width 80}Resistance
+- id: 17767
+  en: Bonus LV
+- id: 17768
+  en: Summon LV
+- id: 17769
+  en: Form LV
+- id: 17774
+  en: >-
+    {:width 90}The character´s current Level. Values for
+
+    attributes such as Strength, Magic, Defense,
+
+    and AP will increase when leveling up.
+- id: 17775
+  en: >-
+    Total amount of experience earned.
+
+    Experience is earned when enemies
+
+    are defeated.
+- id: 17776
+  en: >-
+    Experience needed to reach the next
+
+    Level.
+- id: 17777
+  en: Current HP and maximum HP.
+- id: 17778
+  en: Current MP and maximum MP.
+- id: 17779
+  en: >-
+    A necessity for equipping Abilities.
+
+    Increase maximum AP value by equipping
+
+    certain Accessories.
+- id: 17780
+  en: >-
+    A gauge used for Drives and Summons.
+
+    Obtain orbs to fill the gauge.
+- id: 17781
+  en: >-
+    The character´s current Strength.
+
+    The higher the number, the more
+
+    damage is dealt to enemies.
+- id: 17782
+  en: >-
+    The character´s current Magic Skill.
+
+    The higher the number, the more damage
+
+    is dealt to enemies through Magic.
+- id: 17783
+  en: >-
+    The character´s current Defense.
+
+    The higher the number, the less
+
+    damage is taken from enemies.
+- id: 17784
+  en: >-
+    {:width 95}Resistance against fire-based attacks.
+
+    The higher the number, the less damage
+
+    is taken from these attacks.
+- id: 17785
+  en: >-
+    {:width 95}Resistance against blizzard-based
+
+    attacks. The higher the number, the
+
+    less damage is taken from these attacks.
+- id: 17786
+  en: >-
+    {:width 95}Resistance against thunder-based
+
+    attacks. The higher the number, the
+
+    less damage is taken from these attacks.
+- id: 17787
+  en: >-
+    {:width 95}Resistance against darkness-based
+
+    attacks. The higher the number, the less
+
+    damage is taken from these attacks.
+- id: 17788
+  en: >-
+    {:width 90}A Level which increases by defeating certain
+
+    enemies. HP and MP increases, and special
+
+    powers are gained by leveling up.
+- id: 17789
+  en: >-
+    Summons Level. The Summon Gauge
+
+    increases, and the summon´s magic skills
+
+    increase by leveling up.
+- id: 17790
+  en: >-
+    Valor Form Level. Time spent
+
+    transformed becomes longer, and
+
+    Abilities become stronger by leveling up.
+- id: 17791
+  en: >-
+    Wisdom Form Level. Time spent
+
+    transformed becomes longer, and
+
+    Abilities become stronger by leveling up.
+- id: 17792
+  en: >-
+    Master Form Level. Time spent
+
+    transformed becomes longer, and
+
+    Abilities become stronger by leveling up.
+- id: 17793
+  en: >-
+    Final Form Level. Time spent
+
+    transformed becomes longer, and
+
+    Abilities become stronger by leveling up.
+- id: 17795
+  en: Form Gauge
+- id: 17796
+  en: >-
+    For each attack dealt to the enemy
+
+    in Valor Form, 1 point of experience
+
+    is gained.
+- id: 17797
+  en: >-
+    Experience necessary to level up.
+
+    The Level cap depends on the number of
+
+    Forms obtained.
+- id: 17798
+  en: >-
+    The Form gauge for Valor Form.
+
+    The longer the gauge, the longer
+
+    the time spent transformed.
+- id: 17799
+  en: >-
+    For each Heartless defeated in Wisdom
+
+    Form, 1 point of experience is gained.
+- id: 17800
+  en: >-
+    Experience necessary to level up.
+
+    The Level cap depends on the number of
+
+    Forms obtained.
+- id: 17801
+  en: >-
+    The Form gauge for Wisdom Form.
+
+    The longer the gauge, the longer
+
+    the time spent transformed.
+- id: 17802
+  en: >-
+    {:width 80}Each small drive orb gives 1 point of experience,
+
+    and one big drive orb gives 3 points of experience
+
+    for each drive prize obtained in Master Form.
+- id: 17803
+  en: >-
+    Experience necessary to level up.
+
+    The Level cap depends on the number of
+
+    Forms obtained.
+- id: 17804
+  en: >-
+    The Form gauge for Master Form.
+
+    The longer the gauge, the longer
+
+    the time spent transformed.
+- id: 17805
+  en: >-
+    For each Nobody defeated in Final Form,
+
+    1 point of experience is gained.
+- id: 17806
+  en: >-
+    Experience necessary to level up.
+
+    The Level cap depends on the number of
+
+    forms obtained.
+- id: 17807
+  en: >-
+    The Form gauge for Final Form.
+
+    The longer the gauge, the longer
+
+    the time spent transformed.
+- id: 17808
+  en: Summon Gauge
+- id: 17809
+  en: Stitch
+- id: 17810
+  en: Genie
+- id: 17811
+  en: Peter Pan
+- id: 17812
+  en: Chicken Little
+- id: 17813
+  en: >-
+    While summoning, 1 experience is gained
+
+    for every 1 point consumed by
+
+    the Summon Gauge.
+- id: 17814
+  en: >-
+    Experience necessary to level up.
+
+    The Level cap depends on the number of
+
+    Summons obtained.
+- id: 17815
+  en: >-
+    Your current Summon Gauge.
+
+    The longer the gauge, the longer
+
+    the summon stays active.
+- id: 17816
+  en: >-
+    Stitch will parry most enemy attacks.
+
+    A wise summon to use for defense.
+- id: 17817
+  en: >-
+    Genie has many Limit attacks and
+
+    can transform into various Forms.
+- id: 17818
+  en: >-
+    {:width 85}Peter Pan will help Sora fight against enemies.
+
+    If Sora falls during battle, Tinker Bell will be
+
+    able to revive him one time.
+- id: 17819
+  en: >-
+    Chicken Little can stop enemy
+
+    movements and bring distant enemies in
+
+    close to attack!
+- id: 17834
+  en: Valor LV
+- id: 17835
+  en: Wisdom LV
+- id: 17836
+  en: Master LV
+- id: 17837
+  en: Final LV
+- id: 17838
+  en: '{:unk0d }´s Status.'
+- id: 17839
+  en: '{:unk0d }´s Form Status.'
+- id: 17840
+  en: >-
+    Summons Status. A friend will come and
+
+    help Sora when called upon.
+
+    {:color #F0F00080}Drive points consumed: 3{:reset}
+- id: 17841
+  en: Summon
+- id: 17847
+  en: >
+    Sora:
+- id: 17848
+  en: ''
+- id: 17849
+  en: >-
+    Sora:
+
+    We need the password to
+
+    the DTD!
+- id: 17850
+  en: ''
+- id: 17851
+  en: >
+    Sora:
+- id: 17852
+  en: ''
+- id: 17853
+  en: '{:width 90}Summon Gauge Powered Up!'
+- id: 17854
+  en: Session
+- id: 17855
+  en: Last Saber
+- id: 17856
+  en: Dark Cannon
+- id: 17857
+  en: '{XIII} Blades'
+- id: 17858
+  en: Master Hearts
+- id: 17859
+  en: All´s End
+- id: 17862
+  en: Call Over
+- id: 17904
+  en: Move Left
+- id: 17905
+  en: Move Right
+- id: 17921
+  en: Wee Tornado
+- id: 17922
+  en: '{:width 95}Giant Tornado'
+- id: 17925
+  en: Twin Counter
+- id: 17926
+  en: Sonic Dive
+- id: 17992
+  en: AP
+- id: 17993
+  en: S{:width 80}trength
+- id: 17994
+  en: Magic
+- id: 17995
+  en: Defense
+- id: 17996
+  en: Ability
+- id: 17997
+  en: Fire {:width 80}Resistance
+- id: 17998
+  en: '{:width 90}Blizzard {:width 80}Resistance'
+- id: 17999
+  en: '{:width 90}Thunder {:width 80}Resistance'
+- id: 18000
+  en: Dark {:width 80}Resistance
+- id: 18001
+  en: Fire
+- id: 18002
+  en: Blizzard
+- id: 18003
+  en: Thunder
+- id: 18004
+  en: Dark
+- id: 18007
+  en: Finishing Blast
+- id: 18008
+  en: >-
+    Deals damage to nearby enemies
+
+    at the end of a combo with {:icon button-square}.
+- id: 18009
+  en: Combo Upper
+- id: 18010
+  en: >-
+    Knocks a target into the air
+
+    during a combo with {:icon button-square}.
+- id: 18011
+  en: Aerial Impulse
+- id: 18012
+  en: >-
+    Tackles and attacks a target
+
+    in midair during a combo with {:icon button-square}.
+- id: 18013
+  en: Retaliating Smash
+- id: 18014
+  en: >-
+    When knocked down, quickly regains
+
+    balance and attacks with {:icon button-square}.
+- id: 18019
+  en: >-
+    Sora:
+
+    Something´s up at the sandlot!
+- id: 18020
+  en: ''
+- id: 18021
+  en: >-
+    Sora:
+
+    Something´s up at the sandlot!
+- id: 18022
+  en: ''
+- id: 18023
+  en: >-
+    Sora:
+
+    Gotta get to the station
+
+    on the double!
+- id: 18024
+  en: ''
+- id: 18025
+  en: >-
+    Sora:
+
+    Something´s up at the sandlot!
+- id: 18026
+  en: ''
+- id: 18027
+  en: >-
+    Sora:
+
+    Gotta get to the station
+
+    on the double!
+- id: 18028
+  en: ''
+- id: 18029
+  en: >-
+    Sora:
+
+    Something´s up at the sandlot!
+- id: 18030
+  en: ''
+- id: 18031
+  en: >-
+    Sora:
+
+    Gotta get to the station
+
+    on the double!
+- id: 18032
+  en: ''
+- id: 18033
+  en: >-
+    Sora:
+
+    Hmm, not this way...
+- id: 18034
+  en: ''
+- id: 18035
+  en: >-
+    Sora:
+
+    Hmm, not this way...
+- id: 18036
+  en: ''
+- id: 18037
+  en: >-
+    Sora:
+
+    Hmm, not this way...
+- id: 18038
+  en: ''
+- id: 18039
+  en: >-
+    Sora:
+
+    Hmm, not this way...
+- id: 18040
+  en: ''
+- id: 18043
+  en: Promise Charm
+- id: 18044
+  en: >-
+    A charm from Kairi. It represents
+
+    her wish to meet Sora again,
+
+    no matter how far apart they are.
+- id: 18050
+  en: >-
+    Sora:
+
+    Let´s hurry up and find Tron!
+- id: 18058
+  en: >-
+    Sora:
+
+    Tron´s waiting for us!
+- id: 18059
+  en: ''
+- id: 18060
+  en: >
+    Sora:
+- id: 18061
+  en: ''
+- id: 18062
+  en: >-
+    Sora:
+
+    Let´s get the energy core
+
+    online first.
+- id: 18063
+  en: ''
+- id: 18064
+  en: >-
+    Sora:
+
+    The terminal´ll get us back
+
+    to Hollow Bastion.
+- id: 18065
+  en: ''
+- id: 18066
+  en: >-
+    Sora:
+
+    The MCP´s disabled the elevators!
+- id: 18067
+  en: ''
+- id: 18068
+  en: Eclipse
+- id: 18069
+  en: Magna Storm
+- id: 18071
+  en: Approach
+- id: 18110
+  en: Running Tackle
+- id: 18111
+  en: >-
+    Unleashes a rapid tackle on a single
+
+    target while attacking during Dash.
+- id: 18112
+  en: Dash
+- id: 18113
+  en: Moves rapidly while pressing down {:icon button-square}.
+- id: 18120
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    Insufficient free space on storage.
+- id: 18122
+  en: Loot Launch
+- id: 18201
+  en: Vault
+- id: 18202
+  en: Kickspring
+- id: 18398
+  en: Harbor
+- id: 18399
+  en: 'Isla de Muerta: Rock Face'
+- id: 18402
+  en: Drive?
+- id: 18465
+  en: Final Arcana
+- id: 18466
+  en: >-
+    Handling the Keyblade with great skill,
+
+    unleashes a powerful finishing combo
+
+    move to a single target.
+- id: 18467
+  en: Final Strike
+- id: 18468
+  en: >-
+    While spinning in midair, deals
+
+    a powerful finishing combo move
+
+    to a single target.
+- id: 18469
+  en: Final Arts
+- id: 18470
+  en: >-
+    Unleashes a powerful finishing combo
+
+    move to get rid of several targets
+
+    at once.
+- id: 18471
+  en: Crime & Punishment
+- id: 18472
+  en: >-
+    A Keyblade held in each hand
+
+    unleashes powerful magic spells.
+- id: 18480
+  en: >-
+    Sora:
+
+    Leon will have all the details.
+- id: 18481
+  en: ''
+- id: 18565
+  en: Sunset Hill Map
+- id: 18566
+  en: A map of the area.
+- id: 18567
+  en: Mansion Map
+- id: 18568
+  en: A map of the area.
+- id: 18569
+  en: Tower Map
+- id: 18570
+  en: A map of the area.
+- id: 18571
+  en: DH Map
+- id: 18572
+  en: A map of the area.
+- id: 18573
+  en: >-
+    Sora:
+
+    We´ve got to get rid of
+
+    these Heartless!
+- id: 18575
+  en: There are no items.
+- id: 18585
+  en: Dark Aura
+- id: 18586
+  en: Dark Shield
+- id: 18592
+  en: Stunt Dodge
+- id: 18595
+  en: Hit
+- id: 18682
+  en: Munny Pouch
+- id: 18683
+  en: >-
+    A pouch from the King.
+
+    There´s 5,000 munny inside for
+
+    some reason.
+- id: 18692
+  en: Castle That Never Was Map
+- id: 18693
+  en: A map of the area.
+- id: 18755
+  en: >-
+    Sora:
+
+    We can´t interrupt training!
+- id: 18756
+  en: >-
+    Sora:
+
+    We can´t interrupt training!
+- id: 18757
+  en: >-
+    Sora:
+
+    We can´t interrupt training!
+- id: 18758
+  en: >-
+    Sora:
+
+    We can´t interrupt training!
+- id: 18774
+  en: The Old Mansion
+- id: 18808
+  en: >-
+    Sora:
+
+    We´ve got to log in to
+
+    that computer!
+- id: 18809
+  en: ''
+- id: 18810
+  en: >-
+    Sora:
+
+    We have to go restart
+
+    the terminal!
+- id: 18812
+  en: >-
+    Sora:
+
+    The terminal should take us
+
+    to the game grid!
+- id: 18855
+  en: >-
+    Sora:
+
+    I can´t ride my skateboard there.
+- id: 18856
+  en: >-
+    Sora:
+
+    I can´t ride my skateboard there.
+- id: 18857
+  en: >-
+    Sora:
+
+    I can´t ride my skateboard there.
+- id: 18858
+  en: >-
+    Sora:
+
+    I can´t ride my skateboard there.
+- id: 18859
+  en: >-
+    Sora:
+
+    I can´t ride my skateboard there.
+- id: 18860
+  en: >-
+    Sora:
+
+    I can´t ride my skateboard there.
+- id: 18861
+  en: >-
+    Sora:
+
+    I can´t ride my skateboard there.
+- id: 18862
+  en: >-
+    Sora:
+
+    I can´t ride my skateboard there.
+- id: 18928
+  en: >-
+    Sora:
+
+    Wait for Will´s signal!
+- id: 18950
+  en: Flip
+- id: 18953
+  en: Slicer
+- id: 18954
+  en: Escablade
+- id: 18955
+  en: Sky Scraper
+- id: 18964
+  en: Capsule Prize
+- id: 18965
+  en: Rare Capsule
+- id: 18966
+  en: Limited Capsule
+- id: 18967
+  en: Prime Capsule
+- id: 18994
+  en: >-
+    Roxas:
+
+    I´m not about to run away!
+- id: 18995
+  en: >-
+    Roxas:
+
+    I´m not about to run away!
+- id: 19005
+  en: >-
+    Roxas:
+
+    Gotta follow him!
+- id: 19006
+  en: ''
+- id: 19007
+  en: >-
+    Sora:
+
+    This isn´t the right train.
+- id: 19008
+  en: ''
+- id: 19011
+  en: '{:width 90}Return Medallions'
+- id: 19030
+  en: Read The Book
+- id: 19031
+  en: >-
+    Sora:
+
+    We´ve got to get rid of
+
+    these hyenas!
+- id: 19032
+  en: >-
+    Sora:
+
+    We´ve got to get rid of
+
+    these hyenas!
+- id: 19033
+  en: >-
+    Sora:
+
+    We have to capture them!
+- id: 19073
+  en: Roll Up
+- id: 19074
+  en: Spin Burst
+- id: 19113
+  en: >-
+    Sora:
+
+    We can´t let Pete get away!
+- id: 19114
+  en: >-
+    Sora:
+
+    I´m not about to run away!
+- id: 19115
+  en: >-
+    Sora:
+
+    I´m not about to run away!
+- id: 19116
+  en: >-
+    Sora:
+
+    I´m not about to run away!
+- id: 19209
+  en: Proceed
+- id: 19310
+  en: Riding Shot
+- id: 19311
+  en: >
+    Sora:
+- id: 19312
+  en: ''
+- id: 19314
+  en: >-
+    Roxas:
+
+    Let´s get to Sunset Hill!
+- id: 19315
+  en: ''
+- id: 19316
+  en: >-
+    Sora:
+
+    I can´t enter yet. Are they
+
+    working on it?
+- id: 19317
+  en: ''
+- id: 19318
+  en: >-
+    Sora:
+
+    We have to hurry to the mansion!
+- id: 19319
+  en: ''
+- id: 19321
+  en: Meteor Rain
+- id: 19341
+  en: Unequip armor.
+- id: 19342
+  en: Unequip accessories.
+- id: 19343
+  en: >-
+    Valor Form Status.
+
+    A Form specializing in physical attacks.
+
+    {:color #F0F00080}Drive points consumed: 3{:reset}
+- id: 19344
+  en: >-
+    Wisdom Form Status.
+
+    A Form specializing in magic attacks.
+
+    {:color #F0F00080}Drive points consumed: 3{:reset}
+- id: 19345
+  en: >-
+    Master Form Status. A Form that 
+
+    handles both the Keyblade and magic.
+
+    {:color #F0F00080}Drive points consumed: 4{:reset}
+- id: 19346
+  en: >-
+    Final Form Status. A Form that 
+
+    unleashes the Keyblade´s true power.
+
+    {:color #F0F00080}Drive points consumed: 5{:reset}
+- id: 19350
+  en: ''
+- id: 19352
+  en: '{:unk 72}Points'
+- id: 19353
+  en: Time:{:unk 72}
+- id: 19354
+  en: Round{:unk 72}
+- id: 19355
+  en: –––
+- id: 19361
+  en: Attack
+- id: 19362
+  en: Dark Aura
+- id: 19363
+  en: Rescue
+- id: 19370
+  en: Reflect
+- id: 19371
+  en: Reflect
+- id: 19375
+  en: Megalaser
+- id: 19376
+  en: >-
+    Sora:
+
+    There´s no turning back now...
+- id: 19381
+  en: Touch It
+- id: 19406
+  en: There´s a rare Heartless!
+- id: 19416
+  en: 'PAGE '
+- id: 19417
+  en: What is Auto-Reload?
+- id: 19418
+  en: What is MP Charge?
+- id: 19419
+  en: What are Abilities?
+- id: 19420
+  en: What are Sub-Weapons?
+- id: 19421
+  en: '{:icon button-select}{:width 20} {:width 100}Help'
+- id: 19428
+  en: Firagun
+- id: 19429
+  en: Blizzagun
+- id: 19435
+  en: >-
+    Sora:
+
+    There´s no turning back now...
+- id: 19466
+  en: High Score
+- id: 19467
+  en: Record
+- id: 19470
+  en: Hades Cup Trophy
+- id: 19471
+  en: >-
+    Trophy presented to the champion of
+
+    the Hades Paradox Cup. It is proof
+
+    of having won many severe battles.
+- id: 19480
+  en: Game LV
+- id: 19481
+  en: '{:width 95}Completion of Jiminy´s Journal'
+- id: 19482
+  en: Completion of Gummi Routes
+- id: 19483
+  en: Healed Party Members
+- id: 19484
+  en: Saved by Mickey
+- id: 19485
+  en: Most Used Form
+- id: 19486
+  en: Used Antiform
+- id: 19487
+  en: Most Used Summon
+- id: 19488
+  en: '{:color #F0F00080} {:reset}Time(s)'
+- id: 19492
+  en: BATTLE REPORT
+- id: 19541
+  en: '{:width 90}"The Struggle" Trophy'
+- id: 19542
+  en: >-
+    Trophy from the Struggle Tournament.
+
+    It is decorated with four crystals.
+- id: 19552
+  en: Block
+- id: 19561
+  en: The departing member has surrendered their equipment.
+- id: 19562
+  en: >-
+    Sora:
+
+    I´ll ask the others if we´re
+
+    ready to leave.
+- id: 19563
+  en: ''
+- id: 19565
+  en: Block
+- id: 19573
+  en: >-
+    Sora:
+
+    I´m still on the clock!
+- id: 19574
+  en: >-
+    Sora:
+
+    I´m still on the clock!
+- id: 19575
+  en: >-
+    Sora:
+
+    I´m still on the clock!
+- id: 19576
+  en: >-
+    Sora:
+
+    I´m still on the clock!
+- id: 19577
+  en: >-
+    Sora:
+
+    I´m still on the clock!
+- id: 19578
+  en: >-
+    Sora:
+
+    I´m still on the clock!
+- id: 19581
+  en: '{:unk0d }Free Development 2'
+- id: 19582
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Learned to synthesize more new
+
+    items through {:color #FFFF0080}Free Development{:reset},
+
+    gained from completing the collection.
+- id: 19600
+  en: '{:unk 72}Swings'
+- id: 19615
+  en: >-
+    {:width 80}Ping will be joining the party. Party Members cannot be switched and
+
+    summons cannot be used for some time.
+- id: 19620
+  en: >-
+    Sora:
+
+    But what about the powder
+
+    kegs?
+- id: 19857
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}                                    
+
+
+    No input detected.
+- id: 19862
+  en: LV
+- id: 19988
+  en: 'Cavern of Remembrance: Depths'
+- id: 19989
+  en: 'Cavern of Remembrance: Mining Area'
+- id: 19990
+  en: 'Cavern of Remembrance: Engine Chamber'
+- id: 19991
+  en: 'Cavern of Remembrance: Mineshaft'
+- id: 19992
+  en: Transport to Remembrance
+- id: 19993
+  en: Garden of Assemblage
+- id: 19994
+  en: Underground Facility
+- id: 19995
+  en: Memory's Contortion
+- id: 19996
+  en: The World of Nothing
+- id: 19997
+  en: Hall of Empty Melodies
+- id: 19998
+  en: Bridgeₓₓₓₓₓₓₓ
+- id: 19999
+  en: The Old Mansion
+- id: 20000
+  en: Station of Remembrance
+- id: 20001
+  en: Destiny Island
+- id: 20002
+  en: Addled Impasse
+- id: 20003
+  en: 'Mansion: Basement Hall'
+- id: 20004
+  en: Havoc's Divide
+- id: 20005
+  en: Station of Oblivion
+- id: 20006
+  en: Station of Awakening
+- id: 20007
+  en: Gathering Place
+- id: 20008
+  en: Combo Master
+- id: 20009
+  en: >-
+    Unleash a combo whether or not
+
+    your hits land.
+- id: 20010
+  en: Drive Converter
+- id: 20011
+  en: >-
+    Increases the drop rate of drive orbs
+
+    in place of munny.
+
+    Equip more to increase the effect.
+- id: 20012
+  en: Light & Darkness
+- id: 20013
+  en: Has a special secret effect.
+- id: 20014
+  en: Damage Control
+- id: 20015
+  en: >-
+    Halves damage taken at critical moments.
+
+    Equip two to accelerate the effect.
+- id: 20016
+  en: Critical Mode
+- id: 20017
+  en: >-
+    A true test of skill for the adept.
+
+    The Game Mode cannot be changed
+
+    once the game has started.
+- id: 20018
+  en: Critical Mode
+- id: 20019
+  en: Critical Mode
+- id: 20020
+  en: >-
+    A true test of skill for the adept. Begin
+
+    with certain abilities and other perks.
+
+    {:color #F0F00080}(There is a great chance of unlocking
+
+    the secret ending.)
+- id: 20021
+  en: Two Become One
+- id: 20022
+  en: >-
+    A weapon of great strength and magic
+
+    that has a special effect.
+- id: 20023
+  en: Winner's Proof
+- id: 20024
+  en: >-
+    A weapon of extraordinary magic
+
+    and great strength.
+
+    Disables the gaining of experience.
+- id: 20025
+  en: Centurion
+- id: 20026
+  en: >-
+    A staff with extraordinary strength
+
+    and great magic.
+- id: 20027
+  en: Centurion+
+- id: 20028
+  en: >-
+    A staff with extraordinary strength
+
+    and great magic. Halves damage
+
+    taken in critical situations.
+- id: 20029
+  en: Plain Mushroom
+- id: 20030
+  en: >-
+    A staff that doesn't look like much of
+
+    a weapon.
+- id: 20031
+  en: Plain Mushroom+
+- id: 20032
+  en: A staff with some magic power.
+- id: 20033
+  en: '{:width 90}Precious Mushroom'
+- id: 20034
+  en: >-
+    A staff with great magic.
+
+    Increases MP restoration speed
+
+    by {:color #F0F00080}25%{:reset} after MP is fully consumed.
+- id: 20035
+  en: '{:width 75}Precious Mushroom+'
+- id: 20036
+  en: >-
+    A staff with tremendous magic.
+
+    Increases MP restoration speed
+
+    by {:color #F0F00080}50%{:reset} after MP is fully consumed.
+- id: 20037
+  en: '{:width 90}Premium Mushroom'
+- id: 20038
+  en: >-
+    A staff with the most powerful magic.
+
+    Increases MP restoration speed
+
+    by {:color #F0F00080}75%{:reset} after MP is fully consumed.
+- id: 20039
+  en: Frozen Pride
+- id: 20040
+  en: A shield with the greatest defense.
+- id: 20041
+  en: Frozen Pride+
+- id: 20042
+  en: >-
+    A shield with the greatest defense.
+
+    Increases MP restoration speed
+
+    by {:color #F0F00080}75%{:reset} after MP is fully consumed.
+- id: 20043
+  en: '{:width 95}Joyous Mushroom'
+- id: 20044
+  en: A flimsy shield.
+- id: 20045
+  en: '{:width 90}Joyous Mushroom+'
+- id: 20046
+  en: A shield with a little strength.
+- id: 20047
+  en: '{:width 90}Majestic Mushroom'
+- id: 20048
+  en: >-
+    A shield with great strength.
+
+    Absorbs {:color #F0F00080}10%{:reset} of damage taken.
+- id: 20049
+  en: '{:width 75}Majestic Mushroom+'
+- id: 20050
+  en: >-
+    A shield with tremendous strength.
+
+    Absorbs {:color #F0F00080}20%{:reset} of damage taken.
+- id: 20051
+  en: '{:width 90}Ultimate Mushroom'
+- id: 20052
+  en: >-
+    A shield with the greatest strength.
+
+    Absorbs {:color #F0F00080}40%{:reset} of damage taken.
+- id: 20053
+  en: Ready, Go!
+- id: 20054
+  en: Restore Count
+- id: 20055
+  en: Aerial Strike
+- id: 20082
+  en: Flash Step
+- id: 20083
+  en: >-
+    Unleashes a guard-piercing attack on
+
+    a slightly distant target while keeping up
+
+    your own guard.
+- id: 20084
+  en: Aerial Dive
+- id: 20085
+  en: >-
+    Unleashes a powerful aerial attack
+
+    on distant targets.
+- id: 20086
+  en: Magnet Burst
+- id: 20087
+  en: >-
+    Draws enemies in to unleash a finishing
+
+    combo move. Damage dealt
+
+    is relative to magic skill.
+- id: 20088
+  en: Vicinity Break
+- id: 20089
+  en: >-
+    Unleashes a powerful attack
+
+    when surrounded.
+- id: 20090
+  en: Pull
+- id: 20091
+  en: Battle Report
+- id: 20094
+  en: The End
+- id: 20095
+  en: Limit Form
+- id: 20096
+  en: Limit
+- id: 20097
+  en: Limit Form
+- id: 20098
+  en: >-
+    Access Limit Form alone with the help
+
+    of friends faraway.
+- id: 20099
+  en: Dodge Roll LV 1
+- id: 20100
+  en: >-
+    Dodge enemy attacks by tilting
+
+    the left stick and pressing {:icon button-square}.
+
+    More efficient at higher Levels.
+- id: 20101
+  en: Dodge Roll LV 2
+- id: 20102
+  en: >-
+    Dodge enemy attacks by tilting
+
+    the left stick and pressing {:icon button-square}.
+
+    More efficient at higher Levels.
+- id: 20103
+  en: Dodge Roll LV 3
+- id: 20104
+  en: >-
+    Dodge enemy attacks by tilting
+
+    the left stick and pressing {:icon button-square}.
+
+    More efficient at higher Levels.
+- id: 20105
+  en: Dodge Roll MAX
+- id: 20106
+  en: >-
+    Dodge enemy attacks by tilting
+
+    the left stick and pressing {:icon button-square}.
+
+    More efficient at higher Levels.
+- id: 20107
+  en: Auto Limit
+- id: 20108
+  en: >-
+    Automatically sets the Reaction
+
+    Command to Limit in a pinch, if
+
+    Limit Form is usable.
+- id: 20109
+  en: Sonic Rave
+- id: 20110
+  en: >-
+    A Limit Command that unleashes an attack
+
+    on an enemy as you pass by. Press {:icon button-triangle} at
+
+    the right tempo for a combo. {:color #F0F00080}MP Cost:{:width 100} 60{:reset}
+- id: 20111
+  en: Last Arcanum
+- id: 20112
+  en: >-
+    A Limit Command that unleashes
+
+    a powerful combo attack. Press {:icon button-triangle} for
+
+    a consecutive combo. {:color #F0F00080}MP Cost:{:width 100} 75{:reset}
+- id: 20113
+  en: Strike Raid
+- id: 20114
+  en: >-
+    A Limit Command that allows you to throw
+
+    the Keyblade at the target.
+
+    Press {:icon button-triangle} for a combo. {:color #F0F00080}MP Cost:{:width 100} 65{:reset}
+- id: 20115
+  en: Ragnarok
+- id: 20116
+  en: >-
+    A Limit Command that can be unleashed by
+
+    pressing {:icon button-triangle} after an aerial combo.
+
+    {:color #F0F00080}MP Cost:{:width 100} 80{:reset}
+- id: 20117
+  en: Zantetsuken
+- id: 20118
+  en: >-
+    Unleashes a finishing combo move on
+
+    a single target. This powerful attack can
+
+    instantly eliminate weaker enemies.
+- id: 20119
+  en: Ripple Drive
+- id: 20120
+  en: >-
+    Unleashes a finishing combo move
+
+    when surrounded. Damage dealt
+
+    is relative to magic skill.
+- id: 20121
+  en: Hurricane Period
+- id: 20122
+  en: >-
+    Unleashes a powerful finishing combo
+
+    move consisting of an aerial barrage.
+- id: 20123
+  en: Limit LV
+- id: 20124
+  en: >-
+    For each limit command finishing move
+
+    unleashed in Limit Form, 1 point of
+
+    experience is gained.
+- id: 20125
+  en: >-
+    Experience necessary to level up.
+
+    The Level cap depends on the number of
+
+    Forms obtained.
+- id: 20126
+  en: >-
+    The Form gauge for Limit Form.
+
+    The longer the gauge, the longer
+
+    the time spent transformed.
+- id: 20127
+  en: Limit
+- id: 20128
+  en: >-
+    Limit Form Status.
+
+    A form specializing in Limit attacks.
+
+    {:color #F0F00080}Cost: 4{:reset}
+- id: 20129
+  en: >-
+    Limit Form Level. Time spent
+
+    transformed becomes longer, and
+
+    Abilities become stronger by leveling up.
+- id: 20159
+  en: '{:icon button-cross}: Save   {:icon button-circle}: End Game'
+- id: 20168
+  en: Reversal
+- id: 20169
+  en: Quick Slide
+- id: 20170
+  en: >-
+    {:icon exclamation-mark}{:color #FF000080}INFORMATION{:reset}
+
+
+    Save game data. Loading this save data
+
+    will place you before the last battle.
+- id: 20171
+  en: >-
+    {:icon question-mark}{:color #FF000080}QUESTION{:reset}
+
+
+    Would you like to return to the title screen
+
+    without saving completed game data?
+- id: 20190
+  en: Merge
+- id: 20191
+  en: '{:width 85}Remembrance Shard'
+- id: 20192
+  en: >-
+    A gem shard filled with remembrance.
+
+    A very common ingredient of item
+
+    synthesis.
+- id: 20193
+  en: '{:width 85}Remembrance Stone'
+- id: 20194
+  en: >-
+    A stone filled with remembrance.
+
+    A common ingredient of item synthesis.
+- id: 20195
+  en: '{:width 90}Remembrance Gem'
+- id: 20196
+  en: >-
+    A gem abundant with remembrance.
+
+    A rare ingredient of item synthesis.
+- id: 20197
+  en: '{:width 80}Remembrance Crystal'
+- id: 20198
+  en: >-
+    A mysterious crystal abundant with
+
+    remembrance. A very rare ingredient
+
+    of item synthesis.
+- id: 20199
+  en: Tranquility Shard
+- id: 20200
+  en: >-
+    A gem shard filled with tranquility.
+
+    A very common ingredient of item
+
+    synthesis.
+- id: 20201
+  en: Tranquility Stone
+- id: 20202
+  en: >-
+    A stone filled with tranquility.
+
+    A common ingredient of item synthesis.
+- id: 20203
+  en: Tranquility Gem
+- id: 20204
+  en: >-
+    A gem abundant with tranquility.
+
+    A rare ingredient of item synthesis.
+- id: 20205
+  en: Tranquility Crystal
+- id: 20206
+  en: >-
+    A mysterious crystal abundant with
+
+    tranquility. A very rare ingredient of
+
+    item synthesis.
+- id: 20207
+  en: Lost Illusion
+- id: 20208
+  en: >-
+    A magical ore.
+
+    An ingredient of item synthesis.
+- id: 20209
+  en: Manifest Illusion
+- id: 20210
+  en: >-
+    A possibly magical ore.
+
+    An ingredient of item synthesis.
+- id: 20211
+  en: Dark Remembrance Map
+- id: 20212
+  en: A map of the area.
+- id: 20214
+  en: Ragnarok
+- id: 20215
+  en: Shoot
+- id: 20216
+  en: Impact
+- id: 20217
+  en: Giga Impact
+- id: 20220
+  en: Turn On
+- id: 20221
+  en: Access
+- id: 20222
+  en: Sonic Rave
+- id: 20223
+  en: Rave
+- id: 20224
+  en: Finish
+- id: 20225
+  en: Last Arcanum
+- id: 20226
+  en: Bash
+- id: 20227
+  en: The End
+- id: 20228
+  en: Strike Raid
+- id: 20229
+  en: Raid
+- id: 20230
+  en: Judgment
+- id: 20235
+  en: Limit
+- id: 20236
+  en: Mega Impact
+- id: 20237
+  en: Return to Menu
+- id: 20240
+  en: Activate
+- id: 20241
+  en: Japaneseₓ
+- id: 20242
+  en: Englishₓ
+- id: 20243
+  en: Select a chapter.
+- id: 20244
+  en: Select a movie.
+- id: 20270
+  en: Play all
+- id: 20325
+  en: Zantetsu Counter
+- id: 20326
+  en: >-
+    Unleashes Zantetsuken by selecting
+
+    Attack while guarding.
+- id: 20327
+  en: Reflect Combo
+- id: 20328
+  en: >-
+    Blocks enemy attacks with Guard
+
+    by pressing {:icon button-square} during a combo.
+- id: 20329
+  en: HP Gain
+- id: 20330
+  en: >-
+    Restores Sora's HP when
+
+    a Limit Command lands.
+- id: 20338
+  en: Depths of Remembrance Map
+- id: 20339
+  en: A map of the area.
+- id: 20342
+  en: Garden of Assemblage Map
+- id: 20343
+  en: A map of the area.
+- id: 20364
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20392
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20393
+  en: Heart Puzzle Piece
+- id: 20394
+  en: Heart Puzzle Piece
+- id: 20395
+  en: Heart Puzzle Piece
+- id: 20396
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20397
+  en: Proof of Connection
+- id: 20398
+  en: >-
+    Proof of winning the battle in
+
+    the portal at Disney Castle.
+
+    Perhaps it has changed Sora.
+- id: 20399
+  en: '{:width 90}Proof of Nonexistence'
+- id: 20400
+  en: >-
+    Proof of defeating all of Organization {XIII}'s
+
+    replica data in the Garden of Assemblage.
+
+    Perhaps it has changed Sora.
+- id: 20401
+  en: Proof of Peace
+- id: 20402
+  en: >-
+    Proof of appeasing the Mushroom {XIII}.
+
+    Perhaps it has changed Sora.
+- id: 20403
+  en: Illude
+- id: 20404
+  en: Unlock
+- id: 20405
+  en: Soothe
+- id: 20406
+  en: Banish
+- id: 20407
+  en: Turn
+- id: 20408
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20409
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20410
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20411
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20412
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20413
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20416
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20418
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20419
+  en: '{:width 95}Awakening Puzzle Piece'
+- id: 20422
+  en: Duality Puzzle Piece
+- id: 20423
+  en: Duality Puzzle Piece
+- id: 20424
+  en: Duality Puzzle Piece
+- id: 20425
+  en: Duality Puzzle Piece
+- id: 20426
+  en: Heart Puzzle Piece
+- id: 20427
+  en: Duality Puzzle Piece
+- id: 20428
+  en: Heart Puzzle Piece
+- id: 20429
+  en: Duality Puzzle Piece
+- id: 20430
+  en: Heart Puzzle Piece
+- id: 20431
+  en: Duality Puzzle Piece
+- id: 20432
+  en: Duality Puzzle Piece
+- id: 20433
+  en: Duality Puzzle Piece
+- id: 20434
+  en: Duality Puzzle Piece
+- id: 20435
+  en: Duality Puzzle Piece
+- id: 20436
+  en: Duality Puzzle Piece
+- id: 20437
+  en: Daylight Puzzle Piece
+- id: 20438
+  en: Daylight Puzzle Piece
+- id: 20439
+  en: Daylight Puzzle Piece
+- id: 20440
+  en: Daylight Puzzle Piece
+- id: 20441
+  en: Daylight Puzzle Piece
+- id: 20442
+  en: Daylight Puzzle Piece
+- id: 20443
+  en: Daylight Puzzle Piece
+- id: 20444
+  en: Daylight Puzzle Piece
+- id: 20445
+  en: Daylight Puzzle Piece
+- id: 20446
+  en: Daylight Puzzle Piece
+- id: 20447
+  en: Heart Puzzle Piece
+- id: 20448
+  en: Daylight Puzzle Piece
+- id: 20449
+  en: Daylight Puzzle Piece
+- id: 20450
+  en: Daylight Puzzle Piece
+- id: 20451
+  en: Heart Puzzle Piece
+- id: 20452
+  en: Daylight Puzzle Piece
+- id: 20453
+  en: Daylight Puzzle Piece
+- id: 20454
+  en: Daylight Puzzle Piece
+- id: 20455
+  en: Daylight Puzzle Piece
+- id: 20456
+  en: Heart Puzzle Piece
+- id: 20457
+  en: Daylight Puzzle Piece
+- id: 20458
+  en: Daylight Puzzle Piece
+- id: 20459
+  en: Daylight Puzzle Piece
+- id: 20460
+  en: Daylight Puzzle Piece
+- id: 20461
+  en: Daylight Puzzle Piece
+- id: 20462
+  en: Heart Puzzle Piece
+- id: 20463
+  en: Daylight Puzzle Piece
+- id: 20464
+  en: Daylight Puzzle Piece
+- id: 20465
+  en: Daylight Puzzle Piece
+- id: 20466
+  en: Daylight Puzzle Piece
+- id: 20467
+  en: Heart Puzzle Piece
+- id: 20468
+  en: Daylight Puzzle Piece
+- id: 20469
+  en: Daylight Puzzle Piece
+- id: 20470
+  en: Daylight Puzzle Piece
+- id: 20471
+  en: Heart Puzzle Piece
+- id: 20472
+  en: Daylight Puzzle Piece
+- id: 20473
+  en: Daylight Puzzle Piece
+- id: 20474
+  en: Daylight Puzzle Piece
+- id: 20475
+  en: Daylight Puzzle Piece
+- id: 20476
+  en: Daylight Puzzle Piece
+- id: 20477
+  en: Daylight Puzzle Piece
+- id: 20478
+  en: Daylight Puzzle Piece
+- id: 20479
+  en: Daylight Puzzle Piece
+- id: 20480
+  en: Daylight Puzzle Piece
+- id: 20481
+  en: Daylight Puzzle Piece
+- id: 20482
+  en: Daylight Puzzle Piece
+- id: 20483
+  en: Daylight Puzzle Piece
+- id: 20484
+  en: Daylight Puzzle Piece
+- id: 20485
+  en: Daylight Puzzle Piece
+- id: 20486
+  en: Daylight Puzzle Piece
+- id: 20487
+  en: Daylight Puzzle Piece
+- id: 20488
+  en: Daylight Puzzle Piece
+- id: 20489
+  en: Daylight Puzzle Piece
+- id: 20490
+  en: Daylight Puzzle Piece
+- id: 20491
+  en: Protect
+- id: 20492
+  en: 'Shields {:color #F0F00080}10%{:reset} of damage dealt to the wearer.'
+- id: 20493
+  en: Protectra
+- id: 20494
+  en: 'Shields {:color #F0F00080}20%{:reset} of damage dealt to the wearer.'
+- id: 20495
+  en: Protectga
+- id: 20496
+  en: 'Shields {:color #F0F00080}40%{:reset} of damage dealt to the wearer.'
+- id: 20498
+  en: '{:icon remembrance}'
+- id: 20499
+  en: '{:icon tranquil}'
+- id: 20535
+  en: Struggle
+- id: 20536
+  en: Reset
+- id: 20537
+  en: Break
+- id: 20538
+  en: Frontier Puzzle Piece
+- id: 20551
+  en: Frontier Puzzle Piece
+- id: 20555
+  en: Frontier Puzzle Piece
+- id: 20558
+  en: Frontier Puzzle Piece
+- id: 20561
+  en: Frontier Puzzle Piece
+- id: 20564
+  en: Frontier Puzzle Piece
+- id: 20571
+  en: Frontier Puzzle Piece
+- id: 20574
+  en: Frontier Puzzle Piece
+- id: 20576
+  en: Frontier Puzzle Piece
+- id: 20577
+  en: Frontier Puzzle Piece
+- id: 20579
+  en: Frontier Puzzle Piece
+- id: 20580
+  en: Frontier Puzzle Piece
+- id: 20623
+  en: Executive's Ring
+- id: 20624
+  en: Immensely increases maximum AP.
+- id: 20626
+  en: Sunset Puzzle Piece
+- id: 20627
+  en: Sunset Puzzle Piece
+- id: 20628
+  en: Sunset Puzzle Piece
+- id: 20629
+  en: Sunset Puzzle Piece
+- id: 20630
+  en: Sunset Puzzle Piece
+- id: 20631
+  en: Sunset Puzzle Piece
+- id: 20632
+  en: Sunset Puzzle Piece
+- id: 20633
+  en: Sunset Puzzle Piece
+- id: 20634
+  en: Sunset Puzzle Piece
+- id: 20635
+  en: Sunset Puzzle Piece
+- id: 20636
+  en: Sunset Puzzle Piece
+- id: 20637
+  en: Sunset Puzzle Piece
+- id: 20640
+  en: Sunset Puzzle Piece
+- id: 20642
+  en: Sunset Puzzle Piece
+- id: 20643
+  en: Sunset Puzzle Piece
+- id: 20644
+  en: Sunset Puzzle Piece
+- id: 20645
+  en: Sunset Puzzle Piece
+- id: 20646
+  en: Sunset Puzzle Piece
+- id: 20647
+  en: Sunset Puzzle Piece
+- id: 20648
+  en: Sunset Puzzle Piece
+- id: 20653
+  en: Sunset Puzzle Piece
+- id: 20654
+  en: Sunset Puzzle Piece
+- id: 20656
+  en: Sunset Puzzle Piece
+- id: 20657
+  en: Sunset Puzzle Piece
+- id: 20658
+  en: Sunset Puzzle Piece
+- id: 20659
+  en: Sunset Puzzle Piece
+- id: 20660
+  en: Sunset Puzzle Piece
+- id: 20661
+  en: Sunset Puzzle Piece
+- id: 20662
+  en: Sunset Puzzle Piece
+- id: 20663
+  en: Sunset Puzzle Piece
+- id: 20664
+  en: Sunset Puzzle Piece
+- id: 20665
+  en: Sunset Puzzle Piece
+- id: 20666
+  en: Sunset Puzzle Piece
+- id: 20667
+  en: Sunset Puzzle Piece
+- id: 20668
+  en: Sunset Puzzle Piece
+- id: 20669
+  en: Sunset Puzzle Piece
+- id: 20670
+  en: Sunset Puzzle Piece
+- id: 20671
+  en: Sunset Puzzle Piece
+- id: 20672
+  en: Sunset Puzzle Piece
+- id: 20673
+  en: Sunset Puzzle Piece
+- id: 20675
+  en: Sunset Puzzle Piece
+- id: 20676
+  en: Sunset Puzzle Piece
+- id: 20677
+  en: Sunset Puzzle Piece
+- id: 20678
+  en: Sunset Puzzle Piece
+- id: 20679
+  en: Sunset Puzzle Piece
+- id: 20680
+  en: Sunset Puzzle Piece
+- id: 20681
+  en: Sunset Puzzle Piece
+- id: 20682
+  en: Sunset Puzzle Piece
+- id: 20683
+  en: Get 50 types of Materials.
+- id: 20684
+  en: Get 55 types of Materials.
+- id: 20685
+  en: Obtain all {:icon remembrance}remembrance Materials.
+- id: 20686
+  en: Obtain all {:icon tranquil}tranquility Materials.
+- id: 20694
+  en: Struggle
+- id: 20695
+  en: Smash
+- id: 21364
+  en: Look Up
+- id: 21375
+  en: Shaman's Relic+
+- id: 21376
+  en: >-
+    A staff with great magic and strength.
+
+    Defense will increase by {:color #F0F00080}3{:reset} in
+
+    critical situations.
+- id: 21377
+  en: Akashic Record+
+- id: 21378
+  en: >-
+    A shield with great strength.
+
+    Increases MP restoration speed by {:color #F0F00080}50%{:reset}
+
+    when all MP is consumed.
+- id: 21469
+  en: Dispel
+- id: 21563
+  en: Fall
+- id: 21564
+  en: Escape
+- id: 21567
+  en: Horror
+- id: 21568
+  en: New Realm
+- id: 21569
+  en: Deceit
+- id: 21570
+  en: Doubt
+- id: 21571
+  en: Phantasm
+- id: 21572
+  en: Hide
+- id: 21573
+  en: Envision
+- id: 21574
+  en: Illusion
+- id: 21575
+  en: Ruse
+- id: 21576
+  en: Dupe
+- id: 21577
+  en: Plan
+- id: 21578
+  en: Delusion
+- id: 21579
+  en: Mirage
+- id: 21580
+  en: Imagine
+- id: 21581
+  en: Conspire
+- id: 21582
+  en: Cheat
+- id: 21583
+  en: Scheme
+- id: 21584
+  en: Grab
+- id: 21585
+  en: Trap
+- id: 21586
+  en: Trick
+- id: 21587
+  en: Enigma
+- id: 21588
+  en: Fraud
+- id: 21589
+  en: Twist
+- id: 21590
+  en: Take Over
+- id: 21591
+  en: Contrive
+- id: 21592
+  en: Vision
+- id: 21593
+  en: Phony
+- id: 21594
+  en: Riddle
+- id: 21595
+  en: Fade
+- id: 21596
+  en: Plot
+- id: 21597
+  en: Specter
+- id: 21598
+  en: Puzzle
+- id: 21599
+  en: Mystery
+- id: 21600
+  en: Ragnarok
+- id: 21601
+  en: Daydream
+- id: 21602
+  en: Mist
+- id: 21603
+  en: Lexicon
+- id: 21604
+  en: Ambush
+- id: 21605
+  en: Retrieve
+- id: 21606
+  en: Liberate
+- id: 21607
+  en: Return
+- id: 21608
+  en: Jackpot
+- id: 21609
+  en: Heal
+- id: 21610
+  en: Spirit
+- id: 21611
+  en: Bounty
+- id: 21612
+  en: Wealth
+- id: 21613
+  en: Stamina
+- id: 21614
+  en: Treasure
+- id: 21615
+  en: Mend
+- id: 21616
+  en: Riches
+- id: 21617
+  en: Bonus
+- id: 21618
+  en: Herb
+- id: 21619
+  en: Lucky
+- id: 21620
+  en: Destroy
+- id: 21621
+  en: Expose
+- id: 21622
+  en: Detection
+- id: 0x01E9
+  en: Anti Form
+- id: 0x0649
+  en: >-
+    Using the Keyblade's true power,
+    
+    use the Drive Command to change
+    
+    into Final Form.
+- id: 0x064A
+  en: Anti Form
+- id: 0x064B
+  en: >-
+    Using the darkness in Sora's heart,
+    
+    use the Drive Command to change
+    
+    into Anti Form.
+- id: 0x4E83
+  en: Dodge Roll LV1
+- id: 0x4E85
+  en: Dodge Roll LV2
+- id: 0x4E87
+  en: Dodge Roll LV3
+- id: 0x4E8D
+  en: Sonic Blade
+- id: 0x4E8F
+  en: Ars Arcanum
+- id: 0x4E93
+  en: Ragnarok
+- id: 0x4EA0
+  en: >-
+    Limit Form Status.
+    
+    A form specializing in Limit attacks.
+    
+    {:color #F0F00080}Drive points consumed: 4{:reset}
+- id: 0x0A71
+  en: Garden
+- id: 0x0A80
+  en: Garden
+- id: 0x0A82
+  en: Return to the Garden of Assemblage?
+- id: 0x3859
+  en: Return to the Garden of Assemblage?

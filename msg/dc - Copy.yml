@@ -1,0 +1,758 @@
+- id: 5348
+  en: >-
+    Please escort me to the
+
+    audience chamber.
+- id: 5349
+  en: >-
+    {:unk13 00 01 40 01}{:unk08 02 00 06}Escort Minnie?
+
+    {:chardelay 33 00}Please wait a moment.
+
+    {:chardelay 09 00}Okay, let´s go!
+- id: 5350
+  en: >-
+    The Hall of the Cornerstone is
+
+    beneath the {:theme 0A}audience chamber{:reset}.{:clear }You should be able to find
+
+    a way to save the castle{:clear }through that door.
+
+    Please be careful, Sora.
+- id: 5351
+  en: >-
+    I found the most lovely place.
+
+    I´m sure Donald will like it.{:clear }So hurry back, okay?
+
+    And come back in one piece!
+- id: 5352
+  en: >-
+    I´m sure Merlin
+
+    will help.{:clear }Please, go to Hollow Bastion
+
+    and tell him about the castle.
+- id: 5353
+  en: >-
+    There should be a door identical
+
+    to this one in that world.{:clear }You must use your power to
+
+    close it!
+- id: 5354
+  en: >-
+    Oh no! Oh no!
+
+    The castle´s in danger!{:clear }You must go see Her Majesty
+
+    at once! She´s in the library!
+- id: 5355
+  en: >-
+    This is the Gummi Ship hangar.
+
+    Normally it´s a madhouse here.{:clear }If you follow the lawn from here,
+
+    you´ll arrive at the castle entrance.
+- id: 5368
+  en: >-
+    Oh...hmm. Now I wonder where
+
+    that old album could be.
+- id: 5369
+  en: Queen Minnie!
+- id: 5370
+  en: It´s horrible!
+- id: 5371
+  en: Somethin´s wrong in the Hall of the Cornerstone!
+- id: 5372
+  en: There´s real sharp thorns everywhere!
+- id: 5373
+  en: >-
+    Oh, King Mickey, I wish you could hear me.{:delay BE 00}{:clear }The castle is in danger!
+
+    We´ve got to do something soon!
+- id: 5374
+  en: Donald... Goofy...
+- id: 5375
+  en: Where are you?
+- id: 5376
+  en: This is your castle...
+- id: 5377
+  en: Must be nice to be home, huh?
+- id: 5378
+  en: Well?
+- id: 5379
+  en: Ya know, somethin´ just don´t feel quite right...
+- id: 5380
+  en: Yeah.
+- id: 5381
+  en: You´re back!
+- id: 5382
+  en: Move it! Let´s go!
+- id: 5383
+  en: Queen Minnie needs to see you!
+- id: 5384
+  en: The castle´s in danger! Hurry! To the library!
+- id: 5385
+  en: Your Majesty! Queen Minnie! We´re back!
+- id: 5386
+  en: You´re here!
+- id: 5387
+  en: >-
+    Your Royal Highness,
+
+    did ya happen to summon us?
+- id: 5388
+  en: Yes.
+- id: 5389
+  en: Where´s the King?
+- id: 5390
+  en: Excuse him. This is our friend, Sora.
+- id: 5391
+  en: Oh, Sora!
+- id: 5392
+  en: >-
+    The King told me
+
+    all about you in his letters.{:delay A0 00}{:clear }{:delay 1E 00}{:clear }He said you´re a very brave young man.
+- id: 5393
+  en: So, do you know where he is?
+- id: 5394
+  en: >-
+    Your Majesty, what are Heartless
+
+    doing in your castle?
+- id: 5395
+  en: Oh my... So those are the Heartless.
+- id: 5396
+  en: Don´t worry, we´ll take care of ´em!
+- id: 5397
+  en: >-
+    I know I can count on you, Sora.{:delay 78 00}{:clear }{:delay 28 00}{:clear }Now, there´s something I´d like
+
+    all of you to come and see.{:delay DC 00}{:clear }{:delay 1E 00}{:clear }Would you please escort me to the
+
+    audience chamber?
+- id: 5398
+  en: Hut!
+- id: 5399
+  en: ''
+- id: 5400
+  en: >-
+    I forgot to warn everyone else
+
+    in the castle about the danger!{:delay BE 00}{:clear }We must be sure they´re hidden
+
+    somewhere safe!
+- id: 5401
+  en: Okay, we´ll go tell them.
+- id: 5402
+  en: The whole castle!?
+- id: 5403
+  en: We just gotta split up, Donald.
+- id: 5404
+  en: >-
+    I´ll make sure that everyone knows
+
+    what´s going on.
+- id: 5405
+  en: No, Sora, you´ll just get lost!
+- id: 5406
+  en: Okay. Then I´ll stay with the Queen.
+- id: 5407
+  en: Good!
+- id: 5408
+  en: All righty then, see ya later!
+- id: 5409
+  en: Um, the audience chamber, right, ma´am?
+- id: 5410
+  en: >-
+    Yes, Sora.
+
+    Let´s be on our way.
+- id: 5415
+  en: Just one moment.
+- id: 5416
+  en: >-
+    As soon as the trouble started,
+
+    I made sure to seal this room.
+- id: 5417
+  en: Now then...shall we?
+- id: 5418
+  en: Not here, too!
+- id: 5419
+  en: I got ´em.
+- id: 5420
+  en: Come on, gimme a break!
+- id: 5421
+  en: Huh?
+- id: 5422
+  en: Whoa...
+- id: 5423
+  en: >-
+    The room below is called
+
+    the ´Hall of the Cornerstone.´
+- id: 5424
+  en: >-
+    Our castle has always been
+
+    safe from worlds that are evil...
+- id: 5425
+  en: >-
+    thanks to the Cornerstone of Light
+
+    which we keep down there.
+- id: 5426
+  en: The Cornerstone...of Light?
+- id: 5427
+  en: This is the castle´s cherished Cornerstone.{:delay B4 00}{:clear }{:delay 64 00}But look.
+- id: 5428
+  en: The thorns...
+- id: 5429
+  en: I wonder what this could mean...
+- id: 5430
+  en: Maleficent!
+- id: 5431
+  en: No way!
+- id: 5432
+  en: Well, well, well. What have we here...?
+- id: 5433
+  en: >-
+    If it isn´t the wretched Keyblade holder,
+
+    and his pitiful lackeys!
+- id: 5434
+  en: What!? Now you´re gonna deal with me!
+- id: 5435
+  en: All in good time.
+- id: 5436
+  en: >-
+    I promise you´ll be able to partake
+
+    of my vengeance. But you must be patient.
+- id: 5437
+  en: Just what are you doing here, Maleficent!?
+- id: 5438
+  en: Ah, Queen Minnie. Radiant, as always.
+- id: 5439
+  en: >-
+    However, it´s a bit too "bright"
+
+    for what I have in mind.{:delay 0E 01}{:clear }I suppose I´ll just have to fill every room
+
+    with my personal touch of darkness.
+- id: 5440
+  en: >-
+    You´d better stop right now
+
+    if you know what´s good for you!
+- id: 5441
+  en: Ooh, how frightening.
+- id: 5442
+  en: Very well. I´ll stop...
+- id: 5443
+  en: What a hag.
+- id: 5444
+  en: >-
+    Nothing like this has ever happened before.{:delay A2 00}{:clear }I looked through all the records in the library,
+
+    but I couldn´t find a single clue.
+- id: 5446
+  en: Ohhh!
+- id: 5447
+  en: ''
+- id: 5448
+  en: >-
+    We should go ask somebody who knows
+
+    lotsa stuff that ain´t in any book!
+- id: 5449
+  en: Merlin the Wizard!
+- id: 5450
+  en: Yes! That´s perfect!
+- id: 5451
+  en: >-
+    Merlin just might know
+
+    something about this mess.{:delay F0 00}{:clear }Let´s ask his advice!
+- id: 5452
+  en: We saw him in Hollow Bastion, right?
+- id: 5453
+  en: Yeah. Let´s go!
+- id: 5454
+  en: There's Heartless in every part of the castle...
+- id: 5455
+  en: The Queen is in danger!
+- id: 5456
+  en: ''
+- id: 5457
+  en: Perhaps, I´d better just see for myself.
+- id: 5458
+  en: Mm-hmm...{:delay 42 00}{:clear }interesting...
+- id: 5459
+  en: What´s happening, Merlin?
+- id: 5460
+  en: >-
+    This is not good.
+
+    In fact, I´m afraid, it´s quite serious.
+- id: 5461
+  en: ''
+- id: 5462
+  en: What´s that?
+- id: 5463
+  en: My boy, that is a gateway to a special world.
+- id: 5464
+  en: >-
+    Someone in that world is responsible for
+
+    what´s going on in this castle.{:delay F0 00}{:clear }Of that, I´m certain.
+- id: 5465
+  en: Oh boy!
+- id: 5466
+  en: We knew we could count on you, Merlin!
+- id: 5467
+  en: Then we should go get him!
+- id: 5468
+  en: Wait a moment!
+- id: 5469
+  en: >-
+    The perpetrators must be stopped, of course.
+
+    But there´s something else to do first.
+- id: 5470
+  en: >-
+    Somewhere in that world, there should be
+
+    another door that´s identical to this one.
+- id: 5471
+  en: >-
+    I believe our enemies are utilizing that door.{:delay EA 00}{:clear }As long as it remains open,
+
+    the castle will be in grave danger.
+- id: 5472
+  en: >-
+    Listen carefully, Sora. You must find that door.
+
+    And when you do--lock it with your Keyblade.
+- id: 5473
+  en: Got it.
+- id: 5474
+  en: You can count on us!
+- id: 5475
+  en: >-
+    Now, one more thing.
+
+    You´re heading into a very special world.
+- id: 5476
+  en: >-
+    While you´re there, the nature of that world
+
+    may tempt you to do something dark.{:delay 20 01}{:clear }You must resist that temptation at all costs!
+- id: 5477
+  en: What do you mean?
+- id: 5478
+  en: >-
+    You´ll know soon enough.
+
+    I have faith in you, my lads!
+- id: 5479
+  en: The thorns have disappeared!
+- id: 5480
+  en: >-
+    By george!
+
+    The lads have accomplished their mission.
+- id: 5481
+  en: Hooray!
+- id: 5482
+  en: Let´s have an acorn feast to celebrate!
+- id: 5483
+  en: Welcome back!
+- id: 5484
+  en: >-
+    Because of your bravery,
+
+    the castle is safe and protected again.{:delay EA 00}{:clear }Thank you so much for all you´ve done!
+- id: 5485
+  en: Good work, you guys!
+- id: 5486
+  en: >-
+    Now boys, I hope you didn´t do anything
+
+    reckless while you were there?
+- id: 5487
+  en: Of course not!
+- id: 5488
+  en: Daisy!
+- id: 5489
+  en: Daisy, I´m back!
+- id: 5490
+  en: Who?
+- id: 5491
+  en: Daisy is Donald´s very special sweetheart.
+- id: 5492
+  en: Really...
+- id: 5493
+  en: ''
+- id: 5494
+  en: >-
+    Donald, you forgot about our date again!
+
+    You´d better have a good excuse this time!
+- id: 5495
+  en: But Daisy...I...
+- id: 5496
+  en: >-
+    I know it´s an important mission, but you
+
+    could at least check in every once in a while.
+- id: 5497
+  en: Sora!
+- id: 5498
+  en: Donald!
+- id: 5499
+  en: Just be a minute...
+- id: 5500
+  en: Going somewhere?
+- id: 5501
+  en: Of course not!
+- id: 5502
+  en: Donald!
+- id: 5503
+  en: Oh, look!
+- id: 5504
+  en: ''
+- id: 5505
+  en: Daisy, we need Donald for just a little longer.
+- id: 5506
+  en: How much longer?
+- id: 5507
+  en: Um, well...
+- id: 5508
+  en: I´ll be back soon, Daisy!
+- id: 5509
+  en: Don´t you worry, Queen Minnie. We´ll return.
+- id: 5510
+  en: >-
+    Please tell the King that
+
+    we´re still looking for him!
+- id: 5511
+  en: I will!
+- id: 5512
+  en: See you soon!
+- id: 5513
+  en: Think wisely!
+- id: 7778
+  en: >-
+    I´m here on a property venture.
+
+    I want this castle for my own.
+- id: 7779
+  en: Just as soon as the castle belongs to me!
+- id: 7780
+  en: They must be the work of someone very evil.
+- id: 7973
+  en: >-
+    The King is out there
+
+    somewhere, doing all he can.{:clear }I´ll do my best, too, but most of
+
+    all, we need your help!
+- id: 8095
+  en: Protect Minnie while heading to the throne!
+- id: 8096
+  en: >-
+    Protect Minnie while heading to the throne!
+
+    Using reaction commands with {:icon button-triangle}
+
+    will make the battle easier!
+- id: 13874
+  en: >-
+    I knew Merlin would help!{:clear }Still, our problem´s not solved.
+
+    Sora, I´m counting on you!
+- id: 13949
+  en: >-
+    If you defeat an enemy quickly in a Gummi
+
+    battle, sometimes another enemy appears.{:clear }It´s more work for you, but you
+
+    might encounter a rare enemy!
+- id: 13950
+  en: >-
+    We´ll design up a Gummi Ship
+
+    while you´re collecting gummies.{:clear }Gather as many as possible. We´ll let
+
+    you know when the plan is ready.
+- id: 14274
+  en: Protect Minnie while heading to the Audience Chamber!
+- id: 14275
+  en: >-
+    Protect Minnie while heading
+
+    to the Audience Chamber!
+
+    Using reaction commands with {:icon button-triangle}
+
+    will make the battle easier!
+- id: 14422
+  en: Minnie´s in danger!
+- id: 14423
+  en: Minnie´s in danger!
+- id: 16042
+  en: >-
+    With the Hall of the Cornerstone
+
+    like that, this is a major crisis!{:clear }If only the King were here! Still, I feel
+
+    better with you here.
+- id: 16043
+  en: >-
+    Wow, Merlin can even create
+
+    doors to other worlds!{:clear }Please hurry to the Hall of the
+
+    Cornerstone and fix the castle!
+- id: 16044
+  en: >-
+    We´re going to see Merlin, right?{:clear }The Gummi Ship´s ready to fly.
+
+    Let´s get over to Hollow Bastion!
+- id: 16045
+  en: >-
+    Wow, another world...
+
+    I´d kind of like to go, too.
+- id: 16122
+  en: >-
+    The audience chamber is
+
+    through the {:theme 0A}large door {:reset}in the hallway.{:clear }Now hurry, Sora!
+- id: 16123
+  en: >-
+    All these enemies are getting
+
+    in my way.{:clear }Sora, help me
+
+    defeat them.
+- id: 16124
+  en: >-
+    All that´s left now is to go to
+
+    the {:theme 0A}audience chamber{:reset}. Hurry, Sora!
+- id: 16969
+  en: This statue looks familiar.
+- id: 16970
+  en: This statue looks familiar.
+- id: 16971
+  en: This must be the King´s throne.
+- id: 16972
+  en: This must belong to Pluto.
+- id: 16973
+  en: You see a letter to someone.
+- id: 16974
+  en: >-
+    "Disney Castle is protected by
+
+    magical power."
+- id: 16975
+  en: >-
+    "Sitting on his throne, the King
+
+    guards the locked chamber."
+- id: 16976
+  en: >-
+    "If the holy light is lost, the castle
+
+    will be swallowed in darkness."
+- id: 16977
+  en: Could this be the King?
+- id: 16978
+  en: Maybe one of the King´s ancestors?
+- id: 16979
+  en: He seems to want to take you somewhere.
+- id: 16980
+  en: >-
+    {:unk08 02 00 06}Follow him?
+
+    {:chardelay 33 00}No thanks.
+
+    {:chardelay 09 00}Lead the way!
+- id: 16981
+  en: It is magically locked.
+- id: 16982
+  en: It´s emitting a strange light.
+- id: 16983
+  en: It´s glowing brilliantly.
+- id: 18407
+  en: NOT IN GAME
+- id: 19207
+  en: >-
+    The servant appears too busy
+
+    cleaning to speak with you.
+- id: 19757
+  en: ''
+- id: 20218
+  en: >-
+    {:unk08 02 00 06}Where could this lead?
+
+    I don't have a good feeling about this.
+
+    {:chardelay 33 00}Let's leave it alone.
+
+    {:chardelay A1 00}Let's check it out!
+- id: 20219
+  en: >-
+    {:unk08 02 00 06}The man in armor is on the other side.
+
+    {:chardelay 33 00}Let's come back later.
+
+    {:chardelay A1 00}I can take him again!
+- id: 20332
+  en: >-
+    I feel some sort of power,
+
+    but it's not Maleficent.{:clear }I don't believe the castle's in any danger,
+
+    but this whole thing is quite unsettling.
+- id: 20333
+  en: >-
+    Something strange is happening in the {:theme 0A}Hall of the Cornerstone{:reset}!
+
+    Can you investigate what's going on?{:clear }And Goofy, as captain, you are responsible
+
+    for protecting the castle from any danger.
+- id: 20334
+  en: >-
+    The hole is emanating a great power!{:clear }I don't know what it is or
+
+    what it wants, but be careful!
+- id: 20335
+  en: >-
+    Look over there, Sora!
+
+    That big hole appeared out of nowhere!{:clear }I thought the castle was safe again.
+
+    What's going on?
+- id: 20336
+  en: >-
+    It's acting more flustered than usual. It seems
+
+    there's something afoot inside the {:theme 0A}castle{:reset}.
+- id: 20548
+  en: >-
+    Defeat the mystery man!
+
+    He's stronger than any previous foe.
+
+    Can you overcome his power?
+- id: 21409
+  en: Aqua... Ven...
+- id: 21410
+  en: A Keyblade?{:delay 73 00}{:clear }Who are you?
+- id: 21411
+  en: I know you. We've met before,{:delay B9 00}{:clear }way back when.
+- id: 21412
+  en: No, that wasn't you.{:delay 69 00}{:clear }You're not the one I chose.
+- id: 21413
+  en: Where is he?
+- id: 21414
+  en: Xe...ha...nort...
+- id: 21415
+  en: Is that you?
+- id: 21416
+  en: ''
+- id: 21417
+  en: Xeha...nort...
+- id: 21418
+  en: Xehanort!
+- id: 21419
+  en: It's not over yet!
+- id: 21420
+  en: That's it. Your power.{:delay 78 00}{:clear }That's what I felt within you.
+- id: 21421
+  en: >-
+    {:unk13 D7 00 42 00}{:unk06 01}{:unk08 03 00 05}We meet again,
+
+    young Keyblade master.
+- id: 21422
+  en: >-
+    {:unk13 76 01 3C 00}{:unk06 01}{:unk08 03 00 05}I have nothing more to
+
+    bestow on you.{:clear }The only thing I have left
+
+    is my contempt for Xehanort.{:clear }Are you willing to take on
+
+    that burden?
+- id: 21425
+  en: >-
+    {:unk13 96 00 DC 00}{:unk06 02}{:unk08 03 01 06}Oh, Sora!
+
+    What great timing!
+- id: 21426
+  en: >-
+    {:unk13 86 01 DC 00}{:unk06 02}{:unk08 03 00 05}It's just terrible!
+
+    Will you look at that!?
+- id: 21427
+  en: >-
+    {:unk13 68 01 D2 00}{:unk06 00}{:unk08 01 00 07}I came to check on the Cornerstone
+
+    of Light, and that's when I saw it!
+
+    I don't know how long it's been there.
+- id: 21428
+  en: >-
+    {:unk13 F0 00 E6 00}{:unk06 00}{:unk08 01 01 06}It looks like it leads somewhere.
+
+    But where?
+- id: 21429
+  en: >-
+    {:unk13 B4 00 50 00}{:unk06 00}{:unk08 01 01 05}Do you think it's connected to
+
+    the past like the other one?
+- id: 21430
+  en: >-
+    {:unk13 5E 01 50 00}{:unk06 00}{:unk08 01 00 06}Or maybe that's what the Organization
+
+    wants us to think. It might be a trap!
+- id: 21431
+  en: >-
+    {:unk13 54 01 50 00}{:unk06 00}{:unk08 01 01 05}Whatever the case, we should be prepared
+
+    for anything if we're going to check it out.
+- id: 21625
+  en: All commands have been locked! Something must be done!
+- id: 21626
+  en: Commands have been unlocked!
+- id: 21627
+  en: Some commands have been locked! Something must be done!
+- id: 21628
+  en: All commands have been unlocked!
+- id: 0x4F6B
+  en: >-
+    {:unk08 02 00 06}It's an Absent Silhouette, a shadowy presence
+
+    within an emblem.
+
+    {:chardelay 33 00}Who cares?
+
+    {:chardelay A2 00}Let's check it out!
+- id: 0x4F71
+  en: >-
+    {:unk08 02 00 06}Battle Marluxia again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A2 00}I'm ready for a fight!
+    

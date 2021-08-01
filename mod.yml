@@ -134,10 +134,7 @@ assets:
   - name: ObjList.yml
     type: objentry
 #Texts & Libretto
-- name: msg/us/sys.bar
-  multi:
-  - name: msg/uk/sys.bar
-  - name: msg/jp/sys.bar
+- name: msg/jp/sys.bar
   method: binarc
   source:
   - name: sys
@@ -146,10 +143,7 @@ assets:
     source:
     - name: msg/sys.yml
       language: en
-- name: msg/us/al.bar
-  multi:
-  - name: msg/uk/al.bar
-  - name: msg/jp/al.bar
+- name: msg/jp/al.bar
   method: binarc
   source:
   - name: al
@@ -158,10 +152,7 @@ assets:
     source:
     - name: msg/al.yml
       language: en
-- name: msg/us/dc.bar
-  multi:
-  - name: msg/uk/dc.bar
-  - name: msg/jp/dc.bar
+- name: msg/jp/dc.bar
   method: binarc
   source:
   - name: dc
@@ -170,10 +161,7 @@ assets:
     source:
     - name: msg/dc.yml
       language: en
-- name: msg/us/hb.bar
-  multi:
-  - name: msg/uk/hb.bar
-  - name: msg/jp/hb.bar
+- name: msg/jp/hb.bar
   method: binarc
   source:
   - name: hb
@@ -182,10 +170,7 @@ assets:
     source:
     - name: msg/hb.yml
       language: en
-- name: msg/us/he.bar
-  multi:
-  - name: msg/uk/he.bar
-  - name: msg/jp/he.bar
+- name: msg/jp/he.bar
   method: binarc
   source:
   - name: he
@@ -194,10 +179,7 @@ assets:
     source:
     - name: msg/he.yml
       language: en
-- name: msg/us/nm.bar
-  multi:
-  - name: msg/uk/nm.bar
-  - name: msg/jp/nm.bar
+- name: msg/jp/nm.bar
   method: binarc
   source:
   - name: nm
@@ -206,10 +188,7 @@ assets:
     source:
     - name: msg/nm.yml
       language: en
-- name: msg/us/tr.bar
-  multi:
-  - name: msg/uk/tr.bar
-  - name: msg/jp/tr.bar
+- name: msg/jp/tr.bar
   method: binarc
   source:
   - name: tr
@@ -217,6 +196,83 @@ assets:
     method: kh2msg
     source:
     - name: msg/tr.yml
+      language: en
+- name: msg/us/sys.bar
+  multi:
+  - name: msg/uk/sys.bar
+  method: binarc
+  source:
+  - name: sys
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/sys - Copy.yml
+      language: en
+- name: msg/us/al.bar
+  multi:
+  - name: msg/uk/al.bar
+  method: binarc
+  source:
+  - name: al
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/al - Copy.yml
+      language: en
+- name: msg/us/dc.bar
+  multi:
+  - name: msg/uk/dc.bar
+  method: binarc
+  source:
+  - name: dc
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/dc - Copy.yml
+      language: en
+- name: msg/us/hb.bar
+  multi:
+  - name: msg/uk/hb.bar
+  method: binarc
+  source:
+  - name: hb
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/hb - Copy.yml
+      language: en
+- name: msg/us/he.bar
+  multi:
+  - name: msg/uk/he.bar
+  method: binarc
+  source:
+  - name: he
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/he - Copy.yml
+      language: en
+- name: msg/us/nm.bar
+  multi:
+  - name: msg/uk/nm.bar
+  method: binarc
+  source:
+  - name: nm
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/nm - Copy.yml
+      language: en
+- name: msg/us/tr.bar
+  multi:
+  - name: msg/uk/tr.bar
+  method: binarc
+  source:
+  - name: tr
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/tr - Copy.yml
       language: en
 - name: libretto-al.bar
   method: copy

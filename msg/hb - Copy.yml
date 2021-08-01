@@ -1,0 +1,3678 @@
+- id: 2935
+  en: '{:unk06 02}{:unk13 90 01 78 00}{:unk08 03 00 05}We did it!'
+- id: 2936
+  en: >-
+    {:unk13 96 00 3C 00}{:unk08 01 01 06}Where have
+
+    you been?
+- id: 2937
+  en: '{:unk13 A4 00 3C 00}{:unk08 01 01 05}Well, uh...'
+- id: 2938
+  en: >-
+    {:unk13 B9 00 3C 00}{:unk08 01 01 05}There´s a...world
+
+    inside this computer,{:clear }where these, um...
+
+    programs live, and...
+- id: 2939
+  en: >-
+    {:unk13 91 00 50 00}{:unk08 01 01 07}So in other words...{:clear }Ansem´s research data
+
+    is off-limits unless we
+
+    know the password.
+- id: 2940
+  en: '{:unk13 87 00 73 00}{:unk08 01 01 06}I think that´s right.'
+- id: 2941
+  en: >-
+    {:unk13 A6 00 43 00}{:unk08 01 01 06}But you´ve already
+
+    defeated Ansem...
+- id: 2942
+  en: >-
+    {:unk13 6D 01 A1 00}{:unk08 01 00 05}Gawrsh, maybe
+
+    we´ll never
+
+    find the password.
+- id: 2943
+  en: '{:unk13 C8 00 32 00}{:unk08 01 01 06}That means...'
+- id: 2944
+  en: >-
+    {:unk13 82 00 46 00}{:unk08 01 01 07}...this is all a
+
+    wild goose chase.
+- id: 2947
+  en: '{:unk13 54 01 B4 00}{:unk08 01 00 05}She just won´t give up...'
+- id: 2948
+  en: '{:unk06 02}{:unk13 72 01 C8 00}{:unk08 03 00 05}And neither will we!'
+- id: 2949
+  en: >-
+    {:unk13 C9 00 89 00}{:unk08 01 01 05}C´mon, we´ve gotta look
+
+    for that password!
+- id: 2950
+  en: >-
+    {:unk13 4A 01 50 00}{:unk08 01 00 05}Right. We made a
+
+    promise to Tron.
+- id: 2952
+  en: What´s this doodle?
+- id: 2953
+  en: Hollow...{:delay 5F 00}{:clear }{:delay 3C 00}Main...{:delay 4B 00}{:clear }{:delay 3C 00}{:clear }Security...Tron...{:delay C8 00}{:clear }{:delay 37 00}{:clear }Door to...
+- id: 2954
+  en: Looks like a diagram or somethin´.
+- id: 2955
+  en: Door...to...darkness?
+- id: 2956
+  en: Oh!
+- id: 2957
+  en: D--{:delay 2D 00}{:clear }{:delay 23 00}{:clear }T--{:delay 2D 00}{:clear }{:delay 23 00}{:clear }D!
+- id: 2958
+  en: DTD!
+- id: 2959
+  en: What´s up?
+- id: 2960
+  en: >-
+    Look at this! This must
+
+    be the dataspace!{:delay DC 00}{:clear }{:delay 14 00}{:clear }The DTD. See? The Door To Darkness!
+- id: 2961
+  en: What do you know.{:delay 4B 00}{:clear }{:delay 14 00}But...that still leaves the password.
+- id: 2962
+  en: >-
+    Say, fellas, did somebody mention
+
+    the Door to Darkness?
+- id: 2963
+  en: Your Majesty!
+- id: 2964
+  en: Long time no see!
+- id: 2965
+  en: Shh!{:delay 23 00}{:clear }{:delay 50 00}{:clear }The Organization might be listening!
+- id: 2966
+  en: You mentioned the Door to Darkness?
+- id: 2967
+  en: Uh, yes, sir!{:delay 64 00}{:clear }{:delay 14 00}{:clear }Ya see, we´re lookin´ for the secret password.
+- id: 2968
+  en: Password?
+- id: 2969
+  en: Oh, I guess you mean like a code.
+- id: 2970
+  en: >-
+    Well, the Door To Darkness can only
+
+    be opened by the seven princesses.{:delay 04 01}{:clear }{:delay 14 00}{:clear }There´s Snow White, Jasmine, and Belle...
+- id: 2971
+  en: Of course...
+- id: 2972
+  en: What´re you tryin´ to do?
+- id: 2973
+  en: >-
+    With that password, we can get
+
+    access to Ansem´s research data.
+- id: 2974
+  en: >-
+    So that means you might be able
+
+    to find out where he is!
+- id: 2975
+  en: >-
+    Stop jokin´ around, Your Majesty.{:delay 64 00}{:clear }{:delay 0F 00}{:clear }We already defeated Ansem.
+
+    You know that.
+- id: 2976
+  en: >-
+    Looks like I´ve got a
+
+    lot of explainin´ to do.
+- id: 2977
+  en: We´re listening, Your Majesty!
+- id: 2978
+  en: Okay...but first, I´ve got a question...
+- id: 2979
+  en: Hey, isn´t Tron waiting for you guys?
+- id: 2980
+  en: >-
+    Don´t worry, I´m not goin´ anywhere.{:delay 78 00}{:clear }{:delay 28 00}{:clear }If those Heartless attack, I´ll stand
+
+    and fight with everybody here.
+- id: 2981
+  en: Yeah...we will, too.
+- id: 2982
+  en: Then let´s talk more later.
+- id: 2983
+  en: That´s a promise!
+- id: 2984
+  en: I´ll see ya when you get back.
+- id: 2985
+  en: ' '
+- id: 2986
+  en: Pit Cell
+- id: 2987
+  en: I/O Tower
+- id: 2988
+  en: '{:width 90}Central Computer Core'
+- id: 2989
+  en: 'Pit Cell Guide #0'
+- id: 2990
+  en: 'Pit Cell Guide #1'
+- id: 2991
+  en: 'Pit Cell Guide #2'
+- id: 2992
+  en: 'Tower Guide #0'
+- id: 2993
+  en: 'Tower Guide #1'
+- id: 2994
+  en: 'Tower Guide #2'
+- id: 2995
+  en: 'Central Computer Core Guide #0'
+- id: 2996
+  en: 'Central Computer Core Guide #1'
+- id: 2997
+  en: 'Central Computer Core Guide #2'
+- id: 2998
+  en: Yes
+- id: 2999
+  en: No
+- id: 3000
+  en: Select Destination
+- id: 3001
+  en: Transport here?
+- id: 7525
+  en: There´s no way through here.
+- id: 8067
+  en: Defeat the Nobodies!
+- id: 8068
+  en: >-
+    Defeat the Nobodies!
+
+    Using reaction commands with {:icon button-triangle}
+
+    will make the battle easier!
+- id: 8069
+  en: Defeat all the Nobodies while protecting the gates!
+- id: 8070
+  en: >-
+    Fight together with Leon and defeat
+
+    the Nobodies while protecting the gates! 
+
+    The battle is over if the gauge is empty!
+- id: 8071
+  en: Defeat all of the enemies!
+- id: 8072
+  en: >-
+    Defeat all of the enemies!
+
+    Using reaction commands with {:icon button-triangle}
+
+    will make the battle easier!
+- id: 8073
+  en: Defeat all of the enemies!
+- id: 8074
+  en: Defeat all of the enemies!
+- id: 8075
+  en: Defeat all of the Heartless!
+- id: 8076
+  en: >-
+    Fight alongside friends to defeat the
+
+    Heartless!
+- id: 8077
+  en: Trapped! Defeat all of the Heartless to escape!
+- id: 8079
+  en: Trapped! Defeat all of the Heartless to escape!
+- id: 8081
+  en: Trapped! Defeat all of the Heartless to escape!
+- id: 8083
+  en: Defeat all of the enemies!
+- id: 8084
+  en: >-
+    Defeat all of the enemies!
+
+    Using reaction commands with {:icon button-triangle}
+
+    will make the battle easier!
+- id: 8085
+  en: Defeat the Heartless!
+- id: 8086
+  en: Use the town´s defenses to defeat the Heartless!
+- id: 8087
+  en: Defeat the Heartless!
+- id: 8088
+  en: >-
+    Fight alongside friends to defeat the
+
+    Heartless!
+- id: 8148
+  en: >-
+    Wait a sec...I thought everything was
+
+    supposed to be under control here!
+- id: 8149
+  en: Hey, look!
+- id: 8150
+  en: >-
+    Must be Organization {XIII} again.
+
+    We better go see Leon.
+- id: 8151
+  en: '{:unk13 90 01 18 01}{:unk08 01 00 01}Come on in!'
+- id: 8152
+  en: >-
+    {:unk13 A0 00 6E 00}{:unk08 01 01 05}Wait just a second...{:clear }What happened
+
+    to this place?
+- id: 8153
+  en: >-
+    {:unk13 79 01 E1 00}{:unk08 01 00 04}Didn´t that Heartless
+
+    look like the ones
+
+    from Tron´s world?
+- id: 8154
+  en: >-
+    {:unk13 91 00 3C 00}{:unk08 01 01 06}C´mon, just
+
+    get inside!
+- id: 8155
+  en: '{:unk13 54 01 5A 00}{:unk08 01 01 06}Hurry up, Cid!'
+- id: 8156
+  en: '{:unk06 02}{:unk13 C8 00 50 00}{:unk08 03 01 06}Give me a second!'
+- id: 8157
+  en: '{:unk13 96 00 41 00}{:unk08 01 00 05}Confound it! Hurry!'
+- id: 8158
+  en: '{:unk06 02}{:unk13 36 01 50 00}{:unk08 03 00 05}Why, you...!'
+- id: 8159
+  en: '{:unk13 A5 00 9B 00}{:unk08 01 01 06}What´s going on?'
+- id: 8160
+  en: >-
+    {:unk13 A0 00 37 00}{:unk08 01 01 06}Talk about yer
+
+    good timin´!
+- id: 8161
+  en: >-
+    {:unk13 2C 01 37 00}{:unk08 01 01 06}The MCP is wreaking havoc
+
+    inside the computer.
+- id: 8162
+  en: '{:unk13 87 00 09 01}{:unk08 01 00 06}Not again!'
+- id: 8163
+  en: >-
+    {:unk13 D2 00 37 00}{:unk08 01 01 06}Accordin´ to
+
+    Leon, anyway...
+- id: 8164
+  en: >-
+    He went on over to Ansem´s study to find
+
+    out what all the ruckus was about.
+- id: 8165
+  en: >-
+    Turns out the MCP is using
+
+    the data in that computer{:delay B4 00}{:clear }to crank out Heartless.
+- id: 8166
+  en: >-
+    The MCP´s been messin´ around with
+
+    the town´s control system, too.
+- id: 8167
+  en: ''
+- id: 8168
+  en: >-
+    That MCP sure doesn´t know
+
+    when to quit, does it?
+- id: 8169
+  en: >-
+    {:unk13 80 00 43 00}{:unk08 01 01 06}That´s a computer
+
+    program for ya.
+- id: 8170
+  en: '{:unk13 FA 00 91 00}{:unk08 01 00 05}How´s Tron doing?'
+- id: 8171
+  en: >-
+    {:unk13 2C 01 55 00}{:unk08 01 01 06}We can´t reach him.{:clear }We figure he must have been
+
+    forced onto the game grid.
+- id: 8172
+  en: >-
+    {:unk13 09 01 41 00}{:unk08 01 00 05}And it don´t sound
+
+    like a particularly
+
+    fun game, either.
+- id: 8175
+  en: >-
+    {:unk13 AF 00 37 00}{:unk08 01 01 06}Thanks, kid.{:clear }We´re puttin´ together an
+
+    MCP Eradication program.{:clear }I got a hunch it´s
+
+    almost finished, too.
+- id: 8176
+  en: >-
+    {:unk13 F0 00 50 00}{:unk08 01 00 05}Well, I hope your hunch
+
+    is right for once!
+- id: 8177
+  en: >-
+    {:unk13 04 01 41 00}{:unk08 01 01 06}Listen, we´re gonna need
+
+    Tron´s help when that
+
+    Eradicator´s completed...
+- id: 8178
+  en: >-
+    {:unk13 FA 00 8C 00}{:unk08 01 00 05}Don´t sweat it.{:clear }We´ll make sure
+
+    to tell Tron!
+- id: 8179
+  en: >-
+    {:unk13 50 01 3A 00}{:unk08 01 00 04}Remember, boys--we´re
+
+    counting on you.
+- id: 8180
+  en: '{:unk13 F5 00 AF 00}{:unk08 01 00 05}Roger!'
+- id: 8181
+  en: '{:unk13 C6 00 39 00}{:unk08 01 00 05}Gawrsh, it´s only us!'
+- id: 8182
+  en: >-
+    {:unk13 AA 00 50 00}{:unk08 01 00 06}You can´t talk to Tron if
+
+    this room gets taken over.
+- id: 8183
+  en: >-
+    {:unk13 FA 00 3C 00}{:unk08 01 01 06}Did you check
+
+    in with Cid?
+- id: 8184
+  en: '{:unk13 C8 00 6E 00}{:unk08 01 00 05}Uh-huh.'
+- id: 8185
+  en: '{:unk13 40 01 2D 00}{:unk08 01 01 06}And the Eradicator?'
+- id: 8186
+  en: '{:unk13 96 00 82 00}{:unk08 01 00 05}It´s almost done.'
+- id: 8187
+  en: '{:unk13 C8 00 64 00}{:unk08 01 00 05}Great!'
+- id: 8188
+  en: >-
+    {:unk13 D2 00 50 00}{:unk08 01 00 05}Say, Leon, why don´t
+
+    you go work with Cid?{:clear }I have this place
+
+    under control.
+- id: 8189
+  en: >-
+    {:unk13 CF 00 43 00}{:unk08 01 01 07}Are you sure?
+
+    All by yourself...?
+- id: 8190
+  en: >-
+    {:unk13 F0 00 3C 00}{:unk08 01 01 07}...Er, sorry.
+
+    It´s all yours.
+- id: 8191
+  en: '{:unk13 FA 00 3C 00}{:unk08 01 00 05}How´s Tron?'
+- id: 8192
+  en: >-
+    {:unk13 F0 00 46 00}{:unk08 01 01 07}We still can´t get
+
+    in touch with him.{:clear }Maybe you guys should
+
+    give it a shot.
+- id: 8193
+  en: >-
+    {:unk13 0E 01 3C 00}{:unk08 01 00 05}No, we´ll go talk
+
+    to him in person.
+- id: 8194
+  en: >-
+    {:unk13 A0 00 40 01}{:unk08 01 01 02}Then I have a
+
+    favor to ask.{:clear }When you find Tron,
+
+    could you tell him to
+
+    come to the I/O tower?{:clear }That´s where we´ll
+
+    upload the MCP
+
+    Eradication program.
+- id: 8195
+  en: >-
+    {:unk13 8C 00 5A 00}{:unk08 01 00 05}The I/O tower.
+
+    Got it!
+- id: 8196
+  en: >-
+    {:unk13 E4 00 3F 00}{:unk08 01 01 07}Thanks.
+
+    And watch your backs.
+- id: 8197
+  en: ''
+- id: 8198
+  en: We´ll be there soon, Tron.
+- id: 8199
+  en: Finished?
+- id: 8200
+  en: Would be, if it weren´t for the old loon´s magic.
+- id: 8201
+  en: OLD loon you say!?
+- id: 8202
+  en: I´m tryin´ to work here!
+- id: 8203
+  en: >-
+    Oh ho-ho-ho,
+
+    I´ll show you who´s old!
+- id: 8204
+  en: Done!
+- id: 8205
+  en: >-
+    There you go, Leon.{:delay 64 00}{:clear }{:delay 14 00}{:clear }One homemade program.
+
+    A loony wizard special.
+- id: 8206
+  en: This had better work.
+- id: 8207
+  en: I´m off.
+- id: 8208
+  en: Be on your guard!
+- id: 8209
+  en: Warning.{:delay 4B 00}{:clear }{:delay 0F 00}User control is terminated indefinitely.
+- id: 8210
+  en: No good!
+- id: 8211
+  en: Leon, let me try.
+- id: 8212
+  en: This is your final warning.{:delay 3C 00}{:clear }{:delay 0F 00}{:clear }Stop at once.
+- id: 8213
+  en: Bon appetit!
+- id: 8214
+  en: Don´t talk with your mouth full.
+- id: 8215
+  en: What...what are you loading?
+- id: 8216
+  en: >-
+    Things are settling down in town!{:delay 62 00}{:clear }{:delay 27 00}{:clear }The only Heartless left anywhere
+
+    are the local variety.{:delay 8A 00}{:clear }{:delay 30 00}{:clear }And it looks like there are fewer than before.
+- id: 8217
+  en: >-
+    Now if we can just get those
+
+    three back in one piece...
+- id: 8218
+  en: You´re here!
+- id: 8219
+  en: Welcome back!
+- id: 8220
+  en: How´s the town?
+- id: 8221
+  en: A-okay!
+- id: 8222
+  en: >-
+    Not a single trace of the MCP, either.
+
+    Everything´s back to normal. We made it.
+- id: 8223
+  en: Hey, why the long face?{:delay 78 00}{:clear }{:delay 19 00}{:clear }What happened?
+- id: 8224
+  en: Tron just disappeared.
+- id: 8225
+  en: And he promised we´d see him again...
+- id: 8226
+  en: What´s happening!?
+- id: 8227
+  en: Greetings, friends.{:delay 39 00}{:clear }System is up, and ready for User input.
+- id: 8228
+  en: Tron!
+- id: 8229
+  en: Stay in touch.
+- id: 8230
+  en: Yeah!
+- id: 8231
+  en: Oh boy, oh boy!
+- id: 8232
+  en: Hey, stop that! It tickles!
+- id: 8233
+  en: Tron is ticklish?
+- id: 8234
+  en: How ´bout this!
+- id: 8235
+  en: Please stop that!
+- id: 8236
+  en: >-
+    I think Tron´s been hanging
+
+    around those guys too much.
+- id: 8237
+  en: >-
+    W-wait, wait just a moment.{:delay B1 00}{:clear }I want to show you something I dug
+
+    up from the system archives.{:delay B4 00}{:clear }You can see the town back
+
+    when it was first built.
+- id: 8238
+  en: That´s right...{:delay 5A 00}{:clear }{:delay 19 00}{:clear }I remember now.
+- id: 8239
+  en: Just like the old days...
+- id: 8240
+  en: >-
+    Hmm...{:delay 3C 00}{:clear }{:delay 2A 00}{:clear }I´d be fascinated to ascertain as to{:delay 86 00}{:clear }when the town got such
+
+    a dreadful name as Hollow Bastion!
+- id: 8241
+  en: You know, this town had another name once.
+- id: 8242
+  en: ''
+- id: 8243
+  en: Radiant Garden.{:delay 6E 00}{:clear }{:delay 2D 00}{:clear }
+- id: 8244
+  en: And where is everyone else?
+- id: 8245
+  en: >-
+    Beats me. They musta had some
+
+    other matters to deal with.
+- id: 8246
+  en: '"Matters"?'
+- id: 8247
+  en: >-
+    You mean they have more important
+
+    affairs to attend to than my return?
+- id: 8248
+  en: >-
+    Well, see, there´s this Organization {XIII}
+
+    that keeps gettin´ in the way--
+- id: 8249
+  en: Let those fools play their little game!
+- id: 8250
+  en: >-
+    But what about that runt with the Keyblade?
+
+    He´s been a real pain, too.
+- id: 8251
+  en: Oh, has he?
+- id: 8252
+  en: >-
+    Very well then. I suppose you´d best tell
+
+    me what´s happened during my absence.
+- id: 8253
+  en: Anybody home?
+- id: 8254
+  en: Merlin!
+- id: 8255
+  en: The castle´s in danger!
+- id: 8256
+  en: What is all that racket?
+- id: 8257
+  en: Ho-ho! I thought--oh, it´s you!
+- id: 8258
+  en: >-
+    It looks like you´ve learned a bit
+
+    since the last time I saw you.
+- id: 8259
+  en: Really!?
+- id: 8260
+  en: Wait a minute! Let´s talk about the problem!{:delay C0 00}{:clear }It´s Maleficent! She´s back!
+- id: 8261
+  en: Where? Inside the castle!?
+- id: 8262
+  en: Yep! And Heartless, too.
+- id: 8263
+  en: Oh, dear...
+- id: 8264
+  en: I wonder what´s up.
+- id: 8265
+  en: Uh-oh!
+- id: 8266
+  en: C´mon!
+- id: 8267
+  en: Well, now...took your time, did you?
+- id: 8268
+  en: Oh, was it you who summoned us, Merlin?
+- id: 8269
+  en: >-
+    Yes, yes...{:delay 64 00}{:clear }{:delay 1E 00}{:clear }But it seems I used too much power in
+
+    doing so, and those infernal Heartless...
+- id: 8270
+  en: So what´s up?
+- id: 8271
+  en: >-
+    Well, I happened to stumble across
+
+    this in the Zero District.
+- id: 8272
+  en: Pooh´s storybook!
+- id: 8273
+  en: >-
+    That´s right.{:delay 42 00}{:clear }I know you´re a good friend of Winnie the
+
+    Pooh, Sora--that´s why I summoned you.
+- id: 8274
+  en: >-
+    And when I did, I was attacked
+
+    by the Heartless.{:delay B4 00}{:clear }Of course, I fought back with
+
+    some rather powerful magic,{:delay D8 00}{:clear }but then I began to fear the book
+
+    would be damaged, so I...{:delay E8 00}{:clear }{:delay 45 00}Now, just a moment. Leon and the
+
+    others need to hear this too.{:delay C2 00}{:clear }I-I´d better go find them. Be back in a jiffy.
+- id: 8275
+  en: I wonder how Pooh's doing.
+- id: 8276
+  en: Wanna find out?
+- id: 8277
+  en: Yeah!
+- id: 8278
+  en: Sora...
+- id: 8279
+  en: Cover for me, okay?
+- id: 8280
+  en: Sora! Hurry up!
+- id: 8281
+  en: Donald?
+- id: 8282
+  en: Did ya bring the book, Sora?
+- id: 8283
+  en: Hey!
+- id: 8284
+  en: Give that back!
+- id: 8285
+  en: Think it´s okay?
+- id: 8286
+  en: >-
+    Gawrsh, maybe ya better go back
+
+    and make sure Pooh´s all right.
+- id: 8287
+  en: But what about Merlin?
+- id: 8288
+  en: Well, I guess we could explain...
+- id: 8289
+  en: Great!
+- id: 8290
+  en: >-
+    {:unk13 AA 00 46 00}{:unk08 01 01 05}Couldn´t be bothered to wait
+
+    up for an old wizard, eh?
+- id: 8291
+  en: '{:unk13 96 00 50 00}{:unk08 01 01 06}Sorry about that...'
+- id: 8292
+  en: '{:unk13 2C 01 64 00}{:unk08 01 00 05}How are things in there?'
+- id: 8293
+  en: >-
+    {:unk13 18 01 78 00}{:unk08 01 01 06}Well...{:clear }Pooh seems to have
+
+    forgotten all about me.{:clear }And not just me--all
+
+    his other friends, too.
+- id: 8294
+  en: >-
+    {:unk13 FA 00 50 00}{:unk08 01 00 05}I was afraid
+
+    of that...
+- id: 8295
+  en: >-
+    {:unk13 C8 00 64 00}{:unk08 01 00 04}I suspect it has something
+
+    to do with those pages the
+
+    Heartless stole.{:clear }You´ll have to collect the
+
+    torn pages and repair the
+
+    book to put things right.
+- id: 8296
+  en: >-
+    {:unk13 B4 00 3C 00}{:unk08 01 01 05}This book is one of the world´s
+
+    most cherished elements.{:clear }I´d been meaning to
+
+    tell Leon I´d found it,{:clear }but perhaps we should keep
+
+    it between us for now.
+- id: 8297
+  en: '{:unk06 02}{:unk13 A0 00 2C 01}{:unk08 03 01 02}We will!'
+- id: 8298
+  en: '{:unk06 02}{:unk13 72 01 64 00}{:unk08 03 00 05}We will!'
+- id: 8299
+  en: '{:unk06 02}{:unk13 6E 00 3C 00}{:unk08 03 01 06}We will!'
+- id: 8300
+  en: '{:unk13 94 00 5F 00}{:unk08 01 01 06}Good, good...'
+- id: 8998
+  en: >-
+    The computer room´s through here.{:clear }Computers are delicate. It´s okay to
+
+    touch them, but don´t goof around.
+- id: 8999
+  en: >-
+    If she keeps that up, she´ll destroy the
+
+    study before we find the password.{:clear }Sorry, Sora, but keep an eye on
+
+    that girl.
+- id: 9000
+  en: >-
+    Leave this to us. You just concentrate on
+
+    the data.{:clear }Use that password and work with Tron to
+
+    free that DTD data.
+- id: 9001
+  en: >-
+    Help {:theme 0A}Tron {:reset}until the
+
+    program´s done.{:clear }Don´t worry,
+
+    I´ll handle things here.
+- id: 9002
+  en: >-
+    Finding Ansem´s research data will have
+
+    to come first.{:clear }I´ll explain everything later.
+
+    Please be careful.
+- id: 9003
+  en: >-
+    {:theme 0A}The computer´s up ahead.{:reset}{:clear }The way gets a bit tricky inside.
+
+    If you get lost, just walk along the wall.
+- id: 9004
+  en: >-
+    Have you seen someone with a big sword?
+
+    No, he doesn´t have a scar on his face.{:clear }He has strangely colored eyes,
+
+    and tries to take everything upon himself.
+- id: 9005
+  en: >-
+    Leon and the others are in the borough.
+
+    They went to Merlin´s house.
+- id: 9006
+  en: >-
+    That sea salt ice cream's good, isn't it?
+
+    But now's no time to be eating ice cream!{:clear }Go help Leon and the others.
+
+    Don't expect a reward, though.
+- id: 9007
+  en: >-
+    Tell me if you come across a man with long,
+
+    silver hair and a long blade.{:clear }His name is Sephiroth.
+
+    He is my darkest enemy.
+- id: 9008
+  en: >-
+    Hm... It seems your clothes are designed to
+
+    gather energy when you use up your magic.{:clear }In that case, don´t hold back, since your
+
+    magic will recover with time.
+- id: 9009
+  en: >-
+    That MCP thingy set the town´s
+
+    defense devices to attack us.{:clear }We can´t fight back, so if you get close to
+
+    them you´ll just have to dodge their attacks.
+- id: 9010
+  en: >-
+    It´ll take awhile, but so long as we keep
+
+    at it, this world will return to normal.{:clear }You´re free to go your own way now.
+
+    Be careful, Sora.
+- id: 9011
+  en: >-
+    Have you seen the town´s defense
+
+    devices? They´re called Claymores.{:clear }They´re not as powerful as you,
+
+    but depending on how you use them,{:clear }they can really help.
+- id: 9012
+  en: >-
+    You can get to the computer room from
+
+    the {:theme 0A}postern{:reset}. Watch your backs.
+- id: 9013
+  en: >-
+    Sorry, but I need a little more time to
+
+    complete the MCP Eradication program.{:clear }In the meantime, go help Tron from the
+
+    {:theme 0A}computer room{:reset}.
+- id: 9014
+  en: >-
+    Leon went to the bailey. Don´t make him
+
+    wait too long, okay?
+- id: 9015
+  en: >-
+    If you go to the right from here and climb
+
+    the stairs, you´ll arrive at the bailey.{:clear }There are Heartless roaming about, so
+
+    prepare yourselves at the marketplace.
+- id: 9016
+  en: >-
+    Like I said before, this town is equipped with
+
+    defense devices.{:clear }They can be helpful. Fighting alongside them
+
+    should make it easier for you.
+- id: 9017
+  en: >-
+    We're monitors of the Heartless!{:clear }As such, we place you in charge of
+
+    attacking them! Good luck! ♪
+- id: 9018
+  en: >-
+    The MCP is using the Heartless
+
+    manufacturing machine in the study.{:clear }It´s also taken over the town´s defense
+
+    system. Apparently it´s getting serious.
+- id: 9019
+  en: >-
+    I know you´re good friends with Pooh.{:clear }We really should wait for Merlin,
+
+    but I´d like to check on Pooh. Oh...
+- id: 12075
+  en: >-
+    You´re all working together to
+
+    protect what´s important to you.{:clear }You can carry on precisely because you´re
+
+    together. It would be hard to do it alone.
+- id: 12317
+  en: Maleficent!{:delay 64 00}{:clear }{:delay 28 00}{:clear }Maleficent!
+- id: 12318
+  en: Maybe they really did finish her off.
+- id: 12319
+  en: >-
+    And this castle sure ain´t what I expected.
+
+    No shine, no nothin´.
+- id: 12320
+  en: Now what´s gonna happen to our plan?
+- id: 12321
+  en: It´s Hollow Bastion!
+- id: 12322
+  en: Gawrsh, it looks kinda different now.
+- id: 12323
+  en: I hope Leon and the gang are doing okay.
+- id: 12324
+  en: >-
+    Uh-oh. Looks like we´re gonna
+
+    have to do some fightin´.
+- id: 12325
+  en: '{:unk06 02}{:unk13 0E 01 54 01}{:unk08 03 00 02}Uncle Scrooge!?'
+- id: 12326
+  en: '{:unk13 A5 00 55 00}{:unk08 01 00 06}Er, who?'
+- id: 12327
+  en: >-
+    {:unk13 3B 01 47 00}{:unk08 01 00 07}He´s Donald´s uncle--
+
+    a business typhoon!{:clear }Before the Heartless showed up,
+
+    he traveled the worlds on a
+
+    Gummi Ship with the King.{:clear }He was helpin´ to set
+
+    up a traffic system.
+- id: 12328
+  en: '{:unk06 02}{:unk13 D7 00 54 01}{:unk08 03 01 01}A transit system!'
+- id: 12329
+  en: >-
+    {:unk13 18 01 4B 00}{:unk08 01 00 06}What´s all
+
+    the racket?
+- id: 12330
+  en: >-
+    {:unk13 18 01 4B 00}{:unk08 01 00 06}Why, if it isn´t Donald!{:clear }And Goofy!
+
+    Hello, lads!{:clear }Aye, you all look
+
+    hale and hearty!
+- id: 12331
+  en: >-
+    {:unk13 D5 00 55 01}{:unk08 01 01 01}So do you,
+
+    Uncle Scrooge.
+- id: 12332
+  en: >-
+    {:unk13 F0 00 F5 00}{:unk08 01 01 01}Ah, if only
+
+    I were...{:clear }I canna seem to
+
+    recreate my favorite
+
+    old-time ice cream.{:clear }I´d make millions if
+
+    I just got it right...
+- id: 12333
+  en: '{:unk13 54 01 50 00}{:unk08 01 00 05}Terrible...!'
+- id: 12334
+  en: Hey, what´s going on?
+- id: 12335
+  en: That´s the town´s defense mechanism.
+- id: 12336
+  en: Yuffie!
+- id: 12337
+  en: Look out!
+- id: 12338
+  en: Hey, you guys!
+- id: 12339
+  en: I see you´re still in top form.
+- id: 12340
+  en: What´d you expect?{:delay 55 00}{:clear }{:delay 0A 00}{:clear }Looks like you´re doing okay.
+- id: 12341
+  en: Well, what did YOU expect?
+- id: 12342
+  en: How are the others?
+- id: 12343
+  en: Great!
+- id: 12344
+  en: Hey, Yuffie. Have you seen the King and Riku?
+- id: 12345
+  en: Nope.
+- id: 12346
+  en: >-
+    But I had a feeling
+
+    I´d see you guys again.
+- id: 12347
+  en: >-
+    "We may never meet again, but
+
+    we´ll never forget each other."
+- id: 12348
+  en: Is that supposed to be Leon?
+- id: 12349
+  en: >-
+    Everybody´s working on stuff
+
+    over at Merlin´s house.{:delay AF 00}{:clear }{:delay 0A 00}{:clear }C´mon!
+- id: 12350
+  en: >-
+    Meet the Hollow Bastion
+
+    Restoration Committee!
+- id: 12351
+  en: We missed you!
+- id: 12352
+  en: Well, if you ain´t in top shape.
+- id: 12353
+  en: I knew it.
+- id: 12354
+  en: Knew what?
+- id: 12355
+  en: >-
+    A while back, everyone suddenly remembered
+
+    you guys, all at the same time.
+- id: 12356
+  en: >-
+    You...remembered?{:delay 50 00}{:clear }{:delay 0A 00}{:clear }Wait! Does that mean
+
+    you forgot about us!?
+- id: 12357
+  en: Thanks!
+- id: 12358
+  en: So where´ve you guys been all this time?
+- id: 12359
+  en: We were sleepin´.
+- id: 12360
+  en: Where? In cold storage?
+- id: 12361
+  en: >-
+    It doesn´t matter. This is great.
+
+    Everyone´s together again!
+- id: 12362
+  en: >-
+    So, um...we´re trying to find Riku
+
+    and the King. Have you seen ´em?
+- id: 12363
+  en: Right.
+- id: 12364
+  en: >-
+    Sorry. But let us know if there´s
+
+    anything we can do to help. Okay?
+- id: 12365
+  en: Okay. Thanks.
+- id: 12366
+  en: >-
+    Don´t go thankin´
+
+    us just yet.
+- id: 12368
+  en: >-
+    You mean, like Nobodies?
+
+    And Heartless?
+- id: 12369
+  en: That´s right!
+- id: 12370
+  en: Sounds like you could use our help.
+- id: 12371
+  en: Then let´s cut to the chase.
+- id: 12372
+  en: >-
+    Sora, Donald, Goofy. We were hoping the
+
+    three of you might give us a hand around here.
+- id: 12373
+  en: Like we´re gonna say no?
+- id: 12374
+  en: '{:delay 83 00}{:clear }...I forgot who I´m dealing with.'
+- id: 12375
+  en: Hey...what do you mean by that?
+- id: 12376
+  en: >-
+    Just think of it as a sort of
+
+    "Leon compliment."
+- id: 12377
+  en: >-
+    Follow me to the bailey--
+
+    there´s something you need to see.
+- id: 12378
+  en: >-
+    Oh! I thought it was you.
+
+    Right on time!
+- id: 12379
+  en: It´s Merlin!
+- id: 12380
+  en: >-
+    Sora and the gang said
+
+    they´re gonna help out!
+- id: 12381
+  en: Splendid! We´ll count on you!
+- id: 12382
+  en: Right!
+- id: 12383
+  en: Ah, yes. Did you give them the cards, dear?
+- id: 12384
+  en: Oh!
+- id: 12385
+  en: >-
+    Here...they´re presents
+
+    for you.{:delay B4 00}{:clear }{:delay 33 00}{:clear }Leon thought you might like
+
+    to have them.
+- id: 12386
+  en: >-
+    Hollow Bastion Restoration Committee
+
+    Honorary Member!
+- id: 12387
+  en: Membership cards!
+- id: 12388
+  en: Kinda cool, huh?
+- id: 12389
+  en: Hey, thanks, Leahhh...huh?
+- id: 12390
+  en: Oh no! We´re supposed to be at the bailey!
+- id: 12391
+  en: Look at that.
+- id: 12392
+  en: ''
+- id: 12393
+  en: >-
+    We want to restore Hollow Bastion
+
+    to what it used to be.{:delay C3 00}{:clear }{:delay 1E 00}{:clear }Who knows--maybe even something better.
+- id: 12394
+  en: >-
+    There´s still a lot to do, but I´m
+
+    sure we can handle everything--
+- id: 12395
+  en: Except...for that...
+- id: 12396
+  en: And that.
+- id: 12397
+  en: We´ll handle ´em.
+- id: 12398
+  en: Well, that´s good to hear.
+- id: 12399
+  en: >-
+    So Sora--do you know
+
+    what´s going on, then?
+- id: 12400
+  en: >-
+    There´s this guy, Pete, who´s been going
+
+    around plotting with the Heartless.
+- id: 12401
+  en: >-
+    But he´s not smart enough to
+
+    tie his own shoes.{:delay B8 00}{:clear }The ones we need to worry about
+
+    are the Nobodies.
+- id: 12402
+  en: And those Organization {XIII} guys in charge, too!
+- id: 12403
+  en: You called?
+- id: 12404
+  en: You´re doing well.
+- id: 12405
+  en: Who´s that!?
+- id: 12406
+  en: This calls for a celebration...
+- id: 12407
+  en: The Keyblade...a truly marvelous weapon.{:delay FA 00}{:clear }{:delay 37 00}{:clear }Were it only in more...capable hands...
+- id: 12408
+  en: Show yourselves!
+- id: 12409
+  en: Organization {XIII}!
+- id: 12410
+  en: Good. Now we can settle this!
+- id: 12411
+  en: What a shame...{:delay 78 00}{:clear }{:delay 19 00}{:clear }And here I thought we could be friends.
+- id: 12412
+  en: Stop!
+- id: 12413
+  en: What´s the big idea!?
+- id: 12414
+  en: Oopsy-daisy!
+- id: 12415
+  en: Move!
+- id: 12416
+  en: Now do you think that´s polite,{:delay 7D 00}{:clear }{:delay 19 00}{:clear }shutting me down like that?
+- id: 12417
+  en: I said get outta the way!
+- id: 12420
+  en: >-
+    See, that would work--if
+
+    I were just any old dude.
+- id: 12429
+  en: Gee...{:delay 37 00}{:clear }{:delay 19 00}{:clear }I just don´t know.
+- id: 12431
+  en: Wait!
+- id: 12435
+  en: >-
+    Yeah, you´re right.
+
+    Only one me!
+- id: 12436
+  en: >-
+    The Hollow Bastion Restoration Committee
+
+    Honorary Member--{:delay B4 00}{:clear }{:delay 32 00}{:clear }
+- id: 12440
+  en: Ohh...now I get it.
+- id: 12445
+  en: Do you think...
+- id: 12446
+  en: Looks like there´s more Heartless now.
+- id: 12447
+  en: ''
+- id: 12448
+  en: Let´s go check in with everyone.
+- id: 12449
+  en: I think they´re at Merlin´s.
+- id: 12450
+  en: >-
+    {:unk13 09 01 46 00}{:unk08 01 00 06}Ach! I was so close to
+
+    recreating that flavor, too...
+- id: 12451
+  en: >-
+    {:unk13 0E 01 46 00}{:unk08 01 00 06}What, lads?{:clear }Leon and his friends
+
+    are in the borough.{:clear }Aye, Merlin´s house.
+- id: 12452
+  en: Oh, Cloud!
+- id: 12453
+  en: Whatcha doing?
+- id: 12454
+  en: >-
+    I´ll get him.{:delay 3C 00}{:clear }{:delay 3C 00}{:clear }This time we settle it.{:delay 69 00}{:clear }{:delay 50 00}{:clear }Me, and the one who embodies
+
+    all the darkness in me.
+- id: 12456
+  en: If I do, it´s his fault.
+- id: 12457
+  en: Whose?
+- id: 12458
+  en: Sephiroth.{:delay 41 00}{:clear }{:delay 28 00}{:clear }Tell me if you see him.
+- id: 12459
+  en: Okay. What´s he look like?
+- id: 12460
+  en: Silver hair. Carries a long sword.
+- id: 12461
+  en: Sure. Well, be seeing you, Cloud.
+- id: 12462
+  en: Be careful.
+- id: 12463
+  en: >-
+    He messes with your head, makes you
+
+    think darkness is the only way.
+- id: 12464
+  en: >-
+    {:unk13 9B 00 46 00}{:unk08 01 01 07}Hey, fellas--
+
+    you´re just
+
+    in time.{:clear }Got some good
+
+    news for ya,{:clear }so get yerselves
+
+    over to Leon´s.
+- id: 12465
+  en: '{:unk13 4A 01 91 00}{:unk08 01 00 05}What kind of news?'
+- id: 12466
+  en: >-
+    {:unk13 59 01 46 00}{:unk08 01 00 04}We found the
+
+    computer Ansem
+
+    was using!
+- id: 12467
+  en: '{:unk13 A5 00 E6 00}{:unk08 01 00 05}Oh boy!'
+- id: 12468
+  en: >-
+    {:unk13 C4 00 E6 00}{:unk08 01 01 02}Yep. Should be able to get all
+
+    kinds of info on the Heartless
+
+    and the Organization.
+- id: 12470
+  en: '{:unk13 90 01 AF 00}{:unk08 01 00 05}And the King.'
+- id: 12471
+  en: >-
+    {:unk13 18 01 37 00}{:unk08 01 01 06}Go see for
+
+    yerselves!
+- id: 12472
+  en: '{:unk13 FA 00 28 00}{:unk08 01 00 05}It can´t hurt!'
+- id: 12473
+  en: '{:unk13 40 01 8C 00}{:unk08 01 00 05}What do you mean?'
+- id: 12474
+  en: >-
+    {:unk13 D2 00 32 00}{:unk08 01 01 06}Nothin´. Just get to the computer
+
+    room through the castle postern.{:clear }Watch your step!
+- id: 12476
+  en: >-
+    They´ve got stuff to do
+
+    over by the castle postern.
+- id: 12477
+  en: Scoop!
+- id: 12478
+  en: Huh?
+- id: 12479
+  en: Let´s report.
+- id: 12480
+  en: To who?
+- id: 12481
+  en: Our leader, of course!
+- id: 12482
+  en: Yeah, You know, Malefi--
+- id: 12483
+  en: Don´t mind her.{:delay 3C 00}{:clear }{:delay 14 00}{:clear }I assure you, we come in peace.
+- id: 12484
+  en: You´re kidding...
+- id: 12485
+  en: Problem? {:delay 41 00}{:clear }{:delay 4B 00}{:clear }Okay, fine. You do the talking.
+- id: 12486
+  en: So sorry about this!
+- id: 12487
+  en: '{:unk06 02}{:unk13 4A 01 50 00}{:unk08 03 00 05}Leon!'
+- id: 12488
+  en: '{:unk13 64 00 64 00}{:unk08 01 00 05}Over here!'
+- id: 12489
+  en: >-
+    {:unk13 A0 00 5A 00}{:unk08 01 01 05}You guys found
+
+    Ansem´s computer?
+- id: 12490
+  en: >-
+    {:unk13 B4 00 3C 00}{:unk08 01 01 07}Uh-huh. The King is
+
+    very interested in it.
+- id: 12491
+  en: '{:unk13 DC 00 96 00}{:unk08 01 00 05}The King?'
+- id: 12492
+  en: '{:unk13 95 00 2D 00}{:unk08 01 01 06}He´s with Leon.'
+- id: 12493
+  en: >-
+    {:unk06 02}{:unk13 8C 00 91 00}{:unk08 03 01 05}We get to see
+
+    the King!
+- id: 12494
+  en: '{:unk06 02}{:unk13 A4 01 41 00}{:unk08 03 00 05}Hooray!'
+- id: 12495
+  en: >-
+    {:unk13 86 01 B8 00}{:unk08 01 00 00}Er...{:clear }Is Riku
+
+    with them?
+- id: 12496
+  en: >-
+    {:unk13 BE 00 50 00}{:unk08 01 00 06}Well, at least I
+
+    can ask the King
+
+    about him.{:clear }And that computer
+
+    might be able to tell
+
+    us something.
+- id: 12497
+  en: '{:unk13 0E 01 2D 00}{:unk08 01 01 06}Good idea!'
+- id: 12498
+  en: Ansem...
+- id: 12499
+  en: >-
+    Gawrsh, I guess this
+
+    must be his room.
+- id: 12500
+  en: Where´s the King?
+- id: 12501
+  en: Hello?
+- id: 12502
+  en: Hey, you!
+- id: 12503
+  en: >-
+    I´m looking for somebody. Have any
+
+    of you seen a guy with spiky hair?
+- id: 12504
+  en: '{:delay 32 00}Spikier.'
+- id: 12505
+  en: I´ll just take a look around.
+- id: 12506
+  en: Sorry to bother you.
+- id: 12507
+  en: No bother, ma´am.
+- id: 12508
+  en: So you made it.
+- id: 12509
+  en: Leon!
+- id: 12510
+  en: >-
+    {:unk13 4A 01 73 00}{:unk08 01 01 06}Isn´t the King
+
+    with you?
+- id: 12512
+  en: '{:unk06 02}{:unk13 18 01 C3 00}{:unk08 03 01 06}Hey!'
+- id: 12513
+  en: >-
+    {:unk13 13 01 3C 00}{:unk08 01 00 05}Here, this ought
+
+    to tide you over.
+- id: 12514
+  en: >-
+    {:unk13 AA 00 50 00}{:unk08 01 01 06}Ansem´s computer
+
+    room.
+- id: 12515
+  en: This is it!
+- id: 12516
+  en: Where´s Kairi? Where´s Riku?
+- id: 12517
+  en: Easy...{:delay 3C 00}{:clear }{:delay 23 00}{:clear }You wanna break it?
+- id: 12518
+  en: Oh, sorry.{:delay 5A 00}{:clear }{:delay 12 00}{:clear }Guess I got a little carried away.
+- id: 12519
+  en: Get offa there!
+- id: 12520
+  en: >-
+    Attention current user. This is a warning.{:delay AF 00}{:clear }{:delay 1E 00}{:clear }Further misuse of this terminal will result in
+
+    immediate defensive action.
+- id: 12521
+  en: Who´s there?
+- id: 12522
+  en: I am the Master Control Program.{:delay 73 00}{:clear }{:delay 14 00}{:clear }I oversee this system.
+- id: 12523
+  en: Where are you?
+- id: 12524
+  en: Donald!
+- id: 12525
+  en: I´m sorry...
+- id: 12526
+  en: >-
+    Decision gate reached.
+
+    You are now under arrest.
+- id: 12527
+  en: Arrest!?
+- id: 12528
+  en: Run!
+- id: 12529
+  en: >-
+    {:unk13 6E 00 78 00}{:unk08 01 00 05}You´re chasing
+
+    what, now?
+- id: 12530
+  en: >-
+    {:unk13 89 00 BB 00}{:unk08 01 01 02}Well, well!
+
+    A hidden room!{:clear }Guess I´d better
+
+    take another look
+
+    around.
+- id: 12531
+  en: Excuse me.
+- id: 12532
+  en: Well, that´s that!
+- id: 12533
+  en: Look.
+- id: 12534
+  en: Tron...hang in there.
+- id: 12535
+  en: So, where do we start?
+- id: 12536
+  en: I know! Let´s access the DTD!
+- id: 12537
+  en: >-
+    The King´s checking the situation in town.
+
+    He´ll be back soon, so don´t worry.{:delay 04 01}{:clear }{:delay 3C 00}{:clear }Hey, look, it´s asking for a password.
+- id: 12538
+  en: That´s easy. It´s...
+- id: 12539
+  en: Sora!
+- id: 12540
+  en: Donald!
+- id: 12541
+  en: Goofy!
+- id: 12542
+  en: That´s...to the point.
+- id: 12543
+  en: Well?
+- id: 12544
+  en: That did it. We´re in.
+- id: 12545
+  en: I have to go into town.{:delay 5F 00}{:clear }{:delay 19 00}{:clear }Need to see what that last shakeup did.
+- id: 12546
+  en: >-
+    You´re not gonna check out the data?
+
+    It wasn´t exactly easy to get!
+- id: 12547
+  en: >-
+    I´m coming right back.{:delay 46 00}{:clear }{:delay 46 00}{:clear }Hey, Sora--why don´t you get started on
+
+    loading the data and copying it down?
+- id: 12548
+  en: It´s just a few keystrokes.{:delay 48 00}{:clear }{:delay 24 00}{:clear }Easy, right?
+- id: 12549
+  en: Did it work?
+- id: 12550
+  en: Hey, these things take time, okay?
+- id: 12551
+  en: Whoa...{:delay 3C 00}{:clear }It´s doing something!
+- id: 12552
+  en: Huh?
+- id: 12553
+  en: >-
+    I think it wants to know
+
+    what we wanna know.
+- id: 12554
+  en: Riku and Kairi!
+- id: 12555
+  en: ''
+- id: 12556
+  en: No way...
+- id: 12557
+  en: >-
+    Even Ansem´s computer
+
+    doesn´t know...
+- id: 12558
+  en: Whatcha doing?
+- id: 12559
+  en: >-
+    I thought I´d ask the computer if
+
+    it can tell us about them Nobodies.
+- id: 12560
+  en: ''
+- id: 12561
+  en: What´s this?
+- id: 12562
+  en: The data is corrupt.
+- id: 12564
+  en: How about the Organization?
+- id: 12565
+  en: There!
+- id: 12566
+  en: Stupid computer!
+- id: 12567
+  en: Sora!
+- id: 12568
+  en: Huh?
+- id: 12569
+  en: Who´s this guy?
+- id: 12570
+  en: Welp, I see ya got things workin´!
+- id: 12571
+  en: Oh, Your Majesty!
+- id: 12572
+  en: >-
+    Good goin´.{:delay 3A 00}{:clear }The computer should tell us
+
+    the things we need to know.
+- id: 12573
+  en: >-
+    But it keeps on sayin´ the
+
+    data inside´s all ker-skuffled.
+- id: 12574
+  en: >-
+    All we got is a picture of
+
+    some guy we don´t know.
+- id: 12575
+  en: Ansem the Wise!
+- id: 12576
+  en: Come on, are you teasing us again?
+- id: 12577
+  en: >-
+    Did you forget what Ansem looked like,
+
+    Your Majesty?
+- id: 12578
+  en: Of course I do!{:delay 3A 00}{:clear }And this is him! I´m positive!
+- id: 12580
+  en: >-
+    Excuse me?
+
+    Could you come this way, please?
+- id: 12581
+  en: >-
+    Look, THIS is Ansem.{:delay 78 00}{:clear }{:delay 25 00}{:clear }You know, the guy we all worked
+
+    reeeally hard to defeat?
+- id: 12582
+  en: >-
+    Oh, that´s right--
+
+    I never finished explaining.
+- id: 12583
+  en: ''
+- id: 12584
+  en: >-
+    Well, the man in the picture is definitely{:delay BA 00}{:clear }the one who tried
+
+    to take over Kingdom Hearts--{:delay B4 00}{:clear }the one you fellas defeated.{:delay 6C 00}{:clear }But, what you actually
+
+    fought was his Heartless.{:delay E4 00}{:clear }Ya see, he wasn´t really Ansem.{:delay 8A 00}{:clear }He just went around telling
+
+    everybody that he was.
+- id: 12585
+  en: You mean...
+- id: 12586
+  en: Whaaaat?
+- id: 12587
+  en: >-
+    We went through all that trouble
+
+    to defeat an impostor?
+- id: 12589
+  en: Aw, I can´t believe it...
+- id: 12590
+  en: >-
+    Uh, I´m kinda confused.{:delay 8C 00}{:clear }If he´s a fake, then what
+
+    happened to the real Ansem?
+- id: 12591
+  en: >-
+    Welp, that´s just what
+
+    I´m tryin´ to figure out.
+- id: 12592
+  en: >-
+    Ansem the Wise should know all about
+
+    Organization {XIII}´s plans,{:delay FC 00}{:clear }and what´s been happening to the worlds.
+- id: 12593
+  en: I´m pretty sure he´ll give us some help.
+- id: 12594
+  en: Ya know, I came close to finding him once...
+- id: 12595
+  en: ''
+- id: 12596
+  en: Don´t tell me there´s more?{:delay 5A 00}{:clear }{:delay 2E 00}{:clear }I´m lost enough as it is!
+- id: 12597
+  en: >-
+    Well, let´s see.{:delay 60 00}{:clear }Some feller named Ansem, who wasn´t
+
+    really Ansem, became a Heartless.{:delay 50 01}{:clear }Does that mean a Nobody got created
+
+    when that happened, too?
+- id: 12598
+  en: Yup!
+- id: 12599
+  en: >-
+    And that Nobody is the leader
+
+    of the Organization.
+- id: 12600
+  en: Whaaaat?
+- id: 12601
+  en: >-
+    I know I´ve met this
+
+    fake Ansem before,{:delay 90 00}{:clear }and I´ve seen the leader of
+
+    Organization {XIII}, too.
+- id: 12602
+  en: >-
+    Hmm, kinda felt like bein´
+
+    around the same fella.
+- id: 12603
+  en: So, where did you meet this guy?
+- id: 12604
+  en: Gosh...{:delay 32 00}{:clear }{:delay 34 00}{:clear }I can´t remember.
+- id: 12605
+  en: >-
+    Ansem the Wise--{:delay 54 00}{:clear }the real Ansem--must know the
+
+    imposter´s true identity.{:delay D8 00}{:clear }{:delay 1E 00}{:clear }That´s why I´ve got to find
+
+    him and ask him about it.
+- id: 12606
+  en: You...!{:delay 3C 00}{:clear }{:delay 2D 00}{:clear }You started all of this!{:delay 54 00}{:clear }{:delay 4E 00}{:clear }Because of you, Riku and Kairi...
+- id: 12607
+  en: >-
+    {:delay 30 00}{:clear }Your Majesty, do you
+
+    know where Riku is?
+- id: 12608
+  en: He´s...{:delay 3C 00}{:clear }{:delay 54 00}{:clear }I´m sorry.{:delay 48 00}{:clear }I can´t help.
+- id: 12609
+  en: Really, Your Majesty?{:delay 42 00}{:clear }{:delay 30 00}{:clear }Are you sure?
+- id: 12610
+  en: I´m sorry, Sora.
+- id: 12611
+  en: What about Kairi?{:delay 3C 00}{:clear }{:delay 2A 00}{:clear }Organization {XIII} might´ve kidnapped her.
+- id: 12612
+  en: Oh, no!
+- id: 12613
+  en: Sora, Donald, Goofy.
+- id: 12614
+  en: >-
+    I was plannin´ to go get help
+
+    from Ansem the Wise.{:delay A8 00}{:clear }{:delay 1C 00}{:clear }But--now I know I forgot
+
+    the most important thing.
+- id: 12615
+  en: >-
+    Helping others should always come
+
+    before asking others for help.
+- id: 12616
+  en: We´re safe and sound--and free to choose!
+- id: 12617
+  en: >-
+    So there´s no reason we shouldn´t
+
+    choose to help our friends.
+- id: 12618
+  en: Let´s look for Riku and Kairi together.
+- id: 12620
+  en: Outside!
+- id: 12621
+  en: Sounds like we gotta start by helpin´ out here!
+- id: 12622
+  en: Hear me, my Heartless!{:delay 8A 00}{:clear }Attack the white husks! Sweep them away!
+- id: 12623
+  en: >-
+    What, are you nuts?
+
+    We´re never gonna win!{:delay B4 00}{:clear }I don´t know about you,
+
+    but I´m outta here, sister!
+- id: 12624
+  en: You pathetic coward!
+- id: 12625
+  en: ''
+- id: 12626
+  en: >-
+    Heartless!{:delay 42 00}{:clear }Leave the white ones. Turn your
+
+    attention to Sora and his friends!
+- id: 12627
+  en: Uh-oh!
+- id: 12628
+  en: Where´s Maleficent?
+- id: 12629
+  en: Looks like she ran away.
+- id: 12630
+  en: Well, that was PRET-ty lame of her.
+- id: 12631
+  en: I guess we picked the wrong side.
+- id: 12632
+  en: >-
+    Umm, hey...if you´re looking
+
+    to pick sides,{:delay 90 00}{:clear }why don´t you pick Leon´s?
+
+    They can always use help.
+- id: 12633
+  en: Does this Leon have any treasure?
+- id: 12634
+  en: Yeah, lots of stuff!
+- id: 12635
+  en: Perfect!
+- id: 12636
+  en: Come on.
+- id: 12637
+  en: Who ARE you?
+- id: 12638
+  en: Oh, we´re nothing worth mentioning.
+- id: 12639
+  en: Just three treasure fanatics.
+- id: 12640
+  en: Later, taters!
+- id: 12641
+  en: Did Leon...really have any treasure?
+- id: 12643
+  en: We don´t have time for you!
+- id: 12644
+  en: Whoa!
+- id: 12645
+  en: Sora, it´s Sephiroth!
+- id: 12646
+  en: >-
+    Ain´t Sephiroth the one
+
+    who´s supposed to be{:delay 99 00}{:clear }the dark part of Cloud´s heart?
+- id: 12647
+  en: Did Cloud tell you that?{:delay D2 00}{:clear }{:delay 2D 00}{:clear }Then he must understand now.
+- id: 12648
+  en: Just what are you gonna do to him?
+- id: 12649
+  en: >-
+    Nothing. Cloud is the one
+
+    who hungers for darkness.
+- id: 12650
+  en: He said he´s got a score to settle with you.
+- id: 12651
+  en: I see...{:delay 46 00}{:clear }{:delay 32 00}{:clear }He wants to meet me again.
+- id: 12652
+  en: Then I should give him what he wants.
+- id: 12653
+  en: >-
+    That last bit of light is always
+
+    the hardest to snuff out.
+- id: 12654
+  en: We´ll help!
+- id: 12655
+  en: Sora! Behind you!
+- id: 12657
+  en: >-
+    The King´s in the bailey.
+
+    You better head over there!
+- id: 12658
+  en: Got it!
+- id: 12659
+  en: Whoa...
+- id: 12660
+  en: Think you can handle this many?
+- id: 12661
+  en: Well...{:delay 50 00}{:clear }Might be tough if one more shows up.
+- id: 12662
+  en: '{:delay 64 00}{:clear }Then that´ll have to be the one I take care of.'
+- id: 12663
+  en: What, you´re fighting too?
+- id: 12664
+  en: Sephiroth!
+- id: 12665
+  en: I understand that you´ve been looking for me.
+- id: 12666
+  en: >-
+    Yeah.{:delay 2D 00}{:clear }{:delay 23 00}{:clear }Once I get rid of you,
+
+    the darkness will go away.
+- id: 12667
+  en: >-
+    Can you do it?{:delay 5A 00}{:clear }{:delay 28 00}{:clear }That darkness comes from
+
+    your own dark memories.{:delay B4 00}{:clear }{:delay 32 00}{:clear }Do you think you can erase your past?
+- id: 12668
+  en: Shut up!
+- id: 12669
+  en: >-
+    Face it--you turn your back on the
+
+    present and live in the past.{:delay 3B 01}{:clear }{:delay 32 00}{:clear }Because the light of the present is too much!
+- id: 12670
+  en: You don´t know me!
+- id: 12671
+  en: Cloud!
+- id: 12672
+  en: I know.{:delay 5A 00}{:clear }{:delay 28 00}{:clear }Because...I am you.
+- id: 12673
+  en: Cloud! Wait!
+- id: 12674
+  en: Leon, everybody--hang in there!
+- id: 12675
+  en: >-
+    Okay, fellas,
+
+    you´ve gotta go find Riku and Kairi!
+- id: 12676
+  en: But Leon and the others are friends too!
+- id: 12677
+  en: >-
+    Don´t worry. There´s already
+
+    lotsa help here.{:delay 9C 00}{:clear }We´ll take care of this fight.
+- id: 12678
+  en: But...I promised Leon!
+- id: 12679
+  en: Donald! Goofy!{:delay 5A 00}{:clear }Take Sora and get goin´!
+- id: 12680
+  en: >-
+    Riku, Kairi...give me
+
+    a little time, okay?
+- id: 12681
+  en: Your Majesty!
+- id: 12682
+  en: >-
+    We understand. We´ll go
+
+    search for Riku and Kairi!
+- id: 12683
+  en: Right. Watch for danger!
+- id: 12684
+  en: You be careful, too!
+- id: 12685
+  en: Wait, you guys!
+- id: 12686
+  en: Sora, do as you´re told!
+- id: 12687
+  en: >-
+    You´re comin´ with us
+
+    whether ya want to or not!
+- id: 12688
+  en: C´mon, Sora! Ya gotta be good!
+- id: 12689
+  en: Gotcha.
+- id: 12690
+  en: Well then, skedaddle!
+- id: 12691
+  en: Let´s go!
+- id: 12692
+  en: I´m sorry, Your Majesty!
+- id: 12693
+  en: ''
+- id: 12694
+  en: Hope you can forgive us!
+- id: 12695
+  en: Hey, you guys are looking lively.
+- id: 12696
+  en: Scram!
+- id: 12697
+  en: >-
+    Didn´t we catch you messing
+
+    around in the Underworld?{:delay CC 00}{:clear }How´d a wimp like you get
+
+    into Organization {XIII}?
+- id: 12698
+  en: I bet you can´t even fight.
+- id: 12699
+  en: Yeah, but we can!
+- id: 12700
+  en: You shouldn´t judge anyone by appearance.
+- id: 12701
+  en: >-
+    {:delay 3C 00}I told them they were sending
+
+    the wrong guy...
+- id: 12702
+  en: Who is this kook?
+- id: 12703
+  en: >-
+    Remember, the Organization´s
+
+    made up of Nobodies.
+- id: 12704
+  en: Right--no hearts!
+- id: 12705
+  en: Oh, we do too have hearts! Don´t be mad...
+- id: 12706
+  en: You can´t trick us!
+- id: 12707
+  en: Silence, traitor.
+- id: 12708
+  en: >-
+    Anyone from the Organization
+
+    who´d like to be next?
+- id: 12709
+  en: Hey, Sora!
+- id: 12710
+  en: Don´t antagonize them!
+- id: 12711
+  en: >-
+    Yeah, we gotta go help our friends
+
+    out first.
+- id: 12712
+  en: Oh. Sorry.
+- id: 12713
+  en: Then let´s go!
+- id: 12714
+  en: Aha! There you are!
+- id: 12715
+  en: You sure have lotsa friends to help.
+- id: 12716
+  en: >-
+    So, I guess we better all pull together
+
+    and finish this battle for good!
+- id: 12717
+  en: Yes, Your Majesty!
+- id: 12718
+  en: Look out!
+- id: 12719
+  en: Goofy!
+- id: 12720
+  en: No...
+- id: 12721
+  en: >-
+    Hey! You´re the King´s Captain!
+
+    You gotta get up!
+- id: 12722
+  en: C´mon, wake up!
+- id: 12723
+  en: I´m sorry about the ice cream!
+- id: 12724
+  en: Goofy...?
+- id: 12725
+  en: '{:delay A0 00}Goofy...'
+- id: 12726
+  en: This is not happening...{:delay 3C 00}{:clear }{:delay 3C 00}{:clear }It can´t be happening...{:delay 4B 00}{:clear }{:delay 28 00}{:clear }It can´t...
+- id: 12727
+  en: They´ll pay for this.
+- id: 12728
+  en: Are you okay?
+- id: 12729
+  en: Yeah, I´m fine, but...
+- id: 12730
+  en: Ohh, Goofy...
+- id: 12731
+  en: Hey, fellas!
+- id: 12732
+  en: Goofy!
+- id: 12733
+  en: Ya know, that really hurt!
+- id: 12734
+  en: Aw, Goofy!
+- id: 12735
+  en: >-
+    Gawrsh, Yer Majesty, I get
+
+    bumped on the head all the time.
+- id: 12736
+  en: ''
+- id: 12737
+  en: ''
+- id: 12738
+  en: That hurt, too.
+- id: 12739
+  en: Don´t you ever do that again!
+- id: 12740
+  en: Huh?
+- id: 12741
+  en: What´s with them?
+- id: 12742
+  en: Hey!
+- id: 12743
+  en: It´s the guy who´s NOT Ansem!
+- id: 12744
+  en: You mean it´s his Nobody!
+- id: 12745
+  en: The leader of Organization {XIII}...
+- id: 12746
+  en: Wait a minute. Now I know!
+- id: 12747
+  en: Wise Ansem.{:delay 54 00}{:clear }I´m here to seek your advice.
+- id: 12748
+  en: >-
+    I´m glad we have the opportunity
+
+    to speak like this, my friend.{:delay D2 00}{:clear }{:delay 20 00}{:clear }I´m intrigued by your hypothesis...{:delay 9C 00}{:clear }and I´m finding it difficult to
+
+    stave off the urge to test it.{:delay 0C 01}{:clear }Still,{:delay 48 00}{:clear }I´m concerned about the
+
+    stability of the worlds.
+- id: 12749
+  en: Yep, that´s what worries me too.
+- id: 12750
+  en: >-
+    The doors that appeared.{:delay 78 00}{:clear }{:delay 28 00}{:clear }The place the Heartless seek.{:delay 78 00}{:clear }{:delay 55 00}{:clear }I fear my research may have
+
+    brought this upon us...
+- id: 12751
+  en: >-
+    Master Ansem.{:delay 48 00}{:clear }Regarding the experiment I
+
+    presented the other day...{:delay 99 00}{:clear }{:delay 18 00}{:clear }With your permission, I´d like to proceed--
+- id: 12752
+  en: >-
+    I forbid it!{:delay 2D 00}{:clear }{:delay 32 00}{:clear }Forget this talk of doors, and
+
+    the heart of all worlds.{:delay AA 00}{:clear }{:delay 28 00}{:clear }That place must not be defiled!
+- id: 12753
+  en: >-
+    But, Master Ansem!
+
+    I´ve been thinking...
+- id: 12754
+  en: Xehanort...{:delay 50 00}{:clear }{:delay 2D 00}{:clear }Those thoughts are best forgotten.
+- id: 12755
+  en: Now I remember!{:delay 4E 00}{:clear }Xehanort!{:delay 3C 00}{:clear }Ansem´s apprentice!
+- id: 12756
+  en: >-
+    The leader of Organization {XIII} is
+
+    Xehanort´s Nobody!
+- id: 12757
+  en: Let´s go!
+- id: 12758
+  en: Move it!
+- id: 12759
+  en: We can´t let Xehanort get away!
+- id: 12760
+  en: Right!
+- id: 12761
+  en: Where´s the King?
+- id: 12762
+  en: There he is!
+- id: 12763
+  en: C´mon!
+- id: 12764
+  en: Your Majesty!
+- id: 12765
+  en: Xehanort!
+- id: 12766
+  en: >-
+    How long has it been since I
+
+    abandoned that name...
+- id: 12767
+  en: >-
+    Out with it, Nobody! Where´s Kairi?
+
+    Where´s Riku!?
+- id: 12768
+  en: I know nothing of any Kairi.{:delay 73 00}{:clear }{:delay 2D 00}{:clear }As for Riku...{:delay 73 00}{:clear }Perhaps you should ask your king.
+- id: 12769
+  en: Stop!
+- id: 12770
+  en: He´s gone...
+- id: 12771
+  en: Sora, Goofy.
+- id: 12772
+  en: What´s goin´ on?
+- id: 12773
+  en: Way to fall right into their trap.
+- id: 12775
+  en: Xemnas?
+- id: 12776
+  en: The guy you just saw.{:delay 5A 00}{:clear }{:delay 14 00}{:clear }He´s their leader.{:delay 5A 00}{:clear }{:delay 28 00}{:clear }Got it memorized?{:delay 50 00}{:clear }{:delay 2D 00}{:clear }X-E-M, N-A-S.
+- id: 12777
+  en: >-
+    Organization {XIII} wants
+
+    to get rid of the Heartless?
+- id: 12778
+  en: Man, you´re slow.
+- id: 12779
+  en: >-
+    Every Heartless slain with that Keyblade
+
+    releases a captive heart.
+- id: 12780
+  en: That is what the Organization is after.
+- id: 12781
+  en: >-
+    So what are those guys gonna
+
+    do with the hearts?
+- id: 12782
+  en: I´m not telling.
+- id: 12783
+  en: Tell us!
+- id: 12784
+  en: You...you´re the one who kidnapped Kairi!
+- id: 12785
+  en: >-
+    Bingo. The name´s Axel.
+
+    Got it memorized?
+- id: 12786
+  en: Where is Kairi?
+- id: 12787
+  en: Please. Just tell me!
+- id: 12788
+  en: Look, about Kairi...{:delay 64 00}{:clear }{:delay 23 00}{:clear }I´m sorry.
+- id: 12789
+  en: Axel!
+- id: 12790
+  en: Uh-oh!
+- id: 12791
+  en: >-
+    We´ll ensure he receives
+
+    the maximum punishment.
+- id: 12793
+  en: >-
+    If it´s Kairi you´re worried about, don´t.
+
+    We´re taking very good care of her.
+- id: 12794
+  en: Take me to her.
+- id: 12795
+  en: Is she that important to you?
+- id: 12796
+  en: Yeah. More than anything.
+- id: 12797
+  en: Show me how important.
+- id: 12798
+  en: Please.
+- id: 12800
+  en: You rotten...!
+- id: 12801
+  en: >-
+    Are you angry? Do you hate me?{:delay C3 00}{:clear }{:delay 3C 00}{:clear }Then take that rage, and direct
+
+    it at the Heartless.
+- id: 12802
+  en: Pitiful Heartless, mindlessly collecting hearts.
+- id: 12803
+  en: >-
+    And yet they know not the true
+
+    power of what they hold.
+- id: 12804
+  en: The rage of the Keyblade releases those hearts.
+- id: 12805
+  en: They gather in darkness, masterless and free...
+- id: 12806
+  en: >-
+    until they weave together
+
+    to make Kingdom Hearts.
+- id: 12807
+  en: >-
+    And when that time comes,
+
+    we can truly, finally exist.
+- id: 12808
+  en: >-
+    What in the world do you think
+
+    you´re prattling on about?
+- id: 12809
+  en: Kingdom Hearts belongs to me!
+- id: 12810
+  en: >-
+    The heart of all kingdoms,
+
+    the heart of all that lives.
+- id: 12811
+  en: >-
+    A dominion fit to be called Kingdom Hearts
+
+    must be MY dominion!
+- id: 12812
+  en: Maleficent, no! No more Heartless!
+- id: 12813
+  en: I do not take orders from you!
+- id: 12814
+  en: Fool...
+- id: 12815
+  en: Oh no!
+- id: 12816
+  en: >-
+    While I keep these creatures at bay, you
+
+    devise a way to vanquish them--forever!
+- id: 12817
+  en: Maleficent!
+- id: 12818
+  en: Do not misunderstand me.{:delay 64 00}{:clear }{:delay 1E 00}{:clear }I shall have my revenge on you yet.
+- id: 12819
+  en: Maleficent!
+- id: 12820
+  en: Leave! Now!
+- id: 12821
+  en: I don´t take orders from you!
+- id: 12822
+  en: Sora! C´mon!
+- id: 12823
+  en: But...what about...
+- id: 12824
+  en: Now then. Where did we leave off?
+- id: 12825
+  en: ''
+- id: 12826
+  en: Which side are you guys on anyway?
+- id: 12827
+  en: The Heartless ally with whoever´s the strongest.
+- id: 12828
+  en: Yes, Sora!{:delay 3C 00}{:clear }{:delay 18 00}{:clear }Extract more hearts!
+- id: 12829
+  en: No! The hearts!
+- id: 12830
+  en: >-
+    Maybe everything we´ve done...
+
+    Maybe it was all for nothing. {:delay FF 00}{:clear }{:delay 32 00}{:clear }What am I supposed to do if
+
+    I can´t use the Keyblade!?
+- id: 12831
+  en: Imbeciles!{:delay 54 00}{:clear }You can´t be trusted to do anything!
+- id: 12832
+  en: Huh?
+- id: 12833
+  en: Sora! Donald! Goofy!
+- id: 12834
+  en: Relax.{:delay 3C 00}{:clear }{:delay 1E 00}{:clear }Those three aren´t going down that easily.
+- id: 12835
+  en: The Keyblade´s chosen one...{:delay 7D 00}{:clear }{:delay 50 00}{:clear }He´s a lucky kid.
+- id: 12836
+  en: See you soon.
+- id: 12837
+  en: Liars!
+- id: 12838
+  en: Wha--?
+- id: 12839
+  en: Leon doesn´t have any treasure!
+- id: 12840
+  en: And we fought for you guys.
+- id: 12841
+  en: Donald...?
+- id: 12842
+  en: Well, I had to tell them something!
+- id: 12843
+  en: >-
+    I don´t see how we´re
+
+    gonna work this out.
+- id: 12844
+  en: So what should we do?
+- id: 12845
+  en: We´re just going to take YOUR treasure.
+- id: 12846
+  en: But we don´t have anything!
+- id: 12847
+  en: You sure?
+- id: 12848
+  en: '{:delay 6A 00}Hmm...let´s take a look!'
+- id: 12849
+  en: ''
+- id: 12850
+  en: Oooh!
+- id: 12851
+  en: Okay, we´ve decided!{:delay 6A 00}{:clear }The Gullwings are taking all your items!
+- id: 12852
+  en: You gotta be kidding me!
+- id: 12853
+  en: Oh, foofie.
+- id: 12854
+  en: This stinks!
+- id: 12855
+  en: So not cool...
+- id: 12856
+  en: Look, sorry we tricked you, but...
+- id: 12858
+  en: >-
+    So it wouldn´t really be right
+
+    if we took your things.
+- id: 12860
+  en: Bye! Good luck on your journey!
+- id: 12861
+  en: What is Cloud doing?
+- id: 12862
+  en: Beats me.
+- id: 12863
+  en: Hmph.{:delay 3C 00}{:clear }{:delay 50 00}{:clear }By the way, you three...{:delay BE 00}{:clear }{:delay 1E 00}{:clear } Who are you?
+- id: 12864
+  en: I´m not sure we should tell ya.
+- id: 12865
+  en: Well...{:delay 30 00}{:clear }{:delay 23 00}{:clear }That´s an interesting sword you´re carrying.
+- id: 12866
+  en: It´s the Keyblade!
+- id: 12867
+  en: I see... So that´s a Keyblade.{:delay 0E 01}{:clear }{:delay 2D 00}{:clear }And I suppose you must be its chosen wielder.
+- id: 12868
+  en: So what if I am?
+- id: 12869
+  en: >-
+    I wonder if it won´t change its mind--
+
+    once I defeat you.
+- id: 12870
+  en: How´d you like that?
+- id: 12871
+  en: >-
+    I admit you´re very skilled...{:delay 78 00}{:clear }{:delay 2D 00}{:clear }But apparently, Cloud is the
+
+    only one who can eliminate me.
+- id: 12872
+  en: '{:delay BA 00}{:clear }Tell Cloud to come here.{:delay 78 00}{:clear }{:delay 4E 00}{:clear }Tell him Sephiroth is looking to settle things.'
+- id: 12937
+  en: '{:unk13 A2 00 32 00}{:unk08 01 01 04}He´s in the Dark Depths.'
+- id: 12938
+  en: >-
+    {:unk13 A5 00 4B 00}{:unk08 01 01 06}I see...{:clear }So I guess it´s time
+
+    we settled this.
+- id: 12939
+  en: '{:unk13 91 00 4B 00}{:unk08 01 01 06}Cloud...'
+- id: 12940
+  en: '{:unk13 A9 00 32 00}{:unk08 01 01 04}I sure don´t know.'
+- id: 12941
+  en: >-
+    {:unk13 A5 00 4B 00}{:unk08 01 01 06}If you find him,
+
+    come tell me.
+- id: 12942
+  en: Did you give him my message?
+- id: 12943
+  en: Maybe.
+- id: 12944
+  en: Sorry to keep you, Sephiroth!
+- id: 12945
+  en: Cloud...{:delay 3C 00}{:clear }{:delay 32 00}{:clear }You´ll never let go of the darkness...
+- id: 12946
+  en: Shut up.
+- id: 12947
+  en: You´ll never let go of your past...
+- id: 12948
+  en: Shut up!
+- id: 12949
+  en: Cloud! Get him!
+- id: 12950
+  en: ''
+- id: 12952
+  en: No matter how many times I fall,{:delay 7E 00}{:clear }{:delay 2D 00}{:clear }your darkness keeps calling me back!
+- id: 12953
+  en: ''
+- id: 12954
+  en: Wrong!
+- id: 12955
+  en: Tifa! Stay back!
+- id: 12956
+  en: How can I?{:delay 32 00}{:clear }{:delay 19 00}{:clear }I wanna help you.
+- id: 12957
+  en: You can´t.{:delay 3C 00}{:clear }{:delay 28 00}{:clear }He´ll never let go of the darkness.
+- id: 12958
+  en: >-
+    He doesn´t have to. He just needs
+
+    someone to surround him with light.
+- id: 12959
+  en: >-
+    The darkness will be there, Sephiroth--
+
+    but in a place you can´t reach.
+- id: 12960
+  en: Is that right?
+- id: 12961
+  en: Let´s see what this light of yours can do.
+- id: 12962
+  en: No!
+- id: 12965
+  en: Look out!
+- id: 12967
+  en: Cloud, you can have my light.
+- id: 12968
+  en: The light doesn´t suit you.
+- id: 12969
+  en: I just...{:delay 3C 00}{:clear }{:delay 73 00}{:clear }don´t know.
+- id: 12970
+  en: Stop!
+- id: 12971
+  en: Huh?
+- id: 12972
+  en: ''
+- id: 12973
+  en: Where´d they go?
+- id: 12974
+  en: >-
+    Do ya think they made it back
+
+    to their own world?
+- id: 12975
+  en: They went somewhere else...{:delay 69 00}{:clear }{:delay 5A 00}{:clear }Cloud went to fight a great battle--{:delay 78 00}{:clear }{:delay 2D 00}{:clear }to defeat the darkness inside him.
+- id: 12976
+  en: Gone again.
+- id: 12977
+  en: What will you do now?
+- id: 12978
+  en: '{:delay 9C 00}{:clear }Guess I´ll keep looking.'
+- id: 12980
+  en: Don´t worry...{:delay 37 00}{:clear }{:delay 2D 00}{:clear }Light is easy to find.
+- id: 12981
+  en: I gotta go.{:delay 30 00}{:clear }{:delay 0F 00}{:clear }Here. This is for helping me out.
+- id: 12982
+  en: But wait--when did we help?
+- id: 12983
+  en: ''
+- id: 12988
+  en: Have you seen Sephiroth?
+- id: 12989
+  en: >-
+    {:unk13 00 01 40 01}{:unk08 02 00 06}Tell him about Sephiroth?
+
+    {:chardelay 0A 00}No, maybe I shouldn´t.
+
+    {:chardelay 09 00}Of course!
+- id: 12990
+  en: >-
+    We forgot so much.
+
+    You, the town...{:clear }Still, now we remember. Even if we forget,
+
+    the things we hold dear will still be there.
+- id: 12995
+  en: >-
+    I can feel him, in my heart...{:clear }Sephiroth...
+
+    I know you´re here somewhere.
+- id: 12996
+  en: >-
+    Tell Cloud to get over here. Say that
+
+    Sephiroth wants to settle things.
+- id: 12997
+  en: >-
+    He´s not here, either.
+
+    Still, I feel I´m getting closer to him.{:clear }I´m sure I´ve just been missing him.
+
+    I´ll bump into him soon.
+- id: 13019
+  en: >-
+    Riches! Riches!
+              I´m so happy! ♪{:clear }...Ah! You!?
+- id: 13020
+  en: >-
+    Hey, Rikku! Stop that singing
+
+    and listen to...{:clear }...Huh? You!?
+- id: 13872
+  en: '{:unk13 FA 00 2D 00}{:unk08 01 00 05}You´ll see him soon enough.'
+- id: 13963
+  en: >-
+    I´m not interested in what becomes of
+
+    this world.{:clear }Besides, you and the others should be
+
+    enough to handle things.
+- id: 14151
+  en: >-
+    I thought it´d taste better...
+
+    I just can´t seem to get it right.{:clear }If I could make that ice cream,
+
+    I know everyone would love it,{:clear }and I´d make a fortune!
+- id: 14247
+  en: >-
+    {:unk13 D2 00 37 00}{:unk08 01 00 06}Bless me bagpipes!
+
+    I did it!{:clear }I recreated
+
+    sea salt ice cream!
+- id: 14248
+  en: >-
+    {:unk13 72 01 8C 00}{:unk08 01 00 06}Mmm!
+
+    Can we try some?
+- id: 14249
+  en: '{:unk13 FF 00 41 00}{:unk08 01 00 05}Of course!'
+- id: 14250
+  en: '{:unk06 02}{:unk13 45 01 32 00}{:unk08 03 00 05}Oh boy! This is good!'
+- id: 14251
+  en: '{:unk06 02}{:unk13 13 01 3F 00}{:unk08 03 00 05}So salty!'
+- id: 14252
+  en: '{:unk13 A4 01 6E 00}{:unk08 01 00 06}But sweet!'
+- id: 14253
+  en: >-
+    {:unk13 C8 00 78 00}{:unk08 01 00 05}Aye. It´s unique!{:clear }When I was a lad, all the
+
+    kids were crazy for it.
+- id: 14294
+  en: >-
+    Maybe everything we´ve done...
+
+    Maybe it was all for nothing. {:delay FF 00}{:clear }{:delay 32 00}{:clear }What am I supposed to do if
+
+    I can´t use the Keyblade!?
+- id: 14295
+  en: Imbeciles!{:delay 54 00}{:clear }You can´t be trusted to do anything!
+- id: 14296
+  en: Huh?
+- id: 14297
+  en: ' '
+- id: 14672
+  en: >-
+    Yep. A fake. But he
+
+    still had to be stopped.
+- id: 14755
+  en: >-
+    Hollow Bastion´s got a problem.
+
+    A big problem.
+- id: 15149
+  en: >-
+    As if! You can talk all you want,
+
+    but that won´t change a thing.
+- id: 15150
+  en: Then we´re gonna MAKE you move!
+- id: 15151
+  en: >-
+    ´Cept I´m not. I´m with the Organization.
+
+    Nothing "any old" about me.
+- id: 15152
+  en: >-
+    Ha!{:delay 22 00}{:clear }Tough talk for someone
+
+    who stood on the sidelines{:delay 7E 00}{:clear }while his Nobody flunkeys did the fighting!
+- id: 15153
+  en: Oh, dear.{:delay 46 00}{:clear }{:delay 19 00}{:clear }I think you got the wrong impression.
+- id: 15154
+  en: You gonna cry?
+- id: 15155
+  en: >-
+    As if! Why don´t I remind you how tough
+
+    the crowd you´re dealing with really is?
+- id: 15156
+  en: Remind me?
+- id: 15157
+  en: >-
+    {:delay B0 00}{:clear }That´s RIGHT, he used to give
+
+    me that same exact look.
+- id: 15158
+  en: >-
+    I guess you think you can psych me
+
+    out by saying really random stuff!
+- id: 15159
+  en: Be a good boy now!
+- id: 15160
+  en: Nuts! He got away!
+- id: 15161
+  en: That was weird.{:delay 4B 00}{:clear }{:delay 23 00}{:clear }WHO gave him the same look?
+- id: 15162
+  en: >-
+    Y´know, I think he was just
+
+    tryin´ to confuse ya.
+- id: 15163
+  en: Huh?
+- id: 15164
+  en: What´s this?
+- id: 15165
+  en: Gawrsh, ya think...?
+- id: 15166
+  en: >-
+    That must´ve been the gate
+
+    Yen Sid talked about.
+- id: 15167
+  en: Oh boy!
+- id: 15168
+  en: Sorry to run, Leon,{:delay 69 00}{:clear }{:delay 1E 00}{:clear }but other worlds are calling.
+- id: 15169
+  en: >-
+    Organization {XIII}...{:delay 64 00}{:clear }{:delay 50 00}{:clear }They look tough.
+
+    Be careful out there.
+- id: 15170
+  en: See you soon.
+- id: 15173
+  en: >-
+    {:unk13 A0 00 E3 00}{:unk08 01 01 02}And maybe something on
+
+    the dark realm, too?{:clear }It looks like that´s where
+
+    Riku and Kairi are.
+- id: 15174
+  en: '{:unk13 9A 01 BE 00}{:unk08 01 00 05}Awww...'
+- id: 15175
+  en: >-
+    {:unk13 91 00 37 00}{:unk08 01 01 06}We´ll go check
+
+    on Tron.
+- id: 15255
+  en: >-
+    I thought you looked kinda
+
+    different, Cloud.
+- id: 15256
+  en: Is something wrong?
+- id: 15257
+  en: Uhh...
+- id: 15258
+  en: It´s nothing.
+- id: 15259
+  en: ''
+- id: 15260
+  en: I don´t want you involved.
+- id: 15261
+  en: >-
+    You mean you don´t want me there
+
+    when you go away again?
+- id: 15263
+  en: Do you mean it?
+- id: 15264
+  en: Yeah.
+- id: 15265
+  en: >-
+    See? You don´t look so sure.{:delay 91 00}{:clear }{:delay 64 00}{:clear }Well, okay, I understand.
+
+    Go--get things settled.
+- id: 15266
+  en: Huh?
+- id: 15267
+  en: >-
+    No matter how far away you are...
+
+    once you find your light...{:delay 20 01}{:clear }{:delay 23 00}{:clear }I´m sure it will lead you
+
+    back here again. Right?
+- id: 15268
+  en: I suppose.
+- id: 15269
+  en: So I´ll stay here--and I´ll cheer for you--{:delay D7 00}{:clear }{:delay 37 00}{:clear }Okay, Cloud?
+- id: 15270
+  en: Okay.
+- id: 15271
+  en: Wonder if he´ll be okay.
+- id: 15272
+  en: He´ll be fine.{:delay 3C 00}{:clear }{:delay 41 00}{:clear }I´m sure there´s some light in him somewhere.
+- id: 15273
+  en: You´re right.
+- id: 15278
+  en: >-
+    I just--{:delay 32 00}{:clear }{:delay 78 00}{:clear }Listen, even if I go far away,
+
+    I´ll come back.
+- id: 15610
+  en: >-
+    I´m glad everyone´s all right.
+
+    But we can´t relax just yet.{:clear }We have to rally together for
+
+    all our friends´ sakes!
+- id: 15774
+  en: C´mon, it´s a set-up by Organization {XIII}.
+- id: 15775
+  en: >-
+    Xemnas is using you to destroy the Heartless--
+
+    that´s his big master plan.
+- id: 15963
+  en: Forget about it.
+- id: 15964
+  en: Leon told us the whole story.{:delay 87 00}{:clear }{:delay 1E 00}{:clear }He said your journey´s been pretty rough.
+- id: 15965
+  en: We´ll root for you.
+- id: 15966
+  en: Here, this is from us.
+- id: 15967
+  en: >-
+    Excuse me, are you with the
+
+    Restoration Committee?
+- id: 15968
+  en: What´s Leon´s gang up to?
+- id: 16056
+  en: >-
+    {:unk13 B2 00 39 00}{:unk08 01 01 07}They´re right through
+
+    there.
+- id: 16057
+  en: What´s this place?
+- id: 16058
+  en: It must be the Realm of Darkness!
+- id: 16059
+  en: Kairi! Riku!
+- id: 16060
+  en: Who´s there!?
+- id: 16061
+  en: What is it?
+- id: 16062
+  en: Are ya sure you wanna open...
+- id: 16063
+  en: that?
+- id: 16064
+  en: >-
+    Gawrsh, it´s the gang from Twilight Town.
+
+    There´s Hayner, Pence, Olette...{:delay 4D 01}{:clear }and, uh, um...
+- id: 16065
+  en: Roxas.
+- id: 16066
+  en: You know him?
+- id: 16067
+  en: >-
+    No...{:delay 2D 00}{:clear }{:delay 28 00}{:clear }The name just popped into my head...
+
+    This is Roxas.
+- id: 16068
+  en: Are ya sure you wanna eat...
+- id: 16069
+  en: that?
+- id: 16070
+  en: Salty...{:delay 50 00}{:clear }{:delay 14 00}{:clear }No...sweet!
+- id: 16071
+  en: >-
+    Not yet!
+
+    I gotta look for Kairi!
+- id: 16072
+  en: Got any leads?
+- id: 16750
+  en: Leon´s down! Use Recover to wake him!
+- id: 17002
+  en: A portrait of Ansem.
+- id: 17003
+  en: >-
+    A portrait of the man you thought
+
+    was Ansem.
+- id: 17004
+  en: A portrait of Xehanort.
+- id: 17005
+  en: >-
+    "Door to Darkness" is scribbled
+
+    here.
+- id: 17006
+  en: You can´t tell what this device does.
+- id: 17007
+  en: This device allows you to see Tron.
+- id: 17008
+  en: It´s locked with a special system.
+- id: 17624
+  en: >-
+    {:unk0f 03 0F 00 59 01}{:color #00F0F080}The Magic Command has been added.{:reset}
+
+    Consume MP from the Gauge in
+
+    the bottom right to use magic.{:clear }{:unk0f 00 00 00 00 00}Press {:unk16 0B} for the shortcut commands.
+
+    MP is restored at save points and also after
+
+    a fixed period of time, even after full consumption.
+- id: 17625
+  en: >-
+    {:unk0f 03 0F 00 59 01}{:color #00F0F080}The Summon Command has been added.{:reset}
+
+    When used, the Drive Gauge becomes the Summon Gauge.{:clear }{:unk0f 00 00 00 00 00}The summoned character is exchanged for the rest
+
+    of the Party. Try the different Commands that appear
+
+    with each summon.
+- id: 17626
+  en: >-
+    {:unk0f 01 02 01 96 00}Talk to moogles in towns.
+
+    They can synthesize items with various materials.{:clear }{:unk0f 00 00 00 00 00}Collect the materials used for Item Synthesis
+
+    to create various Items.
+- id: 17845
+  en: Defeat all of the enemies!
+- id: 17846
+  en: >-
+    Defeat all of the enemies!
+
+    Using reaction commands with {:icon button-triangle}
+
+    will make the battle easier!
+- id: 17863
+  en: >-
+    Sometimes we get split up like we were
+
+    earlier, and can´t help each other.{:clear }At times like that, try using your enemies
+
+    to fight!
+- id: 17864
+  en: >-
+    A-hyuhk! I don´t know what happened,
+
+    but sorry if I made you worried!{:clear }What could happen next?
+
+    We´d better prepare ourselves for anything!
+- id: 17865
+  en: >-
+    That girl´s got a temper. I thought she
+
+    was going to break everything in the room.{:clear }Still, she may have broken something.
+
+    Could you go check out the study?
+- id: 17866
+  en: >-
+    The King went on ahead by himself!
+
+    We have to hurry after him!
+- id: 17867
+  en: >-
+    That explosion came from outside, right?
+
+    It must be awful out there!{:clear }This looks like it´s going to be a long battle.
+
+    Are you ready, Sora?
+- id: 17868
+  en: >-
+    Some people, if given the opportunity,
+
+    might become heroes.{:clear }Don´t ever lose your courage and your
+
+    compassion for others, Sora.
+- id: 17869
+  en: >-
+    Once Cid´s program is ready,
+
+    I´ll send it from the {:theme 0A}study{:reset}.{:clear }It´ll be useless, though, if we lose Tron.
+
+    Go help him, Sora.
+- id: 17870
+  en: >-
+    It seems you´ve done a lot of
+
+    growing this past year.{:clear }And I don´t just mean your body.
+
+    You´ve become even stronger.{:clear }That´s the Sora I know.
+- id: 17871
+  en: >-
+    The defense system has been restored,
+
+    now that the MCP has been taken care of.{:clear }I know you have to continue your journey,
+
+    but let us help you every now and then, okay?
+- id: 17872
+  en: >-
+    This is gonna be like, "Welcome to the
+
+    Radiant Garden Reconstruction Committee"!{:clear }Oh, I can´t wait! Look out, town.
+
+    Here comes Grand Ninja Yuffie!
+- id: 17919
+  en: I don´t care about any of that!
+- id: 17920
+  en: Just let me into the realm of darkness, okay!?
+- id: 17927
+  en: >-
+    You found the person you were looking for?
+
+    I´m glad to hear he´s safe.{:clear }I guess if you look long enough,
+
+    you´re bound to find your man.{:clear }Hm...where should I look next?
+- id: 17928
+  en: >-
+    There sure are a lot of
+
+    problems lately.{:clear }Just look at this strange machine in my
+
+    room. It completely ruins the atmosphere!
+- id: 17929
+  en: >-
+    Magic can be combined with other actions
+
+    and is very useful.{:clear }Many people are susceptible to it as well,
+
+    so don´t forget your training.
+- id: 17930
+  en: >-
+    They say the city can´t be rebuilt without
+
+    computers.{:clear }Merlin was against them, though,
+
+    saying they just got in the way.
+- id: 17931
+  en: >-
+    Leon was worried about you guys.
+
+    He didn´t say anything, but I could tell.{:clear }Ha ha! I´ll never understand why men
+
+    feel they have to hide their feelings!
+- id: 17932
+  en: >-
+    I see you´re all as overeager
+
+    as ever.{:clear }Just try to keep it under control, guys.
+
+    Remember, this isn´t a playroom.
+- id: 17933
+  en: >-
+    Many strange weapons exist.
+
+    Some may only be wielded by chosen ones.{:clear }Weapons such as those are closely
+
+    bound to their masters.{:clear }You and your Keyblade
+
+    are a case in point.
+- id: 17934
+  en: >-
+    It seems Tron´s all right now, and repairs
+
+    are finally underway again in the city.{:clear }Since you guys are VIP members, we´ll
+
+    throw you a party once the city´s fixed up.
+- id: 17935
+  en: >-
+    We´ll protect the city.
+
+    You go after the enemy boss.{:clear }Don´t look so worried.
+
+    Have a little more faith in me, boy!
+- id: 17936
+  en: >-
+    There are too many enemies even for Leon
+
+    to handle. You gotta go help them out.{:clear }You should be able to get to them through
+
+    the broken bailey wall. Hurry, Sora!
+- id: 17937
+  en: >-
+    You guys sure know how to fight!
+
+    But my ninjutsu is just as powerful.{:clear }Watch this! Hiii--oh, wait. If I did
+
+    that here, I might wreck this house.
+- id: 17938
+  en: >-
+    What´s going on!? Does this have anything
+
+    to do with those programs?{:clear }If so, then go through that terminal and fix it
+
+    with Tron.
+- id: 17939
+  en: >-
+    The whole town is shaking!
+
+    Sora, what´s going on inside there?
+- id: 18015
+  en: >-
+    So, you really do care for her.
+
+    In that case--
+- id: 18016
+  en: the answer's no.
+- id: 18017
+  en: Absurd.
+- id: 18018
+  en: >-
+    Defeating me is meaningless.
+
+    You know that more than anyone, Cloud.
+- id: 18074
+  en: >-
+    Hmph.
+
+    He´s not here, either.{:clear }Well, I´m not going to let him
+
+    hide from me forever.
+- id: 18075
+  en: >-
+    I put the book on the shelf.{:clear }What´s taking Merlin so long?
+
+    I hope Pooh´s all right.
+- id: 18076
+  en: >-
+    I´ll talk to Merlin, so go ahead and
+
+    see what´s happened inside the book.{:clear }The book´s taken a beating. I just hope
+
+    Pooh and the others are all right.
+- id: 18225
+  en: These are notes about darkness.
+- id: 18226
+  en: >-
+    These are notes about
+
+    the hearts of the world.
+- id: 18227
+  en: >-
+    These are notes about
+
+    the connections between worlds.
+- id: 18228
+  en: This pipe is used to power the city.
+- id: 18229
+  en: >-
+    You can see Villain´s Vale,
+
+    where Maleficent used to reside.
+- id: 18230
+  en: A deep gorge stretches before you.
+- id: 18231
+  en: >-
+    This machine controls the wall´s
+
+    security system.
+- id: 18232
+  en: This crane is being used to rebuild this town.
+- id: 18233
+  en: >-
+    This ice looks like it could make
+
+    good ice cream.
+- id: 18234
+  en: Construction equipment is stored here.
+- id: 18235
+  en: This shop is actually a giant refrigerator.
+- id: 18236
+  en: An illustration of the town´s power grid.
+- id: 18237
+  en: Blueprints of the defense device.
+- id: 18238
+  en: >-
+    This computer has been modified for Cid´s
+
+    personal use.
+- id: 18239
+  en: A blackboard used for strategy meetings.
+- id: 18240
+  en: You see some strands of Merlin´s long beard.
+- id: 18241
+  en: This machine is used for magical research.
+- id: 18242
+  en: >-
+    You just need to be a wizard to make
+
+    the best use of this normal bag.
+- id: 18243
+  en: >-
+    This is a journal on the worlds Merlin has
+
+    visited, and the future.
+- id: 18244
+  en: >-
+    This book details the spells Merlin has
+
+    created.
+- id: 18245
+  en: >-
+    This is the closet Merlin always
+
+    miniaturizes.
+- id: 18708
+  en: >-
+    Demyx has challenged you to a series of trials!
+
+    Complete the trials to face and defeat him!
+- id: 18709
+  en: >-
+    Use all of your strategies and skills
+
+    to defeat Sephiroth!
+- id: 18836
+  en: >-
+    {:unk13 FA 00 3C 00}{:unk08 01 01 06}Just a moment, Sora.{:clear }What about
+
+    your magic?
+- id: 18837
+  en: '{:unk13 18 01 64 00}{:unk08 01 00 05}Huh?{:clear }Oh, that´s right...'
+- id: 18838
+  en: >-
+    {:unk13 BE 00 3C 00}{:unk08 01 01 07}Maybe you forgot it
+
+    while you were asleep!
+- id: 18839
+  en: >-
+    {:unk13 D2 00 46 00}{:unk08 01 00 07}Now, what am I to do with you?{:clear }I suppose I´ll have to lend
+
+    you a few spells. But be
+
+    careful with them!
+- id: 18840
+  en: >-
+    {:unk13 AC 00 53 00}{:unk08 01 01 05}Thanks,
+
+    Merlin!
+- id: 18841
+  en: >-
+    {:unk13 90 01 22 01}{:unk08 01 00 05}To the bailey,
+
+    and fast!
+- id: 18842
+  en: >-
+    {:unk13 9F 00 48 00}{:unk08 01 01 05}Oh! One more thing.{:clear }Let me give your clothes
+
+    some new powers, Sora.
+- id: 18843
+  en: '{:unk13 F0 00 64 00}{:unk08 01 01 06}Really!?'
+- id: 18844
+  en: >-
+    {:unk13 A9 00 4C 00}{:unk08 01 00 06}You bet!{:clear }You´ve done so much--
+
+    just consider it a
+
+    thank-you present.
+- id: 18845
+  en: >-
+    {:unk13 A0 00 4B 00}{:unk08 01 01 07}Thanks, Your Majesty!{:clear }We´re heading off to see
+
+    Tron now, so wait here
+
+    for us, okay?
+- id: 18846
+  en: >-
+    {:unk13 C3 00 64 00}{:unk08 01 00 05}I will, Sora. And
+
+    remember--be careful!
+- id: 18847
+  en: >-
+    {:unk13 18 01 46 00}{:unk08 01 01 06}Now, the book isn´t
+
+    all that´s cherished...{:clear }This is for you, Sora.
+- id: 18848
+  en: '{:unk13 FA 00 5A 00}{:unk08 01 00 05}What is it?'
+- id: 18849
+  en: >-
+    {:unk13 A0 00 46 00}{:unk08 01 01 06}Simply concentrate
+
+    on it with all your
+
+    heart,{:clear }and you need only
+
+    say the word to
+
+    summon an ally{:clear }who will help
+
+    in times of need.
+- id: 18850
+  en: >-
+    {:unk13 DC 00 46 00}{:unk08 01 00 05}Like Simba and Mushu did,
+
+    the last time we were here?
+- id: 18851
+  en: >-
+    {:unk13 C8 00 3C 00}{:unk08 01 01 06}Precisely.{:clear }Now go forth, with your
+
+    friends by your side!
+- id: 18852
+  en: >-
+    {:unk13 DC 00 46 00}{:unk08 01 00 06}Thanks, Merlin.{:clear }We´re worried about Pooh, so
+
+    we´ll be back once we´ve
+
+    found those torn pages.
+- id: 18908
+  en: >-
+    I made a skateboard to sell as a new product.
+
+    Want to see how it rides?
+- id: 18909
+  en: >-
+    {:unk13 00 01 40 01}{:unk08 02 00 06}Perfect timing. Try it out?
+
+    {:chardelay 33 00}Nah, I´m too busy.
+
+    {:chardelay 52 00}Sure, why not?
+- id: 18910
+  en: >-
+    My ice cream research isn´t getting
+
+    anywhere, but my skateboards are doing well.
+- id: 18911
+  en: >-
+    {:unk13 00 01 40 01}{:unk08 02 00 06}Perfect timing. Try it again?
+
+    {:chardelay 33 00}Nah, I´m too busy.
+
+    {:chardelay 52 00}Sure, why not?
+- id: 18912
+  en: >-
+    I still don´t have enough trial data for
+
+    my skateboard. Could you help out?
+- id: 18913
+  en: >-
+    {:unk13 00 01 40 01}{:unk08 02 00 06}Try out the skateboard?
+
+    {:chardelay 33 00}Nah, I´m too busy.
+
+    {:chardelay 52 00}Sure, why not?
+- id: 19322
+  en: >-
+    Have you found any pages of Pooh´s book?
+
+    They´re scattered throughout the worlds.{:clear }I know how much Pooh and his friends mean
+
+    to you, too. Good luck finding them all!
+- id: 19323
+  en: >-
+    The town´s crawling with Heartless and
+
+    Nobodies! What´s going on!?{:clear }Leon and the others headed toward the
+
+    bailey. We´d better go find them!
+- id: 19324
+  en: >-
+    So that was Sephiroth.
+
+    He does look a bit like Cloud.{:clear }I´d like to tell Cloud, but we have to help the
+
+    others first.
+- id: 19566
+  en: These are notes about the human heart.
+- id: 19748
+  en: ''
+- id: 19860
+  en: ''
+- id: 19864
+  en: ''
+- id: 19871
+  en: ''
+- id: 19889
+  en: ''
+- id: 20173
+  en: >-
+    {:unk08 02 00 06}Battle Xemnas again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A1 00}I'm ready for a fight!
+- id: 20174
+  en: >-
+    {:unk08 02 00 06}Battle Xigbar again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A2 00}I'm ready for a fight!
+- id: 20175
+  en: >-
+    {:unk08 02 00 06}Battle Xaldin again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A3 00}I'm ready for a fight!
+- id: 20176
+  en: >-
+    {:unk08 02 00 06}Battle Vexen again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A4 00}I'm ready for a fight!
+- id: 20177
+  en: >-
+    {:unk08 02 00 06}Battle Lexaeus again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A5 00}I'm ready for a fight!
+- id: 20178
+  en: >-
+    {:unk08 02 00 06}Battle Zexion again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A6 00}I'm ready for a fight!
+- id: 20179
+  en: >-
+    {:unk08 02 00 06}Battle Saïx again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A7 00}I'm ready for a fight!
+- id: 20180
+  en: >-
+    {:unk08 02 00 06}Battle Axel again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A8 00}I'm ready for a fight!
+- id: 20181
+  en: >-
+    {:unk08 02 00 06}Battle Demyx again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A9 00}I'm ready for a fight!
+- id: 20182
+  en: >-
+    {:unk08 02 00 06}Battle Luxord again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AA 00}I'm ready for a fight!
+- id: 20183
+  en: >-
+    {:unk08 02 00 06}Battle Marluxia again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AB 00}I'm ready for a fight!
+- id: 20184
+  en: >-
+    {:unk08 02 00 06}Battle Larxene again, but be warned--
+
+    she's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AC 00}I'm ready for a fight!
+- id: 20185
+  en: >-
+    {:unk08 02 00 06}Battle Roxas again, but be warned--
+
+    he's stronger than before.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AD 00}I'm ready for a fight!
+- id: 20239
+  en: >-
+    This device controls various data.
+
+    The path is now unlocked.
+- id: 20337
+  en: >-
+    The path is unavailable.
+
+    You'll need to find another way.
+- id: 20358
+  en: It has been far too long,{:delay DC 00}{:clear } {:delay 1E 00}{:clear }"friend."
+- id: 20541
+  en: Use powerful attacks to open the valves! You'll need to open three at once!
+- id: 20543
+  en: >-
+    Defeat Vexen of Organization {XIII}!
+
+    Destroy his shield and attack him!
+
+    Don't stand on the emblem,
+
+    or he'll extract your data!
+- id: 20544
+  en: >-
+    Defeat Zexion of Organization {XIII}!
+
+    His mystical book is the key to this fight!
+- id: 20545
+  en: >-
+    Defeat Marluxia of Organization {XIII}!
+
+    Each attack with his scythe will decrease
+
+    the count above your head, and it's
+
+    game over when the count hits 0.
+- id: 20546
+  en: >-
+    Defeat Larxene of Organization {XIII}!
+
+    Although she duplicates herself, they are all
+
+    her real form! Attack two of the duplicates for
+
+    double the damage!
+- id: 20547
+  en: >-
+    Defeat Lexaeus of Organization {XIII}!
+
+    His strength will keep increasing throughout
+
+    the battle. Unleash counterattacks
+
+    to seal the deal!
+- id: 20600
+  en: Press {:icon button-triangle} to begin the duel! Attack and keep the enemy spinning!
+- id: 20693
+  en: When the count reaches 0, it's game over!
+- id: 20697
+  en: Help your friends stuck in the book!
+- id: 21388
+  en: '{:unk13 31 01 5A 00}{:unk08 01 00 05}Huh?'
+- id: 21389
+  en: '{:unk13 82 00 37 00}{:unk08 01 01 06}They came from that hole over there.'
+- id: 21390
+  en: >-
+    {:unk13 54 01 8C 00}{:unk08 01 00 05}I don't remember that being there before.
+
+    I wonder where it leads.
+- id: 21391
+  en: >-
+    {:unk06 02}{:unk13 A0 00 A0 00}{:unk08 03 01 05}We don't have time for that now!
+
+    We have to go after the King!
+- id: 21483
+  en: "{:delayandfade 07 B4} \nAccording to Merlin, Pooh lost his memory\nbecause the Heartless had stolen pages out\nof the book.\n \nDetermined to help his friend, Sora collects\nthe pages and dives into Pooh's world.\n \n \n \n \n"
+- id: 21484
+  en: "{:delayandfade 07 B4} \nSora returns to Merlin's house and is\ninformed by Cid that Ansem's computer has\nbeen found. With it, they may be able to get\ntheir hands on information regarding not\nonly Organization {XIII}, but Riku, Kairi, and\neven the King!\n \nUnable to contain their excitement, they\nrush off to the computer room.\n \n"
+- id: 21485
+  en: "{:delayandfade 07 B4} \nThanks to Tron, Sora and his friends are\nable to return to their world.\n \nHowever, the problem has yet to be solved.\n \n \n \n \n \n \n"
+- id: 21486
+  en: "{:delayandfade 07 B4} \nRetrieving the data containing Ansem's\nresearch won't be an easy feat. They can't\naccess anything without getting their\nhands on the password.\n \nAfter an extensive search of the lab...\n \n \n \n \n"
+- id: 21487
+  en: "{:delayandfade 07 B4} \nOne year ago, Sora and his friends defeated\nthe Heartless that was trying to get his hands on\nKingdom Hearts--Ansem, the Seeker of Darkness.\n \nHowever, that wasn't the real Ansem. He was\nnothing but a fake, using Ansem's name to do\nhis bidding.\n \n \n \n"
+- id: 21488
+  en: "{:delayandfade 07 B4} \nThe notorious leader of Organization {XIII} is none other than\nthe Nobody of Ansem's protégé Xehanort.\n \n \n \n \n \n \n \n \n"
+- id: 21489
+  en: "{:delayandfade 07 B4} \nThe time has come for this to end, once and for all.\n \nXehanort can't get away with this any longer!\n \n \n \n \n \n \n \n"
+- id: 21490
+  en: "{:delayandfade 07 B4} \nWhy on earth would the Heartless from\nTron's world be here? Sora and his friends\ncan hardly contain their surprise.\n \nAccording to Yuffie, it's all due to the\nlaunch of the MCP's evil operation.\n \n \n \n \n"
+- id: 21491
+  en: "{:delayandfade 07 B4} \nOn top of everything, they've lost\ncommunication with Tron. Their only hope\nto restore the world's peace is through\nCid's MCP eradication program.\n \n \n \n \n \n \n"
+- id: 21492
+  en: "{:delayandfade 07 B4} \nNow that they've got that figured out,\nthere's only one thing to do!\n \nLeaving the fate of the outside world in\nthe hands of Aerith and her friends, Sora\nheads back into the computer to see Tron.\n \n \n \n \n"
+- id: 21493
+  en: "{:delayandfade 07 B4} \nAs promised, Sora and his friends relay\nSephiroth's message. As Cloud's gaze\nfalls to the ground, with a single nod,\nhe utters:\n \n\"So I guess it's time we settled this.\"\n \n \n \n \n"
+- id: 21565
+  en: The commands are stuck in a book! Find the right page!
+- id: 21566
+  en: The commands have been unlocked!
+- id: 21623
+  en: Find and defeat its real form before it's too late!
+- id: 0x4ECD
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    The World That Never Was.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A1 00}Visit!
+- id: 0x4ECE
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    The Land Of Dragons.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A2 00}Visit!
+- id: 0x4ECF
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Beast's Castle.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A3 00}Visit!
+- id: 0x4ED0
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Halloween Town.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A4 00}Visit!
+- id: 0x4ED1
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Agrabah.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A5 00}Visit!
+- id: 0x4ED2
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Olympus Coliseum.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A6 00}Visit!
+- id: 0x4ED3
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Pride Lands.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A7 00}Visit!
+- id: 0x4ED4
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Twilight Town.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A8 00}Visit!
+- id: 0x4ED5
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Hollow Bastion.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A9 00}Visit!
+- id: 0x4ED6
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Port Royal.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AA 00}Visit!
+- id: 0x4ED7
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Disney Castle.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AB 00}Visit!
+- id: 0x4ED8
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Space Paranoids.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AC 00}Visit!
+- id: 0x4ED9
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Simulated Twilight Town.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AD 00}Visit!
+- id: 0x4EDA
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    Radiant Garden.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay A9 00}Visit!
+- id: 0x4F0E
+  en: >-
+    {:unk08 02 00 06}This portal leads to--
+
+    The World of Nothing.
+
+    {:chardelay 33 00}Not right now.
+
+    {:chardelay AE 00}Visit!
+- id: 0x4F0F
+  en: >-
+    Welcome to the Garden
+    
+    of Assemblage Mod!
