@@ -1586,11 +1586,6 @@ if Place == 0x050A and Events(0x39,0x39,0x39) then
 		WriteInt(Point1,236) --Shenzi & Ed Dead
 	end
 end--]]
---Music Change - Scar
-if Place == 0x0E0A --[[and Platform == 0--]] then
-	Spawn('Short',0x05,0x00C,0x96) --Squirming Evil (Removed in PC Version)
-	Spawn('Short',0x05,0x00E,0x96)
-end
 end
 
 function TT()
