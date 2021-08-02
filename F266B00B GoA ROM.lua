@@ -1,15 +1,18 @@
 --ROM Version
---Last Update: LuaFrontend Support
---To Do: Check if stuff crashes after STT Beam or Sanctuary
+--Last Update: Minor Optimizations
+
+LUAGUI_NAME = 'GoA Rando ROM Build'
+LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
+LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.52.7'
+local VersionNum = 'GoA Version 1.52.8'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
 	end
 	print(VersionNum)
-	Platform = 'PS2'
+	Platform = 0
 	Now = 0x032BAE0 --Current Location
 	Sve = 0x1D5A970 --Saved Location
 	BGM = 0x0347D34 --Background Music
@@ -48,7 +51,7 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		ConsolePrint('LuaFrontend is Outdated. Things might not work properly.',2)
 	end
 	ConsolePrint(VersionNum,0)
-	Platform = 'PC'
+	Platform = 1
 	Now = 0x0714DB8 - 0x56450E
 	Sve = 0x2A09C00 - 0x56450E
 	BGM = 0x0AB8504 - 0x56450E
@@ -122,7 +125,7 @@ end
 function Spawn(Type,Subfile,Offset,Value)
 local Subpoint = ARD + 0x08 + 0x10*Subfile
 local Address
-if Platform == 'PS2' and ReadInt(ARD) == 0x01524142 and Subfile <= ReadInt(ARD+4) then
+if Platform == 0 and ReadInt(ARD) == 0x01524142 and Subfile <= ReadInt(ARD+4) then
 	--Exclusions on Crash Spots in PCSX2-EX
 	Address = ReadInt(Subpoint) + Offset
 	if Type == 'Short' then
@@ -134,7 +137,7 @@ if Platform == 'PS2' and ReadInt(ARD) == 0x01524142 and Subfile <= ReadInt(ARD+4
 	elseif Type == 'String' then
 		WriteString(Address,Value)
 	end
-elseif Platform == 'PC' then
+elseif Platform == 1 then
 	local x = ARD&0xFFFFFF000000
 	if ENGINE_VERSION < 5.0 then --LuaBackend
 		if ReadIntA(ARD) == 0x01524142 and Subfile <= ReadIntA(ARD+4) then
@@ -169,7 +172,7 @@ end
 end
 
 function BitOr(Address,Bit,Abs)
-if Abs and Platform == 'PC' then
+if Abs and Platform == 1 then
 	if ENGINE_VERSION < 5.0 then
 		WriteByteA(Address,ReadByte(Address)|Bit)
 	else
@@ -181,7 +184,7 @@ end
 end
 
 function BitNot(Address,Bit,Abs)
-if Abs and Platform == 'PC' then
+if Abs and Platform == 1 then
 	if ENGINE_VERSION < 5.0 then
 		WriteByteA(Address,ReadByte(Address)&~Bit)
 	else
@@ -193,7 +196,7 @@ end
 end
 
 function Faster(Toggle)
-if Platform == 'PS2' then
+if Platform == 0 then
 	if Toggle then
 		WriteByte(0x0349E1C,0x00) --Faster Speed
 		WriteByte(0x0349E20,0x00)
@@ -201,7 +204,7 @@ if Platform == 'PS2' then
 		WriteByte(0x0349E1C,0x01) --Normal Speed
 		WriteByte(0x0349E20,0x01)
 	end
-elseif Platform == 'PC' then
+elseif Platform == 1 then
 	if Toggle then
 		WriteFloat(0x07151D4 - 0x56450E,2) --Faster Speed
 	else
@@ -238,9 +241,9 @@ if true then --Define current values for common addresses
 	Evt    = ReadShort(Now+0x08)
 	PrevPlace = ReadShort(Now+0x30)
 	MSN    = MSNLoad + (ReadInt(MSNLoad+4)+1) * 0x10
-	if Platform == 'PS2' then
+	if Platform == 0 then
 		ARD = ReadInt(0x034ECF4) --Base ARD Address
-	elseif Platform == 'PC' then
+	elseif Platform == 1 then
 		ARD = ReadLong(0x2A0CEE8 - 0x56450E) --Base ARD Address
 		if GetHertz() < 240 then
 			SetHertz(240)
@@ -270,7 +273,7 @@ end
 
 function NewGame()
 --Before New Game
-if Platform == 'PC' and ReadByte(Sys3+0x116DB) == 0x19 then --Change Form's Icons in PC From Analog Stick
+if Platform == 1 and ReadByte(Sys3+0x116DB) == 0x19 then --Change Form's Icons in PC From Analog Stick
 	WriteByte(Sys3+0x116DB,0x3B) --Valor
 	WriteByte(Sys3+0x116F3,0x3B) --Wisdom
 	WriteByte(Sys3+0x1170B,0x3B) --Limit
@@ -282,7 +285,7 @@ end
 if Place == 0x0102 and Events(0x34,0x34,0x34) then --Opening Cutscene
 	WriteShort(Save+0x03D0,0x01) --Station of Serenity MAP (Dream Weapons)
 	WriteShort(Save+0x03D4,0x01) --Station of Serenity EVT
-	if Platform == 'PS2' then
+	if Platform == 0 then
 		Warp(0x02,0x20,0x32,0x01,0x00,0x01) --Not warping here on PS2 causes crash later
 	end
 end
@@ -426,7 +429,7 @@ if ReadShort(Save+0x06AC) == 0x02 then
 end
 --World Map -> Garden of Assemblage
 if Place == 0x000F then
-	local WarpDoor
+	local WarpDoor = false
 	if Door == 0x0C then --The World that Never Was
 		WarpDoor = 0x15
 	elseif Door == 0x03 then --Land of Dragons
@@ -463,7 +466,7 @@ if Place == 0x000F then
 end
 --Battle Level
 if true then
-	local Bitmask, Visit
+	local Bitmask, Visit = false
 	if World == 0x02 then --Twilight Town & Simulated Twilight Town
 		Visit = ReadByte(Save+0x3FF5)
 		if Visit == 1 or Visit == 2 or Visit == 3 then
@@ -559,10 +562,10 @@ end
 --Fix Genie Crash
 if true then --No Valor, Wisdom, Master, or Final
 	local CurSubmenu
-	if Platform == 'PS2' then
+	if Platform == 0 then
 		CurSubmenu = ReadInt(Menu2)
 		CurSubmenu = ReadByte(CurSubmenu)
-	elseif Platform == 'PC' then
+	elseif Platform == 1 then
 		CurSubmenu = ReadLong(Menu2)
 		if ENGINE_VERSION < 5.0 then
 			CurSubmenu = ReadByteA(CurSubmenu)
@@ -693,7 +696,7 @@ end
 --Donald's Staff Active Abilities
 if true then
 	local Staff = ReadShort(Save+0x2604)
-	local Ability
+	local Ability = false
 	if Staff == 0x04B then --Mage's Staff
 		Ability = 0x13F36
 	elseif Staff == 0x094 then --Hammer Staff
@@ -763,7 +766,7 @@ end
 --Goofy's Shield Active Abilities
 if true then
 	local Shield = ReadShort(Save+0x2718)
-	local Ability --Safeguard if none of the above (i.e. Main Menu)
+	local Ability = false
 	if Shield == 0x031 then --Knight's Shield
 		Ability = 0x13FE6
 	elseif Shield == 0x08B then --Adamant Shield
@@ -1117,7 +1120,7 @@ if Place == 0x1A04 and ReadByte(Save+0x1D3E) > 0 then
 end
 --Mrs. Potts Teleport in Lantern Minigame
 if Place == 0x0C05 and Events(Null,0x16,0x02) then
-	if Platform == 'PS2' then --PC Address is Currently Unknown
+	if Platform == 0 then --PC Address is Currently Unknown
 		local PottsLocAddress = 0x1ABB7D0
 		if ReadFloat(Gauge1) == 0 then --Cogsworth Out of Stamina
 			if not PottsCoordinate then
@@ -1584,7 +1587,7 @@ if Place == 0x050A and Events(0x39,0x39,0x39) then
 	end
 end--]]
 --Music Change - Scar
-if Place == 0x0E0A --[[and Platform == 'PS2'--]] then
+if Place == 0x0E0A --[[and Platform == 0--]] then
 	Spawn('Short',0x05,0x00C,0x96) --Squirming Evil (Removed in PC Version)
 	Spawn('Short',0x05,0x00E,0x96)
 end
@@ -2231,15 +2234,15 @@ end
 --Marluxia HUD Pop-Up
 if Place == 0x2604 and ReadInt(CutNow) == 0x7A then
 	if Events(0x91,0x91,0x91) then --AS
-		if Platform == 'PS2' and ReadShort(0x1C58FE0) ~= 0x923 then
+		if Platform == 0 and ReadShort(0x1C58FE0) ~= 0x923 then
 			WriteByte(Cntrl,0x00)
-		elseif Platform == 'PC' and ReadShort(0x29ED484 - 0x56450E) ~= 0x923 then
+		elseif Platform == 1 and ReadShort(0x29ED484 - 0x56450E) ~= 0x923 then
 			WriteByte(Cntrl,0x00)
 		end
 	elseif Events(0x96,0x96,0x96) then --Data
-		if Platform == 'PS2' and ReadShort(0x1C59114) ~= 0x923 then
+		if Platform == 0 and ReadShort(0x1C59114) ~= 0x923 then
 			WriteByte(Cntrl,0x00)
-		elseif Platform == 'PC' and ReadShort(0x29ED5C4 - 0x56450E) ~= 0x923 then
+		elseif Platform == 1 and ReadShort(0x29ED5C4 - 0x56450E) ~= 0x923 then
 			WriteByte(Cntrl,0x00)
 		end
 	end
@@ -2739,9 +2742,9 @@ if Place == 0x2202 and Events(0x9D,0x9D,0x9D) then
 	end
 	if ReadByte(Save+0x1CFB)&0x02 == 0x02 then
 		Faster(true)
-	elseif Platform == 'PS2' then
+	elseif Platform == 0 then
 		Faster(false)
-	elseif Platform == 'PC' and ReadFloat(0x07151D4) > 1 then --Exclude death cutscene
+	elseif Platform == 1 and ReadFloat(0x07151D4) > 1 then --Exclude death cutscene
 		Faster(false)
 	end
 end
@@ -2907,7 +2910,7 @@ elseif Place == 0x1512 and Events(0x71,0x71,0x71) then --Data Roxas
 	WriteByte(Save+0x1CFF,0) --Reset TT & STT Flag
 end
 --Music Change - Final Fights
-if ReadShort(Save+0x03D6) == 15 --[[and Platform == 'PS2'--]] then
+if ReadShort(Save+0x03D6) == 15 --[[and Platform == 0--]] then
 	if Place == 0x1B12 then --Part I
 		Spawn('Short',0x06,0x0A4,0x09C) --Guardando nel buio
 		Spawn('Short',0x06,0x0A6,0x09C)
