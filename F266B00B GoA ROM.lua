@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: OC Demyx Bugfix & TT/STT BGN Code Optimization
+--Last Update: Marluxia HUD Bugfix
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
@@ -2231,13 +2231,13 @@ if Place == 0x2604 and ReadInt(CutNow) == 0x7A then
 	if Events(0x91,0x91,0x91) then --AS
 		if Platform == 0 and ReadShort(0x1C58FE0) ~= 0x923 then
 			WriteByte(Cntrl,0x00)
-		elseif Platform == 1 and ReadShort(0x29ED484 - 0x56450E) ~= 0x923 then
+		elseif Platform == 1 and ReadShort(0x29ED460 - 0x56450E) ~= 0x923 then
 			WriteByte(Cntrl,0x00)
 		end
 	elseif Events(0x96,0x96,0x96) then --Data
 		if Platform == 0 and ReadShort(0x1C59114) ~= 0x923 then
 			WriteByte(Cntrl,0x00)
-		elseif Platform == 1 and ReadShort(0x29ED5C4 - 0x56450E) ~= 0x923 then
+		elseif Platform == 1 and ReadShort(0x29ED594 - 0x56450E) ~= 0x923 then
 			WriteByte(Cntrl,0x00)
 		end
 	end
