@@ -6,14 +6,13 @@ Spawn "m_11"
 Spawn "m_70"
 
 Program 0x01
+Unk1d 4
 MapVisibility 0x00000001 0x00000000
 AreaSettings 32 -1
-	SetUnk05 0x1
 	SetJump Type 1 World EH Area 18 Entrance 51 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 34 -1
-	SetUnk05 0x1
 	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 103 FadeType -1
 	SetPartyMenu 0
 
@@ -22,14 +21,13 @@ Spawn "m_12"
 Spawn "b_01"
 
 Program 0x02
+Unk1d 4
 MapVisibility 0x00000001 0x00000000
 AreaSettings 32 -1
-	SetUnk05 0x1
 	SetJump Type 1 World MU Area 6 Entrance 1 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 34 -1
-	SetUnk05 0x1
 	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 107 FadeType -1
 	SetPartyMenu 0
 
@@ -38,14 +36,13 @@ Spawn "m_12"
 Spawn "b_02"
 
 Program 0x03
+Unk1d 4
 MapVisibility 0x00000001 0x00000000
 AreaSettings 32 -1
-	SetUnk05 0x1
 	SetJump Type 1 World BB Area 0 Entrance 4 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 34 -1
-	SetUnk05 0x1
 	SetJump Type 2 World BB Area 0 Entrance 0 LocalSet 98 FadeType -1
 	SetPartyMenu 0
 
@@ -54,14 +51,13 @@ Spawn "m_12"
 Spawn "b_03"
 
 Program 0x07
+Unk1d 4
 MapVisibility 0x00000001 0x00000000
 AreaSettings 32 -1
-	SetUnk05 0x1
 	SetJump Type 1 World LK Area 2 Entrance 1 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 34 -1
-	SetUnk05 0x1
 	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 109 FadeType -1
 	SetPartyMenu 0
 
@@ -70,14 +66,13 @@ Spawn "m_12"
 Spawn "b_07"
 
 Program 0x08
+Unk1d 4
 MapVisibility 0x00000001 0x00000000
 AreaSettings 32 -1
-	SetUnk05 0x1
 	SetJump Type 1 World TT Area 40 Entrance 1 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 34 -1
-	SetUnk05 0x1
 	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 211 FadeType -1
 	SetPartyMenu 0
 
@@ -86,14 +81,13 @@ Spawn "m_12"
 Spawn "b_08"
 
 Program 0x09
+Unk1d 4
 MapVisibility 0x00000001 0x00000000
 AreaSettings 32 -1
-	SetUnk05 0x1
 	SetJump Type 1 World HB Area 18 Entrance 2 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 34 -1
-	SetUnk05 0x1
 	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 140 FadeType -1
 	SetPartyMenu 0
 
@@ -102,14 +96,13 @@ Spawn "m_12"
 Spawn "b_09"
 
 Program 0x0A
+Unk1d 4
 MapVisibility 0x00000001 0x00000000
 AreaSettings 32 -1
-	SetUnk05 0x1
 	SetJump Type 1 World CA Area 13 Entrance 1 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 34 -1
-	SetUnk05 0x1
 	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 111 FadeType -1
 	SetPartyMenu 0
 
@@ -118,14 +111,13 @@ Spawn "m_12"
 Spawn "b_10"
 
 Program 0x0D
+Unk1d 4
 MapVisibility 0x00000001 0x00000000
 AreaSettings 32 -1
-	SetUnk05 0x1
 	SetJump Type 1 World TT Area 22 Entrance 1 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 34 -1
-	SetUnk05 0x1
 	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 113 FadeType -1
 	SetPartyMenu 0
 
@@ -135,14 +127,13 @@ Spawn "m_70"
 Spawn "b_13"
 
 Program 0x0F
+Unk1d 4
 MapVisibility 0x00000001 0x00000000
 AreaSettings 32 -1
-	SetUnk05 0x1
 	SetJump Type 1 World HB Area 26 Entrance 50 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 34 -1
-	SetUnk05 0x1
 	SetJump Type 1 World EH Area 27 Entrance 0 LocalSet 0 FadeType -1
 	SetPartyMenu 1
 
