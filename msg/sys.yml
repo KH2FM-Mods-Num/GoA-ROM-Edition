@@ -16,6 +16,14 @@
     use the Drive Command to change
     
     into Anti Form.
+- id: 0x0A71
+  en: Garden
+- id: 0x0A80
+  en: Garden
+- id: 0x0A82
+  en: Return to the Garden of Assemblage?
+- id: 0x3859
+  en: Return to the Garden of Assemblage?
 - id: 0x4E83
   en: Dodge Roll LV1
 - id: 0x4E85
@@ -35,11 +43,9 @@
     A form specializing in Limit attacks.
     
     {:color #F0F00080}Drive points consumed: 4{:reset}
-- id: 0x0A71
-  en: Garden
-- id: 0x0A80
-  en: Garden
-- id: 0x0A82
-  en: Return to the Garden of Assemblage?
-- id: 0x3859
-  en: Return to the Garden of Assemblage?
+- id: 0x4EF6
+  en: Ragnarok
+- id: 0x4EFE
+  en: Sonic Blade
+- id: 0x4F01
+  en: Ars Arcanum
