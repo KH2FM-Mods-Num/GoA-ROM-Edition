@@ -53,7 +53,7 @@ Changes:
 
 
 
-* Download the kh2pcpatch from above or by clicking [here](https://github.com/o0DemonBoy0o/GoA-ROM-Edition/blob/main/GoA-ROM-PC.kh2pcpatch)
+* Download the kh2pcpatch from above or by clicking [here](https://github.com/o0DemonBoy0o/GoA-ROM-Edition/raw/main/GoA-ROM-PC.kh2pcpatch)
 * Download the Goa-ROM-Edition luascript from Num's main repo [here](https://github.com/KH2FM-Mods-Num/GoA-ROM-Edition/releases)
 
 
