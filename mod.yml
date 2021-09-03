@@ -68,9 +68,9 @@ assets:
   source:
   - name: itempic/Frontier of Ultima.png
 - name: itempic/item-299.imd #FAKE
-  method: imd
+  method: copy
   source:
-  - name: itempic/FAKE_new.png
+  - name: itempic/FAKE_new.imd
 - name: itempic/item-324.imd #Fire
   method: imd
   source:
