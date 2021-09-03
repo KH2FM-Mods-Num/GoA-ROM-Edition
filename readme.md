@@ -36,9 +36,9 @@ Changes:
 		- This was done by sacrificing oathkeeper's TR model.
 		- Oathkeeper will look slightly different in TR, but it's nothing too noticable.
 		- Benefit to this is it made FAKE far more stable and is no longer a 100% chance to crash 
-		 if swappedin/out in a drive form. (Chance to crash is still there but very rare.)
+		 if swapped in/out while in a drive form. (Chance to crash is still there but very rare.)
 	- Edited msg patches.
-		- This was done so that the menus are no longer are pumanantly stuck to displaying Xbox controller prompts.
+		- This was done so that the menus are no longer are permanantly stuck to displaying Xbox controller prompts.
 	- Added All-in-One Icons
 		- This includes Televo Drive and Magic Icons.
 	- Removed hb26.map replacement.
