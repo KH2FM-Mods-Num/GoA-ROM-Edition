@@ -46,6 +46,7 @@ Changes:
 	- Created a custom kh2pcpatch
 		- This custom patch is for the new PC Mods Manager setup and includes 
 		  visual changes that can't be done with just the Mods Manger alone.
+		- HD GoA World icons. 
 		- HD Textures for FAKE, Detection Saber, and Edge of Ultima.
 		- Fixed sound and visual effects for Detection Saber and Edge of Ultima.
 		- Custom GoA image for Space Paranoids computer terminals when choosing to return.
