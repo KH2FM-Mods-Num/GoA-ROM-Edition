@@ -3,7 +3,7 @@ Items:
 - Id: 81 #FAKE
   Type: Keyblade
   Flag0: 0
-  Flag1: 1
+  Flag1: 52
   Rank: C
   StatEntry: 116
   Name: 34276
@@ -168,6 +168,97 @@ Items:
   Picture: 20
   Icon1: 0
   Icon2: 26
+#Magic
+- Id: 21
+  Type: Magic
+  Flag0: 0
+  Flag1: 0
+  Rank: C
+  StatEntry: 0
+  Name: 34356
+  Description: 34357
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 49
+  Slot: 20
+  Picture: 324
+  Icon1: 0
+  Icon2: 8
+- Id: 22
+  Type: Magic
+  Flag0: 0
+  Flag1: 1
+  Rank: C
+  StatEntry: 0
+  Name: 34358
+  Description: 34359
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 51
+  Slot: 21
+  Picture: 325
+  Icon1: 0
+  Icon2: 8
+- Id: 23
+  Type: Magic
+  Flag0: 0
+  Flag1: 2
+  Rank: C
+  StatEntry: 0
+  Name: 34360
+  Description: 34361
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 50
+  Slot: 22
+  Picture: 326
+  Icon1: 0
+  Icon2: 8
+- Id: 24
+  Type: Magic
+  Flag0: 0
+  Flag1: 3
+  Rank: C
+  StatEntry: 0
+  Name: 34362
+  Description: 34363
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 52
+  Slot: 23
+  Picture: 327
+  Icon1: 0
+  Icon2: 8
+- Id: 87
+  Type: Magic
+  Flag0: 0
+  Flag1: 4
+  Rank: C
+  StatEntry: 0
+  Name: 34364
+  Description: 34365
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 174
+  Slot: 79
+  Picture: 328
+  Icon1: 0
+  Icon2: 8
+- Id: 88
+  Type: Magic
+  Flag0: 0
+  Flag1: 5
+  Rank: C
+  StatEntry: 0
+  Name: 34366
+  Description: 34367
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 177
+  Slot: 80
+  Picture: 329
+  Icon1: 0
+  Icon2: 8
 #Abilities
 - Id: 94
   Type: Ability
