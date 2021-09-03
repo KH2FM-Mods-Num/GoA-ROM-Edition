@@ -1,11 +1,11 @@
-- id: 0x0433
+- id: 1075
   en: Garden
-- id: 0x0437
+- id: 1079
   en: >-
     Transports current user to
     
     the Garden of Assemblage.
-- id: 0x0443
+- id: 1091
   en: >-
     {:unk08 02 00 06}It's an Absent Silhouette, a shadowy presence
 
@@ -14,7 +14,7 @@
     {:chardelay 33 00}Who cares?
 
     {:chardelay A1 00}Let's check it out!
-- id: 0x0444
+- id: 1092
   en: >-
     {:unk08 02 00 06}Battle Larxene again, but be warned--
 
@@ -23,4 +23,3 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A1 00}I'm ready for a fight!
-    

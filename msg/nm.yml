@@ -1,4 +1,4 @@
-- id: 0x49E6
+- id: 18918
   en: >-
     {:unk08 02 00 06}It's an Absent Silhouette, a shadowy presence
 
@@ -7,7 +7,7 @@
     {:chardelay 33 00}Who cares?
 
     {:chardelay A1 00}Let's check it out!
-- id: 0x49E7
+- id: 18919
   en: >-
     {:unk08 02 00 06}Battle Vexen again, but be warned--
 
