@@ -32,11 +32,6 @@ Changes:
 
 
 - Changes by DA
-	- FAKE now has a custom model.
-		- This was done by sacrificing oathkeeper's TR model.
-		- Oathkeeper will look slightly different in TR, but it's nothing too noticable.
-		- Benefit to this is it made FAKE far more stable and is no longer a 100% chance to crash 
-		 if swapped in/out while in a drive form. (Chance to crash is still there but very rare.)
 	- Edited msg patches.
 		- This was done so that the menus are no longer are permanantly stuck to displaying Xbox controller prompts.
 	- Added All-in-One Icons
@@ -47,7 +42,7 @@ Changes:
 		- This custom patch is for the new PC Mods Manager setup and includes 
 		  visual changes that can't be done with just the Mods Manger alone.
 		- HD GoA World icons. 
-		- HD Textures for FAKE, Detection Saber, and Edge of Ultima.
+		- HD Textures Detection Saber, and Edge of Ultima.
 		- Fixed sound and visual effects for Detection Saber and Edge of Ultima.
 		- Custom GoA image for Space Paranoids computer terminals when choosing to return.
 
@@ -66,4 +61,3 @@ Credits:
 - Xaddgx for Detection Saber and Frontier of Ultima pictures
 - OpenKH and Plando Dev Server for documentations
 - Num for main github source.
-- DA for custom FAKE model and picture.
