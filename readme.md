@@ -32,6 +32,10 @@ Changes:
 
 
 - Changes by DA
+	- New model for FAKE
+		- FAKE now looks like Kingdom Key D visually.
+		- This change was done to increase stability so that changing FAKE while in a drive form no longer crashes the game.
+		  (Crashing may still occour, though rarely.)
 	- Edited msg patches.
 		- This was done so that the menus are no longer are permanantly stuck to displaying Xbox controller prompts.
 	- Added All-in-One Icons
@@ -42,7 +46,7 @@ Changes:
 		- This custom patch is for the new PC Mods Manager setup and includes 
 		  visual changes that can't be done with just the Mods Manger alone.
 		- HD GoA World icons. 
-		- HD Textures Detection Saber, and Edge of Ultima.
+		- HD Textures Detection Saber, Edge of Ultima, and FAKE.
 		- Fixed sound and visual effects for Detection Saber and Edge of Ultima.
 		- Custom GoA image for Space Paranoids computer terminals when choosing to return.
 
@@ -59,5 +63,6 @@ Credits:
 - Tomk1004 for Detection Saber model
 - Vlad for Frontier of Ultima model
 - Xaddgx for Detection Saber and Frontier of Ultima pictures
+- DA for Kingdom Key D picture for FAKE.
 - OpenKH and Plando Dev Server for documentations
 - Num for main github source.
