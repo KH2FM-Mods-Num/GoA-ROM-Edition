@@ -13,11 +13,11 @@ assets:
   method: copy
   source:
   - name: obj/W_EX010_Z0.mdlx
-#FAKE (not working right now)
-#- name: obj/W_EX010_10_WI.mdlx
-#  method: copy
-#  source:
-#  - name: obj/W_EX010_10_WI.mdlx
+#FAKE (Kingdom Key D)
+- name: obj/W_EX010_WI.mdlx
+  method: copy
+  source:
+  - name: obj/W_EX010_WI.mdlx
 #Pictures
 - name: itempic/item-000.imd #Unused Items
   method: imd
@@ -68,9 +68,9 @@ assets:
   source:
   - name: itempic/Frontier of Ultima.png
 - name: itempic/item-299.imd #FAKE
-  method: imd
+  method: copy
   source:
-  - name: itempic/FAKE.png
+  - name: itempic/FAKE_new.imd
 - name: itempic/item-324.imd #Fire
   method: imd
   source:
@@ -129,11 +129,11 @@ assets:
     source:
     - name: ItemList.yml
       type: item
-#  - name: went
-#    type: list
-#    method: copy
-#    source:
-#      - name: went.bin
+  - name: went
+    type: list
+    method: copy
+    source:
+      - name: went.bin
 #Relocate Twilight Thorn HP Bonus & Unequip Auto Limit
 - name: 00battle.bin
   method: binarc
