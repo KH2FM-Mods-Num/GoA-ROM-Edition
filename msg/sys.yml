@@ -1,51 +1,49 @@
-- id: 0x01E9
-  en: Anti Form
-- id: 0x0649
+﻿- id: 1609
   en: >-
     Using the Keyblade's true power,
     
     use the Drive Command to change
     
     into Final Form.
-- id: 0x064A
-  en: Anti Form
-- id: 0x064B
+- id: 1611
   en: >-
     Using the darkness in Sora's heart,
     
     use the Drive Command to change
     
     into Anti Form.
-- id: 0x0A71
+- id: 2673
   en: Garden
-- id: 0x0A80
+- id: 2688
   en: Garden
-- id: 0x0A82
+- id: 2690
   en: Return to the Garden of Assemblage?
-- id: 0x3859
+- id: 14425
   en: Return to the Garden of Assemblage?
-- id: 0x4E83
+- id: 20099
   en: Dodge Roll LV1
-- id: 0x4E85
+- id: 20101
   en: Dodge Roll LV2
-- id: 0x4E87
+- id: 20103
   en: Dodge Roll LV3
-- id: 0x4E8D
+- id: 20105
+  en: Dodge Roll MAX
+- id: 20109
   en: Sonic Blade
-- id: 0x4E8F
+- id: 20111
   en: Ars Arcanum
-- id: 0x4E93
+- id: 20115
   en: Ragnarok
-- id: 0x4EA0
+- id: 20128
   en: >-
     Limit Form Status.
-    
+
     A form specializing in Limit attacks.
-    
+
     {:color #F0F00080}Drive points consumed: 4{:reset}
-- id: 0x4EF6
+- id: 20214
   en: Ragnarok
-- id: 0x4EFE
+- id: 20222
   en: Sonic Blade
-- id: 0x4F01
+- id: 20225
   en: Ars Arcanum

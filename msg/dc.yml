@@ -1,4 +1,4 @@
-- id: 0x4F6B
+- id: 20331
   en: >-
     {:unk08 02 00 06}It's an Absent Silhouette, a shadowy presence
 
@@ -7,7 +7,7 @@
     {:chardelay 33 00}Who cares?
 
     {:chardelay A2 00}Let's check it out!
-- id: 0x4F71
+- id: 20337
   en: >-
     {:unk08 02 00 06}Battle Marluxia again, but be warned--
 

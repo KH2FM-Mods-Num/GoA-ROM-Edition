@@ -1,4 +1,4 @@
-- id: 0x4ECD
+- id: 20173
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -7,7 +7,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A1 00}Visit!
-- id: 0x4ECE
+- id: 20174
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -16,7 +16,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A2 00}Visit!
-- id: 0x4ECF
+- id: 20175
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -25,7 +25,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A3 00}Visit!
-- id: 0x4ED0
+- id: 20176
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -34,7 +34,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A4 00}Visit!
-- id: 0x4ED1
+- id: 20177
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -43,7 +43,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A5 00}Visit!
-- id: 0x4ED2
+- id: 20178
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -52,7 +52,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A6 00}Visit!
-- id: 0x4ED3
+- id: 20179
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -61,7 +61,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A7 00}Visit!
-- id: 0x4ED4
+- id: 20180
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -70,7 +70,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A8 00}Visit!
-- id: 0x4ED5
+- id: 20181
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -79,7 +79,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A9 00}Visit!
-- id: 0x4ED6
+- id: 20182
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -88,7 +88,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay AA 00}Visit!
-- id: 0x4ED7
+- id: 20183
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -97,7 +97,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay AB 00}Visit!
-- id: 0x4ED8
+- id: 20184
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -106,7 +106,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay AC 00}Visit!
-- id: 0x4ED9
+- id: 20185
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -115,7 +115,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay AD 00}Visit!
-- id: 0x4EDA
+- id: 20186
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -124,7 +124,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A9 00}Visit!
-- id: 0x4F0E
+- id: 20238
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -133,7 +133,7 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay AE 00}Visit!
-- id: 0x4F0F
+- id: 20239
   en: >-
     Welcome to the Garden
     
