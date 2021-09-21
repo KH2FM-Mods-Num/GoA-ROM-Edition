@@ -100,6 +100,19 @@ assets:
   method: copy
   source:
   - name: hb26.map
+#GoA Picture in SP Terminal
+- name: file/jp/tr_tm.2ld
+  multi:
+  - name: file/us/tr_tm.2ld
+  - name: file/uk/tr_tm.2ld
+  - name: file/it/tr_tm.2ld
+  - name: file/sp/tr_tm.2ld
+  - name: file/gr/tr_tm.2ld
+  - name: file/fr/tr_tm.2ld
+  - name: file/fm/tr_tm.2ld
+  method: copy
+  source:
+  - name: tr_tm.2ld
 #Implement New Pictures and Stats
 - name: 03system.bin
   method: binarc
