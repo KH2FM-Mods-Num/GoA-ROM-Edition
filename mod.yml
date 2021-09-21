@@ -67,14 +67,46 @@ assets:
   method: imd
   source:
   - name: itempic/DUMMY 16 Item.png
+- name: itempic/item-221.imd #Lamp Charm
+  method: copy
+  source:
+  - name: itempic/Lamp Charm.imd
+- name: itempic/item-222.imd #Ukulele Charm
+  method: copy
+  source:
+  - name: itempic/Ukulele Charm.imd
+- name: itempic/item-223.imd #Feather Charm
+  method: copy
+  source:
+  - name: itempic/Feather Charm.imd
+- name: itempic/item-224.imd #Baseball Charm
+  method: copy
+  source:
+  - name: itempic/Baseball Charm.imd
+- name: itempic/item-266.imd #Valor Form
+  method: copy
+  source:
+  - name: itempic/Valor Form.imd
+- name: itempic/item-267.imd #Wisdom Form
+  method: copy
+  source:
+  - name: itempic/Wisdom Form.imd
+- name: itempic/item-268.imd #Master Form
+  method: copy
+  source:
+  - name: itempic/Master Form.imd
 - name: itempic/item-269.imd #Final Form
-  method: imd
+  method: copy
   source:
-  - name: itempic/Final Form.png
+  - name: itempic/Final Form.imd
 - name: itempic/item-271.imd #Anti Form
-  method: imd
+  method: copy
   source:
-  - name: itempic/Anti Form.png
+  - name: itempic/Anti Form.imd
+- name: itempic/item-320.imd #Limit Form
+  method: copy
+  source:
+  - name: itempic/Limit Form.imd
 - name: itempic/item-297.imd #Detection Saber
   method: imd
   source:
@@ -87,6 +119,46 @@ assets:
   method: copy
   source:
   - name: itempic/FAKE_new.imd
+- name: itempic/item-242.imd #Promise Charm
+  method: copy
+  source:
+  - name: itempic/Promise Charm.imd
+- name: itempic/item-321.imd #Proof of Connection
+  method: copy
+  source:
+  - name: itempic/Proof of Connection.imd
+- name: itempic/item-322.imd #Proof of Nonexistence
+  method: copy
+  source:
+  - name: itempic/Proof of Nonexistence.imd
+- name: itempic/item-323.imd #Proof of Peace
+  method: copy
+  source:
+  - name: itempic/Proof of Peace.imd
+- name: itempic/item-324.imd #Fire
+  method: imd
+  source:
+  - name: itempic/Fire.png
+- name: itempic/item-325.imd #Blizzard
+  method: imd
+  source:
+  - name: itempic/Blizzard.png
+- name: itempic/item-326.imd #Thunder
+  method: imd
+  source:
+  - name: itempic/Thunder.png
+- name: itempic/item-327.imd #Cure
+  method: imd
+  source:
+  - name: itempic/Cure.png
+- name: itempic/item-328.imd #Magnet
+  method: imd
+  source:
+  - name: itempic/Magnet.png
+- name: itempic/item-329.imd #Reflect
+  method: imd
+  source:
+  - name: itempic/Reflect.png
 #GoA World Icons
 - name: map/jp/hb26.map
   multi:
