@@ -6,7 +6,7 @@ LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.52.9'
+local VersionNum = 'GoA Version 1.52.10'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -913,7 +913,7 @@ elseif Place == 0x1412 then --Xemnas II
 	end
 	WriteArray(Save+0x1BA6,ReadArray(Save+0x1B22,6)) --Save Memory Skyscraper Spawn ID
 	WriteArray(Save+0x1BAC,ReadArray(Save+0x1B7C,6)) --Save The Altar of Naught Spawn ID
-elseif Place == 0x0001 then --Post Xemnas II Cutscenes
+elseif Place == 0x0001 and not Events(0x39,0x39,0x39) then --Post Xemnas II Cutscenes
 	if ReadByte(Pause) == 2 then --Enable Pause
 		WriteByte(Pause,0)
 	end
