@@ -1,12 +1,12 @@
 --ROM Version
---Last Update: Post-Final Fights & Patch 1.0.0.8 Fixes
+--Last Update: Final Door Requirement Fix
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.52.10'
+local VersionNum = 'GoA Version 1.52.11'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -936,8 +936,8 @@ if Place == 0x1A04 and ReadByte(Save+0x1EDE) > 0 then
 		WriteByte(Save+0x1EDE,5)
 	end
 end
---Final Door Requirements and Data Xemnas Warp
-if Place == 0x1212 and Events(0x04,0x00,0x04) then
+--Final Door Requirements
+if Place == 0x1212 then
 	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 then --All Proofs Obtained
 		Spawn('Short',0x05,0x060,0x13D) --Spawn Door RC
 	else
