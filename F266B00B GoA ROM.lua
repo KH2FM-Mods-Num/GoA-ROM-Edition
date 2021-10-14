@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: Final Door Requirement Fix
+--Last Update: Final Door Requirement Fix & Form Icon Restoration
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
@@ -274,12 +274,12 @@ end
 function NewGame()
 --Before New Game
 if Platform == 1 and ReadByte(Sys3+0x116DB) == 0x19 then --Change Form's Icons in PC From Analog Stick
-	WriteByte(Sys3+0x116DB,0x3B) --Valor
-	WriteByte(Sys3+0x116F3,0x3B) --Wisdom
-	WriteByte(Sys3+0x1170B,0x3B) --Limit
-	WriteByte(Sys3+0x11723,0x3B) --Master
-	WriteByte(Sys3+0x1173B,0x3B) --Final
-	WriteByte(Sys3+0x11753,0x3B) --Anti
+	WriteByte(Sys3+0x116DB,0xCE) --Valor
+	WriteByte(Sys3+0x116F3,0xCE) --Wisdom
+	WriteByte(Sys3+0x1170B,0xCE) --Limit
+	WriteByte(Sys3+0x11723,0xCE) --Master
+	WriteByte(Sys3+0x1173B,0xCE) --Final
+	WriteByte(Sys3+0x11753,0xCE) --Anti
 end
 --Start New Game 1
 if Place == 0x0102 and Events(0x34,0x34,0x34) then --Opening Cutscene
