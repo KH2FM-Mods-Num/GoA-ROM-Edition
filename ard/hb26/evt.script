@@ -94,4 +94,4 @@ AreaSettings 174 -1
 	SetJump Type 1 World TT Area 33 Entrance 0 LocalSet 0 FadeType 1
 	SetPartyMenu 0
 
-Spawn "e_50"
+Party DEFAULT

@@ -896,6 +896,11 @@ assets:
   - name: ard/fm/hb26.ard 
   method: binarc
   source:
+  - name: m_00 #Party Spawn
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/hb26/m_00.yml
   - name: m_10 #Event Trigger to 100 Acre Wood
     type: areadataspawn
     method: spawnpoint
