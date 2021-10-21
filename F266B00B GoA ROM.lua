@@ -2701,19 +2701,6 @@ else --Restore Outside STT
 	WriteShort(Save+0x1CF9,0) --Remove stored Keyblade
 	WriteByte(Save+0x23EE,1)  --TT Music: The Afternoon Streets & Working Together
 end
---Atlantica Progress (since Magic is stored somewhere else)
-if ReadByte(Save+0x1CFF) == 13 then
-	if ReadShort(Save+0x10A0) == 0x16 and ReadByte(Save+0x1CF6) >= 1 then --Unlock 2nd Song
-		WriteShort(Save+0x1094,0x11) --Triton's Grotto EVT
-		WriteShort(Save+0x10A0,0x16) --Undersea Courtyard EVT
-	elseif ReadShort(Save+0x10A0) == 0x07 and ReadByte(Save+0x1CF6) >= 2 then --Unlock 4th Song
-		WriteShort(Save+0x1094,0x0F) --Triton's Grotto EVT
-		WriteShort(Save+0x10A0,0x14) --Undersea Courtyard EVT
-	elseif ReadShort(Save+0x10A0) == 0x0C and ReadByte(Save+0x1CF4) >= 3 then --Unlock 5th Song
-		WriteShort(Save+0x1094,0x0D) --Triton's Grotto EVT
-		WriteShort(Save+0x10A0,0x13) --Undersea Courtyard EVT
-	end
-end
 --Faster Twilight Thorn Reaction Commands
 if Place == 0x2202 and Events(0x9D,0x9D,0x9D) then
 	WriteShort(Save+0x03DE,0x00) --Station of Awakening BTL (Used as an STT Flag)
@@ -2839,6 +2826,25 @@ end
 --Atlantica Visited
 if Place == 0x020B and Events(Null,Null,0x01) then --The Kingdom Under the Sea
 	WriteByte(Save+0x1DFF,1)
+end
+--Atlantica STT Unlock (since Magic is stored somewhere else)
+if ReadByte(Save+0x1CFF) == 13 then
+	if ReadShort(Save+0x10A0) == 0x16 and ReadByte(Save+0x1CF6) >= 1 then --Unlock 2nd Song
+		WriteShort(Save+0x1094,0x11) --Triton's Grotto EVT
+		WriteShort(Save+0x10A0,0x16) --Undersea Courtyard EVT
+		BitOr(Save+0x1DF4,0x40) --LM_GET_ITEM_2
+		BitOr(Save+0x1DF6,0x08) --LM_SCENARIO_2_OPEN
+	elseif ReadShort(Save+0x10A0) == 0x07 and ReadByte(Save+0x1CF6) >= 2 then --Unlock 4th Song
+		WriteShort(Save+0x1094,0x0F) --Triton's Grotto EVT
+		WriteShort(Save+0x10A0,0x14) --Undersea Courtyard EVT
+		BitOr(Save+0x1DF5,0x01) --LM_GET_ITEM_4
+		BitOr(Save+0x1DF7,0x02) --LM_SCENARIO_4_OPEN
+	elseif ReadShort(Save+0x10A0) == 0x0C and ReadByte(Save+0x1CF4) >= 3 then --Unlock 5th Song
+		WriteShort(Save+0x1094,0x0D) --Triton's Grotto EVT
+		WriteShort(Save+0x10A0,0x13) --Undersea Courtyard EVT
+		BitOr(Save+0x1DF5,0x20) --LM_GET_ITEM_5
+		BitOr(Save+0x1DF7,0x10) --LM_SCENARIO_5_OPEN
+	end
 end
 end
 
