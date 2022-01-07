@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: Final Door Requirement Fix
+--Last Update: Overhaul
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
