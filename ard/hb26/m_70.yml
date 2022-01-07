@@ -54,8 +54,8 @@
     RotationZ: 0
     SpawnType: 0
     SpawnArgument: 0
-    Serial: 75
-    Argument1: 50
+    Serial: 83
+    Argument1: 0x32
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
@@ -72,12 +72,12 @@
     RotationZ: 0
     SpawnType: 0
     SpawnArgument: 0
-    Serial: 76
+    Serial: 84
     Argument1: 0
     Argument2: 0
     ReactionCommand: 0
     SpawnDelay: 0
-    Command: 209
+    Command: 0xD1
     SpawnRange: 0
     Level: 0
     Medal: 0

@@ -13,16 +13,22 @@ AreaSettings 11 -1
 	SetPartyMenu 0
 
 AreaSettings 76 -1
-	SetProgressFlag 0x848
-	SetEvent "311" Type 1
 	SetJump Type 1 World HB Area 26 Entrance 0 LocalSet 0 FadeType 1
 	SetPartyMenu 0
 
 Spawn "e_50"
 Spawn "830_"
 
+Program 0x02
+MapScript 12
+Spawn "e_50"
+AreaSettings 1 45
+	SetProgressFlag 0x80A
+	SetPartyMenu 0
+
 Program 0x03
 AreaSettings 0 -1
+	SetProgressFlag 0x848
 	SetEvent "311" Type 2
 	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 154 FadeType 1
 	SetPartyMenu 0

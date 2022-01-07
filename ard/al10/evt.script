@@ -9,6 +9,7 @@ AreaSettings 7 -1
 
 Program 0x02
 AreaSettings 1 -1
+	SetProgressFlag 0x1C11
 	SetJump Type 1 World AL Area 2 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0
 

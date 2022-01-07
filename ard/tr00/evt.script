@@ -55,14 +55,27 @@ AreaSettings 61 -1
 	SetPartyMenu 0
 
 Spawn "e_50"
+Program 0x0D
+Layout "file/%s/tr_tm.2ld"
+AreaSettings 60 -1
+	SetUnk05 0x1
+	SetJump Type 1 World HB Area 26 Entrance 32 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+AreaSettings 61 -1
+	SetJump Type 2 World TR Area 0 Entrance 0 LocalSet 63 FadeType 1
+	SetPartyMenu 0
+
+Spawn "e_50"
+Spawn "z00s"
 
 Program 0x04
 Layout "file/%s/tr_tm.2ld"
-AreaSettings 0 -1
+AreaSettings 60 -1
 	SetProgressFlag 0x4407
-	SetMember 2
+	SetMember 1
 	SetUnk05 0x1
-	SetEvent "107" Type 2
+	SetEvent "107" Type 1
 	SetJump Type 1 World TR Area 0 Entrance 0 LocalSet 0 FadeType 1
 	SetPartyMenu 0
 
@@ -86,18 +99,6 @@ AreaSettings 0 -1
 	SetProgressFlag 0x4409
 	SetEvent "108" Type 2
 	SetJump Type 1 World TR Area 2 Entrance 0 LocalSet 0 FadeType 1
-	SetPartyMenu 0
-
-Spawn "e_50"
-
-Program 0x07
-Bgm 85 85
-AreaSettings 0 -1
-	SetProgressFlag 0x440C
-	SetMember 2
-	SetUnk05 0x1
-	SetEvent "110" Type 2
-	SetJump Type 1 World TR Area 1 Entrance 51 LocalSet 0 FadeType 1
 	SetPartyMenu 0
 
 Spawn "e_50"

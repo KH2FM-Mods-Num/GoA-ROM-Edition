@@ -1,6 +1,6 @@
 - Type: 1
   Flag: 0
-  Id: 442
+  Id: 134
   Teleport:
     Place: 0
     Door: 0
@@ -9,21 +9,21 @@
   Unk20: 0
   Unk24: 0
   Entities:
-  - ObjectId: 0x000
-    PositionX: 780
-    PositionY: -100
-    PositionZ: -820
+  - ObjectId: 566
+    PositionX: 303.45120239257812
+    PositionY: -2.7132500690640882E-06
+    PositionZ: -527.87677001953125
     RotationX: 0
-    RotationY: -1.6580628156661987
+    RotationY: 3.1415927410125732
     RotationZ: 0
-    SpawnType: 0
-    SpawnArgument: 0
-    Serial: 51
+    SpawnType: 1
+    SpawnArgument: 55
+    Serial: 89
     Argument1: 0
     Argument2: 0
-    ReactionCommand: 1884
+    ReactionCommand: 0
     SpawnDelay: 0
-    Command: 30
+    Command: 0
     SpawnRange: 0
     Level: 0
     Medal: 0

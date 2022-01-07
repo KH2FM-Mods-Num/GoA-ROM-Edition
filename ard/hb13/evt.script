@@ -4,7 +4,7 @@ Bgm Default Default
 AreaSettings 0 -1
 	SetProgressFlag 0x104E
 	SetEvent "501" Type 2
-	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 95 FadeType 1
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 93 FadeType 1
 	SetPartyMenu 0
 
 Program 0x65

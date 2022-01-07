@@ -1,7 +1,8 @@
 Program 0x00
 Bgm Default Default
 AreaSettings 0 -1
-	SetEvent "135" Type 66
+	SetProgressFlag 0x4827
 	SetMember 2
+	SetEvent "135" Type 2
 	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 75 FadeType 1
 	SetPartyMenu 1

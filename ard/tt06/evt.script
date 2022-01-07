@@ -1,0 +1,26 @@
+Program 0x0C
+Layout "file/%s/tt_pt.2ld"
+MapScript 33
+AreaSettings 60 -1
+	SetProgressFlag 0x8DF
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 91 FadeType -1
+	SetPartyMenu 0
+
+AreaSettings 61 -1
+	SetProgressFlag 0x8DF
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 89 FadeType -1
+	SetPartyMenu 0
+
+AreaSettings 62 -1
+	SetProgressFlag 0x8DF
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 90 FadeType -1
+	SetPartyMenu 0
+
+Spawn "e_50"
+Spawn "b20_"
+Spawn "c20_"
+Spawn "k00_"
+Spawn "m00_"
+Spawn "o00_"
+Spawn "u00_"
+Spawn "z00_"

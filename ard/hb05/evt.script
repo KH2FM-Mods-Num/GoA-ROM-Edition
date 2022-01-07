@@ -1,3 +1,11 @@
+Program 0x47
+Party DEFAULT
+AreaSettings 0 -1
+	SetProgressFlag 0x106E
+	SetEvent "519" Type 2
+	SetJump Type 1 World HB Area 13 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
 Program 0x0C
 Party DEFAULT
 Layout "file/%s/hb_co.2ld"
@@ -15,7 +23,7 @@ Layout "file/%s/hb_co.2ld"
 AreaSettings 0 -1
 	SetProgressFlag 0x106D
 	SetEvent "518" Type 2
-	SetJump Type 1 World HB Area 13 Entrance 0 LocalSet 0 FadeType 1
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 71 FadeType -1
 	SetPartyMenu 0
 
 Spawn "e_50"
