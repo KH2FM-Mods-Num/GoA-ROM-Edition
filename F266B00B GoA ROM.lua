@@ -586,7 +586,7 @@ if ReadByte(Save+0x3672) > 0 then
 	WriteByte(Save+0x3672,ReadByte(Save+0x3672)-1)
 end
 --DUMMY 25 = Drive Gauge Powered Up!
-if ReadByte(Save+0x3673) > 0 then
+if ReadByte(Save+0x3673) > 0 and ReadByte(Slot1+0x1B2) < 9 then
 	WriteByte(Slot1+0x1B1,ReadByte(Slot1+0x1B1)+1)
 	WriteByte(Slot1+0x1B2,ReadByte(Slot1+0x1B2)+1)
 	WriteByte(Save+0x3673,ReadByte(Save+0x3673)-1)
