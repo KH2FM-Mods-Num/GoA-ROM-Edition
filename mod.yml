@@ -1,4 +1,3 @@
-assets:
 title: GoA ROM Edition (New Experimental Version)
 description: GoA, but with a lot of stuff done through ROM editing to reduce workload on Lua.
 assets:
@@ -808,6 +807,21 @@ assets:
     method: spawnpoint
     source:
     - name: ard/hb18/m_13.yml
+- name: ard/hb24.ard #Cavern of Remembrance: Mineshaft (Softlock Prevention)
+  multi:
+  - name: ard/us/hb24.ard
+  method: binarc
+  source:
+  - name: map
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb24/map.script
+  - name: m_17 #Room Transition to Mineshaft Entrance
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/hb24/m_17.yml
 - name: ard/hb26.ard #Garden of Assemblage (Various Stuff)
   multi:
   - name: ard/us/hb26.ard
