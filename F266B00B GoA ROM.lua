@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: Overhaul
+--Last Update: Fix Post-Data Axel Computer Room & Basement Hall bug
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
@@ -1524,7 +1524,7 @@ if Place == 0x1A04 and ReadByte(Save+0x1CFD) > 0 and Door == 0x1C then
 	end
 end
 --Spawn IDs
-if ReadByte(Save+0x1CFF) == 8 and (Place == 0x1A04 or Place == 0x1402) then
+if ReadByte(Save+0x1CFF) == 8 and Place == 0x1A04 then
 	WriteByte(Save+0x1CFF,0)
 elseif ReadShort(TxtBox) == 0x768 and PrevPlace == 0x1A04 and ReadByte(Save+0x1CFF) == 0 and (World == 0x02 or Place == 0x0112) then --Load Spawn ID upon Entering TT
 	WriteInt(Save+0x353C,0x12020100) --Full Party
