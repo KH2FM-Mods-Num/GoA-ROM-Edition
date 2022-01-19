@@ -35,9 +35,78 @@ assets:
   - name: obj/W_EX010_WI.mdlx
 #GoA Data Portal New Flag Requirements
 - name: obj/F_HB130.mdlx
-  method: copy
+  method: binarc
   source:
-  - name: obj/F_HB130.mdlx
+  - name: f_hb
+    type: bdx
+    method: copy
+    source:
+    - name: obj/F_HB130.bin
+#Remove Bulky Vendors 2nd Visit Requirements (trap_progress_is_second -> trap_area_battle_set)
+- name: obj/F_AL050.mdlx
+  method: binarc
+  source:
+  - name: f_al
+    type: bdx
+    method: copy
+    source:
+    - name: obj/F_AL050.bin
+- name: obj/F_BB040.mdlx
+  method: binarc
+  source:
+  - name: f_bb
+    type: bdx
+    method: copy
+    source:
+    - name: obj/F_BB040.bin
+- name: obj/F_BB070.mdlx
+  method: binarc
+  source:
+  - name: f_bb
+    type: bdx
+    method: copy
+    source:
+    - name: obj/F_BB040.bin
+- name: obj/F_HE000.mdlx
+  method: binarc
+  source:
+  - name: f_he
+    type: bdx
+    method: copy
+    source:
+    - name: obj/F_HE000.bin
+- name: obj/F_MU040.mdlx
+  method: binarc
+  source:
+  - name: f_mu
+    type: bdx
+    method: copy
+    source:
+    - name: obj/F_MU040.bin
+- name: obj/F_MU050.mdlx
+  method: binarc
+  source:
+  - name: f_mu
+    type: bdx
+    method: copy
+    source:
+    - name: obj/F_MU040.bin
+- name: obj/F_MU060.mdlx
+  method: binarc
+  source:
+  - name: f_mu
+    type: bdx
+    method: copy
+    source:
+    - name: obj/F_MU040.bin
+- name: obj/F_NM070.mdlx
+  method: binarc
+  source:
+  - name: f_nm
+    type: bdx
+    method: copy
+    source:
+    - name: obj/F_NM070.bin
 #Pictures
 - name: itempic/item-000.imd #Unused Items
   method: imd
@@ -212,7 +281,7 @@ assets:
     source:
     - name: 03system.bin/ItemList.yml
       type: item
-#Relocate Twilight Thorn HP Bonus & Unequip Auto Limit
+#Relocate Twilight Thorn HP Bonus & Halve MCP HP & Unequip Auto Limit
 - name: 00battle.bin
   method: binarc
   source:
