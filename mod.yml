@@ -266,7 +266,7 @@ assets:
   method: copy
   source:
   - name: tr_tm.2ld
-#Implement New Pictures and Stats
+#Implement New Pictures & Stats & Add STT Chests to Journal
 - name: 03system.bin
   method: binarc
   source:
@@ -281,6 +281,12 @@ assets:
     source:
     - name: 03system.bin/ItemList.yml
       type: item
+  - name: trsr
+    type: list
+    method: listpatch
+    source:
+    - name: 03system.bin/TrsrList.yml
+      type: trsr
 #Relocate Twilight Thorn HP Bonus & Halve MCP HP & Unequip Auto Limit
 - name: 00battle.bin
   method: binarc

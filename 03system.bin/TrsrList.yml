@@ -1,0 +1,180 @@
+311: #Heartless Manufactory
+  Id: 311
+  ItemId: 308
+  Type: Chest
+  World: 4
+  Room: 12
+  RoomChestIndex: 100
+  EventId: 0x104C #HB_508_END
+  OverallChestIndex: 237
+315: #Station of Serenity
+  Id: 315
+  ItemId: 1
+  Type: Chest
+  World: 2
+  Room: 32
+  RoomChestIndex: 0
+  EventId: 0x083D #TT_301_END_L
+  OverallChestIndex: 241
+472: #Station of Calling
+  Id: 472
+  ItemId: 1
+  Type: Chest
+  World: 2
+  Room: 33
+  RoomChestIndex: 0
+  EventId: 0x083D
+  OverallChestIndex: 345
+428: #Central Station
+  Id: 428
+  ItemId: 1
+  Type: Chest
+  World: 2
+  Room: 9
+  RoomChestIndex: 0
+  EventId: 0x0867 #TT_501_END_L
+  OverallChestIndex: 301
+429:
+  Id: 429
+  ItemId: 2
+  Type: Chest
+  World: 2
+  Room: 9
+  RoomChestIndex: 1
+  EventId: 0x0867
+  OverallChestIndex: 302
+430:
+  Id: 430
+  ItemId: 1
+  Type: Chest
+  World: 2
+  Room: 9
+  RoomChestIndex: 2
+  EventId: 0x0867
+  OverallChestIndex: 303
+434: #Sunset Station
+  Id: 434
+  ItemId: 8
+  Type: Chest
+  World: 2
+  Room: 10
+  RoomChestIndex: 0
+  EventId: 0x0867
+  OverallChestIndex: 307
+435:
+  Id: 435
+  ItemId: 2
+  Type: Chest
+  World: 2
+  Room: 10
+  RoomChestIndex: 1
+  EventId: 0x0867
+  OverallChestIndex: 308
+436:
+  Id: 436
+  ItemId: 1
+  Type: Chest
+  World: 2
+  Room: 10
+  RoomChestIndex: 2
+  EventId: 0x0867
+  OverallChestIndex: 309
+437:
+  Id: 437
+  ItemId: 1
+  Type: Chest
+  World: 2
+  Room: 10
+  RoomChestIndex: 3
+  EventId: 0x0867
+  OverallChestIndex: 310
+449: #Foyer
+  Id: 449
+  ItemId: 2
+  Type: Chest
+  World: 2
+  Room: 15
+  RoomChestIndex: 0
+  EventId: 0x087F #TT_601_END_L
+  OverallChestIndex: 322
+450:
+  Id: 450
+  ItemId: 1
+  Type: Chest
+  World: 2
+  Room: 15
+  RoomChestIndex: 1
+  EventId: 0x087F
+  OverallChestIndex: 323
+451:
+  Id: 451
+  ItemId: 1
+  Type: Chest
+  World: 2
+  Room: 15
+  RoomChestIndex: 2
+  EventId: 0x087F
+  OverallChestIndex: 324
+455: #Dining Room
+  Id: 455
+  ItemId: 67
+  Type: Chest
+  World: 2
+  Room: 16
+  RoomChestIndex: 0
+  EventId: 0x087F
+  OverallChestIndex: 328
+456:
+  Id: 456
+  ItemId: 1
+  Type: Chest
+  World: 2
+  Room: 16
+  RoomChestIndex: 1
+  EventId: 0x087F
+  OverallChestIndex: 329
+459: #Library
+  Id: 459
+  ItemId: 2
+  Type: Chest
+  World: 2
+  Room: 17
+  RoomChestIndex: 0
+  EventId: 0x087F
+  OverallChestIndex: 332
+463: #Basement Corridor
+  Id: 463
+  ItemId: 2
+  Type: Chest
+  World: 2
+  Room: 22
+  RoomChestIndex: 0
+  EventId: 0x087F
+  OverallChestIndex: 336
+585: #Garden of Assemblage
+  Id: 585
+  ItemId: 592
+  Type: Chest
+  World: 4
+  Room: 26
+  RoomChestIndex: 100
+  EventId: 0x10BC #HB_FM_714_END
+  OverallChestIndex: 409
+586:
+  Id: 586
+  ItemId: 584
+  Type: Chest
+  World: 4
+  Room: 26
+  RoomChestIndex: 101
+  EventId: 0x10BC
+  OverallChestIndex: 410
+590:
+  Id: 590
+  ItemId: 594
+  Type: Chest
+  World: 4
+  Room: 26
+  RoomChestIndex: 102
+  EventId: 0x10BC
+  OverallChestIndex: 411
