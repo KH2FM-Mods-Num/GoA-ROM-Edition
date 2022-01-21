@@ -20,7 +20,7 @@
   Id: 472
   ItemId: 1
   Type: Chest
-  World: 2
+  World: 11
   Room: 33
   RoomChestIndex: 0
   EventId: 0x083D
@@ -29,7 +29,7 @@
   Id: 428
   ItemId: 1
   Type: Chest
-  World: 2
+  World: 11
   Room: 9
   RoomChestIndex: 0
   EventId: 0x0867 #TT_501_END_L
@@ -38,7 +38,7 @@
   Id: 429
   ItemId: 2
   Type: Chest
-  World: 2
+  World: 11
   Room: 9
   RoomChestIndex: 1
   EventId: 0x0867
@@ -47,7 +47,7 @@
   Id: 430
   ItemId: 1
   Type: Chest
-  World: 2
+  World: 11
   Room: 9
   RoomChestIndex: 2
   EventId: 0x0867
@@ -56,7 +56,7 @@
   Id: 434
   ItemId: 8
   Type: Chest
-  World: 2
+  World: 11
   Room: 10
   RoomChestIndex: 0
   EventId: 0x0867
@@ -65,7 +65,7 @@
   Id: 435
   ItemId: 2
   Type: Chest
-  World: 2
+  World: 11
   Room: 10
   RoomChestIndex: 1
   EventId: 0x0867
@@ -74,7 +74,7 @@
   Id: 436
   ItemId: 1
   Type: Chest
-  World: 2
+  World: 11
   Room: 10
   RoomChestIndex: 2
   EventId: 0x0867
@@ -83,7 +83,7 @@
   Id: 437
   ItemId: 1
   Type: Chest
-  World: 2
+  World: 11
   Room: 10
   RoomChestIndex: 3
   EventId: 0x0867
@@ -92,7 +92,7 @@
   Id: 449
   ItemId: 2
   Type: Chest
-  World: 2
+  World: 11
   Room: 15
   RoomChestIndex: 0
   EventId: 0x087F #TT_601_END_L
@@ -101,7 +101,7 @@
   Id: 450
   ItemId: 1
   Type: Chest
-  World: 2
+  World: 11
   Room: 15
   RoomChestIndex: 1
   EventId: 0x087F
@@ -110,7 +110,7 @@
   Id: 451
   ItemId: 1
   Type: Chest
-  World: 2
+  World: 11
   Room: 15
   RoomChestIndex: 2
   EventId: 0x087F
@@ -119,7 +119,7 @@
   Id: 455
   ItemId: 67
   Type: Chest
-  World: 2
+  World: 11
   Room: 16
   RoomChestIndex: 0
   EventId: 0x087F
@@ -128,7 +128,7 @@
   Id: 456
   ItemId: 1
   Type: Chest
-  World: 2
+  World: 11
   Room: 16
   RoomChestIndex: 1
   EventId: 0x087F
@@ -137,7 +137,7 @@
   Id: 459
   ItemId: 2
   Type: Chest
-  World: 2
+  World: 11
   Room: 17
   RoomChestIndex: 0
   EventId: 0x087F
@@ -146,7 +146,7 @@
   Id: 463
   ItemId: 2
   Type: Chest
-  World: 2
+  World: 11
   Room: 22
   RoomChestIndex: 0
   EventId: 0x087F
