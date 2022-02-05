@@ -35,7 +35,7 @@ Layout "file/%s/hb_co.2ld"
 AreaSettings 0 -1
 	SetProgressFlag 0x1045
 	SetUnk05 0x1
-	SetEvent "210" Type 2
+	SetEvent "210" Type 3
 	SetJump Type 1 World HB Area 5 Entrance 0 LocalSet 0 FadeType 1
 	SetPartyMenu 0
 

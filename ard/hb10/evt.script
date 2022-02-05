@@ -2,7 +2,7 @@ Program 0x08
 AreaSettings 0 -1
 	SetProgressFlag 0x1080
 	SetMember 1
-	SetEvent "605" Type 2
+	SetEvent "605" Type 3
 	SetJump Type 1 World HB Area 1 Entrance 50 LocalSet 0 FadeType 1
 	SetPartyMenu 0
 
