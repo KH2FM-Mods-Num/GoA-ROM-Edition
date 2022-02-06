@@ -798,16 +798,7 @@ elseif Place == 0x1012 and Events(Null,Null,0x05) then --Back to His Old Self
 	WriteByte(Save+0x1EDF,4)
 elseif Place == 0x1212 and Events(Null,Null,0x03) then --The Door to Kingdom Hearts
 	WriteByte(Save+0x1EDE,5) --Post-Story Save
-elseif Place == 0x1412 then --Xemnas II
-	if ReadInt(Slot3) == 1 then --Laser Dome Skip
-		WriteInt(Slot3,0)
-	elseif ReadByte(Pause) == 2 then --Enable Pause
-		WriteByte(Pause,0)
-	end
 elseif Place == 0x0001 and not Events(0x39,0x39,0x39) then --Post Xemnas II Cutscenes (cond. for STT)
-	if ReadByte(Pause) == 2 then --Enable Pause
-		WriteByte(Pause,0)
-	end
 	WriteInt(Save+0x000C,0x321A04) --Post-Game Save at Garden of Assemblage
 end
 --The World that Never Was Post-Story Save
@@ -831,6 +822,10 @@ if Place == 0x1212 then
 	else
 		Spawn('Short',0x05,0x060,0x000) --Despawn Door RC
 	end
+end
+--Xemnas II Laser Dome Skip
+if Place == 0x1412 and ReadInt(Slot3) == 1 then
+	WriteInt(Slot3,0)
 end
 --[[Skip Dragon Xemnas
 if Place == 0x1D12 then
