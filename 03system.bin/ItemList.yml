@@ -2899,9 +2899,9 @@ Stats:
   GeneralResistance: 100
   Unknown: 0
 - Id: 116 #FAKE Stats
-  Ability: 0x08A
-  Attack: 3
-  Magic: 1
+  Ability: 0x19E
+  Attack: 1
+  Magic: 3
   Defense: 0
   AbilityPoints: 0
   Unknown08: 100
