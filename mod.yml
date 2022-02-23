@@ -107,6 +107,7 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_KingdomKeyD.mdlx/TR.dds
+
 #Antiform Dummy -> Pureblood
 - name: obj/W_EX010_X0.mdlx
   method: copy
@@ -195,6 +196,11 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.mdlx/TR.dds
+
+
+
+
+
 #Detection Saber -> Alpha Weapon
 - name: obj/W_EX010_Y0.mdlx
   method: copy
@@ -860,6 +866,7 @@ assets:
   - name: msg/gr/sys.bar
   - name: msg/it/sys.bar
   - name: msg/sp/sys.bar
+  - name: msg/jp/sys.bar
   method: binarc
   source:
   - name: sys
@@ -874,6 +881,7 @@ assets:
   - name: msg/gr/al.bar
   - name: msg/it/al.bar
   - name: msg/sp/al.bar
+  - name: msg/jp/al.bar
   method: binarc
   source:
   - name: al
@@ -888,6 +896,7 @@ assets:
   - name: msg/gr/dc.bar
   - name: msg/it/dc.bar
   - name: msg/sp/dc.bar
+  - name: msg/jp/dc.bar
   method: binarc
   source:
   - name: dc
@@ -902,6 +911,7 @@ assets:
   - name: msg/gr/hb.bar
   - name: msg/it/hb.bar
   - name: msg/sp/hb.bar
+  - name: msg/jp/hb.bar
   method: binarc
   source:
   - name: hb
@@ -916,6 +926,7 @@ assets:
   - name: msg/gr/he.bar
   - name: msg/it/he.bar
   - name: msg/sp/he.bar
+  - name: msg/jp/he.bar
   method: binarc
   source:
   - name: he
@@ -930,6 +941,7 @@ assets:
   - name: msg/gr/nm.bar
   - name: msg/it/nm.bar
   - name: msg/sp/nm.bar
+  - name: msg/jp/nm.bar
   method: binarc
   source:
   - name: nm
@@ -944,6 +956,7 @@ assets:
   - name: msg/gr/tr.bar
   - name: msg/it/tr.bar
   - name: msg/sp/tr.bar
+  - name: msg/jp/tr.bar
   method: binarc
   source:
   - name: tr
@@ -1228,28 +1241,11 @@ assets:
   method: copy
   source:
   - name: remastered/tr_tm_2ld2.png
-#Missing PC BGM
-- name: bgm/music150.win32.scd #Squirming Evil
+#Scar BGM (PC)
+- name: bgm/music150.win32.scd
   method: copy
   source:
-  - name: 150_ScarBGM.scd
-#commented out until we need them. don't waste time patching in unused stuff
-#- name: bgm/music130.win32.scd #Neverland Sky
-#  method: copy
-#  source:
-#  - name: 130_Neverland.scd
-#- name: bgm/music140.win32.scd #Under the Sea (KH I)
-#  method: copy
-#  source:
-#  - name: 140_UtS.scd
-#- name: bgm/music147.win32.scd #An Adventure in Atlantica
-#  method: copy
-#  source:
-#  - name: 147_Adventure.scd
-#- name: bgm/music156.win32.scd #Guardando nel Buio
-#  method: copy
-#  source:
-#  - name: 156_Ansem.scd
+  - name: ScarBGM.scd
 #ARD Editing
 - name: ard/us/al00.ard #Agrabah (GoA Warp)
   multi:
