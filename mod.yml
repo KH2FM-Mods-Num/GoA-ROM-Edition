@@ -17,6 +17,25 @@ assets:
     method: copy
     source:
     - name: worl.bin
+#Garden of Assemblage Small Chest
+- name: obj/F_EX030_HB.mdlx
+  method: copy
+  source:
+  - name: obj/F_EX030_HB.mdlx
+- name: obj/F_EX030_HB.a.fm
+  multi:
+  - name: obj/F_EX030_HB.a.us
+  method: copy
+  source:
+  - name: obj/F_EX030_HB.a.fm
+- name: remastered/obj/F_EX030_HB.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/F_EX030_HB.mdlx/-0.dds
+- name: remastered/obj/F_EX030_HB.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/F_EX030_HB.mdlx/-1.dds
 #Kingdom Key Update
 - name: obj/W_EX010.mdlx
   method: copy
