@@ -1226,6 +1226,15 @@ assets:
     source:
     - name: tr_tm_2.png
       index: 2
+- name: file/us/tr_tm.2ld
+  multi:
+  - name: file/fr/tr_tm.2ld
+  - name: file/gr/tr_tm.2ld
+  - name: file/it/tr_tm.2ld
+  - name: file/sp/tr_tm.2ld
+  method: copy
+  source:
+  - name: tr_tm.2ld
 - name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld2.png
   multi:
   - name: remastered/file/fr/tr_tm.2ld/FR_tr_tm_2ld2.png
