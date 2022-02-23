@@ -1,4 +1,4 @@
-324:
+324: #Default Large -> Small Chest
   ObjectId: 324
   ObjectType: TREASURE
   SubType: 0
@@ -28,7 +28,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-325:
+325: #Space Paranoids Large -> Small Chest
   ObjectId: 325
   ObjectType: TREASURE
   SubType: 0
@@ -58,7 +58,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-826:
+826: #Beast's Castle Large -> Small Chest
   ObjectId: 826
   ObjectType: TREASURE
   SubType: 0
@@ -88,7 +88,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-827:
+827: #Olympus Coliseum Large -> Small Chest
   ObjectId: 827
   ObjectType: TREASURE
   SubType: 0
@@ -118,7 +118,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-828:
+828: #Agrabah Large -> Small Chest
   ObjectId: 828
   ObjectType: TREASURE
   SubType: 0
@@ -148,7 +148,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-829:
+829: #Port Royal Large -> Small Chest
   ObjectId: 829
   ObjectType: TREASURE
   SubType: 0
@@ -178,7 +178,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-830:
+830: #Halloween Town Large -> Small Chest
   ObjectId: 830
   ObjectType: TREASURE
   SubType: 0
@@ -208,7 +208,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-831:
+831: #Land of Dragons Large -> Small Chest
   ObjectId: 831
   ObjectType: TREASURE
   SubType: 0
@@ -238,7 +238,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-832:
+832: #100 Acre Wood Large -> Small Chest
   ObjectId: 832
   ObjectType: TREASURE
   SubType: 0
@@ -268,7 +268,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-833:
+833: #Disney Castle Large -> Small Chest
   ObjectId: 833
   ObjectType: TREASURE
   SubType: 0
@@ -298,7 +298,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-834:
+834: #Timeless River Large -> Small Chest
   ObjectId: 834
   ObjectType: TREASURE
   SubType: 0
@@ -328,7 +328,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-835:
+835: #The World that Never Was Large -> Small Chest
   ObjectId: 835
   ObjectType: TREASURE
   SubType: 0
@@ -358,7 +358,307 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2133:
+900: #Antiform Dummy -> Pureblood
+  ObjectId: 900
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_X0
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 0
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+1991: #TR Hammer Staff -> Kingdom Key D
+  ObjectId: 1991
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_00
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+1992: #TR Victory Bell -> HT Pureblood
+  ObjectId: 1992
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_X0_NM
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+1993: #TR Meteor Staff -> HT Alpha Weapon
+  ObjectId: 1993
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_Y0_NM
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+1994: #TR Comet Staff -> HT Omega Weapon
+  ObjectId: 1994
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_Z0_NM
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+1995: #TR Lord's Broom -> HT Kingdom Key D
+  ObjectId: 1995
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_00_NM
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+1996: #TR Wisdom Wand -> SP Pureblood
+  ObjectId: 1996
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_X0_TR
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+1997: #TR Rising Dragon -> SP Alpha Weapon
+  ObjectId: 1997
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_Y0_TR
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+1998: #TR Nobody Lance -> SP Omega Weapon
+  ObjectId: 1998
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_Z0_TR
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+1999: #TR Shaman's Relic -> SP Kingdom Key D
+  ObjectId: 1999
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_00_TR
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+2133: #Pride Lands Large -> Small Chest
   ObjectId: 2133
   ObjectType: TREASURE
   SubType: 0
@@ -388,7 +688,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2143:
+2143: #Christmas Town Large -> Small Chest
   ObjectId: 2143
   ObjectType: TREASURE
   SubType: 0
@@ -418,7 +718,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2236:
+2236: #Twilight Town? Large -> Small Chest
   ObjectId: 2236
   ObjectType: TREASURE
   SubType: 0
@@ -448,13 +748,13 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2540:
+2540: #Garden of Assemblage Large -> Small Chest
   ObjectId: 2540
   ObjectType: TREASURE
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 0
-  ModelName: F_EX030_EH
+  ModelName: F_EX030_HB
   AnimationName: F_EX030.mset
   Flags: 0
   ObjectTargetType: M
@@ -478,3 +778,36 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
+
+#Other TR Staves & Shields for future model additions
+#1695: #TR Mage's Staff
+#1696: #TR Knight's Shield
+#2000: #TR Save the Queen
+#2013: #TR Adamant Shield
+#2014: #TR Chain Gear
+#2015: #TR Ogre Shield
+#2016: #TR Falling Star
+#2017: #TR Dreamcloud
+#2018: #TR Knight Defender
+#2019: #TR Genji Shield
+#2020: #TR Akashic Record
+#2021: #TR Nobody Guard
+#2022: #TR Save the King
+#2375: #TR Centurion
+#2376: #TR Plain Mushroom
+#2383: #TR Frozen Pride
+#2384: #TR Joyous Mushroom
+#2459: #TR Save the Queen+
+#2460: #TR Centurion+
+#2461: #TR Plain Mushroom+
+#2462: #TR Precious Mushroom
+#2463: #TR Precious Mushroom+
+#2464: #TR Premium Mushroom
+#2483: #TR Save the King+
+#2484: #TR Frozen Pride+
+#2485: #TR Joyous Mushroom+
+#2486: #TR Majestic Mushroom
+#2487: #TR Majestic Mushroom+
+#2488: #TR Ultimate Mushroom
+#2549: #TR Shaman's Relic+
+#2553: #TR Akashic Record+
