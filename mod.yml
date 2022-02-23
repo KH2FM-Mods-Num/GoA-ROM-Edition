@@ -107,7 +107,6 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_KingdomKeyD.mdlx/TR.dds
-
 #Antiform Dummy -> Pureblood
 - name: obj/W_EX010_X0.mdlx
   method: copy
@@ -196,11 +195,6 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.mdlx/TR.dds
-
-
-
-
-
 #Detection Saber -> Alpha Weapon
 - name: obj/W_EX010_Y0.mdlx
   method: copy
@@ -1234,11 +1228,28 @@ assets:
   method: copy
   source:
   - name: remastered/tr_tm_2ld2.png
-#Scar BGM (PC)
-- name: bgm/music150.win32.scd
+#Missing PC BGM
+- name: bgm/music150.win32.scd #Squirming Evil
   method: copy
   source:
-  - name: ScarBGM.scd
+  - name: 150_ScarBGM.scd
+#commented out until we need them. don't waste time patching in unused stuff
+#- name: bgm/music130.win32.scd #Neverland Sky
+#  method: copy
+#  source:
+#  - name: 130_Neverland.scd
+#- name: bgm/music140.win32.scd #Under the Sea (KH I)
+#  method: copy
+#  source:
+#  - name: 140_UtS.scd
+#- name: bgm/music147.win32.scd #An Adventure in Atlantica
+#  method: copy
+#  source:
+#  - name: 147_Adventure.scd
+#- name: bgm/music156.win32.scd #Guardando nel Buio
+#  method: copy
+#  source:
+#  - name: 156_Ansem.scd
 #ARD Editing
 - name: ard/us/al00.ard #Agrabah (GoA Warp)
   multi:
