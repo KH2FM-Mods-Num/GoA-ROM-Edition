@@ -15,7 +15,52 @@ Items:
   Picture: 43
   Icon1: 0
   Icon2: 4
-- Id: 81 #FAKE
+- Id: 44 #Detection Saber (Alpha Weapon)
+  Type: Keyblade
+  Flag0: 0
+  Flag1: 50
+  Rank: C
+  StatEntry: 83
+  Name: 34248
+  Description: 34249
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 0
+  Slot: 36
+  Picture: 0x129
+  Icon1: 0
+  Icon2: 4
+- Id: 45 #Frontier of Ultima (Omega Weapon)
+  Type: Keyblade
+  Flag0: 0
+  Flag1: 51
+  Rank: C
+  StatEntry: 84
+  Name: 34250
+  Description: 34251
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 0
+  Slot: 37
+  Picture: 0x12A
+  Icon1: 0
+  Icon2: 4
+- Id: 71 #Antiform Dummy (Pureblood)
+  Type: Keyblade
+  Flag0: 0
+  Flag1: 99
+  Rank: C
+  StatEntry: 85
+  Name: 34252
+  Description: 34253
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 0
+  Slot: 63
+  Picture: 0x128
+  Icon1: 0
+  Icon2: 4
+- Id: 81 #FAKE (Kingdom Key D)
   Type: Keyblade
   Flag0: 0
   Flag1: 1
@@ -28,37 +73,6 @@ Items:
   Command: 0
   Slot: 73
   Picture: 0x12B
-  Icon1: 0
-  Icon2: 4
-- Id: 44 #Detection Saber
-  Type: Keyblade
-  Flag0: 0
-  Flag1: 50
-  Rank: C
-  StatEntry: 83
-  Name: 34248
-  Description: 34249
-  ShopBuy: 0
-  ShopSell: 0
-  Command: 0
-  Slot: 36
-  Picture: 297
-  Icon1: 0
-  Icon2: 4
-
-- Id: 45 #Edge of Ultima
-  Type: Keyblade
-  Flag0: 0
-  Flag1: 51
-  Rank: C
-  StatEntry: 84
-  Name: 34250
-  Description: 34251
-  ShopBuy: 0
-  ShopSell: 0
-  Command: 0
-  Slot: 37
-  Picture: 298
   Icon1: 0
   Icon2: 4
 #Forms
@@ -2842,38 +2856,52 @@ Items:
   Icon2: 3
 
 Stats:
+- Id: 83 #Detection Saber Stats
+  Ability: 0x1A5
+  Attack: 4
+  Magic: 6
+  Defense: 0
+  AbilityPoints: 0
+  Unknown08: 100
+  FireResistance: 100
+  IceResistance: 100
+  LightningResistance: 100
+  DarkResistance: 100
+  Unknown0d: 100
+  GeneralResistance: 100
+  Unknown: 0
+- Id: 84 #Frontier of Ultima Stats
+  Ability: 0x187
+  Attack: 3
+  Magic: 6
+  Defense: 0
+  AbilityPoints: 0
+  Unknown08: 100
+  FireResistance: 100
+  IceResistance: 100
+  LightningResistance: 100
+  DarkResistance: 100
+  Unknown0d: 100
+  GeneralResistance: 100
+  Unknown: 0
+- Id: 85 #Antiform Dummy Stats
+  Ability: 0x18C
+  Attack: 6
+  Magic: 0
+  Defense: 0
+  AbilityPoints: 0
+  Unknown08: 100
+  FireResistance: 100
+  IceResistance: 100
+  LightningResistance: 100
+  DarkResistance: 100
+  Unknown0d: 100
+  GeneralResistance: 100
+  Unknown: 0
 - Id: 116 #FAKE Stats
   Ability: 0x19E
-  Attack: 3
-  Magic: 1
-  Defense: 0
-  AbilityPoints: 0
-  Unknown08: 100
-  FireResistance: 100
-  IceResistance: 100
-  LightningResistance: 100
-  DarkResistance: 100
-  Unknown0d: 100
-  GeneralResistance: 100
-  Unknown: 0
-- Id: 83 #Detection Saber Stats
-  Ability: 0x08A
-  Attack: 4
-  Magic: 2
-  Defense: 0
-  AbilityPoints: 0
-  Unknown08: 100
-  FireResistance: 100
-  IceResistance: 100
-  LightningResistance: 100
-  DarkResistance: 100
-  Unknown0d: 100
-  GeneralResistance: 100
-  Unknown: 0
-- Id: 84 #Edge of Ultima Stats
-  Ability: 0x1A5
-  Attack: 5
-  Magic: 4
+  Attack: 1
+  Magic: 3
   Defense: 0
   AbilityPoints: 0
   Unknown08: 100
