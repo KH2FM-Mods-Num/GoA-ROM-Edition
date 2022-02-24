@@ -8,7 +8,7 @@
 
     the past. Increases MP restoration
 
-    by 50% when recharging MP.
+    by {:color #F0F00080}50%{:reset} when recharging MP.
 - id: 0x05CA
   en: Omega Weapon
 - id: 0x05CB
@@ -35,7 +35,7 @@
 
     the Realm of Darkness. Increases
 
-    defense by 3 in critical moments.
+    defense by {:color #F0F00080}3{:reset} in critical moments.
 - id: 0x0649
   en: >-
     Using the Keyblade's true power,
