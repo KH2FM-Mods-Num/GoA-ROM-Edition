@@ -376,7 +376,7 @@ assets:
   - name: obj/W_EX010_Z0_TR.a.us
   method: copy
   source:
-  - name: obj/W_EX010_OmegaWeapon.a.fm
+  - name: obj/W_EX010_OmegaWeapon.a.us
 - name: remastered/obj/W_EX010_Z0.mdlx/-0.dds
   method: copy
   source:
