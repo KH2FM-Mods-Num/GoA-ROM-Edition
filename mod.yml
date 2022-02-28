@@ -901,6 +901,24 @@ assets:
     source:
     - name: tr_tm_2.png
       index: 2
+- name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld0.png #Include unchanged assets for fast-patch compatibility
+  multi:
+  - name: remastered/file/fr/tr_tm.2ld/FR_tr_tm_2ld0.png
+  - name: remastered/file/gr/tr_tm.2ld/GR_tr_tm_2ld0.png
+  - name: remastered/file/it/tr_tm.2ld/IT_tr_tm_2ld0.png
+  - name: remastered/file/sp/tr_tm.2ld/SP_tr_tm_2ld0.png
+  method: copy
+  source:
+  - name: remastered/tr_tm.2ld/tr_tm_2ld0.png
+- name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld1.png
+  multi:
+  - name: remastered/file/fr/tr_tm.2ld/FR_tr_tm_2ld1.png
+  - name: remastered/file/gr/tr_tm.2ld/GR_tr_tm_2ld1.png
+  - name: remastered/file/it/tr_tm.2ld/IT_tr_tm_2ld1.png
+  - name: remastered/file/sp/tr_tm.2ld/SP_tr_tm_2ld1.png
+  method: copy
+  source:
+  - name: remastered/tr_tm.2ld/tr_tm_2ld1.png
 - name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld2.png
   multi:
   - name: remastered/file/fr/tr_tm.2ld/FR_tr_tm_2ld2.png
@@ -909,7 +927,7 @@ assets:
   - name: remastered/file/sp/tr_tm.2ld/SP_tr_tm_2ld2.png
   method: copy
   source:
-  - name: remastered/tr_tm_2ld2.png
+  - name: remastered/tr_tm.2ld/tr_tm_2ld2.png
 #Texts & Libretto
 - name: msg/jp/sys.bar
   multi:
