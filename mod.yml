@@ -1740,7 +1740,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/lk00/evt.script
-- name: ard/lk13.ard #Peak (Data Warp)
+- name: ard/lk13.ard #Peak (Data Warp & BGM Change)
   multi:
   - name: ard/us/lk13.ard
   - name: ard/fr/lk13.ard
@@ -1759,6 +1759,11 @@ assets:
     method: spawnpoint
     source:
     - name: ard/lk13/m_11.yml
+  - name: 121
+    type: event
+    method: copy
+    source:
+    - name: ard/lk13/121.bin
 - name: ard/lk14.ard #Scar's Darkness (BGM Change)
   multi:
   - name: ard/us/lk14.ard
@@ -2246,6 +2251,11 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt14/evt.script
+  - name: 002
+    type: event
+    method: copy
+    source:
+    - name: ard/tt14/002.bin
 - name: ard/tt20.ard #Mansion: Basement Hall (Axel II) (Drive Refill)
   multi:
   - name: ard/us/tt20.ard
