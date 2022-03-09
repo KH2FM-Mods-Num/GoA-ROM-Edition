@@ -2374,6 +2374,11 @@ assets:
     method: spawnpoint
     source:
     - name: ard/tt33/m_20.yml
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt33/btl.script
   - name: b_01 #Data Xemnas
     type: areadataspawn
     method: spawnpoint
@@ -2414,11 +2419,11 @@ assets:
     method: spawnpoint
     source:
     - name: ard/tt33/b_13.yml
-  - name: b_15 #Promise Charm
+  - name: b_14 #Promise Charm
     type: areadataspawn
     method: spawnpoint
     source:
-    - name: ard/tt33/b_15.yml
+    - name: ard/tt33/b_14.yml
 - name: ard/tt40.ard #Betwixt & Between (Data Warp)
   multi:
   - name: ard/us/tt40.ard

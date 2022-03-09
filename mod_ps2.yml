@@ -1254,7 +1254,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/lk00/evt.script
-- name: ard/lk13.ard #Peak (Data Warp)
+- name: ard/lk13.ard #Peak (Data Warp & BGM Change)
   multi:
   - name: ard/us/lk13.ard
   - name: ard/fr/lk13.ard
@@ -1273,6 +1273,11 @@ assets:
     method: spawnpoint
     source:
     - name: ard/lk13/m_11.yml
+  - name: 121
+    type: event
+    method: copy
+    source:
+    - name: ard/lk13/121.bin
 - name: ard/lk14.ard #Scar's Darkness (BGM Change)
   multi:
   - name: ard/us/lk14.ard
@@ -1760,6 +1765,11 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt14/evt.script
+  - name: 002
+    type: event
+    method: copy
+    source:
+    - name: ard/tt14/002.bin
 - name: ard/tt20.ard #Mansion: Basement Hall (Axel II) (Drive Refill)
   multi:
   - name: ard/us/tt20.ard
@@ -1878,6 +1888,11 @@ assets:
     method: spawnpoint
     source:
     - name: ard/tt33/m_20.yml
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt33/btl.script
   - name: b_01 #Data Xemnas
     type: areadataspawn
     method: spawnpoint
@@ -1918,11 +1933,11 @@ assets:
     method: spawnpoint
     source:
     - name: ard/tt33/b_13.yml
-  - name: b_15 #Promise Charm
+  - name: b_14 #Promise Charm
     type: areadataspawn
     method: spawnpoint
     source:
-    - name: ard/tt33/b_15.yml
+    - name: ard/tt33/b_14.yml
 - name: ard/tt40.ard #Betwixt & Between (Data Warp)
   multi:
   - name: ard/us/tt40.ard
