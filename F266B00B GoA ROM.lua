@@ -403,6 +403,45 @@ if true then
 	end
 	WriteInt(Save+0x3724,Bitmask)
 end
+--Visits Unlock
+if true then
+	if ReadByte(Save+0x363F) > 0 then --Tournament Poster
+		BitOr(Save+0x1C92,0x08) --ZZ_TT_CHECK_1_GOA
+	end
+	if ReadByte(Save+0x3640) > 0 then --Poster
+		BitOr(Save+0x1C92,0x10) --ZZ_TT_CHECK_2_GOA
+	end
+	if ReadByte(Save+0x35C1) > 0 then --Way to the Dawn
+		BitOr(Save+0x1C92,0x20) --ZZ_HB_CHECK_1_GOA
+	end
+	if true then --???
+		BitOr(Save+0x1C92,0x40) --ZZ_HB_CHECK_2_GOA
+	end
+	if ReadByte(Save+0x35B3) > 0 then --Beast's Claw
+		BitOr(Save+0x1C92,0x80) --ZZ_BB_CHECK_1_GOA
+	end
+	if ReadByte(Save+0x35AE) > 0 then --Battlefields of War
+		BitOr(Save+0x1C93,0x01) --ZZ_HE_CHECK_1_GOA
+	end
+	if ReadByte(Save+0x35C0) > 0 then --Scimitar
+		BitOr(Save+0x1C93,0x02) --ZZ_AL_CHECK_GOA
+	end
+	if ReadByte(Save+0x35AF) > 0 then --Sword of the Ancestors
+		BitOr(Save+0x1C93,0x04) --ZZ_MU_CHECK_GOA
+	end
+	if ReadByte(Save+0x35B5) > 0 then --Proud Fang
+		BitOr(Save+0x1C94,0x01) --ZZ_LK_CHECK_1_GOA
+	end
+	if ReadByte(Save+0x35B4) > 0 then --Bone Fist
+		BitOr(Save+0x1C94,0x40) --ZZ_NM_CHECK_1_GOA
+	end
+	if ReadByte(Save+0x35B6) > 0 then --Skill and Crossbones
+		BitOr(Save+0x1C94,0x80) --ZZ_CA_CHECK_GOA
+	end
+	if ReadByte(Save+0x35C2) > 0 then --Identity Disk
+		BitOr(Save+0x1C95,0x01) --ZZ_TR_CHECK_GOA
+	end
+end
 --Fix Genie Crash
 if true then --No Valor, Wisdom, Master, or Final
 	local CurSubmenu
