@@ -246,9 +246,6 @@ if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	WriteByte(Slot1+0x1B2,5)   --Starting Drive Max
 	--Tutorial Flags & Form Weapons
 	BitOr(Save+0x36E8,0x01)  --Enable Item in Command Menu
-	WriteShort(Save+0x32F4,0x051) --Valor Form equips FAKE
-	WriteShort(Save+0x339C,0x02C) --Master Form equips Detection Saber
-	WriteShort(Save+0x33D4,0x02D) --Final Form equips Edge of Ultima
 	WriteShort(Save+0x4270,0x1FF) --Pause Menu Tutorial Prompts Seen Flags
 	WriteShort(Save+0x4274,0x1FF) --Status Form & Summon Seen Flags
 	BitOr(Save+0x49F0,0x03) --Shop Tutorial Prompt Flags (1=Big Shops, 2=Small Shops)
@@ -313,36 +310,6 @@ if Place == 0x000F then
 		Warp(0x04,0x1A,WarpDoor,0x00,0x00,0x02)
 	end
 end
---[[World Map -> Garden of Assemblage v2 (unstable)
-if World == 0x12 then --The World that Never Was
-	WriteShort(Save+0x1694,0x01) --World Map EVT
-elseif World == 0x08 then --Land of Dragons
-	WriteShort(Save+0x1694,0x02)
-elseif World == 0x05 then --Beast's Castle
-	WriteShort(Save+0x1694,0x03)
-elseif World == 0x0E then --Halloween Town
-	WriteShort(Save+0x1694,0x04)
-elseif World == 0x07 then --Agrabah
-	WriteShort(Save+0x1694,0x05)
-elseif World == 0x06 then --Olympus Coliseum
-	WriteShort(Save+0x1694,0x06)
-elseif World == 0x0A then --Pride Lands
-	WriteShort(Save+0x1694,0x07)
-elseif World == 0x02 then
-	if ReadByte(Save+0x1CFF) == 8 then --Twilight Town
-		WriteShort(Save+0x1694,0x08)
-	elseif ReadByte(Save+0x1CFF) == 13 then --Simulated Twilight Town
-		WriteShort(Save+0x1694,0x0D)
-	end
-elseif World == 0x04 then --Hollow Bastion
-	WriteShort(Save+0x1694,0x09)
-elseif World == 0x10 then --Port Royal
-	WriteShort(Save+0x1694,0x0A)
-elseif World == 0x0C then --Disney Castle
-	WriteShort(Save+0x1694,0x0B)
-elseif World == 0x0B then --Atlantica
-	WriteShort(Save+0x1694,0x0C)
-end--]]
 --Battle Level
 if true then
 	local Bitmask, Visit = false
@@ -1465,6 +1432,9 @@ elseif ReadShort(TxtBox) == 0x768 and PrevPlace == 0x1A04 and ReadByte(Save+0x1C
 	WriteByte(Save+0x1CFF,8) --TT Flag
 	WriteArray(Save+0x0310,ReadArray(Save+0x01A0,144)) --Load Spawn ID
 	WriteArray(Save+0x03E8,ReadArray(Save+0x0310,6))   --The Empty Realm -> Tunnelway
+	if Evt <= 50 then --Not a Special Event
+		WriteArray(Now+0x4,ReadArray(Save+0x310+Room*6,6)) --Load the Proper Spawn ID
+	end
 	local PostSave = ReadByte(Save+0x1CFD)
 	local Progress = ReadByte(Save+0x1D0D)
 	local Visit --Battle Level & Blocks
@@ -1523,9 +1493,6 @@ elseif ReadShort(TxtBox) == 0x768 and PrevPlace == 0x1A04 and ReadByte(Save+0x1C
 	end
 	WriteByte(Save+0x3FF5,Visit)
 	WriteByte(Save+0x23EE,1) --TT Music: The Afternoon Streets & Working Together
-	if Evt <= 50 then --Not a Special Event
-		WriteArray(Now+0x4,ReadArray(Save+0x310+Room*6,6)) --Load the Proper Spawn ID
-	end
 elseif ReadByte(Save+0x1CFF) == 8 then --Save Events within TT
 	WriteArray(Save+0x0310,ReadArray(Save+0x03E8,6))   --Tunnelway -> The Empty Realm
 	WriteArray(Save+0x01A0,ReadArray(Save+0x0310,144)) --Save Spawn ID
@@ -2102,6 +2069,9 @@ elseif ReadShort(TxtBox) == 0x76D and PrevPlace == 0x1A04 and ReadByte(Save+0x1C
 	WriteByte(Save+0x1CFF,13) --STT Flag
 	WriteArray(Save+0x0310,ReadArray(Save+0x0230,144)) --Load Spawn ID
 	WriteArray(Save+0x03E8,ReadArray(Save+0x0310,6))   --The Empty Realm -> Tunnelway
+	if Evt <= 50 then --Not a Special Event
+		WriteArray(Now+0x4,ReadArray(Save+0x310+Room*6,6)) --Load the Proper Spawn ID
+	end
 	local PostSave = ReadByte(Save+0x1CFE)
 	local Progress = ReadByte(Save+0x1D0E)
 	local Visit --Battle Level & Blocks
@@ -2160,9 +2130,6 @@ elseif ReadShort(TxtBox) == 0x76D and PrevPlace == 0x1A04 and ReadByte(Save+0x1C
 	WriteByte(Save+0x23EE,BGMSet) --STT Music: Lazy Afternoons & Sinister Sundowns
 	WriteShort(Save+0x20E4,0x9F42) --Underground Concourse Block
 	WriteByte(Save+0x1CF0,0) --Beam Flag Reset
-	if Evt <= 50 then --Not a Special Event
-		WriteArray(Now+0x4,ReadArray(Save+0x310+Room*6,6)) --Load the Proper Spawn ID
-	end
 elseif ReadByte(Save+0x1CFF) == 13 then --Save Spawn ID within STT
 	WriteArray(Save+0x0310,ReadArray(Save+0x03E8,6))   --Tunnelway -> The Empty Realm
 	WriteArray(Save+0x0230,ReadArray(Save+0x0310,144)) --Save Spawn ID

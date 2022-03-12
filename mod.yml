@@ -22,6 +22,11 @@ assets:
     source:
     - name: 00battle.bin/PlrpList.yml
       type: plrp
+#Form Starting Weapons
+- name: 00common.bdx
+  method: copy
+  source:
+  - name: 00common.bin
 #Big Chest -> Small Chest & TR Keyblade -> New Keyblade
 - name: 00objentry.bin
   method: listpatch
@@ -2457,17 +2462,3 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt41/evt.script
-#- name: ard/wm00.ard #World Map (GoA Warp)
-#  multi:
-#  - name: ard/us/wm00.ard
-#  - name: ard/fr/wm00.ard
-#  - name: ard/gr/wm00.ard
-#  - name: ard/it/wm00.ard
-#  - name: ard/sp/wm00.ard
-#  method: binarc
-#  source:
-#  - name: evt
-#    type: areadatascript
-#    method: areadatascript
-#    source:
-#    - name: ard/wm00/evt.script
