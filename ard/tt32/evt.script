@@ -23,7 +23,7 @@ Program 0x02
 MapScript 12
 Spawn "e_50"
 AreaSettings 1 45
-	SetProgressFlag 0x80A
+	SetProgressFlag 0x801
 	SetPartyMenu 0
 
 Program 0x03

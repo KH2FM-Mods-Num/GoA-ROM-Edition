@@ -1,7 +1,3 @@
-Program 0x01
-Unk06 0
-Spawn "b_00"
-
 Program 0x02
 Unk06 0
 BattleLevel 99
