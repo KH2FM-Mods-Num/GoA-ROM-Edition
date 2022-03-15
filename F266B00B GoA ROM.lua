@@ -1,6 +1,6 @@
 --ROM Version
---Last Update: Visit-Locking, moved Goofy Dead to ROM, and added world progress for Reverse
---Todo: Integrate ROM-based skips & item-based progression
+--Last Update: Visit-Locking, moved Goofy Dead to ROM, and added world progress for Reverse, integrated ROM-based skips
+--Todo: Maybe item-based progression
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
@@ -313,10 +313,10 @@ if Place == 0x000F then
 end
 --Visits Unlock
 if false then
-	if ReadByte(Save+0x363F) > 0 then --Tournament Poster
+	if ReadByte(Save+0x364A) > 0 then --Picture
 		BitOr(Save+0x1C92,0x08) --ZZ_TT_CHECK_1_GOA
 	end
-	if ReadByte(Save+0x3640) > 0 then --Poster
+	if ReadByte(Save+0x3649) > 0 then --Ice Cream
 		BitOr(Save+0x1C92,0x10) --ZZ_TT_CHECK_2_GOA
 	end
 	if ReadByte(Save+0x35C1) > 0 then --Way to the Dawn
@@ -326,10 +326,10 @@ if false then
 		BitOr(Save+0x1C92,0x40) --ZZ_HB_CHECK_2_GOA
 	end
 	if ReadByte(Save+0x35B3) > 0 then --Beast's Claw
-		BitOr(Save+0x1C92,0x80) --ZZ_BB_CHECK_1_GOA
+		BitOr(Save+0x1C92,0x80) --ZZ_BB_CHECK_GOA
 	end
 	if ReadByte(Save+0x35AE) > 0 then --Battlefields of War
-		BitOr(Save+0x1C93,0x01) --ZZ_HE_CHECK_1_GOA
+		BitOr(Save+0x1C93,0x01) --ZZ_HE_CHECK_GOA
 	end
 	if ReadByte(Save+0x35C0) > 0 then --Scimitar
 		BitOr(Save+0x1C93,0x02) --ZZ_AL_CHECK_GOA
@@ -338,10 +338,10 @@ if false then
 		BitOr(Save+0x1C93,0x04) --ZZ_MU_CHECK_GOA
 	end
 	if ReadByte(Save+0x35B5) > 0 then --Proud Fang
-		BitOr(Save+0x1C94,0x01) --ZZ_LK_CHECK_1_GOA
+		BitOr(Save+0x1C94,0x01) --ZZ_LK_CHECK_GOA
 	end
 	if ReadByte(Save+0x35B4) > 0 then --Bone Fist
-		BitOr(Save+0x1C94,0x40) --ZZ_NM_CHECK_1_GOA
+		BitOr(Save+0x1C94,0x40) --ZZ_NM_CHECK_GOA
 	end
 	if ReadByte(Save+0x35B6) > 0 then --Skill and Crossbones
 		BitOr(Save+0x1C94,0x80) --ZZ_CA_CHECK_GOA
@@ -362,6 +362,11 @@ else --Remove the item requirements
 	BitOr(Save+0x1C94,0x40) --ZZ_NM_CHECK_1_GOA
 	BitOr(Save+0x1C94,0x80) --ZZ_CA_CHECK_GOA
 	BitOr(Save+0x1C95,0x01) --ZZ_TR_CHECK_GOA
+	--Disable GoA Visit Skip
+	--BitOr(Save+0x1CED,0x01) --TT_MISTERY_SKIP_GOA
+	--BitOr(Save+0x1D20,0x20) --HB_SCENARIO_5_SKIP_GOA
+	--BitOr(Save+0x1DB6,0x08) --PO_SCENARIO_0_SKIP_GOA
+	--BitOr(Save+0x1EB1,0x01) --TR_LIGHTCYCLE_SKIP_GOA
 end
 --Battle Level
 if true then
@@ -1717,17 +1722,17 @@ end
 --Heartless Manufactory Early Access with Membership Card
 if ReadByte(Save+0x3643) > 0 then
 	if ReadShort(Save+0x062E) == 0x08 then
+		WriteShort(Save+0x062E,0x0E) --Ansem's Study MAP
 		WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock
-		WriteShort(Save+0x062E,0x0E)
 	elseif ReadShort(Save+0x062E) == 0x0D then
+		WriteShort(Save+0x062E,0x10) --Ansem's Study MAP
 		WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock
-		WriteShort(Save+0x062E,0x10)
 	elseif ReadShort(Save+0x062E) == 0x0F then
+		WriteShort(Save+0x062E,0x11) --Ansem's Study MAP
 		WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock
-		WriteShort(Save+0x062E,0x11)
 	end
 end
---Skip Hollow Bastion 5th Visit
+--[[Skip Hollow Bastion 5th Visit
 if ReadShort(Save+0x0650) == 0x0A then
 	WriteByte(Save+0x1D2E,2) --Post-Story Save
 	WriteShort(Save+0x0618,0x00) --The Dark Depths BTL
@@ -1768,7 +1773,7 @@ if ReadShort(Save+0x0650) == 0x0A then
 	BitOr(Save+0x1D1A,0x40) --HB_506_END
 	BitOr(Save+0x1D21,0x08) --HB_hb_event_507 (Hollow Bastion -> Radiant Garden)
 	BitOr(Save+0x1D24,0x02) --HB_ROXAS_KINOKO_ON
-end
+end--]]
 --Mushroom XIII Unlocked
 if Place == 0x0204 and Events(Null,0x02,0x03) and ReadByte(Save+0x36B4) > 0 then
 	WriteShort(Save+0x3E94,3) --Mushroom I
@@ -2028,7 +2033,7 @@ if Place == 0x1A04 and ReadByte(Save+0x1EBE) > 0 then
 		WriteByte(Save+0x1EBE,3)
 	end
 end
---Skip Light Cycle
+--[[Skip Light Cycle
 if ReadShort(Save+0x1994) == 0x04 then
 	WriteShort(Save+0x1990,0x03) --Pit Cell MAP (Despawn Party Members)
 	WriteShort(Save+0x1994,0x16) --Pit Cell EVT
@@ -2043,7 +2048,7 @@ if ReadShort(Save+0x1994) == 0x04 then
 	BitOr(Save+0x1EB5,0x08) --TR_tr02_ms102a
 	BitOr(Save+0x1EB5,0x10) --TR_tr02_ms102b
 	BitOr(Save+0x1EB1,0x10) --TR_110_END
-end
+end--]]
 end
 
 function STT()
@@ -2417,7 +2422,7 @@ if Place == 0x0D04 and Events(0x65,0x65,0x65) and PrevPlace == 0x0209 then --Los
 	WriteArray(Save+0x0646,ReadArray(Save+0x066A,6)) --Load Borough Spawn ID
 	WriteArray(Save+0x065E,ReadArray(Save+0x0664,6)) --Load Merlin's House Spawn ID
 end
---Skip 0th Visit
+--[[Skip 0th Visit
 if ReadShort(Save+0x0D90) == 0x00 then
 	WriteShort(Save+0x0D90,0x02) --The Hundred Acre Wood MAP (Pooh's House Only)
 	WriteShort(Save+0x0DA0,0x16) --Pooh's House EVT
@@ -2439,7 +2444,7 @@ if ReadShort(Save+0x0D90) == 0x00 then
 	BitOr(Save+0x1DB0,0x80) --PO_008_END
 	BitOr(Save+0x1D17,0x02) --HB_po_008_END
 	BitOr(Save+0x1D17,0x08) --HB_907_END
-end
+end--]]
 --Faster Minigames
 if Place == 0x0609 then --A Blustery Rescue
 	if ReadByte(Cntrl) == 0 then --Minigame Started
