@@ -1495,6 +1495,8 @@ elseif Place == 0x1502 and Events(Null,Null,0x02) then --The Password Is...
 	WriteByte(Save+0x1D0D,14)
 elseif Place == 0x0012 and Events(0x77,0x77,0x77) then --Those Who Remain
 	WriteByte(Save+0x1CFD,1) --Post-Story Save
+elseif ReadByte(Save+0x1D0D) == 15 and ReadShort(Save+0x0368) == 0x12 then --1st Visit
+	WriteByte(Save+0x1D0D,0)
 end
 --Twilight Town Post-Story Save
 if Place == 0x1A04 and ReadByte(Save+0x1CFD) > 0 and Door == 0x1C then
@@ -1577,6 +1579,8 @@ elseif ReadShort(TxtBox) == 0x768 and PrevPlace == 0x1A04 and ReadByte(Save+0x1C
 		elseif Progress == 12 or Progress == 13 or Progress == 14 then --[Before The Old Mansion Nobodies, Before Betwixt and Between Nobodies]
 			Visit = 10
 			WriteShort(Save+0x20EC,0xCB76) --Sandlot Block
+		elseif Progress == 15 then --Post 3rd Visit
+			Visit = 10
 		end
 	else
 		Visit = 10

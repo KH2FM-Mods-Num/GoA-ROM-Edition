@@ -164,6 +164,32 @@ assets:
     source:
     - name: 03system.bin/TrsrList.yml
       type: trsr
+  - name: memt
+    type: list
+    method: copy
+    source:
+      - name: 03system.bin/memt.bin
+#Donald & Goofy (Disney Castle & Castle Oblivion)
+- name: obj/P_EX020_DC.mdlx
+  method: copy
+  source:
+  - name: obj/P_EX020_DC.mdlx
+- name: obj/P_EX020_DC.a.fm
+  multi:
+  - name: obj/P_EX020_DC.a.us
+  method: copy
+  source:
+  - name: obj/P_EX020_DC.a.fm
+- name: obj/P_EX030_DC.mdlx
+  method: copy
+  source:
+  - name: obj/P_EX030_DC.mdlx
+- name: obj/P_EX030_DC.a.fm
+  multi:
+  - name: obj/P_EX030_DC.a.us
+  method: copy
+  source:
+  - name: obj/P_EX030_DC.a.fm
 #Garden of Assemblage Small Chest
 - name: obj/F_EX030_HB.mdlx
   method: copy
