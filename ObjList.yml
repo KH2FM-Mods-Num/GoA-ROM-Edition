@@ -1,3 +1,4 @@
+#Chests
 324: #Default Large -> Small Chest
   ObjectId: 324
   ObjectType: TREASURE
@@ -358,6 +359,98 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
+2143: #Christmas Town Large -> Small Chest
+  ObjectId: 2143
+  ObjectType: TREASURE
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 0
+  ModelName: F_EX030_NM_XMAS
+  AnimationName: F_EX030.mset
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 0
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+2236: #Twilight Town? Large -> Small Chest
+  ObjectId: 2236
+  ObjectType: TREASURE
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 0
+  ModelName: F_EX030_TT
+  AnimationName: F_EX030_TT.mset
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 0
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+2540: #Garden of Assemblage Large -> Small Chest
+  ObjectId: 2540
+  ObjectType: TREASURE
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 0
+  ModelName: F_EX030_HB
+  AnimationName: F_EX030.mset
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 0
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+
+#Keyblades
 900: #Antiform Dummy -> Pureblood
   ObjectId: 900
   ObjectType: WEAPON
@@ -688,98 +781,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2143: #Christmas Town Large -> Small Chest
-  ObjectId: 2143
-  ObjectType: TREASURE
-  SubType: 0
-  DrawPriority: 0
-  WeaponJoint: 0
-  ModelName: F_EX030_NM_XMAS
-  AnimationName: F_EX030.mset
-  Flags: 0
-  ObjectTargetType: M
-  Padding: 0
-  NeoStatus: 0
-  NeoMoveset: 0
-  Weight: 0
-  SpawnLimiter: 0
-  Page: 0
-  ObjectShadowSize: NoShadow
-  ObjectForm: Default
-  SpawnObject1: 0
-  SpawnObject2: 0
-  SpawnObject3: 0
-  SpawnObject4: 0
-  NoApdx: false
-  Before: false
-  FixColor: false
-  Fly: false
-  Scissoring: false
-  IsPirate: false
-  WallOcclusion: false
-  Hift: false
-2236: #Twilight Town? Large -> Small Chest
-  ObjectId: 2236
-  ObjectType: TREASURE
-  SubType: 0
-  DrawPriority: 0
-  WeaponJoint: 0
-  ModelName: F_EX030_TT
-  AnimationName: F_EX030_TT.mset
-  Flags: 0
-  ObjectTargetType: M
-  Padding: 0
-  NeoStatus: 0
-  NeoMoveset: 0
-  Weight: 0
-  SpawnLimiter: 0
-  Page: 0
-  ObjectShadowSize: NoShadow
-  ObjectForm: Default
-  SpawnObject1: 0
-  SpawnObject2: 0
-  SpawnObject3: 0
-  SpawnObject4: 0
-  NoApdx: false
-  Before: false
-  FixColor: false
-  Fly: false
-  Scissoring: false
-  IsPirate: false
-  WallOcclusion: false
-  Hift: false
-2540: #Garden of Assemblage Large -> Small Chest
-  ObjectId: 2540
-  ObjectType: TREASURE
-  SubType: 0
-  DrawPriority: 0
-  WeaponJoint: 0
-  ModelName: F_EX030_HB
-  AnimationName: F_EX030.mset
-  Flags: 0
-  ObjectTargetType: M
-  Padding: 0
-  NeoStatus: 0
-  NeoMoveset: 0
-  Weight: 0
-  SpawnLimiter: 0
-  Page: 0
-  ObjectShadowSize: NoShadow
-  ObjectForm: Default
-  SpawnObject1: 0
-  SpawnObject2: 0
-  SpawnObject3: 0
-  SpawnObject4: 0
-  NoApdx: false
-  Before: false
-  FixColor: false
-  Fly: false
-  Scissoring: false
-  IsPirate: false
-  WallOcclusion: false
-  Hift: false
-
-#Other TR Staves & Shields for future model additions
+#Party
 1695: #TR Mage's Staff -> DC Donald
   ObjectId: 1695
   ObjectType: FRIEND
@@ -840,6 +842,11 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
+
+#Other TR Staves & Shields for future model additions
+#110 : #Test the King
+#1392: #Detection Shield
+#1448: #Detection Staff
 #2000: #TR Save the Queen
 #2013: #TR Adamant Shield
 #2014: #TR Chain Gear
