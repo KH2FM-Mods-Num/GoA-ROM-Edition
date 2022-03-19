@@ -903,7 +903,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2015: #TR Ogre Shield -> DC Donald
+2015: #TR Ogre Shield -> CO Donald
   ObjectId: 2015
   ObjectType: FRIEND
   SubType: 0
@@ -933,7 +933,7 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2016: #TR Falling Star -> DC Goofy
+2016: #TR Falling Star -> CO Goofy
   ObjectId: 2016
   ObjectType: FRIEND
   SubType: 0
@@ -964,71 +964,13 @@
   WallOcclusion: false
   Hift: false
 
-2017: #TR Dreamcloud -> DC Donald (Hi-Poly)
-  ObjectId: 2017
-  ObjectType: NPC
-  SubType: 0
-  DrawPriority: 0
-  WeaponJoint: 0
-  ModelName: H_ZZ020_DC
-  AnimationName: ''
-  Flags: 1
-  ObjectTargetType: M
-  Padding: 0
-  NeoStatus: 0
-  NeoMoveset: 0
-  Weight: 0
-  SpawnLimiter: 0
-  Page: 0
-  ObjectShadowSize: SmallShadow
-  ObjectForm: Default
-  SpawnObject1: 0
-  SpawnObject2: 0
-  SpawnObject3: 0
-  SpawnObject4: 0
-  NoApdx: true
-  Before: false
-  FixColor: false
-  Fly: false
-  Scissoring: false
-  IsPirate: false
-  WallOcclusion: false
-  Hift: false
-2018: #TR Knight Defender -> DC Goofy (Hi-Poly)
-  ObjectId: 2018
-  ObjectType: NPC
-  SubType: 0
-  DrawPriority: 0
-  WeaponJoint: 0
-  ModelName: H_ZZ030_DC
-  AnimationName: ''
-  Flags: 1
-  ObjectTargetType: M
-  Padding: 0
-  NeoStatus: 0
-  NeoMoveset: 0
-  Weight: 0
-  SpawnLimiter: 0
-  Page: 0
-  ObjectShadowSize: SmallShadow
-  ObjectForm: Default
-  SpawnObject1: 0
-  SpawnObject2: 0
-  SpawnObject3: 0
-  SpawnObject4: 0
-  NoApdx: true
-  Before: false
-  FixColor: false
-  Fly: false
-  Scissoring: false
-  IsPirate: false
-  WallOcclusion: false
-  Hift: false
 #Other TR Staves & Shields for future model additions
 #110 : #Test the King
 #1392: #Detection Shield
 #1448: #Detection Staff
 #2000: #TR Save the Queen
+#2017: #TR Dreamcloud -> DC Donald (Hi-Poly)
+#2018: #TR Knight Defender -> DC Goofy (Hi-Poly)
 #2019: #TR Genji Shield
 #2020: #TR Akashic Record
 #2021: #TR Nobody Guard
