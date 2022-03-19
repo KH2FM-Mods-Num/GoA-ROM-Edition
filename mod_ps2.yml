@@ -182,6 +182,10 @@ assets:
   method: copy
   source:
   - name: obj/P_EX020_DC.a.fm
+- name: obj/P_EX020_DC_ANGRY_NPC.mdlx
+  method: copy
+  source:
+  - name: obj/P_EX020_DC_ANGRY_NPC.mdlx
 #Goofy (Disney Castle)
 - name: obj/H_ZZ030_DC.mdlx
   method: copy
@@ -227,18 +231,18 @@ assets:
   method: copy
   source:
   - name: obj/W_EX010_Pureblood.mdlx
-- name: obj/W_EX010_X0_NM.mdlx
+- name: obj/W_EX010_NM_X0.mdlx
   method: copy
   source:
   - name: obj/W_EX010_Pureblood_NM.mdlx
-- name: obj/W_EX010_X0_TR.mdlx
+- name: obj/W_EX010_TR_X0.mdlx
   method: copy
   source:
   - name: obj/W_EX010_Pureblood_TR.mdlx
 - name: obj/W_EX010_X0.a.fm
   multi:
-  - name: obj/W_EX010_X0_NM.a.fm
-  - name: obj/W_EX010_X0_TR.a.fm
+  - name: obj/W_EX010_NM_X0.a.fm
+  - name: obj/W_EX010_TR_X0.a.fm
   method: copy
   source:
   - name: obj/W_EX010_Pureblood.a.fm
@@ -247,18 +251,18 @@ assets:
   method: copy
   source:
   - name: obj/W_EX010_AlphaWeapon.mdlx
-- name: obj/W_EX010_Y0_NM.mdlx
+- name: obj/W_EX010_NM_Y0.mdlx
   method: copy
   source:
   - name: obj/W_EX010_AlphaWeapon_NM.mdlx
-- name: obj/W_EX010_Y0_TR.mdlx
+- name: obj/W_EX010_TR_Y0.mdlx
   method: copy
   source:
   - name: obj/W_EX010_AlphaWeapon_TR.mdlx
 - name: obj/W_EX010_Y0.a.fm
   multi:
-  - name: obj/W_EX010_Y0_NM.a.fm
-  - name: obj/W_EX010_Y0_TR.a.fm
+  - name: obj/W_EX010_NM_Y0.a.fm
+  - name: obj/W_EX010_TR_Y0.a.fm
   method: copy
   source:
   - name: obj/W_EX010_AlphaWeapon.a.fm
@@ -267,18 +271,18 @@ assets:
   method: copy
   source:
   - name: obj/W_EX010_OmegaWeapon.mdlx
-- name: obj/W_EX010_Z0_NM.mdlx
+- name: obj/W_EX010_NM_Z0.mdlx
   method: copy
   source:
   - name: obj/W_EX010_OmegaWeapon_NM.mdlx
-- name: obj/W_EX010_Z0_TR.mdlx
+- name: obj/W_EX010_TR_Z0.mdlx
   method: copy
   source:
   - name: obj/W_EX010_OmegaWeapon_TR.mdlx
 - name: obj/W_EX010_Z0.a.fm
   multi:
-  - name: obj/W_EX010_Z0_NM.a.fm
-  - name: obj/W_EX010_Z0_TR.a.fm
+  - name: obj/W_EX010_NM_Z0.a.fm
+  - name: obj/W_EX010_TR_Z0.a.fm
   method: copy
   source:
   - name: obj/W_EX010_OmegaWeapon.a.fm
@@ -287,18 +291,18 @@ assets:
   method: copy
   source:
   - name: obj/W_EX010_KingdomKeyD.mdlx
-- name: obj/W_EX010_00_NM.mdlx
+- name: obj/W_EX010_NM_00.mdlx
   method: copy
   source:
   - name: obj/W_EX010_KingdomKeyD_NM.mdlx
-- name: obj/W_EX010_00_TR.mdlx
+- name: obj/W_EX010_TR_00.mdlx
   method: copy
   source:
   - name: obj/W_EX010_KingdomKeyD_TR.mdlx
 - name: obj/W_EX010_00.a.fm
   multi:
-  - name: obj/W_EX010_00_NM.a.fm
-  - name: obj/W_EX010_00_TR.a.fm
+  - name: obj/W_EX010_NM_00.a.fm
+  - name: obj/W_EX010_TR_00.a.fm
   method: copy
   source:
   - name: obj/W_EX010_KingdomKeyD.a.fm

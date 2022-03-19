@@ -359,6 +359,36 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
+2133: #Pride Lands Large -> Small Chest
+  ObjectId: 2133
+  ObjectType: TREASURE
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 0
+  ModelName: F_EX050
+  AnimationName: F_EX050.mset
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 0
+  ObjectShadowSize: NoShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 2143: #Christmas Town Large -> Small Chest
   ObjectId: 2143
   ObjectType: TREASURE
@@ -517,7 +547,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_X0_NM
+  ModelName: W_EX010_NM_X0
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -547,7 +577,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_Y0_NM
+  ModelName: W_EX010_NM_Y0
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -577,7 +607,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_Z0_NM
+  ModelName: W_EX010_NM_Z0
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -607,7 +637,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_00_NM
+  ModelName: W_EX010_NM_00
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -637,7 +667,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_X0_TR
+  ModelName: W_EX010_TR_X0
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -667,7 +697,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_Y0_TR
+  ModelName: W_EX010_TR_Y0
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -697,7 +727,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_Z0_TR
+  ModelName: W_EX010_TR_Z0
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -727,7 +757,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_00_TR
+  ModelName: W_EX010_TR_00
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -738,36 +768,6 @@
   SpawnLimiter: 0
   Page: 17
   ObjectShadowSize: SmallShadow
-  ObjectForm: Default
-  SpawnObject1: 0
-  SpawnObject2: 0
-  SpawnObject3: 0
-  SpawnObject4: 0
-  NoApdx: false
-  Before: false
-  FixColor: false
-  Fly: false
-  Scissoring: false
-  IsPirate: false
-  WallOcclusion: false
-  Hift: false
-2133: #Pride Lands Large -> Small Chest
-  ObjectId: 2133
-  ObjectType: TREASURE
-  SubType: 0
-  DrawPriority: 0
-  WeaponJoint: 0
-  ModelName: F_EX050
-  AnimationName: F_EX050.mset
-  Flags: 0
-  ObjectTargetType: M
-  Padding: 0
-  NeoStatus: 0
-  NeoMoveset: 0
-  Weight: 0
-  SpawnLimiter: 0
-  Page: 0
-  ObjectShadowSize: NoShadow
   ObjectForm: Default
   SpawnObject1: 0
   SpawnObject2: 0
@@ -903,8 +903,38 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2015: #TR Ogre Shield -> CO Donald
+2015: #TR Ogre Shield -> DC Donald (Angry/Sad)
   ObjectId: 2015
+  ObjectType: NPC
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 2
+  ModelName: P_EX020_DC_ANGRY_NPC
+  AnimationName: ''
+  Flags: 1
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 0
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: true
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+2016: #TR Falling Star -> CO Donald
+  ObjectId: 2016
   ObjectType: FRIEND
   SubType: 0
   DrawPriority: 0
@@ -933,8 +963,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2016: #TR Falling Star -> CO Goofy
-  ObjectId: 2016
+2017: #TR Dreamcloud -> CO Goofy
+  ObjectId: 2017
   ObjectType: FRIEND
   SubType: 0
   DrawPriority: 0
@@ -969,7 +999,6 @@
 #1392: #Detection Shield
 #1448: #Detection Staff
 #2000: #TR Save the Queen
-#2017: #TR Dreamcloud
 #2018: #TR Knight Defender
 #2019: #TR Genji Shield
 #2020: #TR Akashic Record
