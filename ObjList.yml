@@ -909,7 +909,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 2
-  ModelName: P_EX020_DC
+  ModelName: P_EX020_CO
   AnimationName: P_EX020.mset
   Flags: 0
   ObjectTargetType: M
@@ -939,7 +939,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 3
-  ModelName: P_EX030_DC
+  ModelName: P_EX030_CO
   AnimationName: P_EX030.mset
   Flags: 0
   ObjectTargetType: M
@@ -969,8 +969,8 @@
 #1392: #Detection Shield
 #1448: #Detection Staff
 #2000: #TR Save the Queen
-#2017: #TR Dreamcloud -> DC Donald (Hi-Poly)
-#2018: #TR Knight Defender -> DC Goofy (Hi-Poly)
+#2017: #TR Dreamcloud
+#2018: #TR Knight Defender
 #2019: #TR Genji Shield
 #2020: #TR Akashic Record
 #2021: #TR Nobody Guard

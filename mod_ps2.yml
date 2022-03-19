@@ -837,7 +837,35 @@ assets:
     method: spawnpoint
     source:
     - name: ard/ca10/m_11.yml
-- name: ard/dc04.ard #The Hall of the Cornerstone (Dark) (Skip WM & Skip HB)
+- name: ard/dc01.ard #Library (Cutscene Models)
+  multi:
+  - name: ard/us/dc01.ard
+  - name: ard/fr/dc01.ard
+  - name: ard/gr/dc01.ard
+  - name: ard/it/dc01.ard
+  - name: ard/sp/dc01.ard
+  method: binarc
+  source:
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: ard/dc01/104.bin
+- name: ard/dc03.ard #Courtyard (Cutscene Models)
+  multi:
+  - name: ard/us/dc03.ard
+  - name: ard/fr/dc03.ard
+  - name: ard/gr/dc03.ard
+  - name: ard/it/dc03.ard
+  - name: ard/sp/dc03.ard
+  method: binarc
+  source:
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: ard/dc03/103.bin
+- name: ard/dc04.ard #The Hall of the Cornerstone (Dark) (Cutscene Models & Skip WM & Skip HB)
   multi:
   - name: ard/us/dc04.ard
   - name: ard/fr/dc04.ard
@@ -851,7 +879,22 @@ assets:
     method: areadatascript
     source:
     - name: ard/dc04/evt.script
-- name: ard/dc05.ard #The Hall of the Cornerstone (Light) (GoA Warp & AS Warp)
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: ard/dc04/108.bin
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: ard/dc04/109.bin
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: ard/dc04/110.bin
+- name: ard/dc05.ard #The Hall of the Cornerstone (Light) (Cutscene Models & GoA Warp & AS Warp)
   multi:
   - name: ard/us/dc05.ard
   - name: ard/fr/dc05.ard
@@ -880,6 +923,30 @@ assets:
     method: areadatascript
     source:
     - name: ard/dc05/evt.script
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: ard/dc05/111.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: ard/dc05/205.bin
+- name: ard/dc06.ard #Gummi Hangar (Cutscene Models)
+  multi:
+  - name: ard/us/dc06.ard
+  - name: ard/fr/dc06.ard
+  - name: ard/gr/dc06.ard
+  - name: ard/it/dc06.ard
+  - name: ard/sp/dc06.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: ard/dc06/102.bin
 - name: ard/dc07.ard #Gathering Place (Early Manifest Illusion)
   multi:
   - name: ard/us/dc07.ard
