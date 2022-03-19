@@ -169,7 +169,11 @@ assets:
     method: copy
     source:
       - name: 03system.bin/memt.bin
-#Donald & Goofy (Disney Castle & Castle Oblivion)
+#Donald (Disney Castle)
+- name: obj/H_ZZ020_DC.mdlx
+  method: copy
+  source:
+  - name: obj/H_ZZ020_DC.mdlx
 - name: obj/P_EX020_DC.mdlx
   method: copy
   source:
@@ -180,6 +184,75 @@ assets:
   method: copy
   source:
   - name: obj/P_EX020_DC.a.fm
+- name: remastered/obj/H_ZZ020_DC.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ020_DC.mdlx/-0.dds
+- name: remastered/obj/H_ZZ020_DC.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ020_DC.mdlx/-1.dds
+- name: remastered/obj/H_ZZ020_DC.mdlx/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ020_DC.mdlx/-2.dds
+- name: remastered/obj/H_ZZ020_DC.mdlx/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ020_DC.mdlx/-3.dds
+- name: remastered/obj/H_ZZ020_DC.mdlx/-4.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ020_DC.mdlx/-4.dds
+- name: remastered/obj/P_EX020_DC.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020_DC.mdlx/-0.dds
+- name: remastered/obj/P_EX020_DC.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020_DC.mdlx/-1.dds
+- name: remastered/obj/P_EX020_DC.mdlx/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020_DC.mdlx/-2.dds
+- name: remastered/obj/P_EX020_DC.mdlx/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020_DC.mdlx/-3.dds
+- name: remastered/obj/P_EX020_DC.a.us/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-0.dds
+- name: remastered/obj/P_EX020_DC.a.us/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-1.dds
+- name: remastered/obj/P_EX020_DC.a.us/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-2.dds
+- name: remastered/obj/P_EX020_DC.a.us/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-3.dds
+- name: remastered/obj/P_EX020_DC.a.us/-4.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-4.dds
+- name: remastered/obj/P_EX020_DC.a.us/-5.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-5.dds
+- name: remastered/obj/P_EX020_DC.a.us/-6.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-6.dds
+#Goofy (Disney Castle)
+- name: obj/H_ZZ030_DC.mdlx
+  method: copy
+  source:
+  - name: obj/H_ZZ030_DC.mdlx
 - name: obj/P_EX030_DC.mdlx
   method: copy
   source:
@@ -190,6 +263,188 @@ assets:
   method: copy
   source:
   - name: obj/P_EX030_DC.a.fm
+- name: remastered/obj/H_ZZ030_DC.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ030_DC.mdlx/-0.dds
+- name: remastered/obj/H_ZZ030_DC.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ030_DC.mdlx/-1.dds
+- name: remastered/obj/H_ZZ030_DC.mdlx/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ030_DC.mdlx/-2.dds
+- name: remastered/obj/H_ZZ030_DC.mdlx/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ030_DC.mdlx/-3.dds
+- name: remastered/obj/P_EX030_DC.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030_DC.mdlx/-0.dds
+- name: remastered/obj/P_EX030_DC.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030_DC.mdlx/-1.dds
+- name: remastered/obj/P_EX030_DC.mdlx/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030_DC.mdlx/-2.dds
+- name: remastered/obj/P_EX030_DC.mdlx/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030_DC.mdlx/-3.dds
+- name: remastered/obj/P_EX030_DC.a.us/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030.a.us/-0.dds
+- name: remastered/obj/P_EX030_DC.a.us/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030.a.us/-1.dds
+- name: remastered/obj/P_EX030_DC.a.us/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030.a.us/-2.dds
+#Donald (Castle Oblivion)
+- name: obj/H_ZZ020_CO.mdlx
+  method: copy
+  source:
+  - name: obj/H_ZZ020_CO.mdlx
+- name: obj/P_EX020_CO.mdlx
+  method: copy
+  source:
+  - name: obj/P_EX020_CO.mdlx
+- name: obj/P_EX020_CO.a.fm
+  multi:
+  - name: obj/P_EX020_CO.a.us
+  method: copy
+  source:
+  - name: obj/P_EX020_CO.a.fm
+- name: remastered/obj/H_ZZ020_CO.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ020_CO.mdlx/-0.dds
+- name: remastered/obj/H_ZZ020_CO.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ020_CO.mdlx/-1.dds
+- name: remastered/obj/H_ZZ020_CO.mdlx/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ020_CO.mdlx/-2.dds
+- name: remastered/obj/H_ZZ020_CO.mdlx/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ020_CO.mdlx/-3.dds
+- name: remastered/obj/H_ZZ020_CO.mdlx/-4.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ020_CO.mdlx/-4.dds
+- name: remastered/obj/P_EX020_CO.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020_CO.mdlx/-0.dds
+- name: remastered/obj/P_EX020_CO.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020_CO.mdlx/-1.dds
+- name: remastered/obj/P_EX020_CO.mdlx/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020_CO.mdlx/-2.dds
+- name: remastered/obj/P_EX020_CO.mdlx/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020_CO.mdlx/-3.dds
+- name: remastered/obj/P_EX020_CO.a.us/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-0.dds
+- name: remastered/obj/P_EX020_CO.a.us/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-1.dds
+- name: remastered/obj/P_EX020_CO.a.us/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-2.dds
+- name: remastered/obj/P_EX020_CO.a.us/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-3.dds
+- name: remastered/obj/P_EX020_CO.a.us/-4.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-4.dds
+- name: remastered/obj/P_EX020_CO.a.us/-5.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-5.dds
+- name: remastered/obj/P_EX020_CO.a.us/-6.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX020.a.us/-6.dds
+#Goofy (Castle Oblivion)
+- name: obj/H_ZZ030_CO.mdlx
+  method: copy
+  source:
+  - name: obj/H_ZZ030_CO.mdlx
+- name: obj/P_EX030_CO.mdlx
+  method: copy
+  source:
+  - name: obj/P_EX030_CO.mdlx
+- name: obj/P_EX030_CO.a.fm
+  multi:
+  - name: obj/P_EX030_CO.a.us
+  method: copy
+  source:
+  - name: obj/P_EX030_CO.a.fm
+- name: remastered/obj/H_ZZ030_CO.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ030_CO.mdlx/-0.dds
+- name: remastered/obj/H_ZZ030_CO.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ030_CO.mdlx/-1.dds
+- name: remastered/obj/H_ZZ030_CO.mdlx/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ030_CO.mdlx/-2.dds
+- name: remastered/obj/H_ZZ030_CO.mdlx/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/H_ZZ030_CO.mdlx/-3.dds
+- name: remastered/obj/P_EX030_CO.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030_CO.mdlx/-0.dds
+- name: remastered/obj/P_EX030_CO.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030_CO.mdlx/-1.dds
+- name: remastered/obj/P_EX030_CO.mdlx/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030_CO.mdlx/-2.dds
+- name: remastered/obj/P_EX030_CO.mdlx/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030_CO.mdlx/-3.dds
+- name: remastered/obj/P_EX030_CO.a.us/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030.a.us/-0.dds
+- name: remastered/obj/P_EX030_CO.a.us/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030.a.us/-1.dds
+- name: remastered/obj/P_EX030_CO.a.us/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/P_EX030.a.us/-2.dds
 #Garden of Assemblage Small Chest
 - name: obj/F_EX030_HB.mdlx
   method: copy
