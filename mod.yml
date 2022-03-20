@@ -251,7 +251,7 @@ assets:
 - name: remastered/obj/P_EX020_DC.a.us/-6.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX020.a.us/-6.dds
+  - name: remastered/obj/P_EX020.a.us/-6_DC.dds
 - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-0.dds
   method: copy
   source:
@@ -338,7 +338,7 @@ assets:
 - name: remastered/obj/P_EX030_DC.a.us/-2.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX030.a.us/-2.dds
+  - name: remastered/obj/P_EX030.a.us/-2_DC.dds
 #Donald (Castle Oblivion)
 - name: obj/P_EX020_CO.mdlx
   method: copy
@@ -393,7 +393,7 @@ assets:
 - name: remastered/obj/P_EX020_CO.a.us/-6.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX020.a.us/-6.dds
+  - name: remastered/obj/P_EX020.a.us/-6_CO.dds
 #Goofy (Castle Oblivion)
 - name: obj/P_EX030_CO.mdlx
   method: copy
@@ -432,7 +432,7 @@ assets:
 - name: remastered/obj/P_EX030_CO.a.us/-2.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX030.a.us/-2.dds
+  - name: remastered/obj/P_EX030.a.us/-2_CO.dds
 #Garden of Assemblage Small Chest
 - name: obj/F_EX030_HB.mdlx
   method: copy
