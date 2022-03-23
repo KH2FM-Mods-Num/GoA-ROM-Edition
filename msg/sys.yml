@@ -1,12 +1,41 @@
 - id: 0x01E9
   en: Anti Form
+- id: 0x05C8
+  en: Alpha Weapon
+- id: 0x05C9
+  en: >-
+    Imbued with nostalgic memories of
+
+    the past. Increases MP restoration
+
+    by {:color #F0F00080}50%{:reset} when recharging MP.
+- id: 0x05CA
+  en: Omega Weapon
+- id: 0x05CB
+  en: >-
+    Filled with prophetic visions of the
+
+    future. Increases damage of aerial
+
+    finishers relative to combo length.
+- id: 0x05CC
+  en: Pureblood
+- id: 0x05CD
+  en: >-
+    A foreboding Keyblade brimming with
+
+    darkness. Restores drive relative
+
+    to the amount of damage taken.
 - id: 0x05E4
   en: Kingdom Key D
 - id: 0x05E5
   en: >-
-    The King's Keyblade.
+    The King's Keyblade and denizen of
 
-    The dark side of the Kingdom Key.
+    the Realm of Darkness. Increases
+
+    defense by {:color #F0F00080}3{:reset} in critical moments.
 - id: 0x0649
   en: >-
     Using the Keyblade's true power,

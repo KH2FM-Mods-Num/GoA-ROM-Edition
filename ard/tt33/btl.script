@@ -1,0 +1,137 @@
+Program 0x02
+Unk06 0
+BattleLevel 99
+Unk1d 4
+AreaSettings 1 46
+	SetJump Type 1 World EH Area 18 Entrance 51 LocalSet 0 FadeType -1
+	SetPartyMenu 0
+
+AreaSettings 1 70
+	SetProgressFlag 0x4846
+	SetUnk05 0x1
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 103 FadeType -1
+	SetPartyMenu 0
+
+Spawn "b_01"
+
+Program 0x03
+Unk06 0
+BattleLevel 99
+Unk1d 4
+AreaSettings 1 46
+	SetJump Type 1 World MU Area 6 Entrance 1 LocalSet 0 FadeType -1
+	SetPartyMenu 0
+
+AreaSettings 1 70
+	SetUnk05 0x1
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 107 FadeType -1
+	SetPartyMenu 0
+
+Spawn "b_02"
+
+Program 0x04
+Unk06 0
+BattleLevel 99
+Unk1d 4
+AreaSettings 1 46
+	SetJump Type 1 World BB Area 0 Entrance 4 LocalSet 0 FadeType -1
+	SetPartyMenu 0
+
+AreaSettings 1 70
+	SetUnk05 0x1
+	SetJump Type 2 World BB Area 0 Entrance 0 LocalSet 98 FadeType -1
+	SetPartyMenu 0
+
+Spawn "b_03"
+
+Program 0x05
+Unk06 0
+BattleLevel 99
+Unk1d 4
+AreaSettings 1 46
+	SetJump Type 1 World LK Area 2 Entrance 1 LocalSet 0 FadeType -1
+	SetPartyMenu 0
+
+AreaSettings 1 70
+	SetUnk05 0x1
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 109 FadeType -1
+	SetPartyMenu 0
+
+Spawn "b_07"
+
+Program 0x06
+Unk06 0
+BattleLevel 99
+Unk1d 4
+AreaSettings 1 46
+	SetJump Type 1 World TT Area 40 Entrance 1 LocalSet 0 FadeType -1
+	SetPartyMenu 0
+
+AreaSettings 1 70
+	SetProgressFlag 0x8F2
+	SetUnk05 0x1
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 211 FadeType -1
+	SetPartyMenu 0
+
+Spawn "b_08"
+
+Program 0x07
+Unk06 0
+BattleLevel 99
+Unk1d 4
+AreaSettings 1 46
+	SetJump Type 1 World HB Area 18 Entrance 2 LocalSet 0 FadeType -1
+	SetPartyMenu 0
+
+AreaSettings 1 70
+	SetUnk05 0x1
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 140 FadeType -1
+	SetPartyMenu 0
+
+Spawn "b_09"
+
+Program 0x08
+Unk06 0
+BattleLevel 99
+Unk1d 4
+AreaSettings 1 46
+	SetJump Type 1 World CA Area 13 Entrance 1 LocalSet 0 FadeType -1
+	SetPartyMenu 0
+
+AreaSettings 1 70
+	SetUnk05 0x1
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 111 FadeType -1
+	SetPartyMenu 0
+
+Spawn "b_10"
+
+Program 0x09
+Unk06 0
+Unk1d 4
+BattleLevel 99
+Unk1d 4
+AreaSettings 1 46
+	SetJump Type 1 World TT Area 22 Entrance 1 LocalSet 0 FadeType -1
+	SetPartyMenu 0
+
+AreaSettings 1 70
+	SetUnk05 0x1
+	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 113 FadeType -1
+	SetPartyMenu 0
+
+Spawn "b_13"
+
+Program 0x0A
+Unk06 0
+BattleLevel 99
+Unk1d 4
+AreaSettings 1 46
+	SetJump Type 1 World HB Area 26 Entrance 50 LocalSet 0 FadeType -1
+	SetPartyMenu 0
+
+AreaSettings 1 70
+	SetUnk05 0x1
+	SetJump Type 1 World EH Area 27 Entrance 0 LocalSet 0 FadeType -1
+	SetPartyMenu 1
+
+Spawn "b_14"

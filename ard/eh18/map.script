@@ -2,7 +2,7 @@ Program 0x0D
 Unk0e 1
 MapVisibility 0x00001007 0x00000000
 AreaSettings 13 -1
-	SetProgressFlag 0x801
+	SetProgressFlag 0x802
 	SetJump Type 1 World TT Area 33 Entrance 0 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
