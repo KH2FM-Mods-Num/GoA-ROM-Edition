@@ -1,22 +1,22 @@
 title: GoA ROM Edition
 description: GoA, but with a lot of stuff done through ROM editing to reduce workload on Lua.
 assets:
-#Relocate Twilight Thorn HP Bonus & Halve MCP's HP & Unequip Auto Limit
+#Various Stuff
 - name: 00battle.bin
   method: binarc
   source:
-  - name: bons
+  - name: bons #Relocate Twilight Thorn HP Bonus
     type: list
     method: listpatch
     source:
     - name: 00battle.bin/BonsList.yml
       type: bons
-  - name: enmp
+  - name: enmp #Halve MCP's HP & Remove Terra and Datas' Fixed Levels
     type: list
     method: copy
     source:
     - name: 00battle.bin/Enmp.bin
-  - name: plrp
+  - name: plrp #Unequip Auto Limit
     type: list
     method: listpatch
     source:
@@ -143,32 +143,37 @@ assets:
     method: copy
     source:
     - name: 00progress.bin/link.bin
-#Implement New Pictures & Stats & Add GoA Chests to Journal
+#Various Stuff
 - name: 03system.bin
   method: binarc
   source:
-  - name: went
+  - name: went #Implement New Weapon Models
     type: list
     method: copy
     source:
       - name: 03system.bin/went.bin
-  - name: item
+  - name: item #Implement New Pictures & Stats
     type: list
     method: listpatch
     source:
     - name: 03system.bin/ItemList.yml
       type: item
-  - name: trsr
+  - name: trsr #Add GoA Chests to Journal
     type: list
     method: listpatch
     source:
     - name: 03system.bin/TrsrList.yml
       type: trsr
-  - name: memt
+  - name: memt #Implement New Party Models
     type: list
     method: copy
     source:
       - name: 03system.bin/memt.bin
+  - name: shop #GoA Shop
+    type: unknown41
+    method: copy
+    source:
+      - name: 03system.bin/shop.bin
 #Donald (Disney Castle)
 - name: obj/H_ZZ020_DC.mdlx
   method: copy

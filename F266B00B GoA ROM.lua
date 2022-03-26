@@ -256,11 +256,6 @@ end
 function GoA()
 --Garden of Assemblage Rearrangement
 if Place == 0x1A04 then
-	--Shop
-	WriteString(Obj0+0x13450,'SHOP_POINT\0') --Wallace -> Moogle
-	WriteString(Obj0+0x13470,'N_EX960_RTN.mset\0')
-	WriteShort(Sys3+0x16F40,0x001) --Stock Potion
-	WriteShort(Sys3+0x16F42,0x003) --Stock Ether
 	--Open Promise Charm Path
 	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 and ReadByte(Save+0x3694) > 0 then --All Proofs & Promise Charm
 		Spawn('Short',0x06,0x05C,0x77A) --Text
@@ -269,11 +264,6 @@ if Place == 0x1A04 then
 	if ReadByte(Save+0x1D2E) > 0 then --Hollow Bastion Cleared
 		Spawn('Short',0x05,0x25C,0x779) --Radiant Garden
 	end
-else --Revert Shop
-	WriteString(Obj0+0x13450,'N_EX700_TT_WEAPON_RTN') --Moogle -> Wallace
-	WriteString(Obj0+0x13470,'N_EX700_SHOP_RTN.mset')
-	WriteShort(Sys3+0x16F40,0x094) --Stock Hammer Staff
-	WriteShort(Sys3+0x16F42,0x08B) --Stock Adamant Shield
 end
 --World Map -> Garden of Assemblage
 if Place == 0x000F then
