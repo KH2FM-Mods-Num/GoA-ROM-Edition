@@ -718,6 +718,23 @@ if true then
 		end
 	end
 end
+--Alternate Party Models (adding new UCM using MEMT causes problems when shopping)
+if World == 0x0C and Place ~= 0x070C then --Mage & Knight (KH I)
+	WriteString(Obj0+0x16F0,'P_EX020_DC\0')
+	WriteString(Obj0+0x1750,'P_EX030_DC\0')
+	WriteString(Obj0+0x3250,'P_EX020_DC_ANGRY_NPC\0')
+	WriteString(Obj0+0x40F0,'H_ZZ020_DC\0')
+	WriteString(Obj0+0x4150,'H_ZZ030_DC\0')
+elseif Place == 0x2004 or Place == 0x2104 or Place == 0x2204 or Place == 0x2604 then --Casual (CoM)
+	WriteString(Obj0+0x16F0,'P_EX020_CO\0')
+	WriteString(Obj0+0x1750,'P_EX030_CO\0')
+else --Revert costume changes
+	WriteString(Obj0+0x16F0,'P_EX020\0')
+	WriteString(Obj0+0x1750,'P_EX030\0')
+	WriteString(Obj0+0x3250,'P_EX020_ANGRY_NPC\0')
+	WriteString(Obj0+0x40F0,'H_ZZ020\0')
+	WriteString(Obj0+0x4150,'H_ZZ030\0')
+end
 --[[Enable Anti Form Forcing
 if ReadByte(Save+0x3524) == 6 then --In Anti Form
 	BitOr(Save+0x36C0,0x20) --Unlocks Anti Form
@@ -1691,8 +1708,12 @@ elseif Place == 0x0304 and Events(Null,Null,0x01) then --Goofy's Awake!
 	WriteByte(Save+0x1D2F,9)
 elseif Place == 0x0104 and Events(0x5C,0x5C,0x5C) then --A Box of Memories
 	WriteByte(Save+0x1D2F,10)
-elseif ReadByte(Save+0x1D2F) == 10 and ReadShort(Save+0x0650) == 0x0A then --5th Visit
-	WriteByte(Save+0x1D2F,11)
+elseif ReadByte(Save+0x1D2F) == 10 then --5th Visit
+	if ReadShort(Save+0x0650) == 0x0A then
+		WriteByte(Save+0x1D2F,11)
+	elseif ReadShort(Save+0x061A) == 0x16 then --Skipped
+		WriteByte(Save+0x1D2E,2) --Post-Story Save
+	end
 elseif Place == 0x0904 and Events(Null,Null,0x0B) then --The Rogue Security System
 	WriteByte(Save+0x1D2F,12)
 elseif Place == 0x0604 and Events(0x5E,0x5E,0x5E) then --Radiant Garden
