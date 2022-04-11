@@ -1,6 +1,6 @@
 --ROM Version
 --Last Update: HB5 visit skip flag bugfix
---Todo: Maybe item-based progression
+--Todo: Maybe item-based progress flags
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
