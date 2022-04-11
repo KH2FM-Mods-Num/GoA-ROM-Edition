@@ -7,7 +7,7 @@ LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.53.0'
+local VersionNum = 'GoA Version 1.53.1'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -1789,7 +1789,7 @@ if ReadShort(Save+0x0650) == 0x0A then
 	BitOr(Save+0x1D21,0x08) --HB_hb_event_507 (Hollow Bastion -> Radiant Garden)
 	BitOr(Save+0x1D24,0x02) --HB_ROXAS_KINOKO_ON
 end--]]
---Mushroom XIII Unlocked
+--Unlock Mushroom XIII
 if Place == 0x0204 and Events(Null,0x02,0x03) and ReadByte(Save+0x36B4) > 0 then
 	WriteShort(Save+0x3E94,3) --Mushroom I
 	WriteShort(Save+0x3E98,70)
