@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: Visit-Locking, moved Goofy Dead to ROM, and added world progress for Reverse, integrated ROM-based skips
+--Last Update: HB5 visit skip flag bugfix
 --Todo: Maybe item-based progression
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
