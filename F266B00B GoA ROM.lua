@@ -1,6 +1,6 @@
 --ROM Version
---Last Update: HB5 visit skip flag bugfix
---Todo: Maybe item-based progress flags
+--Last Update: Altered TT & HB visit-unlocking items & the code for post-story saves
+--Todo: Maybe item-based progress flags, code edit for post-story twtnw, tt, hb, stt saves
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
@@ -303,16 +303,16 @@ if Place == 0x000F then
 end
 --Visits Unlock
 if false then
-	if ReadByte(Save+0x364A) > 0 then --Picture
+	if ReadByte(Save+0x3640) > 0 then --Poster
 		BitOr(Save+0x1C92,0x08) --ZZ_TT_CHECK_1_GOA
 	end
-	if ReadByte(Save+0x3649) > 0 then --Ice Cream
+	if ReadByte(Save+0x364A) > 0 then --Picture
 		BitOr(Save+0x1C92,0x10) --ZZ_TT_CHECK_2_GOA
 	end
-	if ReadByte(Save+0x35C1) > 0 then --Way to the Dawn
+	if ReadByte(Save+0x3649) > 0 then --Ice Cream
 		BitOr(Save+0x1C92,0x20) --ZZ_HB_CHECK_1_GOA
 	end
-	if true then --???
+	if ReadByte(Save+0x35C1) > 0 or true then --Way to the Dawn (Currently unused)
 		BitOr(Save+0x1C92,0x40) --ZZ_HB_CHECK_2_GOA
 	end
 	if ReadByte(Save+0x35B3) > 0 then --Beast's Claw
@@ -880,7 +880,7 @@ elseif ReadByte(Save+0x1D9F) == 8 and ReadShort(Save+0x0C14) == 0x01 then --1st 
 	WriteByte(Save+0x1D9F,0)
 end
 --The Land of Dragons Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1D9E) > 0 then
+if ReadByte(Save+0x1D9E) > 0 then
 	if PrevPlace == 0x0008 then --Bamboo Grove
 		WriteByte(Save+0x1D9E,1)
 	elseif PrevPlace == 0x0408 then --Village (Intact)
@@ -965,7 +965,7 @@ elseif ReadByte(Save+0x1D3F) == 12 and ReadShort(Save+0x0794) == 0x01 then --1st
 	WriteByte(Save+0x1D3F,0)
 end
 --Beast's Castle Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1D3E) > 0 then
+if ReadByte(Save+0x1D3E) > 0 then
 	if PrevPlace == 0x0105 then --Parlor
 		WriteByte(Save+0x1D3E,1)
 	elseif PrevPlace == 0x0205 then --Belle's Room
@@ -1054,7 +1054,7 @@ elseif ReadByte(Save+0x1E5F) == 13 and ReadShort(Save+0x152C) == 0x01 then --1st
 	WriteByte(Save+0x1E5F,0)
 end
 --Halloween Town Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1E5E) > 0 then
+if ReadByte(Save+0x1E5E) > 0 then
 	if PrevPlace == 0x010E then --Dr. Finklestein's Lab
 		WriteByte(Save+0x1E5E,1)
 	elseif PrevPlace == 0x050E then --Yuletide Hill
@@ -1157,7 +1157,7 @@ elseif ReadByte(Save+0x1D7F) == 12 and ReadByte(Save+0x0A94) == 0x01 then --1st 
 	WriteByte(Save+0x1D7F,0)
 end
 --Agrabah Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1D7E) > 0 then
+if ReadByte(Save+0x1D7E) > 0 then
 	if PrevPlace == 0x0F07 then --The Peddler's Shop (Rich)
 		WriteByte(Save+0x1D7E,1)
 	elseif PrevPlace == 0x0607 then --Palace Walls
@@ -1251,7 +1251,7 @@ elseif ReadByte(Save+0x1D6F) == 13 and ReadShort(Save+0x0914) == 0x01 then --1st
 	WriteByte(Save+0x1D6F,0)
 end
 --Olympus Coliseum Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1D6E) > 0 then
+if ReadByte(Save+0x1D6E) > 0 then
 	if PrevPlace == 0x0306 then --Underworld Entrance
 		WriteByte(Save+0x1D6E,1)
 	elseif PrevPlace == 0x0A06 then --Cave of the Dead: Inner Chamber
@@ -1380,7 +1380,7 @@ elseif ReadByte(Save+0x1DDF) == 10 and ReadShort(Save+0x0F74) == 0x01 then --1st
 	WriteByte(Save+0x1DDF,0)
 end
 --Pride Lands Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1DDE) > 0 then
+if ReadByte(Save+0x1DDE) > 0 then
 	if PrevPlace == 0x060A then --Gorge
 		WriteByte(Save+0x1DDE,1)
 	elseif PrevPlace == 0x090A then --Oasis
@@ -1888,7 +1888,7 @@ elseif ReadByte(Save+0x1E9F) == 11 and ReadShort(Save+0x1814) == 0x01 then --1st
 	WriteByte(Save+0x1E9F,0)
 end
 --Port Royal Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1E9E) > 0 then
+if ReadByte(Save+0x1E9E) > 0 then
 	if PrevPlace == 0x0010 then --Rampart
 		WriteByte(Save+0x1E9E,1)
 	elseif PrevPlace == 0x0610 then --The Black Pearl: Captain's Stateroom
@@ -1955,7 +1955,7 @@ elseif ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x1E1E) > 0 and ReadShort(Sav
 	BitOr(Save+0x1E13,0x80) --DC_FM_NAZO_ON
 end
 --Disney Castle Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1E1E) > 0 then
+if ReadByte(Save+0x1E1E) > 0 then
 	if PrevPlace == 0x060C then --Gummi Hangar
 		WriteByte(Save+0x1E1E,1)
 	elseif PrevPlace == 0x010C then --Library
@@ -2039,7 +2039,7 @@ elseif ReadByte(Save+0x1EBF) == 8 and ReadShort(Save+0x199A) == 0x01 then --1st 
 	WriteByte(Save+0x1EBF,0)
 end
 --Space Paranoids Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1EBE) > 0 then
+if ReadByte(Save+0x1EBE) > 0 then
 	if PrevPlace == 0x0011 then --Pit Cell
 		WriteByte(Save+0x1EBE,1)
 	elseif PrevPlace == 0x0511 then --I/O Tower: Communications Room
