@@ -1,6 +1,6 @@
 --ROM Version
 --Last Update: Altered TT & HB visit-unlocking items & the code for post-story saves
---Todo: Maybe item-based progress flags, code edit for post-story twtnw, tt, hb, stt saves
+--Todo: Maybe item-based progress flags, code edit for post-story HB saves
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
@@ -789,12 +789,12 @@ elseif Place == 0x1012 and Events(Null,Null,0x05) then --Back to His Old Self
 	WriteByte(Save+0x1EDF,4)
 elseif Place == 0x1212 and Events(Null,Null,0x03) then --The Door to Kingdom Hearts
 	WriteByte(Save+0x1EDE,5) --Post-Story Save
-elseif Place == 0x0001 and not Events(0x39,0x39,0x39) then --Post Xemnas II Cutscenes (cond. for STT)
+elseif Place == 0x0001 and not Events(0x39,0x39,0x39) then --Post Xemnas II Cutscenes (except STT6)
 	WriteInt(Save+0x000C,0x321A04) --Post-Game Save at Garden of Assemblage
 end
 --The World that Never Was Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1EDE) > 0 then
-	if PrevPlace == 0x0112 then --Alley to Between
+if ReadByte(Save+0x1EDE) > 0 then
+	if PrevPlace == 0x0112 and not Events(0x40,0x40,0x40) then --Alley to Between (except TT2)
 		WriteByte(Save+0x1EDE,1)
 	elseif PrevPlace == 0x0412 then --The Brink of Despair
 		WriteByte(Save+0x1EDE,2)
@@ -1506,7 +1506,7 @@ elseif ReadByte(Save+0x1D0D) == 15 and ReadShort(Save+0x0368) == 0x12 then --1st
 	WriteByte(Save+0x1D0D,0)
 end
 --Twilight Town Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1CFD) > 0 and Door == 0x1C then
+if ReadByte(Save+0x1CFD) > 0 and ReadByte(Save+0x1CFF) == 8 then
 	if PrevPlace == 0x0202 then --The Usual Spot
 		WriteByte(Save+0x1CFD,1)
 	elseif PrevPlace == 0x0902 then --Central Station
@@ -2155,7 +2155,7 @@ elseif Place == 0x1702 and Events(Null,Null,0x02) then --My Summer Vacation Is O
 	WriteByte(Save+0x1CFE,5) --Post-Story Save
 end
 --Simulated Twilight Town Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1CFE) > 0 and Door == 0x21 then
+if ReadByte(Save+0x1CFE) > 0 and ReadByte(Save+0x1CFF) == 13 then
 	if PrevPlace == 0x0202 then --The Usual Spot
 		WriteByte(Save+0x1CFE,1)
 	elseif PrevPlace == 0x0902 then --Central Station
