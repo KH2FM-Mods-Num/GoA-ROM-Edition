@@ -1,13 +1,13 @@
 --ROM Version
 --Last Update: Altered TT & HB visit-unlocking items & the code for post-story saves
---Todo: Maybe item-based progress flags, code edit for post-story HB saves
+--Todo: Maybe item-based progress flags
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.53.1'
+local VersionNum = 'GoA Version 1.53.2'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -1723,9 +1723,13 @@ elseif Place == 0x0104 and Events(Null,Null,0x13) then --The Battle
 elseif Place == 0x1904 and Events(Null,0x05,0x04) then --Transport to Remembrance Cleared
 end
 --Hollow Bastion Post-Story Save
-if Place == 0x1A04 and ReadByte(Save+0x1D2E) > 0 then
+if ReadByte(Save+0x1D2E) > 0 then
 	if PrevPlace == 0x0D04 then --Merlin's House
-		WriteByte(Save+0x1D2E,1)
+		if ReadByte(Save+0x3FFD) == 2 then --100AW
+		elseif Events(Null,Null,0x03) then --DC
+		else
+			WriteByte(Save+0x1D2E,1)
+		end
 	elseif PrevPlace == 0x0604 then --Postern
 		WriteByte(Save+0x1D2E,2)
 	elseif PrevPlace == 0x0504 then --Ansem's Study
