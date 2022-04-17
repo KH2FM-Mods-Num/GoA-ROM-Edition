@@ -344,12 +344,12 @@ else --Remove the item requirements
 	BitOr(Save+0x1C92,0x10) --ZZ_TT_CHECK_2_GOA
 	BitOr(Save+0x1C92,0x20) --ZZ_HB_CHECK_1_GOA
 	BitOr(Save+0x1C92,0x40) --ZZ_HB_CHECK_2_GOA
-	BitOr(Save+0x1C92,0x80) --ZZ_BB_CHECK_1_GOA
-	BitOr(Save+0x1C93,0x01) --ZZ_HE_CHECK_1_GOA
+	BitOr(Save+0x1C92,0x80) --ZZ_BB_CHECK_GOA
+	BitOr(Save+0x1C93,0x01) --ZZ_HE_CHECK_GOA
 	BitOr(Save+0x1C93,0x02) --ZZ_AL_CHECK_GOA
 	BitOr(Save+0x1C93,0x04) --ZZ_MU_CHECK_GOA
-	BitOr(Save+0x1C94,0x01) --ZZ_LK_CHECK_1_GOA
-	BitOr(Save+0x1C94,0x40) --ZZ_NM_CHECK_1_GOA
+	BitOr(Save+0x1C94,0x01) --ZZ_LK_CHECK_GOA
+	BitOr(Save+0x1C94,0x40) --ZZ_NM_CHECK_GOA
 	BitOr(Save+0x1C94,0x80) --ZZ_CA_CHECK_GOA
 	BitOr(Save+0x1C95,0x01) --ZZ_TR_CHECK_GOA
 	--Disable GoA Visit Skip
@@ -526,17 +526,17 @@ for Slot = 0,68 do
 	end
 end
 --Munny Pouch (Olette)
-if ReadByte(Save+0x363C) > ReadByte(Save+0x35C4) then
+while ReadByte(Save+0x363C) > ReadByte(Save+0x35C4) do
 	WriteShort(Save+0x2440,ReadShort(Save+0x2440)+5000)
 	WriteByte(Save+0x35C4,ReadByte(Save+0x35C4)+1)
 end
 --Munny Pouch (Mickey)
-if ReadByte(Save+0x3695) > ReadByte(Save+0x35C5) then
+while ReadByte(Save+0x3695) > ReadByte(Save+0x35C5) do
 	WriteShort(Save+0x2440,ReadShort(Save+0x2440)+5000)
 	WriteByte(Save+0x35C5,ReadByte(Save+0x35C5)+1)
 end
 --DUMMY 23 = Maximum HP Increased!
-if ReadByte(Save+0x3671) > 0 then
+while ReadByte(Save+0x3671) > 0 do
 	local Bonus
 	if ReadByte(Save+0x2498) < 3 then --Non-Critical
 		Bonus = 5
@@ -548,7 +548,7 @@ if ReadByte(Save+0x3671) > 0 then
 	WriteByte(Save+0x3671,ReadByte(Save+0x3671)-1)
 end
 --DUMMY 24 = Maximum MP Increased!
-if ReadByte(Save+0x3672) > 0 then
+while ReadByte(Save+0x3672) > 0 do
 	local Bonus
 	if ReadByte(Save+0x2498) < 3 then --Non-Critical
 		Bonus = 10
@@ -560,7 +560,7 @@ if ReadByte(Save+0x3672) > 0 then
 	WriteByte(Save+0x3672,ReadByte(Save+0x3672)-1)
 end
 --DUMMY 25 = Drive Gauge Powered Up!
-if ReadByte(Save+0x3673) > 0 then
+while ReadByte(Save+0x3673) > 0 do
 	if ReadByte(Slot1+0x1B2) < 9 then
 		WriteByte(Slot1+0x1B1,ReadByte(Slot1+0x1B1)+1)
 		WriteByte(Slot1+0x1B2,ReadByte(Slot1+0x1B2)+1)
@@ -568,21 +568,21 @@ if ReadByte(Save+0x3673) > 0 then
 	WriteByte(Save+0x3673,ReadByte(Save+0x3673)-1)
 end
 --DUMMY 26 = Gained Armor Slot!
-if ReadByte(Save+0x3674) > 0 then
+while ReadByte(Save+0x3674) > 0 do
 	if ReadByte(Save+0x2500) < 8 then
 		WriteByte(Save+0x2500,ReadByte(Save+0x2500)+1)
 	end
 	WriteByte(Save+0x3674,ReadByte(Save+0x3674)-1)
 end
 --DUMMY 27 = Gained Accessory Slot!
-if ReadByte(Save+0x3675) > 0 then
+while ReadByte(Save+0x3675) > 0 do
 	if ReadByte(Save+0x2501) < 8 then
 		WriteByte(Save+0x2501,ReadByte(Save+0x2501)+1)
 	end
 	WriteByte(Save+0x3675,ReadByte(Save+0x3675)-1)
 end
 --DUMMY 16 = Gained Item Slot!
-if ReadByte(Save+0x3660) > 0 then
+while ReadByte(Save+0x3660) > 0 do
 	if ReadByte(Save+0x2502) < 8 then
 		WriteByte(Save+0x2502,ReadByte(Save+0x2502)+1)
 	end
@@ -1675,6 +1675,7 @@ elseif ReadByte(Save+0x1D2F) == 10 then --5th Visit
 	if ReadShort(Save+0x0650) == 0x0A then
 		WriteByte(Save+0x1D2F,11)
 	elseif ReadShort(Save+0x061A) == 0x16 then --Skipped
+		WriteByte(Save+0x1D2F,13)
 		WriteByte(Save+0x1D2E,2) --Post-Story Save
 	end
 elseif Place == 0x0904 and Events(Null,Null,0x0B) then --The Rogue Security System
