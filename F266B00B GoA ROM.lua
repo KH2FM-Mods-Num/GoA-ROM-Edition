@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: Altered TT & HB visit-unlocking items & the code for post-story saves
+--Last Update: Removed stat-up items even if stat is maxed & optimized Donald & Goofy ability code
 --Todo: Maybe item-based progress flags
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
@@ -560,75 +560,61 @@ if ReadByte(Save+0x3672) > 0 then
 	WriteByte(Save+0x3672,ReadByte(Save+0x3672)-1)
 end
 --DUMMY 25 = Drive Gauge Powered Up!
-if ReadByte(Save+0x3673) > 0 and ReadByte(Slot1+0x1B2) < 9 then
-	WriteByte(Slot1+0x1B1,ReadByte(Slot1+0x1B1)+1)
-	WriteByte(Slot1+0x1B2,ReadByte(Slot1+0x1B2)+1)
+if ReadByte(Save+0x3673) > 0 then
+	if ReadByte(Slot1+0x1B2) < 9 then
+		WriteByte(Slot1+0x1B1,ReadByte(Slot1+0x1B1)+1)
+		WriteByte(Slot1+0x1B2,ReadByte(Slot1+0x1B2)+1)
+	end
 	WriteByte(Save+0x3673,ReadByte(Save+0x3673)-1)
 end
 --DUMMY 26 = Gained Armor Slot!
-if ReadByte(Save+0x3674) > 0 and ReadByte(Save+0x2500) < 8 then
-	WriteByte(Save+0x2500,ReadByte(Save+0x2500)+1)
+if ReadByte(Save+0x3674) > 0 then
+	if ReadByte(Save+0x2500) < 8 then
+		WriteByte(Save+0x2500,ReadByte(Save+0x2500)+1)
+	end
 	WriteByte(Save+0x3674,ReadByte(Save+0x3674)-1)
 end
 --DUMMY 27 = Gained Accessory Slot!
-if ReadByte(Save+0x3675) > 0 and ReadByte(Save+0x2501) < 8 then
-	WriteByte(Save+0x2501,ReadByte(Save+0x2501)+1)
+if ReadByte(Save+0x3675) > 0 then
+	if ReadByte(Save+0x2501) < 8 then
+		WriteByte(Save+0x2501,ReadByte(Save+0x2501)+1)
+	end
 	WriteByte(Save+0x3675,ReadByte(Save+0x3675)-1)
 end
 --DUMMY 16 = Gained Item Slot!
-if ReadByte(Save+0x3660) > 0 and ReadByte(Save+0x2502) < 8 then
-	WriteByte(Save+0x2502,ReadByte(Save+0x2502)+1)
+if ReadByte(Save+0x3660) > 0 then
+	if ReadByte(Save+0x2502) < 8 then
+		WriteByte(Save+0x2502,ReadByte(Save+0x2502)+1)
+	end
 	WriteByte(Save+0x3660,ReadByte(Save+0x3660)-1)
 end
 --Donald's Staff Active Abilities
 if true then
-	local Staff = ReadShort(Save+0x2604)
-	local Ability = false
-	if Staff == 0x04B then --Mage's Staff
-		Ability = 0x13F36
-	elseif Staff == 0x094 then --Hammer Staff
-		Ability = 0x13F46
-	elseif Staff == 0x095 then --Victory Bell
-		Ability = 0x13F56
-	elseif Staff == 0x097 then --Comet Staff
-		Ability = 0x13F76
-	elseif Staff == 0x098 then --Lord's Broom
-		Ability = 0x13F86
-	elseif Staff == 0x099 then --Wisdom Wand
-		Ability = 0x13F96
-	elseif Staff == 0x096 then --Meteor Staff
-		Ability = 0x13F66
-	elseif Staff == 0x09A then --Rising Dragon
-		Ability = 0x13FA6
-	elseif Staff == 0x09C then --Shaman's Relic
-		Ability = 0x13FC6
-	elseif Staff == 0x258 then --Shaman's Relic+
-		Ability = 0x14406
-	elseif Staff == 0x09B then --Nobody Lance
-		Ability = 0x13FB6
-	elseif Staff == 0x221 then --Centurion
-		Ability = 0x14316
-	elseif Staff == 0x222 then --Centurion+
-		Ability = 0x14326
-	elseif Staff == 0x1E2 then --Save the Queen
-		Ability = 0x14186
-	elseif Staff == 0x1F7 then --Save the Queen+
-		Ability = 0x142D6
-	elseif Staff == 0x223 then --Plain Mushroom
-		Ability = 0x14336
-	elseif Staff == 0x224 then --Plain Mushroom+
-		Ability = 0x14346
-	elseif Staff == 0x225 then --Precious Mushroom
-		Ability = 0x14356
-	elseif Staff == 0x226 then --Precious Mushroom+
-		Ability = 0x14366
-	elseif Staff == 0x227 then --Premium Mushroom
-		Ability = 0x14376
-	elseif Staff == 0x0A1 then --Detection Staff
-		Ability = 0x13FD6
-	end
-	if Ability then
-		Ability = ReadShort(Sys3+Ability)
+	local Staff   = ReadShort(Save+0x2604)
+	local Ability = {} --Offset for staff's ability within 03system.bar
+	Ability[0x04B] = 0x13F36 --Mage's Staff
+	Ability[0x094] = 0x13F46 --Hammer Staff
+	Ability[0x095] = 0x13F56 --Victory Bell
+	Ability[0x097] = 0x13F76 --Comet Staff
+	Ability[0x098] = 0x13F86 --Lord's Broom
+	Ability[0x099] = 0x13F96 --Wisdom Wand
+	Ability[0x096] = 0x13F66 --Meteor Staff
+	Ability[0x09A] = 0x13FA6 --Rising Dragon
+	Ability[0x09C] = 0x13FC6 --Shaman's Relic
+	Ability[0x258] = 0x14406 --Shaman's Relic+
+	Ability[0x09B] = 0x13FB6 --Nobody Lance
+	Ability[0x221] = 0x14316 --Centurion
+	Ability[0x222] = 0x14326 --Centurion+
+	Ability[0x1E2] = 0x14186 --Save the Queen
+	Ability[0x1F7] = 0x142D6 --Save the Queen+
+	Ability[0x223] = 0x14336 --Plain Mushroom
+	Ability[0x224] = 0x14346 --Plain Mushroom+
+	Ability[0x225] = 0x14356 --Precious Mushroom
+	Ability[0x226] = 0x14366 --Precious Mushroom+
+	Ability[0x227] = 0x14376 --Premium Mushroom
+	Ability[0x0A1] = 0x13FD6 --Detection Staff
+	if Ability[Staff] ~= nil then
+		Ability = ReadShort(Sys3+Ability[Staff]) --Currently-equipped staff's ability
 		if Ability == 0x0A5 then --Donald Fire
 			WriteShort(Save+0x26F6,0x80A5)
 			WriteByte(Sys3+0x11F0B,0)
@@ -652,55 +638,32 @@ if true then
 end
 --Goofy's Shield Active Abilities
 if true then
-	local Shield = ReadShort(Save+0x2718)
-	local Ability = false
-	if Shield == 0x031 then --Knight's Shield
-		Ability = 0x13FE6
-	elseif Shield == 0x08B then --Adamant Shield
-		Ability = 0x13FF6
-	elseif Shield == 0x08C then --Chain Gear
-		Ability = 0x14006
-	elseif Shield == 0x08E then --Falling Star
-		Ability = 0x14026
-	elseif Shield == 0x08F then --Dreamcloud
-		Ability = 0x14036
-	elseif Shield == 0x090 then --Knight Defender
-		Ability = 0x14046
-	elseif Shield == 0x08D then --Ogre Shield
-		Ability = 0x14016
-	elseif Shield == 0x091 then --Genji Shield
-		Ability = 0x14056
-	elseif Shield == 0x092 then --Akashic Record
-		Ability = 0x14066
-	elseif Shield == 0x259 then --Akashic Record+
-		Ability = 0x14416
-	elseif Shield == 0x093 then --Nobody Guard
-		Ability = 0x14076
-	elseif Shield == 0x228 then --Frozen Pride
-		Ability = 0x14386
-	elseif Shield == 0x229 then --Frozen Pride+
-		Ability = 0x14396
-	elseif Shield == 0x1E3 then --Save the King
-		Ability = 0x14196
-	elseif Shield == 0x1F8 then --Save the King+
-		Ability = 0x142E6
-	elseif Shield == 0x22A then --Joyous Mushroom
-		Ability = 0x143A6
-	elseif Shield == 0x22B then --Joyous Mushroom+
-		Ability = 0x143B6
-	elseif Shield == 0x22C then --Majestic Mushroom
-		Ability = 0x143C6
-	elseif Shield == 0x22D then --Majestic Mushroom+
-		Ability = 0x143D6
-	elseif Shield == 0x22E then --Ultimate Mushroom
-		Ability = 0x143E6
-	elseif Shield == 0x032 then --Detection Shield
-		Ability = 0x14086
-	elseif Shield == 0x033 then --Test the King
-		Ability = 0x14096
-	end
-	if Ability then --Safeguard if none of the above (i.e. Main Menu)
-		Ability = ReadShort(Sys3+Ability)
+	local Shield  = ReadShort(Save+0x2718)
+	local Ability = {} --Offset for shield's ability within 03system.bar
+	Ability[0x031] = 0x13FE6 --Knight's Shield
+	Ability[0x08B] = 0x13FF6 --Adamant Shield
+	Ability[0x08C] = 0x14006 --Chain Gear
+	Ability[0x08E] = 0x14026 --Falling Star
+	Ability[0x08F] = 0x14036 --Dreamcloud
+	Ability[0x090] = 0x14046 --Knight Defender
+	Ability[0x08D] = 0x14016 --Ogre Shield
+	Ability[0x091] = 0x14056 --Genji Shield
+	Ability[0x092] = 0x14066 --Akashic Record
+	Ability[0x259] = 0x14416 --Akashic Record+
+	Ability[0x093] = 0x14076 --Nobody Guard
+	Ability[0x228] = 0x14386 --Frozen Pride
+	Ability[0x229] = 0x14396 --Frozen Pride+
+	Ability[0x1E3] = 0x14196 --Save the King
+	Ability[0x1F8] = 0x142E6 --Save the King+
+	Ability[0x22A] = 0x143A6 --Joyous Mushroom
+	Ability[0x22B] = 0x143B6 --Joyous Mushroom+
+	Ability[0x22C] = 0x143C6 --Majestic Mushroom
+	Ability[0x22D] = 0x143D6 --Majestic Mushroom+
+	Ability[0x22E] = 0x143E6 --Ultimate Mushroom
+	Ability[0x032] = 0x14086 --Detection Shield
+	Ability[0x033] = 0x14096 --Test the King
+	if Ability[Shield] ~= nil then
+		Ability = ReadShort(Sys3+Ability[Shield]) --Currently-equipped shield's ability
 		if Ability == 0x1A7 then --Goofy Tornado
 			WriteShort(Save+0x280A,0x81A7)
 			WriteByte(Sys3+0x11F6B,0)
