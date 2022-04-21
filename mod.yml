@@ -1766,6 +1766,20 @@ assets:
     method: areadatascript
     source:
     - name: ard/eh27/evt.script
+- name: ard/eh29.ard #The World of Nothing (Altar of Naught) (Skip Dragon Xemnas)
+  multi:
+  - name: ard/us/eh29.ard
+  - name: ard/fr/eh29.ard
+  - name: ard/gr/eh29.ard
+  - name: ard/it/eh29.ard
+  - name: ard/sp/eh29.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh29/evt.script
 - name: ard/es00.ard #The Dark Margin (Enable Pause)
   multi:
   - name: ard/us/es00.ard
@@ -2138,6 +2152,34 @@ assets:
     method: areadatascript
     source:
     - name: ard/lk00/evt.script
+- name: ard/lk03.ard #Wildebeest Valley (Early Dash)
+  multi:
+  - name: ard/us/lk03.ard
+  - name: ard/fr/lk03.ard
+  - name: ard/gr/lk03.ard
+  - name: ard/it/lk03.ard
+  - name: ard/sp/lk03.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/lk03/evt.script
+- name: ard/lk05.ard #Elephant Graveyard (Fast Hyenas II)
+  multi:
+  - name: ard/us/lk05.ard
+  - name: ard/fr/lk05.ard
+  - name: ard/gr/lk05.ard
+  - name: ard/it/lk05.ard
+  - name: ard/sp/lk05.ard
+  method: binarc
+  source:
+  - name: b_60 #Hyenas
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/lk05/b_60.yml
 - name: ard/lk13.ard #Peak (Data Warp & BGM Change)
   multi:
   - name: ard/us/lk13.ard
@@ -2860,3 +2902,18 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt41/evt.script
+#MSN Editing
+- name: msn/jp/LK05_MS201.bar #Hyenas II (Fast Hyenas)
+  multi:
+  - name: msn/us/LK05_MS201.bar
+  - name: msn/fr/LK05_MS201.bar
+  - name: msn/gr/LK05_MS201.bar
+  - name: msn/it/LK05_MS201.bar
+  - name: msn/sp/LK05_MS201.bar
+  method: binarc
+  source:
+  - name: LK05
+    type: list
+    method: copy
+    source:
+    - name: ard/lk05/LK05_MS201.bin

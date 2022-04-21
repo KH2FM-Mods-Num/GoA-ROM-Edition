@@ -1,0 +1,7 @@
+Program 0x3E
+Party DEFAULT
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x280A
+	SetJump Type 1 World LK Area 3 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0

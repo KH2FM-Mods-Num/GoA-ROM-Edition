@@ -245,6 +245,7 @@ if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	WriteByte(Slot1+0x1B0,100) --Starting Drive %
 	WriteByte(Slot1+0x1B1,5)   --Starting Drive Current
 	WriteByte(Slot1+0x1B2,5)   --Starting Drive Max
+	BitNot(Save+0x41A5,0x06)   --Default No Summon Animations
 	--Tutorial Flags & Form Weapons
 	BitOr(Save+0x36E8,0x01)  --Enable Item in Command Menu
 	WriteShort(Save+0x4270,0x1FF) --Pause Menu Tutorial Prompts Seen Flags
@@ -781,10 +782,6 @@ end
 if Place == 0x1412 and ReadInt(Slot3) == 1 then
 	WriteInt(Slot3,0)
 end
---[[Skip Dragon Xemnas
-if Place == 0x1D12 then
-	Spawn('Short',0x03,0x038,0x5C)
-end--]]
 end
 
 function LoD()
@@ -1026,21 +1023,12 @@ if ReadByte(Save+0x1E5E) > 0 then
 		WriteByte(Save+0x1E5E,3)
 	end
 end
---[[Fast Oogie
+--Fast Oogie
 if Place == 0x090E and Events(0x37,0x37,0x37) then
 	WriteInt(Slot2+8,0)
 	WriteInt(Slot3+8,0)
 	WriteInt(Slot4+8,0)
-end]]
---[[Fast Gift Wrapping
-if Place == 0x0A0E and Events(0x3F,0x3F,0x3F) then
-	WriteString(Obj0+0x0ED70,'F_NM170_XL')
-	WriteString(Obj0+0x0ED90,'F_NM170_XL.mset')
-	WriteString(Obj0+0x0EDD0,'F_NM170_XL')
-	WriteString(Obj0+0x0EDF0,'F_NM170_XL.mset')
-	WriteString(Obj0+0x0EE30,'F_NM170_XL')
-	WriteString(Obj0+0x0EE50,'F_NM170_XL.mset')
-end--]]
+end
 end
 
 function Ag()
@@ -1352,15 +1340,6 @@ if ReadByte(Save+0x1DDE) > 0 then
 		WriteByte(Save+0x1DDE,3)
 	end
 end
---[[Early Dash
-WriteShort(Btl0+0x31A6C,0x820E) --Lion Sora Starts with Dash
-if Place == 0x030A then --Remove Extra Dash
-	Spawn('Short',0x0D,0x134,0x1E)
-	Spawn('Short',0x0D,0x138,0x00)
-	if Events(0x3E,0x3E,0x3E) then --Remove 'Sora Learned the "Dash" Ability.' Prompt
-		WriteByte(CutSkp,1)
-	end
-end--]]
 --[[Fast Hyenas II
 if Place == 0x050A and Events(0x39,0x39,0x39) then
 	Spawn('Short',0x0D,0x120,0x000) --Shenzi -> Nothing
@@ -1557,7 +1536,7 @@ elseif ReadShort(TxtBox) == 0x768 and PrevPlace == 0x1A04 and ReadByte(Save+0x1C
 	end
 	WriteByte(Save+0x3FF5,Visit)
 	WriteByte(Save+0x23EE,1) --TT Music: The Afternoon Streets & Working Together
-elseif ReadByte(Save+0x1CFF) == 8 then --Save Events within TT
+elseif ReadByte(Save+0x1CFF) == 8 then --Save Spawn ID within STT
 	WriteArray(Save+0x0310,ReadArray(Save+0x03E8,6))   --Tunnelway -> The Empty Realm
 	WriteArray(Save+0x01A0,ReadArray(Save+0x0310,144)) --Save Spawn ID
 end
@@ -2241,6 +2220,7 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 		BitNot(Save+0x25D3,0x80)
 		BitOr(Save+0x1CF1,0x01)
 	end
+	--[[Old Magic Removal
 	if ReadShort(Save+0x25D8)&0x8000 == 0x8000 then --Trinity Limit
 		BitNot(Save+0x25D9,0x80)
 		BitOr(Save+0x1CF1,0x02)
@@ -2268,7 +2248,26 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 	while ReadByte(Save+0x35D0) > 0 do --Reflect
 		WriteByte(Save+0x1CF7,ReadByte(Save+0x1CF7)+1)
 		WriteByte(Save+0x35D0,ReadByte(Save+0x35D0)-1)
-	end
+	end--]]
+	WriteShort(Sys3+0x009C6,0x00) --Fire
+	WriteShort(Sys3+0x009F6,0x00) --Thunder
+	WriteShort(Sys3+0x00A26,0x00) --Blizzard
+	WriteShort(Sys3+0x00A56,0x00) --Cure
+	WriteShort(Sys3+0x015C6,0x00) --Fira
+	WriteShort(Sys3+0x015F6,0x00) --Firaga
+	WriteShort(Sys3+0x01626,0x00) --Blizzara
+	WriteShort(Sys3+0x01656,0x00) --Blizzaga
+	WriteShort(Sys3+0x01686,0x00) --Thundara
+	WriteShort(Sys3+0x016B6,0x00) --Thundaga
+	WriteShort(Sys3+0x016E6,0x00) --Cura
+	WriteShort(Sys3+0x01716,0x00) --Curaga
+	WriteShort(Sys3+0x01F26,0x00) --Magnet
+	WriteShort(Sys3+0x01F56,0x00) --Magnera
+	WriteShort(Sys3+0x01F86,0x00) --Magnega
+	WriteShort(Sys3+0x01FB6,0x00) --Reflect
+	WriteShort(Sys3+0x01FE6,0x00) --Reflera
+	WriteShort(Sys3+0x02016,0x00) --Reflega
+	WriteShort(Sys3+0x01F26,0x00) --Trinity (Solo)
 	local Equip = ReadShort(Save+0x24F0) --Currently equipped Keyblade
 	local Store = ReadShort(Save+0x1CF9) --Last equipped Keyblade
 	local Struggle
@@ -2317,6 +2316,7 @@ else --Restore Outside STT
 		BitOr(Save+0x25D3,0x80)
 		BitNot(Save+0x1CF1,0x01)
 	end
+	--[[Old Magic Restoration
 	if ReadByte(Save+0x1CF1)&0x02 == 0x02 then --Trinity Limit
 		BitOr(Save+0x25D9,0x80)
 		BitNot(Save+0x1CF1,0x02)
@@ -2344,7 +2344,26 @@ else --Restore Outside STT
 	while ReadByte(Save+0x1CF7) > 0 do --Reflect
 		WriteByte(Save+0x1CF7,ReadByte(Save+0x1CF7)-1)
 		WriteByte(Save+0x35D0,ReadByte(Save+0x35D0)+1)
-	end
+	end--]]
+	WriteShort(Sys3+0x009C6,0x02) --Fire
+	WriteShort(Sys3+0x009F6,0x02) --Thunder
+	WriteShort(Sys3+0x00A26,0x02) --Blizzard
+	WriteShort(Sys3+0x00A56,0x02) --Cure
+	WriteShort(Sys3+0x015C6,0x02) --Fira
+	WriteShort(Sys3+0x015F6,0x02) --Firaga
+	WriteShort(Sys3+0x01626,0x02) --Blizzara
+	WriteShort(Sys3+0x01656,0x02) --Blizzaga
+	WriteShort(Sys3+0x01686,0x02) --Thundara
+	WriteShort(Sys3+0x016B6,0x02) --Thundaga
+	WriteShort(Sys3+0x016E6,0x02) --Cura
+	WriteShort(Sys3+0x01716,0x02) --Curaga
+	WriteShort(Sys3+0x01F26,0x02) --Magnet
+	WriteShort(Sys3+0x01F56,0x02) --Magnera
+	WriteShort(Sys3+0x01F86,0x02) --Magnega
+	WriteShort(Sys3+0x01FB6,0x02) --Reflect
+	WriteShort(Sys3+0x01FE6,0x02) --Reflera
+	WriteShort(Sys3+0x02016,0x02) --Reflega
+	WriteShort(Sys3+0x01F26,0x51) --Trinity (Solo)
 	WriteShort(Save+0x1CF9,0) --Remove stored Keyblade
 end
 --Faster Twilight Thorn Reaction Commands
@@ -2383,20 +2402,6 @@ if Place == 0x0B02 and Events(0x01,0x00,0x0C) then
 	BitOr(Save+0x1CDE,0x02) --TT_MISTERY_D_END (The Doppelganger)
 	BitOr(Save+0x1CDE,0x04) --TT_506_END_L
 end--]]
---Beam -> Garden of Assemblage
-if ReadByte(Save+0x1CFF) == 13 then
-	if ReadShort(Save+0x0392) == 0x00 then --Beam Event Trigger Spawn
-		WriteShort(Save+0x0392,0x10) --Computer Room EVT
-	elseif Place == 0x1502 then
-		Spawn('Int',0x01,0x220,0x00099) --Show Beam
-		Spawn('String',0x01,0x254,'m_81') --Spawn Beam RC
-		Spawn('Short',0x10,0x55A,0x04) --Warp Pointer to Garden of Assemblage
-		Spawn('Short',0x10,0x55C,0x1A)
-		Spawn('Short',0x10,0x55E,0x21)
-		Spawn('Short',0x10,0x552,0xC00) --DI_START (use as dummy flag)
-		--Same as BitOr(Save+0x1CF0,0x01). Also stops the game from editing the spawn IDs.
-	end
-end
 end
 
 function AW()
@@ -2448,15 +2453,15 @@ function At()
 --Atlantica STT Unlock (since Magic is stored somewhere else)
 if ReadByte(Save+0x1CFF) == 13 then
 	if ReadShort(Save+0x10A0) == 0x16 and ReadByte(Save+0x1CF6) >= 1 then --Unlock 2nd Song
-		WriteShort(Save+0x1094,0x11) --Triton's Grotto EVT
+		WriteShort(Save+0x1094,0x11) --Triton's Throne EVT
 		WriteShort(Save+0x10A0,0x16) --Undersea Courtyard EVT
 		BitOr(Save+0x1DF4,0x40) --LM_GET_ITEM_2
 	elseif ReadShort(Save+0x10A0) == 0x07 and ReadByte(Save+0x1CF6) >= 2 then --Unlock 4th Song
-		WriteShort(Save+0x1094,0x0F) --Triton's Grotto EVT
+		WriteShort(Save+0x1094,0x0F) --Triton's Throne EVT
 		WriteShort(Save+0x10A0,0x14) --Undersea Courtyard EVT
 		BitOr(Save+0x1DF5,0x01) --LM_GET_ITEM_4
 	elseif ReadShort(Save+0x10A0) == 0x0C and ReadByte(Save+0x1CF4) >= 3 then --Unlock 5th Song
-		WriteShort(Save+0x1094,0x0D) --Triton's Grotto EVT
+		WriteShort(Save+0x1094,0x0D) --Triton's Throne EVT
 		WriteShort(Save+0x10A0,0x13) --Undersea Courtyard EVT
 		BitOr(Save+0x1DF5,0x20) --LM_GET_ITEM_5
 	end
@@ -2497,7 +2502,7 @@ end
 [Save+0x066A,Save+0x066F] Borough Spawn IDs
 Save+0x06B2 Genie Crash Fix
 Save+0x1CF0 STT Computer Beam
-Save+0x1CF1 STT Dodge Roll, Trinity Limit, Twilight Thorn
+Save+0x1CF1 STT Dodge Roll, Twilight Thorn
 Save+0x1CF2 STT Fire
 Save+0x1CF3 STT Blizzard
 Save+0x1CF4 STT Thunder
