@@ -1,6 +1,6 @@
 --ROM Version
 --Last Update: Removed stat-up items even if stat is maxed & optimized Donald & Goofy ability code
---Todo: Maybe item-based progress flags
+--Todo: Maybe item-based progress flags, determine what to do with vanilla form growth
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
@@ -147,7 +147,9 @@ else
 	Address = x + y + Offset
 end
 --Change value
-if Type == 'Short' then
+if Type == 'Read' then
+	ReadArray(Address,Value,OnPC)
+elseif Type == 'Short' then
 	WriteShort(Address,Value,OnPC)
 elseif Type == 'Float' then
 	WriteFloat(Address,Value,OnPC)
@@ -474,56 +476,65 @@ if true then --No Valor, Wisdom, Master, or Final
 end
 --Progressive Growth Abilities & Fixed Trinity Limit Slot
 for Slot = 0,68 do
-	local Current = Save+0x2544 + 2*Slot
+	local Current = Save + 0x2544 + 2*Slot
 	local Ability = ReadShort(Current)
 	if Ability >= 0x05E and Ability <= 0x061 then --High Jump
 		local Slot70 = Save+0x25CE
 		WriteShort(Current,0)
 		if ReadShort(Slot70)|0x8000 < 0x805E then
 			WriteShort(Slot70,0x005E)
-		elseif ReadShort(Slot70)|0x8000 >= 0x8061 then
-		else
-			WriteShort(Slot70,ReadShort(Slot70)+0x0001)
+		elseif ReadShort(Slot70)|0x8000 < 0x8061 then
+			WriteShort(Slot70,ReadShort(Slot70)+1)
 		end
 	elseif Ability >= 0x062 and Ability <= 0x065 then --Quick Run
 		local Slot71 = Save+0x25D0
 		WriteShort(Current,0)
 		if ReadShort(Slot71)|0x8000 < 0x8062 then
 			WriteShort(Slot71,0x0062)
-		elseif ReadShort(Slot71)|0x8000 >= 0x8065 then
-		else
-			WriteShort(Slot71,ReadShort(Slot71)+0x0001)
+		elseif ReadShort(Slot71)|0x8000 < 0x8065 then
+			WriteShort(Slot71,ReadShort(Slot71)+1)
 		end
 	elseif Ability >= 0x234 and Ability <= 0x237 then --Dodge Roll
 		local Slot72 = Save+0x25D2
 		WriteShort(Current,0)
 		if ReadShort(Slot72)|0x8000 < 0x8234 then
 			WriteShort(Slot72,0x0234)
-		elseif ReadShort(Slot72)|0x8000 >= 0x8237 then
-		else
-			WriteShort(Slot72,ReadShort(Slot72)+0x0001)
+		elseif ReadShort(Slot72)|0x8000 < 0x8237 then
+			WriteShort(Slot72,ReadShort(Slot72)+1)
 		end
 	elseif Ability >= 0x066 and Ability <= 0x069 then --Aerial Dodge
 		local Slot73 = Save+0x25D4
 		WriteShort(Current,0)
 		if ReadShort(Slot73)|0x8000 < 0x8066 then
 			WriteShort(Slot73,0x0066)
-		elseif ReadShort(Slot73)|0x8000 >= 0x8069 then
-		else
-			WriteShort(Slot73,ReadShort(Slot73)+0x0001)
+		elseif ReadShort(Slot73)|0x8000 < 0x8069 then
+			WriteShort(Slot73,ReadShort(Slot73)+1)
 		end
 	elseif Ability >= 0x06A and Ability <= 0x06D then --Glide
 		local Slot74 = Save+0x25D6
 		WriteShort(Current,0)
 		if ReadShort(Slot74)|0x8000 < 0x806A then
 			WriteShort(Slot74,0x006A)
-		elseif ReadShort(Slot74)|0x8000 >= 0x806D then
-		else
-			WriteShort(Slot74,ReadShort(Slot74)+0x0001)
+		elseif ReadShort(Slot74)|0x8000 < 0x806D then
+			WriteShort(Slot74,ReadShort(Slot74)+1)
 		end
-	elseif Ability == 0x0C6 then --Trinity Limit
+	elseif Ability == 0x0C6 and false then --Trinity Limit
 		WriteShort(Current,0)
 		WriteShort(Save+0x25D8,0x00C6)
+	end
+end
+--Remove Growth Abilities
+if true then
+	for i = 0,34 do
+		WriteByte(Btl0 + 0x344A5 + 0x8*i,0) --Remove Innate Growth Abilities
+	end
+	local Growth = {0x805E,0x8062,0x8234,0x8066,0x806A}
+	for form = 0,4 do --Adjust Form Movement
+		local FormAddress = Save + 0x32F6 + 0x38*form
+		local FormLv = ReadByte(FormAddress)
+		for level = 0,6 do
+			WriteShort(FormAddress+6, Growth[form+1] + math.floor(level/2))
+		end
 	end
 end
 --Munny Pouch (Olette)
@@ -1340,14 +1351,6 @@ if ReadByte(Save+0x1DDE) > 0 then
 		WriteByte(Save+0x1DDE,3)
 	end
 end
---[[Fast Hyenas II
-if Place == 0x050A and Events(0x39,0x39,0x39) then
-	Spawn('Short',0x0D,0x120,0x000) --Shenzi -> Nothing
-	Spawn('Short',0x0D,0x160,0x000) --Ed -> Nothing
-	if ReadInt(Point1) == 135 then
-		WriteInt(Point1,236) --Shenzi & Ed Dead
-	end
-end--]]
 end
 
 function TT()
@@ -1536,7 +1539,7 @@ elseif ReadShort(TxtBox) == 0x768 and PrevPlace == 0x1A04 and ReadByte(Save+0x1C
 	end
 	WriteByte(Save+0x3FF5,Visit)
 	WriteByte(Save+0x23EE,1) --TT Music: The Afternoon Streets & Working Together
-elseif ReadByte(Save+0x1CFF) == 8 then --Save Spawn ID within STT
+elseif ReadByte(Save+0x1CFF) == 8 then --Save Spawn ID within TT
 	WriteArray(Save+0x0310,ReadArray(Save+0x03E8,6))   --Tunnelway -> The Empty Realm
 	WriteArray(Save+0x01A0,ReadArray(Save+0x0310,144)) --Save Spawn ID
 end
@@ -2062,9 +2065,6 @@ if Place == 0x1A04 then
 	end
 	if WarpRoom <= 50 then
 		Spawn('Short',0x0A,0x20C,WarpRoom)
-		if WarpRoom == 0x15 and ReadByte(Save+0x1CF0) == 1 then --Computer Room Beam
-			Spawn('Short',0x0A,0x20E,0x3B)
-		end
 	else
 		Spawn('Short',0x0A,0x208,0x02)
 		Spawn('Short',0x0A,0x210,WarpRoom)
@@ -2187,7 +2187,6 @@ elseif ReadShort(TxtBox) == 0x76D and PrevPlace == 0x1A04 and ReadByte(Save+0x1C
 	WriteByte(Save+0x3FF5,Visit)
 	WriteByte(Save+0x23EE,BGMSet) --STT Music: Lazy Afternoons & Sinister Sundowns
 	WriteShort(Save+0x20E4,0x9F42) --Underground Concourse Block
-	WriteByte(Save+0x1CF0,0) --Beam Flag Reset
 elseif ReadByte(Save+0x1CFF) == 13 then --Save Spawn ID within STT
 	WriteArray(Save+0x0310,ReadArray(Save+0x03E8,6))   --Tunnelway -> The Empty Realm
 	WriteArray(Save+0x0230,ReadArray(Save+0x0310,144)) --Save Spawn ID
@@ -2267,7 +2266,7 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 	WriteShort(Sys3+0x01FB6,0x00) --Reflect
 	WriteShort(Sys3+0x01FE6,0x00) --Reflera
 	WriteShort(Sys3+0x02016,0x00) --Reflega
-	WriteShort(Sys3+0x01F26,0x00) --Trinity (Solo)
+	WriteShort(Sys3+0x07026,0x00) --Trinity (Solo)
 	local Equip = ReadShort(Save+0x24F0) --Currently equipped Keyblade
 	local Store = ReadShort(Save+0x1CF9) --Last equipped Keyblade
 	local Struggle
@@ -2363,7 +2362,7 @@ else --Restore Outside STT
 	WriteShort(Sys3+0x01FB6,0x02) --Reflect
 	WriteShort(Sys3+0x01FE6,0x02) --Reflera
 	WriteShort(Sys3+0x02016,0x02) --Reflega
-	WriteShort(Sys3+0x01F26,0x51) --Trinity (Solo)
+	WriteShort(Sys3+0x07026,0x51) --Trinity (Solo)
 	WriteShort(Save+0x1CF9,0) --Remove stored Keyblade
 end
 --Faster Twilight Thorn Reaction Commands
@@ -2450,22 +2449,6 @@ end
 end
 
 function At()
---Atlantica STT Unlock (since Magic is stored somewhere else)
-if ReadByte(Save+0x1CFF) == 13 then
-	if ReadShort(Save+0x10A0) == 0x16 and ReadByte(Save+0x1CF6) >= 1 then --Unlock 2nd Song
-		WriteShort(Save+0x1094,0x11) --Triton's Throne EVT
-		WriteShort(Save+0x10A0,0x16) --Undersea Courtyard EVT
-		BitOr(Save+0x1DF4,0x40) --LM_GET_ITEM_2
-	elseif ReadShort(Save+0x10A0) == 0x07 and ReadByte(Save+0x1CF6) >= 2 then --Unlock 4th Song
-		WriteShort(Save+0x1094,0x0F) --Triton's Throne EVT
-		WriteShort(Save+0x10A0,0x14) --Undersea Courtyard EVT
-		BitOr(Save+0x1DF5,0x01) --LM_GET_ITEM_4
-	elseif ReadShort(Save+0x10A0) == 0x0C and ReadByte(Save+0x1CF4) >= 3 then --Unlock 5th Song
-		WriteShort(Save+0x1094,0x0D) --Triton's Throne EVT
-		WriteShort(Save+0x10A0,0x13) --Undersea Courtyard EVT
-		BitOr(Save+0x1DF5,0x20) --LM_GET_ITEM_5
-	end
-end
 end
 
 function Data()
@@ -2501,7 +2484,6 @@ end
 [Save+0x0664,Save+0x0669] Merlin's House Spawn IDs
 [Save+0x066A,Save+0x066F] Borough Spawn IDs
 Save+0x06B2 Genie Crash Fix
-Save+0x1CF0 STT Computer Beam
 Save+0x1CF1 STT Dodge Roll, Twilight Thorn
 Save+0x1CF2 STT Fire
 Save+0x1CF3 STT Blizzard
