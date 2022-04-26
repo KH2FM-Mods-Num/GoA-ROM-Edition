@@ -111,6 +111,9 @@ pi     = math.pi
 end
 
 function Warp(W,R,D,M,B,E) --Warp into the appropriate World, Room, Door, Map, Btl, Evt
+M = M or ReadShort(Save + 0x10 + 0x180*W + 0x6*R)
+B = B or ReadShort(Save + 0x10 + 0x180*W + 0x6*R + 2)
+E = E or ReadShort(Save + 0x10 + 0x180*W + 0x6*R + 4)
 WriteByte(Now+0x00,W)
 WriteByte(Now+0x01,R)
 WriteShort(Now+0x02,D)
@@ -301,7 +304,7 @@ if Place == 0x000F then
 		WarpDoor = 0x01
 	end
 	if WarpDoor then
-		Warp(0x04,0x1A,WarpDoor,0x00,0x00,0x02)
+		Warp(0x04,0x1A,WarpDoor)
 	end
 end
 --Visits Unlock
