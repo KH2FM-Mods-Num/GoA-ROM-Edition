@@ -1,6 +1,11 @@
 title: GoA ROM Edition
 description: GoA, but with a lot of stuff done through ROM editing to reduce workload on Lua.
 assets:
+#Lua Script
+- name: scripts/GoA ROM.lua
+  method: copy
+  source:
+  - name: F266B00B GoA ROM.lua
 #Various Stuff
 - name: 00battle.bin
   method: binarc
