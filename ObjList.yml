@@ -902,36 +902,6 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-#Party
-  ObjectId: 2017
-  ObjectType: FRIEND
-  SubType: 0
-  DrawPriority: 0
-  WeaponJoint: 3
-  ModelName: P_EX030_CO
-  AnimationName: P_EX030.mset
-  Flags: 0
-  ObjectTargetType: M
-  Padding: 0
-  NeoStatus: 3
-  NeoMoveset: 20
-  Weight: 50
-  SpawnLimiter: 0
-  Page: 0
-  ObjectShadowSize: SmallShadow
-  ObjectForm: Default
-  SpawnObject1: 0
-  SpawnObject2: 0
-  SpawnObject3: 0
-  SpawnObject4: 0
-  NoApdx: false
-  Before: false
-  FixColor: false
-  Fly: false
-  Scissoring: false
-  IsPirate: false
-  WallOcclusion: false
-  Hift: false
 
 #Other TR Staves & Shields for future model additions
 #1695: #TR Mage's Staff
