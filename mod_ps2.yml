@@ -200,20 +200,20 @@ assets:
   source:
   - name: obj/P_EX030_DC.a.fm
 #Donald (Castle Oblivion)
-- name: obj/P_EX020_CO.mdlx
+- name: obj/P_EX020_CM.mdlx
   method: copy
   source:
   - name: obj/P_EX020_CM.mdlx
-- name: obj/P_EX020_CO.a.fm
+- name: obj/P_EX020_CM.a.fm
   method: copy
   source:
   - name: obj/P_EX020_CM.a.fm
 #Goofy (Castle Oblivion)
-- name: obj/P_EX030_CO.mdlx
+- name: obj/P_EX030_CM.mdlx
   method: copy
   source:
   - name: obj/P_EX030_CM.mdlx
-- name: obj/P_EX030_CO.a.fm
+- name: obj/P_EX030_CM.a.fm
   method: copy
   source:
   - name: obj/P_EX030_CM.a.fm

@@ -345,96 +345,96 @@ assets:
   source:
   - name: remastered/obj/P_EX030.a.us/-2_DC.dds
 #Donald (Castle Oblivion)
-- name: obj/P_EX020_CO.mdlx
+- name: obj/P_EX020_CM.mdlx
   method: copy
   source:
   - name: obj/P_EX020_CM.mdlx
-- name: obj/P_EX020_CO.a.fm
+- name: obj/P_EX020_CM.a.fm
   multi:
-  - name: obj/P_EX020_CO.a.us
+  - name: obj/P_EX020_CM.a.us
   method: copy
   source:
   - name: obj/P_EX020_CM.a.fm
-- name: remastered/obj/P_EX020_CO.mdlx/-0.dds
+- name: remastered/obj/P_EX020_CM.mdlx/-0.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020_CM.mdlx/-0.dds
-- name: remastered/obj/P_EX020_CO.mdlx/-1.dds
+- name: remastered/obj/P_EX020_CM.mdlx/-1.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020_CM.mdlx/-1.dds
-- name: remastered/obj/P_EX020_CO.mdlx/-2.dds
+- name: remastered/obj/P_EX020_CM.mdlx/-2.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020_CM.mdlx/-2.dds
-- name: remastered/obj/P_EX020_CO.mdlx/-3.dds
+- name: remastered/obj/P_EX020_CM.mdlx/-3.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020_CM.mdlx/-3.dds
-- name: remastered/obj/P_EX020_CO.a.us/-0.dds
+- name: remastered/obj/P_EX020_CM.a.us/-0.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-0.dds
-- name: remastered/obj/P_EX020_CO.a.us/-1.dds
+- name: remastered/obj/P_EX020_CM.a.us/-1.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-1.dds
-- name: remastered/obj/P_EX020_CO.a.us/-2.dds
+- name: remastered/obj/P_EX020_CM.a.us/-2.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-2.dds
-- name: remastered/obj/P_EX020_CO.a.us/-3.dds
+- name: remastered/obj/P_EX020_CM.a.us/-3.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-3.dds
-- name: remastered/obj/P_EX020_CO.a.us/-4.dds
+- name: remastered/obj/P_EX020_CM.a.us/-4.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-4.dds
-- name: remastered/obj/P_EX020_CO.a.us/-5.dds
+- name: remastered/obj/P_EX020_CM.a.us/-5.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-5.dds
-- name: remastered/obj/P_EX020_CO.a.us/-6.dds
+- name: remastered/obj/P_EX020_CM.a.us/-6.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-6_CM.dds
 #Goofy (Castle Oblivion)
-- name: obj/P_EX030_CO.mdlx
+- name: obj/P_EX030_CM.mdlx
   method: copy
   source:
   - name: obj/P_EX030_CM.mdlx
-- name: obj/P_EX030_CO.a.fm
+- name: obj/P_EX030_CM.a.fm
   multi:
-  - name: obj/P_EX030_CO.a.us
+  - name: obj/P_EX030_CM.a.us
   method: copy
   source:
   - name: obj/P_EX030_CM.a.fm
-- name: remastered/obj/P_EX030_CO.mdlx/-0.dds
+- name: remastered/obj/P_EX030_CM.mdlx/-0.dds
   method: copy
   source:
   - name: remastered/obj/P_EX030_CM.mdlx/-0.dds
-- name: remastered/obj/P_EX030_CO.mdlx/-1.dds
+- name: remastered/obj/P_EX030_CM.mdlx/-1.dds
   method: copy
   source:
   - name: remastered/obj/P_EX030_CM.mdlx/-1.dds
-- name: remastered/obj/P_EX030_CO.mdlx/-2.dds
+- name: remastered/obj/P_EX030_CM.mdlx/-2.dds
   method: copy
   source:
   - name: remastered/obj/P_EX030_CM.mdlx/-2.dds
-- name: remastered/obj/P_EX030_CO.mdlx/-3.dds
+- name: remastered/obj/P_EX030_CM.mdlx/-3.dds
   method: copy
   source:
   - name: remastered/obj/P_EX030_CM.mdlx/-3.dds
-- name: remastered/obj/P_EX030_CO.a.us/-0.dds
+- name: remastered/obj/P_EX030_CM.a.us/-0.dds
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-0.dds
-- name: remastered/obj/P_EX030_CO.a.us/-1.dds
+- name: remastered/obj/P_EX030_CM.a.us/-1.dds
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-1.dds
-- name: remastered/obj/P_EX030_CO.a.us/-2.dds
+- name: remastered/obj/P_EX030_CM.a.us/-2.dds
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-2_CM.dds
