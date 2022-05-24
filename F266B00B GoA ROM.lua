@@ -308,7 +308,7 @@ if Place == 0x000F then
 	end
 end
 --Visits Unlock
-if false then
+if true then
 	if ReadByte(Save+0x3649) > 0 then --Ice Cream
 		BitOr(Save+0x1C92,0x08) --ZZ_TT_CHECK_1_GOA
 	end
