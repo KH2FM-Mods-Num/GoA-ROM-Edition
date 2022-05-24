@@ -479,6 +479,10 @@ assets:
   method: copy
   source:
   - name: itempic/Membership Card.imd
+- name: itempic/item-233.imd #Olympus Stone
+  method: copy
+  source:
+  - name: itempic/Olympus Stone.imd
 - name: itempic/item-238.imd #Ice Cream
   method: copy
   source:
