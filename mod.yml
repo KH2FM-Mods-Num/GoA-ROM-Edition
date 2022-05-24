@@ -919,6 +919,54 @@ assets:
   method: imd
   source:
   - name: itempic/DUMMY 16 Item.png
+- name: itempic/item-092.imd #Scimitar
+  method: copy
+  source:
+  - name: itempic/Scimitar.imd
+- name: itempic/item-093.imd #Battlefields of War
+  method: copy
+  source:
+  - name: itempic/Battlefields of War.imd
+- name: itempic/item-094.imd #Sword of the Ancestor
+  method: copy
+  source:
+  - name: itempic/Sword of the Ancestor.imd
+- name: itempic/item-095.imd #Identity Disk
+  method: copy
+  source:
+  - name: itempic/Identity Disk.imd
+- name: itempic/item-096.imd #Skill and Crossbones
+  method: copy
+  source:
+  - name: itempic/Skill and Crossbones.imd
+- name: itempic/item-098.imd #Beast's Claw
+  method: copy
+  source:
+  - name: itempic/Beast's Claw.imd
+- name: itempic/item-099.imd #Bone Fist
+  method: copy
+  source:
+  - name: itempic/Bone Fist.imd
+- name: itempic/item-100.imd #Proud Fang
+  method: copy
+  source:
+  - name: itempic/Proud Fang.imd
+- name: itempic/item-232.imd #Membership Card
+  method: copy
+  source:
+  - name: itempic/Membership Card.imd
+- name: itempic/item-238.imd #Ice Cream
+  method: copy
+  source:
+  - name: itempic/Ice Cream.imd
+- name: itempic/item-239.imd #Picture
+  method: copy
+  source:
+  - name: itempic/Picture.imd
+- name: itempic/item-240.imd #DUMMY 15 (Unknown Disk)
+  method: copy
+  source:
+  - name: itempic/Unknown Disk.imd
 - name: itempic/item-221.imd #Lamp Charm
   method: copy
   source:
@@ -1055,6 +1103,54 @@ assets:
   method: copy
   source:
   - name: remastered/itempic/DUMMY 16 Item.dds
+- name: remastered/itempic/item-092.imd/-0.dds #Scimitar
+  method: copy
+  source:
+  - name: remastered/itempic/Scimitar.dds
+- name: remastered/itempic/item-093.imd/-0.dds #Battlefields of War
+  method: copy
+  source:
+  - name: remastered/itempic/Battlefields of War.dds
+- name: remastered/itempic/item-094.imd/-0.dds #Sword of the Ancestor
+  method: copy
+  source:
+  - name: remastered/itempic/Sword of the Ancestor.dds
+- name: remastered/itempic/item-095.imd/-0.dds #Identity Disk
+  method: copy
+  source:
+  - name: remastered/itempic/Identity Disk.dds
+- name: remastered/itempic/item-096.imd/-0.dds #Skill and Crossbones
+  method: copy
+  source:
+  - name: remastered/itempic/Skill and Crossbones.dds
+- name: remastered/itempic/item-098.imd/-0.dds #Beast's Claw
+  method: copy
+  source:
+  - name: remastered/itempic/Beast's Claw.dds
+- name: remastered/itempic/item-099.imd/-0.dds #Bone Fist
+  method: copy
+  source:
+  - name: remastered/itempic/Bone Fist.dds
+- name: remastered/itempic/item-100.imd/-0.dds #Proud Fang
+  method: copy
+  source:
+  - name: remastered/itempic/Proud Fang.dds
+- name: remastered/itempic/item-232.imd/-0.dds #Membership Card
+  method: copy
+  source:
+  - name: remastered/itempic/Membership Card.dds
+- name: remastered/itempic/item-238.imd/-0.dds #Ice Cream
+  method: copy
+  source:
+  - name: remastered/itempic/Ice Cream.dds
+- name: remastered/itempic/item-239.imd/-0.dds #Picture
+  method: copy
+  source:
+  - name: remastered/itempic/Picture.dds
+- name: remastered/itempic/item-240.imd/-0.dds #DUMMY 15 (Unknown Disk)
+  method: copy
+  source:
+  - name: remastered/itempic/Unknown Disk.dds
 - name: remastered/itempic/item-221.imd/-0.dds #Lamp Charm
   method: copy
   source:

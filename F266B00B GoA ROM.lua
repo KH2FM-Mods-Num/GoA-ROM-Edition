@@ -309,13 +309,13 @@ if Place == 0x000F then
 end
 --Visits Unlock
 if false then
-	if ReadByte(Save+0x3640) > 0 then --Poster
+	if ReadByte(Save+0x3649) > 0 then --Ice Cream
 		BitOr(Save+0x1C92,0x08) --ZZ_TT_CHECK_1_GOA
 	end
 	if ReadByte(Save+0x364A) > 0 then --Picture
 		BitOr(Save+0x1C92,0x10) --ZZ_TT_CHECK_2_GOA
 	end
-	if ReadByte(Save+0x3649) > 0 then --Ice Cream
+	if ReadByte(Save+0x3643) > 0 then --Membership Card
 		BitOr(Save+0x1C92,0x20) --ZZ_HB_CHECK_1_GOA
 	end
 	if ReadByte(Save+0x35C1) > 0 or true then --Way to the Dawn (Currently unused)
@@ -1693,8 +1693,8 @@ if ReadByte(Save+0x1D2E) > 0 then
 		WriteByte(Save+0x1D2E,4)
 	end
 end
---Heartless Manufactory Early Access with Membership Card
-if ReadByte(Save+0x3643) > 0 then
+--Heartless Manufactory Early Access with Unknown Disk/DUMMY 15
+if ReadByte(Save+0x365F) > 0 then
 	if ReadShort(Save+0x062E) == 0x08 then
 		WriteShort(Save+0x062E,0x0E) --Ansem's Study MAP
 		WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock

@@ -60,6 +60,13 @@
   en: Return to the Garden of Assemblage?
 - id: 0x3859
   en: Return to the Garden of Assemblage?
+- id: 0x3D1A
+  en: Unknown Disk
+- id: 0x3D1B
+  en: >-
+    A mysterious data disk containing 
+    
+    access codes to the {:color #F0F00080}Heartless Manufactory{:reset}.
 - id: 0x4E83
   en: Dodge Roll LV1
 - id: 0x4E85
