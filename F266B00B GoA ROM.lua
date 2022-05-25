@@ -1553,7 +1553,7 @@ elseif ReadByte(Save+0x1CFF) == 8 then --Save Spawn ID within TT
 	WriteArray(Save+0x01A0,ReadArray(Save+0x0310,144)) --Save Spawn ID
 end
 --Save Points -> World Points (1st Visit)
-if ReadByte(Save+0x1CFF) == 8 and false then
+if ReadByte(Save+0x1CFF) == 8 and ReadByte(Save+0x3640) > 0 then --Trigger with Poster for now
 	if Place == 0x0202 then --The Usual Spot
 		Spawn('Short',0x06,0x034,0x239)
 	elseif Place == 0x0902 then --Central Station
