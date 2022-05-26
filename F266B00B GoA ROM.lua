@@ -1,6 +1,6 @@
 --ROM Version
---Last Update: Removed stat-up items even if stat is maxed & optimized Donald & Goofy ability code
---Todo: Maybe item-based progress flags, determine what to do with vanilla form growth
+--Last Update: Growth ability bugfix, TT2 & TT3 back to Photo & Ice Cream
+--Todo: Maybe item-based progress flags
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
@@ -309,10 +309,10 @@ if Place == 0x000F then
 end
 --Visits Unlock
 if true then
-	if ReadByte(Save+0x3649) > 0 then --Ice Cream
+	if ReadByte(Save+0x364A) > 0 then --Picture
 		BitOr(Save+0x1C92,0x08) --ZZ_TT_CHECK_1_GOA
 	end
-	if ReadByte(Save+0x364A) > 0 then --Picture
+	if ReadByte(Save+0x3649) > 0 then --Ice Cream
 		BitOr(Save+0x1C92,0x10) --ZZ_TT_CHECK_2_GOA
 	end
 	if ReadByte(Save+0x3643) > 0 then --Membership Card
@@ -540,9 +540,10 @@ if true then
 	local Growth = {0x805E,0x8062,0x8234,0x8066,0x806A}
 	for form = 0,4 do --Adjust Form Movement
 		local FormAddress = Save + 0x32F6 + 0x38*form
-		local FormLv = ReadByte(FormAddress)
 		for level = 0,6 do
-			WriteShort(FormAddress+6, Growth[form+1] + math.floor(level/2))
+			if ReadByte(FormAddress) == level+1 then
+				WriteShort(FormAddress+6, Growth[form+1] + math.floor(level/2))
+			end
 		end
 	end
 end
