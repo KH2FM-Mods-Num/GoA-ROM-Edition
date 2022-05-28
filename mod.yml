@@ -541,13 +541,13 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.a.us/-6.dds
-- name: remastered/obj/W_EX010_X0.a.us/se/obj/se9001
+- name: remastered/obj/W_EX010_X0.a.us/se/obj/se503
   multi:
-  - name: remastered/obj/W_EX010_NM_X0.a.us/se/obj/se9001
-  - name: remastered/obj/W_EX010_TR_X0.a.us/se/obj/se9001
+  - name: remastered/obj/W_EX010_NM_X0.a.us/se/obj/se503
+  - name: remastered/obj/W_EX010_TR_X0.a.us/se/obj/se503
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.a.us/se9001
+  - name: remastered/obj/W_EX010_Pureblood.a.us/se503
 #Detection Saber -> Alpha Weapon
 - name: obj/W_EX010_Y0.mdlx
   method: copy
@@ -622,13 +622,13 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-4.dds
-- name: remastered/obj/W_EX010_Y0.a.us/se/obj/se9002
+- name: remastered/obj/W_EX010_Y0.a.us/se/obj/se9001
   multi:
-  - name: remastered/obj/W_EX010_NM_Y0.a.us/se/obj/se9002
-  - name: remastered/obj/W_EX010_TR_Y0.a.us/se/obj/se9002
+  - name: remastered/obj/W_EX010_NM_Y0.a.us/se/obj/se9001
+  - name: remastered/obj/W_EX010_TR_Y0.a.us/se/obj/se9001
   method: copy
   source:
-  - name: remastered/obj/W_EX010_AlphaWeapon.a.us/se9002
+  - name: remastered/obj/W_EX010_AlphaWeapon.a.us/se9001
 #Frontier of Ultima -> Omega Weapon
 - name: obj/W_EX010_Z0.mdlx
   method: copy
@@ -703,13 +703,13 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-4.dds
-- name: remastered/obj/W_EX010_Z0.a.us/se/obj/se9003
+- name: remastered/obj/W_EX010_Z0.a.us/se/obj/se9002
   multi:
-  - name: remastered/obj/W_EX010_NM_Z0.a.us/se/obj/se9003
-  - name: remastered/obj/W_EX010_TR_Z0.a.us/se/obj/se9003
+  - name: remastered/obj/W_EX010_NM_Z0.a.us/se/obj/se9002
+  - name: remastered/obj/W_EX010_TR_Z0.a.us/se/obj/se9002
   method: copy
   source:
-  - name: remastered/obj/W_EX010_OmegaWeapon.a.us/se9003
+  - name: remastered/obj/W_EX010_OmegaWeapon.a.us/se9002
 #FAKE -> Kingdom Key D
 - name: obj/W_EX010_00.mdlx
   method: copy
