@@ -1,6 +1,11 @@
 title: GoA ROM Edition
 description: GoA, but with a lot of stuff done through ROM editing to reduce workload on Lua.
 assets:
+#Lua Script
+- name: scripts/GoA ROM.lua
+  method: copy
+  source:
+  - name: F266B00B GoA ROM.lua
 #Various Stuff
 - name: 00battle.bin
   method: binarc
@@ -164,11 +169,6 @@ assets:
     source:
     - name: 03system.bin/TrsrList.yml
       type: trsr
-  - name: memt #Implement New Party Models
-    type: list
-    method: copy
-    source:
-      - name: 03system.bin/memt.bin
   - name: shop #GoA Shop
     type: unknown41
     method: copy
@@ -345,99 +345,99 @@ assets:
   source:
   - name: remastered/obj/P_EX030.a.us/-2_DC.dds
 #Donald (Castle Oblivion)
-- name: obj/P_EX020_CO.mdlx
+- name: obj/P_EX020_CM.mdlx
   method: copy
   source:
-  - name: obj/P_EX020_CO.mdlx
-- name: obj/P_EX020_CO.a.fm
+  - name: obj/P_EX020_CM.mdlx
+- name: obj/P_EX020_CM.a.fm
   multi:
-  - name: obj/P_EX020_CO.a.us
+  - name: obj/P_EX020_CM.a.us
   method: copy
   source:
-  - name: obj/P_EX020_CO.a.fm
-- name: remastered/obj/P_EX020_CO.mdlx/-0.dds
+  - name: obj/P_EX020_CM.a.fm
+- name: remastered/obj/P_EX020_CM.mdlx/-0.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX020_CO.mdlx/-0.dds
-- name: remastered/obj/P_EX020_CO.mdlx/-1.dds
+  - name: remastered/obj/P_EX020_CM.mdlx/-0.dds
+- name: remastered/obj/P_EX020_CM.mdlx/-1.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX020_CO.mdlx/-1.dds
-- name: remastered/obj/P_EX020_CO.mdlx/-2.dds
+  - name: remastered/obj/P_EX020_CM.mdlx/-1.dds
+- name: remastered/obj/P_EX020_CM.mdlx/-2.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX020_CO.mdlx/-2.dds
-- name: remastered/obj/P_EX020_CO.mdlx/-3.dds
+  - name: remastered/obj/P_EX020_CM.mdlx/-2.dds
+- name: remastered/obj/P_EX020_CM.mdlx/-3.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX020_CO.mdlx/-3.dds
-- name: remastered/obj/P_EX020_CO.a.us/-0.dds
+  - name: remastered/obj/P_EX020_CM.mdlx/-3.dds
+- name: remastered/obj/P_EX020_CM.a.us/-0.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-0.dds
-- name: remastered/obj/P_EX020_CO.a.us/-1.dds
+- name: remastered/obj/P_EX020_CM.a.us/-1.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-1.dds
-- name: remastered/obj/P_EX020_CO.a.us/-2.dds
+- name: remastered/obj/P_EX020_CM.a.us/-2.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-2.dds
-- name: remastered/obj/P_EX020_CO.a.us/-3.dds
+- name: remastered/obj/P_EX020_CM.a.us/-3.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-3.dds
-- name: remastered/obj/P_EX020_CO.a.us/-4.dds
+- name: remastered/obj/P_EX020_CM.a.us/-4.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-4.dds
-- name: remastered/obj/P_EX020_CO.a.us/-5.dds
+- name: remastered/obj/P_EX020_CM.a.us/-5.dds
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-5.dds
-- name: remastered/obj/P_EX020_CO.a.us/-6.dds
+- name: remastered/obj/P_EX020_CM.a.us/-6.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX020.a.us/-6_CO.dds
+  - name: remastered/obj/P_EX020.a.us/-6_CM.dds
 #Goofy (Castle Oblivion)
-- name: obj/P_EX030_CO.mdlx
+- name: obj/P_EX030_CM.mdlx
   method: copy
   source:
-  - name: obj/P_EX030_CO.mdlx
-- name: obj/P_EX030_CO.a.fm
+  - name: obj/P_EX030_CM.mdlx
+- name: obj/P_EX030_CM.a.fm
   multi:
-  - name: obj/P_EX030_CO.a.us
+  - name: obj/P_EX030_CM.a.us
   method: copy
   source:
-  - name: obj/P_EX030_CO.a.fm
-- name: remastered/obj/P_EX030_CO.mdlx/-0.dds
+  - name: obj/P_EX030_CM.a.fm
+- name: remastered/obj/P_EX030_CM.mdlx/-0.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX030_CO.mdlx/-0.dds
-- name: remastered/obj/P_EX030_CO.mdlx/-1.dds
+  - name: remastered/obj/P_EX030_CM.mdlx/-0.dds
+- name: remastered/obj/P_EX030_CM.mdlx/-1.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX030_CO.mdlx/-1.dds
-- name: remastered/obj/P_EX030_CO.mdlx/-2.dds
+  - name: remastered/obj/P_EX030_CM.mdlx/-1.dds
+- name: remastered/obj/P_EX030_CM.mdlx/-2.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX030_CO.mdlx/-2.dds
-- name: remastered/obj/P_EX030_CO.mdlx/-3.dds
+  - name: remastered/obj/P_EX030_CM.mdlx/-2.dds
+- name: remastered/obj/P_EX030_CM.mdlx/-3.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX030_CO.mdlx/-3.dds
-- name: remastered/obj/P_EX030_CO.a.us/-0.dds
+  - name: remastered/obj/P_EX030_CM.mdlx/-3.dds
+- name: remastered/obj/P_EX030_CM.a.us/-0.dds
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-0.dds
-- name: remastered/obj/P_EX030_CO.a.us/-1.dds
+- name: remastered/obj/P_EX030_CM.a.us/-1.dds
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-1.dds
-- name: remastered/obj/P_EX030_CO.a.us/-2.dds
+- name: remastered/obj/P_EX030_CM.a.us/-2.dds
   method: copy
   source:
-  - name: remastered/obj/P_EX030.a.us/-2_CO.dds
+  - name: remastered/obj/P_EX030.a.us/-2_CM.dds
 #Garden of Assemblage Small Chest
 - name: obj/F_EX030_HB.mdlx
   method: copy
@@ -541,13 +541,13 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.a.us/-6.dds
-- name: remastered/obj/W_EX010_X0.a.us/se/obj/se9001
+- name: remastered/obj/W_EX010_X0.a.us/se/obj/se503
   multi:
-  - name: remastered/obj/W_EX010_NM_X0.a.us/se/obj/se9001
-  - name: remastered/obj/W_EX010_TR_X0.a.us/se/obj/se9001
+  - name: remastered/obj/W_EX010_NM_X0.a.us/se/obj/se503
+  - name: remastered/obj/W_EX010_TR_X0.a.us/se/obj/se503
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.a.us/se9001
+  - name: remastered/obj/W_EX010_Pureblood.a.us/se503
 #Detection Saber -> Alpha Weapon
 - name: obj/W_EX010_Y0.mdlx
   method: copy
@@ -622,13 +622,13 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-4.dds
-- name: remastered/obj/W_EX010_Y0.a.us/se/obj/se9002
+- name: remastered/obj/W_EX010_Y0.a.us/se/obj/se9001
   multi:
-  - name: remastered/obj/W_EX010_NM_Y0.a.us/se/obj/se9002
-  - name: remastered/obj/W_EX010_TR_Y0.a.us/se/obj/se9002
+  - name: remastered/obj/W_EX010_NM_Y0.a.us/se/obj/se9001
+  - name: remastered/obj/W_EX010_TR_Y0.a.us/se/obj/se9001
   method: copy
   source:
-  - name: remastered/obj/W_EX010_AlphaWeapon.a.us/se9002
+  - name: remastered/obj/W_EX010_AlphaWeapon.a.us/se9001
 #Frontier of Ultima -> Omega Weapon
 - name: obj/W_EX010_Z0.mdlx
   method: copy
@@ -703,13 +703,13 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-4.dds
-- name: remastered/obj/W_EX010_Z0.a.us/se/obj/se9003
+- name: remastered/obj/W_EX010_Z0.a.us/se/obj/se9002
   multi:
-  - name: remastered/obj/W_EX010_NM_Z0.a.us/se/obj/se9003
-  - name: remastered/obj/W_EX010_TR_Z0.a.us/se/obj/se9003
+  - name: remastered/obj/W_EX010_NM_Z0.a.us/se/obj/se9002
+  - name: remastered/obj/W_EX010_TR_Z0.a.us/se/obj/se9002
   method: copy
   source:
-  - name: remastered/obj/W_EX010_OmegaWeapon.a.us/se9003
+  - name: remastered/obj/W_EX010_OmegaWeapon.a.us/se9002
 #FAKE -> Kingdom Key D
 - name: obj/W_EX010_00.mdlx
   method: copy
@@ -919,6 +919,58 @@ assets:
   method: imd
   source:
   - name: itempic/DUMMY 16 Item.png
+- name: itempic/item-092.imd #Scimitar
+  method: copy
+  source:
+  - name: itempic/Scimitar.imd
+- name: itempic/item-093.imd #Battlefields of War
+  method: copy
+  source:
+  - name: itempic/Battlefields of War.imd
+- name: itempic/item-094.imd #Sword of the Ancestor
+  method: copy
+  source:
+  - name: itempic/Sword of the Ancestor.imd
+- name: itempic/item-095.imd #Identity Disk
+  method: copy
+  source:
+  - name: itempic/Identity Disk.imd
+- name: itempic/item-096.imd #Skill and Crossbones
+  method: copy
+  source:
+  - name: itempic/Skill and Crossbones.imd
+- name: itempic/item-098.imd #Beast's Claw
+  method: copy
+  source:
+  - name: itempic/Beast's Claw.imd
+- name: itempic/item-099.imd #Bone Fist
+  method: copy
+  source:
+  - name: itempic/Bone Fist.imd
+- name: itempic/item-100.imd #Proud Fang
+  method: copy
+  source:
+  - name: itempic/Proud Fang.imd
+- name: itempic/item-232.imd #Membership Card
+  method: copy
+  source:
+  - name: itempic/Membership Card.imd
+- name: itempic/item-233.imd #Olympus Stone
+  method: copy
+  source:
+  - name: itempic/Olympus Stone.imd
+- name: itempic/item-238.imd #Ice Cream
+  method: copy
+  source:
+  - name: itempic/Ice Cream.imd
+- name: itempic/item-239.imd #Picture
+  method: copy
+  source:
+  - name: itempic/Picture.imd
+- name: itempic/item-240.imd #DUMMY 15 (Unknown Disk)
+  method: copy
+  source:
+  - name: itempic/Unknown Disk.imd
 - name: itempic/item-221.imd #Lamp Charm
   method: copy
   source:
@@ -1055,6 +1107,58 @@ assets:
   method: copy
   source:
   - name: remastered/itempic/DUMMY 16 Item.dds
+- name: remastered/itempic/item-092.imd/-0.dds #Scimitar
+  method: copy
+  source:
+  - name: remastered/itempic/Scimitar.dds
+- name: remastered/itempic/item-093.imd/-0.dds #Battlefields of War
+  method: copy
+  source:
+  - name: remastered/itempic/Battlefields of War.dds
+- name: remastered/itempic/item-094.imd/-0.dds #Sword of the Ancestor
+  method: copy
+  source:
+  - name: remastered/itempic/Sword of the Ancestor.dds
+- name: remastered/itempic/item-095.imd/-0.dds #Identity Disk
+  method: copy
+  source:
+  - name: remastered/itempic/Identity Disk.dds
+- name: remastered/itempic/item-096.imd/-0.dds #Skill and Crossbones
+  method: copy
+  source:
+  - name: remastered/itempic/Skill and Crossbones.dds
+- name: remastered/itempic/item-098.imd/-0.dds #Beast's Claw
+  method: copy
+  source:
+  - name: remastered/itempic/Beast's Claw.dds
+- name: remastered/itempic/item-099.imd/-0.dds #Bone Fist
+  method: copy
+  source:
+  - name: remastered/itempic/Bone Fist.dds
+- name: remastered/itempic/item-100.imd/-0.dds #Proud Fang
+  method: copy
+  source:
+  - name: remastered/itempic/Proud Fang.dds
+- name: remastered/itempic/item-232.imd/-0.dds #Membership Card
+  method: copy
+  source:
+  - name: remastered/itempic/Membership Card.dds
+- name: remastered/itempic/item-233.imd/-0.dds #Olympus Stone
+  method: copy
+  source:
+  - name: remastered/itempic/Olympus Stone.dds
+- name: remastered/itempic/item-238.imd/-0.dds #Ice Cream
+  method: copy
+  source:
+  - name: remastered/itempic/Ice Cream.dds
+- name: remastered/itempic/item-239.imd/-0.dds #Picture
+  method: copy
+  source:
+  - name: remastered/itempic/Picture.dds
+- name: remastered/itempic/item-240.imd/-0.dds #DUMMY 15 (Unknown Disk)
+  method: copy
+  source:
+  - name: remastered/itempic/Unknown Disk.dds
 - name: remastered/itempic/item-221.imd/-0.dds #Lamp Charm
   method: copy
   source:
@@ -1548,7 +1652,7 @@ assets:
     method: spawnpoint
     source:
     - name: ard/ca10/m_11.yml
-- name: ard/dc01.ard #Library (Remove Shop & Cutscene Models)
+- name: ard/dc01.ard #Library (Remove Shop)
   multi:
   - name: ard/us/dc01.ard
   - name: ard/fr/dc01.ard
@@ -1562,26 +1666,7 @@ assets:
     method: spawnpoint
     source:
     - name: ard/dc01/z00s.yml
-  - name: 104
-    type: event
-    method: copy
-    source:
-    - name: ard/dc01/104.bin
-- name: ard/dc03.ard #Courtyard (Cutscene Models)
-  multi:
-  - name: ard/us/dc03.ard
-  - name: ard/fr/dc03.ard
-  - name: ard/gr/dc03.ard
-  - name: ard/it/dc03.ard
-  - name: ard/sp/dc03.ard
-  method: binarc
-  source:
-  - name: 103
-    type: event
-    method: copy
-    source:
-    - name: ard/dc03/103.bin
-- name: ard/dc04.ard #The Hall of the Cornerstone (Dark) (Cutscene Models & Skip WM & Skip HB)
+- name: ard/dc04.ard #The Hall of the Cornerstone (Dark) (Skip WM & Skip HB)
   multi:
   - name: ard/us/dc04.ard
   - name: ard/fr/dc04.ard
@@ -1595,22 +1680,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/dc04/evt.script
-  - name: 108
-    type: event
-    method: copy
-    source:
-    - name: ard/dc04/108.bin
-  - name: 109
-    type: event
-    method: copy
-    source:
-    - name: ard/dc04/109.bin
-  - name: 110
-    type: event
-    method: copy
-    source:
-    - name: ard/dc04/110.bin
-- name: ard/dc05.ard #The Hall of the Cornerstone (Light) (Cutscene Models & GoA Warp & AS Warp)
+- name: ard/dc05.ard #The Hall of the Cornerstone (Light) (GoA Warp & AS Warp)
   multi:
   - name: ard/us/dc05.ard
   - name: ard/fr/dc05.ard
@@ -1639,30 +1709,6 @@ assets:
     method: areadatascript
     source:
     - name: ard/dc05/evt.script
-  - name: 111
-    type: event
-    method: copy
-    source:
-    - name: ard/dc05/111.bin
-  - name: 205
-    type: event
-    method: copy
-    source:
-    - name: ard/dc05/205.bin
-- name: ard/dc06.ard #Gummi Hangar (Cutscene Models)
-  multi:
-  - name: ard/us/dc06.ard
-  - name: ard/fr/dc06.ard
-  - name: ard/gr/dc06.ard
-  - name: ard/it/dc06.ard
-  - name: ard/sp/dc06.ard
-  method: binarc
-  source:
-  - name: 102
-    type: event
-    method: copy
-    source:
-    - name: ard/dc06/102.bin
 - name: ard/dc07.ard #Gathering Place (Early Manifest Illusion)
   multi:
   - name: ard/us/dc07.ard
@@ -1766,6 +1812,20 @@ assets:
     method: areadatascript
     source:
     - name: ard/eh27/evt.script
+- name: ard/eh29.ard #The World of Nothing (Altar of Naught) (Skip Dragon Xemnas)
+  multi:
+  - name: ard/us/eh29.ard
+  - name: ard/fr/eh29.ard
+  - name: ard/gr/eh29.ard
+  - name: ard/it/eh29.ard
+  - name: ard/sp/eh29.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh29/evt.script
 - name: ard/es00.ard #The Dark Margin (Enable Pause)
   multi:
   - name: ard/us/es00.ard
@@ -2044,6 +2104,20 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb33/evt.script
+- name: ard/hb34.ard #Destiny Island (AS Warp)
+  multi:
+  - name: ard/us/hb34.ard
+  - name: ard/fr/hb34.ard
+  - name: ard/gr/hb34.ard
+  - name: ard/it/hb34.ard
+  - name: ard/sp/hb34.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb34/evt.script
 - name: ard/hb38.ard #Station of Oblivion (AS Warp)
   multi:
   - name: ard/us/hb38.ard
@@ -2138,6 +2212,34 @@ assets:
     method: areadatascript
     source:
     - name: ard/lk00/evt.script
+- name: ard/lk03.ard #Wildebeest Valley (Early Dash)
+  multi:
+  - name: ard/us/lk03.ard
+  - name: ard/fr/lk03.ard
+  - name: ard/gr/lk03.ard
+  - name: ard/it/lk03.ard
+  - name: ard/sp/lk03.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/lk03/evt.script
+- name: ard/lk05.ard #Elephant Graveyard (Fast Hyenas II)
+  multi:
+  - name: ard/us/lk05.ard
+  - name: ard/fr/lk05.ard
+  - name: ard/gr/lk05.ard
+  - name: ard/it/lk05.ard
+  - name: ard/sp/lk05.ard
+  method: binarc
+  source:
+  - name: b_60 #Hyenas
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/lk05/b_60.yml
 - name: ard/lk13.ard #Peak (Data Warp & BGM Change)
   multi:
   - name: ard/us/lk13.ard
@@ -2860,3 +2962,18 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt41/evt.script
+#MSN Editing
+- name: msn/jp/LK05_MS201.bar #Hyenas II (Fast Hyenas)
+  multi:
+  - name: msn/us/LK05_MS201.bar
+  - name: msn/fr/LK05_MS201.bar
+  - name: msn/gr/LK05_MS201.bar
+  - name: msn/it/LK05_MS201.bar
+  - name: msn/sp/LK05_MS201.bar
+  method: binarc
+  source:
+  - name: LK05
+    type: list
+    method: copy
+    source:
+    - name: ard/lk05/LK05_MS201.bin

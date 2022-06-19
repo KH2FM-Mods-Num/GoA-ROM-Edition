@@ -182,6 +182,21 @@ Items:
   Picture: 19
   Icon1: 0
   Icon2: 26
+- Id: 462 #DUMMY 15 (Unknown Disk)
+  Type: Recipe
+  Flag0: 0
+  Flag1: 0
+  Rank: C
+  StatEntry: 0
+  Name: 0xBD1A
+  Description: 0xBD1B
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 0
+  Slot: 223
+  Picture: 240
+  Icon1: 0
+  Icon2: 2
 - Id: 463 #DUMMY 16 (Item)
   Type: Recipe
   Flag0: 0
