@@ -1359,7 +1359,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb34/evt.script
- name: ard/hb38.ard #Station of Oblivion (AS Warp)
+- name: ard/hb38.ard #Station of Oblivion (AS Warp)
   multi:
   - name: ard/us/hb38.ard
   - name: ard/fr/hb38.ard
