@@ -2205,12 +2205,6 @@ assets:
     - name: ard/tt41/evt.script
 #MSN Editing
 - name: msn/jp/LK05_MS201.bar #Hyenas II (Fast Hyenas)
-  multi:
-  - name: msn/us/LK05_MS201.bar
-  - name: msn/fr/LK05_MS201.bar
-  - name: msn/gr/LK05_MS201.bar
-  - name: msn/it/LK05_MS201.bar
-  - name: msn/sp/LK05_MS201.bar
   method: binarc
   source:
   - name: LK05
