@@ -1696,6 +1696,7 @@ if ReadByte(Save+0x1D2E) > 0 then
 end
 --Heartless Manufactory Early Access with Unknown Disk/DUMMY 15
 if ReadByte(Save+0x365F) > 0 then
+	BitOr(Save+0x1CF1,0x02)
 	if ReadShort(Save+0x062E) == 0x08 then
 		WriteShort(Save+0x062E,0x0E) --Ansem's Study MAP
 		WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock
@@ -1706,6 +1707,8 @@ if ReadByte(Save+0x365F) > 0 then
 		WriteShort(Save+0x062E,0x11) --Ansem's Study MAP
 		WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock
 	end
+elseif ReadByte(Save+0x1CF1)&0x02 == 0x02 then --Unknown Disk taken by Moogle
+	WriteByte(Save+0x365F,1) --Add it back to inventory
 end
 --[[Skip Hollow Bastion 5th Visit
 if ReadShort(Save+0x0650) == 0x0A then
@@ -2438,13 +2441,7 @@ end
 [Save+0x0664,Save+0x0669] Merlin's House Spawn IDs
 [Save+0x066A,Save+0x066F] Borough Spawn IDs
 Save+0x06B2 Genie Crash Fix
-Save+0x1CF1 STT Dodge Roll, Twilight Thorn
-Save+0x1CF2 STT Fire
-Save+0x1CF3 STT Blizzard
-Save+0x1CF4 STT Thunder
-Save+0x1CF5 STT Cure
-Save+0x1CF6 STT Magnet
-Save+0x1CF7 STT Reflect
+Save+0x1CF1 STT Dodge Roll, Unknown Disk, Twilight Thorn
 Save+0x1CF8 STT Struggle Weapon
 [Save+0x1CF9,Save+0x1CFA] STT Keyblade
 Save+0x1CFD TT Post-Story Save
