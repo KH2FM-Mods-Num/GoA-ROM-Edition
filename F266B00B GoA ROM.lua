@@ -703,6 +703,12 @@ if true then
 		end
 	end
 end
+--Show all items in shops (ASSEMBLY edit)
+if not OnPC then
+	WriteInt(0x264250,0)
+else
+	WriteByte(0x2F9306 - 0x56454E,0)
+end
 --Alternate Party Models (adding new UCM using MEMT causes problems when shopping)
 if World == 0x0C and Place ~= 0x070C then --Mage & Knight (KH I)
 	WriteString(Obj0+0x16F0,'P_EX020_DC\0')
