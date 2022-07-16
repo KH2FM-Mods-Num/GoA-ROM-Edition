@@ -438,6 +438,19 @@ assets:
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-2_CM.dds
+#Roxas (Limit Form) (uses TR Mage's Staff's filename until we propose a BFMM update)
+- name: obj/W_EX020_WI.mdlx #HD asset isn't added until BFMM update
+  method: copy
+  source:
+  - name: obj/P_EX110_KH1F.mdlx
+- name: obj/W_EX020_WI.a.fm
+  method: copy
+  source:
+  - name: obj/P_EX110_KH1F.a.fm
+- name: raw/obj/W_EX020_WI.a.us #Uses raw method until BFMM update (or longer)
+  method: copy
+  source:
+  - name: P_EX110_KH1F_pcraw.a.us
 #Garden of Assemblage Small Chest
 - name: obj/F_EX030_HB.mdlx
   method: copy
