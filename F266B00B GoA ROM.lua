@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: Growth ability bugfix, TT2 & TT3 back to Photo & Ice Cream
+--Last Update: Unknown Disk removal prevention; show all items in shop & initially-equipped growh abilities compatibility; invincible initial dice bugfix
 --Todo: Maybe item-based progress flags
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
@@ -7,7 +7,7 @@ LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.53.2'
+local VersionNum = 'GoA Version 1.53.3'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
