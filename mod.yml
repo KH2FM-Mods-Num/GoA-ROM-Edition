@@ -1963,18 +1963,18 @@ assets:
   source:
   - name: remastered/fontimage_bar2.png
 #Add Missing PC BGM
-#- name: bgm/music130.win32.scd #Neverland Sky
-#  method: copy
-#  source:
-#  - name: bgm/Neverland Sky.scd
-#- name: bgm/music140.win32.scd #Under the Sea (KH I)
-#  method: copy
-#  source:
-#  - name: bgm/Under the Sea (KH I).scd
-#- name: bgm/music147.win32.scd #An Adventure in Atlantica
-#  method: copy
-#  source:
-#  - name: bgm/An Adventure in Atlantica.scd
+- name: bgm/music130.win32.scd #Neverland Sky
+  method: copy
+  source:
+  - name: bgm/Neverland Sky.scd
+- name: bgm/music140.win32.scd #Under the Sea (KH I)
+  method: copy
+  source:
+  - name: bgm/Under the Sea (KH I).scd
+- name: bgm/music147.win32.scd #An Adventure in Atlantica
+  method: copy
+  source:
+  - name: bgm/An Adventure in Atlantica.scd
 - name: bgm/music150.win32.scd #Squirming Evil
   method: copy
   source:
