@@ -878,6 +878,54 @@ assets:
     method: copy
     source:
     - name: obj/F_NM070.bin
+- name: remastered/obj/F_HE000.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_HE000.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/F_MU040.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_MU040.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/F_MU050.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_MU050.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/F_MU060.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_MU060.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/F_NM070.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_NM070.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/F_NM070.mdlx/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_NM070.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/F_NM070.mdlx/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_NM070.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/F_NM070.mdlx/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_NM070.mdlx/-3.dds
+    type: internal
 #Pictures
 - name: itempic/item-000.imd #Unused Items
   method: imd
@@ -2236,22 +2284,27 @@ assets:
   - name: remastered/fontimage_bar2.png
 #Add Missing PC BGM
 - name: bgm/music130.win32.scd #Neverland Sky
+  platform: pc
   method: copy
   source:
   - name: bgm/Neverland Sky.scd
 - name: bgm/music140.win32.scd #Under the Sea (KH I)
+  platform: pc
   method: copy
   source:
   - name: bgm/Under the Sea (KH I).scd
 - name: bgm/music147.win32.scd #An Adventure in Atlantica
+  platform: pc
   method: copy
   source:
   - name: bgm/An Adventure in Atlantica.scd
 - name: bgm/music150.win32.scd #Squirming Evil
+  platform: pc
   method: copy
   source:
   - name: bgm/Squirming Evil.scd
 - name: bgm/music156.win32.scd #Guardando nel Buio
+  platform: pc
   method: copy
   source:
   - name: bgm/Guardando nel Buio.scd
@@ -3752,12 +3805,7 @@ assets:
     - name: ard/tt41/evt.script
 #MSN Editing
 - name: msn/jp/LK05_MS201.bar #Hyenas II (Fast Hyenas)
-  multi:
-  - name: msn/us/LK05_MS201.bar
-  - name: msn/fr/LK05_MS201.bar
-  - name: msn/gr/LK05_MS201.bar
-  - name: msn/it/LK05_MS201.bar
-  - name: msn/sp/LK05_MS201.bar
+  platform: ps2
   method: binarc
   source:
   - name: LK05
@@ -3765,3 +3813,28 @@ assets:
     method: copy
     source:
     - name: ard/lk05/LK05_MS201.bin
+- name: msn/us/LK05_MS201.bar
+  multi:
+  - name: msn/fr/LK05_MS201.bar
+  - name: msn/gr/LK05_MS201.bar
+  - name: msn/it/LK05_MS201.bar
+  - name: msn/sp/LK05_MS201.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: LK05
+    type: list
+    method: copy
+    source:
+    - name: ard/lk05/LK05_MS201.bin
+- name: remastered/msn/us/LK05_MS201.bar/US_LK05_MS201_bar0.png
+  multi:
+  - name: remastered/msn/fr/LK05_MS201.bar/FR_LK05_MS201_bar0.png
+  - name: remastered/msn/gr/LK05_MS201.bar/GR_LK05_MS201_bar0.png
+  - name: remastered/msn/it/LK05_MS201.bar/IT_LK05_MS201_bar0.png
+  - name: remastered/msn/sp/LK05_MS201.bar/SP_LK05_MS201_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/LK05_MS201.bar/US_LK05_MS201_bar0.png
+    type: internal
