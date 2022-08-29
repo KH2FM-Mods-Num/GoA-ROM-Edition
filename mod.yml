@@ -790,13 +790,22 @@ assets:
   - name: remastered/obj/W_EX010_KingdomKey.mdlx/TR.dds
 #Jiminy Journal New Flag Requirements
 - name: menu/fm/jiminy.bar
+  platform: ps2
+  method: binarc
+  source:
+  - name: worl
+    type: jimidata
+    method: copy
+    source:
+    - name: worl.bin
+- name: menu/us/jiminy.bar
   multi:
-  - name: menu/us/jiminy.bar
   - name: menu/fr/jiminy.bar
   - name: menu/gr/jiminy.bar
   - name: menu/it/jiminy.bar
   - name: menu/sp/jiminy.bar
   - name: menu/uk/jiminy.bar
+  platform: pc
   method: binarc
   source:
   - name: worl
@@ -2148,6 +2157,30 @@ assets:
   source:
   - name: remastered/tr_tm_2ld2.png
 #Texts & Libretto
+- name: libretto-al.bar
+  method: copy
+  source:
+  - name: msg/libretto-al.bar
+- name: libretto-dc.bar
+  method: copy
+  source:
+  - name: msg/libretto-dc.bar
+- name: libretto-he.bar
+  method: copy
+  source:
+  - name: msg/libretto-he.bar
+- name: libretto-hb.bar
+  method: copy
+  source:
+  - name: msg/libretto-hb.bar
+- name: libretto-nm.bar
+  method: copy
+  source:
+  - name: msg/libretto-nm.bar
+- name: libretto-tr.bar
+  method: copy
+  source:
+  - name: msg/libretto-tr.bar
 - name: msg/jp/sys.bar
   multi:
   - name: msg/us/sys.bar
@@ -2253,32 +2286,114 @@ assets:
     source:
     - name: msg/tr.yml
       language: en
-- name: libretto-al.bar
+- name: remastered/msg/us/al.bar/US_al_bar0.png
+  multi:
+  - name: remastered/msg/fr/al.bar/FR_al_bar0.png
+  - name: remastered/msg/gr/al.bar/GR_al_bar0.png
+  - name: remastered/msg/it/al.bar/IT_al_bar0.png
+  - name: remastered/msg/sp/al.bar/SP_al_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-al.bar
-- name: libretto-dc.bar
+  - name: remastered/msg/us/al.bar/US_al_bar0.png
+    type: internal
+- name: remastered/msg/us/dc.bar/US_dc_bar0.png
+  multi:
+  - name: remastered/msg/fr/dc.bar/FR_dc_bar0.png
+  - name: remastered/msg/gr/dc.bar/GR_dc_bar0.png
+  - name: remastered/msg/it/dc.bar/IT_dc_bar0.png
+  - name: remastered/msg/sp/dc.bar/SP_dc_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-dc.bar
-- name: libretto-he.bar
+  - name: remastered/msg/us/dc.bar/US_dc_bar0.png
+    type: internal
+- name: remastered/msg/us/hb.bar/US_hb_bar0.png
+  multi:
+  - name: remastered/msg/fr/hb.bar/FR_hb_bar0.png
+  - name: remastered/msg/gr/hb.bar/GR_hb_bar0.png
+  - name: remastered/msg/it/hb.bar/IT_hb_bar0.png
+  - name: remastered/msg/sp/hb.bar/SP_hb_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-he.bar
-- name: libretto-hb.bar
+  - name: remastered/msg/us/hb.bar/US_hb_bar0.png
+    type: internal
+- name: remastered/msg/us/he.bar/US_he_bar0.png
+  multi:
+  - name: remastered/msg/fr/he.bar/FR_he_bar0.png
+  - name: remastered/msg/gr/he.bar/GR_he_bar0.png
+  - name: remastered/msg/it/he.bar/IT_he_bar0.png
+  - name: remastered/msg/sp/he.bar/SP_he_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-hb.bar
-- name: libretto-nm.bar
+  - name: remastered/msg/us/he.bar/US_he_bar0.png
+    type: internal
+- name: remastered/msg/us/nm.bar/US_nm_bar0.png
+  multi:
+  - name: remastered/msg/fr/nm.bar/FR_nm_bar0.png
+  - name: remastered/msg/gr/nm.bar/GR_nm_bar0.png
+  - name: remastered/msg/it/nm.bar/IT_nm_bar0.png
+  - name: remastered/msg/sp/nm.bar/SP_nm_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-nm.bar
-- name: libretto-tr.bar
+  - name: remastered/msg/us/nm.bar/US_nm_bar0.png
+    type: internal
+- name: remastered/msg/us/tr.bar/US_tr_bar0.png
+  multi:
+  - name: remastered/msg/fr/tr.bar/FR_tr_bar0.png
+  - name: remastered/msg/gr/tr.bar/GR_tr_bar0.png
+  - name: remastered/msg/it/tr.bar/IT_tr_bar0.png
+  - name: remastered/msg/sp/tr.bar/SP_tr_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-tr.bar
+  - name: remastered/msg/us/tr.bar/US_tr_bar0.png
+    type: internal
+  
 #Fix Form Icons
+- name: msg/us/fontimage.bar
+  multi:
+  - name: msg/fr/fontimage.bar
+  - name: msg/gr/fontimage.bar
+  - name: msg/it/fontimage.bar
+  - name: msg/sp/fontimage.bar
+  platform: pc
+  method: copy
+  source:
+  - name: msg/us/fontimage.bar
+    type: internal
+- name: remastered/msg/us/fontimage.bar/US_fontimage_bar0.png
+  multi:
+  - name: remastered/msg/fr/fontimage.bar/FR_fontimage_bar0.png
+  - name: remastered/msg/gr/fontimage.bar/GR_fontimage_bar0.png
+  - name: remastered/msg/it/fontimage.bar/IT_fontimage_bar0.png
+  - name: remastered/msg/sp/fontimage.bar/SP_fontimage_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/us/fontimage.bar/US_fontimage_bar0.png
+    type: internal
+- name: remastered/msg/us/fontimage.bar/US_fontimage_bar1.png
+  multi:
+  - name: remastered/msg/fr/fontimage.bar/FR_fontimage_bar1.png
+  - name: remastered/msg/gr/fontimage.bar/GR_fontimage_bar1.png
+  - name: remastered/msg/it/fontimage.bar/IT_fontimage_bar1.png
+  - name: remastered/msg/sp/fontimage.bar/SP_fontimage_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/us/fontimage.bar/US_fontimage_bar1.png
+    type: internal
 - name: remastered/msg/us/fontimage.bar/US_fontimage_bar2.png
+  multi:
+  - name: remastered/msg/fr/fontimage.bar/FR_fontimage_bar2.png
+  - name: remastered/msg/gr/fontimage.bar/GR_fontimage_bar2.png
+  - name: remastered/msg/it/fontimage.bar/IT_fontimage_bar2.png
+  - name: remastered/msg/sp/fontimage.bar/SP_fontimage_bar2.png
+  platform: pc
   method: copy
   source:
   - name: remastered/fontimage_bar2.png
