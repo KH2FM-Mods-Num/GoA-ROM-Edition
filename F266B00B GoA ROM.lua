@@ -256,6 +256,30 @@ if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	WriteShort(Save+0x4270,0x1FF) --Pause Menu Tutorial Prompts Seen Flags
 	WriteShort(Save+0x4274,0x1FF) --Status Form & Summon Seen Flags
 	BitOr(Save+0x49F0,0x03) --Shop Tutorial Prompt Flags (1=Big Shops, 2=Small Shops)
+	sora = Save + 0x24F0 + 0x0054
+	donald = Save + 0x2604 + 0x0054
+	goofy = Save + 0x2718 + 0x0054
+	for Slot = 0,80 do
+		local Current = sora + 2*Slot
+		local Ability = ReadShort(Current)
+		if Ability < 0x8000 and Ability > 0x0000 then
+			WriteShort(Current,Ability + 0x8000)
+		end
+	end
+	for Slot = 0,80 do
+		local Current = donald + 2*Slot
+		local Ability = ReadShort(Current)
+		if Ability < 0x8000 and Ability > 0x0000 then
+			WriteShort(Current,Ability + 0x8000)
+		end
+	end
+	for Slot = 0,80 do
+		local Current = goofy + 2*Slot
+		local Ability = ReadShort(Current)
+		if Ability < 0x8000 and Ability > 0x0000 then
+			WriteShort(Current,Ability + 0x8000)
+		end
+	end
 end
 end
 
