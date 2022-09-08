@@ -194,94 +194,117 @@ assets:
   source:
   - name: obj/P_EX020_DC_ANGRY_NPC.mdlx
 - name: remastered/obj/H_ZZ020_DC.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/H_ZZ020_DC.mdlx/-0.dds
 - name: remastered/obj/H_ZZ020_DC.mdlx/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/H_ZZ020_DC.mdlx/-1.dds
 - name: remastered/obj/H_ZZ020_DC.mdlx/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/H_ZZ020_DC.mdlx/-2.dds
 - name: remastered/obj/H_ZZ020_DC.mdlx/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/H_ZZ020_DC.mdlx/-3.dds
 - name: remastered/obj/H_ZZ020_DC.mdlx/-4.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/H_ZZ020_DC.mdlx/-4.dds
 - name: remastered/obj/P_EX020_DC.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_DC.mdlx/-0.dds
 - name: remastered/obj/P_EX020_DC.mdlx/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_DC.mdlx/-1.dds
 - name: remastered/obj/P_EX020_DC.mdlx/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_DC.mdlx/-2.dds
 - name: remastered/obj/P_EX020_DC.mdlx/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_DC.mdlx/-3.dds
 - name: remastered/obj/P_EX020_DC.a.us/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-0.dds
 - name: remastered/obj/P_EX020_DC.a.us/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-1.dds
 - name: remastered/obj/P_EX020_DC.a.us/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-2.dds
 - name: remastered/obj/P_EX020_DC.a.us/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-3.dds
 - name: remastered/obj/P_EX020_DC.a.us/-4.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-4.dds
 - name: remastered/obj/P_EX020_DC.a.us/-5.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-5.dds
 - name: remastered/obj/P_EX020_DC.a.us/-6.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-6_DC.dds
 - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-0.dds
 - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-1.dds
 - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-2.dds
 - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-3.dds
 - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-4.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-4.dds
 - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-5.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-5.dds
 - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-6.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_DC_ANGRY_NPC.mdlx/-6.dds
@@ -301,46 +324,57 @@ assets:
   source:
   - name: obj/P_EX030_DC.a.fm
 - name: remastered/obj/H_ZZ030_DC.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/H_ZZ030_DC.mdlx/-0.dds
 - name: remastered/obj/H_ZZ030_DC.mdlx/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/H_ZZ030_DC.mdlx/-1.dds
 - name: remastered/obj/H_ZZ030_DC.mdlx/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/H_ZZ030_DC.mdlx/-2.dds
 - name: remastered/obj/H_ZZ030_DC.mdlx/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/H_ZZ030_DC.mdlx/-3.dds
 - name: remastered/obj/P_EX030_DC.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030_DC.mdlx/-0.dds
 - name: remastered/obj/P_EX030_DC.mdlx/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030_DC.mdlx/-1.dds
 - name: remastered/obj/P_EX030_DC.mdlx/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030_DC.mdlx/-2.dds
 - name: remastered/obj/P_EX030_DC.mdlx/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030_DC.mdlx/-3.dds
 - name: remastered/obj/P_EX030_DC.a.us/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-0.dds
 - name: remastered/obj/P_EX030_DC.a.us/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-1.dds
 - name: remastered/obj/P_EX030_DC.a.us/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-2_DC.dds
@@ -356,46 +390,57 @@ assets:
   source:
   - name: obj/P_EX020_CM.a.fm
 - name: remastered/obj/P_EX020_CM.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_CM.mdlx/-0.dds
 - name: remastered/obj/P_EX020_CM.mdlx/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_CM.mdlx/-1.dds
 - name: remastered/obj/P_EX020_CM.mdlx/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_CM.mdlx/-2.dds
 - name: remastered/obj/P_EX020_CM.mdlx/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020_CM.mdlx/-3.dds
 - name: remastered/obj/P_EX020_CM.a.us/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-0.dds
 - name: remastered/obj/P_EX020_CM.a.us/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-1.dds
 - name: remastered/obj/P_EX020_CM.a.us/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-2.dds
 - name: remastered/obj/P_EX020_CM.a.us/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-3.dds
 - name: remastered/obj/P_EX020_CM.a.us/-4.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-4.dds
 - name: remastered/obj/P_EX020_CM.a.us/-5.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-5.dds
 - name: remastered/obj/P_EX020_CM.a.us/-6.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX020.a.us/-6_CM.dds
@@ -411,30 +456,37 @@ assets:
   source:
   - name: obj/P_EX030_CM.a.fm
 - name: remastered/obj/P_EX030_CM.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030_CM.mdlx/-0.dds
 - name: remastered/obj/P_EX030_CM.mdlx/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030_CM.mdlx/-1.dds
 - name: remastered/obj/P_EX030_CM.mdlx/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030_CM.mdlx/-2.dds
 - name: remastered/obj/P_EX030_CM.mdlx/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030_CM.mdlx/-3.dds
 - name: remastered/obj/P_EX030_CM.a.us/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-0.dds
 - name: remastered/obj/P_EX030_CM.a.us/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-1.dds
 - name: remastered/obj/P_EX030_CM.a.us/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/P_EX030.a.us/-2_CM.dds
@@ -450,10 +502,12 @@ assets:
   source:
   - name: obj/F_EX030_HB.a.fm
 - name: remastered/obj/F_EX030_HB.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/F_EX030_HB.mdlx/-0.dds
 - name: remastered/obj/F_EX030_HB.mdlx/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/F_EX030_HB.mdlx/-1.dds
@@ -474,6 +528,7 @@ assets:
   multi:
   - name: obj/W_EX010_NM_X0.a.fm
   - name: obj/W_EX010_TR_X0.a.fm
+  platform: ps2
   method: copy
   source:
   - name: obj/W_EX010_Pureblood.a.fm
@@ -481,18 +536,22 @@ assets:
   multi:
   - name: obj/W_EX010_NM_X0.a.us
   - name: obj/W_EX010_TR_X0.a.us
+  platform: pc
   method: copy
   source:
   - name: obj/W_EX010_Pureblood.a.us
 - name: remastered/obj/W_EX010_X0.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.mdlx/ZZ.dds
 - name: remastered/obj/W_EX010_NM_X0.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.mdlx/NM.dds
 - name: remastered/obj/W_EX010_TR_X0.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.mdlx/TR.dds
@@ -500,6 +559,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/-0.dds
   - name: remastered/obj/W_EX010_TR_X0.a.us/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.a.us/-0.dds
@@ -510,6 +570,7 @@ assets:
   - name: remastered/obj/W_EX010_X0.a.us/-2.dds
   - name: remastered/obj/W_EX010_NM_X0.a.us/-2.dds
   - name: remastered/obj/W_EX010_TR_X0.a.us/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.a.us/-1.dds
@@ -517,6 +578,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/-3.dds
   - name: remastered/obj/W_EX010_TR_X0.a.us/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.a.us/-3.dds
@@ -524,6 +586,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/-4.dds
   - name: remastered/obj/W_EX010_TR_X0.a.us/-4.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.a.us/-4.dds
@@ -531,6 +594,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/-5.dds
   - name: remastered/obj/W_EX010_TR_X0.a.us/-5.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.a.us/-5.dds
@@ -538,6 +602,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/-6.dds
   - name: remastered/obj/W_EX010_TR_X0.a.us/-6.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.a.us/-6.dds
@@ -545,6 +610,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/se/obj/se503
   - name: remastered/obj/W_EX010_TR_X0.a.us/se/obj/se503
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Pureblood.a.us/se503
@@ -565,6 +631,7 @@ assets:
   multi:
   - name: obj/W_EX010_NM_Y0.a.fm
   - name: obj/W_EX010_TR_Y0.a.fm
+  platform: ps2
   method: copy
   source:
   - name: obj/W_EX010_AlphaWeapon.a.fm
@@ -572,18 +639,22 @@ assets:
   multi:
   - name: obj/W_EX010_NM_Y0.a.us
   - name: obj/W_EX010_TR_Y0.a.us
+  platform: pc
   method: copy
   source:
   - name: obj/W_EX010_AlphaWeapon.a.us
 - name: remastered/obj/W_EX010_Y0.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_AlphaWeapon.mdlx/ZZ.dds
 - name: remastered/obj/W_EX010_NM_Y0.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_AlphaWeapon.mdlx/NM.dds
 - name: remastered/obj/W_EX010_TR_Y0.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_AlphaWeapon.mdlx/TR.dds
@@ -591,6 +662,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/-0.dds
   - name: remastered/obj/W_EX010_TR_Y0.a.us/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-0.dds
@@ -598,6 +670,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/-1.dds
   - name: remastered/obj/W_EX010_TR_Y0.a.us/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-1.dds
@@ -605,6 +678,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/-2.dds
   - name: remastered/obj/W_EX010_TR_Y0.a.us/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-2.dds
@@ -612,6 +686,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/-3.dds
   - name: remastered/obj/W_EX010_TR_Y0.a.us/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-3.dds
@@ -619,6 +694,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/-4.dds
   - name: remastered/obj/W_EX010_TR_Y0.a.us/-4.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-4.dds
@@ -626,6 +702,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/se/obj/se9001
   - name: remastered/obj/W_EX010_TR_Y0.a.us/se/obj/se9001
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_AlphaWeapon.a.us/se9001
@@ -646,6 +723,7 @@ assets:
   multi:
   - name: obj/W_EX010_NM_Z0.a.fm
   - name: obj/W_EX010_TR_Z0.a.fm
+  platform: ps2
   method: copy
   source:
   - name: obj/W_EX010_OmegaWeapon.a.fm
@@ -653,18 +731,22 @@ assets:
   multi:
   - name: obj/W_EX010_NM_Z0.a.us
   - name: obj/W_EX010_TR_Z0.a.us
+  platform: pc
   method: copy
   source:
   - name: obj/W_EX010_OmegaWeapon.a.us
 - name: remastered/obj/W_EX010_Z0.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_OmegaWeapon.mdlx/ZZ.dds
 - name: remastered/obj/W_EX010_NM_Z0.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_OmegaWeapon.mdlx/NM.dds
 - name: remastered/obj/W_EX010_TR_Z0.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_OmegaWeapon.mdlx/TR.dds
@@ -672,6 +754,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/-0.dds
   - name: remastered/obj/W_EX010_TR_Z0.a.us/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-0.dds
@@ -679,6 +762,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/-1.dds
   - name: remastered/obj/W_EX010_TR_Z0.a.us/-1.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-1.dds
@@ -686,6 +770,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/-2.dds
   - name: remastered/obj/W_EX010_TR_Z0.a.us/-2.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-2.dds
@@ -693,6 +778,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/-3.dds
   - name: remastered/obj/W_EX010_TR_Z0.a.us/-3.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-3.dds
@@ -700,6 +786,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/-4.dds
   - name: remastered/obj/W_EX010_TR_Z0.a.us/-4.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-4.dds
@@ -707,6 +794,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/se/obj/se9002
   - name: remastered/obj/W_EX010_TR_Z0.a.us/se/obj/se9002
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_OmegaWeapon.a.us/se9002
@@ -727,6 +815,7 @@ assets:
   multi:
   - name: obj/W_EX010_NM_00.a.fm
   - name: obj/W_EX010_TR_00.a.fm
+  platform: ps2
   method: copy
   source:
   - name: obj/W_EX010_KingdomKeyD.a.fm
@@ -734,18 +823,22 @@ assets:
   multi:
   - name: obj/W_EX010_NM_00.a.us
   - name: obj/W_EX010_TR_00.a.us
+  platform: pc
   method: copy
   source:
   - name: obj/W_EX010_KingdomKeyD.a.us
 - name: remastered/obj/W_EX010_00.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_KingdomKeyD.mdlx/ZZ.dds
 - name: remastered/obj/W_EX010_NM_00.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_KingdomKeyD.mdlx/NM.dds
 - name: remastered/obj/W_EX010_TR_00.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_KingdomKeyD.mdlx/TR.dds
@@ -753,6 +846,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_00.a.us/-0.dds
   - name: remastered/obj/W_EX010_TR_00.a.us/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_KingdomKeyD.a.us/-0.dds
@@ -760,6 +854,7 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_NM_00.a.us/se/obj/se9000
   - name: remastered/obj/W_EX010_TR_00.a.us/se/obj/se9000
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_KingdomKeyD.a.us/se9000
@@ -777,26 +872,38 @@ assets:
   source:
   - name: obj/W_EX010_KingdomKey_TR.mdlx
 - name: remastered/obj/W_EX010.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_KingdomKey.mdlx/ZZ.dds
 - name: remastered/obj/W_EX010_NM.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_KingdomKey.mdlx/NM.dds
 - name: remastered/obj/W_EX010_TR.mdlx/-0.dds
+  platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_KingdomKey.mdlx/TR.dds
 #Jiminy Journal New Flag Requirements
 - name: menu/fm/jiminy.bar
+  platform: ps2
+  method: binarc
+  source:
+  - name: worl
+    type: jimidata
+    method: copy
+    source:
+    - name: worl.bin
+- name: menu/us/jiminy.bar
   multi:
-  - name: menu/us/jiminy.bar
   - name: menu/fr/jiminy.bar
   - name: menu/gr/jiminy.bar
   - name: menu/it/jiminy.bar
   - name: menu/sp/jiminy.bar
   - name: menu/uk/jiminy.bar
+  platform: pc
   method: binarc
   source:
   - name: worl
@@ -878,6 +985,54 @@ assets:
     method: copy
     source:
     - name: obj/F_NM070.bin
+- name: remastered/obj/F_HE000.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_HE000.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/F_MU040.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_MU040.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/F_MU050.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_MU050.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/F_MU060.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_MU060.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/F_NM070.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_NM070.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/F_NM070.mdlx/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_NM070.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/F_NM070.mdlx/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_NM070.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/F_NM070.mdlx/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/F_NM070.mdlx/-3.dds
+    type: internal
 #Pictures
 - name: itempic/item-000.imd #Unused Items
   method: imd
@@ -1068,214 +1223,982 @@ assets:
   source:
   - name: itempic/Reflect.png
 - name: remastered/itempic/item-000.imd/-0.dds #Unused Items
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Unused.dds
 - name: remastered/itempic/item-012.imd/-0.dds #Action Ability
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Action.dds
 - name: remastered/itempic/item-013.imd/-0.dds #Growth Ability
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Growth.dds
 - name: remastered/itempic/item-014.imd/-0.dds #Support Ability
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Support.dds
 - name: remastered/itempic/item-015.imd/-0.dds #DUMMY 23 (HP Up)
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/DUMMY 23 HP.dds
 - name: remastered/itempic/item-016.imd/-0.dds #DUMMY 24 (MP Up)
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/DUMMY 24 MP.dds
 - name: remastered/itempic/item-017.imd/-0.dds #DUMMY 25 (Drive Up)
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/DUMMY 25 Drive.dds
 - name: remastered/itempic/item-018.imd/-0.dds #DUMMY 26 (Armor Up)
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/DUMMY 26 Armor.dds
 - name: remastered/itempic/item-019.imd/-0.dds #DUMMY 27 (Accessory Up)
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/DUMMY 27 Accessory.dds
 - name: remastered/itempic/item-020.imd/-0.dds #DUMMY 16 (Item Up)
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/DUMMY 16 Item.dds
 - name: remastered/itempic/item-092.imd/-0.dds #Scimitar
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Scimitar.dds
 - name: remastered/itempic/item-093.imd/-0.dds #Battlefields of War
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Battlefields of War.dds
 - name: remastered/itempic/item-094.imd/-0.dds #Sword of the Ancestor
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Sword of the Ancestor.dds
 - name: remastered/itempic/item-095.imd/-0.dds #Identity Disk
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Identity Disk.dds
 - name: remastered/itempic/item-096.imd/-0.dds #Skill and Crossbones
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Skill and Crossbones.dds
 - name: remastered/itempic/item-098.imd/-0.dds #Beast's Claw
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Beast's Claw.dds
 - name: remastered/itempic/item-099.imd/-0.dds #Bone Fist
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Bone Fist.dds
 - name: remastered/itempic/item-100.imd/-0.dds #Proud Fang
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Proud Fang.dds
 - name: remastered/itempic/item-232.imd/-0.dds #Membership Card
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Membership Card.dds
 - name: remastered/itempic/item-233.imd/-0.dds #Olympus Stone
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Olympus Stone.dds
 - name: remastered/itempic/item-238.imd/-0.dds #Ice Cream
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Ice Cream.dds
 - name: remastered/itempic/item-239.imd/-0.dds #Picture
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Picture.dds
 - name: remastered/itempic/item-240.imd/-0.dds #DUMMY 15 (Unknown Disk)
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Unknown Disk.dds
 - name: remastered/itempic/item-221.imd/-0.dds #Lamp Charm
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Lamp Charm.dds
 - name: remastered/itempic/item-222.imd/-0.dds #Ukulele Charm
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Ukulele Charm.dds
 - name: remastered/itempic/item-223.imd/-0.dds #Feather Charm
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Feather Charm.dds
 - name: remastered/itempic/item-224.imd/-0.dds #Baseball Charm
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Baseball Charm.dds
 - name: remastered/itempic/item-266.imd/-0.dds #Valor Form
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Valor Form.dds
 - name: remastered/itempic/item-267.imd/-0.dds #Wisdom Form
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Wisdom Form.dds
 - name: remastered/itempic/item-268.imd/-0.dds #Master Form
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Master Form.dds
 - name: remastered/itempic/item-269.imd/-0.dds #Final Form
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Final Form.dds
 - name: remastered/itempic/item-271.imd/-0.dds #Anti Form
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Anti Form.dds
 - name: remastered/itempic/item-320.imd/-0.dds #Limit Form
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Limit Form.dds
 - name: remastered/itempic/item-043.imd/-0.dds #Kingdom Key
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Kingdom Key.dds
 - name: remastered/itempic/item-296.imd/-0.dds #Pureblood
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Pureblood.dds
 - name: remastered/itempic/item-297.imd/-0.dds #Alpha Weapon
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Alpha Weapon.dds
 - name: remastered/itempic/item-298.imd/-0.dds #Omega Weapon
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Omega Weapon.dds
 - name: remastered/itempic/item-299.imd/-0.dds #Kingdom Key D
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Kingdom Key D.dds
 - name: remastered/itempic/item-242.imd/-0.dds #Promise Charm
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Promise Charm.dds
 - name: remastered/itempic/item-321.imd/-0.dds #Proof of Connection
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Proof of Connection.dds
 - name: remastered/itempic/item-322.imd/-0.dds #Proof of Nonexistence
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Proof of Nonexistence.dds
 - name: remastered/itempic/item-323.imd/-0.dds #Proof of Peace
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Proof of Peace.dds
 - name: remastered/itempic/item-324.imd/-0.dds #Fire
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Fire.dds
 - name: remastered/itempic/item-325.imd/-0.dds #Blizzard
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Blizzard.dds
 - name: remastered/itempic/item-326.imd/-0.dds #Thunder
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Thunder.dds
 - name: remastered/itempic/item-327.imd/-0.dds #Cure
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Cure.dds
 - name: remastered/itempic/item-328.imd/-0.dds #Magnet
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Magnet.dds
 - name: remastered/itempic/item-329.imd/-0.dds #Reflect
+  platform: pc
   method: copy
   source:
   - name: remastered/itempic/Reflect.dds
 #GoA World Icons
 - name: map/jp/hb26.map
+  platform: ps2
   method: copy
   source:
   - name: hb26.map
-- name: raw/map/hb26.map
+- name: map/hb26.map
+  platform: pc
   method: copy
   source:
-  - name: hb26_pcraw.map
+  - name: map/hb26.map
+    type: internal
+- name: remastered/map/hb26.map/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-0.dds
+    type: internal
+- name: remastered/map/hb26.map/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-1.dds
+    type: internal
+- name: remastered/map/hb26.map/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-2.dds
+    type: internal
+- name: remastered/map/hb26.map/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-3.dds
+    type: internal
+- name: remastered/map/hb26.map/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-4.dds
+    type: internal
+- name: remastered/map/hb26.map/-5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-5.dds
+    type: internal
+- name: remastered/map/hb26.map/-6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-6.dds
+    type: internal
+- name: remastered/map/hb26.map/-7.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-7.dds
+    type: internal
+- name: remastered/map/hb26.map/-8.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-8.dds
+    type: internal
+- name: remastered/map/hb26.map/-9.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-9.dds
+    type: internal
+- name: remastered/map/hb26.map/-10.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-10.dds
+    type: internal
+- name: remastered/map/hb26.map/-11.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-11.dds
+    type: internal
+- name: remastered/map/hb26.map/-12.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-12.dds
+    type: internal
+- name: remastered/map/hb26.map/-13.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-13.dds
+    type: internal
+- name: remastered/map/hb26.map/-14.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-14.dds
+    type: internal
+- name: remastered/map/hb26.map/-15.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-15.dds
+    type: internal
+- name: remastered/map/hb26.map/-16.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-16.dds
+    type: internal
+- name: remastered/map/hb26.map/-17.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-17.dds
+    type: internal
+- name: remastered/map/hb26.map/-18.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-18.dds
+    type: internal
+- name: remastered/map/hb26.map/-19.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-19.dds
+    type: internal
+- name: remastered/map/hb26.map/-20.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-20.dds
+    type: internal
+- name: remastered/map/hb26.map/-21.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-21.dds
+    type: internal
+- name: remastered/map/hb26.map/-22.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-22.dds
+    type: internal
+- name: remastered/map/hb26.map/-23.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-23.dds
+    type: internal
+- name: remastered/map/hb26.map/-24.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-24.dds
+    type: internal
+- name: remastered/map/hb26.map/-25.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-25.dds
+    type: internal
+- name: remastered/map/hb26.map/-26.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-26.dds
+    type: internal
+- name: remastered/map/hb26.map/-27.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-27.dds
+    type: internal
+- name: remastered/map/hb26.map/-28.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-28.dds
+    type: internal
+- name: remastered/map/hb26.map/-29.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-29.dds
+    type: internal
+- name: remastered/map/hb26.map/-30.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-30.dds
+    type: internal
+- name: remastered/map/hb26.map/-31.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-31.dds
+    type: internal
+- name: remastered/map/hb26.map/-32.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-32.dds
+    type: internal
+- name: remastered/map/hb26.map/-33.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-33.dds
+    type: internal
+- name: remastered/map/hb26.map/-34.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-34.dds
+    type: internal
+- name: remastered/map/hb26.map/-35.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-35.dds
+    type: internal
+- name: remastered/map/hb26.map/-36.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-36.dds
+    type: internal
+- name: remastered/map/hb26.map/-37.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-37.dds
+    type: internal
+- name: remastered/map/hb26.map/-38.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-38.dds
+    type: internal
+- name: remastered/map/hb26.map/-39.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-39.dds
+    type: internal
+- name: remastered/map/hb26.map/-40.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-40.dds
+    type: internal
+- name: remastered/map/hb26.map/-41.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-41.dds
+    type: internal
+- name: remastered/map/hb26.map/-42.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-42.dds
+    type: internal
+- name: remastered/map/hb26.map/-43.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-43.dds
+    type: internal
+- name: remastered/map/hb26.map/-44.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-44.dds
+    type: internal
+- name: remastered/map/hb26.map/-45.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-45.dds
+    type: internal
+- name: remastered/map/hb26.map/-46.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-46.dds
+    type: internal
+- name: remastered/map/hb26.map/-47.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-47.dds
+    type: internal
+- name: remastered/map/hb26.map/-48.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-48.dds
+    type: internal
+- name: remastered/map/hb26.map/-49.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-49.dds
+    type: internal
+- name: remastered/map/hb26.map/-50.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-50.dds
+    type: internal
+- name: remastered/map/hb26.map/-51.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-51.dds
+    type: internal
+- name: remastered/map/hb26.map/-52.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-52.dds
+    type: internal
+- name: remastered/map/hb26.map/-53.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-53.dds
+    type: internal
+- name: remastered/map/hb26.map/-54.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-54.dds
+    type: internal
+- name: remastered/map/hb26.map/-55.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-55.dds
+    type: internal
+- name: remastered/map/hb26.map/-56.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-56.dds
+    type: internal
+- name: remastered/map/hb26.map/-57.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-57.dds
+    type: internal
+- name: remastered/map/hb26.map/-58.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-58.dds
+    type: internal
+- name: remastered/map/hb26.map/-59.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-59.dds
+    type: internal
+- name: remastered/map/hb26.map/-60.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-60.dds
+    type: internal
+- name: remastered/map/hb26.map/-61.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-61.dds
+    type: internal
+- name: remastered/map/hb26.map/-62.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-62.dds
+    type: internal
+- name: remastered/map/hb26.map/-63.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-63.dds
+    type: internal
+- name: remastered/map/hb26.map/-64.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-64.dds
+    type: internal
+- name: remastered/map/hb26.map/-65.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-65.dds
+    type: internal
+- name: remastered/map/hb26.map/-66.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-66.dds
+    type: internal
+- name: remastered/map/hb26.map/-67.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-67.dds
+    type: internal
+- name: remastered/map/hb26.map/-68.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-68.dds
+    type: internal
+- name: remastered/map/hb26.map/-69.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-69.dds
+    type: internal
+- name: remastered/map/hb26.map/-70.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-70.dds
+    type: internal
+- name: remastered/map/hb26.map/-71.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-71.dds
+    type: internal
+- name: remastered/map/hb26.map/-72.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-72.dds
+- name: remastered/map/hb26.map/-73.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-73.dds
+- name: remastered/map/hb26.map/-74.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-74.dds
+- name: remastered/map/hb26.map/-75.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-75.dds
+- name: remastered/map/hb26.map/-76.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-76.dds
+- name: remastered/map/hb26.map/-77.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-77.dds
+- name: remastered/map/hb26.map/-78.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-78.dds
+- name: remastered/map/hb26.map/-79.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-79.dds
+- name: remastered/map/hb26.map/-80.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-80.dds
+- name: remastered/map/hb26.map/-81.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-81.dds
+- name: remastered/map/hb26.map/-82.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-82.dds
+- name: remastered/map/hb26.map/-83.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-83.dds
+- name: remastered/map/hb26.map/-84.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-84.dds
+- name: remastered/map/hb26.map/-85.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-85.dds
+- name: remastered/map/hb26.map/-86.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-86.dds
+- name: remastered/map/hb26.map/-87.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-87.dds
+- name: remastered/map/hb26.map/-88.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-88.dds
+- name: remastered/map/hb26.map/-89.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-89.dds
+- name: remastered/map/hb26.map/-90.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-90.dds
+- name: remastered/map/hb26.map/-91.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-91.dds
+- name: remastered/map/hb26.map/-92.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-92.dds
+- name: remastered/map/hb26.map/-93.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-93.dds
+- name: remastered/map/hb26.map/-94.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-94.dds
+- name: remastered/map/hb26.map/-95.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-95.dds
+- name: remastered/map/hb26.map/-96.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-96.dds
+- name: remastered/map/hb26.map/-97.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-97.dds
+- name: remastered/map/hb26.map/-98.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-98.dds
+- name: remastered/map/hb26.map/-99.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-99.dds
+- name: remastered/map/hb26.map/-100.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-100.dds
+- name: remastered/map/hb26.map/-101.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-101.dds
+- name: remastered/map/hb26.map/-102.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-102.dds
+- name: remastered/map/hb26.map/-103.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-103.dds
+- name: remastered/map/hb26.map/-104.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-104.dds
+- name: remastered/map/hb26.map/-105.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-105.dds
+- name: remastered/map/hb26.map/-106.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-106.dds
+- name: remastered/map/hb26.map/-107.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-107.dds
+- name: remastered/map/hb26.map/-108.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-108.dds
+- name: remastered/map/hb26.map/-109.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-109.dds
+- name: remastered/map/hb26.map/-110.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-110.dds
+- name: remastered/map/hb26.map/-111.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-111.dds
+- name: remastered/map/hb26.map/-112.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-112.dds
+- name: remastered/map/hb26.map/-113.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-113.dds
+- name: remastered/map/hb26.map/-114.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-114.dds
+- name: remastered/map/hb26.map/-115.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-115.dds
+- name: remastered/map/hb26.map/-116.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-116.dds
+- name: remastered/map/hb26.map/-117.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-117.dds
+- name: remastered/map/hb26.map/-118.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-118.dds
+- name: remastered/map/hb26.map/-119.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-119.dds
+- name: remastered/map/hb26.map/-120.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-120.dds
+- name: remastered/map/hb26.map/-121.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-121.dds
+- name: remastered/map/hb26.map/-122.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-122.dds
+- name: remastered/map/hb26.map/-123.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-123.dds
+- name: remastered/map/hb26.map/-124.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-124.dds
+    type: internal
+- name: remastered/map/hb26.map/-125.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-125.dds
+    type: internal
+- name: remastered/map/hb26.map/-126.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-126.dds
+    type: internal
+- name: remastered/map/hb26.map/-127.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-127.dds
+    type: internal
+- name: remastered/map/hb26.map/-128.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/hb26.map/-128.dds
+    type: internal
 #GoA Picture in SP Terminal
 - name: file/jp/tr_tm.2ld
-  multi:
-  - name: file/us/tr_tm.2ld
-  - name: file/fr/tr_tm.2ld
-  - name: file/gr/tr_tm.2ld
-  - name: file/it/tr_tm.2ld
-  - name: file/sp/tr_tm.2ld
+  platform: ps2
   method: binarc
   source:
   - name: tr_t
@@ -1284,34 +2207,78 @@ assets:
     source:
     - name: tr_tm_2.png
       index: 2
-- name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld0.png #Include unchanged assets for fast-patch compatibility
+- name: file/us/tr_tm.2ld
+  multi:
+  - name: file/fr/tr_tm.2ld
+  - name: file/gr/tr_tm.2ld
+  - name: file/it/tr_tm.2ld
+  - name: file/sp/tr_tm.2ld
+  platform: pc
+  method: binarc
+  source:
+  - name: tr_t
+    type: imgz
+    method: imgz
+    source:
+    - name: tr_tm_2.png
+      index: 2
+- name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld0.png
   multi:
   - name: remastered/file/fr/tr_tm.2ld/FR_tr_tm_2ld0.png
   - name: remastered/file/gr/tr_tm.2ld/GR_tr_tm_2ld0.png
   - name: remastered/file/it/tr_tm.2ld/IT_tr_tm_2ld0.png
   - name: remastered/file/sp/tr_tm.2ld/SP_tr_tm_2ld0.png
+  platform: pc
   method: copy
   source:
   - name: remastered/tr_tm.2ld/tr_tm_2ld0.png
+    type: internal
 - name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld1.png
   multi:
   - name: remastered/file/fr/tr_tm.2ld/FR_tr_tm_2ld1.png
   - name: remastered/file/gr/tr_tm.2ld/GR_tr_tm_2ld1.png
   - name: remastered/file/it/tr_tm.2ld/IT_tr_tm_2ld1.png
   - name: remastered/file/sp/tr_tm.2ld/SP_tr_tm_2ld1.png
+  platform: pc
   method: copy
   source:
   - name: remastered/tr_tm.2ld/tr_tm_2ld1.png
+    type: internal
 - name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld2.png
   multi:
   - name: remastered/file/fr/tr_tm.2ld/FR_tr_tm_2ld2.png
   - name: remastered/file/gr/tr_tm.2ld/GR_tr_tm_2ld2.png
   - name: remastered/file/it/tr_tm.2ld/IT_tr_tm_2ld2.png
   - name: remastered/file/sp/tr_tm.2ld/SP_tr_tm_2ld2.png
+  platform: pc
   method: copy
   source:
-  - name: remastered/tr_tm.2ld/tr_tm_2ld2.png
+  - name: remastered/tr_tm_2ld2.png
 #Texts & Libretto
+- name: libretto-al.bar
+  method: copy
+  source:
+  - name: msg/libretto-al.bar
+- name: libretto-dc.bar
+  method: copy
+  source:
+  - name: msg/libretto-dc.bar
+- name: libretto-he.bar
+  method: copy
+  source:
+  - name: msg/libretto-he.bar
+- name: libretto-hb.bar
+  method: copy
+  source:
+  - name: msg/libretto-hb.bar
+- name: libretto-nm.bar
+  method: copy
+  source:
+  - name: msg/libretto-nm.bar
+- name: libretto-tr.bar
+  method: copy
+  source:
+  - name: msg/libretto-tr.bar
 - name: msg/jp/sys.bar
   multi:
   - name: msg/us/sys.bar
@@ -1417,53 +2384,140 @@ assets:
     source:
     - name: msg/tr.yml
       language: en
-- name: libretto-al.bar
+- name: remastered/msg/us/al.bar/US_al_bar0.png
+  multi:
+  - name: remastered/msg/fr/al.bar/FR_al_bar0.png
+  - name: remastered/msg/gr/al.bar/GR_al_bar0.png
+  - name: remastered/msg/it/al.bar/IT_al_bar0.png
+  - name: remastered/msg/sp/al.bar/SP_al_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-al.bar
-- name: libretto-dc.bar
+  - name: remastered/msg/us/al.bar/US_al_bar0.png
+    type: internal
+- name: remastered/msg/us/dc.bar/US_dc_bar0.png
+  multi:
+  - name: remastered/msg/fr/dc.bar/FR_dc_bar0.png
+  - name: remastered/msg/gr/dc.bar/GR_dc_bar0.png
+  - name: remastered/msg/it/dc.bar/IT_dc_bar0.png
+  - name: remastered/msg/sp/dc.bar/SP_dc_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-dc.bar
-- name: libretto-he.bar
+  - name: remastered/msg/us/dc.bar/US_dc_bar0.png
+    type: internal
+- name: remastered/msg/us/hb.bar/US_hb_bar0.png
+  multi:
+  - name: remastered/msg/fr/hb.bar/FR_hb_bar0.png
+  - name: remastered/msg/gr/hb.bar/GR_hb_bar0.png
+  - name: remastered/msg/it/hb.bar/IT_hb_bar0.png
+  - name: remastered/msg/sp/hb.bar/SP_hb_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-he.bar
-- name: libretto-hb.bar
+  - name: remastered/msg/us/hb.bar/US_hb_bar0.png
+    type: internal
+- name: remastered/msg/us/he.bar/US_he_bar0.png
+  multi:
+  - name: remastered/msg/fr/he.bar/FR_he_bar0.png
+  - name: remastered/msg/gr/he.bar/GR_he_bar0.png
+  - name: remastered/msg/it/he.bar/IT_he_bar0.png
+  - name: remastered/msg/sp/he.bar/SP_he_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-hb.bar
-- name: libretto-nm.bar
+  - name: remastered/msg/us/he.bar/US_he_bar0.png
+    type: internal
+- name: remastered/msg/us/nm.bar/US_nm_bar0.png
+  multi:
+  - name: remastered/msg/fr/nm.bar/FR_nm_bar0.png
+  - name: remastered/msg/gr/nm.bar/GR_nm_bar0.png
+  - name: remastered/msg/it/nm.bar/IT_nm_bar0.png
+  - name: remastered/msg/sp/nm.bar/SP_nm_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-nm.bar
-- name: libretto-tr.bar
+  - name: remastered/msg/us/nm.bar/US_nm_bar0.png
+    type: internal
+- name: remastered/msg/us/tr.bar/US_tr_bar0.png
+  multi:
+  - name: remastered/msg/fr/tr.bar/FR_tr_bar0.png
+  - name: remastered/msg/gr/tr.bar/GR_tr_bar0.png
+  - name: remastered/msg/it/tr.bar/IT_tr_bar0.png
+  - name: remastered/msg/sp/tr.bar/SP_tr_bar0.png
+  platform: pc
   method: copy
   source:
-  - name: msg/libretto-tr.bar
+  - name: remastered/msg/us/tr.bar/US_tr_bar0.png
+    type: internal
+  
 #Fix Form Icons
+- name: msg/us/fontimage.bar
+  multi:
+  - name: msg/fr/fontimage.bar
+  - name: msg/gr/fontimage.bar
+  - name: msg/it/fontimage.bar
+  - name: msg/sp/fontimage.bar
+  platform: pc
+  method: copy
+  source:
+  - name: msg/us/fontimage.bar
+    type: internal
+- name: remastered/msg/us/fontimage.bar/US_fontimage_bar0.png
+  multi:
+  - name: remastered/msg/fr/fontimage.bar/FR_fontimage_bar0.png
+  - name: remastered/msg/gr/fontimage.bar/GR_fontimage_bar0.png
+  - name: remastered/msg/it/fontimage.bar/IT_fontimage_bar0.png
+  - name: remastered/msg/sp/fontimage.bar/SP_fontimage_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/us/fontimage.bar/US_fontimage_bar0.png
+    type: internal
+- name: remastered/msg/us/fontimage.bar/US_fontimage_bar1.png
+  multi:
+  - name: remastered/msg/fr/fontimage.bar/FR_fontimage_bar1.png
+  - name: remastered/msg/gr/fontimage.bar/GR_fontimage_bar1.png
+  - name: remastered/msg/it/fontimage.bar/IT_fontimage_bar1.png
+  - name: remastered/msg/sp/fontimage.bar/SP_fontimage_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/us/fontimage.bar/US_fontimage_bar1.png
+    type: internal
 - name: remastered/msg/us/fontimage.bar/US_fontimage_bar2.png
+  multi:
+  - name: remastered/msg/fr/fontimage.bar/FR_fontimage_bar2.png
+  - name: remastered/msg/gr/fontimage.bar/GR_fontimage_bar2.png
+  - name: remastered/msg/it/fontimage.bar/IT_fontimage_bar2.png
+  - name: remastered/msg/sp/fontimage.bar/SP_fontimage_bar2.png
+  platform: pc
   method: copy
   source:
   - name: remastered/fontimage_bar2.png
 #Add Missing PC BGM
-#- name: bgm/music130.win32.scd #Neverland Sky
-#  method: copy
-#  source:
-#  - name: bgm/Neverland Sky.scd
-#- name: bgm/music140.win32.scd #Under the Sea (KH I)
-#  method: copy
-#  source:
-#  - name: bgm/Under the Sea (KH I).scd
-#- name: bgm/music147.win32.scd #An Adventure in Atlantica
-#  method: copy
-#  source:
-#  - name: bgm/An Adventure in Atlantica.scd
+- name: bgm/music130.win32.scd #Neverland Sky
+  platform: pc
+  method: copy
+  source:
+  - name: bgm/Neverland Sky.scd
+- name: bgm/music140.win32.scd #Under the Sea (KH I)
+  platform: pc
+  method: copy
+  source:
+  - name: bgm/Under the Sea (KH I).scd
+- name: bgm/music147.win32.scd #An Adventure in Atlantica
+  platform: pc
+  method: copy
+  source:
+  - name: bgm/An Adventure in Atlantica.scd
 - name: bgm/music150.win32.scd #Squirming Evil
+  platform: pc
   method: copy
   source:
   - name: bgm/Squirming Evil.scd
 - name: bgm/music156.win32.scd #Guardando nel Buio
+  platform: pc
   method: copy
   source:
   - name: bgm/Guardando nel Buio.scd
@@ -2964,12 +4018,7 @@ assets:
     - name: ard/tt41/evt.script
 #MSN Editing
 - name: msn/jp/LK05_MS201.bar #Hyenas II (Fast Hyenas)
-  multi:
-  - name: msn/us/LK05_MS201.bar
-  - name: msn/fr/LK05_MS201.bar
-  - name: msn/gr/LK05_MS201.bar
-  - name: msn/it/LK05_MS201.bar
-  - name: msn/sp/LK05_MS201.bar
+  platform: ps2
   method: binarc
   source:
   - name: LK05
@@ -2977,3 +4026,28 @@ assets:
     method: copy
     source:
     - name: ard/lk05/LK05_MS201.bin
+- name: msn/us/LK05_MS201.bar
+  multi:
+  - name: msn/fr/LK05_MS201.bar
+  - name: msn/gr/LK05_MS201.bar
+  - name: msn/it/LK05_MS201.bar
+  - name: msn/sp/LK05_MS201.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: LK05
+    type: list
+    method: copy
+    source:
+    - name: ard/lk05/LK05_MS201.bin
+- name: remastered/msn/us/LK05_MS201.bar/US_LK05_MS201_bar0.png
+  multi:
+  - name: remastered/msn/fr/LK05_MS201.bar/FR_LK05_MS201_bar0.png
+  - name: remastered/msn/gr/LK05_MS201.bar/GR_LK05_MS201_bar0.png
+  - name: remastered/msn/it/LK05_MS201.bar/IT_LK05_MS201_bar0.png
+  - name: remastered/msn/sp/LK05_MS201.bar/SP_LK05_MS201_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/LK05_MS201.bar/US_LK05_MS201_bar0.png
+    type: internal

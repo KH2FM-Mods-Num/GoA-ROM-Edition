@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: Growth ability bugfix, TT2 & TT3 back to Photo & Ice Cream
+--Last Update: Unknown Disk removal prevention; show all items in shop & initially-equipped growh abilities compatibility; invincible initial dice bugfix
 --Todo: Maybe item-based progress flags
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
@@ -7,7 +7,7 @@ LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.53.2'
+local VersionNum = 'GoA Version 1.53.3'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -478,20 +478,21 @@ if true then --No Valor, Wisdom, Master, or Final
 	end
 end
 --Invincibility on Cutscenes
-if ReadByte(Slot1+0x1AE) == 0 and ReadByte(Cntrl) == 0 then --Gameplay
-	WriteByte(Slot1+0x1AE,100)
-elseif ReadByte(Cntrl) == 3 then --Cutscene
+if ReadByte(Cntrl) == 3 then --Cutscene
 	WriteByte(Slot1+0x1AE,0)
+else --Gameplay
+	WriteByte(Slot1+0x1AE,100)
 end
 --Progressive Growth Abilities & Fixed Trinity Limit Slot
 for Slot = 0,68 do
 	local Current = Save + 0x2544 + 2*Slot
-	local Ability = ReadShort(Current)
+	local Ability = ReadShort(Current) & 0x0FFF
+	local Initial = ReadShort(Current) & 0xF000
 	if Ability >= 0x05E and Ability <= 0x061 then --High Jump
 		local Slot70 = Save+0x25CE
 		WriteShort(Current,0)
 		if ReadShort(Slot70)|0x8000 < 0x805E then
-			WriteShort(Slot70,0x005E)
+			WriteShort(Slot70,0x005E|Initial)
 		elseif ReadShort(Slot70)|0x8000 < 0x8061 then
 			WriteShort(Slot70,ReadShort(Slot70)+1)
 		end
@@ -499,7 +500,7 @@ for Slot = 0,68 do
 		local Slot71 = Save+0x25D0
 		WriteShort(Current,0)
 		if ReadShort(Slot71)|0x8000 < 0x8062 then
-			WriteShort(Slot71,0x0062)
+			WriteShort(Slot71,0x0062|Initial)
 		elseif ReadShort(Slot71)|0x8000 < 0x8065 then
 			WriteShort(Slot71,ReadShort(Slot71)+1)
 		end
@@ -507,7 +508,7 @@ for Slot = 0,68 do
 		local Slot72 = Save+0x25D2
 		WriteShort(Current,0)
 		if ReadShort(Slot72)|0x8000 < 0x8234 then
-			WriteShort(Slot72,0x0234)
+			WriteShort(Slot72,0x0234|Initial)
 		elseif ReadShort(Slot72)|0x8000 < 0x8237 then
 			WriteShort(Slot72,ReadShort(Slot72)+1)
 		end
@@ -515,7 +516,7 @@ for Slot = 0,68 do
 		local Slot73 = Save+0x25D4
 		WriteShort(Current,0)
 		if ReadShort(Slot73)|0x8000 < 0x8066 then
-			WriteShort(Slot73,0x0066)
+			WriteShort(Slot73,0x0066|Initial)
 		elseif ReadShort(Slot73)|0x8000 < 0x8069 then
 			WriteShort(Slot73,ReadShort(Slot73)+1)
 		end
@@ -523,7 +524,7 @@ for Slot = 0,68 do
 		local Slot74 = Save+0x25D6
 		WriteShort(Current,0)
 		if ReadShort(Slot74)|0x8000 < 0x806A then
-			WriteShort(Slot74,0x006A)
+			WriteShort(Slot74,0x006A|Initial)
 		elseif ReadShort(Slot74)|0x8000 < 0x806D then
 			WriteShort(Slot74,ReadShort(Slot74)+1)
 		end
@@ -703,6 +704,12 @@ if true then
 		end
 	end
 end
+--Show all items in shops (ASSEMBLY edit)
+if not OnPC then
+	WriteInt(0x264250,0)
+else
+	WriteByte(0x2F9306 - 0x56454E,0)
+end
 --Alternate Party Models (adding new UCM using MEMT causes problems when shopping)
 if World == 0x0C and Place ~= 0x070C then --Mage & Knight (KH I)
 	WriteString(Obj0+0x16F0,'P_EX020_DC\0')
@@ -724,8 +731,8 @@ end
 if ReadByte(Save+0x3524) == 6 then --In Anti Form
 	BitOr(Save+0x36C0,0x20) --Unlocks Anti Form
 end--]]
---[[Anti Form Costs Max Drive Instead of a Static 9.
-WriteByte(Sys3+0x00500,ReadByte(Slot1+0x1B2))--]]
+--Anti Form Costs Max Drive Instead of a Static 9.
+WriteByte(Sys3+0x00500,ReadByte(Slot1+0x1B2))
 end
 
 function TWtNW()
@@ -1696,6 +1703,7 @@ if ReadByte(Save+0x1D2E) > 0 then
 end
 --Heartless Manufactory Early Access with Unknown Disk/DUMMY 15
 if ReadByte(Save+0x365F) > 0 then
+	BitOr(Save+0x1CF1,0x02)
 	if ReadShort(Save+0x062E) == 0x08 then
 		WriteShort(Save+0x062E,0x0E) --Ansem's Study MAP
 		WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock
@@ -1706,6 +1714,8 @@ if ReadByte(Save+0x365F) > 0 then
 		WriteShort(Save+0x062E,0x11) --Ansem's Study MAP
 		WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock
 	end
+elseif ReadByte(Save+0x1CF1)&0x02 == 0x02 then --Unknown Disk taken by Moogle
+	WriteByte(Save+0x365F,1) --Add it back to inventory
 end
 --[[Skip Hollow Bastion 5th Visit
 if ReadShort(Save+0x0650) == 0x0A then
@@ -2438,13 +2448,7 @@ end
 [Save+0x0664,Save+0x0669] Merlin's House Spawn IDs
 [Save+0x066A,Save+0x066F] Borough Spawn IDs
 Save+0x06B2 Genie Crash Fix
-Save+0x1CF1 STT Dodge Roll, Twilight Thorn
-Save+0x1CF2 STT Fire
-Save+0x1CF3 STT Blizzard
-Save+0x1CF4 STT Thunder
-Save+0x1CF5 STT Cure
-Save+0x1CF6 STT Magnet
-Save+0x1CF7 STT Reflect
+Save+0x1CF1 STT Dodge Roll, Unknown Disk, Twilight Thorn
 Save+0x1CF8 STT Struggle Weapon
 [Save+0x1CF9,Save+0x1CFA] STT Keyblade
 Save+0x1CFD TT Post-Story Save

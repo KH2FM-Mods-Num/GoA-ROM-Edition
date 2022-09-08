@@ -1,9 +1,9 @@
 - Type: 1
   Flag: 0
-  Id: 308
+  Id: 309
   Teleport:
-    Place: 0x18
-    Door: 0
+    Place: 0x06
+    Door: 0x03
     World: 0
     Unknown: 0
   Unk20: 0
