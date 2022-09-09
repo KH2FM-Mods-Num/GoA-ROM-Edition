@@ -1478,434 +1478,430 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-0.dds
+  - name: remastered/map/hb26.map/-0.dds
     type: internal
 - name: remastered/map/hb26.map/-1.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-1.dds
+  - name: remastered/map/hb26.map/-1.dds
     type: internal
 - name: remastered/map/hb26.map/-2.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-2.dds
+  - name: remastered/map/hb26.map/-2.dds
     type: internal
 - name: remastered/map/hb26.map/-3.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-3.dds
+  - name: remastered/map/hb26.map/-3.dds
     type: internal
 - name: remastered/map/hb26.map/-4.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-4.dds
+  - name: remastered/map/hb26.map/-4.dds
     type: internal
 - name: remastered/map/hb26.map/-5.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-5.dds
+  - name: remastered/map/hb26.map/-5.dds
     type: internal
 - name: remastered/map/hb26.map/-6.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-6.dds
+  - name: remastered/map/hb26.map/-6.dds
     type: internal
 - name: remastered/map/hb26.map/-7.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-7.dds
+  - name: remastered/map/hb26.map/-7.dds
     type: internal
 - name: remastered/map/hb26.map/-8.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-8.dds
+  - name: remastered/map/hb26.map/-8.dds
     type: internal
 - name: remastered/map/hb26.map/-9.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-9.dds
+  - name: remastered/map/hb26.map/-9.dds
     type: internal
 - name: remastered/map/hb26.map/-10.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-10.dds
+  - name: remastered/map/hb26.map/-10.dds
     type: internal
 - name: remastered/map/hb26.map/-11.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-11.dds
+  - name: remastered/map/hb26.map/-11.dds
     type: internal
 - name: remastered/map/hb26.map/-12.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-12.dds
+  - name: remastered/map/hb26.map/-12.dds
     type: internal
 - name: remastered/map/hb26.map/-13.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-13.dds
+  - name: remastered/map/hb26.map/-13.dds
     type: internal
 - name: remastered/map/hb26.map/-14.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-14.dds
+  - name: remastered/map/hb26.map/-14.dds
     type: internal
 - name: remastered/map/hb26.map/-15.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-15.dds
+  - name: remastered/map/hb26.map/-15.dds
     type: internal
 - name: remastered/map/hb26.map/-16.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-16.dds
+  - name: remastered/map/hb26.map/-16.dds
     type: internal
 - name: remastered/map/hb26.map/-17.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-17.dds
+  - name: remastered/map/hb26.map/-17.dds
     type: internal
 - name: remastered/map/hb26.map/-18.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-18.dds
+  - name: remastered/map/hb26.map/-18.dds
     type: internal
 - name: remastered/map/hb26.map/-19.dds
   platform: pc
   method: copy
   source:
   - name: remastered/hb26.map/-19.dds
-    type: internal
 - name: remastered/map/hb26.map/-20.dds
   platform: pc
   method: copy
   source:
   - name: remastered/hb26.map/-20.dds
-    type: internal
 - name: remastered/map/hb26.map/-21.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-21.dds
+  - name: remastered/map/hb26.map/-21.dds
     type: internal
 - name: remastered/map/hb26.map/-22.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-22.dds
+  - name: remastered/map/hb26.map/-22.dds
     type: internal
 - name: remastered/map/hb26.map/-23.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-23.dds
+  - name: remastered/map/hb26.map/-23.dds
     type: internal
 - name: remastered/map/hb26.map/-24.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-24.dds
+  - name: remastered/map/hb26.map/-24.dds
     type: internal
 - name: remastered/map/hb26.map/-25.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-25.dds
+  - name: remastered/map/hb26.map/-25.dds
     type: internal
 - name: remastered/map/hb26.map/-26.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-26.dds
+  - name: remastered/map/hb26.map/-26.dds
     type: internal
 - name: remastered/map/hb26.map/-27.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-27.dds
+  - name: remastered/map/hb26.map/-27.dds
     type: internal
 - name: remastered/map/hb26.map/-28.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-28.dds
+  - name: remastered/map/hb26.map/-28.dds
     type: internal
 - name: remastered/map/hb26.map/-29.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-29.dds
+  - name: remastered/map/hb26.map/-29.dds
     type: internal
 - name: remastered/map/hb26.map/-30.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-30.dds
+  - name: remastered/map/hb26.map/-30.dds
     type: internal
 - name: remastered/map/hb26.map/-31.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-31.dds
+  - name: remastered/map/hb26.map/-31.dds
     type: internal
 - name: remastered/map/hb26.map/-32.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-32.dds
+  - name: remastered/map/hb26.map/-32.dds
     type: internal
 - name: remastered/map/hb26.map/-33.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-33.dds
+  - name: remastered/map/hb26.map/-33.dds
     type: internal
 - name: remastered/map/hb26.map/-34.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-34.dds
+  - name: remastered/map/hb26.map/-34.dds
     type: internal
 - name: remastered/map/hb26.map/-35.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-35.dds
+  - name: remastered/map/hb26.map/-35.dds
     type: internal
 - name: remastered/map/hb26.map/-36.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-36.dds
+  - name: remastered/map/hb26.map/-36.dds
     type: internal
 - name: remastered/map/hb26.map/-37.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-37.dds
+  - name: remastered/map/hb26.map/-37.dds
     type: internal
 - name: remastered/map/hb26.map/-38.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-38.dds
+  - name: remastered/map/hb26.map/-38.dds
     type: internal
 - name: remastered/map/hb26.map/-39.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-39.dds
+  - name: remastered/map/hb26.map/-39.dds
     type: internal
 - name: remastered/map/hb26.map/-40.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-40.dds
+  - name: remastered/map/hb26.map/-40.dds
     type: internal
 - name: remastered/map/hb26.map/-41.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-41.dds
+  - name: remastered/map/hb26.map/-41.dds
     type: internal
 - name: remastered/map/hb26.map/-42.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-42.dds
+  - name: remastered/map/hb26.map/-42.dds
     type: internal
 - name: remastered/map/hb26.map/-43.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-43.dds
+  - name: remastered/map/hb26.map/-43.dds
     type: internal
 - name: remastered/map/hb26.map/-44.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-44.dds
+  - name: remastered/map/hb26.map/-44.dds
     type: internal
 - name: remastered/map/hb26.map/-45.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-45.dds
+  - name: remastered/map/hb26.map/-45.dds
     type: internal
 - name: remastered/map/hb26.map/-46.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-46.dds
+  - name: remastered/map/hb26.map/-46.dds
     type: internal
 - name: remastered/map/hb26.map/-47.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-47.dds
+  - name: remastered/map/hb26.map/-47.dds
     type: internal
 - name: remastered/map/hb26.map/-48.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-48.dds
+  - name: remastered/map/hb26.map/-48.dds
     type: internal
 - name: remastered/map/hb26.map/-49.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-49.dds
+  - name: remastered/map/hb26.map/-49.dds
     type: internal
 - name: remastered/map/hb26.map/-50.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-50.dds
+  - name: remastered/map/hb26.map/-50.dds
     type: internal
 - name: remastered/map/hb26.map/-51.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-51.dds
+  - name: remastered/map/hb26.map/-51.dds
     type: internal
 - name: remastered/map/hb26.map/-52.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-52.dds
+  - name: remastered/map/hb26.map/-52.dds
     type: internal
 - name: remastered/map/hb26.map/-53.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-53.dds
+  - name: remastered/map/hb26.map/-53.dds
     type: internal
 - name: remastered/map/hb26.map/-54.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-54.dds
+  - name: remastered/map/hb26.map/-54.dds
     type: internal
 - name: remastered/map/hb26.map/-55.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-55.dds
+  - name: remastered/map/hb26.map/-55.dds
     type: internal
 - name: remastered/map/hb26.map/-56.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-56.dds
+  - name: remastered/map/hb26.map/-56.dds
     type: internal
 - name: remastered/map/hb26.map/-57.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-57.dds
+  - name: remastered/map/hb26.map/-57.dds
     type: internal
 - name: remastered/map/hb26.map/-58.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-58.dds
+  - name: remastered/map/hb26.map/-58.dds
     type: internal
 - name: remastered/map/hb26.map/-59.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-59.dds
+  - name: remastered/map/hb26.map/-59.dds
     type: internal
 - name: remastered/map/hb26.map/-60.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-60.dds
+  - name: remastered/map/hb26.map/-60.dds
     type: internal
 - name: remastered/map/hb26.map/-61.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-61.dds
+  - name: remastered/map/hb26.map/-61.dds
     type: internal
 - name: remastered/map/hb26.map/-62.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-62.dds
+  - name: remastered/map/hb26.map/-62.dds
     type: internal
 - name: remastered/map/hb26.map/-63.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-63.dds
+  - name: remastered/map/hb26.map/-63.dds
     type: internal
 - name: remastered/map/hb26.map/-64.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-64.dds
+  - name: remastered/map/hb26.map/-64.dds
     type: internal
 - name: remastered/map/hb26.map/-65.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-65.dds
+  - name: remastered/map/hb26.map/-65.dds
     type: internal
 - name: remastered/map/hb26.map/-66.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-66.dds
+  - name: remastered/map/hb26.map/-66.dds
     type: internal
 - name: remastered/map/hb26.map/-67.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-67.dds
+  - name: remastered/map/hb26.map/-67.dds
     type: internal
 - name: remastered/map/hb26.map/-68.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-68.dds
+  - name: remastered/map/hb26.map/-68.dds
     type: internal
 - name: remastered/map/hb26.map/-69.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-69.dds
+  - name: remastered/map/hb26.map/-69.dds
     type: internal
 - name: remastered/map/hb26.map/-70.dds
   platform: pc
   method: copy
   source:
   - name: remastered/hb26.map/-70.dds
-    type: internal
 - name: remastered/map/hb26.map/-71.dds
   platform: pc
   method: copy
   source:
   - name: remastered/hb26.map/-71.dds
-    type: internal
 - name: remastered/map/hb26.map/-72.dds
   platform: pc
   method: copy
@@ -2170,31 +2166,31 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-124.dds
+  - name: remastered/map/hb26.map/-124.dds
     type: internal
 - name: remastered/map/hb26.map/-125.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-125.dds
+  - name: remastered/map/hb26.map/-125.dds
     type: internal
 - name: remastered/map/hb26.map/-126.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-126.dds
+  - name: remastered/map/hb26.map/-126.dds
     type: internal
 - name: remastered/map/hb26.map/-127.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-127.dds
+  - name: remastered/map/hb26.map/-127.dds
     type: internal
 - name: remastered/map/hb26.map/-128.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/hb26.map/-128.dds
+  - name: remastered/map/hb26.map/-128.dds
     type: internal
 #GoA Picture in SP Terminal
 - name: file/jp/tr_tm.2ld
