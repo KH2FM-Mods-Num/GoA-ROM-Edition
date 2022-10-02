@@ -515,15 +515,15 @@ assets:
 - name: obj/W_EX010_X0.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_Pureblood.mdlx
+  - name: obj/W_EX010_X0.mdlx
 - name: obj/W_EX010_NM_X0.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_Pureblood_NM.mdlx
+  - name: obj/W_EX010_X0_NM.mdlx
 - name: obj/W_EX010_TR_X0.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_Pureblood_TR.mdlx
+  - name: obj/W_EX010_X0_TR.mdlx
 - name: obj/W_EX010_X0.a.fm
   multi:
   - name: obj/W_EX010_NM_X0.a.fm
@@ -531,7 +531,7 @@ assets:
   platform: ps2
   method: copy
   source:
-  - name: obj/W_EX010_Pureblood.a.fm
+  - name: obj/W_EX010_X0.a.fm
 - name: obj/W_EX010_X0.a.us
   multi:
   - name: obj/W_EX010_NM_X0.a.us
@@ -539,22 +539,22 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: obj/W_EX010_Pureblood.a.us
+  - name: obj/W_EX010_X0.a.us
 - name: remastered/obj/W_EX010_X0.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.mdlx/ZZ.dds
+  - name: remastered/obj/W_EX010_X0.mdlx/ZZ.dds
 - name: remastered/obj/W_EX010_NM_X0.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.mdlx/NM.dds
+  - name: remastered/obj/W_EX010_X0.mdlx/NM.dds
 - name: remastered/obj/W_EX010_TR_X0.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.mdlx/TR.dds
+  - name: remastered/obj/W_EX010_X0.mdlx/TR.dds
 - name: remastered/obj/W_EX010_X0.a.us/-0.dds
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/-0.dds
@@ -562,7 +562,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.a.us/-0.dds
+  - name: remastered/obj/W_EX010_X0.a.us/-0.dds
 - name: remastered/obj/W_EX010_X0.a.us/-1.dds
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/-1.dds
@@ -573,7 +573,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.a.us/-1.dds
+  - name: remastered/obj/W_EX010_X0.a.us/-1.dds
 - name: remastered/obj/W_EX010_X0.a.us/-3.dds
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/-3.dds
@@ -581,7 +581,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.a.us/-3.dds
+  - name: remastered/obj/W_EX010_X0.a.us/-3.dds
 - name: remastered/obj/W_EX010_X0.a.us/-4.dds
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/-4.dds
@@ -589,7 +589,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.a.us/-4.dds
+  - name: remastered/obj/W_EX010_X0.a.us/-4.dds
 - name: remastered/obj/W_EX010_X0.a.us/-5.dds
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/-5.dds
@@ -597,7 +597,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.a.us/-5.dds
+  - name: remastered/obj/W_EX010_X0.a.us/-5.dds
 - name: remastered/obj/W_EX010_X0.a.us/-6.dds
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/-6.dds
@@ -605,7 +605,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.a.us/-6.dds
+  - name: remastered/obj/W_EX010_X0.a.us/-6.dds
 - name: remastered/obj/W_EX010_X0.a.us/se/obj/se503
   multi:
   - name: remastered/obj/W_EX010_NM_X0.a.us/se/obj/se503
@@ -613,20 +613,20 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Pureblood.a.us/se503
+  - name: remastered/obj/W_EX010_X0.a.us/se503
 #Detection Saber -> Alpha Weapon
 - name: obj/W_EX010_Y0.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_AlphaWeapon.mdlx
+  - name: obj/W_EX010_Y0.mdlx
 - name: obj/W_EX010_NM_Y0.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_AlphaWeapon_NM.mdlx
+  - name: obj/W_EX010_Y0_NM.mdlx
 - name: obj/W_EX010_TR_Y0.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_AlphaWeapon_TR.mdlx
+  - name: obj/W_EX010_Y0_TR.mdlx
 - name: obj/W_EX010_Y0.a.fm
   multi:
   - name: obj/W_EX010_NM_Y0.a.fm
@@ -634,7 +634,7 @@ assets:
   platform: ps2
   method: copy
   source:
-  - name: obj/W_EX010_AlphaWeapon.a.fm
+  - name: obj/W_EX010_Y0.a.fm
 - name: obj/W_EX010_Y0.a.us
   multi:
   - name: obj/W_EX010_NM_Y0.a.us
@@ -642,22 +642,22 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: obj/W_EX010_AlphaWeapon.a.us
+  - name: obj/W_EX010_Y0.a.us
 - name: remastered/obj/W_EX010_Y0.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_AlphaWeapon.mdlx/ZZ.dds
+  - name: remastered/obj/W_EX010_Y0.mdlx/ZZ.dds
 - name: remastered/obj/W_EX010_NM_Y0.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_AlphaWeapon.mdlx/NM.dds
+  - name: remastered/obj/W_EX010_Y0.mdlx/NM.dds
 - name: remastered/obj/W_EX010_TR_Y0.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_AlphaWeapon.mdlx/TR.dds
+  - name: remastered/obj/W_EX010_Y0.mdlx/TR.dds
 - name: remastered/obj/W_EX010_Y0.a.us/-0.dds
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/-0.dds
@@ -665,7 +665,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-0.dds
+  - name: remastered/obj/W_EX010_Y0.a.us/-0.dds
 - name: remastered/obj/W_EX010_Y0.a.us/-1.dds
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/-1.dds
@@ -673,7 +673,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-1.dds
+  - name: remastered/obj/W_EX010_Y0.a.us/-1.dds
 - name: remastered/obj/W_EX010_Y0.a.us/-2.dds
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/-2.dds
@@ -681,7 +681,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-2.dds
+  - name: remastered/obj/W_EX010_Y0.a.us/-2.dds
 - name: remastered/obj/W_EX010_Y0.a.us/-3.dds
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/-3.dds
@@ -689,7 +689,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-3.dds
+  - name: remastered/obj/W_EX010_Y0.a.us/-3.dds
 - name: remastered/obj/W_EX010_Y0.a.us/-4.dds
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/-4.dds
@@ -697,7 +697,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_AlphaWeapon.a.us/-4.dds
+  - name: remastered/obj/W_EX010_Y0.a.us/-4.dds
 - name: remastered/obj/W_EX010_Y0.a.us/se/obj/se9001
   multi:
   - name: remastered/obj/W_EX010_NM_Y0.a.us/se/obj/se9001
@@ -705,20 +705,20 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_AlphaWeapon.a.us/se9001
+  - name: remastered/obj/W_EX010_Y0.a.us/se9001
 #Frontier of Ultima -> Omega Weapon
 - name: obj/W_EX010_Z0.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_OmegaWeapon.mdlx
+  - name: obj/W_EX010_Z0.mdlx
 - name: obj/W_EX010_NM_Z0.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_OmegaWeapon_NM.mdlx
+  - name: obj/W_EX010_Z0_NM.mdlx
 - name: obj/W_EX010_TR_Z0.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_OmegaWeapon_TR.mdlx
+  - name: obj/W_EX010_Z0_TR.mdlx
 - name: obj/W_EX010_Z0.a.fm
   multi:
   - name: obj/W_EX010_NM_Z0.a.fm
@@ -726,7 +726,7 @@ assets:
   platform: ps2
   method: copy
   source:
-  - name: obj/W_EX010_OmegaWeapon.a.fm
+  - name: obj/W_EX010_Z0.a.fm
 - name: obj/W_EX010_Z0.a.us
   multi:
   - name: obj/W_EX010_NM_Z0.a.us
@@ -734,22 +734,22 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: obj/W_EX010_OmegaWeapon.a.us
+  - name: obj/W_EX010_Z0.a.us
 - name: remastered/obj/W_EX010_Z0.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_OmegaWeapon.mdlx/ZZ.dds
+  - name: remastered/obj/W_EX010_Z0.mdlx/ZZ.dds
 - name: remastered/obj/W_EX010_NM_Z0.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_OmegaWeapon.mdlx/NM.dds
+  - name: remastered/obj/W_EX010_Z0.mdlx/NM.dds
 - name: remastered/obj/W_EX010_TR_Z0.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_OmegaWeapon.mdlx/TR.dds
+  - name: remastered/obj/W_EX010_Z0.mdlx/TR.dds
 - name: remastered/obj/W_EX010_Z0.a.us/-0.dds
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/-0.dds
@@ -757,7 +757,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-0.dds
+  - name: remastered/obj/W_EX010_Z0.a.us/-0.dds
 - name: remastered/obj/W_EX010_Z0.a.us/-1.dds
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/-1.dds
@@ -765,7 +765,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-1.dds
+  - name: remastered/obj/W_EX010_Z0.a.us/-1.dds
 - name: remastered/obj/W_EX010_Z0.a.us/-2.dds
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/-2.dds
@@ -773,7 +773,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-2.dds
+  - name: remastered/obj/W_EX010_Z0.a.us/-2.dds
 - name: remastered/obj/W_EX010_Z0.a.us/-3.dds
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/-3.dds
@@ -781,7 +781,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-3.dds
+  - name: remastered/obj/W_EX010_Z0.a.us/-3.dds
 - name: remastered/obj/W_EX010_Z0.a.us/-4.dds
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/-4.dds
@@ -789,7 +789,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_OmegaWeapon.a.us/-4.dds
+  - name: remastered/obj/W_EX010_Z0.a.us/-4.dds
 - name: remastered/obj/W_EX010_Z0.a.us/se/obj/se9002
   multi:
   - name: remastered/obj/W_EX010_NM_Z0.a.us/se/obj/se9002
@@ -797,20 +797,20 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_OmegaWeapon.a.us/se9002
+  - name: remastered/obj/W_EX010_Z0.a.us/se9002
 #FAKE -> Kingdom Key D
 - name: obj/W_EX010_00.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_KingdomKeyD.mdlx
+  - name: obj/W_EX010_00.mdlx
 - name: obj/W_EX010_NM_00.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_KingdomKeyD_NM.mdlx
+  - name: obj/W_EX010_00_NM.mdlx
 - name: obj/W_EX010_TR_00.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_KingdomKeyD_TR.mdlx
+  - name: obj/W_EX010_00_TR.mdlx
 - name: obj/W_EX010_00.a.fm
   multi:
   - name: obj/W_EX010_NM_00.a.fm
@@ -818,7 +818,7 @@ assets:
   platform: ps2
   method: copy
   source:
-  - name: obj/W_EX010_KingdomKeyD.a.fm
+  - name: obj/W_EX010_00.a.fm
 - name: obj/W_EX010_00.a.us
   multi:
   - name: obj/W_EX010_NM_00.a.us
@@ -826,22 +826,22 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: obj/W_EX010_KingdomKeyD.a.us
+  - name: obj/W_EX010_00.a.us
 - name: remastered/obj/W_EX010_00.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_KingdomKeyD.mdlx/ZZ.dds
+  - name: remastered/obj/W_EX010_00.mdlx/ZZ.dds
 - name: remastered/obj/W_EX010_NM_00.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_KingdomKeyD.mdlx/NM.dds
+  - name: remastered/obj/W_EX010_00.mdlx/NM.dds
 - name: remastered/obj/W_EX010_TR_00.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_KingdomKeyD.mdlx/TR.dds
+  - name: remastered/obj/W_EX010_00.mdlx/TR.dds
 - name: remastered/obj/W_EX010_00.a.us/-0.dds
   multi:
   - name: remastered/obj/W_EX010_NM_00.a.us/-0.dds
@@ -849,7 +849,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_KingdomKeyD.a.us/-0.dds
+  - name: remastered/obj/W_EX010_00.a.us/-0.dds
 - name: remastered/obj/W_EX010_00.a.us/se/obj/se9000
   multi:
   - name: remastered/obj/W_EX010_NM_00.a.us/se/obj/se9000
@@ -857,35 +857,35 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_KingdomKeyD.a.us/se9000
+  - name: remastered/obj/W_EX010_00.a.us/se9000
 #Kingdom Key Update
 - name: obj/W_EX010.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_KingdomKey.mdlx
+  - name: obj/W_EX010.mdlx
 - name: obj/W_EX010_NM.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_KingdomKey_NM.mdlx
+  - name: obj/W_EX010_NM.mdlx
 - name: obj/W_EX010_TR.mdlx
   method: copy
   source:
-  - name: obj/W_EX010_KingdomKey_TR.mdlx
+  - name: obj/W_EX010_TR.mdlx
 - name: remastered/obj/W_EX010.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_KingdomKey.mdlx/ZZ.dds
+  - name: remastered/obj/W_EX010.mdlx/ZZ.dds
 - name: remastered/obj/W_EX010_NM.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_KingdomKey.mdlx/NM.dds
+  - name: remastered/obj/W_EX010.mdlx/NM.dds
 - name: remastered/obj/W_EX010_TR.mdlx/-0.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_KingdomKey.mdlx/TR.dds
+  - name: remastered/obj/W_EX010.mdlx/TR.dds
 #Jiminy Journal New Flag Requirements
 - name: menu/fm/jiminy.bar
   platform: ps2
