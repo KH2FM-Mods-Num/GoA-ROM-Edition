@@ -668,7 +668,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_NM_X0
+  ModelName: W_EX010_X0_NM
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -698,7 +698,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_NM_Y0
+  ModelName: W_EX010_Y0_NM
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -728,7 +728,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_NM_Z0
+  ModelName: W_EX010_Z0_NM
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -758,7 +758,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_NM_00
+  ModelName: W_EX010_00_NM
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -788,7 +788,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_TR_X0
+  ModelName: W_EX010_X0_TR
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -818,7 +818,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_TR_Y0
+  ModelName: W_EX010_Y0_TR
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -848,7 +848,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_TR_Z0
+  ModelName: W_EX010_Z0_TR
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -878,7 +878,7 @@
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_TR_00
+  ModelName: W_EX010_00_TR
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -902,7 +902,6 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-
 2000: #TR Save the Queen -> HT Struggle Hammer
   ObjectId: 2000
   ObjectType: WEAPON

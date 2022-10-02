@@ -516,26 +516,26 @@ assets:
   method: copy
   source:
   - name: obj/W_EX010_X0.mdlx
-- name: obj/W_EX010_NM_X0.mdlx
+- name: obj/W_EX010_X0_NM.mdlx
   method: copy
   source:
   - name: obj/W_EX010_X0_NM.mdlx
-- name: obj/W_EX010_TR_X0.mdlx
+- name: obj/W_EX010_X0_TR.mdlx
   method: copy
   source:
   - name: obj/W_EX010_X0_TR.mdlx
 - name: obj/W_EX010_X0.a.fm
   multi:
-  - name: obj/W_EX010_NM_X0.a.fm
-  - name: obj/W_EX010_TR_X0.a.fm
+  - name: obj/W_EX010_X0_NM.a.fm
+  - name: obj/W_EX010_X0_TR.a.fm
   platform: ps2
   method: copy
   source:
   - name: obj/W_EX010_X0.a.fm
 - name: obj/W_EX010_X0.a.us
   multi:
-  - name: obj/W_EX010_NM_X0.a.us
-  - name: obj/W_EX010_TR_X0.a.us
+  - name: obj/W_EX010_X0_NM.a.us
+  - name: obj/W_EX010_X0_TR.a.us
   platform: pc
   method: copy
   source:
@@ -545,71 +545,71 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_X0.mdlx/ZZ.dds
-- name: remastered/obj/W_EX010_NM_X0.mdlx/-0.dds
+- name: remastered/obj/W_EX010_X0_NM.mdlx/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_X0.mdlx/NM.dds
-- name: remastered/obj/W_EX010_TR_X0.mdlx/-0.dds
+- name: remastered/obj/W_EX010_X0_TR.mdlx/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_X0.mdlx/TR.dds
 - name: remastered/obj/W_EX010_X0.a.us/-0.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_X0.a.us/-0.dds
-  - name: remastered/obj/W_EX010_TR_X0.a.us/-0.dds
+  - name: remastered/obj/W_EX010_X0_NM.a.us/-0.dds
+  - name: remastered/obj/W_EX010_X0_TR.a.us/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_X0.a.us/-0.dds
 - name: remastered/obj/W_EX010_X0.a.us/-1.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_X0.a.us/-1.dds
-  - name: remastered/obj/W_EX010_TR_X0.a.us/-1.dds
+  - name: remastered/obj/W_EX010_X0_NM.a.us/-1.dds
+  - name: remastered/obj/W_EX010_X0_TR.a.us/-1.dds
   - name: remastered/obj/W_EX010_X0.a.us/-2.dds
-  - name: remastered/obj/W_EX010_NM_X0.a.us/-2.dds
-  - name: remastered/obj/W_EX010_TR_X0.a.us/-2.dds
+  - name: remastered/obj/W_EX010_X0_NM.a.us/-2.dds
+  - name: remastered/obj/W_EX010_X0_TR.a.us/-2.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_X0.a.us/-1.dds
 - name: remastered/obj/W_EX010_X0.a.us/-3.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_X0.a.us/-3.dds
-  - name: remastered/obj/W_EX010_TR_X0.a.us/-3.dds
+  - name: remastered/obj/W_EX010_X0_NM.a.us/-3.dds
+  - name: remastered/obj/W_EX010_X0_TR.a.us/-3.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_X0.a.us/-3.dds
 - name: remastered/obj/W_EX010_X0.a.us/-4.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_X0.a.us/-4.dds
-  - name: remastered/obj/W_EX010_TR_X0.a.us/-4.dds
+  - name: remastered/obj/W_EX010_X0_NM.a.us/-4.dds
+  - name: remastered/obj/W_EX010_X0_TR.a.us/-4.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_X0.a.us/-4.dds
 - name: remastered/obj/W_EX010_X0.a.us/-5.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_X0.a.us/-5.dds
-  - name: remastered/obj/W_EX010_TR_X0.a.us/-5.dds
+  - name: remastered/obj/W_EX010_X0_NM.a.us/-5.dds
+  - name: remastered/obj/W_EX010_X0_TR.a.us/-5.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_X0.a.us/-5.dds
 - name: remastered/obj/W_EX010_X0.a.us/-6.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_X0.a.us/-6.dds
-  - name: remastered/obj/W_EX010_TR_X0.a.us/-6.dds
+  - name: remastered/obj/W_EX010_X0_NM.a.us/-6.dds
+  - name: remastered/obj/W_EX010_X0_TR.a.us/-6.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_X0.a.us/-6.dds
 - name: remastered/obj/W_EX010_X0.a.us/se/obj/se503
   multi:
-  - name: remastered/obj/W_EX010_NM_X0.a.us/se/obj/se503
-  - name: remastered/obj/W_EX010_TR_X0.a.us/se/obj/se503
+  - name: remastered/obj/W_EX010_X0_NM.a.us/se/obj/se503
+  - name: remastered/obj/W_EX010_X0_TR.a.us/se/obj/se503
   platform: pc
   method: copy
   source:
@@ -619,26 +619,26 @@ assets:
   method: copy
   source:
   - name: obj/W_EX010_Y0.mdlx
-- name: obj/W_EX010_NM_Y0.mdlx
+- name: obj/W_EX010_Y0_NM.mdlx
   method: copy
   source:
   - name: obj/W_EX010_Y0_NM.mdlx
-- name: obj/W_EX010_TR_Y0.mdlx
+- name: obj/W_EX010_Y0_TR.mdlx
   method: copy
   source:
   - name: obj/W_EX010_Y0_TR.mdlx
 - name: obj/W_EX010_Y0.a.fm
   multi:
-  - name: obj/W_EX010_NM_Y0.a.fm
-  - name: obj/W_EX010_TR_Y0.a.fm
+  - name: obj/W_EX010_Y0_NM.a.fm
+  - name: obj/W_EX010_Y0_TR.a.fm
   platform: ps2
   method: copy
   source:
   - name: obj/W_EX010_Y0.a.fm
 - name: obj/W_EX010_Y0.a.us
   multi:
-  - name: obj/W_EX010_NM_Y0.a.us
-  - name: obj/W_EX010_TR_Y0.a.us
+  - name: obj/W_EX010_Y0_NM.a.us
+  - name: obj/W_EX010_Y0_TR.a.us
   platform: pc
   method: copy
   source:
@@ -648,60 +648,60 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_Y0.mdlx/ZZ.dds
-- name: remastered/obj/W_EX010_NM_Y0.mdlx/-0.dds
+- name: remastered/obj/W_EX010_Y0_NM.mdlx/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Y0.mdlx/NM.dds
-- name: remastered/obj/W_EX010_TR_Y0.mdlx/-0.dds
+- name: remastered/obj/W_EX010_Y0_TR.mdlx/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Y0.mdlx/TR.dds
 - name: remastered/obj/W_EX010_Y0.a.us/-0.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_Y0.a.us/-0.dds
-  - name: remastered/obj/W_EX010_TR_Y0.a.us/-0.dds
+  - name: remastered/obj/W_EX010_Y0_NM.a.us/-0.dds
+  - name: remastered/obj/W_EX010_Y0_TR.a.us/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Y0.a.us/-0.dds
 - name: remastered/obj/W_EX010_Y0.a.us/-1.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_Y0.a.us/-1.dds
-  - name: remastered/obj/W_EX010_TR_Y0.a.us/-1.dds
+  - name: remastered/obj/W_EX010_Y0_NM.a.us/-1.dds
+  - name: remastered/obj/W_EX010_Y0_TR.a.us/-1.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Y0.a.us/-1.dds
 - name: remastered/obj/W_EX010_Y0.a.us/-2.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_Y0.a.us/-2.dds
-  - name: remastered/obj/W_EX010_TR_Y0.a.us/-2.dds
+  - name: remastered/obj/W_EX010_Y0_NM.a.us/-2.dds
+  - name: remastered/obj/W_EX010_Y0_TR.a.us/-2.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Y0.a.us/-2.dds
 - name: remastered/obj/W_EX010_Y0.a.us/-3.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_Y0.a.us/-3.dds
-  - name: remastered/obj/W_EX010_TR_Y0.a.us/-3.dds
+  - name: remastered/obj/W_EX010_Y0_NM.a.us/-3.dds
+  - name: remastered/obj/W_EX010_Y0_TR.a.us/-3.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Y0.a.us/-3.dds
 - name: remastered/obj/W_EX010_Y0.a.us/-4.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_Y0.a.us/-4.dds
-  - name: remastered/obj/W_EX010_TR_Y0.a.us/-4.dds
+  - name: remastered/obj/W_EX010_Y0_NM.a.us/-4.dds
+  - name: remastered/obj/W_EX010_Y0_TR.a.us/-4.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Y0.a.us/-4.dds
 - name: remastered/obj/W_EX010_Y0.a.us/se/obj/se9001
   multi:
-  - name: remastered/obj/W_EX010_NM_Y0.a.us/se/obj/se9001
-  - name: remastered/obj/W_EX010_TR_Y0.a.us/se/obj/se9001
+  - name: remastered/obj/W_EX010_Y0_NM.a.us/se/obj/se9001
+  - name: remastered/obj/W_EX010_Y0_TR.a.us/se/obj/se9001
   platform: pc
   method: copy
   source:
@@ -711,26 +711,26 @@ assets:
   method: copy
   source:
   - name: obj/W_EX010_Z0.mdlx
-- name: obj/W_EX010_NM_Z0.mdlx
+- name: obj/W_EX010_Z0_NM.mdlx
   method: copy
   source:
   - name: obj/W_EX010_Z0_NM.mdlx
-- name: obj/W_EX010_TR_Z0.mdlx
+- name: obj/W_EX010_Z0_TR.mdlx
   method: copy
   source:
   - name: obj/W_EX010_Z0_TR.mdlx
 - name: obj/W_EX010_Z0.a.fm
   multi:
-  - name: obj/W_EX010_NM_Z0.a.fm
-  - name: obj/W_EX010_TR_Z0.a.fm
+  - name: obj/W_EX010_Z0_NM.a.fm
+  - name: obj/W_EX010_Z0_TR.a.fm
   platform: ps2
   method: copy
   source:
   - name: obj/W_EX010_Z0.a.fm
 - name: obj/W_EX010_Z0.a.us
   multi:
-  - name: obj/W_EX010_NM_Z0.a.us
-  - name: obj/W_EX010_TR_Z0.a.us
+  - name: obj/W_EX010_Z0_NM.a.us
+  - name: obj/W_EX010_Z0_TR.a.us
   platform: pc
   method: copy
   source:
@@ -740,60 +740,60 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_Z0.mdlx/ZZ.dds
-- name: remastered/obj/W_EX010_NM_Z0.mdlx/-0.dds
+- name: remastered/obj/W_EX010_Z0_NM.mdlx/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Z0.mdlx/NM.dds
-- name: remastered/obj/W_EX010_TR_Z0.mdlx/-0.dds
+- name: remastered/obj/W_EX010_Z0_TR.mdlx/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Z0.mdlx/TR.dds
 - name: remastered/obj/W_EX010_Z0.a.us/-0.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_Z0.a.us/-0.dds
-  - name: remastered/obj/W_EX010_TR_Z0.a.us/-0.dds
+  - name: remastered/obj/W_EX010_Z0_NM.a.us/-0.dds
+  - name: remastered/obj/W_EX010_Z0_TR.a.us/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Z0.a.us/-0.dds
 - name: remastered/obj/W_EX010_Z0.a.us/-1.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_Z0.a.us/-1.dds
-  - name: remastered/obj/W_EX010_TR_Z0.a.us/-1.dds
+  - name: remastered/obj/W_EX010_Z0_NM.a.us/-1.dds
+  - name: remastered/obj/W_EX010_Z0_TR.a.us/-1.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Z0.a.us/-1.dds
 - name: remastered/obj/W_EX010_Z0.a.us/-2.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_Z0.a.us/-2.dds
-  - name: remastered/obj/W_EX010_TR_Z0.a.us/-2.dds
+  - name: remastered/obj/W_EX010_Z0_NM.a.us/-2.dds
+  - name: remastered/obj/W_EX010_Z0_TR.a.us/-2.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Z0.a.us/-2.dds
 - name: remastered/obj/W_EX010_Z0.a.us/-3.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_Z0.a.us/-3.dds
-  - name: remastered/obj/W_EX010_TR_Z0.a.us/-3.dds
+  - name: remastered/obj/W_EX010_Z0_NM.a.us/-3.dds
+  - name: remastered/obj/W_EX010_Z0_TR.a.us/-3.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Z0.a.us/-3.dds
 - name: remastered/obj/W_EX010_Z0.a.us/-4.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_Z0.a.us/-4.dds
-  - name: remastered/obj/W_EX010_TR_Z0.a.us/-4.dds
+  - name: remastered/obj/W_EX010_Z0_NM.a.us/-4.dds
+  - name: remastered/obj/W_EX010_Z0_TR.a.us/-4.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_Z0.a.us/-4.dds
 - name: remastered/obj/W_EX010_Z0.a.us/se/obj/se9002
   multi:
-  - name: remastered/obj/W_EX010_NM_Z0.a.us/se/obj/se9002
-  - name: remastered/obj/W_EX010_TR_Z0.a.us/se/obj/se9002
+  - name: remastered/obj/W_EX010_Z0_NM.a.us/se/obj/se9002
+  - name: remastered/obj/W_EX010_Z0_TR.a.us/se/obj/se9002
   platform: pc
   method: copy
   source:
@@ -803,26 +803,26 @@ assets:
   method: copy
   source:
   - name: obj/W_EX010_00.mdlx
-- name: obj/W_EX010_NM_00.mdlx
+- name: obj/W_EX010_00_NM.mdlx
   method: copy
   source:
   - name: obj/W_EX010_00_NM.mdlx
-- name: obj/W_EX010_TR_00.mdlx
+- name: obj/W_EX010_00_TR.mdlx
   method: copy
   source:
   - name: obj/W_EX010_00_TR.mdlx
 - name: obj/W_EX010_00.a.fm
   multi:
-  - name: obj/W_EX010_NM_00.a.fm
-  - name: obj/W_EX010_TR_00.a.fm
+  - name: obj/W_EX010_00_NM.a.fm
+  - name: obj/W_EX010_00_TR.a.fm
   platform: ps2
   method: copy
   source:
   - name: obj/W_EX010_00.a.fm
 - name: obj/W_EX010_00.a.us
   multi:
-  - name: obj/W_EX010_NM_00.a.us
-  - name: obj/W_EX010_TR_00.a.us
+  - name: obj/W_EX010_00_NM.a.us
+  - name: obj/W_EX010_00_TR.a.us
   platform: pc
   method: copy
   source:
@@ -832,28 +832,28 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_00.mdlx/ZZ.dds
-- name: remastered/obj/W_EX010_NM_00.mdlx/-0.dds
+- name: remastered/obj/W_EX010_00_NM.mdlx/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_00.mdlx/NM.dds
-- name: remastered/obj/W_EX010_TR_00.mdlx/-0.dds
+- name: remastered/obj/W_EX010_00_TR.mdlx/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_00.mdlx/TR.dds
 - name: remastered/obj/W_EX010_00.a.us/-0.dds
   multi:
-  - name: remastered/obj/W_EX010_NM_00.a.us/-0.dds
-  - name: remastered/obj/W_EX010_TR_00.a.us/-0.dds
+  - name: remastered/obj/W_EX010_00_NM.a.us/-0.dds
+  - name: remastered/obj/W_EX010_00_TR.a.us/-0.dds
   platform: pc
   method: copy
   source:
   - name: remastered/obj/W_EX010_00.a.us/-0.dds
 - name: remastered/obj/W_EX010_00.a.us/se/obj/se9000
   multi:
-  - name: remastered/obj/W_EX010_NM_00.a.us/se/obj/se9000
-  - name: remastered/obj/W_EX010_TR_00.a.us/se/obj/se9000
+  - name: remastered/obj/W_EX010_00_NM.a.us/se/obj/se9000
+  - name: remastered/obj/W_EX010_00_TR.a.us/se/obj/se9000
   platform: pc
   method: copy
   source:
