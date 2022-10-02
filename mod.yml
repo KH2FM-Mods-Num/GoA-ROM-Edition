@@ -886,6 +886,236 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010.mdlx/TR.dds
+#Struggle Hammer World Variants
+- name: obj/W_EX010_U0_NM.mdlx
+  method: copy
+  source:
+  - name: obj/W_EX010_U0_NM.mdlx
+- name: obj/W_EX010_U0_TR.mdlx
+  method: copy
+  source:
+  - name: obj/W_EX010_U0_TR.mdlx
+- name: obj/W_EX010_U0_NM.a.fm
+  multi:
+  - name: 
+  - name: obj/W_EX010_U0_TR.a.fm
+  platform: ps2
+  method: copy
+  source:
+  - name: obj/W_EX010_U0.a.fm
+- name: obj/W_EX010_U0_NM.a.us
+  multi:
+  - name: obj/W_EX010_U0_TR.a.us
+  platform: pc
+  method: copy
+  source:
+  - name: obj/W_EX010_U0.a.us
+- name: remastered/obj/W_EX010_U0_NM.mdlx
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_U0.mdlx/NM.dds
+- name: remastered/obj/W_EX010_U0_TR.mdlx
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_U0.mdlx/TR.dds
+- name: remastered/obj/W_EX010_U0_NM.a.us/-0.dds
+  multi:
+  - name: remastered/obj/W_EX010_U0_TR.a.us/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_U0.a.us/-0.dds
+    type: internal
+- name: remastered/obj/W_EX010_U0_NM.a.us/-1.dds
+  multi:
+  - name: remastered/obj/W_EX010_U0_TR.a.us/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_U0.a.us/-1.dds
+    type: internal
+- name: remastered/obj/W_EX010_U0_NM.a.us/-2.dds
+  multi:
+  - name: remastered/obj/W_EX010_U0_TR.a.us/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_U0.a.us/-2.dds
+    type: internal
+- name: remastered/obj/W_EX010_U0_NM.a.us/se/obj/se506
+  multi:
+  - name: remastered/obj/W_EX010_U0_TR.a.us/se/obj/se506
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_U0.a.us/se/obj/se506
+    type: internal
+#Struggle Wand World Variants
+- name: obj/W_EX010_V0_NM.mdlx
+  method: copy
+  source:
+  - name: obj/W_EX010_V0_NM.mdlx
+- name: obj/W_EX010_V0_TR.mdlx
+  method: copy
+  source:
+  - name: obj/W_EX010_V0_TR.mdlx
+- name: obj/W_EX010_V0_NM.a.fm
+  multi:
+  - name: 
+  - name: obj/W_EX010_V0_TR.a.fm
+  platform: ps2
+  method: copy
+  source:
+  - name: obj/W_EX010_V0.a.fm
+- name: obj/W_EX010_V0_NM.a.us
+  multi:
+  - name: obj/W_EX010_V0_TR.a.us
+  platform: pc
+  method: copy
+  source:
+  - name: obj/W_EX010_V0.a.us
+- name: remastered/obj/W_EX010_V0_NM.mdlx
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_V0.mdlx/NM.dds
+- name: remastered/obj/W_EX010_V0_TR.mdlx
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_V0.mdlx/TR.dds
+- name: remastered/obj/W_EX010_V0_NM.a.us/-0.dds
+  multi:
+  - name: remastered/obj/W_EX010_V0_TR.a.us/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_V0.a.us/-0.dds
+    type: internal
+- name: remastered/obj/W_EX010_V0_NM.a.us/-1.dds
+  multi:
+  - name: remastered/obj/W_EX010_V0_TR.a.us/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_V0.a.us/-1.dds
+    type: internal
+- name: remastered/obj/W_EX010_V0_NM.a.us/-2.dds
+  multi:
+  - name: remastered/obj/W_EX010_V0_TR.a.us/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_V0.a.us/-2.dds
+    type: internal
+- name: remastered/obj/W_EX010_V0_NM.a.us/-3.dds
+  multi:
+  - name: remastered/obj/W_EX010_V0_TR.a.us/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_V0.a.us/-3.dds
+    type: internal
+- name: remastered/obj/W_EX010_V0_NM.a.us/-4.dds
+  multi:
+  - name: remastered/obj/W_EX010_V0_TR.a.us/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_V0.a.us/-4.dds
+    type: internal
+- name: remastered/obj/W_EX010_V0_NM.a.us/-5.dds
+  multi:
+  - name: remastered/obj/W_EX010_V0_TR.a.us/-5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_V0.a.us/-5.dds
+    type: internal
+- name: remastered/obj/W_EX010_V0_NM.a.us/-6.dds
+  multi:
+  - name: remastered/obj/W_EX010_V0_TR.a.us/-6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_V0.a.us/-6.dds
+    type: internal
+- name: remastered/obj/W_EX010_V0_NM.a.us/se/obj/se505
+  multi:
+  - name: remastered/obj/W_EX010_V0_TR.a.us/se/obj/se505
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_V0.a.us/se/obj/se505
+    type: internal
+#Struggle Sword World Variants
+- name: obj/W_EX010_W0_NM.mdlx
+  method: copy
+  source:
+  - name: obj/W_EX010_W0_NM.mdlx
+- name: obj/W_EX010_W0_TR.mdlx
+  method: copy
+  source:
+  - name: obj/W_EX010_W0_TR.mdlx
+- name: obj/W_EX010_W0_NM.a.fm
+  multi:
+  - name: 
+  - name: obj/W_EX010_W0_TR.a.fm
+  platform: ps2
+  method: copy
+  source:
+  - name: obj/W_EX010_W0.a.fm
+- name: obj/W_EX010_W0_NM.a.us
+  multi:
+  - name: obj/W_EX010_W0_TR.a.us
+  platform: pc
+  method: copy
+  source:
+  - name: obj/W_EX010_W0.a.us
+- name: remastered/obj/W_EX010_W0_NM.mdlx
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_W0.mdlx/NM.dds
+- name: remastered/obj/W_EX010_W0_TR.mdlx
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_W0.mdlx/TR.dds
+- name: remastered/obj/W_EX010_W0_NM.a.us/-0.dds
+  multi:
+  - name: remastered/obj/W_EX010_W0_TR.a.us/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_W0.a.us/-0.dds
+    type: internal
+- name: remastered/obj/W_EX010_W0_NM.a.us/-1.dds
+  multi:
+  - name: remastered/obj/W_EX010_W0_TR.a.us/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_W0.a.us/-1.dds
+    type: internal
+- name: remastered/obj/W_EX010_W0_NM.a.us/-2.dds
+  multi:
+  - name: remastered/obj/W_EX010_W0_TR.a.us/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_W0.a.us/-2.dds
+    type: internal
+- name: remastered/obj/W_EX010_W0_NM.a.us/se/obj/se504
+  multi:
+  - name: remastered/obj/W_EX010_W0_TR.a.us/se/obj/se504
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_W0.a.us/se/obj/se504
+    type: internal
 #Jiminy Journal New Flag Requirements
 - name: menu/fm/jiminy.bar
   platform: ps2

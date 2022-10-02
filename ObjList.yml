@@ -903,18 +903,192 @@
   WallOcclusion: false
   Hift: false
 
+2000: #TR Save the Queen -> HT Struggle Hammer
+  ObjectId: 2000
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_U0_NM
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+2013: #TR Adamant Shield -> HT Struggle Wand
+  ObjectId: 2013
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_V0_NM
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+2014: #TR Chain Gear -> HT Struggle Sword
+  ObjectId: 2014
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_W0_NM
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+2015: #TR Ogre Shield -> SP Struggle Hammer
+  ObjectId: 2015
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_U0_TR
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+2016: #TR Falling Star -> SP Struggle Wand
+  ObjectId: 2016
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_V0_TR
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+2017: #TR Dreamcloud -> SP Struggle Sword
+  ObjectId: 2017
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_W0_TR
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
 #Other TR Staves & Shields for future model additions
-#1695: #TR Mage's Staff
-#1696: #TR Knight's Shield
-#2013: #TR Adamant Shield
-#2014: #TR Chain Gear
-#2015: #TR Ogre Shield
-#2016: #TR Falling Star
-#2017: #TR Dreamcloud
 #110 : #Test the King
 #1392: #Detection Shield
 #1448: #Detection Staff
-#2000: #TR Save the Queen
+#1695: #TR Mage's Staff
+#1696: #TR Knight's Shield
 #2018: #TR Knight Defender
 #2019: #TR Genji Shield
 #2020: #TR Akashic Record
