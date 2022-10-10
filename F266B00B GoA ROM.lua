@@ -484,7 +484,10 @@ else --Gameplay
 	WriteByte(Slot1+0x1AE,100)
 end
 --Progressive Growth Abilities & Fixed Trinity Limit Slot
-for Slot = 0,68 do
+for Slot = 0,79 do
+	if Slot >= 69 and Slot <= 74 then
+		Slot = 75		
+	end
 	local Current = Save + 0x2544 + 2*Slot
 	local Ability = ReadShort(Current) & 0x0FFF
 	local Initial = ReadShort(Current) & 0xF000
