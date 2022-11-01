@@ -1118,7 +1118,6 @@ assets:
     type: internal
 #Jiminy Journal New Flag Requirements
 - name: menu/fm/jiminy.bar
-  platform: ps2
   method: binarc
   source:
   - name: worl
@@ -2424,7 +2423,6 @@ assets:
     type: internal
 #GoA Picture in SP Terminal
 - name: file/jp/tr_tm.2ld
-  platform: ps2
   method: binarc
   source:
   - name: tr_t
@@ -2448,6 +2446,18 @@ assets:
     source:
     - name: tr_tm_2.png
       index: 2
+- name: remastered/file/jp/tr_tm.2ld/JP_tr_tm_2ld0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/file/jp/tr_tm.2ld/JP_tr_tm_2ld0.png
+    type: internal
+- name: remastered/file/jp/tr_tm.2ld/JP_tr_tm_2ld1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/file/jp/tr_tm.2ld/JP_tr_tm_2ld1.png
+    type: internal
 - name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld0.png
   multi:
   - name: remastered/file/fr/tr_tm.2ld/FR_tr_tm_2ld0.png
@@ -2457,7 +2467,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/tr_tm.2ld/tr_tm_2ld0.png
+  - name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld0.png
     type: internal
 - name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld1.png
   multi:
@@ -2468,10 +2478,11 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/tr_tm.2ld/tr_tm_2ld1.png
+  - name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld1.png
     type: internal
-- name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld2.png
+- name: remastered/file/jp/tr_tm.2ld/JP_tr_tm_2ld2.png
   multi:
+  - name: remastered/file/us/tr_tm.2ld/US_tr_tm_2ld2.png
   - name: remastered/file/fr/tr_tm.2ld/FR_tr_tm_2ld2.png
   - name: remastered/file/gr/tr_tm.2ld/GR_tr_tm_2ld2.png
   - name: remastered/file/it/tr_tm.2ld/IT_tr_tm_2ld2.png
@@ -2610,6 +2621,42 @@ assets:
     source:
     - name: msg/tr.yml
       language: en
+- name: remastered/msg/jp/al.bar/JP_al_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/al.bar/JP_al_bar0.png
+    type: internal
+- name: remastered/msg/jp/dc.bar/JP_dc_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/dc.bar/JP_dc_bar0.png
+    type: internal
+- name: remastered/msg/jp/hb.bar/JP_hb_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/hb.bar/JP_hb_bar0.png
+    type: internal
+- name: remastered/msg/jp/he.bar/JP_he_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/he.bar/JP_he_bar0.png
+    type: internal
+- name: remastered/msg/jp/nm.bar/JP_nm_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/nm.bar/JP_nm_bar0.png
+    type: internal
+- name: remastered/msg/jp/tr.bar/JP_tr_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/tr.bar/JP_tr_bar0.png
+    type: internal
 - name: remastered/msg/us/al.bar/US_al_bar0.png
   multi:
   - name: remastered/msg/fr/al.bar/FR_al_bar0.png
@@ -2676,7 +2723,6 @@ assets:
   source:
   - name: remastered/msg/us/tr.bar/US_tr_bar0.png
     type: internal
-  
 #Fix Form Icons
 - name: msg/us/fontimage.bar
   multi:
@@ -2688,6 +2734,18 @@ assets:
   method: copy
   source:
   - name: msg/us/fontimage.bar
+    type: internal
+- name: remastered/msg/jp/fontimage.bar/JP_fontimage_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/fontimage.bar/JP_fontimage_bar0.png
+    type: internal
+- name: remastered/msg/jp/fontimage.bar/JP_fontimage_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/fontimage.bar/JP_fontimage_bar1.png
     type: internal
 - name: remastered/msg/us/fontimage.bar/US_fontimage_bar0.png
   multi:
@@ -2711,8 +2769,9 @@ assets:
   source:
   - name: remastered/msg/us/fontimage.bar/US_fontimage_bar1.png
     type: internal
-- name: remastered/msg/us/fontimage.bar/US_fontimage_bar2.png
+- name: remastered/msg/jp/fontimage.bar/JP_fontimage_bar2.png
   multi:
+  - name: remastered/msg/us/fontimage.bar/US_fontimage_bar2.png
   - name: remastered/msg/fr/fontimage.bar/FR_fontimage_bar2.png
   - name: remastered/msg/gr/fontimage.bar/GR_fontimage_bar2.png
   - name: remastered/msg/it/fontimage.bar/IT_fontimage_bar2.png
@@ -2750,6 +2809,7 @@ assets:
 #ARD Editing
 - name: ard/al00.ard #Agrabah (GoA Warp)
   multi:
+  - name: ard/jp/al00.ard
   - name: ard/us/al00.ard
   - name: ard/fr/al00.ard
   - name: ard/gr/al00.ard
@@ -2764,6 +2824,7 @@ assets:
     - name: ard/al00/evt.script
 - name: ard/al03.ard #The Palace (GoA Warp)
   multi:
+  - name: ard/jp/al03.ard
   - name: ard/us/al03.ard
   - name: ard/fr/al03.ard
   - name: ard/gr/al03.ard
@@ -2778,6 +2839,7 @@ assets:
     - name: ard/al03/evt.script
 - name: ard/al10.ard #Treasure Room (Checkpoint)
   multi:
+  - name: ard/jp/al10.ard
   - name: ard/us/al10.ard
   - name: ard/fr/al10.ard
   - name: ard/gr/al10.ard
@@ -2797,6 +2859,7 @@ assets:
     - name: ard/al10/e_50.yml
 - name: ard/al14.ard #Sandswept Ruins (Skip Jafar Clone)
   multi:
+  - name: ard/jp/al14.ard
   - name: ard/us/al14.ard
   - name: ard/fr/al14.ard
   - name: ard/gr/al14.ard
@@ -2811,6 +2874,7 @@ assets:
     - name: ard/al14/evt.script
 - name: ard/al15.ard #The Peddler's Shop (Rich) (AS Warp)
   multi:
+  - name: ard/jp/al15.ard
   - name: ard/us/al15.ard
   - name: ard/fr/al15.ard
   - name: ard/gr/al15.ard
@@ -2840,6 +2904,7 @@ assets:
     - name: ard/al15/evt.script
 - name: ard/bb04.ard #Ballroom (Data Warp)
   multi:
+  - name: ard/jp/bb04.ard
   - name: ard/us/bb04.ard
   - name: ard/fr/bb04.ard
   - name: ard/gr/bb04.ard
@@ -2859,6 +2924,7 @@ assets:
     - name: ard/bb04/m_11.yml
 - name: ard/bb06.ard #Courtyard (GoA Warp)
   multi:
+  - name: ard/jp/bb06.ard
   - name: ard/us/bb06.ard
   - name: ard/fr/bb06.ard
   - name: ard/gr/bb06.ard
@@ -2873,6 +2939,7 @@ assets:
     - name: ard/bb06/evt.script
 - name: ard/bb14.ard #Ballroom (Post Dark Thorn) (GoA Warp)
   multi:
+  - name: ard/jp/bb14.ard
   - name: ard/us/bb14.ard
   - name: ard/fr/bb14.ard
   - name: ard/gr/bb14.ard
@@ -2887,6 +2954,7 @@ assets:
     - name: ard/bb14/evt.script
 - name: ard/ca05.ard #The Black Pearl (GoA Warp)
   multi:
+  - name: ard/jp/ca05.ard
   - name: ard/us/ca05.ard
   - name: ard/fr/ca05.ard
   - name: ard/gr/ca05.ard
@@ -2901,6 +2969,7 @@ assets:
     - name: ard/ca05/evt.script
 - name: ard/ca08.ard #Isla de Muerta: Rock Face (1st Visit) (GoA Warp)
   multi:
+  - name: ard/jp/ca08.ard
   - name: ard/us/ca08.ard
   - name: ard/fr/ca08.ard
   - name: ard/gr/ca08.ard
@@ -2915,6 +2984,7 @@ assets:
     - name: ard/ca08/evt.script
 - name: ard/ca10.ard #Isla de Muerta: Treasure Heap (Data Warp)
   multi:
+  - name: ard/jp/ca10.ard
   - name: ard/us/ca10.ard
   - name: ard/fr/ca10.ard
   - name: ard/gr/ca10.ard
@@ -2934,6 +3004,7 @@ assets:
     - name: ard/ca10/m_11.yml
 - name: ard/dc01.ard #Library (Remove Shop)
   multi:
+  - name: ard/jp/dc01.ard
   - name: ard/us/dc01.ard
   - name: ard/fr/dc01.ard
   - name: ard/gr/dc01.ard
@@ -2948,6 +3019,7 @@ assets:
     - name: ard/dc01/z00s.yml
 - name: ard/dc04.ard #The Hall of the Cornerstone (Dark) (Skip WM & Skip HB)
   multi:
+  - name: ard/jp/dc04.ard
   - name: ard/us/dc04.ard
   - name: ard/fr/dc04.ard
   - name: ard/gr/dc04.ard
@@ -2962,6 +3034,7 @@ assets:
     - name: ard/dc04/evt.script
 - name: ard/dc05.ard #The Hall of the Cornerstone (Light) (GoA Warp & AS Warp)
   multi:
+  - name: ard/jp/dc05.ard
   - name: ard/us/dc05.ard
   - name: ard/fr/dc05.ard
   - name: ard/gr/dc05.ard
@@ -2991,6 +3064,7 @@ assets:
     - name: ard/dc05/evt.script
 - name: ard/dc07.ard #Gathering Place (Early Manifest Illusion)
   multi:
+  - name: ard/jp/dc07.ard
   - name: ard/us/dc07.ard
   - name: ard/fr/dc07.ard
   - name: ard/gr/dc07.ard
@@ -3005,6 +3079,7 @@ assets:
     - name: ard/dc07/evt.script
 - name: ard/eh00.ard #Where Nothing Gathers (GoA Warp)
   multi:
+  - name: ard/jp/eh00.ard
   - name: ard/us/eh00.ard
   - name: ard/fr/eh00.ard
   - name: ard/gr/eh00.ard
@@ -3019,6 +3094,7 @@ assets:
     - name: ard/eh00/evt.script
 - name: ard/eh01.ard #Alley to Between (GoA Warp)
   multi:
+  - name: ard/jp/eh01.ard
   - name: ard/us/eh01.ard
   - name: ard/fr/eh01.ard
   - name: ard/gr/eh01.ard
@@ -3033,6 +3109,7 @@ assets:
     - name: ard/eh01/btl.script
 - name: ard/eh10.ard #Hall of Empty Melodies (Lower Level) (Prevent OoB in Xigbar's Arena)
   multi:
+  - name: ard/jp/eh10.ard
   - name: ard/us/eh10.ard
   - name: ard/fr/eh10.ard
   - name: ard/gr/eh10.ard
@@ -3047,6 +3124,7 @@ assets:
     - name: ard/eh10/map.script
 - name: ard/eh18.ard #The Altar of Naught (Data Warp)
   multi:
+  - name: ard/jp/eh18.ard
   - name: ard/us/eh18.ard
   - name: ard/fr/eh18.ard
   - name: ard/gr/eh18.ard
@@ -3066,6 +3144,7 @@ assets:
     - name: ard/eh18/m_11.yml
 - name: ard/eh20.ard #The World of Nothing (Xemnas II) (Enable Pause)
   multi:
+  - name: ard/jp/eh20.ard
   - name: ard/us/eh20.ard
   - name: ard/fr/eh20.ard
   - name: ard/gr/eh20.ard
@@ -3080,6 +3159,7 @@ assets:
     - name: ard/eh20/evt.script
 - name: ard/eh27.ard #The World of Nothing (Part I) (Promise Charm)
   multi:
+  - name: ard/jp/eh27.ard
   - name: ard/us/eh27.ard
   - name: ard/fr/eh27.ard
   - name: ard/gr/eh27.ard
@@ -3094,6 +3174,7 @@ assets:
     - name: ard/eh27/evt.script
 - name: ard/eh29.ard #The World of Nothing (Altar of Naught) (Skip Dragon Xemnas)
   multi:
+  - name: ard/jp/eh29.ard
   - name: ard/us/eh29.ard
   - name: ard/fr/eh29.ard
   - name: ard/gr/eh29.ard
@@ -3108,6 +3189,7 @@ assets:
     - name: ard/eh29/evt.script
 - name: ard/es00.ard #The Dark Margin (Enable Pause)
   multi:
+  - name: ard/jp/es00.ard
   - name: ard/us/es00.ard
   - name: ard/fr/es00.ard
   - name: ard/gr/es00.ard
@@ -3122,6 +3204,7 @@ assets:
     - name: ard/es00/evt.script
 - name: ard/hb00.ard #Villain's Vale (Early 2nd Cutscene)
   multi:
+  - name: ard/jp/hb00.ard
   - name: ard/us/hb00.ard
   - name: ard/fr/hb00.ard
   - name: ard/gr/hb00.ard
@@ -3136,6 +3219,7 @@ assets:
     - name: ard/hb00/evt.script
 - name: ard/hb01.ard #The Dark Depths (GoA Warp & Skip Cloud)
   multi:
+  - name: ard/jp/hb01.ard
   - name: ard/us/hb01.ard
   - name: ard/fr/hb01.ard
   - name: ard/gr/hb01.ard
@@ -3155,6 +3239,7 @@ assets:
     - name: ard/hb01/j52e.yml
 - name: ard/hb04.ard #Castle Gate (Checkpoint)
   multi:
+  - name: ard/jp/hb04.ard
   - name: ard/us/hb04.ard
   - name: ard/fr/hb04.ard
   - name: ard/gr/hb04.ard
@@ -3174,6 +3259,7 @@ assets:
     - name: ard/hb04/e_50.yml
 - name: ard/hb05.ard #Ansem's Study (Remove Computer & Skip SP & Early Sleeping Lion)
   multi:
+  - name: ard/jp/hb05.ard
   - name: ard/us/hb05.ard
   - name: ard/fr/hb05.ard
   - name: ard/gr/hb05.ard
@@ -3198,6 +3284,7 @@ assets:
     - name: ard/hb05/evt.script
 - name: ard/hb06.ard #Postern (Goofy Dead & Skip SP & GoA Warp)
   multi:
+  - name: ard/jp/hb06.ard
   - name: ard/us/hb06.ard
   - name: ard/fr/hb06.ard
   - name: ard/gr/hb06.ard
@@ -3212,6 +3299,7 @@ assets:
     - name: ard/hb06/evt.script
 - name: ard/hb08.ard #Bailey (Intact) (Early Chicken Little)
   multi:
+  - name: ard/jp/hb08.ard
   - name: ard/us/hb08.ard
   - name: ard/fr/hb08.ard
   - name: ard/gr/hb08.ard
@@ -3226,6 +3314,7 @@ assets:
     - name: ard/hb08/evt.script
 - name: ard/hb10.ard #Marketplace (Skip Cloud)
   multi:
+  - name: ard/jp/hb10.ard
   - name: ard/us/hb10.ard
   - name: ard/fr/hb10.ard
   - name: ard/gr/hb10.ard
@@ -3240,6 +3329,7 @@ assets:
     - name: ard/hb10/evt.script
 - name: ard/hb13.ard #Merlin's House (Remove Chicken Little & Skip SP & GoA Warp)
   multi:
+  - name: ard/jp/hb13.ard
   - name: ard/us/hb13.ard
   - name: ard/fr/hb13.ard
   - name: ard/gr/hb13.ard
@@ -3254,6 +3344,7 @@ assets:
     - name: ard/hb13/evt.script
 - name: ard/hb18.ard #Restoration Site (Destroyed) (Data Warp)
   multi:
+  - name: ard/jp/hb18.ard
   - name: ard/us/hb18.ard
   - name: ard/fr/hb18.ard
   - name: ard/gr/hb18.ard
@@ -3273,6 +3364,7 @@ assets:
     - name: ard/hb18/m_13.yml
 - name: ard/hb21.ard #Cavern of Remembrance: Depths (Goofy Dead)
   multi:
+  - name: ard/jp/hb21.ard
   - name: ard/us/hb21.ard
   - name: ard/fr/hb21.ard
   - name: ard/gr/hb21.ard
@@ -3287,6 +3379,7 @@ assets:
     - name: ard/hb21/evt.script
 - name: ard/hb22.ard #Cavern of Remembrance: Mining Area (Goofy Dead)
   multi:
+  - name: ard/jp/hb22.ard
   - name: ard/us/hb22.ard
   - name: ard/fr/hb22.ard
   - name: ard/gr/hb22.ard
@@ -3301,6 +3394,7 @@ assets:
     - name: ard/hb22/evt.script
 - name: ard/hb24.ard #Cavern of Remembrance: Mineshaft (Softlock Prevention & Goofy Dead)
   multi:
+  - name: ard/jp/hb24.ard
   - name: ard/us/hb24.ard
   - name: ard/fr/hb24.ard
   - name: ard/gr/hb24.ard
@@ -3325,6 +3419,7 @@ assets:
     - name: ard/hb24/evt.script
 - name: ard/hb25.ard #Transport to Remembrance (Goofy Dead)
   multi:
+  - name: ard/jp/hb25.ard
   - name: ard/us/hb25.ard
   - name: ard/fr/hb25.ard
   - name: ard/gr/hb25.ard
@@ -3339,6 +3434,7 @@ assets:
     - name: ard/hb25/evt.script
 - name: ard/hb26.ard #Garden of Assemblage (Various Stuff)
   multi:
+  - name: ard/jp/hb26.ard
   - name: ard/us/hb26.ard
   - name: ard/fr/hb26.ard
   - name: ard/gr/hb26.ard
@@ -3358,6 +3454,7 @@ assets:
     - name: ard/hb26/evt.script
 - name: ard/hb32.ard #The Old Mansion (AS Warp)
   multi:
+  - name: ard/jp/hb32.ard
   - name: ard/us/hb32.ard
   - name: ard/fr/hb32.ard
   - name: ard/gr/hb32.ard
@@ -3372,6 +3469,7 @@ assets:
     - name: ard/hb32/evt.script
 - name: ard/hb33.ard #Station of Remembrance (AS Warp)
   multi:
+  - name: ard/jp/hb33.ard
   - name: ard/us/hb33.ard
   - name: ard/fr/hb33.ard
   - name: ard/gr/hb33.ard
@@ -3386,6 +3484,7 @@ assets:
     - name: ard/hb33/evt.script
 - name: ard/hb34.ard #Destiny Island (AS Warp)
   multi:
+  - name: ard/jp/hb34.ard
   - name: ard/us/hb34.ard
   - name: ard/fr/hb34.ard
   - name: ard/gr/hb34.ard
@@ -3400,6 +3499,7 @@ assets:
     - name: ard/hb34/evt.script
 - name: ard/hb38.ard #Station of Oblivion (AS Warp)
   multi:
+  - name: ard/jp/hb38.ard
   - name: ard/us/hb38.ard
   - name: ard/fr/hb38.ard
   - name: ard/gr/hb38.ard
@@ -3414,6 +3514,7 @@ assets:
     - name: ard/hb38/evt.script
 - name: ard/he08.ard #Well of Captivity (Skip Megara Escort)
   multi:
+  - name: ard/jp/he08.ard
   - name: ard/us/he08.ard
   - name: ard/fr/he08.ard
   - name: ard/gr/he08.ard
@@ -3428,6 +3529,7 @@ assets:
     - name: ard/he08/evt.script
 - name: ard/he10.ard #Cave of the Dead: Inner Chamber (AS Warp)
   multi:
+  - name: ard/jp/he10.ard
   - name: ard/us/he10.ard
   - name: ard/fr/he10.ard
   - name: ard/gr/he10.ard
@@ -3452,6 +3554,7 @@ assets:
     - name: ard/he10/evt.script
 - name: ard/he14.ard #Coliseum Gates (Night) (GoA Warp)
   multi:
+  - name: ard/jp/he14.ard
   - name: ard/us/he14.ard
   - name: ard/fr/he14.ard
   - name: ard/gr/he14.ard
@@ -3466,6 +3569,7 @@ assets:
     - name: ard/he14/evt.script
 - name: ard/he18.ard #Coliseum Gates (Hydra) (GoA Warp)
   multi:
+  - name: ard/jp/he18.ard
   - name: ard/us/he18.ard
   - name: ard/fr/he18.ard
   - name: ard/gr/he18.ard
@@ -3480,6 +3584,7 @@ assets:
     - name: ard/he18/evt.script
 - name: ard/lk00.ard #Pride Rock (GoA Warp)
   multi:
+  - name: ard/jp/lk00.ard
   - name: ard/us/lk00.ard
   - name: ard/fr/lk00.ard
   - name: ard/gr/lk00.ard
@@ -3494,6 +3599,7 @@ assets:
     - name: ard/lk00/evt.script
 - name: ard/lk03.ard #Wildebeest Valley (Early Dash)
   multi:
+  - name: ard/jp/lk03.ard
   - name: ard/us/lk03.ard
   - name: ard/fr/lk03.ard
   - name: ard/gr/lk03.ard
@@ -3508,6 +3614,7 @@ assets:
     - name: ard/lk03/evt.script
 - name: ard/lk05.ard #Elephant Graveyard (Fast Hyenas II)
   multi:
+  - name: ard/jp/lk05.ard
   - name: ard/us/lk05.ard
   - name: ard/fr/lk05.ard
   - name: ard/gr/lk05.ard
@@ -3522,6 +3629,7 @@ assets:
     - name: ard/lk05/b_60.yml
 - name: ard/lk13.ard #Peak (Data Warp & BGM Change)
   multi:
+  - name: ard/jp/lk13.ard
   - name: ard/us/lk13.ard
   - name: ard/fr/lk13.ard
   - name: ard/gr/lk13.ard
@@ -3546,6 +3654,7 @@ assets:
     - name: ard/lk13/121.bin
 - name: ard/lk14.ard #Scar's Darkness (BGM Change)
   multi:
+  - name: ard/jp/lk14.ard
   - name: ard/us/lk14.ard
   - name: ard/fr/lk14.ard
   - name: ard/gr/lk14.ard
@@ -3560,6 +3669,7 @@ assets:
     - name: ard/lk14/evt.script
 - name: ard/lm02.ard #Undersea Courtyard (GoA Warp)
   multi:
+  - name: ard/jp/lm02.ard
   - name: ard/us/lm02.ard
   - name: ard/fr/lm02.ard
   - name: ard/gr/lm02.ard
@@ -3574,6 +3684,7 @@ assets:
     - name: ard/lm02/evt.script
 - name: ard/lm04.ard #The Palace: Performance Hall (GoA Warp)
   multi:
+  - name: ard/jp/lm04.ard
   - name: ard/us/lm04.ard
   - name: ard/fr/lm04.ard
   - name: ard/gr/lm04.ard
@@ -3588,6 +3699,7 @@ assets:
     - name: ard/lm04/evt.script
 - name: ard/lm05.ard #Sunken Ship (GoA Warp)
   multi:
+  - name: ard/jp/lm05.ard
   - name: ard/us/lm05.ard
   - name: ard/fr/lm05.ard
   - name: ard/gr/lm05.ard
@@ -3602,6 +3714,7 @@ assets:
     - name: ard/lm05/evt.script
 - name: ard/lm06.ard #The Shore (Day) (GoA Warp)
   multi:
+  - name: ard/jp/lm06.ard
   - name: ard/us/lm06.ard
   - name: ard/fr/lm06.ard
   - name: ard/gr/lm06.ard
@@ -3616,6 +3729,7 @@ assets:
     - name: ard/lm06/evt.script
 - name: ard/mu07.ard #Summit (Auto Limit Unequip & Drive Revert & Data Warp)
   multi:
+  - name: ard/jp/mu07.ard
   - name: ard/us/mu07.ard
   - name: ard/fr/mu07.ard
   - name: ard/gr/mu07.ard
@@ -3645,6 +3759,7 @@ assets:
     - name: ard/mu07/mu_g.bin
 - name: ard/mu09.ard #Palace Gate (GoA Warp)
   multi:
+  - name: ard/jp/mu09.ard
   - name: ard/us/mu09.ard
   - name: ard/fr/mu09.ard
   - name: ard/gr/mu09.ard
@@ -3659,6 +3774,7 @@ assets:
     - name: ard/mu09/evt.script
 - name: ard/mu11.ard #Throne Room (GoA Warp)
   multi:
+  - name: ard/jp/mu11.ard
   - name: ard/us/mu11.ard
   - name: ard/fr/mu11.ard
   - name: ard/gr/mu11.ard
@@ -3673,6 +3789,7 @@ assets:
     - name: ard/mu11/evt.script
 - name: ard/nm00.ard #Halloween Town Square (GoA Warp)
   multi:
+  - name: ard/jp/nm00.ard
   - name: ard/us/nm00.ard
   - name: ard/fr/nm00.ard
   - name: ard/gr/nm00.ard
@@ -3687,6 +3804,7 @@ assets:
     - name: ard/nm00/evt.script
 - name: ard/nm05.ard #Yuletide Hill (Vexen's AS Portal)
   multi:
+  - name: ard/jp/nm05.ard
   - name: ard/us/nm05.ard
   - name: ard/fr/nm05.ard
   - name: ard/gr/nm05.ard
@@ -3711,6 +3829,7 @@ assets:
     - name: ard/nm05/b_81.yml
 - name: ard/nm06.ard #Candy Cane Lane (GoA Warp)
   multi:
+  - name: ard/jp/nm06.ard
   - name: ard/us/nm06.ard
   - name: ard/fr/nm06.ard
   - name: ard/gr/nm06.ard
@@ -3725,6 +3844,7 @@ assets:
     - name: ard/nm06/evt.script
 - name: ard/po00.ard #The Hundred Acre Wood (GoA Warp)
   multi:
+  - name: ard/jp/po00.ard
   - name: ard/us/po00.ard
   - name: ard/fr/po00.ard
   - name: ard/gr/po00.ard
@@ -3744,6 +3864,7 @@ assets:
     - name: ard/po00/evt.script
 - name: ard/po01.ard #Starry Hill (GoA Warp)
   multi:
+  - name: ard/jp/po01.ard
   - name: ard/us/po01.ard
   - name: ard/fr/po01.ard
   - name: ard/gr/po01.ard
@@ -3758,6 +3879,7 @@ assets:
     - name: ard/po01/evt.script
 - name: ard/po06.ard #A Windsday Tale (BGM Change)
   multi:
+  - name: ard/jp/po06.ard
   - name: ard/us/po06.ard
   - name: ard/fr/po06.ard
   - name: ard/gr/po06.ard
@@ -3772,6 +3894,7 @@ assets:
     - name: ard/po06/evt.script
 - name: ard/tr00.ard #Pit Cell (GoA Warp & Skip HB)
   multi:
+  - name: ard/jp/tr00.ard
   - name: ard/us/tr00.ard
   - name: ard/fr/tr00.ard
   - name: ard/gr/tr00.ard
@@ -3801,6 +3924,7 @@ assets:
     - name: ard/tr00/e_50.yml
 - name: ard/tr01.ard #Canyon (Skip HB)
   multi:
+  - name: ard/jp/tr01.ard
   - name: ard/us/tr01.ard
   - name: ard/fr/tr01.ard
   - name: ard/gr/tr01.ard
@@ -3815,6 +3939,7 @@ assets:
     - name: ard/tr01/evt.script
 - name: ard/tr03.ard #Dataspace (Auto Limit Unequip)
   multi:
+  - name: ard/jp/tr03.ard
   - name: ard/us/tr03.ard
   - name: ard/fr/tr03.ard
   - name: ard/gr/tr03.ard
@@ -3829,6 +3954,7 @@ assets:
     - name: ard/tr03/tr_g.bin
 - name: ard/tr04.ard #I/O Tower: Hallway (Skip HB)
   multi:
+  - name: ard/jp/tr04.ard
   - name: ard/us/tr04.ard
   - name: ard/fr/tr04.ard
   - name: ard/gr/tr04.ard
@@ -3843,6 +3969,7 @@ assets:
     - name: ard/tr04/evt.script
 - name: ard/tr05.ard #I/O Tower: Communications Room (GoA Warp)
   multi:
+  - name: ard/jp/tr05.ard
   - name: ard/us/tr05.ard
   - name: ard/fr/tr05.ard
   - name: ard/gr/tr05.ard
@@ -3877,6 +4004,7 @@ assets:
     - name: ard/tr05/e_50.yml
 - name: ard/tr08.ard #Central Computer Mesa (GoA Warp)
   multi:
+  - name: ard/jp/tr08.ard
   - name: ard/us/tr08.ard
   - name: ard/fr/tr08.ard
   - name: ard/gr/tr08.ard
@@ -3921,6 +4049,7 @@ assets:
     - name: ard/tr08/e_50.yml
 - name: ard/tr09.ard #Central Computer Core (GoA Warp)
   multi:
+  - name: ard/jp/tr09.ard
   - name: ard/us/tr09.ard
   - name: ard/fr/tr09.ard
   - name: ard/gr/tr09.ard
@@ -3935,6 +4064,7 @@ assets:
     - name: ard/tr09/evt.script
 - name: ard/tr10.ard #I/O Tower: Communications Room (GoA Warp)
   multi:
+  - name: ard/jp/tr10.ard
   - name: ard/us/tr10.ard
   - name: ard/fr/tr10.ard
   - name: ard/gr/tr10.ard
@@ -3949,6 +4079,7 @@ assets:
     - name: ard/tr10/map.script
 - name: ard/tt02.ard #The Usual Spot (Skip WM)
   multi:
+  - name: ard/jp/tt02.ard
   - name: ard/us/tt02.ard
   - name: ard/fr/tt02.ard
   - name: ard/gr/tt02.ard
@@ -3963,6 +4094,7 @@ assets:
     - name: ard/tt02/evt.script
 - name: ard/tt06.ard #Market Street: Station Heights (No Jobs Post-TT1 & Short Day 2)
   multi:
+  - name: ard/jp/tt06.ard
   - name: ard/us/tt06.ard
   - name: ard/fr/tt06.ard
   - name: ard/gr/tt06.ard
@@ -3982,6 +4114,7 @@ assets:
     - name: ard/tt06/evt.script
 - name: ard/tt07.ard #Market Street: Tram Commons (Short Day 2)
   multi:
+  - name: ard/jp/tt07.ard
   - name: ard/us/tt07.ard
   - name: ard/fr/tt07.ard
   - name: ard/gr/tt07.ard
@@ -3996,6 +4129,7 @@ assets:
     - name: ard/tt07/evt.script
 - name: ard/tt08.ard #Station Plaza (Prevent Promise Charm Removal)
   multi:
+  - name: ard/jp/tt08.ard
   - name: ard/us/tt08.ard
   - name: ard/fr/tt08.ard
   - name: ard/gr/tt08.ard
@@ -4010,6 +4144,7 @@ assets:
     - name: ard/tt08/evt.script
 - name: ard/tt09.ard #Central Station (Drive Refill)
   multi:
+  - name: ard/jp/tt09.ard
   - name: ard/us/tt09.ard
   - name: ard/fr/tt09.ard
   - name: ard/gr/tt09.ard
@@ -4024,6 +4159,7 @@ assets:
     - name: ard/tt09/evt.script
 - name: ard/tt14.ard #The Old Mansion (BGM Change)
   multi:
+  - name: ard/jp/tt14.ard
   - name: ard/us/tt14.ard
   - name: ard/fr/tt14.ard
   - name: ard/gr/tt14.ard
@@ -4043,6 +4179,7 @@ assets:
     - name: ard/tt14/002.bin
 - name: ard/tt20.ard #Mansion: Basement Hall (Axel II) (Drive Refill)
   multi:
+  - name: ard/jp/tt20.ard
   - name: ard/us/tt20.ard
   - name: ard/fr/tt20.ard
   - name: ard/gr/tt20.ard
@@ -4057,6 +4194,7 @@ assets:
     - name: ard/tt20/evt.script
 - name: ard/tt23.ard #Mansion: Pod Room (GoA Warp & Data Warp)
   multi:
+  - name: ard/jp/tt23.ard
   - name: ard/us/tt23.ard
   - name: ard/fr/tt23.ard
   - name: ard/gr/tt23.ard
@@ -4081,6 +4219,7 @@ assets:
     - name: ard/tt23/evt.script
 - name: ard/tt26.ard #Tower: Entryway (Drive Refill)
   multi:
+  - name: ard/jp/tt26.ard
   - name: ard/us/tt26.ard
   - name: ard/fr/tt26.ard
   - name: ard/gr/tt26.ard
@@ -4095,6 +4234,7 @@ assets:
     - name: ard/tt26/evt.script
 - name: ard/tt27.ard #Tower: Sorcerer's Loft (Drive Refill)
   multi:
+  - name: ard/jp/tt27.ard
   - name: ard/us/tt27.ard
   - name: ard/fr/tt27.ard
   - name: ard/gr/tt27.ard
@@ -4109,6 +4249,7 @@ assets:
     - name: ard/tt27/evt.script
 - name: ard/tt28.ard #Tower: Wardrobe (GoA Warp)
   multi:
+  - name: ard/jp/tt28.ard
   - name: ard/us/tt28.ard
   - name: ard/fr/tt28.ard
   - name: ard/gr/tt28.ard
@@ -4123,6 +4264,7 @@ assets:
     - name: ard/tt28/evt.script
 - name: ard/tt32.ard #Station of Serenity (GoA Warp)
   multi:
+  - name: ard/jp/tt32.ard
   - name: ard/us/tt32.ard
   - name: ard/fr/tt32.ard
   - name: ard/gr/tt32.ard
@@ -4142,6 +4284,7 @@ assets:
     - name: ard/tt32/830_.yml
 - name: ard/tt33.ard #Station of Calling (Data & Promise Charm Paths)
   multi:
+  - name: ard/jp/tt33.ard
   - name: ard/us/tt33.ard
   - name: ard/fr/tt33.ard
   - name: ard/gr/tt33.ard
@@ -4211,6 +4354,7 @@ assets:
     - name: ard/tt33/b_14.yml
 - name: ard/tt40.ard #Betwixt & Between (Data Warp)
   multi:
+  - name: ard/jp/tt40.ard
   - name: ard/us/tt40.ard
   - name: ard/fr/tt40.ard
   - name: ard/gr/tt40.ard
@@ -4230,6 +4374,7 @@ assets:
     - name: ard/tt40/m_12.yml
 - name: ard/tt41.ard #The Old Mansion (Nobodies) (BGM Change)
   multi:
+  - name: ard/jp/tt41.ard
   - name: ard/us/tt41.ard
   - name: ard/fr/tt41.ard
   - name: ard/gr/tt41.ard
@@ -4244,7 +4389,6 @@ assets:
     - name: ard/tt41/evt.script
 #MSN Editing
 - name: msn/jp/LK05_MS201.bar #Hyenas II (Fast Hyenas)
-  platform: ps2
   method: binarc
   source:
   - name: LK05
@@ -4266,8 +4410,9 @@ assets:
     method: copy
     source:
     - name: ard/lk05/LK05_MS201.bin
-- name: remastered/msn/us/LK05_MS201.bar/US_LK05_MS201_bar0.png
+- name: remastered/msn/jp/LK05_MS201.bar/JP_LK05_MS201_bar0.png
   multi:
+  - name: remastered/msn/us/LK05_MS201.bar/US_LK05_MS201_bar0.png
   - name: remastered/msn/fr/LK05_MS201.bar/FR_LK05_MS201_bar0.png
   - name: remastered/msn/gr/LK05_MS201.bar/GR_LK05_MS201_bar0.png
   - name: remastered/msn/it/LK05_MS201.bar/IT_LK05_MS201_bar0.png
