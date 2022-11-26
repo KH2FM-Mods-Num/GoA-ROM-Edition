@@ -1508,7 +1508,7 @@ assets:
   source:
   - name: remastered/obj/F_NM070.mdlx/-3.dds
     type: internal
-#Pictures
+#Item Pictures
 - name: itempic/item-000.imd #Unused Items
   method: imd
   source:
