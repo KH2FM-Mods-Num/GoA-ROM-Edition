@@ -1,11 +1,21 @@
 - id: 0x0433
+  jp: 集積の庭園
   en: Garden
 - id: 0x0437
+  jp: TO BE TRANSLATED
   en: >-
     Transports current user to
     
     the Garden of Assemblage.
 - id: 0x0443
+  jp: >-
+    {:unk08 02 00 06}個移に霊きついた笑博の乗
+    
+    ”アブセント·シルエット”だ……。
+    
+    {:chardelay 33 00}逆にきょうみないや。
+    
+    {:chardelay A1 00}死なそうだけど、絡べてみよう!
   en: >-
     {:unk08 02 00 06}It's an Absent Silhouette, a shadowy presence
 
@@ -15,6 +25,14 @@
 
     {:chardelay A1 00}Let's check it out!
 - id: 0x0444
+  jp: >-
+    {:unk08 02 00 06}ラクシーヌとの參闘を勢草できる。
+
+    裏のデータは浜待されているらしい。
+
+    {:chardelay 33 00}逆にきょうみないや。
+
+    {:chardelay A1 00}參っても墓ける気はしない!
   en: >-
     {:unk08 02 00 06}Battle Larxene again, but be warned--
 

@@ -2763,8 +2763,77 @@ assets:
   source:
   - name: msg/libretto-tr.bar
 - name: msg/jp/sys.bar
+  platform: ps2
+  method: binarc
+  source:
+  - name: sys
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/sys.yml
+      language: en
+- name: msg/jp/al.bar
+  platform: ps2
+  method: binarc
+  source:
+  - name: al
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/al.yml
+      language: en
+- name: msg/jp/dc.bar
+  platform: ps2
+  method: binarc
+  source:
+  - name: dc
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/dc.yml
+      language: en
+- name: msg/jp/hb.bar
+  platform: ps2
+  method: binarc
+  source:
+  - name: hb
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/hb.yml
+      language: en
+- name: msg/jp/he.bar
+  platform: ps2
+  method: binarc
+  source:
+  - name: he
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/he.yml
+      language: en
+- name: msg/jp/nm.bar
+  platform: ps2
+  method: binarc
+  source:
+  - name: nm
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/nm.yml
+      language: en
+- name: msg/jp/tr.bar
+  platform: ps2
+  method: binarc
+  source:
+  - name: tr
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/tr.yml
+      language: en
+- name: msg/us/sys.bar
   multi:
-  - name: msg/us/sys.bar
   - name: msg/fr/sys.bar
   - name: msg/gr/sys.bar
   - name: msg/it/sys.bar
@@ -2777,9 +2846,8 @@ assets:
     source:
     - name: msg/sys.yml
       language: en
-- name: msg/jp/al.bar
+- name: msg/us/al.bar
   multi:
-  - name: msg/us/al.bar
   - name: msg/fr/al.bar
   - name: msg/gr/al.bar
   - name: msg/it/al.bar
@@ -2792,9 +2860,8 @@ assets:
     source:
     - name: msg/al.yml
       language: en
-- name: msg/jp/dc.bar
+- name: msg/us/dc.bar
   multi:
-  - name: msg/us/dc.bar
   - name: msg/fr/dc.bar
   - name: msg/gr/dc.bar
   - name: msg/it/dc.bar
@@ -2807,9 +2874,8 @@ assets:
     source:
     - name: msg/dc.yml
       language: en
-- name: msg/jp/hb.bar
+- name: msg/us/hb.bar
   multi:
-  - name: msg/us/hb.bar
   - name: msg/fr/hb.bar
   - name: msg/gr/hb.bar
   - name: msg/it/hb.bar
@@ -2822,9 +2888,8 @@ assets:
     source:
     - name: msg/hb.yml
       language: en
-- name: msg/jp/he.bar
+- name: msg/us/he.bar
   multi:
-  - name: msg/us/he.bar
   - name: msg/fr/he.bar
   - name: msg/gr/he.bar
   - name: msg/it/he.bar
@@ -2837,9 +2902,8 @@ assets:
     source:
     - name: msg/he.yml
       language: en
-- name: msg/jp/nm.bar
+- name: msg/us/nm.bar
   multi:
-  - name: msg/us/nm.bar
   - name: msg/fr/nm.bar
   - name: msg/gr/nm.bar
   - name: msg/it/nm.bar
@@ -2852,9 +2916,8 @@ assets:
     source:
     - name: msg/nm.yml
       language: en
-- name: msg/jp/tr.bar
+- name: msg/us/tr.bar
   multi:
-  - name: msg/us/tr.bar
   - name: msg/fr/tr.bar
   - name: msg/gr/tr.bar
   - name: msg/it/tr.bar
@@ -2867,42 +2930,6 @@ assets:
     source:
     - name: msg/tr.yml
       language: en
-- name: remastered/msg/jp/al.bar/JP_al_bar0.png
-  platform: pc
-  method: copy
-  source:
-  - name: remastered/msg/jp/al.bar/JP_al_bar0.png
-    type: internal
-- name: remastered/msg/jp/dc.bar/JP_dc_bar0.png
-  platform: pc
-  method: copy
-  source:
-  - name: remastered/msg/jp/dc.bar/JP_dc_bar0.png
-    type: internal
-- name: remastered/msg/jp/hb.bar/JP_hb_bar0.png
-  platform: pc
-  method: copy
-  source:
-  - name: remastered/msg/jp/hb.bar/JP_hb_bar0.png
-    type: internal
-- name: remastered/msg/jp/he.bar/JP_he_bar0.png
-  platform: pc
-  method: copy
-  source:
-  - name: remastered/msg/jp/he.bar/JP_he_bar0.png
-    type: internal
-- name: remastered/msg/jp/nm.bar/JP_nm_bar0.png
-  platform: pc
-  method: copy
-  source:
-  - name: remastered/msg/jp/nm.bar/JP_nm_bar0.png
-    type: internal
-- name: remastered/msg/jp/tr.bar/JP_tr_bar0.png
-  platform: pc
-  method: copy
-  source:
-  - name: remastered/msg/jp/tr.bar/JP_tr_bar0.png
-    type: internal
 - name: remastered/msg/us/al.bar/US_al_bar0.png
   multi:
   - name: remastered/msg/fr/al.bar/FR_al_bar0.png
@@ -2968,6 +2995,112 @@ assets:
   method: copy
   source:
   - name: remastered/msg/us/tr.bar/US_tr_bar0.png
+    type: internal
+- name: msg/jp/sys.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: sys
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/sys.yml
+      language: jp
+- name: msg/jp/al.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: al
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/al.yml
+      language: jp
+- name: msg/jp/dc.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: dc
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/dc.yml
+      language: jp
+- name: msg/jp/hb.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: hb
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/hb.yml
+      language: jp
+- name: msg/jp/he.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: he
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/he.yml
+      language: jp
+- name: msg/jp/nm.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: nm
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/nm.yml
+      language: jp
+- name: msg/jp/tr.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tr
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/tr.yml
+      language: jp
+- name: remastered/msg/jp/al.bar/JP_al_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/al.bar/JP_al_bar0.png
+    type: internal
+- name: remastered/msg/jp/dc.bar/JP_dc_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/dc.bar/JP_dc_bar0.png
+    type: internal
+- name: remastered/msg/jp/hb.bar/JP_hb_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/hb.bar/JP_hb_bar0.png
+    type: internal
+- name: remastered/msg/jp/he.bar/JP_he_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/he.bar/JP_he_bar0.png
+    type: internal
+- name: remastered/msg/jp/nm.bar/JP_nm_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/nm.bar/JP_nm_bar0.png
+    type: internal
+- name: remastered/msg/jp/tr.bar/JP_tr_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msg/jp/tr.bar/JP_tr_bar0.png
     type: internal
 #Fix Form Icons
 - name: msg/us/fontimage.bar

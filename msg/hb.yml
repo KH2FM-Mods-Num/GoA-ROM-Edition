@@ -1,4 +1,10 @@
 - id: 0x4ECD
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay A1 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -8,6 +14,12 @@
 
     {:chardelay A1 00}Visit!
 - id: 0x4ECE
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay A2 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -17,6 +29,12 @@
 
     {:chardelay A2 00}Visit!
 - id: 0x4ECF
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay A3 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -26,6 +44,12 @@
 
     {:chardelay A3 00}Visit!
 - id: 0x4ED0
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay A4 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -35,6 +59,12 @@
 
     {:chardelay A4 00}Visit!
 - id: 0x4ED1
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay A5 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -44,6 +74,12 @@
 
     {:chardelay A5 00}Visit!
 - id: 0x4ED2
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay A6 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -53,6 +89,12 @@
 
     {:chardelay A6 00}Visit!
 - id: 0x4ED3
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay A7 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -62,6 +104,12 @@
 
     {:chardelay A7 00}Visit!
 - id: 0x4ED4
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay A8 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -71,6 +119,12 @@
 
     {:chardelay A8 00}Visit!
 - id: 0x4ED5
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay A9 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -80,6 +134,12 @@
 
     {:chardelay A9 00}Visit!
 - id: 0x4ED6
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay AA 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -89,6 +149,12 @@
 
     {:chardelay AA 00}Visit!
 - id: 0x4ED7
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay AB 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -98,6 +164,12 @@
 
     {:chardelay AB 00}Visit!
 - id: 0x4ED8
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay AC 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -107,6 +179,12 @@
 
     {:chardelay AC 00}Visit!
 - id: 0x4ED9
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay AD 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -116,6 +194,12 @@
 
     {:chardelay AD 00}Visit!
 - id: 0x4EDA
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay A9 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -125,6 +209,12 @@
 
     {:chardelay A9 00}Visit!
 - id: 0x4F0E
+  jp: >-
+    {:unk08 02 00 06}TO BE TRANSLATED
+
+    {:chardelay 33 00}TO BE TRANSLATED
+
+    {:chardelay AE 00}TO BE TRANSLATED
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -134,6 +224,7 @@
 
     {:chardelay AE 00}Visit!
 - id: 0x4F0F
+  jp: TO BE TRANSLATED
   en: >-
     Welcome to the Garden
     

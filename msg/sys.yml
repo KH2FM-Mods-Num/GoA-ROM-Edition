@@ -1,8 +1,10 @@
 - id: 0x01E9
   en: Anti Form
 - id: 0x05C8
+  jp: アルファウェポン
   en: Alpha Weapon
 - id: 0x05C9
+  jp: TO BE TRANSLATED
   en: >-
     Imbued with nostalgic memories of
 
@@ -10,8 +12,10 @@
 
     by {:color #F0F00080}50%{:reset} when recharging MP.
 - id: 0x05CA
+  jp: オメガウェポン
   en: Omega Weapon
 - id: 0x05CB
+  jp: TO BE TRANSLATED
   en: >-
     Filled with prophetic visions of the
 
@@ -19,8 +23,15 @@
 
     finishers relative to combo length.
 - id: 0x05CC
+  jp: ピュアブラッド
   en: Pureblood
 - id: 0x05CD
+  jp: >-
+    闇に満ちた不吉なキーブレード
+    
+    ダメージを受けるたびに
+    
+    ドライヴゲージが回復します
   en: >-
     A foreboding Keyblade brimming with
 
@@ -28,8 +39,13 @@
 
     to the amount of damage taken.
 - id: 0x05E4
+  jp: キングダムチェーンD
   en: Kingdom Key D
 - id: 0x05E5
+  jp: >-
+    王様が使っている闇の世界のキーブレード
+    
+    ピンチになると防御力が{:color #F0F00080}3アップ{:reset}します
   en: >-
     The King's Keyblade and denizen of
 
@@ -37,6 +53,12 @@
 
     defense by {:color #F0F00080}3{:reset} in critical moments.
 - id: 0x0649
+  jp: >-
+    キーブレードの真の力を解放して
+    
+    「ドライヴ」コマンドで
+    
+    ファイナルフォームにチェンジできます
   en: >-
     Using the Keyblade's true power,
     
@@ -46,6 +68,12 @@
 - id: 0x064A
   en: Anti Form
 - id: 0x064B
+  jp: >-
+    ソラの心の闇を利用して
+    
+    「ドライヴ」コマンドで
+    
+    アンチフォームにチェンジできます
   en: >-
     Using the darkness in Sora's heart,
     
@@ -53,16 +81,27 @@
     
     into Anti Form.
 - id: 0x0A71
+  jp: 集積の庭園
   en: Garden
 - id: 0x0A80
+  jp: 集積の庭園
   en: Garden
 - id: 0x0A82
+  jp: TO BE TRANSLATED
   en: Return to the Garden of Assemblage?
 - id: 0x3859
+  jp: TO BE TRANSLATED
   en: Return to the Garden of Assemblage?
 - id: 0x3D1A
+  jp: アンノウンディスク
   en: Unknown Disk
 - id: 0x3D1B
+  jp: >-
+    謎のデータディスク
+    
+    {:color #F0F00080}ハートレス製造施設{:reset}への
+    
+    アクセスコードが記されている
   en: >-
     A mysterious data disk containing 
     
