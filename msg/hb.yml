@@ -1,10 +1,12 @@
 - id: 0x4ECD
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    THE WORLD THAT NEVER WAS.
 
-    {:chardelay A1 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay A1 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -15,11 +17,13 @@
     {:chardelay A1 00}Visit!
 - id: 0x4ECE
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    THE LAND OF DRAGONS.
 
-    {:chardelay A2 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay A2 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -30,11 +34,13 @@
     {:chardelay A2 00}Visit!
 - id: 0x4ECF
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    BEAST CASTLE.
 
-    {:chardelay A3 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay A3 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -45,11 +51,13 @@
     {:chardelay A3 00}Visit!
 - id: 0x4ED0
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    HALLOWEEN TOWN.
 
-    {:chardelay A4 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay A4 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -60,11 +68,13 @@
     {:chardelay A4 00}Visit!
 - id: 0x4ED1
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    AGRABAH.
 
-    {:chardelay A5 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay A5 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -75,11 +85,13 @@
     {:chardelay A5 00}Visit!
 - id: 0x4ED2
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    OLYMPUS COLISEUM.
 
-    {:chardelay A6 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay A6 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -90,11 +102,13 @@
     {:chardelay A6 00}Visit!
 - id: 0x4ED3
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    PRIDE LANDS.
 
-    {:chardelay A7 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay A7 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -105,11 +119,13 @@
     {:chardelay A7 00}Visit!
 - id: 0x4ED4
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    TWILIGHT TOWN.
 
-    {:chardelay A8 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay A8 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -120,11 +136,13 @@
     {:chardelay A8 00}Visit!
 - id: 0x4ED5
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    HOLLOW BASTION.
 
-    {:chardelay A9 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay A9 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -135,11 +153,13 @@
     {:chardelay A9 00}Visit!
 - id: 0x4ED6
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    PORT ROYAL.
 
-    {:chardelay AA 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay AA 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -150,11 +170,13 @@
     {:chardelay AA 00}Visit!
 - id: 0x4ED7
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    DISNEY CASTLE.
 
-    {:chardelay AB 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay AB 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -165,11 +187,13 @@
     {:chardelay AB 00}Visit!
 - id: 0x4ED8
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    SPACE PARANOIDS.
 
-    {:chardelay AC 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay AC 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -180,11 +204,13 @@
     {:chardelay AC 00}Visit!
 - id: 0x4ED9
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    SIMULATED TWILIGHT TOWN.
 
-    {:chardelay AD 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay AD 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -195,11 +221,13 @@
     {:chardelay AD 00}Visit!
 - id: 0x4EDA
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    RADIANT GARDEN.
 
-    {:chardelay A9 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay A9 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -210,11 +238,13 @@
     {:chardelay A9 00}Visit!
 - id: 0x4F0E
   jp: >-
-    {:unk08 02 00 06}TO BE TRANSLATED
+    {:unk08 02 00 06}THIS PORTAL LEADS TO--
 
-    {:chardelay 33 00}TO BE TRANSLATED
+    THE WORLD OF NOTHING.
 
-    {:chardelay AE 00}TO BE TRANSLATED
+    {:chardelay 33 00}NOT RIGHT NOW.
+
+    {:chardelay AE 00}VISIT!
   en: >-
     {:unk08 02 00 06}This portal leads to--
 
@@ -224,7 +254,10 @@
 
     {:chardelay AE 00}Visit!
 - id: 0x4F0F
-  jp: TO BE TRANSLATED
+  jp: >-
+    WELCOME TO THE GARDEN
+    
+    OF ASSEMBLAGE MOD!
   en: >-
     Welcome to the Garden
     

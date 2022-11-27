@@ -4,7 +4,12 @@
   jp: アルファウェポン
   en: Alpha Weapon
 - id: 0x05C9
-  jp: TO BE TRANSLATED
+  jp: >-
+    なつかしさを感じる思い出のつまった
+    
+    キーブレード。MPを使い切ったあとの
+    
+    MP回復スピードが{:color #F0F00080}50%アップ{:reset}します
   en: >-
     Imbued with nostalgic memories of
 
@@ -15,7 +20,12 @@
   jp: オメガウェポン
   en: Omega Weapon
 - id: 0x05CB
-  jp: TO BE TRANSLATED
+  jp: >-
+    きたるべきみらいのビジョンに満ちている
+    
+    キーブレード。コンボ数が多いほど空中
+    
+    フィニッシュ技のダメージがアップします
   en: >-
     Filled with prophetic visions of the
 
@@ -87,10 +97,10 @@
   jp: 集積の庭園
   en: Garden
 - id: 0x0A82
-  jp: TO BE TRANSLATED
+  jp: 集積の庭園にもどりますか?
   en: Return to the Garden of Assemblage?
 - id: 0x3859
-  jp: TO BE TRANSLATED
+  jp: 集積の庭園にもどりますか?
   en: Return to the Garden of Assemblage?
 - id: 0x3D1A
   jp: アンノウンディスク
