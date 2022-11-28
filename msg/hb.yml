@@ -375,13 +375,13 @@
     {:chardelay AE 00}Visit!
 - id: 0x4F0F
   je: >-
-    集積の庭園MODに
+    集積の庭園MOD
     
-    ようこそ!
+    にようこそ!
   jp: >-
-    格友の??MODに
+    ASSEMBLAGE MOD
     
-    ようこそ!
+    にようこそ!
   en: >-
     Welcome to the Garden
     
