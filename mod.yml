@@ -3102,7 +3102,13 @@ assets:
   source:
   - name: remastered/msg/jp/tr.bar/JP_tr_bar0.png
     type: internal
-#Fix Form Icons
+#Fix PC Form Icon
+- name: msg/jp/fontimage.bar
+  platform: pc
+  method: copy
+  source:
+  - name: msg/jp/fontimage.bar
+    type: internal
 - name: msg/us/fontimage.bar
   multi:
   - name: msg/fr/fontimage.bar
