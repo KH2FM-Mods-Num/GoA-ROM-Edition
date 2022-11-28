@@ -1,16 +1,26 @@
 - id: 0x0433
-  jp: 集積の庭園
+  jp: シュウセキノテイエン
   en: Garden
 - id: 0x0437
   jp: >-
-    TRANSPORTS CURRENT USER TO
+    セツゾクチュウノ ユーザーヲ
     
-    THE GARDEN OF ASSEMBLAGE.
+    シュウセキノテイエンニ
+    
+    テンソウシマス
   en: >-
     Transports current user to
     
     the Garden of Assemblage.
 - id: 0x0443
+  je: >-
+    {:unk08 02 00 06}武器に焼きついた存在の影
+    
+    ”アブセント·シルエット”だ……。
+    
+    {:chardelay 33 00}別にきょうみないや。
+    
+    {:chardelay A1 00}危なそうだけど、調べてみよう!
   jp: >-
     {:unk08 02 00 06}個移に霊きついた笑博の乗
     
@@ -28,6 +38,14 @@
 
     {:chardelay A1 00}Let's check it out!
 - id: 0x0444
+  je: >-
+    {:unk08 02 00 06}ラクシーヌとの戦闘を再現できる。
+
+    敵のデータは強化されているらしい。
+
+    {:chardelay 33 00}別にきょうみないや。
+
+    {:chardelay A1 00}戦っても負ける気はしない!
   jp: >-
     {:unk08 02 00 06}ラクシーヌとの參闘を勢草できる。
 
