@@ -783,17 +783,17 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_Y0.a.us/-4.dds
-- name: remastered/obj/W_EX010_Y0.a.fm/se/obj/se9001
+- name: remastered/obj/W_EX010_Y0.a.fm/se/obj/se501
   multi:
-  - name: remastered/obj/W_EX010_Y0_NM.a.fm/se/obj/se9001
-  - name: remastered/obj/W_EX010_Y0_TR.a.fm/se/obj/se9001
-  - name: remastered/obj/W_EX010_Y0.a.us/se/obj/se9001
-  - name: remastered/obj/W_EX010_Y0_NM.a.us/se/obj/se9001
-  - name: remastered/obj/W_EX010_Y0_TR.a.us/se/obj/se9001
+  - name: remastered/obj/W_EX010_Y0_NM.a.fm/se/obj/se501
+  - name: remastered/obj/W_EX010_Y0_TR.a.fm/se/obj/se501
+  - name: remastered/obj/W_EX010_Y0.a.us/se/obj/se501
+  - name: remastered/obj/W_EX010_Y0_NM.a.us/se/obj/se501
+  - name: remastered/obj/W_EX010_Y0_TR.a.us/se/obj/se501
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Y0.a.us/se9001
+  - name: remastered/obj/W_EX010_Y0.a.us/se501
 #Frontier of Ultima -> Omega Weapon
 - name: obj/W_EX010_Z0.mdlx
   method: copy
@@ -896,17 +896,17 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_Z0.a.us/-4.dds
-- name: remastered/obj/W_EX010_Z0.a.fm/se/obj/se9002
+- name: remastered/obj/W_EX010_Z0.a.fm/se/obj/se519
   multi:
-  - name: remastered/obj/W_EX010_Z0_NM.a.fm/se/obj/se9002
-  - name: remastered/obj/W_EX010_Z0_TR.a.fm/se/obj/se9002
-  - name: remastered/obj/W_EX010_Z0.a.us/se/obj/se9002
-  - name: remastered/obj/W_EX010_Z0_NM.a.us/se/obj/se9002
-  - name: remastered/obj/W_EX010_Z0_TR.a.us/se/obj/se9002
+  - name: remastered/obj/W_EX010_Z0_NM.a.fm/se/obj/se519
+  - name: remastered/obj/W_EX010_Z0_TR.a.fm/se/obj/se519
+  - name: remastered/obj/W_EX010_Z0.a.us/se/obj/se519
+  - name: remastered/obj/W_EX010_Z0_NM.a.us/se/obj/se519
+  - name: remastered/obj/W_EX010_Z0_TR.a.us/se/obj/se519
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_Z0.a.us/se9002
+  - name: remastered/obj/W_EX010_Z0.a.us/se519
 #FAKE -> Kingdom Key D
 - name: obj/W_EX010_00.mdlx
   method: copy
