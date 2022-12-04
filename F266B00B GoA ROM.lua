@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: Unknown Disk removal prevention; show all items in shop & initially-equipped growh abilities compatibility; invincible initial dice bugfix
+--Last Update: JP shop assembly code
 --Todo: Maybe item-based progress flags
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
