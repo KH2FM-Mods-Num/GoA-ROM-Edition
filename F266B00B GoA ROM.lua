@@ -366,94 +366,122 @@ else --Remove the item requirements
 end
 --Battle Level
 if true then
-	local Bitmask, Visit = false
+	local Bitmask = 0x00001
+	local Visit
+	--Bitmask 0x00001 for all Lv  1
+	--Bitmask 0x00002 for all Lv 50
+	--Bitmask 0x00004 for all Lv 80
+	--Bitmask 0x00008 for all Lv 99
 	if World == 0x02 then --Twilight Town & Simulated Twilight Town
 		Visit = ReadByte(Save+0x3FF5)
 		if Visit == 1 or Visit == 2 or Visit == 3 then
-			Bitmask = 0x040001
+			Bitmask = 0x00010
 		elseif Visit == 4 or Visit == 5 then
-			Bitmask = 0x140001
+			Bitmask = 0x00020
 		elseif Visit == 6 then
-			Bitmask = 0x140401
+			Bitmask = 0x00040
 		elseif Visit == 7 or Visit == 8 then
-			Bitmask = 0x141C01
+			Bitmask = 0x00100
 		elseif Visit == 9 then
-			Bitmask = 0x143D01
+			Bitmask = 0x00200
 		elseif Visit == 10 then
-			Bitmask = 0x157D79
+			Bitmask = 0x00800
 		end
+		--0x00080 actual TT7
+		--0x00400 post-HB4
+		--Lv 1, 2, 3, 6, 7, 28, 34, 47
 	elseif World == 0x04 then --Hollow Bastion
 		Visit = ReadByte(Save+0x3FFD)
 		if Visit == 1 or Visit == 2 or Visit == 3 then
-			Bitmask = 0x141C01
+			Bitmask = 0x00010
 		elseif Visit == 4 then
-			Bitmask = 0x147D09
+			Bitmask = 0x00080
 		elseif Visit == 5 then
-			Bitmask = 0x15FD79
+			Bitmask = 0x00200
 		end
+		--0x00020 actual HB2 & HB3
+		--0x00040 HB4 pre-SP1
+		--0x00100 post-HB4
+		--Lv 8, 15, 28, 30, 34, 45
 	elseif World == 0x05 then --Beast's Castle
 		Visit = ReadByte(Save+0x4001)
 		if Visit == 1 then
-			Bitmask = 0x141C01
+			Bitmask = 0x00010
 		elseif Visit == 2 then
-			Bitmask = 0x147D19
+			Bitmask = 0x00020
 		end
+		--Lv 13, 36
 	elseif World == 0x06 then --Olympus Coliseum
 		Visit = ReadByte(Save+0x4005)
 		if Visit == 1 then
-			Bitmask = 0x141C01
+			Bitmask = 0x00010
 		elseif Visit == 2 then
-			Bitmask = 0x147D19
+			Bitmask = 0x00020
 		end
+		--Lv 16, 39
 	elseif World == 0x07 then --Agrabah
 		Visit = ReadByte(Save+0x4009)
 		if Visit == 1 then
-			Bitmask = 0x141D01
+			Bitmask = 0x00010
 		elseif Visit == 2 then
-			Bitmask = 0x147D19
+			Bitmask = 0x00040
 		end
+		--0x00020 AG1 post HB4
+		--Lv 22, 38, 40
 	elseif World == 0x08 then --The Land of Dragons
 		Visit = ReadByte(Save+0x400D)
 		if Visit == 1 then
-			Bitmask = 0x141C01
+			Bitmask = 0x00010
 		elseif Visit == 2 then
-			Bitmask = 0x147D19
+			Bitmask = 0x00020
 		end
+		--Lv 10, 35
+	elseif World == 0x09 then --100 Acre Wood
+		Bitmask = 0x00010
+		--Lv 1
 	elseif World == 0x0A then --Pride Lands
 		Visit = ReadByte(Save+0x4015)
 		if Visit == 1 then
-			Bitmask = 0x141D01
+			Bitmask = 0x00010
 		elseif Visit == 2 then
-			Bitmask = 0x15FDF9
+			Bitmask = 0x00040
 		end
+		--0x00020 PL1 post HB4
+		--Lv 26, 41, 43
 	elseif World == 0x0C or World == 0x0D then --Disney Castle & Timeless River
-		Bitmask = 0x141D01
+		Bitmask = 0x00010
+		--0x00020 post HB4
+		--Lv 18, 34 for DC
+		--Lv 19, 34 for TR
 	elseif World == 0x0E then --Halloween Town
 		Visit = ReadByte(Save+0x4025)
 		if Visit == 1 then
-			Bitmask = 0x141D01
+			Bitmask = 0x00010
 		elseif Visit == 2 then
-			Bitmask = 0x147D19
+			Bitmask = 0x00040
 		end
+		--0x00020 HT1 post HB4
+		--Lv 24, 39, 41
 	elseif World == 0x10 then --Port Royal
 		Visit = ReadByte(Save+0x402D)
 		if Visit == 1 then
-			Bitmask = 0x141C01
+			Bitmask = 0x00010
 		elseif Visit == 2 then
-			Bitmask = 0x147D19
+			Bitmask = 0x00020
 		end
+		--Lv 20, 37
 	elseif World == 0x11 then --Space Paranoids
 		Visit = ReadByte(Save+0x4031)
 		if Visit == 1 then
-			Bitmask = 0x147D01
+			Bitmask = 0x00010
 		elseif Visit == 2 then
-			Bitmask = 0x15FD79
+			Bitmask = 0x00040
 		end
+		--0x00020 post HB4
+		--Lv 28, 34, 45
 	elseif World == 0x12 then --The World that Never Was
-		Bitmask = 0x157D79
-	end
-	if not Bitmask then --Safeguard if all above are false
-		Bitmask = 0x040000
+		Bitmask = 0x00010
+		--Lv 50
 	end
 	WriteInt(Save+0x3724,Bitmask)
 end

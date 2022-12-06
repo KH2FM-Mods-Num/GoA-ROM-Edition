@@ -16,6 +16,11 @@ assets:
     source:
     - name: 00battle.bin/BonsList.yml
       type: bons
+  - name: btlv #Rework battle levels format to be more easily randomized
+    type: list
+    method: copy
+    source:
+    - name: 00battle.bin/Btlv.bin
   - name: enmp #Halve MCP's HP & Remove Terra and Datas' Fixed Levels
     type: list
     method: copy
