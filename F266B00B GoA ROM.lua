@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: JP shop assembly code
+--Last Update: JP shop assembly code & battle level rework
 --Todo: Maybe item-based progress flags
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
@@ -7,12 +7,10 @@ LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-local VersionNum = 'GoA Version 1.53.3'
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
 	end
-	print(VersionNum)
 	OnPC = false
 	Now = 0x032BAE0 --Current Location
 	Sve = 0x1D5A970 --Saved Location
@@ -53,7 +51,6 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	if ENGINE_VERSION < 5.0 then
 		ConsolePrint('LuaBackend is Outdated. Things might not work properly.',2)
 	end
-	ConsolePrint(VersionNum,0)
 	OnPC = true
 	Now = 0x0714DB8 - 0x56454E
 	Sve = 0x2A09C00 - 0x56450E
@@ -735,9 +732,9 @@ end
 --Show all items in shops (ASSEMBLY edit)
 if not OnPC then
 	WriteInt(0x264250,0)
-elseif ReadArray(0x2F9302-0x56454E,8) == {0x41,0x85,0xD6,0x74,0x0D,0x0F,0xB7,0x43} then --Global
+elseif ReadLong(0x2F9302-0x56454E) == 0x43B70F0D74D68541 then --Global
 	WriteByte(0x2F9306 - 0x56454E,0)
-elseif ReadArray(0x2F9142-0x56454E,8) == {0x41,0x85,0xD6,0x74,0x0D,0x0F,0xB7,0x43} then --JP
+elseif ReadLong(0x2F9142-0x56454E) == 0x43B70F0D74D68541 then --JP
 	WriteByte(0x2F9146 - 0x56454E,0)
 end
 --Alternate Party Models (adding new UCM using MEMT causes problems when shopping)
