@@ -447,7 +447,9 @@ if true then
 		--Lv 26, 41, 43
 	elseif World == 0x0C or World == 0x0D then --Disney Castle & Timeless River
 		Bitmask = 0x00010
-		--0x00020 post HB4
+		if ReadByte(Save+0x1E1E) > 0 then --Post-HB4
+			Bitmask == 0x00020
+		end
 		--Lv 18, 34 for DC
 		--Lv 19, 34 for TR
 	elseif World == 0x0E then --Halloween Town
