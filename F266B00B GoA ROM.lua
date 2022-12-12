@@ -825,7 +825,7 @@ if ReadByte(Save+0x1EDE) > 0 then
 end
 --Final Door Requirements
 if Place == 0x1212 then
-	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 then --All Proofs Obtained
+	if ReadByte(Save+0x1D1E)&0x80 == 0x80 and ReadByte(Save+0x1DB9)&0x02 == 0x02 and ReadByte(Save+0x1DF7)&0x20 == 0x20 then --All Worlds Cleared
 		Spawn('Short',0x05,0x060,0x13D) --Spawn Door RC
 	else
 		Spawn('Short',0x05,0x060,0x000) --Despawn Door RC
