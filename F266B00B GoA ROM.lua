@@ -259,10 +259,6 @@ end
 function GoA()
 --Garden of Assemblage Rearrangement
 if Place == 0x1A04 then
-	--Open Promise Charm Path
-	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 and ReadByte(Save+0x3694) > 0 then --All Proofs & Promise Charm
-		Spawn('Short',0x06,0x05C,0x77A) --Text
-	end
 	--Demyx's Portal Text
 	if ReadByte(Save+0x1D2E) > 0 then --Hollow Bastion Cleared
 		Spawn('Short',0x05,0x25C,0x779) --Radiant Garden
@@ -1946,7 +1942,7 @@ elseif Place == 0x000D and Events(Null,Null,0x07) then --Back to Their Own World
 elseif Place == 0x050C and Events(Null,Null,0x01) then --The Castle is Secure
 	WriteByte(Save+0x1E1E,3) --Post-Story Save
 elseif Place == 0x2604 and Events(0x7F,0x7F,0x7F) then --Marluxia Defeated
-elseif ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x1E1E) > 0 and ReadShort(Save+0x1232) == 0x00 then --Proof of Connection, DC Cleared, Terra Locked
+elseif ReadByte(Save+0x3694) > 0 and ReadByte(Save+0x1E1E) > 0 and ReadShort(Save+0x1232) == 0x00 then --Proof of Connection, DC Cleared, Terra Locked
 	WriteShort(Save+0x121A,0x11) --Library EVT
 	WriteShort(Save+0x1232,0x02) --Hall of the Cornerstone (Light) EVT
 	WriteShort(Save+0x1238,0x12) --Gummi Hangar EVT
@@ -2445,30 +2441,6 @@ function At()
 end
 
 function Data()
---Music Change - Final Fights
-if ReadShort(Save+0x03D6) == 15 then
-	if Place == 0x1B12 then --Part I
-		Spawn('Short',0x06,0x0A4,0x09C) --Guardando nel buio
-		Spawn('Short',0x06,0x0A6,0x09C)
-	elseif Place == 0x1C12 then --Part II
-		Spawn('Short',0x07,0x008,0x09C)
-		Spawn('Short',0x07,0x00A,0x09C)
-	elseif Place == 0x1A12 then --Cylinders
-		Spawn('Short',0x07,0x008,0x09C)
-		Spawn('Short',0x07,0x00A,0x09C)
-	elseif Place == 0x1912 then --Core
-		Spawn('Short',0x07,0x008,0x09C)
-		Spawn('Short',0x07,0x00A,0x09C)
-	elseif Place == 0x1812 then --Armor Xemnas I
-		Spawn('Short',0x06,0x008,0x09C)
-		Spawn('Short',0x06,0x00A,0x09C)
-		Spawn('Short',0x06,0x034,0x09C)
-		Spawn('Short',0x06,0x036,0x09C)
-	elseif Place == 0x1D12 then --Pre-Dragon Xemnas
-		Spawn('Short',0x03,0x010,0x09C)
-		Spawn('Short',0x03,0x012,0x09C)
-	end
-end
 end
 
 --[[Unused Bytes Repurposed:
