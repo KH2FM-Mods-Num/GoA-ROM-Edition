@@ -1513,6 +1513,12 @@ assets:
   source:
   - name: remastered/obj/F_NM070.mdlx/-3.dds
     type: internal
+#Roxas-exclusive Skateboard MSET for Mail Delivery
+- name: obj/F_TT010_ROXAS.mset
+  method: copy
+  source:
+  - name: obj/F_TT010.mset
+    type: internal
 #Item Pictures
 - name: itempic/item-000.imd #Unused Items
   method: imd
@@ -4482,7 +4488,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt02/evt.script
-- name: ard/tt06.ard #Market Street: Station Heights (No Jobs Post-TT1 & Short Day 2)
+- name: ard/tt06.ard #Market Street: Station Heights (No Jobs Post-TT1 & Short Day 2 & Revert on Mail Delivery)
   multi:
   - name: ard/jp/tt06.ard
   - name: ard/us/tt06.ard
@@ -4497,6 +4503,11 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt06/map.script
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt06/btl.script
   - name: evt
     type: areadatascript
     method: areadatascript

@@ -2288,6 +2288,12 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 		WriteShort(Sys3+0x01FE6,0x00) --Reflera
 		WriteShort(Sys3+0x02016,0x00) --Reflega
 		WriteShort(Sys3+0x07056,0x00) --Trinity (Solo)
+	else --Better STT enabled
+		if Events(0x5B,0x5B,0x5B) or Events(0xC0,0xC0,0xC0) then --Mail Delivery softlock fix
+			WriteString(Obj0+0x15030,'F_TT010_ROXAS.mset\0')
+		else --Let Limit Form use skateboard
+			WriteString(Obj0+0x15030,'F_TT010.mset\0')
+		end
 	end
 	local Equip = ReadShort(Save+0x24F0) --Currently equipped Keyblade
 	local Store = ReadShort(Save+0x1CF9) --Last equipped Keyblade
