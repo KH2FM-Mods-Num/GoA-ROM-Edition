@@ -448,7 +448,7 @@ if true then
 	elseif World == 0x0C or World == 0x0D then --Disney Castle & Timeless River
 		Bitmask = 0x00010
 		if ReadByte(Save+0x1E1E) > 0 then --Post-HB4
-			Bitmask == 0x00020
+			Bitmask = 0x00020
 		end
 		--Lv 18, 34 for DC
 		--Lv 19, 34 for TR
