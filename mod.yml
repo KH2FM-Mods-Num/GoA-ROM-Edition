@@ -1391,6 +1391,45 @@ assets:
     method: copy
     source:
     - name: worl.bin
+#Proper Fast Oogie Boogie
+- name: obj/B_NM000.mdlx
+  method: binarc
+  source:
+  - name: b_nm
+    type: bdx
+    method: copy
+    source:
+    - name: B_NM000.bin
+- name: remastered/obj/B_NM000.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_NM000.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/B_NM000.mdlx/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_NM000.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/B_NM000.mdlx/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_NM000.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/B_NM000.mdlx/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_NM000.mdlx/-3.dds
+    type: internal
+- name: remastered/obj/B_NM000.mdlx/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_NM000.mdlx/-4.dds
+    type: internal
 #GoA Data Portal New Flag Requirements
 - name: obj/F_HB130.mdlx
   method: binarc

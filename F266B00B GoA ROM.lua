@@ -1080,12 +1080,6 @@ if ReadByte(Save+0x1E5E) > 0 then
 		WriteByte(Save+0x1E5E,3)
 	end
 end
---Fast Oogie
-if Place == 0x090E and Events(0x37,0x37,0x37) then
-	WriteInt(Slot2+8,0)
-	WriteInt(Slot3+8,0)
-	WriteInt(Slot4+8,0)
-end
 end
 
 function Ag()
