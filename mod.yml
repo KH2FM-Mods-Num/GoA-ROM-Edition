@@ -1391,6 +1391,45 @@ assets:
     method: copy
     source:
     - name: worl.bin
+#Proper Fast Oogie Boogie
+- name: obj/B_NM000.mdlx
+  method: binarc
+  source:
+  - name: b_nm
+    type: bdx
+    method: copy
+    source:
+    - name: B_NM000.bin
+- name: remastered/obj/B_NM000.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_NM000.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/B_NM000.mdlx/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_NM000.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/B_NM000.mdlx/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_NM000.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/B_NM000.mdlx/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_NM000.mdlx/-3.dds
+    type: internal
+- name: remastered/obj/B_NM000.mdlx/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_NM000.mdlx/-4.dds
+    type: internal
 #GoA Data Portal New Flag Requirements
 - name: obj/F_HB130.mdlx
   method: binarc
@@ -1512,6 +1551,12 @@ assets:
   method: copy
   source:
   - name: remastered/obj/F_NM070.mdlx/-3.dds
+    type: internal
+#Roxas-exclusive Skateboard MSET for Mail Delivery
+- name: obj/F_TT010_ROXAS.mset
+  method: copy
+  source:
+  - name: obj/F_TT010.mset
     type: internal
 #Item Pictures
 - name: itempic/item-000.imd #Unused Items
@@ -4482,7 +4527,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt02/evt.script
-- name: ard/tt06.ard #Market Street: Station Heights (No Jobs Post-TT1 & Short Day 2)
+- name: ard/tt06.ard #Market Street: Station Heights (No Jobs Post-TT1 & Short Day 2 & Revert on Mail Delivery)
   multi:
   - name: ard/jp/tt06.ard
   - name: ard/us/tt06.ard
@@ -4497,6 +4542,11 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt06/map.script
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt06/btl.script
   - name: evt
     type: areadatascript
     method: areadatascript

@@ -426,7 +426,7 @@ if true then
 	elseif World == 0x0C or World == 0x0D then --Disney Castle & Timeless River
 		Bitmask = 0x00010
 		if ReadByte(Save+0x1E1E) > 0 then --Post-HB4
-			Bitmask == 0x00020
+			Bitmask = 0x00020
 		end
 		--Lv 18, 34 for DC
 		--Lv 19, 34 for TR
@@ -1057,12 +1057,6 @@ if ReadByte(Save+0x1E5E) > 0 then
 	elseif PrevPlace == 0x080E then --Santa's House
 		WriteByte(Save+0x1E5E,3)
 	end
-end
---Fast Oogie
-if Place == 0x090E and Events(0x37,0x37,0x37) then
-	WriteInt(Slot2+8,0)
-	WriteInt(Slot3+8,0)
-	WriteInt(Slot4+8,0)
 end
 end
 
@@ -2266,6 +2260,12 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 		WriteShort(Sys3+0x01FE6,0x00) --Reflera
 		WriteShort(Sys3+0x02016,0x00) --Reflega
 		WriteShort(Sys3+0x07056,0x00) --Trinity (Solo)
+	else --Better STT enabled
+		if Events(0x5B,0x5B,0x5B) or Events(0xC0,0xC0,0xC0) then --Mail Delivery softlock fix
+			WriteString(Obj0+0x15030,'F_TT010_ROXAS.mset\0')
+		else --Let Limit Form use skateboard
+			WriteString(Obj0+0x15030,'F_TT010.mset\0')
+		end
 	end
 	local Equip = ReadShort(Save+0x24F0) --Currently equipped Keyblade
 	local Store = ReadShort(Save+0x1CF9) --Last equipped Keyblade
