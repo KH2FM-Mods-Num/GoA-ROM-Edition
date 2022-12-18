@@ -1,4 +1,4 @@
-title: GoA ROM Edition
+title: GoA ROM Edition v1.53.4
 description: GoA, but with a lot of stuff done through ROM editing to reduce workload on Lua.
 assets:
 #Lua Script
@@ -16,6 +16,11 @@ assets:
     source:
     - name: 00battle.bin/BonsList.yml
       type: bons
+  - name: btlv #Rework battle levels format to be more easily randomized
+    type: list
+    method: copy
+    source:
+    - name: 00battle.bin/Btlv.bin
   - name: enmp #Halve MCP's HP & Remove Terra and Datas' Fixed Levels
     type: list
     method: copy
@@ -1507,6 +1512,12 @@ assets:
   method: copy
   source:
   - name: remastered/obj/F_NM070.mdlx/-3.dds
+    type: internal
+#Roxas-exclusive Skateboard MSET for Mail Delivery
+- name: obj/F_TT010_ROXAS.mset
+  method: copy
+  source:
+  - name: obj/F_TT010.mset
     type: internal
 #Item Pictures
 - name: itempic/item-000.imd #Unused Items
@@ -4477,7 +4488,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt02/evt.script
-- name: ard/tt06.ard #Market Street: Station Heights (No Jobs Post-TT1 & Short Day 2)
+- name: ard/tt06.ard #Market Street: Station Heights (No Jobs Post-TT1 & Short Day 2 & Revert on Mail Delivery)
   multi:
   - name: ard/jp/tt06.ard
   - name: ard/us/tt06.ard
@@ -4492,6 +4503,11 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt06/map.script
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt06/btl.script
   - name: evt
     type: areadatascript
     method: areadatascript

@@ -1,0 +1,15 @@
+Program 0xC0
+Progress 0x8db
+Party NO_FRIEND
+Mission 0x149 "TT06_LETTER_01"
+Unk1d 1
+Spawn "b_40"
+Spawn "b_50"
+
+Program 0x5B
+Progress 0x8db
+Party NO_FRIEND
+Mission 0xD0 "TT06_WORK_LETTER"
+Unk1d 1
+Spawn "b_40"
+Spawn "b_50"

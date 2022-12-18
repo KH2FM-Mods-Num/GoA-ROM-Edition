@@ -1,4 +1,4 @@
-18:
+18: #Prison Keeper (Add HP Up)
   Sora:
     RewardId: 18
     CharacterId: 1
@@ -47,7 +47,7 @@
     BonusItem1: 0
     BonusItem2: 0
     Padding: 0
-33:
+33: #Twilight Thorn (Remove HP Up)
   Roxas:
     RewardId: 33
     CharacterId: 14
