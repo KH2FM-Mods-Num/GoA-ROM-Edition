@@ -1423,7 +1423,7 @@ if Place == 0x1A04 then
 		elseif Progress == 9 then --After Sandlot Nobodies II
 			WarpRoom = 0x02
 		elseif Progress == 10 then --Post 2nd Visit
-			WarpRoom = 0x02
+			WarpRoom = 0x1A
 		elseif Progress == 11 then --3rd Visit
 			WarpRoom = 0x77
 		elseif Progress == 12 then --[Before The Old Mansion Nobodies, After The Old Mansion Nobodies]
