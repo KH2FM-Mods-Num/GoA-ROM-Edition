@@ -739,7 +739,9 @@ if ReadByte(Save+0x3524) == 6 then --In Anti Form
 	BitOr(Save+0x36C0,0x20) --Unlocks Anti Form
 end--]]
 --Anti Form Costs Max Drive Instead of a Static 9.
-WriteByte(Sys3+0x00500,ReadByte(Slot1+0x1B2))
+if ReadByte(Sys3+0x00500) >= 5 then
+	WriteByte(Sys3+0x00500,ReadByte(Slot1+0x1B2))
+end
 end
 
 function TWtNW()
