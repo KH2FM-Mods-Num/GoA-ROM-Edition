@@ -2,11 +2,12 @@
 --Last Update: JP shop assembly code & battle level rework
 --Todo: Maybe item-based progress flags
 
-LUAGUI_NAME = 'GoA ROM Randomizer Build'
+LUAGUI_NAME = 'GoA ROM Non-Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
-LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
+LUAGUI_DESC = 'A GoA build for use without the Randomizer. Requires ROM patching.'
 
 function _OnInit()
+print('GoA v1.53.4')
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
