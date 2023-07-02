@@ -1938,22 +1938,6 @@ if ReadByte(Save+0x1E1E) > 0 then
 		WriteByte(Save+0x1E1E,3)
 	end
 end
---Marluxia HUD Pop-Up
-if Place == 0x2604 and ReadInt(CutNow) == 0x7A then
-	if Events(0x91,0x91,0x91) then --AS
-		if (not OnPC) and ReadShort(0x1C58FE0) ~= 0x923 then
-			WriteByte(Cntrl,0x00)
-		elseif OnPC and ReadShort(0x29ED460 - 0x56450E) ~= 0x923 then
-			WriteByte(Cntrl,0x00)
-		end
-	elseif Events(0x96,0x96,0x96) then --Data
-		if (not OnPC) and ReadShort(0x1C59114) ~= 0x923 then
-			WriteByte(Cntrl,0x00)
-		elseif OnPC and ReadShort(0x29ED594 - 0x56450E) ~= 0x923 then
-			WriteByte(Cntrl,0x00)
-		end
-	end
-end
 end
 
 function SP()
