@@ -4212,3 +4212,267 @@ assets:
     method: bdscript
     source:
     - name: ard/hb38/HB38_FM_MAR.bdscript
+- name: msn/jp/TT06_BAGGAGE_01.bar #Prevent Warp to STT Day 2 (Cargo Climb Roxas)
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_BAGGAGE_01.bdscript
+- name: msn/us/TT06_BAGGAGE_01.bar
+  multi:
+  - name: msn/fr/TT06_BAGGAGE_01.bar
+  - name: msn/gr/TT06_BAGGAGE_01.bar
+  - name: msn/it/TT06_BAGGAGE_01.bar
+  - name: msn/sp/TT06_BAGGAGE_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_BAGGAGE_01.bdscript
+- name: msn/jp/TT06_BAGGAGE_02.bar #Prevent Warp to STT Day 2 (Cargo Climb Sora)
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_BAGGAGE_02.bdscript
+- name: msn/us/TT06_BAGGAGE_02.bar
+  multi:
+  - name: msn/fr/TT06_BAGGAGE_02.bar
+  - name: msn/gr/TT06_BAGGAGE_02.bar
+  - name: msn/it/TT06_BAGGAGE_02.bar
+  - name: msn/sp/TT06_BAGGAGE_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_BAGGAGE_02.bdscript
+- name: msn/jp/TT06_LETTER_01.bar #Prevent Warp to STT Day 2 (Mail Delivery Roxas)
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_LETTER_01.bdscript
+- name: msn/us/TT06_LETTER_01.bar
+  multi:
+  - name: msn/fr/TT06_LETTER_01.bar
+  - name: msn/gr/TT06_LETTER_01.bar
+  - name: msn/it/TT06_LETTER_01.bar
+  - name: msn/sp/TT06_LETTER_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_LETTER_01.bdscript
+- name: msn/jp/TT06_LETTER_02.bar #Prevent Warp to STT Day 2 (Mail Delivery Sora)
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_LETTER_02.bdscript
+- name: msn/us/TT06_LETTER_02.bar
+  multi:
+  - name: msn/fr/TT06_LETTER_02.bar
+  - name: msn/gr/TT06_LETTER_02.bar
+  - name: msn/it/TT06_LETTER_02.bar
+  - name: msn/sp/TT06_LETTER_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_LETTER_02.bdscript
+- name: msn/jp/TT06_PERFORM_01.bar #Prevent Warp to STT Day 2 (Grandstander Roxas)
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_PERFORM_01.bdscript
+- name: msn/us/TT06_PERFORM_01.bar
+  multi:
+  - name: msn/fr/TT06_PERFORM_01.bar
+  - name: msn/gr/TT06_PERFORM_01.bar
+  - name: msn/it/TT06_PERFORM_01.bar
+  - name: msn/sp/TT06_PERFORM_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_PERFORM_01.bdscript
+- name: msn/jp/TT06_PERFORM_02.bar #Prevent Warp to STT Day 2 (Grandstander Sora)
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_PERFORM_02.bdscript
+- name: msn/us/TT06_PERFORM_02.bar
+  multi:
+  - name: msn/fr/TT06_PERFORM_02.bar
+  - name: msn/gr/TT06_PERFORM_02.bar
+  - name: msn/it/TT06_PERFORM_02.bar
+  - name: msn/sp/TT06_PERFORM_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_PERFORM_02.bdscript
+- name: msn/jp/TT07_CLEAN_01.bar #Prevent Warp to STT Day 2 (Junk Sweep Roxas)
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_CLEAN_01.bdscript
+- name: msn/us/TT07_CLEAN_01.bar
+  multi:
+  - name: msn/fr/TT07_CLEAN_01.bar
+  - name: msn/gr/TT07_CLEAN_01.bar
+  - name: msn/it/TT07_CLEAN_01.bar
+  - name: msn/sp/TT07_CLEAN_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_CLEAN_01.bdscript
+- name: msn/jp/TT07_CLEAN_02.bar #Prevent Warp to STT Day 2 (Junk Sweep Sora)
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_CLEAN_02.bdscript
+- name: msn/us/TT07_CLEAN_02.bar
+  multi:
+  - name: msn/fr/TT07_CLEAN_02.bar
+  - name: msn/gr/TT07_CLEAN_02.bar
+  - name: msn/it/TT07_CLEAN_02.bar
+  - name: msn/sp/TT07_CLEAN_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_CLEAN_02.bdscript
+- name: msn/jp/TT07_POSTER_01.bar #Prevent Warp to STT Day 2 (Poster Duty Roxas)
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_POSTER_01.bdscript
+- name: msn/us/TT07_POSTER_01.bar
+  multi:
+  - name: msn/fr/TT07_POSTER_01.bar
+  - name: msn/gr/TT07_POSTER_01.bar
+  - name: msn/it/TT07_POSTER_01.bar
+  - name: msn/sp/TT07_POSTER_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_POSTER_01.bdscript
+- name: msn/jp/TT07_POSTER_02.bar #Prevent Warp to STT Day 2 (Poster Duty Sora)
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_POSTER_02.bdscript
+- name: msn/us/TT07_POSTER_02.bar
+  multi:
+  - name: msn/fr/TT07_POSTER_02.bar
+  - name: msn/gr/TT07_POSTER_02.bar
+  - name: msn/it/TT07_POSTER_02.bar
+  - name: msn/sp/TT07_POSTER_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_POSTER_02.bdscript
+- name: msn/jp/TT07_WORM_01.bar #Prevent Warp to STT Day 2 (Bumble-Buster Roxas)
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_WORM_01.bdscript
+- name: msn/us/TT07_WORM_01.bar
+  multi:
+  - name: msn/fr/TT07_WORM_01.bar
+  - name: msn/gr/TT07_WORM_01.bar
+  - name: msn/it/TT07_WORM_01.bar
+  - name: msn/sp/TT07_WORM_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_WORM_01.bdscript
+- name: msn/jp/TT07_WORM_02.bar #Prevent Warp to STT Day 2 (Bumble-Buster Sora)
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_WORM_02.bdscript
+- name: msn/us/TT07_WORM_02.bar
+  multi:
+  - name: msn/fr/TT07_WORM_02.bar
+  - name: msn/gr/TT07_WORM_02.bar
+  - name: msn/it/TT07_WORM_02.bar
+  - name: msn/sp/TT07_WORM_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_WORM_02.bdscript
