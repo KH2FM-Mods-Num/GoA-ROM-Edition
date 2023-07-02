@@ -838,10 +838,6 @@ if Place == 0x1212 then
 		Spawn('Short',0x05,0x060,0x000) --Despawn Door RC
 	end
 end
---Xemnas II Laser Dome Skip
-if Place == 0x1412 and ReadInt(Slot3) == 1 then
-	WriteInt(Slot3,0)
-end
 end
 
 function LoD()

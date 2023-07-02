@@ -1392,6 +1392,107 @@ assets:
     method: copy
     source:
     - name: worl.bin
+#Proper Xemnas II Dome Skip
+- name: obj/B_EX170_LAST.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    type: bdx
+    method: bdscript
+    source:
+    - name: obj/B_EX170_LAST.bdscript
+- name: obj/B_EX170_LAST_LV99.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    type: bdx
+    method: bdscript
+    source:
+    - name: obj/B_EX170_LAST_LV99.bdscript
+- name: remastered/obj/B_EX170_LAST.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-3.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-6.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-4.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST_LV99.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST_LV99.mdlx/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST_LV99.mdlx/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST_LV99.mdlx/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-3.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST_LV99.mdlx/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-6.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST_LV99.mdlx/-5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-4.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST_LV99.mdlx/-6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-5.dds
+    type: internal
 #Proper Fast Oogie Boogie
 - name: obj/B_NM000.mdlx
   method: binarc
