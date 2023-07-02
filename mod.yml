@@ -1431,6 +1431,57 @@ assets:
   source:
   - name: remastered/obj/B_NM000.mdlx/-4.dds
     type: internal
+#Marluxia HUD (Hide if Vanilla)
+- name: obj/N_CM000_BTL.mdlx
+  method: binarc
+  source:
+  - name: n_cm
+    type: bdx
+    method: bdscript
+    source:
+    - name: obj/N_CM000_BTL.bdscript
+- name: remastered/obj/N_CM000_BTL.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM000_BTL.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/N_CM000_BTL.mdlx/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM000_BTL.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/N_CM000_BTL.mdlx/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM000_BTL.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/N_CM000_BTL.mdlx/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM000_BTL.mdlx/-3.dds
+    type: internal
+- name: remastered/obj/N_CM000_BTL.mdlx/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM000_BTL.mdlx/-4.dds
+    type: internal
+- name: remastered/obj/N_CM000_BTL.mdlx/-5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM000_BTL.mdlx/-5.dds
+    type: internal
+- name: remastered/obj/N_CM000_BTL.mdlx/-6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM000_BTL.mdlx/-6.dds
+    type: internal
 #GoA Data Portal New Flag Requirements
 - name: obj/F_HB130.mdlx
   method: binarc
@@ -4865,3 +4916,25 @@ assets:
   source:
   - name: remastered/msn/us/LK05_MS201.bar/US_LK05_MS201_bar0.png
     type: internal
+- name: msn/jp/HB38_FM_MAR.bar #Marluxia HUD (Show if boss rando)
+  method: binarc
+  source:
+  - name: ms_b
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/hb38/HB38_FM_MAR.bdscript
+- name: msn/us/HB38_FM_MAR.bar
+  multi:
+  - name: msn/fr/HB38_FM_MAR.bar
+  - name: msn/gr/HB38_FM_MAR.bar
+  - name: msn/it/HB38_FM_MAR.bar
+  - name: msn/sp/HB38_FM_MAR.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: ms_b
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/hb38/HB38_FM_MAR.bdscript
