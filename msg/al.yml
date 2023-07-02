@@ -7,14 +7,6 @@
     {:chardelay 33 00}別にきょうみないや。
 
     {:chardelay A2 00}戦っても負ける気はしない!
-  jp: >-
-    {:unk08 02 00 06}レクセウスとの參闘を勢草できる。
-    
-    裏のデータは浜待されているらしい。
-
-    {:chardelay 33 00}逆にきょうみないや。
-
-    {:chardelay A2 00}參っても墓ける気はしない!
   en: >-
     {:unk08 02 00 06}Battle Lexaeus again, but be warned--
 

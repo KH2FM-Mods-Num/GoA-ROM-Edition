@@ -23,9 +23,10 @@ assets:
     - name: 00battle.bin/Btlv.bin
   - name: enmp #Halve MCP's HP & Remove Terra and Datas' Fixed Levels
     type: list
-    method: copy
+    method: listpatch
     source:
-    - name: 00battle.bin/Enmp.bin
+    - name: 00battle.bin/EnmpList.yml
+      type: enmp
   - name: plrp #Unequip Auto Limit
     type: list
     method: listpatch
@@ -34,9 +35,9 @@ assets:
       type: plrp
 #Form Starting Weapons
 - name: 00common.bdx
-  method: copy
+  method: bdscript
   source:
-  - name: 00common.bin
+  - name: 00common.bdscript
 #Big Chest -> Small Chest & TR Keyblade -> New Keyblade
 - name: 00objentry.bin
   method: listpatch
@@ -1397,9 +1398,9 @@ assets:
   source:
   - name: b_nm
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/B_NM000.bin
+    - name: obj/B_NM000.bdscript
 - name: remastered/obj/B_NM000.mdlx/-0.dds
   platform: pc
   method: copy
@@ -1436,74 +1437,74 @@ assets:
   source:
   - name: f_hb
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_HB130.bin
+    - name: obj/F_HB130.bdscript
 #Remove Bulky Vendors 2nd Visit Requirements (trap_progress_is_second -> trap_area_battle_set)
 - name: obj/F_AL050.mdlx
   method: binarc
   source:
   - name: f_al
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_AL050.bin
+    - name: obj/F_AL050.bdscript
 - name: obj/F_BB040.mdlx
   method: binarc
   source:
   - name: f_bb
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_BB040.bin
+    - name: obj/F_BB040.bdscript
 - name: obj/F_BB070.mdlx
   method: binarc
   source:
   - name: f_bb
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_BB040.bin
+    - name: obj/F_BB040.bdscript
 - name: obj/F_HE000.mdlx
   method: binarc
   source:
   - name: f_he
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_HE000.bin
+    - name: obj/F_HE000.bdscript
 - name: obj/F_MU040.mdlx
   method: binarc
   source:
   - name: f_mu
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_MU040.bin
+    - name: obj/F_MU040.bdscript
 - name: obj/F_MU050.mdlx
   method: binarc
   source:
   - name: f_mu
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_MU040.bin
+    - name: obj/F_MU040.bdscript
 - name: obj/F_MU060.mdlx
   method: binarc
   source:
   - name: f_mu
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_MU040.bin
+    - name: obj/F_MU040.bdscript
 - name: obj/F_NM070.mdlx
   method: binarc
   source:
   - name: f_nm
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_NM070.bin
+    - name: obj/F_NM070.bdscript
 - name: remastered/obj/F_HE000.mdlx/-0.dds
   platform: pc
   method: copy
@@ -3065,7 +3066,7 @@ assets:
     method: kh2msg
     source:
     - name: msg/al.yml
-      language: jp
+      language: je
 - name: msg/jp/dc.bar
   platform: pc
   method: binarc
@@ -3075,7 +3076,7 @@ assets:
     method: kh2msg
     source:
     - name: msg/dc.yml
-      language: jp
+      language: je
 - name: msg/jp/hb.bar
   platform: pc
   method: binarc
@@ -3085,7 +3086,7 @@ assets:
     method: kh2msg
     source:
     - name: msg/hb.yml
-      language: jp
+      language: je
 - name: msg/jp/he.bar
   platform: pc
   method: binarc
@@ -3095,7 +3096,7 @@ assets:
     method: kh2msg
     source:
     - name: msg/he.yml
-      language: jp
+      language: je
 - name: msg/jp/nm.bar
   platform: pc
   method: binarc
@@ -3105,7 +3106,7 @@ assets:
     method: kh2msg
     source:
     - name: msg/nm.yml
-      language: jp
+      language: je
 - name: msg/jp/tr.bar
   platform: pc
   method: binarc
@@ -3116,6 +3117,8 @@ assets:
     source:
     - name: msg/tr.yml
       language: jp
+    - name: msg/tr.yml
+      language: je
 - name: remastered/msg/jp/al.bar/JP_al_bar0.png
   platform: pc
   method: copy
@@ -4189,9 +4192,9 @@ assets:
     - name: ard/mu07/evt.script
   - name: mu_g
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: ard/mu07/mu_g.bin
+    - name: ard/mu07/mu_g.bdscript
 - name: ard/mu09.ard #Palace Gate (GoA Warp)
   multi:
   - name: ard/jp/mu09.ard
@@ -4384,9 +4387,9 @@ assets:
   source:
   - name: tr_g
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: ard/tr03/tr_g.bin
+    - name: ard/tr03/tr_g.bdscript
 - name: ard/tr04.ard #I/O Tower: Hallway (Skip HB)
   multi:
   - name: ard/jp/tr04.ard

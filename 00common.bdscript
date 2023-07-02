@@ -1,0 +1,203 @@
+---
+WorkSize: 0
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 9
+  Addr: TR9
+- Key: 8
+  Addr: TR8
+- Key: 7
+  Addr: TR7
+Name: 00common
+
+---
+; codeLabels: 
+; codeRevealer: 
+ section .text
+TR9:
+ ret 
+TR8:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L34
+ pushFromFSp 0
+ gosub 4, L122
+ ret 
+L34:
+ popToSp 0
+ pushFromFSp 0
+ dup 
+ pushImm 13318
+ sub 
+ jz L68
+ dup 
+ pushImm 13320
+ sub 
+ jz L68
+ dup 
+ pushImm 13322
+ sub 
+ jz L68
+ dup 
+ pushImm 13324
+ sub 
+ jz L68
+ jmp L120
+L68:
+ pushImm 13325
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ eqz 
+ jz L83
+ pushImm 13325
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+ jmp L118
+L83:
+ pushImm 13326
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ eqz 
+ jz L98
+ pushImm 13326
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+ jmp L118
+L98:
+ pushImm 13327
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ eqz 
+ jz L113
+ pushImm 13327
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+ jmp L118
+L113:
+ pushImm 13328
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+L118:
+ jmp L120
+L120:
+ drop 
+ ret 
+L122:
+ popToSp 0
+ pushFromFSp 0
+ dup 
+ pushImm 8236
+ sub 
+ jz L149
+ dup 
+ pushImm 8270
+ sub 
+ jz L149
+ dup 
+ pushImm 8240
+ sub 
+ jz L149
+ jmp L183
+L149:
+ pushImm 8236
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ dup 
+ jz L163
+ pushImm 8270
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ eqzv 
+L163:
+ dup 
+ jz L172
+ pushImm 8240
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ eqzv 
+L172:
+ jz L181
+ pushImm 8242
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+ jmp L181
+L181:
+ jmp L183
+L183:
+ drop 
+ ret 
+TR7:
+ pushImm 2048
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+ gosub 4, L193
+ ret 
+L193:
+ pushImm 1
+ pushImm 41
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 2
+ pushImm 75
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 3
+ pushImm 49
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 4
+ pushImm 81
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 5
+ pushImm 54
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 6
+ pushImm 55
+ pushImm 80
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 7
+ pushImm 72
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 8
+ pushImm 62
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 9
+ pushImm 59
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 10
+ pushImm 60
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 11
+ pushImm 61
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 12
+ pushImm 74
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 13
+ pushImm 73
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushImm 1
+ pushImm 81 ;give Kingdom Key D to Valor Form
+ syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
+ pushImm 2
+ pushImm 0
+ syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
+ pushImm 3
+ pushImm 0
+ syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
+ pushImm 4
+ pushImm 44 ;give Alpha Weapon to Master Form
+ syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
+ pushImm 5
+ pushImm 45 ;give Omega Weapon to Final Form
+ syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
+ pushImm 6
+ pushImm 71
+ syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
+ pushImm 10
+ pushImm 42
+ syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
+ ret 
+D393:
+TXT393:
+ db 'jump start',0,0
+TXT399:
+ db 'jump end',0,0
