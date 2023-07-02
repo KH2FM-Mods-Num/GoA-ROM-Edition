@@ -60,3 +60,40 @@
     BonusItem1: 82
     BonusItem2: 0
     Padding: 0
+72: #Transport to Remembrance (Add Promise Charm)
+  Sora:
+    RewardId: 72
+    CharacterId: 1
+    HpIncrease: 0
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 1
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Padding: 0
+  Donald:
+    RewardId: 72
+    CharacterId: 2
+    HpIncrease: 3
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Padding: 0
+  Goofy:
+    RewardId: 72
+    CharacterId: 3
+    HpIncrease: 4
+    MpIncrease: 0
+    DriveGaugeUpgrade: 0
+    ItemSlotUpgrade: 0
+    AccessorySlotUpgrade: 0
+    ArmorSlotUpgrade: 0
+    BonusItem1: 0
+    BonusItem2: 0
+    Padding: 0
