@@ -1417,7 +1417,7 @@ assets:
     method: bdscript
     source:
     - name: obj/B_NM000.bdscript
-- name: obj/N_CM000_BTL.mdlx #Marluxia HUD (Hide if Vanilla)
+- name: obj/N_CM000_BTL.mdlx #Hide Marluxia HUD if vanilla
   method: binarc
   source:
   - name: n_cm
@@ -4168,7 +4168,7 @@ assets:
     source:
     - name: ard/tt41/evt.script
 #MSN Editing
-- name: msn/jp/LK05_MS201.bar #Hyenas II (Fast Hyenas)
+- name: msn/jp/LK05_MS201.bar #Fast Hyenas II
   method: binarc
   source:
   - name: LK05
@@ -4190,7 +4190,7 @@ assets:
     method: copy
     source:
     - name: ard/lk05/LK05_MS201.bin
-- name: msn/jp/HB38_FM_MAR.bar #Marluxia HUD (Show if boss rando)
+- name: msn/jp/HB38_FM_MAR.bar #Show Marluxia HUD if boss rando
   method: binarc
   source:
   - name: ms_b
