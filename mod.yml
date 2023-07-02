@@ -1446,65 +1446,65 @@ assets:
   source:
   - name: f_al
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_AL050.bin
+    - name: obj/F_AL050.bdscript
 - name: obj/F_BB040.mdlx
   method: binarc
   source:
   - name: f_bb
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_BB040.bin
+    - name: obj/F_BB040.bdscript
 - name: obj/F_BB070.mdlx
   method: binarc
   source:
   - name: f_bb
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_BB040.bin
+    - name: obj/F_BB040.bdscript
 - name: obj/F_HE000.mdlx
   method: binarc
   source:
   - name: f_he
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_HE000.bin
+    - name: obj/F_HE000.bdscript
 - name: obj/F_MU040.mdlx
   method: binarc
   source:
   - name: f_mu
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_MU040.bin
+    - name: obj/F_MU040.bdscript
 - name: obj/F_MU050.mdlx
   method: binarc
   source:
   - name: f_mu
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_MU040.bin
+    - name: obj/F_MU040.bdscript
 - name: obj/F_MU060.mdlx
   method: binarc
   source:
   - name: f_mu
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_MU040.bin
+    - name: obj/F_MU040.bdscript
 - name: obj/F_NM070.mdlx
   method: binarc
   source:
   - name: f_nm
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_NM070.bin
+    - name: obj/F_NM070.bdscript
 - name: remastered/obj/F_HE000.mdlx/-0.dds
   platform: pc
   method: copy
