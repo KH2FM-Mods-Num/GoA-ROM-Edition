@@ -1393,6 +1393,28 @@ assets:
     source:
     - name: worl.bin
 #AI (BDX) Editing
+- name: limit/fm/jack.bar #Dance Call crash fix
+  method: binarc
+  source:
+  - name: limi
+    type: bdx
+    method: bdscript
+    source:
+    - name: limit_jack.bdscript
+- name: limit/us/jack.bar
+  multi:
+  - name: limit/fr/jack.bar
+  - name: limit/gr/jack.bar
+  - name: limit/it/jack.bar
+  - name: limit/sp/jack.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: limi
+    type: bdx
+    method: bdscript
+    source:
+    - name: limit_jack.bdscript
 - name: obj/B_EX170_LAST.mdlx #Proper Xemnas II Dome Skip
   method: binarc
   source:
