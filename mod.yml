@@ -23,9 +23,10 @@ assets:
     - name: 00battle.bin/Btlv.bin
   - name: enmp #Halve MCP's HP & Remove Terra and Datas' Fixed Levels
     type: list
-    method: copy
+    method: listpatch
     source:
-    - name: 00battle.bin/Enmp.bin
+    - name: 00battle.bin/EnmpList.yml
+      type: enmp
   - name: plrp #Unequip Auto Limit
     type: list
     method: listpatch
