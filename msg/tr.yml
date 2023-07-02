@@ -21,14 +21,6 @@
     {:chardelay 33 00}別にきょうみないや。
     
     {:chardelay A1 00}危なそうだけど、調べてみよう!
-  jp: >-
-    {:unk08 02 00 06}個移に霊きついた笑博の乗
-    
-    ”アブセント·シルエット”だ……。
-    
-    {:chardelay 33 00}逆にきょうみないや。
-    
-    {:chardelay A1 00}死なそうだけど、絡べてみよう!
   en: >-
     {:unk08 02 00 06}It's an Absent Silhouette, a shadowy presence
 
@@ -46,14 +38,6 @@
     {:chardelay 33 00}別にきょうみないや。
 
     {:chardelay A1 00}戦っても負ける気はしない!
-  jp: >-
-    {:unk08 02 00 06}ラクシーヌとの參闘を勢草できる。
-
-    裏のデータは浜待されているらしい。
-
-    {:chardelay 33 00}逆にきょうみないや。
-
-    {:chardelay A1 00}參っても墓ける気はしない!
   en: >-
     {:unk08 02 00 06}Battle Larxene again, but be warned--
 
