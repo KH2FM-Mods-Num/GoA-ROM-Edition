@@ -35,9 +35,9 @@ assets:
       type: plrp
 #Form Starting Weapons
 - name: 00common.bdx
-  method: copy
+  method: bdscript
   source:
-  - name: 00common.bin
+  - name: 00common.bdscript
 #Big Chest -> Small Chest & TR Keyblade -> New Keyblade
 - name: 00objentry.bin
   method: listpatch
@@ -1398,9 +1398,9 @@ assets:
   source:
   - name: b_nm
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/B_NM000.bin
+    - name: obj/B_NM000.bdscript
 - name: remastered/obj/B_NM000.mdlx/-0.dds
   platform: pc
   method: copy
@@ -1437,9 +1437,9 @@ assets:
   source:
   - name: f_hb
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: obj/F_HB130.bin
+    - name: obj/F_HB130.bdscript
 #Remove Bulky Vendors 2nd Visit Requirements (trap_progress_is_second -> trap_area_battle_set)
 - name: obj/F_AL050.mdlx
   method: binarc
@@ -4192,9 +4192,9 @@ assets:
     - name: ard/mu07/evt.script
   - name: mu_g
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: ard/mu07/mu_g.bin
+    - name: ard/mu07/mu_g.bdscript
 - name: ard/mu09.ard #Palace Gate (GoA Warp)
   multi:
   - name: ard/jp/mu09.ard
@@ -4387,9 +4387,9 @@ assets:
   source:
   - name: tr_g
     type: bdx
-    method: copy
+    method: bdscript
     source:
-    - name: ard/tr03/tr_g.bin
+    - name: ard/tr03/tr_g.bdscript
 - name: ard/tr04.ard #I/O Tower: Hallway (Skip HB)
   multi:
   - name: ard/jp/tr04.ard

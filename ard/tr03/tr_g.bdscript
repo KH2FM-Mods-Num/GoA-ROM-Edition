@@ -1,0 +1,42 @@
+---
+WorkSize: 0
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 2
+  Addr: TR2
+Name: tr_get_ability1
+
+---
+; codeLabels: 
+; codeRevealer: 
+ section .text
+TR2:
+ pushImm 12
+ syscall 0, 61 ; trap_saveram_get_partram (1 in, 1 out)
+ popToSp 0
+ pushFromFSp 0
+ pushImm 8
+ syscall 0, 96 ; trap_partram_add_ap (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 211
+ pushImm 1
+ syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
+ pushFromFSp 0
+ pushImm 444
+ pushImm 1
+ syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
+ pushFromFSp 0
+ pushImm 215
+ pushImm 1
+ syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
+ pushFromFSp 0
+ pushImm 417
+ pushImm 0 ;unequip Auto Limit
+ syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
+ ret 
+D69:
+TXT69:
+ db 'jump start',0,0
+TXT75:
+ db 'jump end',0,0
