@@ -3065,7 +3065,7 @@ assets:
     method: kh2msg
     source:
     - name: msg/al.yml
-      language: jp
+      language: je
 - name: msg/jp/dc.bar
   platform: pc
   method: binarc
@@ -3075,7 +3075,7 @@ assets:
     method: kh2msg
     source:
     - name: msg/dc.yml
-      language: jp
+      language: je
 - name: msg/jp/hb.bar
   platform: pc
   method: binarc
@@ -3085,7 +3085,7 @@ assets:
     method: kh2msg
     source:
     - name: msg/hb.yml
-      language: jp
+      language: je
 - name: msg/jp/he.bar
   platform: pc
   method: binarc
@@ -3095,7 +3095,7 @@ assets:
     method: kh2msg
     source:
     - name: msg/he.yml
-      language: jp
+      language: je
 - name: msg/jp/nm.bar
   platform: pc
   method: binarc
@@ -3105,7 +3105,7 @@ assets:
     method: kh2msg
     source:
     - name: msg/nm.yml
-      language: jp
+      language: je
 - name: msg/jp/tr.bar
   platform: pc
   method: binarc
@@ -3116,6 +3116,8 @@ assets:
     source:
     - name: msg/tr.yml
       language: jp
+    - name: msg/tr.yml
+      language: je
 - name: remastered/msg/jp/al.bar/JP_al_bar0.png
   platform: pc
   method: copy
