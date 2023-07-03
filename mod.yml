@@ -1393,14 +1393,14 @@ assets:
     source:
     - name: worl.bin
 #AI (BDX) Editing
-- name: limit/fm/jack.bar #Dance Call crash fix
+- name: limit/fm/jack.bar #Dance Call Experiment crash fix
   method: binarc
   source:
   - name: limi
     type: bdx
     method: bdscript
     source:
-    - name: limit_jack.bdscript
+    - name: limit/jack.bdscript
 - name: limit/us/jack.bar
   multi:
   - name: limit/fr/jack.bar
@@ -1414,7 +1414,29 @@ assets:
     type: bdx
     method: bdscript
     source:
-    - name: limit_jack.bdscript
+    - name: limit/jack.bdscript
+- name: limit/fm/trinity.bar #Trinity Limit Station Plaza Nobodies crash fix
+  method: binarc
+  source:
+  - name: limi
+    type: bdx
+    method: bdscript
+    source:
+    - name: limit/trinity.bdscript
+- name: limit/us/trinity.bar
+  multi:
+  - name: limit/fr/trinity.bar
+  - name: limit/gr/trinity.bar
+  - name: limit/it/trinity.bar
+  - name: limit/sp/trinity.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: limi
+    type: bdx
+    method: bdscript
+    source:
+    - name: limit/trinity.bdscript
 - name: obj/B_EX170_LAST.mdlx #Proper Xemnas II Dome Skip
   method: binarc
   source:
