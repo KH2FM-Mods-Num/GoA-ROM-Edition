@@ -1182,7 +1182,6 @@ if Place == 0x1A04 then
 	if PostSave == 0 then
 		if Progress == 0 then --1st Visit
 			WarpRoom = 0x00
-			Spawn('Short',0x0A,0x116,0x00)
 		elseif Progress == 1 then --[Before Helping Megara Up, Chasing after Demyx]
 			WarpRoom = 0x03
 		elseif Progress == 2 then --[Before Entering Valley of the Dead, Before Cerberus]
