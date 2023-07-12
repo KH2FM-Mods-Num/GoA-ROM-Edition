@@ -4,24 +4,24 @@ StackSize: 512
 TempSize: 512
 Triggers:
 - Key: 10
-  Addr: TR10
+  Addr: SIGNAL_CALLBACK
 - Key: 17
-  Addr: TR17
+  Addr: OBJ_ANMATR_CALLBACK
 - Key: 6
-  Addr: TR6
+  Addr: OBJ_DAMAGE
 - Key: 13
-  Addr: TR13
+  Addr: OBJ_FALL
 - Key: 1
-  Addr: TR1
+  Addr: OBJ_MAIN
 - Key: 0
-  Addr: TR0
+  Addr: OBJ_INIT
 Name: b_nm000
 
 ---
 ; codeLabels: 
 ; codeRevealer: -l 262 -l 537 -l 2052 -l 3784 -l 4024 -l 4083 -l 4084 -l 4101 -l 4106 -l 4121 -l 4307 -l 4384 -l 4451 -l 4556 -l 4569 -l 4714 -l 4756 -l 4822 -l 4888 -l 4947 -l 4956 -l 4965 -l 5132 -l 5145 -l 5170 -l 5310 -l 5434 -l 5462 -l 6032 -l 6053 -l 6196 -l 6217 -l 6275 -l 6374 -l 6426 -l 6459 -l 6492 -l 6525 -l 6580 -l 6721 -l 6728 -l 6739 -l 6935 -l 7120 -l 7182 -l 7333 -l 7439 -l 7551 -l 7663
  section .text
-TR10:
+SIGNAL_CALLBACK:
  popToSp 0
  popToSp 4
  pushFromFSp 4
@@ -39,7 +39,7 @@ L49:
 L59:
  drop 
  ret 
-TR17:
+OBJ_ANMATR_CALLBACK:
  popToSp 0
  popToSp 4
  popToSp 8
@@ -694,7 +694,7 @@ L1216:
  jmp L1232
 L1232:
  ret 
-TR6:
+OBJ_DAMAGE:
  popToSp 0
  pushFromPWp W192
  pushFromFSp 0
@@ -868,7 +868,7 @@ L1520:
 L1532:
  pushFromFWp W0
  ret 
-TR13:
+OBJ_FALL:
  pushFromPWp W192
  pushImmf 0
  syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
@@ -880,7 +880,7 @@ TR13:
  pushFromPWp W192
  syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)
  ret 
-TR1:
+OBJ_MAIN:
  pushFromPWp W192
  gosub 4, L1564
  ret 
@@ -1217,7 +1217,7 @@ L2097:
  popToSp 4
  pushFromFSp 4
  ret 
-TR0:
+OBJ_INIT:
  popToSp 0
  pushFromPWp W192
  pushFromFSp 0

@@ -4,16 +4,16 @@ StackSize: 512
 TempSize: 512
 Triggers:
 - Key: 10
-  Addr: TR10
+  Addr: SIGNAL_CALLBACK
 - Key: 3
-  Addr: TR3
+  Addr: UNIT_MAIN
 Name: tt06_work_perfo
 
 ---
 ; codeLabels: 
 ; codeRevealer: -l 161 -l 436
  section .text
-TR10:
+SIGNAL_CALLBACK:
  popToSp 0
  popToSp 4
  pushFromFSp 4
@@ -194,7 +194,7 @@ L311:
  pushImm 3
  gosub 4, L273
  ret 
-TR3:
+UNIT_MAIN:
  pushFromPWp W0
  gosub 4, L331
  ret 

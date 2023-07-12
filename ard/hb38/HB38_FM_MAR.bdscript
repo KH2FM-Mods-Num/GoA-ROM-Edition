@@ -4,16 +4,16 @@ StackSize: 512
 TempSize: 512
 Triggers:
 - Key: 10
-  Addr: TR10
+  Addr: SIGNAL_CALLBACK
 - Key: 3
-  Addr: TR3
+  Addr: UNIT_MAIN
 Name: ms_boss_ctrloff
 
 ---
 ; codeLabels: 
 ; codeRevealer: -l 179
  section .text
-TR10:
+SIGNAL_CALLBACK:
  popToSp 0
  popToSp 4
  pushFromFSp 4
@@ -44,7 +44,7 @@ L44:
  jmp L66
 L66:
  ret 
-TR3:
+UNIT_MAIN:
  ;syscall 4, 56 ; trap_event_continue_control_off (0 in, 0 out) ;Withhold control until after cutscene ends
  pushFromPWp W0
  gosub 4, L74

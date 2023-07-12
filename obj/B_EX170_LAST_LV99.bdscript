@@ -4,26 +4,26 @@ StackSize: 512
 TempSize: 512
 Triggers:
 - Key: 17
-  Addr: TR17
+  Addr: OBJ_ANMATR_CALLBACK
 - Key: 16
-  Addr: TR16
+  Addr: OBJ_ANMATR_EFFECT
 - Key: 15
-  Addr: TR15
+  Addr: OBJ_ATTACK
 - Key: 11
-  Addr: TR11
+  Addr: REACTION_CALLBACK
 - Key: 6
-  Addr: TR6
+  Addr: OBJ_DAMAGE
 - Key: 1
-  Addr: TR1
+  Addr: OBJ_MAIN
 - Key: 0
-  Addr: TR0
+  Addr: OBJ_INIT
 Name: b_ex170_last_lv
 
 ---
 ; codeLabels: 
 ; codeRevealer: -l 381 -l 1067 -l 1225 -l 1384 -l 1392 -l 1652 -l 1775 -l 2926 -l 3700 -l 3774 -l 5177 -l 5460 -l 5724 -l 5914 -l 5977 -l 6176 -l 7122 -l 7147 -l 7191 -l 7242 -l 7375 -l 8139 -l 8656 -l 8730 -l 8947 -l 8999 -l 9023 -l 9055 -l 9313 -l 9702 -l 9727 -l 10294 -l 13296 -l 13528 -l 13584 -l 13601 -l 13606 -l 13621 -l 13698 -l 13895 -l 13951 -l 13967 -l 14072 -l 14085 -l 14215 -l 14257 -l 14323 -l 14389 -l 14620 -l 14713 -l 14772 -l 14791 -l 14890 -l 14891 -l 14986 -l 15070 -l 15206 -l 15249 -l 15298 -l 15329 -l 15337 -l 15490 -l 15693 -l 15805 -l 16148 -l 16210 -l 16349 -l 16398 -l 16454 -l 16465 -l 16472 -l 16594 -l 16900 -l 17184 -l 17201 -l 17232 -l 17354 -l 17445 -l 17487 -l 17539 -l 17581 -l 17621 -l 17974 -l 17981 -l 18106 -l 18113 -l 18158 -l 18243 -l 18250 -l 18329 -l 18336 -l 18381 -l 18481 -l 18564 -l 18606 -l 18816 -l 19124 -l 19131 -l 19210 -l 19217 -l 19262 -l 19296 -l 19745 -l 19975 -l 20404 -l 20744 -l 20863 -l 20962 -l 21370 -l 21741 -l 21751 -l 22306 -l 22677 -l 22811 -l 23452 -l 23781 -l 23796 -l 23807 -l 23922 -l 24188 -l 24223 -l 24248 -l 24565 -l 24575 -l 24585 -l 24595 -l 24605 -l 24615 -l 24625 -l 24635 -l 24668 -l 24678 -l 24688 -l 24720 -l 24768 -l 24870 -l 25043 -l 25094 -l 25139 -l 25222 -l 25258 -l 25284 -l 25478 -l 25682 -l 25689 -l 25848 -l 25853 -l 26097 -l 26264 -l 26305 -l 26401 -l 26570 -l 26638 -l 26959 -l 26969 -l 27052 -l 27067 -l 27125 -l 27221 -l 27371 -l 27786 -l 27865 -l 28466 -l 28494 -l 28509 -l 28860
  section .text
-TR17:
+OBJ_ANMATR_CALLBACK:
  popToSp 0
  popToSp 4
  popToSp 8
@@ -2724,7 +2724,7 @@ L4968:
  sub 
  neqz 
  ret 
-TR16:
+OBJ_ANMATR_EFFECT:
  popToSp 0
  popToSp 4
  popToSp 8
@@ -3790,7 +3790,7 @@ L6959:
  syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
  drop 
  ret 
-TR15:
+OBJ_ATTACK:
  popToSp 0
  popToSp 4
  pushFromFSp 0
@@ -4215,7 +4215,7 @@ L7760:
  fetchValue 4
  syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
  ret 
-TR11:
+REACTION_CALLBACK:
  popToSp 0
  popToSp 4
  popToSp 8
@@ -5335,7 +5335,7 @@ L9749:
  pushImm 1
  memcpy 0
  ret 
-TR6:
+OBJ_DAMAGE:
  popToSp 0
  pushFromPWp W1072
  pushFromFSp 0
@@ -5558,7 +5558,7 @@ L10145:
  popToSp 4
  pushFromFSp 4
  ret 
-TR1:
+OBJ_MAIN:
  pushFromPWp W1072
  gosub 4, L10162
  ret 
@@ -5670,7 +5670,7 @@ L10318:
 L10346:
  pushFromPSp 16
  ret 
-TR0:
+OBJ_INIT:
  popToSp 0
  pushFromPWp W1072
  pushFromFSp 0

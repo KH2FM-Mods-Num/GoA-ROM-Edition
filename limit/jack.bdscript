@@ -4,18 +4,18 @@ StackSize: 512
 TempSize: 512
 Triggers:
 - Key: 24
-  Addr: TR24
+  Addr: LIMIT_ANMATR_EFFECT
 - Key: 22
-  Addr: TR22
+  Addr: LIMIT_START
 - Key: 23
-  Addr: TR23
+  Addr: LIMIT_CALL
 Name: limit_jack
 
 ---
 ; codeLabels: 
 ; codeRevealer: -l 76 -l 590 -l 973 -l 1218 -l 1670 -l 1710 -l 2696 -l 3171 -l 3370 -l 3707 -l 3906 -l 4260 -l 4413 -l 4582
  section .text
-TR24:
+LIMIT_ANMATR_EFFECT:
  popToSp 0
  popToSp 4
  popToSp 8
@@ -363,7 +363,7 @@ L690:
  pushFromFSp 0
  syscall 2, 54 ; trap_limit_start_thread (2 in, 0 out)
  ret 
-TR22:
+LIMIT_START:
  popToSp 0
  pushFromPWp W0
  pushFromFSp 0
@@ -1575,7 +1575,7 @@ L2850:
 L2870:
  gosub 4, L70
  ret 
-TR23:
+LIMIT_CALL:
  popToSp 0
  pushFromPWp W0
  pushFromFSp 0
