@@ -1593,10 +1593,6 @@ if ReadByte(Save+0x1CFF) == 8 and ReadByte(Save+0x3640) > 0 then --Trigger with 
 		Spawn('Short',0x09,0x034,0x239)
 	end
 end
---Station Plaza Nobodies with Trinity Limit End Softlock Fix
-if Place == 0x0802 and Events(0x6C,0x6C,0x6C) and ReadInt(Point1) == 98 then --Hit Counter Almost Reached
-	WriteInt(CutLen,1) --End Trinity Limit Early
-end
 end
 
 function HB()

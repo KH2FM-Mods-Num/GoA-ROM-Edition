@@ -6,3 +6,12 @@ AreaSettings 0 -1
 	SetEvent "905" Type 2
 	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 72 FadeType 1
 	SetPartyMenu 0
+
+Program 0x6C
+Bgm 114 114
+AreaSettings 15 -1
+	SetProgressFlag 0x89B
+	SetUnk05 0x3
+	SetEvent "707" Type 9
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 118 FadeType 1
+	SetPartyMenu 0
