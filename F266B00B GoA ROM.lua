@@ -2433,7 +2433,7 @@ end
 
 function Data()
 --Music Change - Final Fights
-if ReadShort(Save+0x03D6) == 15 then
+if ReadShort(Save+0x03D6) == 0x02 then
 	if Place == 0x1B12 then --Part I
 		Spawn('Short',0x06,0x0A4,0x09C) --Guardando nel buio
 		Spawn('Short',0x06,0x0A6,0x09C)
