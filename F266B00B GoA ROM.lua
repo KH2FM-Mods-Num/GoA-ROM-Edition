@@ -553,7 +553,7 @@ end
 --Remove Growth Abilities
 if true then
 	for i = 0,34 do
-		WriteByte(Btl0 + 0x344A5 + 0x8*i,0) --Remove Innate Growth Abilities
+		WriteByte(BAR(Btl0,0x10,0x41+0x8*i),0) --Remove Innate Growth Abilities
 	end
 	local Growth = {0x805E,0x8062,0x8234,0x8066,0x806A}
 	for form = 0,4 do --Adjust Form Movement
