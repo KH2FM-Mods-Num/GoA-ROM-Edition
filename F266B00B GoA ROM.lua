@@ -39,7 +39,7 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	TxtBox = 0x1D48D54 --Last Displayed Textbox
 	DemCln = 0x1D48DEC --Demyx Clone Status
 	ARDLoad  = 0x034ECF4 --ARD Pointer Address
-	MSNLoad  = 0x04FA440 --Base MSN Address
+	MSN = 0x04FA440 --Base MSN Address
 	Slot1    = 0x1C6C750 --Unit Slot 1
 	NextSlot = 0x268
 	Point1   = 0x1D48EFC
@@ -78,7 +78,7 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	TxtBox = 0x074BC70 - 0x56454E
 	DemCln = 0x2A0CF74 - 0x56450E
 	ARDLoad  = 0x2A0CEE8 - 0x56450E
-	MSNLoad  = 0x0BF08C0 - 0x56450E
+	MSN = 0x0BF08C0 - 0x56450E
 	Slot1    = 0x2A20C58 - 0x56450E
 	NextSlot = 0x278
 	Point1   = 0x2A0D108 - 0x56450E
@@ -88,7 +88,7 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	Menu1    = 0x2A0E7D0 - 0x56450E
 	NextMenu = 0x8
 end
-Slot2  = Slot1 - NextSlot
+--[[Slot2  = Slot1 - NextSlot
 Slot3  = Slot2 - NextSlot
 Slot4  = Slot3 - NextSlot
 Slot5  = Slot4 - NextSlot
@@ -104,8 +104,7 @@ Point3 = Point2 + NxtPoint
 Gauge2 = Gauge1 + NxtGauge
 Gauge3 = Gauge2 + NxtGauge
 Menu2  = Menu1 + NextMenu
-Menu3  = Menu2 + NextMenu
-pi     = math.pi
+Menu3  = Menu2 + NextMenu--]]
 end
 
 function Warp(W,R,D,M,B,E) --Warp into the appropriate World, Room, Door, Map, Btl, Evt
@@ -193,7 +192,6 @@ if true then --Define current values for common addresses
 	Btl    = ReadShort(Now+0x06)
 	Evt    = ReadShort(Now+0x08)
 	PrevPlace = ReadShort(Now+0x30)
-	MSN    = MSNLoad + (ReadInt(MSNLoad+4)+1) * 0x10
 	if not OnPC then
 		ARD = ReadInt(ARDLoad) --Base ARD Address
 	else
@@ -2225,7 +2223,7 @@ if ReadByte(Save+0x1CFF) == 13 then
 end
 --Simulated Twilight Town Adjustments
 if ReadByte(Save+0x1CFF) == 13 then --STT Removals
-	if ReadByte(BAR(Sys3),0x02,0x3345) == 0xB7 then --Better STT disabled (value is 0x93 when enabled, address is Twilight Thorn RC flag)
+	if ReadByte(BAR(Sys3,0x02,0x3345)) == 0xB7 then --Better STT disabled (value is 0x93 when enabled, address is Twilight Thorn RC flag)
 		if ReadShort(Save+0x25D2)&0x8000 == 0x8000 then --Dodge Roll
 			BitNot(Save+0x25D3,0x80)
 			BitOr(Save+0x1CF1,0x01)
