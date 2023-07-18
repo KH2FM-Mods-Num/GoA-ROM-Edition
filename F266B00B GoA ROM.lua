@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: JP shop assembly code & battle level rework
+--Last Update: BAR() function implementation
 --Todo: Maybe item-based progress flags
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
@@ -222,13 +222,13 @@ end
 
 function NewGame()
 --Before New Game
-if OnPC and ReadByte(Sys3+0x116DB) == 0x19 then --Change Form's Icons in PC from Analog Stick
-	WriteByte(Sys3+0x116DB,0xCE) --Valor
-	WriteByte(Sys3+0x116F3,0xCE) --Wisdom
-	WriteByte(Sys3+0x1170B,0xCE) --Limit
-	WriteByte(Sys3+0x11723,0xCE) --Master
-	WriteByte(Sys3+0x1173B,0xCE) --Final
-	WriteByte(Sys3+0x11753,0xCE) --Anti
+if OnPC and ReadByte(BAR(Sys3,0x6,0x0E5F)) == 0x19 then --Change Form's Icons in PC from Analog Stick
+	WriteByte(BAR(Sys3,0x6,0x0E5F),0xCE) --Valor
+	WriteByte(BAR(Sys3,0x6,0x0E77),0xCE) --Wisdom
+	WriteByte(BAR(Sys3,0x6,0x0E8F),0xCE) --Limit
+	WriteByte(BAR(Sys3,0x6,0x0EA7),0xCE) --Master
+	WriteByte(BAR(Sys3,0x6,0x0EBF),0xCE) --Final
+	WriteByte(BAR(Sys3,0x6,0x0ED7),0xCE) --Anti
 end
 --Start New Game
 if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
@@ -631,93 +631,93 @@ end
 --Donald's Staff Active Abilities
 if true then
 	local Staff   = ReadShort(Save+0x2604)
-	local Ability = {} --Offset for staff's ability within 03system.bar
-	Ability[0x04B] = 0x13F36 --Mage's Staff
-	Ability[0x094] = 0x13F46 --Hammer Staff
-	Ability[0x095] = 0x13F56 --Victory Bell
-	Ability[0x097] = 0x13F76 --Comet Staff
-	Ability[0x098] = 0x13F86 --Lord's Broom
-	Ability[0x099] = 0x13F96 --Wisdom Wand
-	Ability[0x096] = 0x13F66 --Meteor Staff
-	Ability[0x09A] = 0x13FA6 --Rising Dragon
-	Ability[0x09C] = 0x13FC6 --Shaman's Relic
-	Ability[0x258] = 0x14406 --Shaman's Relic+
-	Ability[0x09B] = 0x13FB6 --Nobody Lance
-	Ability[0x221] = 0x14316 --Centurion
-	Ability[0x222] = 0x14326 --Centurion+
-	Ability[0x1E2] = 0x14186 --Save the Queen
-	Ability[0x1F7] = 0x142D6 --Save the Queen+
-	Ability[0x223] = 0x14336 --Plain Mushroom
-	Ability[0x224] = 0x14346 --Plain Mushroom+
-	Ability[0x225] = 0x14356 --Precious Mushroom
-	Ability[0x226] = 0x14366 --Precious Mushroom+
-	Ability[0x227] = 0x14376 --Premium Mushroom
-	Ability[0x0A1] = 0x13FD6 --Detection Staff
+	local Ability = {} --Offset for staff's ability within 03system.bar's item
+	Ability[0x04B] = 0x36BA --Mage's Staff
+	Ability[0x094] = 0x36CA --Hammer Staff
+	Ability[0x095] = 0x36DA --Victory Bell
+	Ability[0x097] = 0x36FA --Comet Staff
+	Ability[0x098] = 0x370A --Lord's Broom
+	Ability[0x099] = 0x371A --Wisdom Wand
+	Ability[0x096] = 0x36EA --Meteor Staff
+	Ability[0x09A] = 0x372A --Rising Dragon
+	Ability[0x09C] = 0x374A --Shaman's Relic
+	Ability[0x258] = 0x3B8A --Shaman's Relic+
+	Ability[0x09B] = 0x373A --Nobody Lance
+	Ability[0x221] = 0x3A9A --Centurion
+	Ability[0x222] = 0x3AAA --Centurion+
+	Ability[0x1E2] = 0x390A --Save the Queen
+	Ability[0x1F7] = 0x3A5A --Save the Queen+
+	Ability[0x223] = 0x3ABA --Plain Mushroom
+	Ability[0x224] = 0x3ACA --Plain Mushroom+
+	Ability[0x225] = 0x3ADA --Precious Mushroom
+	Ability[0x226] = 0x3AEA --Precious Mushroom+
+	Ability[0x227] = 0x3AFA --Premium Mushroom
+	Ability[0x0A1] = 0x375A --Detection Staff
 	if Ability[Staff] ~= nil then
-		Ability = ReadShort(Sys3+Ability[Staff]) --Currently-equipped staff's ability
+		Ability = ReadShort(BAR(Sys3,0x6,Ability[Staff])) --Currently-equipped staff's ability
 		if Ability == 0x0A5 then --Donald Fire
 			WriteShort(Save+0x26F6,0x80A5)
-			WriteByte(Sys3+0x11F0B,0)
+			WriteByte(BAR(Sys3,0x6,0x168F),0)
 		elseif Ability == 0x0A6 then --Donald Blizzard
 			WriteShort(Save+0x26F6,0x80A6)
-			WriteByte(Sys3+0x11F23,0)
+			WriteByte(BAR(Sys3,0x6,0x16A7),0)
 		elseif Ability == 0x0A7 then --Donald Thunder
 			WriteShort(Save+0x26F6,0x80A7)
-			WriteByte(Sys3+0x11F3B,0)
+			WriteByte(BAR(Sys3,0x6,0x16BF),0)
 		elseif Ability == 0x0A8 then --Donald Cure
 			WriteShort(Save+0x26F6,0x80A8)
-			WriteByte(Sys3+0x11F53,0)
+			WriteByte(BAR(Sys3,0x6,0x16D7),0)
 		else
 			WriteShort(Save+0x26F6,0) --Remove Ability Slot 80
-			WriteByte(Sys3+0x11F0B,2) --Restore Original AP Costs
-			WriteByte(Sys3+0x11F23,2)
-			WriteByte(Sys3+0x11F3B,2)
-			WriteByte(Sys3+0x11F53,3)
+			WriteByte(BAR(Sys3,0x6,0x168F),2) --Restore Original AP Costs
+			WriteByte(BAR(Sys3,0x6,0x16A7),2)
+			WriteByte(BAR(Sys3,0x6,0x16BF),2)
+			WriteByte(BAR(Sys3,0x6,0x16D7),3)
 		end
 	end
 end
 --Goofy's Shield Active Abilities
 if true then
 	local Shield  = ReadShort(Save+0x2718)
-	local Ability = {} --Offset for shield's ability within 03system.bar
-	Ability[0x031] = 0x13FE6 --Knight's Shield
-	Ability[0x08B] = 0x13FF6 --Adamant Shield
-	Ability[0x08C] = 0x14006 --Chain Gear
-	Ability[0x08E] = 0x14026 --Falling Star
-	Ability[0x08F] = 0x14036 --Dreamcloud
-	Ability[0x090] = 0x14046 --Knight Defender
-	Ability[0x08D] = 0x14016 --Ogre Shield
-	Ability[0x091] = 0x14056 --Genji Shield
-	Ability[0x092] = 0x14066 --Akashic Record
-	Ability[0x259] = 0x14416 --Akashic Record+
-	Ability[0x093] = 0x14076 --Nobody Guard
-	Ability[0x228] = 0x14386 --Frozen Pride
-	Ability[0x229] = 0x14396 --Frozen Pride+
-	Ability[0x1E3] = 0x14196 --Save the King
-	Ability[0x1F8] = 0x142E6 --Save the King+
-	Ability[0x22A] = 0x143A6 --Joyous Mushroom
-	Ability[0x22B] = 0x143B6 --Joyous Mushroom+
-	Ability[0x22C] = 0x143C6 --Majestic Mushroom
-	Ability[0x22D] = 0x143D6 --Majestic Mushroom+
-	Ability[0x22E] = 0x143E6 --Ultimate Mushroom
-	Ability[0x032] = 0x14086 --Detection Shield
-	Ability[0x033] = 0x14096 --Test the King
+	local Ability = {} --Offset for shield's ability within 03system.bar's item
+	Ability[0x031] = 0x376A --Knight's Shield
+	Ability[0x08B] = 0x377A --Adamant Shield
+	Ability[0x08C] = 0x378A --Chain Gear
+	Ability[0x08E] = 0x37AA --Falling Star
+	Ability[0x08F] = 0x37BA --Dreamcloud
+	Ability[0x090] = 0x37CA --Knight Defender
+	Ability[0x08D] = 0x379A --Ogre Shield
+	Ability[0x091] = 0x37DA --Genji Shield
+	Ability[0x092] = 0x37EA --Akashic Record
+	Ability[0x259] = 0x3B9A --Akashic Record+
+	Ability[0x093] = 0x37FA --Nobody Guard
+	Ability[0x228] = 0x3B0A --Frozen Pride
+	Ability[0x229] = 0x3B1A --Frozen Pride+
+	Ability[0x1E3] = 0x391A --Save the King
+	Ability[0x1F8] = 0x3A6A --Save the King+
+	Ability[0x22A] = 0x3B2A --Joyous Mushroom
+	Ability[0x22B] = 0x3B3A --Joyous Mushroom+
+	Ability[0x22C] = 0x3B4A --Majestic Mushroom
+	Ability[0x22D] = 0x3B5A --Majestic Mushroom+
+	Ability[0x22E] = 0x3B6A --Ultimate Mushroom
+	Ability[0x032] = 0x380A --Detection Shield
+	Ability[0x033] = 0x381A --Test the King
 	if Ability[Shield] ~= nil then
-		Ability = ReadShort(Sys3+Ability[Shield]) --Currently-equipped shield's ability
+		Ability = ReadShort(BAR(Sys3,0x6,Ability[Shield])) --Currently-equipped shield's ability
 		if Ability == 0x1A7 then --Goofy Tornado
 			WriteShort(Save+0x280A,0x81A7)
-			WriteByte(Sys3+0x11F6B,0)
+			WriteByte(BAR(Sys3,0x6,0x16EF),0)
 		elseif Ability == 0x1AD then --Goofy Bash
 			WriteShort(Save+0x280A,0x81AD)
-			WriteByte(Sys3+0x11F83,0)
+			WriteByte(BAR(Sys3,0x6,0x1707),0)
 		elseif Ability == 0x1A9 then --Goofy Turbo
 			WriteShort(Save+0x280A,0x81A9)
-			WriteByte(Sys3+0x11F9B,0)
+			WriteByte(BAR(Sys3,0x6,0x171F),0)
 		else
 			WriteShort(Save+0x280A,0) --Remove Ability Slot 80
-			WriteByte(Sys3+0x11F6B,2) --Restore Original AP Costs
-			WriteByte(Sys3+0x11F83,2)
-			WriteByte(Sys3+0x11F9B,2)
+			WriteByte(BAR(Sys3,0x6,0x16EF),2) --Restore Original AP Costs
+			WriteByte(BAR(Sys3,0x6,0x1707),2)
+			WriteByte(BAR(Sys3,0x6,0x171F),2)
 		end
 	end
 end
@@ -751,8 +751,8 @@ if ReadByte(Save+0x3524) == 6 then --In Anti Form
 	BitOr(Save+0x36C0,0x20) --Unlocks Anti Form
 end--]]
 --Anti Form Costs Max Drive Instead of a Static 9.
-if ReadByte(Sys3+0x00500) >= 5 and ReadByte(Slot1+0x1B2) >= 5 then
-	WriteByte(Sys3+0x00500,ReadByte(Slot1+0x1B2))
+if ReadByte(BAR(Sys3,0x2,0x0264)) >= 5 and ReadByte(Slot1+0x1B2) >= 5 then
+	WriteByte(BAR(Sys3,0x2,0x0264),ReadByte(Slot1+0x1B2))
 end
 end
 
@@ -2225,30 +2225,30 @@ if ReadByte(Save+0x1CFF) == 13 then
 end
 --Simulated Twilight Town Adjustments
 if ReadByte(Save+0x1CFF) == 13 then --STT Removals
-	if ReadByte(Sys3+0x035E1) == 0xB7 then --Better STT disabled (value is 0x93 when enabled, address is Twilight Thorn RC flag)
+	if ReadByte(BAR(Sys3),0x02,0x3345) == 0xB7 then --Better STT disabled (value is 0x93 when enabled, address is Twilight Thorn RC flag)
 		if ReadShort(Save+0x25D2)&0x8000 == 0x8000 then --Dodge Roll
 			BitNot(Save+0x25D3,0x80)
 			BitOr(Save+0x1CF1,0x01)
 		end
-		WriteShort(Sys3+0x009C6,0x00) --Fire
-		WriteShort(Sys3+0x009F6,0x00) --Thunder
-		WriteShort(Sys3+0x00A26,0x00) --Blizzard
-		WriteShort(Sys3+0x00A56,0x00) --Cure
-		WriteShort(Sys3+0x015C6,0x00) --Fira
-		WriteShort(Sys3+0x015F6,0x00) --Firaga
-		WriteShort(Sys3+0x01626,0x00) --Blizzara
-		WriteShort(Sys3+0x01656,0x00) --Blizzaga
-		WriteShort(Sys3+0x01686,0x00) --Thundara
-		WriteShort(Sys3+0x016B6,0x00) --Thundaga
-		WriteShort(Sys3+0x016E6,0x00) --Cura
-		WriteShort(Sys3+0x01716,0x00) --Curaga
-		WriteShort(Sys3+0x01F26,0x00) --Magnet
-		WriteShort(Sys3+0x01F56,0x00) --Magnera
-		WriteShort(Sys3+0x01F86,0x00) --Magnega
-		WriteShort(Sys3+0x01FB6,0x00) --Reflect
-		WriteShort(Sys3+0x01FE6,0x00) --Reflera
-		WriteShort(Sys3+0x02016,0x00) --Reflega
-		WriteShort(Sys3+0x07056,0x00) --Trinity (Solo)
+		WriteShort(BAR(Sys3,0x2,0x072A),0x00) --Fire
+		WriteShort(BAR(Sys3,0x2,0x075A),0x00) --Thunder
+		WriteShort(BAR(Sys3,0x2,0x078A),0x00) --Blizzard
+		WriteShort(BAR(Sys3,0x2,0x07BA),0x00) --Cure
+		WriteShort(BAR(Sys3,0x2,0x132A),0x00) --Fira
+		WriteShort(BAR(Sys3,0x2,0x135A),0x00) --Firaga
+		WriteShort(BAR(Sys3,0x2,0x138A),0x00) --Blizzara
+		WriteShort(BAR(Sys3,0x2,0x13BA),0x00) --Blizzaga
+		WriteShort(BAR(Sys3,0x2,0x13EA),0x00) --Thundara
+		WriteShort(BAR(Sys3,0x2,0x141A),0x00) --Thundaga
+		WriteShort(BAR(Sys3,0x2,0x144A),0x00) --Cura
+		WriteShort(BAR(Sys3,0x2,0x147A),0x00) --Curaga
+		WriteShort(BAR(Sys3,0x2,0x1C8A),0x00) --Magnet
+		WriteShort(BAR(Sys3,0x2,0x1CBA),0x00) --Magnera
+		WriteShort(BAR(Sys3,0x2,0x1CEA),0x00) --Magnega
+		WriteShort(BAR(Sys3,0x2,0x1D1A),0x00) --Reflect
+		WriteShort(BAR(Sys3,0x2,0x1D4A),0x00) --Reflera
+		WriteShort(BAR(Sys3,0x2,0x1D7A),0x00) --Reflega
+		WriteShort(BAR(Sys3,0x2,0x6DBA),0x00) --Trinity (Solo)
 	else --Better STT enabled
 		if Events(0x5B,0x5B,0x5B) or Events(0xC0,0xC0,0xC0) then --Mail Delivery softlock fix
 			WriteString(Obj0+0x15030,'F_TT010_ROXAS.mset\0')
@@ -2304,25 +2304,25 @@ else --Restore Outside STT
 		BitOr(Save+0x25D3,0x80)
 		BitNot(Save+0x1CF1,0x01)
 	end
-	WriteShort(Sys3+0x009C6,0x02) --Fire
-	WriteShort(Sys3+0x009F6,0x02) --Thunder
-	WriteShort(Sys3+0x00A26,0x02) --Blizzard
-	WriteShort(Sys3+0x00A56,0x02) --Cure
-	WriteShort(Sys3+0x015C6,0x02) --Fira
-	WriteShort(Sys3+0x015F6,0x02) --Firaga
-	WriteShort(Sys3+0x01626,0x02) --Blizzara
-	WriteShort(Sys3+0x01656,0x02) --Blizzaga
-	WriteShort(Sys3+0x01686,0x02) --Thundara
-	WriteShort(Sys3+0x016B6,0x02) --Thundaga
-	WriteShort(Sys3+0x016E6,0x02) --Cura
-	WriteShort(Sys3+0x01716,0x02) --Curaga
-	WriteShort(Sys3+0x01F26,0x02) --Magnet
-	WriteShort(Sys3+0x01F56,0x02) --Magnera
-	WriteShort(Sys3+0x01F86,0x02) --Magnega
-	WriteShort(Sys3+0x01FB6,0x02) --Reflect
-	WriteShort(Sys3+0x01FE6,0x02) --Reflera
-	WriteShort(Sys3+0x02016,0x02) --Reflega
-	WriteShort(Sys3+0x07056,0x51) --Trinity (Solo)
+	WriteShort(BAR(Sys3,0x2,0x072A),0x02) --Fire
+	WriteShort(BAR(Sys3,0x2,0x075A),0x02) --Thunder
+	WriteShort(BAR(Sys3,0x2,0x078A),0x02) --Blizzard
+	WriteShort(BAR(Sys3,0x2,0x07BA),0x02) --Cure
+	WriteShort(BAR(Sys3,0x2,0x132A),0x02) --Fira
+	WriteShort(BAR(Sys3,0x2,0x135A),0x02) --Firaga
+	WriteShort(BAR(Sys3,0x2,0x138A),0x02) --Blizzara
+	WriteShort(BAR(Sys3,0x2,0x13BA),0x02) --Blizzaga
+	WriteShort(BAR(Sys3,0x2,0x13EA),0x02) --Thundara
+	WriteShort(BAR(Sys3,0x2,0x141A),0x02) --Thundaga
+	WriteShort(BAR(Sys3,0x2,0x144A),0x02) --Cura
+	WriteShort(BAR(Sys3,0x2,0x147A),0x02) --Curaga
+	WriteShort(BAR(Sys3,0x2,0x1C8A),0x02) --Magnet
+	WriteShort(BAR(Sys3,0x2,0x1CBA),0x02) --Magnera
+	WriteShort(BAR(Sys3,0x2,0x1CEA),0x02) --Magnega
+	WriteShort(BAR(Sys3,0x2,0x1D1A),0x02) --Reflect
+	WriteShort(BAR(Sys3,0x2,0x1D4A),0x02) --Reflera
+	WriteShort(BAR(Sys3,0x2,0x1D7A),0x02) --Reflega
+	WriteShort(BAR(Sys3,0x2,0x6DBA),0x51) --Trinity (Solo)
 	WriteShort(Save+0x1CF9,0) --Remove stored Keyblade
 end
 --Faster Twilight Thorn Reaction Commands
