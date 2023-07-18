@@ -8,6 +8,7 @@ LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
 print('GoA v1.53.4')
+GoAOffset = 0x7C
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -24,7 +25,6 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	React = 0x1C5FF4E --Reaction Command
 	Cntrl = 0x1D48DB8 --Sora Controllable
 	Timer = 0x0349DE8
-	Combo = 0x1D49080
 	Songs = 0x035DAC4 --Atlantica Stuff
 	GScre = 0x1F8039C --Gummi Score
 	GMdal = 0x1F803C0 --Gummi Medal
@@ -128,13 +128,13 @@ function Events(M,B,E) --Check for Map, Btl, and Evt
 return ((Map == M or not M) and (Btl == B or not B) and (Evt == E or not E))
 end
 
-function Spawn(Type,Subfile,Offset,Value)
-local Subpoint = ARD + 0x08 + 0x10*Subfile
+function BAR(File,Subfile,Offset) --Get address within a BAR file
+local Subpoint = File + 0x08 + 0x10*Subfile
 local Address
 --Detect errors
-if ReadInt(ARD,OnPC) ~= 0x01524142 then --Header mismatch
+if ReadInt(File,OnPC) ~= 0x01524142 then --Header mismatch
 	return
-elseif Subfile > ReadInt(ARD+4,OnPC) then --Subfile over count
+elseif Subfile > ReadInt(File+4,OnPC) then --Subfile over count
 	return
 elseif Offset >= ReadInt(Subpoint+4,OnPC) then --Offset exceed subfile length
 	return
@@ -143,22 +143,11 @@ end
 if not OnPC then
 	Address = ReadInt(Subpoint) + Offset
 else
-	local x = ARD&0xFFFFFF000000 --Calculations are wrong if done in one step for some reason
+	local x = File&0xFFFFFF000000 --Calculations are wrong if done in one step for some reason
 	local y = ReadInt(Subpoint,true)&0xFFFFFF
 	Address = x + y + Offset
 end
---Change value
-if Type == 'Read' then
-	ReadArray(Address,Value,OnPC)
-elseif Type == 'Short' then
-	WriteShort(Address,Value,OnPC)
-elseif Type == 'Float' then
-	WriteFloat(Address,Value,OnPC)
-elseif Type == 'Int' then
-	WriteInt(Address,Value,OnPC)
-elseif Type == 'String' then
-	WriteString(Address,Value,OnPC)
-end
+return Address
 end
 
 function BitOr(Address,Bit,Abs)
@@ -262,11 +251,11 @@ function GoA()
 if Place == 0x1A04 then
 	--Open Promise Charm Path
 	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 and ReadByte(Save+0x3694) > 0 then --All Proofs & Promise Charm
-		Spawn('Short',0x06,0x05C,0x77A) --Text
+		WriteShort(BAR(ARD,0x06,0x05C),0x77A) --Text
 	end
 	--Demyx's Portal Text
 	if ReadByte(Save+0x1D2E) > 0 then --Hollow Bastion Cleared
-		Spawn('Short',0x05,0x25C,0x779) --Radiant Garden
+		WriteShort(BAR(ARD,0x05,0x25C),0x779) --Radiant Garden
 	end
 end
 --World Map -> Garden of Assemblage
@@ -800,7 +789,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 5 then --The Altar of Naught
 		WarpRoom = 0x12
 	end
-	Spawn('Short',0x0A,0x08C,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x010),WarpRoom)
 end
 --World Progress
 if Place == 0x0412 and Events(Null,Null,0x02) then --The Path to the Castle
@@ -833,9 +822,9 @@ end
 --Final Door Requirements
 if Place == 0x1212 then
 	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 then --All Proofs Obtained
-		Spawn('Short',0x05,0x060,0x13D) --Spawn Door RC
+		WriteShort(BAR(ARD,0x05,0x060),0x13D) --Spawn Door RC
 	else
-		Spawn('Short',0x05,0x060,0x000) --Despawn Door RC
+		WriteShort(BAR(ARD,0x05,0x060),0x000) --Despawn Door RC
 	end
 end
 end
@@ -873,7 +862,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Throne Room
 		WarpRoom = 0x0B
 	end
-	Spawn('Short',0x0A,0x0AC,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x030),WarpRoom)
 end
 --World Progress
 if Place == 0x0308 and Events(0x47,0x47,0x47) then --Mountain Climb
@@ -950,7 +939,7 @@ if Place == 0x1A04 then
 	elseif ReadByte(Save+0x1D3E) == 4 then --Beast's Room
 		WarpRoom = 0x03
 	end
-	Spawn('Short',0x0A,0x0CC,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x050),WarpRoom)
 end
 --World Progress
 if Place == 0x0105 and Events(Null,Null,0x01) then --The Parlor Ambush
@@ -1037,7 +1026,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Santa's House
 		WarpRoom = 0x08
 	end
-	Spawn('Short',0x0A,0x0EC,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x070),WarpRoom)
 end
 --World Progress
 if Place == 0x010E and Events(Null,Null,0x01) then --The Professor's Experiment
@@ -1126,7 +1115,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 5 then --Ruined Chamber
 		WarpRoom = 0x0B
 	end
-	Spawn('Short',0x0A,0x10C,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x090),WarpRoom)
 end
 --World Progress
 if Place == 0x0007 and Events(Null,Null,0x01) then --Turning Over a New Feather
@@ -1218,7 +1207,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 4 then --Coliseum Gates
 		WarpRoom = 0x02
 	end
-	Spawn('Short',0x0A,0x12C,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x0B0),WarpRoom)
 end
 --World Progress
 if Place == 0x0306 and Events(Null,Null,0x02) then --Megara
@@ -1265,38 +1254,38 @@ end
 --Enable Drive with Olympus Stone
 if ReadByte(Save+0x3644) > 0 then
 	if Place == 0x0306 then --Underworld Entrance
-		Spawn('Short',0x0F,0x01C,0) --BTL 0x16
+		WriteShort(BAR(ARD,0x0F,0x01C),0) --BTL 0x16
 	elseif Place == 0x0506 then --Valley of the Dead
-		Spawn('Short',0x06,0x060,0) --BTL 0x01
-		Spawn('Short',0x06,0x08C,0) --BTL 0x02
-		Spawn('Short',0x06,0x10C,0) --BTL 0x6F (Hades Escape)
+		WriteShort(BAR(ARD,0x06,0x060),0) --BTL 0x01
+		WriteShort(BAR(ARD,0x06,0x08C),0) --BTL 0x02
+		WriteShort(BAR(ARD,0x06,0x10C),0) --BTL 0x6F (Hades Escape)
 	elseif Place == 0x0606 then --Hades' Chamber
-		Spawn('Short',0x05,0x014,0) --BTL 0x16
-		Spawn('Short',0x05,0x064,0) --BTL 0x70 (Invincible Hades)
+		WriteShort(BAR(ARD,0x05,0x014),0) --BTL 0x16
+		WriteShort(BAR(ARD,0x05,0x064),0) --BTL 0x70 (Invincible Hades)
 	elseif Place == 0x0706 then --Cave of the Dead: Entrance
-		Spawn('Short',0x07,0x0B0,0) --BTL 0x01
-		Spawn('Short',0x07,0x10C,0) --BTL 0x02
-		Spawn('Short',0x07,0x1A0,0) --BTL 0x72 (Cerberus)
+		WriteShort(BAR(ARD,0x07,0x0B0),0) --BTL 0x01
+		WriteShort(BAR(ARD,0x07,0x10C),0) --BTL 0x02
+		WriteShort(BAR(ARD,0x07,0x1A0),0) --BTL 0x72 (Cerberus)
 	elseif Place == 0x0A06 then --Cave of the Dead: Inner Chamber
-		Spawn('Short',0x0A,0x010,0) --BTL 0x16
+		WriteShort(BAR(ARD,0x0A,0x010),0) --BTL 0x16
 	elseif Place == 0x0B06 then --Underworld Caverns: Entrance
-		Spawn('Short',0x09,0x044,0) --BTL 0x01
+		WriteShort(BAR(ARD,0x09,0x044),0) --BTL 0x01
 	elseif Place == 0x0F06 then --Cave of the Dead: Passage
-		Spawn('Short',0x0B,0x0AC,0) --BTL 0x01
-		Spawn('Short',0x0B,0x0F4,0) --BTL 0x02
+		WriteShort(BAR(ARD,0x0B,0x0AC),0) --BTL 0x01
+		WriteShort(BAR(ARD,0x0B,0x0F4),0) --BTL 0x02
 	elseif Place == 0x1006 then --Underworld Caverns: The Lost Road
-		Spawn('Short',0x09,0x040,0) --BTL 0x01
+		WriteShort(BAR(ARD,0x09,0x040),0) --BTL 0x01
 	elseif Place == 0x1106 then --Underworld Caverns: Atrium
-		Spawn('Short',0x08,0x034,0) --BTL 0x16
-		Spawn('Short',0x08,0x078,0) --BTL 0x7B (Demyx's Water Clones)
+		WriteShort(BAR(ARD,0x08,0x034),0) --BTL 0x16
+		WriteShort(BAR(ARD,0x08,0x078),0) --BTL 0x7B (Demyx's Water Clones)
 	end
 end
 --Softlock Prevention Without Cups Unlocked
 if Place == 0x0306 and ReadShort(Save+0x239C)&0x07BA == 0 then
-	Spawn('Short',0x2E,0x05C,0x0E4) --Before 2nd Visit Text
-	Spawn('Short',0x2E,0x060,0x01F) --Before 2nd Visit RC
-	Spawn('Short',0x30,0x05C,0x32B) --During 2nd Visit Text
-	Spawn('Short',0x30,0x060,0x01F) --During 2nd Visit RC
+	WriteShort(BAR(ARD,0x2E,0x05C),0x0E4) --Before 2nd Visit Text
+	WriteShort(BAR(ARD,0x2E,0x060),0x01F) --Before 2nd Visit RC
+	WriteShort(BAR(ARD,0x30,0x05C),0x32B) --During 2nd Visit Text
+	WriteShort(BAR(ARD,0x30,0x060),0x01F) --During 2nd Visit RC
 end
 --Unlock All Cups with Hades Cups Trophy
 if ReadByte(Save+0x3696) > 0 then
@@ -1353,7 +1342,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Stone Hollow
 		WarpRoom = 0x01
 	end
-	Spawn('Short',0x0A,0x14C,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x0D0),WarpRoom)
 end
 --World Progress
 if Place == 0x060A and Events(Null,Null,0x01) then --The Wild Kingdom
@@ -1413,7 +1402,7 @@ if Place == 0x1A04 then
 		elseif Progress == 6 then --Post 1st Visit
 			WarpRoom = 0x02
 		elseif Progress == 7 then --2nd Visit
-			Spawn('Short',0x0A,0x16A,0x12) --Start in TWtNW
+			WriteShort(BAR(ARD,0x0A,GoAOffset+0x0EE),0x12) --Start in TWtNW
 			WarpRoom = 0x40
 		elseif Progress == 8 then --Before Sandlot Nobodies II
 			WarpRoom = 0x02
@@ -1448,10 +1437,10 @@ if Place == 0x1A04 then
 		WarpRoom = 0x1B
 	end
 	if WarpRoom <= 50 then
-		Spawn('Short',0x0A,0x16C,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0F0),WarpRoom)
 	else
-		Spawn('Short',0x0A,0x168,0x02)
-		Spawn('Short',0x0A,0x170,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0EC),0x02)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0F4),WarpRoom)
 	end
 end
 --World Progress
@@ -1584,13 +1573,13 @@ end
 --Save Points -> World Points (1st Visit)
 if ReadByte(Save+0x1CFF) == 8 and ReadByte(Save+0x3640) > 0 then --Trigger with Poster for now
 	if Place == 0x0202 then --The Usual Spot
-		Spawn('Short',0x06,0x034,0x239)
+		WriteShort(BAR(ARD,0x06,0x034),0x239)
 	elseif Place == 0x0902 then --Central Station
-		Spawn('Short',0x11,0x034,0x239)
+		WriteShort(BAR(ARD,0x11,0x034),0x239)
 	elseif Place == 0x1A02 then --Tower: Entryway
-		Spawn('Short',0x07,0x034,0x239)
+		WriteShort(BAR(ARD,0x07,0x034),0x239)
 	elseif Place == 0x1B02 then --Tower: Sorcerer's Loft
-		Spawn('Short',0x09,0x034,0x239)
+		WriteShort(BAR(ARD,0x09,0x034),0x239)
 	end
 end
 end
@@ -1663,7 +1652,7 @@ if Place == 0x1A04 then
 		WarpRoom = 0x03
 		Visit = 5
 	end
-	Spawn('Short',0x0A,0x18C,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x110),WarpRoom)
 	WriteByte(Save+0x3FFD,Visit)
 end
 --World Progress
@@ -1846,7 +1835,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 4 then --Ship Graveyard: The Interceptor's Hold
 		WarpRoom = 0x0B
 	end
-	Spawn('Short',0x0A,0x1AC,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x130),WarpRoom)
 end
 --World Progress
 if Place == 0x1710 and Events(0x4F,0x4F,0x4F) then --The Cursed Medallion
@@ -1916,10 +1905,10 @@ if Place == 0x1A04 then
 		WarpRoom = 0x05
 	end
 	if WarpRoom <= 50 then
-		Spawn('Short',0x0A,0x1CC,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x150),WarpRoom)
 	else
-		Spawn('Short',0x0A,0x1C8,0x02)
-		Spawn('Short',0x0A,0x1D0,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x14C),0x02)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x154),WarpRoom)
 	end
 end
 --World Progress
@@ -1986,7 +1975,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Central Computer Mesa
 		WarpRoom = 0x08
 	end
-	Spawn('Short',0x0A,0x1EC,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x170),WarpRoom)
 end
 --World Progress
 if Place == 0x0011 and Events(Null,Null,0x01) then --Tron
@@ -2085,10 +2074,10 @@ if Place == 0x1A04 then
 		WarpRoom = 0x15
 	end
 	if WarpRoom <= 50 then
-		Spawn('Short',0x0A,0x20C,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x190),WarpRoom)
 	else
-		Spawn('Short',0x0A,0x208,0x02)
-		Spawn('Short',0x0A,0x210,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x18C),0x02)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x194),WarpRoom)
 	end
 end
 --World Progress
@@ -2216,22 +2205,22 @@ end
 if ReadByte(Save+0x1CFF) == 13 then
 	if Place == 0x0202 then --The Usual Spot
 		if Events(0x02,0x02,0x02) then --Forced Save Menu
-			Spawn('Short',0x06,0x034,0x23A)
+			WriteShort(BAR(ARD,0x06,0x034),0x23A)
 		else
-			Spawn('Short',0x06,0x034,0x239)
+			WriteShort(BAR(ARD,0x06,0x034),0x239)
 		end
 	elseif Place == 0x2002 then --Station of Serenity
-		Spawn('Short',0x04,0x034,0x239)
+		WriteShort(BAR(ARD,0x04,0x034),0x239)
 	elseif Place == 0x0502 then --Sandlot (Day 4)
-		Spawn('Short',0x06,0x034,0x239)
+		WriteShort(BAR(ARD,0x06,0x034),0x239)
 	elseif Place == 0x0B02 then --Sunset Station
-		Spawn('Short',0x09,0x034,0x239)
+		WriteShort(BAR(ARD,0x09,0x034),0x239)
 	elseif Place == 0x0902 then --Central Station
-		Spawn('Short',0x11,0x034,0x239)
+		WriteShort(BAR(ARD,0x11,0x034),0x239)
 	elseif Place == 0x1202 then --The White Room
-		Spawn('Short',0x06,0x034,0x239)
+		WriteShort(BAR(ARD,0x06,0x034),0x239)
 	elseif Place == 0x1502 then --Computer Room
-		Spawn('Short',0x09,0x034,0x239)
+		WriteShort(BAR(ARD,0x09,0x034),0x239)
 	end
 end
 --Simulated Twilight Town Adjustments
@@ -2426,25 +2415,25 @@ function Data()
 --Music Change - Final Fights
 if ReadShort(Save+0x03D6) == 15 then
 	if Place == 0x1B12 then --Part I
-		Spawn('Short',0x06,0x0A4,0x09C) --Guardando nel buio
-		Spawn('Short',0x06,0x0A6,0x09C)
+		WriteShort(BAR(ARD,0x06,0x0A4),0x09C) --Guardando nel buio
+		WriteShort(BAR(ARD,0x06,0x0A6),0x09C)
 	elseif Place == 0x1C12 then --Part II
-		Spawn('Short',0x07,0x008,0x09C)
-		Spawn('Short',0x07,0x00A,0x09C)
+		WriteShort(BAR(ARD,0x07,0x008),0x09C)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C)
 	elseif Place == 0x1A12 then --Cylinders
-		Spawn('Short',0x07,0x008,0x09C)
-		Spawn('Short',0x07,0x00A,0x09C)
+		WriteShort(BAR(ARD,0x07,0x008),0x09C)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C)
 	elseif Place == 0x1912 then --Core
-		Spawn('Short',0x07,0x008,0x09C)
-		Spawn('Short',0x07,0x00A,0x09C)
+		WriteShort(BAR(ARD,0x07,0x008),0x09C)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C)
 	elseif Place == 0x1812 then --Armor Xemnas I
-		Spawn('Short',0x06,0x008,0x09C)
-		Spawn('Short',0x06,0x00A,0x09C)
-		Spawn('Short',0x06,0x034,0x09C)
-		Spawn('Short',0x06,0x036,0x09C)
+		WriteShort(BAR(ARD,0x06,0x008),0x09C)
+		WriteShort(BAR(ARD,0x06,0x00A),0x09C)
+		WriteShort(BAR(ARD,0x06,0x034),0x09C)
+		WriteShort(BAR(ARD,0x06,0x036),0x09C)
 	elseif Place == 0x1D12 then --Pre-Dragon Xemnas
-		Spawn('Short',0x03,0x010,0x09C)
-		Spawn('Short',0x03,0x012,0x09C)
+		WriteShort(BAR(ARD,0x03,0x010),0x09C)
+		WriteShort(BAR(ARD,0x03,0x012),0x09C)
 	end
 end
 end
