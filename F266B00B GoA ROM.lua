@@ -7,7 +7,7 @@ LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-print('GoA v1.53.4')
+print('GoA v1.53.5')
 GoAOffset = 0x7C
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
@@ -16,11 +16,12 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	OnPC = false
 	Now = 0x032BAE0 --Current Location
 	Sve = 0x1D5A970 --Saved Location
-	BGM = 0x0347D34 --Background Music
 	Save = 0x032BB30 --Save File
-	Obj0 = 0x1C94100 --00objentry.bin
-	Sys3 = 0x1CCB300 --03system.bin
-	Btl0 = 0x1CE5D80 --00battle.bin
+	Obj0Pointer = 0x1D5BA10 --00objentry.bin Pointer Address
+	Sys3Pointer = 0x1C61AF8 --03system.bin Pointer Address
+	Btl0Pointer = 0x1C61AFC --00battle.bin Pointer Address
+	ARDPointer  = 0x034ECF4 --ARD Pointer Address
+	Music = 0x0347D34 --Background Music
 	Pause = 0x0347E08 --Ability to Pause
 	React = 0x1C5FF4E --Reaction Command
 	Cntrl = 0x1D48DB8 --Sora Controllable
@@ -38,8 +39,6 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	BtlEnd = 0x1D490C0 --Something about end-of-battle camera
 	TxtBox = 0x1D48D54 --Last Displayed Textbox
 	DemCln = 0x1D48DEC --Demyx Clone Status
-	ARDLoad  = 0x034ECF4 --ARD Pointer Address
-	MSN = 0x04FA440 --Base MSN Address
 	Slot1    = 0x1C6C750 --Unit Slot 1
 	NextSlot = 0x268
 	Point1   = 0x1D48EFC
@@ -55,11 +54,12 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	OnPC = true
 	Now = 0x0714DB8 - 0x56454E
 	Sve = 0x2A09C00 - 0x56450E
-	BGM = 0x0AB8504 - 0x56450E
 	Save = 0x09A7070 - 0x56450E
-	Obj0 = 0x2A22B90 - 0x56450E
-	Sys3 = 0x2A59DB0 - 0x56450E
-	Btl0 = 0x2A74840 - 0x56450E
+	Obj0Pointer = 0x2A22730 - 0x56454E
+	Sys3Pointer = 0x2AE3550 - 0x56454E
+	Btl0Pointer = 0x2AE3558 - 0x56454E
+	ARDPointer = 0x2A0CF28 - 0x56454E
+	Music = 0x0AB8504 - 0x56450E
 	Pause = 0x0AB9038 - 0x56450E
 	React = 0x2A0E822 - 0x56450E
 	Cntrl = 0x2A148A8 - 0x56450E
@@ -77,8 +77,6 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	BtlEnd = 0x2A0D3A0 - 0x56450E
 	TxtBox = 0x074BC70 - 0x56454E
 	DemCln = 0x2A0CF74 - 0x56450E
-	ARDLoad  = 0x2A0CEE8 - 0x56450E
-	MSN = 0x0BF08C0 - 0x56450E
 	Slot1    = 0x2A20C58 - 0x56450E
 	NextSlot = 0x278
 	Point1   = 0x2A0D108 - 0x56450E
@@ -193,9 +191,17 @@ if true then --Define current values for common addresses
 	Evt    = ReadShort(Now+0x08)
 	PrevPlace = ReadShort(Now+0x30)
 	if not OnPC then
-		ARD = ReadInt(ARDLoad) --Base ARD Address
+		Obj0 = ReadInt(Obj0Pointer)
+		Sys3 = ReadInt(Sys3Pointer)
+		Btl0 = ReadInt(Btl0Pointer)
+		ARD = ReadInt(ARDPointer)
+		MSN = 0x04FA440
 	else
-		ARD = ReadLong(ARDLoad) --Base ARD Address
+		Obj0 = ReadLong(Obj0Pointer)
+		Sys3 = ReadLong(Sys3Pointer)
+		Btl0 = ReadLong(Btl0Pointer)
+		ARD = ReadLong(ARDPointer)
+		MSN = 0x0BF08C0 - 0x56450E
 	end
 end
 NewGame()
@@ -220,13 +226,13 @@ end
 
 function NewGame()
 --Before New Game
-if OnPC and ReadByte(BAR(Sys3,0x6,0x0E5F)) == 0x19 then --Change Form's Icons in PC from Analog Stick
-	WriteByte(BAR(Sys3,0x6,0x0E5F),0xCE) --Valor
-	WriteByte(BAR(Sys3,0x6,0x0E77),0xCE) --Wisdom
-	WriteByte(BAR(Sys3,0x6,0x0E8F),0xCE) --Limit
-	WriteByte(BAR(Sys3,0x6,0x0EA7),0xCE) --Master
-	WriteByte(BAR(Sys3,0x6,0x0EBF),0xCE) --Final
-	WriteByte(BAR(Sys3,0x6,0x0ED7),0xCE) --Anti
+if OnPC and ReadByte(BAR(Sys3,0x6,0x0E5F),OnPC) == 0x19 then --Change Form's Icons in PC from Analog Stick
+	WriteByte(BAR(Sys3,0x6,0x0E5F),0xCE,OnPC) --Valor
+	WriteByte(BAR(Sys3,0x6,0x0E77),0xCE,OnPC) --Wisdom
+	WriteByte(BAR(Sys3,0x6,0x0E8F),0xCE,OnPC) --Limit
+	WriteByte(BAR(Sys3,0x6,0x0EA7),0xCE,OnPC) --Master
+	WriteByte(BAR(Sys3,0x6,0x0EBF),0xCE,OnPC) --Final
+	WriteByte(BAR(Sys3,0x6,0x0ED7),0xCE,OnPC) --Anti
 end
 --Start New Game
 if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
@@ -249,11 +255,11 @@ function GoA()
 if Place == 0x1A04 then
 	--Open Promise Charm Path
 	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 and ReadByte(Save+0x3694) > 0 then --All Proofs & Promise Charm
-		WriteShort(BAR(ARD,0x06,0x05C),0x77A) --Text
+		WriteShort(BAR(ARD,0x06,0x05C),0x77A,OnPC) --Text
 	end
 	--Demyx's Portal Text
 	if ReadByte(Save+0x1D2E) > 0 then --Hollow Bastion Cleared
-		WriteShort(BAR(ARD,0x05,0x25C),0x779) --Radiant Garden
+		WriteShort(BAR(ARD,0x05,0x25C),0x779,OnPC) --Radiant Garden
 	end
 end
 --World Map -> Garden of Assemblage
@@ -551,7 +557,7 @@ end
 --Remove Growth Abilities
 if true then
 	for i = 0,34 do
-		WriteByte(BAR(Btl0,0x10,0x41+0x8*i),0) --Remove Innate Growth Abilities
+		WriteByte(BAR(Btl0,0x10,0x41+0x8*i),0,OnPC) --Remove Innate Growth Abilities
 	end
 	local Growth = {0x805E,0x8062,0x8234,0x8066,0x806A}
 	for form = 0,4 do --Adjust Form Movement
@@ -652,19 +658,19 @@ if true then
 	Ability[0x227] = 0x3AFA --Premium Mushroom
 	Ability[0x0A1] = 0x375A --Detection Staff
 	if Ability[Staff] ~= nil then
-		Ability = ReadShort(BAR(Sys3,0x6,Ability[Staff])) --Currently-equipped staff's ability
+		Ability = ReadShort(BAR(Sys3,0x6,Ability[Staff]),OnPC) --Currently-equipped staff's ability
 		if Ability == 0x0A5 then --Donald Fire
 			WriteShort(Save+0x26F6,0x80A5)
-			WriteByte(BAR(Sys3,0x6,0x168F),0)
+			WriteByte(BAR(Sys3,0x6,0x168F),0,OnPC)
 		elseif Ability == 0x0A6 then --Donald Blizzard
 			WriteShort(Save+0x26F6,0x80A6)
-			WriteByte(BAR(Sys3,0x6,0x16A7),0)
+			WriteByte(BAR(Sys3,0x6,0x16A7),0,OnPC)
 		elseif Ability == 0x0A7 then --Donald Thunder
 			WriteShort(Save+0x26F6,0x80A7)
-			WriteByte(BAR(Sys3,0x6,0x16BF),0)
+			WriteByte(BAR(Sys3,0x6,0x16BF),0,OnPC)
 		elseif Ability == 0x0A8 then --Donald Cure
 			WriteShort(Save+0x26F6,0x80A8)
-			WriteByte(BAR(Sys3,0x6,0x16D7),0)
+			WriteByte(BAR(Sys3,0x6,0x16D7),0,OnPC)
 		else
 			WriteShort(Save+0x26F6,0) --Remove Ability Slot 80
 			WriteByte(BAR(Sys3,0x6,0x168F),2) --Restore Original AP Costs
@@ -701,21 +707,21 @@ if true then
 	Ability[0x032] = 0x380A --Detection Shield
 	Ability[0x033] = 0x381A --Test the King
 	if Ability[Shield] ~= nil then
-		Ability = ReadShort(BAR(Sys3,0x6,Ability[Shield])) --Currently-equipped shield's ability
+		Ability = ReadShort(BAR(Sys3,0x6,Ability[Shield]),OnPC) --Currently-equipped shield's ability
 		if Ability == 0x1A7 then --Goofy Tornado
 			WriteShort(Save+0x280A,0x81A7)
-			WriteByte(BAR(Sys3,0x6,0x16EF),0)
+			WriteByte(BAR(Sys3,0x6,0x16EF),0,OnPC)
 		elseif Ability == 0x1AD then --Goofy Bash
 			WriteShort(Save+0x280A,0x81AD)
-			WriteByte(BAR(Sys3,0x6,0x1707),0)
+			WriteByte(BAR(Sys3,0x6,0x1707),0,OnPC)
 		elseif Ability == 0x1A9 then --Goofy Turbo
 			WriteShort(Save+0x280A,0x81A9)
-			WriteByte(BAR(Sys3,0x6,0x171F),0)
+			WriteByte(BAR(Sys3,0x6,0x171F),0,OnPC)
 		else
 			WriteShort(Save+0x280A,0) --Remove Ability Slot 80
-			WriteByte(BAR(Sys3,0x6,0x16EF),2) --Restore Original AP Costs
-			WriteByte(BAR(Sys3,0x6,0x1707),2)
-			WriteByte(BAR(Sys3,0x6,0x171F),2)
+			WriteByte(BAR(Sys3,0x6,0x16EF),2,OnPC) --Restore Original AP Costs
+			WriteByte(BAR(Sys3,0x6,0x1707),2,OnPC)
+			WriteByte(BAR(Sys3,0x6,0x171F),2,OnPC)
 		end
 	end
 end
@@ -749,8 +755,8 @@ if ReadByte(Save+0x3524) == 6 then --In Anti Form
 	BitOr(Save+0x36C0,0x20) --Unlocks Anti Form
 end--]]
 --Anti Form Costs Max Drive Instead of a Static 9.
-if ReadByte(BAR(Sys3,0x2,0x0264)) >= 5 and ReadByte(Slot1+0x1B2) >= 5 then
-	WriteByte(BAR(Sys3,0x2,0x0264),ReadByte(Slot1+0x1B2))
+if ReadByte(BAR(Sys3,0x2,0x0264),OnPC) >= 5 and ReadByte(Slot1+0x1B2) >= 5 then
+	WriteByte(BAR(Sys3,0x2,0x0264),ReadByte(Slot1+0x1B2),OnPC)
 end
 end
 
@@ -787,7 +793,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 5 then --The Altar of Naught
 		WarpRoom = 0x12
 	end
-	WriteShort(BAR(ARD,0x0A,GoAOffset+0x010),WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x010),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0412 and Events(Null,Null,0x02) then --The Path to the Castle
@@ -820,9 +826,9 @@ end
 --Final Door Requirements
 if Place == 0x1212 then
 	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 then --All Proofs Obtained
-		WriteShort(BAR(ARD,0x05,0x060),0x13D) --Spawn Door RC
+		WriteShort(BAR(ARD,0x05,0x060),0x13D,OnPC) --Spawn Door RC
 	else
-		WriteShort(BAR(ARD,0x05,0x060),0x000) --Despawn Door RC
+		WriteShort(BAR(ARD,0x05,0x060),0x000,OnPC) --Despawn Door RC
 	end
 end
 end
@@ -860,7 +866,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Throne Room
 		WarpRoom = 0x0B
 	end
-	WriteShort(BAR(ARD,0x0A,GoAOffset+0x030),WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x030),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0308 and Events(0x47,0x47,0x47) then --Mountain Climb
@@ -937,7 +943,7 @@ if Place == 0x1A04 then
 	elseif ReadByte(Save+0x1D3E) == 4 then --Beast's Room
 		WarpRoom = 0x03
 	end
-	WriteShort(BAR(ARD,0x0A,GoAOffset+0x050),WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x050),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0105 and Events(Null,Null,0x01) then --The Parlor Ambush
@@ -1024,7 +1030,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Santa's House
 		WarpRoom = 0x08
 	end
-	WriteShort(BAR(ARD,0x0A,GoAOffset+0x070),WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x070),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x010E and Events(Null,Null,0x01) then --The Professor's Experiment
@@ -1113,7 +1119,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 5 then --Ruined Chamber
 		WarpRoom = 0x0B
 	end
-	WriteShort(BAR(ARD,0x0A,GoAOffset+0x090),WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x090),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0007 and Events(Null,Null,0x01) then --Turning Over a New Feather
@@ -1205,7 +1211,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 4 then --Coliseum Gates
 		WarpRoom = 0x02
 	end
-	WriteShort(BAR(ARD,0x0A,GoAOffset+0x0B0),WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x0B0),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0306 and Events(Null,Null,0x02) then --Megara
@@ -1252,38 +1258,38 @@ end
 --Enable Drive with Olympus Stone
 if ReadByte(Save+0x3644) > 0 then
 	if Place == 0x0306 then --Underworld Entrance
-		WriteShort(BAR(ARD,0x0F,0x01C),0) --BTL 0x16
+		WriteShort(BAR(ARD,0x0F,0x01C),0,OnPC) --BTL 0x16
 	elseif Place == 0x0506 then --Valley of the Dead
-		WriteShort(BAR(ARD,0x06,0x060),0) --BTL 0x01
-		WriteShort(BAR(ARD,0x06,0x08C),0) --BTL 0x02
-		WriteShort(BAR(ARD,0x06,0x10C),0) --BTL 0x6F (Hades Escape)
+		WriteShort(BAR(ARD,0x06,0x060),0,OnPC) --BTL 0x01
+		WriteShort(BAR(ARD,0x06,0x08C),0,OnPC) --BTL 0x02
+		WriteShort(BAR(ARD,0x06,0x10C),0,OnPC) --BTL 0x6F (Hades Escape)
 	elseif Place == 0x0606 then --Hades' Chamber
-		WriteShort(BAR(ARD,0x05,0x014),0) --BTL 0x16
-		WriteShort(BAR(ARD,0x05,0x064),0) --BTL 0x70 (Invincible Hades)
+		WriteShort(BAR(ARD,0x05,0x014),0,OnPC) --BTL 0x16
+		WriteShort(BAR(ARD,0x05,0x064),0,OnPC) --BTL 0x70 (Invincible Hades)
 	elseif Place == 0x0706 then --Cave of the Dead: Entrance
-		WriteShort(BAR(ARD,0x07,0x0B0),0) --BTL 0x01
-		WriteShort(BAR(ARD,0x07,0x10C),0) --BTL 0x02
-		WriteShort(BAR(ARD,0x07,0x1A0),0) --BTL 0x72 (Cerberus)
+		WriteShort(BAR(ARD,0x07,0x0B0),0,OnPC) --BTL 0x01
+		WriteShort(BAR(ARD,0x07,0x10C),0,OnPC) --BTL 0x02
+		WriteShort(BAR(ARD,0x07,0x1A0),0,OnPC) --BTL 0x72 (Cerberus)
 	elseif Place == 0x0A06 then --Cave of the Dead: Inner Chamber
-		WriteShort(BAR(ARD,0x0A,0x010),0) --BTL 0x16
+		WriteShort(BAR(ARD,0x0A,0x010),0,OnPC) --BTL 0x16
 	elseif Place == 0x0B06 then --Underworld Caverns: Entrance
-		WriteShort(BAR(ARD,0x09,0x044),0) --BTL 0x01
+		WriteShort(BAR(ARD,0x09,0x044),0,OnPC) --BTL 0x01
 	elseif Place == 0x0F06 then --Cave of the Dead: Passage
-		WriteShort(BAR(ARD,0x0B,0x0AC),0) --BTL 0x01
-		WriteShort(BAR(ARD,0x0B,0x0F4),0) --BTL 0x02
+		WriteShort(BAR(ARD,0x0B,0x0AC),0,OnPC) --BTL 0x01
+		WriteShort(BAR(ARD,0x0B,0x0F4),0,OnPC) --BTL 0x02
 	elseif Place == 0x1006 then --Underworld Caverns: The Lost Road
-		WriteShort(BAR(ARD,0x09,0x040),0) --BTL 0x01
+		WriteShort(BAR(ARD,0x09,0x040),0,OnPC) --BTL 0x01
 	elseif Place == 0x1106 then --Underworld Caverns: Atrium
-		WriteShort(BAR(ARD,0x08,0x034),0) --BTL 0x16
-		WriteShort(BAR(ARD,0x08,0x078),0) --BTL 0x7B (Demyx's Water Clones)
+		WriteShort(BAR(ARD,0x08,0x034),0,OnPC) --BTL 0x16
+		WriteShort(BAR(ARD,0x08,0x078),0,OnPC) --BTL 0x7B (Demyx's Water Clones)
 	end
 end
 --Softlock Prevention Without Cups Unlocked
 if Place == 0x0306 and ReadShort(Save+0x239C)&0x07BA == 0 then
-	WriteShort(BAR(ARD,0x2E,0x05C),0x0E4) --Before 2nd Visit Text
-	WriteShort(BAR(ARD,0x2E,0x060),0x01F) --Before 2nd Visit RC
-	WriteShort(BAR(ARD,0x30,0x05C),0x32B) --During 2nd Visit Text
-	WriteShort(BAR(ARD,0x30,0x060),0x01F) --During 2nd Visit RC
+	WriteShort(BAR(ARD,0x2E,0x05C),0x0E4,OnPC) --Before 2nd Visit Text
+	WriteShort(BAR(ARD,0x2E,0x060),0x01F,OnPC) --Before 2nd Visit RC
+	WriteShort(BAR(ARD,0x30,0x05C),0x32B,OnPC) --During 2nd Visit Text
+	WriteShort(BAR(ARD,0x30,0x060),0x01F,OnPC) --During 2nd Visit RC
 end
 --Unlock All Cups with Hades Cups Trophy
 if ReadByte(Save+0x3696) > 0 then
@@ -1340,7 +1346,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Stone Hollow
 		WarpRoom = 0x01
 	end
-	WriteShort(BAR(ARD,0x0A,GoAOffset+0x0D0),WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x0D0),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x060A and Events(Null,Null,0x01) then --The Wild Kingdom
@@ -1400,7 +1406,7 @@ if Place == 0x1A04 then
 		elseif Progress == 6 then --Post 1st Visit
 			WarpRoom = 0x02
 		elseif Progress == 7 then --2nd Visit
-			WriteShort(BAR(ARD,0x0A,GoAOffset+0x0EE),0x12) --Start in TWtNW
+			WriteShort(BAR(ARD,0x0A,GoAOffset+0x0EE),0x12,OnPC) --Start in TWtNW
 			WarpRoom = 0x40
 		elseif Progress == 8 then --Before Sandlot Nobodies II
 			WarpRoom = 0x02
@@ -1435,10 +1441,10 @@ if Place == 0x1A04 then
 		WarpRoom = 0x1B
 	end
 	if WarpRoom <= 50 then
-		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0F0),WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0F0),WarpRoom,OnPC)
 	else
-		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0EC),0x02)
-		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0F4),WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0EC),0x02,OnPC)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0F4),WarpRoom,OnPC)
 	end
 end
 --World Progress
@@ -1571,13 +1577,13 @@ end
 --Save Points -> World Points (1st Visit)
 if ReadByte(Save+0x1CFF) == 8 and ReadByte(Save+0x3640) > 0 then --Trigger with Poster for now
 	if Place == 0x0202 then --The Usual Spot
-		WriteShort(BAR(ARD,0x06,0x034),0x239)
+		WriteShort(BAR(ARD,0x06,0x034),0x239,OnPC)
 	elseif Place == 0x0902 then --Central Station
-		WriteShort(BAR(ARD,0x11,0x034),0x239)
+		WriteShort(BAR(ARD,0x11,0x034),0x239,OnPC)
 	elseif Place == 0x1A02 then --Tower: Entryway
-		WriteShort(BAR(ARD,0x07,0x034),0x239)
+		WriteShort(BAR(ARD,0x07,0x034),0x239,OnPC)
 	elseif Place == 0x1B02 then --Tower: Sorcerer's Loft
-		WriteShort(BAR(ARD,0x09,0x034),0x239)
+		WriteShort(BAR(ARD,0x09,0x034),0x239,OnPC)
 	end
 end
 end
@@ -1650,7 +1656,7 @@ if Place == 0x1A04 then
 		WarpRoom = 0x03
 		Visit = 5
 	end
-	WriteShort(BAR(ARD,0x0A,GoAOffset+0x110),WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x110),WarpRoom,OnPC)
 	WriteByte(Save+0x3FFD,Visit)
 end
 --World Progress
@@ -1833,7 +1839,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 4 then --Ship Graveyard: The Interceptor's Hold
 		WarpRoom = 0x0B
 	end
-	WriteShort(BAR(ARD,0x0A,GoAOffset+0x130),WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x130),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x1710 and Events(0x4F,0x4F,0x4F) then --The Cursed Medallion
@@ -1903,10 +1909,10 @@ if Place == 0x1A04 then
 		WarpRoom = 0x05
 	end
 	if WarpRoom <= 50 then
-		WriteShort(BAR(ARD,0x0A,GoAOffset+0x150),WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x150),WarpRoom,OnPC)
 	else
-		WriteShort(BAR(ARD,0x0A,GoAOffset+0x14C),0x02)
-		WriteShort(BAR(ARD,0x0A,GoAOffset+0x154),WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x14C),0x02,OnPC)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x154),WarpRoom,OnPC)
 	end
 end
 --World Progress
@@ -1973,7 +1979,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Central Computer Mesa
 		WarpRoom = 0x08
 	end
-	WriteShort(BAR(ARD,0x0A,GoAOffset+0x170),WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x170),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0011 and Events(Null,Null,0x01) then --Tron
@@ -2072,10 +2078,10 @@ if Place == 0x1A04 then
 		WarpRoom = 0x15
 	end
 	if WarpRoom <= 50 then
-		WriteShort(BAR(ARD,0x0A,GoAOffset+0x190),WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x190),WarpRoom,OnPC)
 	else
-		WriteShort(BAR(ARD,0x0A,GoAOffset+0x18C),0x02)
-		WriteShort(BAR(ARD,0x0A,GoAOffset+0x194),WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x18C),0x02,OnPC)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x194),WarpRoom,OnPC)
 	end
 end
 --World Progress
@@ -2203,50 +2209,50 @@ end
 if ReadByte(Save+0x1CFF) == 13 then
 	if Place == 0x0202 then --The Usual Spot
 		if Events(0x02,0x02,0x02) then --Forced Save Menu
-			WriteShort(BAR(ARD,0x06,0x034),0x23A)
+			WriteShort(BAR(ARD,0x06,0x034),0x23A,OnPC)
 		else
-			WriteShort(BAR(ARD,0x06,0x034),0x239)
+			WriteShort(BAR(ARD,0x06,0x034),0x239,OnPC)
 		end
 	elseif Place == 0x2002 then --Station of Serenity
-		WriteShort(BAR(ARD,0x04,0x034),0x239)
+		WriteShort(BAR(ARD,0x04,0x034),0x239,OnPC)
 	elseif Place == 0x0502 then --Sandlot (Day 4)
-		WriteShort(BAR(ARD,0x06,0x034),0x239)
+		WriteShort(BAR(ARD,0x06,0x034),0x239,OnPC)
 	elseif Place == 0x0B02 then --Sunset Station
-		WriteShort(BAR(ARD,0x09,0x034),0x239)
+		WriteShort(BAR(ARD,0x09,0x034),0x239,OnPC)
 	elseif Place == 0x0902 then --Central Station
-		WriteShort(BAR(ARD,0x11,0x034),0x239)
+		WriteShort(BAR(ARD,0x11,0x034),0x239,OnPC)
 	elseif Place == 0x1202 then --The White Room
-		WriteShort(BAR(ARD,0x06,0x034),0x239)
+		WriteShort(BAR(ARD,0x06,0x034),0x239,OnPC)
 	elseif Place == 0x1502 then --Computer Room
-		WriteShort(BAR(ARD,0x09,0x034),0x239)
+		WriteShort(BAR(ARD,0x09,0x034),0x239,OnPC)
 	end
 end
 --Simulated Twilight Town Adjustments
 if ReadByte(Save+0x1CFF) == 13 then --STT Removals
-	if ReadByte(BAR(Sys3,0x02,0x3345)) == 0xB7 then --Better STT disabled (value is 0x93 when enabled, address is Twilight Thorn RC flag)
+	if ReadByte(BAR(Sys3,0x02,0x3345),OnPC) == 0xB7 then --Better STT disabled (value is 0x93 when enabled, address is Twilight Thorn RC flag)
 		if ReadShort(Save+0x25D2)&0x8000 == 0x8000 then --Dodge Roll
 			BitNot(Save+0x25D3,0x80)
 			BitOr(Save+0x1CF1,0x01)
 		end
-		WriteShort(BAR(Sys3,0x2,0x072A),0x00) --Fire
-		WriteShort(BAR(Sys3,0x2,0x075A),0x00) --Thunder
-		WriteShort(BAR(Sys3,0x2,0x078A),0x00) --Blizzard
-		WriteShort(BAR(Sys3,0x2,0x07BA),0x00) --Cure
-		WriteShort(BAR(Sys3,0x2,0x132A),0x00) --Fira
-		WriteShort(BAR(Sys3,0x2,0x135A),0x00) --Firaga
-		WriteShort(BAR(Sys3,0x2,0x138A),0x00) --Blizzara
-		WriteShort(BAR(Sys3,0x2,0x13BA),0x00) --Blizzaga
-		WriteShort(BAR(Sys3,0x2,0x13EA),0x00) --Thundara
-		WriteShort(BAR(Sys3,0x2,0x141A),0x00) --Thundaga
-		WriteShort(BAR(Sys3,0x2,0x144A),0x00) --Cura
-		WriteShort(BAR(Sys3,0x2,0x147A),0x00) --Curaga
-		WriteShort(BAR(Sys3,0x2,0x1C8A),0x00) --Magnet
-		WriteShort(BAR(Sys3,0x2,0x1CBA),0x00) --Magnera
-		WriteShort(BAR(Sys3,0x2,0x1CEA),0x00) --Magnega
-		WriteShort(BAR(Sys3,0x2,0x1D1A),0x00) --Reflect
-		WriteShort(BAR(Sys3,0x2,0x1D4A),0x00) --Reflera
-		WriteShort(BAR(Sys3,0x2,0x1D7A),0x00) --Reflega
-		WriteShort(BAR(Sys3,0x2,0x6DBA),0x00) --Trinity (Solo)
+		WriteShort(BAR(Sys3,0x2,0x072A),0x00,OnPC) --Fire
+		WriteShort(BAR(Sys3,0x2,0x075A),0x00,OnPC) --Thunder
+		WriteShort(BAR(Sys3,0x2,0x078A),0x00,OnPC) --Blizzard
+		WriteShort(BAR(Sys3,0x2,0x07BA),0x00,OnPC) --Cure
+		WriteShort(BAR(Sys3,0x2,0x132A),0x00,OnPC) --Fira
+		WriteShort(BAR(Sys3,0x2,0x135A),0x00,OnPC) --Firaga
+		WriteShort(BAR(Sys3,0x2,0x138A),0x00,OnPC) --Blizzara
+		WriteShort(BAR(Sys3,0x2,0x13BA),0x00,OnPC) --Blizzaga
+		WriteShort(BAR(Sys3,0x2,0x13EA),0x00,OnPC) --Thundara
+		WriteShort(BAR(Sys3,0x2,0x141A),0x00,OnPC) --Thundaga
+		WriteShort(BAR(Sys3,0x2,0x144A),0x00,OnPC) --Cura
+		WriteShort(BAR(Sys3,0x2,0x147A),0x00,OnPC) --Curaga
+		WriteShort(BAR(Sys3,0x2,0x1C8A),0x00,OnPC) --Magnet
+		WriteShort(BAR(Sys3,0x2,0x1CBA),0x00,OnPC) --Magnera
+		WriteShort(BAR(Sys3,0x2,0x1CEA),0x00,OnPC) --Magnega
+		WriteShort(BAR(Sys3,0x2,0x1D1A),0x00,OnPC) --Reflect
+		WriteShort(BAR(Sys3,0x2,0x1D4A),0x00,OnPC) --Reflera
+		WriteShort(BAR(Sys3,0x2,0x1D7A),0x00,OnPC) --Reflega
+		WriteShort(BAR(Sys3,0x2,0x6DBA),0x00,OnPC) --Trinity (Solo)
 	else --Better STT enabled
 		if Events(0x5B,0x5B,0x5B) or Events(0xC0,0xC0,0xC0) then --Mail Delivery softlock fix
 			WriteString(Obj0+0x15030,'F_TT010_ROXAS.mset\0')
@@ -2302,25 +2308,25 @@ else --Restore Outside STT
 		BitOr(Save+0x25D3,0x80)
 		BitNot(Save+0x1CF1,0x01)
 	end
-	WriteShort(BAR(Sys3,0x2,0x072A),0x02) --Fire
-	WriteShort(BAR(Sys3,0x2,0x075A),0x02) --Thunder
-	WriteShort(BAR(Sys3,0x2,0x078A),0x02) --Blizzard
-	WriteShort(BAR(Sys3,0x2,0x07BA),0x02) --Cure
-	WriteShort(BAR(Sys3,0x2,0x132A),0x02) --Fira
-	WriteShort(BAR(Sys3,0x2,0x135A),0x02) --Firaga
-	WriteShort(BAR(Sys3,0x2,0x138A),0x02) --Blizzara
-	WriteShort(BAR(Sys3,0x2,0x13BA),0x02) --Blizzaga
-	WriteShort(BAR(Sys3,0x2,0x13EA),0x02) --Thundara
-	WriteShort(BAR(Sys3,0x2,0x141A),0x02) --Thundaga
-	WriteShort(BAR(Sys3,0x2,0x144A),0x02) --Cura
-	WriteShort(BAR(Sys3,0x2,0x147A),0x02) --Curaga
-	WriteShort(BAR(Sys3,0x2,0x1C8A),0x02) --Magnet
-	WriteShort(BAR(Sys3,0x2,0x1CBA),0x02) --Magnera
-	WriteShort(BAR(Sys3,0x2,0x1CEA),0x02) --Magnega
-	WriteShort(BAR(Sys3,0x2,0x1D1A),0x02) --Reflect
-	WriteShort(BAR(Sys3,0x2,0x1D4A),0x02) --Reflera
-	WriteShort(BAR(Sys3,0x2,0x1D7A),0x02) --Reflega
-	WriteShort(BAR(Sys3,0x2,0x6DBA),0x51) --Trinity (Solo)
+	WriteShort(BAR(Sys3,0x2,0x072A),0x02,OnPC) --Fire
+	WriteShort(BAR(Sys3,0x2,0x075A),0x02,OnPC) --Thunder
+	WriteShort(BAR(Sys3,0x2,0x078A),0x02,OnPC) --Blizzard
+	WriteShort(BAR(Sys3,0x2,0x07BA),0x02,OnPC) --Cure
+	WriteShort(BAR(Sys3,0x2,0x132A),0x02,OnPC) --Fira
+	WriteShort(BAR(Sys3,0x2,0x135A),0x02,OnPC) --Firaga
+	WriteShort(BAR(Sys3,0x2,0x138A),0x02,OnPC) --Blizzara
+	WriteShort(BAR(Sys3,0x2,0x13BA),0x02,OnPC) --Blizzaga
+	WriteShort(BAR(Sys3,0x2,0x13EA),0x02,OnPC) --Thundara
+	WriteShort(BAR(Sys3,0x2,0x141A),0x02,OnPC) --Thundaga
+	WriteShort(BAR(Sys3,0x2,0x144A),0x02,OnPC) --Cura
+	WriteShort(BAR(Sys3,0x2,0x147A),0x02,OnPC) --Curaga
+	WriteShort(BAR(Sys3,0x2,0x1C8A),0x02,OnPC) --Magnet
+	WriteShort(BAR(Sys3,0x2,0x1CBA),0x02,OnPC) --Magnera
+	WriteShort(BAR(Sys3,0x2,0x1CEA),0x02,OnPC) --Magnega
+	WriteShort(BAR(Sys3,0x2,0x1D1A),0x02,OnPC) --Reflect
+	WriteShort(BAR(Sys3,0x2,0x1D4A),0x02,OnPC) --Reflera
+	WriteShort(BAR(Sys3,0x2,0x1D7A),0x02,OnPC) --Reflega
+	WriteShort(BAR(Sys3,0x2,0x6DBA),0x51,OnPC) --Trinity (Solo)
 	WriteShort(Save+0x1CF9,0) --Remove stored Keyblade
 end
 --Faster Twilight Thorn Reaction Commands
@@ -2413,25 +2419,25 @@ function Data()
 --Music Change - Final Fights
 if ReadShort(Save+0x03D6) == 0x02 then
 	if Place == 0x1B12 then --Part I
-		WriteShort(BAR(ARD,0x06,0x0A4),0x09C) --Guardando nel buio
-		WriteShort(BAR(ARD,0x06,0x0A6),0x09C)
+		WriteShort(BAR(ARD,0x06,0x0A4),0x09C,OnPC) --Guardando nel buio
+		WriteShort(BAR(ARD,0x06,0x0A6),0x09C,OnPC)
 	elseif Place == 0x1C12 then --Part II
-		WriteShort(BAR(ARD,0x07,0x008),0x09C)
-		WriteShort(BAR(ARD,0x07,0x00A),0x09C)
+		WriteShort(BAR(ARD,0x07,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C,OnPC)
 	elseif Place == 0x1A12 then --Cylinders
-		WriteShort(BAR(ARD,0x07,0x008),0x09C)
-		WriteShort(BAR(ARD,0x07,0x00A),0x09C)
+		WriteShort(BAR(ARD,0x07,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C,OnPC)
 	elseif Place == 0x1912 then --Core
-		WriteShort(BAR(ARD,0x07,0x008),0x09C)
-		WriteShort(BAR(ARD,0x07,0x00A),0x09C)
+		WriteShort(BAR(ARD,0x07,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C,OnPC)
 	elseif Place == 0x1812 then --Armor Xemnas I
-		WriteShort(BAR(ARD,0x06,0x008),0x09C)
-		WriteShort(BAR(ARD,0x06,0x00A),0x09C)
-		WriteShort(BAR(ARD,0x06,0x034),0x09C)
-		WriteShort(BAR(ARD,0x06,0x036),0x09C)
+		WriteShort(BAR(ARD,0x06,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x06,0x00A),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x06,0x034),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x06,0x036),0x09C,OnPC)
 	elseif Place == 0x1D12 then --Pre-Dragon Xemnas
-		WriteShort(BAR(ARD,0x03,0x010),0x09C)
-		WriteShort(BAR(ARD,0x03,0x012),0x09C)
+		WriteShort(BAR(ARD,0x03,0x010),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x03,0x012),0x09C,OnPC)
 	end
 end
 end
