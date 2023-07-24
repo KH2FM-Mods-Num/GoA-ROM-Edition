@@ -130,11 +130,11 @@ local Subpoint = File + 0x08 + 0x10*Subfile
 local Address
 --Detect errors
 if ReadInt(File,OnPC) ~= 0x01524142 then --Header mismatch
-	return
+	return 0
 elseif Subfile > ReadInt(File+4,OnPC) then --Subfile over count
-	return
+	return 0
 elseif Offset >= ReadInt(Subpoint+4,OnPC) then --Offset exceed subfile length
-	return
+	return 0
 end
 --Get address
 if not OnPC then
@@ -190,18 +190,23 @@ if true then --Define current values for common addresses
 	Btl    = ReadShort(Now+0x06)
 	Evt    = ReadShort(Now+0x08)
 	PrevPlace = ReadShort(Now+0x30)
+	if Place == 0xFFFF then
+		if not OnPC then
+			Obj0 = ReadInt(Obj0Pointer)
+			Sys3 = ReadInt(Sys3Pointer)
+			Btl0 = ReadInt(Btl0Pointer)
+			MSN = 0x04FA440
+		else
+			Obj0 = ReadLong(Obj0Pointer)
+			Sys3 = ReadLong(Sys3Pointer)
+			Btl0 = ReadLong(Btl0Pointer)
+			MSN = 0x0BF08C0 - 0x56450E
+		end
+	end
 	if not OnPC then
-		Obj0 = ReadInt(Obj0Pointer)
-		Sys3 = ReadInt(Sys3Pointer)
-		Btl0 = ReadInt(Btl0Pointer)
 		ARD = ReadInt(ARDPointer)
-		MSN = 0x04FA440
 	else
-		Obj0 = ReadLong(Obj0Pointer)
-		Sys3 = ReadLong(Sys3Pointer)
-		Btl0 = ReadLong(Btl0Pointer)
 		ARD = ReadLong(ARDPointer)
-		MSN = 0x0BF08C0 - 0x56450E
 	end
 end
 NewGame()
@@ -673,10 +678,10 @@ if true then
 			WriteByte(BAR(Sys3,0x6,0x16D7),0,OnPC)
 		else
 			WriteShort(Save+0x26F6,0) --Remove Ability Slot 80
-			WriteByte(BAR(Sys3,0x6,0x168F),2) --Restore Original AP Costs
-			WriteByte(BAR(Sys3,0x6,0x16A7),2)
-			WriteByte(BAR(Sys3,0x6,0x16BF),2)
-			WriteByte(BAR(Sys3,0x6,0x16D7),3)
+			WriteByte(BAR(Sys3,0x6,0x168F),2,OnPC) --Restore Original AP Costs
+			WriteByte(BAR(Sys3,0x6,0x16A7),2,OnPC)
+			WriteByte(BAR(Sys3,0x6,0x16BF),2,OnPC)
+			WriteByte(BAR(Sys3,0x6,0x16D7),3,OnPC)
 		end
 	end
 end
@@ -735,20 +740,20 @@ elseif ReadLong(0x2F9142-0x56454E) == 0x43B70F0D74D68541 then --JP
 end
 --Alternate Party Models (adding new UCM using MEMT causes problems when shopping)
 if World == 0x0C and Place ~= 0x070C then --Mage & Knight (KH I)
-	WriteString(Obj0+0x16F0,'P_EX020_DC\0')
-	WriteString(Obj0+0x1750,'P_EX030_DC\0')
-	WriteString(Obj0+0x3250,'P_EX020_DC_ANGRY_NPC\0')
-	WriteString(Obj0+0x40F0,'H_ZZ020_DC\0')
-	WriteString(Obj0+0x4150,'H_ZZ030_DC\0')
+	WriteString(Obj0+0x16F0,'P_EX020_DC\0',OnPC)
+	WriteString(Obj0+0x1750,'P_EX030_DC\0',OnPC)
+	WriteString(Obj0+0x3250,'P_EX020_DC_ANGRY_NPC\0',OnPC)
+	WriteString(Obj0+0x40F0,'H_ZZ020_DC\0',OnPC)
+	WriteString(Obj0+0x4150,'H_ZZ030_DC\0',OnPC)
 elseif Place == 0x2004 or Place == 0x2104 or Place == 0x2204 or Place == 0x2604 then --Casual (CoM)
-	WriteString(Obj0+0x16F0,'P_EX020_CM\0')
-	WriteString(Obj0+0x1750,'P_EX030_CM\0')
+	WriteString(Obj0+0x16F0,'P_EX020_CM\0',OnPC)
+	WriteString(Obj0+0x1750,'P_EX030_CM\0',OnPC)
 else --Revert costume changes
-	WriteString(Obj0+0x16F0,'P_EX020\0')
-	WriteString(Obj0+0x1750,'P_EX030\0')
-	WriteString(Obj0+0x3250,'P_EX020_ANGRY_NPC\0')
-	WriteString(Obj0+0x40F0,'H_ZZ020\0')
-	WriteString(Obj0+0x4150,'H_ZZ030\0')
+	WriteString(Obj0+0x16F0,'P_EX020\0',OnPC)
+	WriteString(Obj0+0x1750,'P_EX030\0',OnPC)
+	WriteString(Obj0+0x3250,'P_EX020_ANGRY_NPC\0',OnPC)
+	WriteString(Obj0+0x40F0,'H_ZZ020\0',OnPC)
+	WriteString(Obj0+0x4150,'H_ZZ030\0',OnPC)
 end
 --[[Enable Anti Form Forcing
 if ReadByte(Save+0x3524) == 6 then --In Anti Form
@@ -2229,7 +2234,7 @@ if ReadByte(Save+0x1CFF) == 13 then
 end
 --Simulated Twilight Town Adjustments
 if ReadByte(Save+0x1CFF) == 13 then --STT Removals
-	if ReadByte(BAR(Sys3,0x02,0x3345),OnPC) == 0xB7 then --Better STT disabled (value is 0x93 when enabled, address is Twilight Thorn RC flag)
+	if ReadByte(BAR(Sys3,0x2,0x3345),OnPC) == 0xB7 then --Better STT disabled (value is 0x93 when enabled, address is Twilight Thorn RC flag)
 		if ReadShort(Save+0x25D2)&0x8000 == 0x8000 then --Dodge Roll
 			BitNot(Save+0x25D3,0x80)
 			BitOr(Save+0x1CF1,0x01)
@@ -2255,9 +2260,9 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 		WriteShort(BAR(Sys3,0x2,0x6DBA),0x00,OnPC) --Trinity (Solo)
 	else --Better STT enabled
 		if Events(0x5B,0x5B,0x5B) or Events(0xC0,0xC0,0xC0) then --Mail Delivery softlock fix
-			WriteString(Obj0+0x15030,'F_TT010_ROXAS.mset\0')
+			WriteString(Obj0+0x15030,'F_TT010_ROXAS.mset\0',OnPC)
 		else --Let Limit Form use skateboard
-			WriteString(Obj0+0x15030,'F_TT010.mset\0')
+			WriteString(Obj0+0x15030,'F_TT010.mset\0',OnPC)
 		end
 	end
 	local Equip = ReadShort(Save+0x24F0) --Currently equipped Keyblade
@@ -2303,7 +2308,7 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 			WriteShort(Save+0x24F0,Store) --Change Equipped Keyblade
 		end
 	end
-else --Restore Outside STT
+elseif ReadShort(Save+0x1CF9) ~= 0 then --Restore Outside STT
 	if ReadByte(Save+0x1CF1)&0x01 == 0x01 then --Dodge Roll
 		BitOr(Save+0x25D3,0x80)
 		BitNot(Save+0x1CF1,0x01)

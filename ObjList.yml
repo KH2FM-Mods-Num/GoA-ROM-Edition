@@ -632,8 +632,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-840: #Kingdom Key D
-  ObjectId: 840
+3001: #Kingdom Key D
+  ObjectId: 3001
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -662,8 +662,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-841: #HT Kingdom Key D
-  ObjectId: 841
+3002: #HT Kingdom Key D
+  ObjectId: 3002
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -692,8 +692,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-842: #HT Alpha Weapon
-  ObjectId: 842
+3003: #HT Alpha Weapon
+  ObjectId: 3003
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -722,8 +722,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-843: #HT Omega Weapon
-  ObjectId: 843
+3004: #HT Omega Weapon
+  ObjectId: 3004
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -752,8 +752,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-844: #HT Pureblood
-  ObjectId: 844
+3005: #HT Pureblood
+  ObjectId: 3005
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -782,8 +782,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-845: #SP Kingdom Key D
-  ObjectId: 845
+3006: #SP Kingdom Key D
+  ObjectId: 3006
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -812,8 +812,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-846: #SP Alpha Weapon
-  ObjectId: 846
+3007: #SP Alpha Weapon
+  ObjectId: 3007
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -842,8 +842,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-847: #SP Omega Weapon
-  ObjectId: 847
+3008: #SP Omega Weapon
+  ObjectId: 3008
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -872,8 +872,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-848: #SP Pureblood
-  ObjectId: 848
+3009: #SP Pureblood
+  ObjectId: 3009
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -902,8 +902,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1547: #HT Struggle Sword
-  ObjectId: 1547
+3010: #HT Struggle Sword
+  ObjectId: 3010
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -932,8 +932,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1548: #HT Struggle Wand
-  ObjectId: 1548
+3011: #HT Struggle Wand
+  ObjectId: 3011
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -962,8 +962,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1549: #HT Struggle Hammer
-  ObjectId: 1549
+3012: #HT Struggle Hammer
+  ObjectId: 3012
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -992,8 +992,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1550: #SP Struggle Sword
-  ObjectId: 1550
+3013: #SP Struggle Sword
+  ObjectId: 3013
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -1022,8 +1022,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1551: #SP Struggle Wand
-  ObjectId: 1551
+3014: #SP Struggle Wand
+  ObjectId: 3014
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -1052,8 +1052,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1552: #SP Struggle Hammer
-  ObjectId: 1552
+3015: #SP Struggle Hammer
+  ObjectId: 3015
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
