@@ -100,9 +100,9 @@ Slot12 = Slot11 - NextSlot
 Point2 = Point1 + NxtPoint
 Point3 = Point2 + NxtPoint
 Gauge2 = Gauge1 + NxtGauge
-Gauge3 = Gauge2 + NxtGauge
+Gauge3 = Gauge2 + NxtGauge--]]
 Menu2  = Menu1 + NextMenu
-Menu3  = Menu2 + NextMenu--]]
+--Menu3  = Menu2 + NextMenu
 end
 
 function Warp(W,R,D,M,B,E) --Warp into the appropriate World, Room, Door, Map, Btl, Evt
@@ -130,20 +130,14 @@ local Subpoint = File + 0x08 + 0x10*Subfile
 local Address
 --Detect errors
 if ReadInt(File,OnPC) ~= 0x01524142 then --Header mismatch
-	return 0
+	return
 elseif Subfile > ReadInt(File+4,OnPC) then --Subfile over count
-	return 0
+	return
 elseif Offset >= ReadInt(Subpoint+4,OnPC) then --Offset exceed subfile length
-	return 0
+	return
 end
 --Get address
-if not OnPC then
-	Address = ReadInt(Subpoint) + Offset
-else
-	local x = File&0xFFFFFF000000 --Calculations are wrong if done in one step for some reason
-	local y = ReadInt(Subpoint,true)&0xFFFFFF
-	Address = x + y + Offset
-end
+Address = File + (ReadInt(Subpoint,OnPC) - ReadInt(File+8,OnPC)) + Offset
 return Address
 end
 
@@ -190,7 +184,7 @@ if true then --Define current values for common addresses
 	Btl    = ReadShort(Now+0x06)
 	Evt    = ReadShort(Now+0x08)
 	PrevPlace = ReadShort(Now+0x30)
-	if Place == 0xFFFF then
+	if Place == 0xFFFF or not MSN then
 		if not OnPC then
 			Obj0 = ReadInt(Obj0Pointer)
 			Sys3 = ReadInt(Sys3Pointer)
@@ -560,7 +554,7 @@ for Slot = 0,68 do
 	end
 end
 --Remove Growth Abilities
-if true then
+if ReadByte(BAR(Btl0,0x10,0x41),0,OnPC) ~= 0 then
 	for i = 0,34 do
 		WriteByte(BAR(Btl0,0x10,0x41+0x8*i),0,OnPC) --Remove Innate Growth Abilities
 	end
@@ -676,7 +670,7 @@ if true then
 		elseif Ability == 0x0A8 then --Donald Cure
 			WriteShort(Save+0x26F6,0x80A8)
 			WriteByte(BAR(Sys3,0x6,0x16D7),0,OnPC)
-		else
+		elseif ReadShort(Save+0x26F6) ~= 0 then
 			WriteShort(Save+0x26F6,0) --Remove Ability Slot 80
 			WriteByte(BAR(Sys3,0x6,0x168F),2,OnPC) --Restore Original AP Costs
 			WriteByte(BAR(Sys3,0x6,0x16A7),2,OnPC)
@@ -722,7 +716,7 @@ if true then
 		elseif Ability == 0x1A9 then --Goofy Turbo
 			WriteShort(Save+0x280A,0x81A9)
 			WriteByte(BAR(Sys3,0x6,0x171F),0,OnPC)
-		else
+		elseif ReadShort(Save+0x280A) ~= 0 then
 			WriteShort(Save+0x280A,0) --Remove Ability Slot 80
 			WriteByte(BAR(Sys3,0x6,0x16EF),2,OnPC) --Restore Original AP Costs
 			WriteByte(BAR(Sys3,0x6,0x1707),2,OnPC)
@@ -748,7 +742,7 @@ if World == 0x0C and Place ~= 0x070C then --Mage & Knight (KH I)
 elseif Place == 0x2004 or Place == 0x2104 or Place == 0x2204 or Place == 0x2604 then --Casual (CoM)
 	WriteString(Obj0+0x16F0,'P_EX020_CM\0',OnPC)
 	WriteString(Obj0+0x1750,'P_EX030_CM\0',OnPC)
-else --Revert costume changes
+elseif ReadString(Obj0+0x3250,13,OnPC) ~= 'P_EX020_ANGRY' then --Revert costume changes
 	WriteString(Obj0+0x16F0,'P_EX020\0',OnPC)
 	WriteString(Obj0+0x1750,'P_EX030\0',OnPC)
 	WriteString(Obj0+0x3250,'P_EX020_ANGRY_NPC\0',OnPC)
