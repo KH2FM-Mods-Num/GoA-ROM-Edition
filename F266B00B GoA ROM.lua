@@ -478,7 +478,7 @@ if true then
 	WriteInt(Save+0x3724,Bitmask)
 end
 --Fix Genie Crash
-if true then --No Valor, Wisdom, Master, or Final
+if ReadByte(Save+0x36C4)&0x10 == 0x10 then --If Lamp Charm is obtained
 	local CurSubmenu
 	if not OnPC then
 		CurSubmenu = ReadInt(Menu2)
