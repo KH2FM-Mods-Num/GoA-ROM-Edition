@@ -1798,7 +1798,7 @@ L3590:
  syscall 1, 311 ; trap_sheet_set_element_rate (3 in, 0 out)
  pushImm 0
  popToWp W4
- ;set AI to phase 3
+ ;Fast Oogie Boogie (set AI to phase 3)
  pushFromFSp 0
  pushImm 24
  add 
