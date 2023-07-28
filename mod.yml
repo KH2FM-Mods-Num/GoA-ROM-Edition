@@ -1,4 +1,4 @@
-title: GoA ROM Edition v1.53.4
+title: GoA ROM Edition v1.53.5
 description: GoA, but with a lot of stuff done through ROM editing to reduce workload on Lua.
 assets:
 #Lua Script
@@ -4717,7 +4717,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt07/evt.script
-- name: ard/tt08.ard #Station Plaza (Prevent Promise Charm Removal)
+- name: ard/tt08.ard #Station Plaza (Move Station Fight Popup & Prevent Promise Charm Removal)
   multi:
   - name: ard/jp/tt08.ard
   - name: ard/us/tt08.ard
@@ -4732,7 +4732,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt08/evt.script
-- name: ard/tt09.ard #Central Station (Drive Refill)
+- name: ard/tt09.ard #Central Station (Move Station Fight Popup & Drive Refill)
   multi:
   - name: ard/jp/tt09.ard
   - name: ard/us/tt09.ard
