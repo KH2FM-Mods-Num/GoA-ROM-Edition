@@ -745,7 +745,7 @@ if World == 0x0C and Place ~= 0x070C then --Mage & Knight (KH I)
 elseif Place == 0x2004 or Place == 0x2104 or Place == 0x2204 or Place == 0x2604 then --Casual (CoM)
 	WriteString(Obj0+0x16F0,'P_EX020_CM\0',OnPC)
 	WriteString(Obj0+0x1750,'P_EX030_CM\0',OnPC)
-elseif ReadString(Obj0+0x3250,13,OnPC) ~= 'P_EX020_ANGRY' then --Revert costume changes
+elseif ReadString(Obj0+0x16F0,8,OnPC) ~= 'P_EX020\0' then --Revert costume changes
 	WriteString(Obj0+0x16F0,'P_EX020\0',OnPC)
 	WriteString(Obj0+0x1750,'P_EX030\0',OnPC)
 	WriteString(Obj0+0x3250,'P_EX020_ANGRY_NPC\0',OnPC)
