@@ -553,11 +553,14 @@ for Slot = 0,68 do
 		WriteShort(Save+0x25D8,0x00C6)
 	end
 end
---Remove Growth Abilities
+--Remove Growth Abilities from Forms
 if ReadByte(BAR(Btl0,0x10,0x41),0,OnPC) ~= 0 then
 	for i = 0,34 do
 		WriteByte(BAR(Btl0,0x10,0x41+0x8*i),0,OnPC) --Remove Innate Growth Abilities
 	end
+end
+--Growth Abilities during Forms
+if true then
 	local Growth = {0x805E,0x8062,0x8234,0x8066,0x806A}
 	for form = 0,4 do --Adjust Form Movement
 		local FormAddress = Save + 0x32F6 + 0x38*form
