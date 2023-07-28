@@ -6669,9 +6669,6 @@ L10358:
  pushImm 1
  syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
  pushFromFSp 0
- pushImm 9
- syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
- pushFromFSp 0
  pushImm 3
  pushImm 3
  pushImm 5
@@ -7914,6 +7911,9 @@ L15337: ;___label for action pushFromPAi L29239 ; ___ai rc_crowd_laser_finish
  pushImm 0
  pushImm 0
  syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
+ pushFromFSp 0
+ pushImm 9
+ syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
  pushFromFSp 0
  fetchValue 4
  pushImm 227
@@ -14757,10 +14757,6 @@ L28493:
  ret 
 L28494: ;___label for action pushFromPAi L29408 ; ___ai btl_super_hard
  popToSp 0
- ;Dome Skip (Disable pattern 9 that leaves obj at 1 HP)
- pushFromFSp 0
- pushImm 9
- syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
  pushFromFSp 0
  pushFromPAi L29226 ; ___ai atk_crowd_laser (L29226)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
@@ -14770,10 +14766,6 @@ L28494: ;___label for action pushFromPAi L29408 ; ___ai btl_super_hard
  ret 
 L28509: ;___label for action pushFromPAi L29509 ; ___ai rvg_super_hard
  popToSp 0
- ;Dome Skip (Disable pattern 9 that leaves obj at 1 HP)
- pushFromFSp 0
- pushImm 9
- syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
  ret 
 L28512:
  popToSp 4
