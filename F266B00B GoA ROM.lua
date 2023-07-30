@@ -752,6 +752,14 @@ elseif ReadString(Obj0+0x16F0,8,OnPC) ~= 'P_EX020\0' then --Revert costume chang
 	WriteString(Obj0+0x40F0,'H_ZZ020\0',OnPC)
 	WriteString(Obj0+0x4150,'H_ZZ030\0',OnPC)
 end
+--Navigational Map Unlocks Valor Form
+if ReadByte(Save+0x36C0)&0x80 == 0x80 then
+	BitOr(Save+0x36C0,0x02)
+end
+--Window of Time Map 2 Unlocks Final Form
+if ReadByte(Save+0x36C2)&0x02 == 0x02 then
+	BitOr(Save+0x36C0,0x10)
+end
 --[[Enable Anti Form Forcing
 if ReadByte(Save+0x3524) == 6 then --In Anti Form
 	BitOr(Save+0x36C0,0x20) --Unlocks Anti Form
