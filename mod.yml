@@ -1,4 +1,4 @@
-title: GoA ROM Edition v1.53.4
+title: GoA ROM Edition v1.53.5
 description: GoA, but with a lot of stuff done through ROM editing to reduce workload on Lua.
 assets:
 #Lua Script
@@ -1392,6 +1392,102 @@ assets:
     method: copy
     source:
     - name: worl.bin
+#Dance Call Experiment crash fix
+- name: limit/fm/jack.bar
+  method: binarc
+  source:
+  - name: limi
+    type: bdx
+    method: bdscript
+    source:
+    - name: limit/jack.bdscript
+- name: limit/us/jack.bar
+  multi:
+  - name: limit/fr/jack.bar
+  - name: limit/gr/jack.bar
+  - name: limit/it/jack.bar
+  - name: limit/sp/jack.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: limi
+    type: bdx
+    method: bdscript
+    source:
+    - name: limit/jack.bdscript
+#Proper Xemnas II Dome Skip
+- name: obj/B_EX170_LAST.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    type: bdx
+    method: bdscript
+    source:
+    - name: obj/B_EX170_LAST.bdscript
+- name: obj/B_EX170_LAST_LV99.mdlx
+  method: binarc
+  source:
+  - name: b_ex
+    type: bdx
+    method: bdscript
+    source:
+    - name: obj/B_EX170_LAST_LV99.bdscript
+- name: remastered/obj/B_EX170_LAST.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-2.dds
+  multi:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-3.dds
+  multi:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-3.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-4.dds
+  multi:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-6.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
+  multi:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-4.dds
+    type: internal
+- name: remastered/obj/B_EX170_LAST.mdlx/-6.dds
+  multi:
+  - name: remastered/obj/B_EX170_LAST_LV99.mdlx/-6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
+    type: internal
 #Proper Fast Oogie Boogie
 - name: obj/B_NM000.mdlx
   method: binarc
@@ -1431,7 +1527,7 @@ assets:
   source:
   - name: remastered/obj/B_NM000.mdlx/-4.dds
     type: internal
-#Marluxia HUD (Hide if Vanilla)
+#Hide Marluxia HUD if vanilla
 - name: obj/N_CM000_BTL.mdlx
   method: binarc
   source:
@@ -1491,7 +1587,7 @@ assets:
     method: bdscript
     source:
     - name: obj/F_HB130.bdscript
-#Remove Bulky Vendors 2nd Visit Requirements (trap_progress_is_second -> trap_area_battle_set)
+#Remove Bulky Vendors 2nd Visit Requirements
 - name: obj/F_AL050.mdlx
   method: binarc
   source:
@@ -4621,7 +4717,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt07/evt.script
-- name: ard/tt08.ard #Station Plaza (Prevent Promise Charm Removal)
+- name: ard/tt08.ard #Station Plaza (Move Station Fight Popup & Prevent Promise Charm Removal)
   multi:
   - name: ard/jp/tt08.ard
   - name: ard/us/tt08.ard
@@ -4636,7 +4732,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt08/evt.script
-- name: ard/tt09.ard #Central Station (Drive Refill)
+- name: ard/tt09.ard #Central Station (Move Station Fight Popup & Drive Refill)
   multi:
   - name: ard/jp/tt09.ard
   - name: ard/us/tt09.ard
@@ -4881,8 +4977,8 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt41/evt.script
-#MSN Editing
-- name: msn/jp/LK05_MS201.bar #Hyenas II (Fast Hyenas)
+#Fast Hyenas II
+- name: msn/jp/LK05_MS201.bar
   method: binarc
   source:
   - name: LK05
@@ -4905,8 +5001,13 @@ assets:
     source:
     - name: ard/lk05/LK05_MS201.bin
 - name: remastered/msn/jp/LK05_MS201.bar/JP_LK05_MS201_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/LK05_MS201.bar/JP_LK05_MS201_bar0.png
+    type: internal
+- name: remastered/msn/us/LK05_MS201.bar/US_LK05_MS201_bar0.png
   multi:
-  - name: remastered/msn/us/LK05_MS201.bar/US_LK05_MS201_bar0.png
   - name: remastered/msn/fr/LK05_MS201.bar/FR_LK05_MS201_bar0.png
   - name: remastered/msn/gr/LK05_MS201.bar/GR_LK05_MS201_bar0.png
   - name: remastered/msn/it/LK05_MS201.bar/IT_LK05_MS201_bar0.png
@@ -4916,7 +5017,8 @@ assets:
   source:
   - name: remastered/msn/us/LK05_MS201.bar/US_LK05_MS201_bar0.png
     type: internal
-- name: msn/jp/HB38_FM_MAR.bar #Marluxia HUD (Show if boss rando)
+#Show Marluxia HUD if boss rando
+- name: msn/jp/HB38_FM_MAR.bar
   method: binarc
   source:
   - name: ms_b
@@ -4938,3 +5040,1327 @@ assets:
     method: bdscript
     source:
     - name: ard/hb38/HB38_FM_MAR.bdscript
+#Prevent Warp to STT Day 2 (Cargo Climb Roxas)
+- name: msn/jp/TT06_BAGGAGE_01.bar
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_BAGGAGE_01.bdscript
+- name: msn/us/TT06_BAGGAGE_01.bar
+  multi:
+  - name: msn/fr/TT06_BAGGAGE_01.bar
+  - name: msn/gr/TT06_BAGGAGE_01.bar
+  - name: msn/it/TT06_BAGGAGE_01.bar
+  - name: msn/sp/TT06_BAGGAGE_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_BAGGAGE_01.bdscript
+- name: remastered/msn/jp/TT06_BAGGAGE_01.bar/JP_TT06_BAGGAGE_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_BAGGAGE_01.bar/JP_TT06_BAGGAGE_01_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT06_BAGGAGE_01.bar/JP_TT06_BAGGAGE_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_BAGGAGE_01.bar/JP_TT06_BAGGAGE_01_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT06_BAGGAGE_01.bar/JP_TT06_BAGGAGE_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_BAGGAGE_01.bar/JP_TT06_BAGGAGE_01_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT06_BAGGAGE_01.bar/JP_TT06_BAGGAGE_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_BAGGAGE_01.bar/JP_TT06_BAGGAGE_01_bar3.png
+    type: internal
+- name: remastered/msn/us/TT06_BAGGAGE_01.bar/US_TT06_BAGGAGE_01_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT06_BAGGAGE_01.bar/FR_TT06_BAGGAGE_01_bar0.png
+  - name: remastered/msn/gr/TT06_BAGGAGE_01.bar/GR_TT06_BAGGAGE_01_bar0.png
+  - name: remastered/msn/it/TT06_BAGGAGE_01.bar/IT_TT06_BAGGAGE_01_bar0.png
+  - name: remastered/msn/sp/TT06_BAGGAGE_01.bar/SP_TT06_BAGGAGE_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_BAGGAGE_01.bar/US_TT06_BAGGAGE_01_bar0.png
+    type: internal
+- name: remastered/msn/us/TT06_BAGGAGE_01.bar/US_TT06_BAGGAGE_01_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT06_BAGGAGE_01.bar/FR_TT06_BAGGAGE_01_bar1.png
+  - name: remastered/msn/gr/TT06_BAGGAGE_01.bar/GR_TT06_BAGGAGE_01_bar1.png
+  - name: remastered/msn/it/TT06_BAGGAGE_01.bar/IT_TT06_BAGGAGE_01_bar1.png
+  - name: remastered/msn/sp/TT06_BAGGAGE_01.bar/SP_TT06_BAGGAGE_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_BAGGAGE_01.bar/US_TT06_BAGGAGE_01_bar1.png
+    type: internal
+- name: remastered/msn/us/TT06_BAGGAGE_01.bar/US_TT06_BAGGAGE_01_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT06_BAGGAGE_01.bar/FR_TT06_BAGGAGE_01_bar2.png
+  - name: remastered/msn/gr/TT06_BAGGAGE_01.bar/GR_TT06_BAGGAGE_01_bar2.png
+  - name: remastered/msn/it/TT06_BAGGAGE_01.bar/IT_TT06_BAGGAGE_01_bar2.png
+  - name: remastered/msn/sp/TT06_BAGGAGE_01.bar/SP_TT06_BAGGAGE_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_BAGGAGE_01.bar/US_TT06_BAGGAGE_01_bar2.png
+    type: internal
+- name: remastered/msn/us/TT06_BAGGAGE_01.bar/US_TT06_BAGGAGE_01_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT06_BAGGAGE_01.bar/FR_TT06_BAGGAGE_01_bar3.png
+  - name: remastered/msn/gr/TT06_BAGGAGE_01.bar/GR_TT06_BAGGAGE_01_bar3.png
+  - name: remastered/msn/it/TT06_BAGGAGE_01.bar/IT_TT06_BAGGAGE_01_bar3.png
+  - name: remastered/msn/sp/TT06_BAGGAGE_01.bar/SP_TT06_BAGGAGE_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_BAGGAGE_01.bar/US_TT06_BAGGAGE_01_bar3.png
+    type: internal
+#Prevent Warp to STT Day 2 (Cargo Climb Sora)
+- name: msn/jp/TT06_BAGGAGE_02.bar
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_BAGGAGE_02.bdscript
+- name: msn/us/TT06_BAGGAGE_02.bar
+  multi:
+  - name: msn/fr/TT06_BAGGAGE_02.bar
+  - name: msn/gr/TT06_BAGGAGE_02.bar
+  - name: msn/it/TT06_BAGGAGE_02.bar
+  - name: msn/sp/TT06_BAGGAGE_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_BAGGAGE_02.bdscript
+- name: remastered/msn/jp/TT06_BAGGAGE_02.bar/JP_TT06_BAGGAGE_02_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_BAGGAGE_02.bar/JP_TT06_BAGGAGE_02_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT06_BAGGAGE_02.bar/JP_TT06_BAGGAGE_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_BAGGAGE_02.bar/JP_TT06_BAGGAGE_02_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT06_BAGGAGE_02.bar/JP_TT06_BAGGAGE_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_BAGGAGE_02.bar/JP_TT06_BAGGAGE_02_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT06_BAGGAGE_02.bar/JP_TT06_BAGGAGE_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_BAGGAGE_02.bar/JP_TT06_BAGGAGE_02_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT06_BAGGAGE_02.bar/JP_TT06_BAGGAGE_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_BAGGAGE_02.bar/JP_TT06_BAGGAGE_02_bar4.png
+    type: internal
+- name: remastered/msn/us/TT06_BAGGAGE_02.bar/US_TT06_BAGGAGE_02_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT06_BAGGAGE_02.bar/FR_TT06_BAGGAGE_02_bar0.png
+  - name: remastered/msn/gr/TT06_BAGGAGE_02.bar/GR_TT06_BAGGAGE_02_bar0.png
+  - name: remastered/msn/it/TT06_BAGGAGE_02.bar/IT_TT06_BAGGAGE_02_bar0.png
+  - name: remastered/msn/sp/TT06_BAGGAGE_02.bar/SP_TT06_BAGGAGE_02_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_BAGGAGE_02.bar/US_TT06_BAGGAGE_02_bar0.png
+    type: internal
+- name: remastered/msn/us/TT06_BAGGAGE_02.bar/US_TT06_BAGGAGE_02_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT06_BAGGAGE_02.bar/FR_TT06_BAGGAGE_02_bar1.png
+  - name: remastered/msn/gr/TT06_BAGGAGE_02.bar/GR_TT06_BAGGAGE_02_bar1.png
+  - name: remastered/msn/it/TT06_BAGGAGE_02.bar/IT_TT06_BAGGAGE_02_bar1.png
+  - name: remastered/msn/sp/TT06_BAGGAGE_02.bar/SP_TT06_BAGGAGE_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_BAGGAGE_02.bar/US_TT06_BAGGAGE_02_bar1.png
+    type: internal
+- name: remastered/msn/us/TT06_BAGGAGE_02.bar/US_TT06_BAGGAGE_02_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT06_BAGGAGE_02.bar/FR_TT06_BAGGAGE_02_bar2.png
+  - name: remastered/msn/gr/TT06_BAGGAGE_02.bar/GR_TT06_BAGGAGE_02_bar2.png
+  - name: remastered/msn/it/TT06_BAGGAGE_02.bar/IT_TT06_BAGGAGE_02_bar2.png
+  - name: remastered/msn/sp/TT06_BAGGAGE_02.bar/SP_TT06_BAGGAGE_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_BAGGAGE_02.bar/US_TT06_BAGGAGE_02_bar2.png
+    type: internal
+- name: remastered/msn/us/TT06_BAGGAGE_02.bar/US_TT06_BAGGAGE_02_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT06_BAGGAGE_02.bar/FR_TT06_BAGGAGE_02_bar3.png
+  - name: remastered/msn/gr/TT06_BAGGAGE_02.bar/GR_TT06_BAGGAGE_02_bar3.png
+  - name: remastered/msn/it/TT06_BAGGAGE_02.bar/IT_TT06_BAGGAGE_02_bar3.png
+  - name: remastered/msn/sp/TT06_BAGGAGE_02.bar/SP_TT06_BAGGAGE_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_BAGGAGE_02.bar/US_TT06_BAGGAGE_02_bar3.png
+    type: internal
+- name: remastered/msn/us/TT06_BAGGAGE_02.bar/US_TT06_BAGGAGE_02_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT06_BAGGAGE_02.bar/FR_TT06_BAGGAGE_02_bar4.png
+  - name: remastered/msn/gr/TT06_BAGGAGE_02.bar/GR_TT06_BAGGAGE_02_bar4.png
+  - name: remastered/msn/it/TT06_BAGGAGE_02.bar/IT_TT06_BAGGAGE_02_bar4.png
+  - name: remastered/msn/sp/TT06_BAGGAGE_02.bar/SP_TT06_BAGGAGE_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_BAGGAGE_02.bar/US_TT06_BAGGAGE_02_bar4.png
+    type: internal
+#Prevent Warp to STT Day 2 (Mail Delivery Roxas)
+- name: msn/jp/TT06_LETTER_01.bar
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_LETTER_01.bdscript
+- name: msn/us/TT06_LETTER_01.bar
+  multi:
+  - name: msn/fr/TT06_LETTER_01.bar
+  - name: msn/gr/TT06_LETTER_01.bar
+  - name: msn/it/TT06_LETTER_01.bar
+  - name: msn/sp/TT06_LETTER_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_LETTER_01.bdscript
+- name: remastered/msn/jp/TT06_LETTER_01.bar/JP_TT06_LETTER_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_LETTER_01.bar/JP_TT06_LETTER_01_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT06_LETTER_01.bar/JP_TT06_LETTER_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_LETTER_01.bar/JP_TT06_LETTER_01_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT06_LETTER_01.bar/JP_TT06_LETTER_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_LETTER_01.bar/JP_TT06_LETTER_01_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT06_LETTER_01.bar/JP_TT06_LETTER_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_LETTER_01.bar/JP_TT06_LETTER_01_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT06_LETTER_01.bar/JP_TT06_LETTER_01_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_LETTER_01.bar/JP_TT06_LETTER_01_bar4.png
+    type: internal
+- name: remastered/msn/us/TT06_LETTER_01.bar/US_TT06_LETTER_01_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT06_LETTER_01.bar/FR_TT06_LETTER_01_bar0.png
+  - name: remastered/msn/gr/TT06_LETTER_01.bar/GR_TT06_LETTER_01_bar0.png
+  - name: remastered/msn/it/TT06_LETTER_01.bar/IT_TT06_LETTER_01_bar0.png
+  - name: remastered/msn/sp/TT06_LETTER_01.bar/SP_TT06_LETTER_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_LETTER_01.bar/US_TT06_LETTER_01_bar0.png
+    type: internal
+- name: remastered/msn/us/TT06_LETTER_01.bar/US_TT06_LETTER_01_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT06_LETTER_01.bar/FR_TT06_LETTER_01_bar1.png
+  - name: remastered/msn/gr/TT06_LETTER_01.bar/GR_TT06_LETTER_01_bar1.png
+  - name: remastered/msn/it/TT06_LETTER_01.bar/IT_TT06_LETTER_01_bar1.png
+  - name: remastered/msn/sp/TT06_LETTER_01.bar/SP_TT06_LETTER_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_LETTER_01.bar/US_TT06_LETTER_01_bar1.png
+    type: internal
+- name: remastered/msn/us/TT06_LETTER_01.bar/US_TT06_LETTER_01_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT06_LETTER_01.bar/FR_TT06_LETTER_01_bar2.png
+  - name: remastered/msn/gr/TT06_LETTER_01.bar/GR_TT06_LETTER_01_bar2.png
+  - name: remastered/msn/it/TT06_LETTER_01.bar/IT_TT06_LETTER_01_bar2.png
+  - name: remastered/msn/sp/TT06_LETTER_01.bar/SP_TT06_LETTER_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_LETTER_01.bar/US_TT06_LETTER_01_bar2.png
+    type: internal
+- name: remastered/msn/us/TT06_LETTER_01.bar/US_TT06_LETTER_01_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT06_LETTER_01.bar/FR_TT06_LETTER_01_bar3.png
+  - name: remastered/msn/gr/TT06_LETTER_01.bar/GR_TT06_LETTER_01_bar3.png
+  - name: remastered/msn/it/TT06_LETTER_01.bar/IT_TT06_LETTER_01_bar3.png
+  - name: remastered/msn/sp/TT06_LETTER_01.bar/SP_TT06_LETTER_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_LETTER_01.bar/US_TT06_LETTER_01_bar3.png
+    type: internal
+- name: remastered/msn/us/TT06_LETTER_01.bar/US_TT06_LETTER_01_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT06_LETTER_01.bar/FR_TT06_LETTER_01_bar4.png
+  - name: remastered/msn/gr/TT06_LETTER_01.bar/GR_TT06_LETTER_01_bar4.png
+  - name: remastered/msn/it/TT06_LETTER_01.bar/IT_TT06_LETTER_01_bar4.png
+  - name: remastered/msn/sp/TT06_LETTER_01.bar/SP_TT06_LETTER_01_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_LETTER_01.bar/US_TT06_LETTER_01_bar4.png
+    type: internal
+#Prevent Warp to STT Day 2 (Mail Delivery Sora)
+- name: msn/jp/TT06_LETTER_02.bar
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_LETTER_02.bdscript
+- name: msn/us/TT06_LETTER_02.bar
+  multi:
+  - name: msn/fr/TT06_LETTER_02.bar
+  - name: msn/gr/TT06_LETTER_02.bar
+  - name: msn/it/TT06_LETTER_02.bar
+  - name: msn/sp/TT06_LETTER_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_LETTER_02.bdscript
+- name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar4.png
+    type: internal
+- name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_LETTER_02.bar/JP_TT06_LETTER_02_bar5.png
+    type: internal
+- name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT06_LETTER_02.bar/FR_TT06_LETTER_02_bar0.png
+  - name: remastered/msn/gr/TT06_LETTER_02.bar/GR_TT06_LETTER_02_bar0.png
+  - name: remastered/msn/it/TT06_LETTER_02.bar/IT_TT06_LETTER_02_bar0.png
+  - name: remastered/msn/sp/TT06_LETTER_02.bar/SP_TT06_LETTER_02_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar0.png
+    type: internal
+- name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT06_LETTER_02.bar/FR_TT06_LETTER_02_bar1.png
+  - name: remastered/msn/gr/TT06_LETTER_02.bar/GR_TT06_LETTER_02_bar1.png
+  - name: remastered/msn/it/TT06_LETTER_02.bar/IT_TT06_LETTER_02_bar1.png
+  - name: remastered/msn/sp/TT06_LETTER_02.bar/SP_TT06_LETTER_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar1.png
+    type: internal
+- name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT06_LETTER_02.bar/FR_TT06_LETTER_02_bar2.png
+  - name: remastered/msn/gr/TT06_LETTER_02.bar/GR_TT06_LETTER_02_bar2.png
+  - name: remastered/msn/it/TT06_LETTER_02.bar/IT_TT06_LETTER_02_bar2.png
+  - name: remastered/msn/sp/TT06_LETTER_02.bar/SP_TT06_LETTER_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar2.png
+    type: internal
+- name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT06_LETTER_02.bar/FR_TT06_LETTER_02_bar3.png
+  - name: remastered/msn/gr/TT06_LETTER_02.bar/GR_TT06_LETTER_02_bar3.png
+  - name: remastered/msn/it/TT06_LETTER_02.bar/IT_TT06_LETTER_02_bar3.png
+  - name: remastered/msn/sp/TT06_LETTER_02.bar/SP_TT06_LETTER_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar3.png
+    type: internal
+- name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT06_LETTER_02.bar/FR_TT06_LETTER_02_bar4.png
+  - name: remastered/msn/gr/TT06_LETTER_02.bar/GR_TT06_LETTER_02_bar4.png
+  - name: remastered/msn/it/TT06_LETTER_02.bar/IT_TT06_LETTER_02_bar4.png
+  - name: remastered/msn/sp/TT06_LETTER_02.bar/SP_TT06_LETTER_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar4.png
+    type: internal
+- name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar5.png
+  multi:
+  - name: remastered/msn/fr/TT06_LETTER_02.bar/FR_TT06_LETTER_02_bar5.png
+  - name: remastered/msn/gr/TT06_LETTER_02.bar/GR_TT06_LETTER_02_bar5.png
+  - name: remastered/msn/it/TT06_LETTER_02.bar/IT_TT06_LETTER_02_bar5.png
+  - name: remastered/msn/sp/TT06_LETTER_02.bar/SP_TT06_LETTER_02_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_LETTER_02.bar/US_TT06_LETTER_02_bar5.png
+    type: internal
+#Prevent Warp to STT Day 2 (Grandstander Roxas)
+- name: msn/jp/TT06_PERFORM_01.bar
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_PERFORM_01.bdscript
+- name: msn/us/TT06_PERFORM_01.bar
+  multi:
+  - name: msn/fr/TT06_PERFORM_01.bar
+  - name: msn/gr/TT06_PERFORM_01.bar
+  - name: msn/it/TT06_PERFORM_01.bar
+  - name: msn/sp/TT06_PERFORM_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_PERFORM_01.bdscript
+- name: remastered/msn/jp/TT06_PERFORM_01.bar/JP_TT06_PERFORM_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_PERFORM_01.bar/JP_TT06_PERFORM_01_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT06_PERFORM_01.bar/JP_TT06_PERFORM_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_PERFORM_01.bar/JP_TT06_PERFORM_01_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT06_PERFORM_01.bar/JP_TT06_PERFORM_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_PERFORM_01.bar/JP_TT06_PERFORM_01_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT06_PERFORM_01.bar/JP_TT06_PERFORM_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_PERFORM_01.bar/JP_TT06_PERFORM_01_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT06_PERFORM_01.bar/JP_TT06_PERFORM_01_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_PERFORM_01.bar/JP_TT06_PERFORM_01_bar4.png
+    type: internal
+- name: remastered/msn/us/TT06_PERFORM_01.bar/US_TT06_PERFORM_01_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT06_PERFORM_01.bar/FR_TT06_PERFORM_01_bar0.png
+  - name: remastered/msn/gr/TT06_PERFORM_01.bar/GR_TT06_PERFORM_01_bar0.png
+  - name: remastered/msn/it/TT06_PERFORM_01.bar/IT_TT06_PERFORM_01_bar0.png
+  - name: remastered/msn/sp/TT06_PERFORM_01.bar/SP_TT06_PERFORM_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_PERFORM_01.bar/US_TT06_PERFORM_01_bar0.png
+    type: internal
+- name: remastered/msn/us/TT06_PERFORM_01.bar/US_TT06_PERFORM_01_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT06_PERFORM_01.bar/FR_TT06_PERFORM_01_bar1.png
+  - name: remastered/msn/gr/TT06_PERFORM_01.bar/GR_TT06_PERFORM_01_bar1.png
+  - name: remastered/msn/it/TT06_PERFORM_01.bar/IT_TT06_PERFORM_01_bar1.png
+  - name: remastered/msn/sp/TT06_PERFORM_01.bar/SP_TT06_PERFORM_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_PERFORM_01.bar/US_TT06_PERFORM_01_bar1.png
+    type: internal
+- name: remastered/msn/us/TT06_PERFORM_01.bar/US_TT06_PERFORM_01_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT06_PERFORM_01.bar/FR_TT06_PERFORM_01_bar2.png
+  - name: remastered/msn/gr/TT06_PERFORM_01.bar/GR_TT06_PERFORM_01_bar2.png
+  - name: remastered/msn/it/TT06_PERFORM_01.bar/IT_TT06_PERFORM_01_bar2.png
+  - name: remastered/msn/sp/TT06_PERFORM_01.bar/SP_TT06_PERFORM_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_PERFORM_01.bar/US_TT06_PERFORM_01_bar2.png
+    type: internal
+- name: remastered/msn/us/TT06_PERFORM_01.bar/US_TT06_PERFORM_01_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT06_PERFORM_01.bar/FR_TT06_PERFORM_01_bar3.png
+  - name: remastered/msn/gr/TT06_PERFORM_01.bar/GR_TT06_PERFORM_01_bar3.png
+  - name: remastered/msn/it/TT06_PERFORM_01.bar/IT_TT06_PERFORM_01_bar3.png
+  - name: remastered/msn/sp/TT06_PERFORM_01.bar/SP_TT06_PERFORM_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_PERFORM_01.bar/US_TT06_PERFORM_01_bar3.png
+    type: internal
+- name: remastered/msn/us/TT06_PERFORM_01.bar/US_TT06_PERFORM_01_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT06_PERFORM_01.bar/FR_TT06_PERFORM_01_bar4.png
+  - name: remastered/msn/gr/TT06_PERFORM_01.bar/GR_TT06_PERFORM_01_bar4.png
+  - name: remastered/msn/it/TT06_PERFORM_01.bar/IT_TT06_PERFORM_01_bar4.png
+  - name: remastered/msn/sp/TT06_PERFORM_01.bar/SP_TT06_PERFORM_01_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_PERFORM_01.bar/US_TT06_PERFORM_01_bar4.png
+    type: internal
+#Prevent Warp to STT Day 2 (Grandstander Sora)
+- name: msn/jp/TT06_PERFORM_02.bar
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_PERFORM_02.bdscript
+- name: msn/us/TT06_PERFORM_02.bar
+  multi:
+  - name: msn/fr/TT06_PERFORM_02.bar
+  - name: msn/gr/TT06_PERFORM_02.bar
+  - name: msn/it/TT06_PERFORM_02.bar
+  - name: msn/sp/TT06_PERFORM_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt06
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt06/TT06_PERFORM_02.bdscript
+- name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar4.png
+    type: internal
+- name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT06_PERFORM_02.bar/JP_TT06_PERFORM_02_bar5.png
+    type: internal
+- name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT06_PERFORM_02.bar/FR_TT06_PERFORM_02_bar0.png
+  - name: remastered/msn/gr/TT06_PERFORM_02.bar/GR_TT06_PERFORM_02_bar0.png
+  - name: remastered/msn/it/TT06_PERFORM_02.bar/IT_TT06_PERFORM_02_bar0.png
+  - name: remastered/msn/sp/TT06_PERFORM_02.bar/SP_TT06_PERFORM_02_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar0.png
+    type: internal
+- name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT06_PERFORM_02.bar/FR_TT06_PERFORM_02_bar1.png
+  - name: remastered/msn/gr/TT06_PERFORM_02.bar/GR_TT06_PERFORM_02_bar1.png
+  - name: remastered/msn/it/TT06_PERFORM_02.bar/IT_TT06_PERFORM_02_bar1.png
+  - name: remastered/msn/sp/TT06_PERFORM_02.bar/SP_TT06_PERFORM_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar1.png
+    type: internal
+- name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT06_PERFORM_02.bar/FR_TT06_PERFORM_02_bar2.png
+  - name: remastered/msn/gr/TT06_PERFORM_02.bar/GR_TT06_PERFORM_02_bar2.png
+  - name: remastered/msn/it/TT06_PERFORM_02.bar/IT_TT06_PERFORM_02_bar2.png
+  - name: remastered/msn/sp/TT06_PERFORM_02.bar/SP_TT06_PERFORM_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar2.png
+    type: internal
+- name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT06_PERFORM_02.bar/FR_TT06_PERFORM_02_bar3.png
+  - name: remastered/msn/gr/TT06_PERFORM_02.bar/GR_TT06_PERFORM_02_bar3.png
+  - name: remastered/msn/it/TT06_PERFORM_02.bar/IT_TT06_PERFORM_02_bar3.png
+  - name: remastered/msn/sp/TT06_PERFORM_02.bar/SP_TT06_PERFORM_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar3.png
+    type: internal
+- name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT06_PERFORM_02.bar/FR_TT06_PERFORM_02_bar4.png
+  - name: remastered/msn/gr/TT06_PERFORM_02.bar/GR_TT06_PERFORM_02_bar4.png
+  - name: remastered/msn/it/TT06_PERFORM_02.bar/IT_TT06_PERFORM_02_bar4.png
+  - name: remastered/msn/sp/TT06_PERFORM_02.bar/SP_TT06_PERFORM_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar4.png
+    type: internal
+- name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar5.png
+  multi:
+  - name: remastered/msn/fr/TT06_PERFORM_02.bar/FR_TT06_PERFORM_02_bar5.png
+  - name: remastered/msn/gr/TT06_PERFORM_02.bar/GR_TT06_PERFORM_02_bar5.png
+  - name: remastered/msn/it/TT06_PERFORM_02.bar/IT_TT06_PERFORM_02_bar5.png
+  - name: remastered/msn/sp/TT06_PERFORM_02.bar/SP_TT06_PERFORM_02_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT06_PERFORM_02.bar/US_TT06_PERFORM_02_bar5.png
+    type: internal
+#Prevent Warp to STT Day 2 (Junk Sweep Roxas)
+- name: msn/jp/TT07_CLEAN_01.bar
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_CLEAN_01.bdscript
+- name: msn/us/TT07_CLEAN_01.bar
+  multi:
+  - name: msn/fr/TT07_CLEAN_01.bar
+  - name: msn/gr/TT07_CLEAN_01.bar
+  - name: msn/it/TT07_CLEAN_01.bar
+  - name: msn/sp/TT07_CLEAN_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_CLEAN_01.bdscript
+- name: remastered/msn/jp/TT07_CLEAN_01.bar/JP_TT07_CLEAN_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_CLEAN_01.bar/JP_TT07_CLEAN_01_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT07_CLEAN_01.bar/JP_TT07_CLEAN_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_CLEAN_01.bar/JP_TT07_CLEAN_01_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT07_CLEAN_01.bar/JP_TT07_CLEAN_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_CLEAN_01.bar/JP_TT07_CLEAN_01_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT07_CLEAN_01.bar/JP_TT07_CLEAN_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_CLEAN_01.bar/JP_TT07_CLEAN_01_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT07_CLEAN_01.bar/JP_TT07_CLEAN_01_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_CLEAN_01.bar/JP_TT07_CLEAN_01_bar4.png
+    type: internal
+- name: remastered/msn/us/TT07_CLEAN_01.bar/US_TT07_CLEAN_01_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT07_CLEAN_01.bar/FR_TT07_CLEAN_01_bar0.png
+  - name: remastered/msn/gr/TT07_CLEAN_01.bar/GR_TT07_CLEAN_01_bar0.png
+  - name: remastered/msn/it/TT07_CLEAN_01.bar/IT_TT07_CLEAN_01_bar0.png
+  - name: remastered/msn/sp/TT07_CLEAN_01.bar/SP_TT07_CLEAN_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_CLEAN_01.bar/US_TT07_CLEAN_01_bar0.png
+    type: internal
+- name: remastered/msn/us/TT07_CLEAN_01.bar/US_TT07_CLEAN_01_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT07_CLEAN_01.bar/FR_TT07_CLEAN_01_bar1.png
+  - name: remastered/msn/gr/TT07_CLEAN_01.bar/GR_TT07_CLEAN_01_bar1.png
+  - name: remastered/msn/it/TT07_CLEAN_01.bar/IT_TT07_CLEAN_01_bar1.png
+  - name: remastered/msn/sp/TT07_CLEAN_01.bar/SP_TT07_CLEAN_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_CLEAN_01.bar/US_TT07_CLEAN_01_bar1.png
+    type: internal
+- name: remastered/msn/us/TT07_CLEAN_01.bar/US_TT07_CLEAN_01_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT07_CLEAN_01.bar/FR_TT07_CLEAN_01_bar2.png
+  - name: remastered/msn/gr/TT07_CLEAN_01.bar/GR_TT07_CLEAN_01_bar2.png
+  - name: remastered/msn/it/TT07_CLEAN_01.bar/IT_TT07_CLEAN_01_bar2.png
+  - name: remastered/msn/sp/TT07_CLEAN_01.bar/SP_TT07_CLEAN_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_CLEAN_01.bar/US_TT07_CLEAN_01_bar2.png
+    type: internal
+- name: remastered/msn/us/TT07_CLEAN_01.bar/US_TT07_CLEAN_01_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT07_CLEAN_01.bar/FR_TT07_CLEAN_01_bar3.png
+  - name: remastered/msn/gr/TT07_CLEAN_01.bar/GR_TT07_CLEAN_01_bar3.png
+  - name: remastered/msn/it/TT07_CLEAN_01.bar/IT_TT07_CLEAN_01_bar3.png
+  - name: remastered/msn/sp/TT07_CLEAN_01.bar/SP_TT07_CLEAN_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_CLEAN_01.bar/US_TT07_CLEAN_01_bar3.png
+    type: internal
+- name: remastered/msn/us/TT07_CLEAN_01.bar/US_TT07_CLEAN_01_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT07_CLEAN_01.bar/FR_TT07_CLEAN_01_bar4.png
+  - name: remastered/msn/gr/TT07_CLEAN_01.bar/GR_TT07_CLEAN_01_bar4.png
+  - name: remastered/msn/it/TT07_CLEAN_01.bar/IT_TT07_CLEAN_01_bar4.png
+  - name: remastered/msn/sp/TT07_CLEAN_01.bar/SP_TT07_CLEAN_01_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_CLEAN_01.bar/US_TT07_CLEAN_01_bar4.png
+    type: internal
+#Prevent Warp to STT Day 2 (Junk Sweep Sora)
+- name: msn/jp/TT07_CLEAN_02.bar
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_CLEAN_02.bdscript
+- name: msn/us/TT07_CLEAN_02.bar
+  multi:
+  - name: msn/fr/TT07_CLEAN_02.bar
+  - name: msn/gr/TT07_CLEAN_02.bar
+  - name: msn/it/TT07_CLEAN_02.bar
+  - name: msn/sp/TT07_CLEAN_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_CLEAN_02.bdscript
+- name: remastered/msn/jp/TT07_CLEAN_02.bar/JP_TT07_CLEAN_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_CLEAN_02.bar/JP_TT07_CLEAN_02_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT07_CLEAN_02.bar/JP_TT07_CLEAN_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_CLEAN_02.bar/JP_TT07_CLEAN_02_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT07_CLEAN_02.bar/JP_TT07_CLEAN_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_CLEAN_02.bar/JP_TT07_CLEAN_02_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT07_CLEAN_02.bar/JP_TT07_CLEAN_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_CLEAN_02.bar/JP_TT07_CLEAN_02_bar4.png
+    type: internal
+- name: remastered/msn/jp/TT07_CLEAN_02.bar/JP_TT07_CLEAN_02_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_CLEAN_02.bar/JP_TT07_CLEAN_02_bar5.png
+    type: internal
+- name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT07_CLEAN_02.bar/FR_TT07_CLEAN_02_bar0.png
+  - name: remastered/msn/gr/TT07_CLEAN_02.bar/GR_TT07_CLEAN_02_bar0.png
+  - name: remastered/msn/it/TT07_CLEAN_02.bar/IT_TT07_CLEAN_02_bar0.png
+  - name: remastered/msn/sp/TT07_CLEAN_02.bar/SP_TT07_CLEAN_02_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar0.png
+    type: internal
+- name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT07_CLEAN_02.bar/FR_TT07_CLEAN_02_bar1.png
+  - name: remastered/msn/gr/TT07_CLEAN_02.bar/GR_TT07_CLEAN_02_bar1.png
+  - name: remastered/msn/it/TT07_CLEAN_02.bar/IT_TT07_CLEAN_02_bar1.png
+  - name: remastered/msn/sp/TT07_CLEAN_02.bar/SP_TT07_CLEAN_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar1.png
+    type: internal
+- name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT07_CLEAN_02.bar/FR_TT07_CLEAN_02_bar2.png
+  - name: remastered/msn/gr/TT07_CLEAN_02.bar/GR_TT07_CLEAN_02_bar2.png
+  - name: remastered/msn/it/TT07_CLEAN_02.bar/IT_TT07_CLEAN_02_bar2.png
+  - name: remastered/msn/sp/TT07_CLEAN_02.bar/SP_TT07_CLEAN_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar2.png
+    type: internal
+- name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT07_CLEAN_02.bar/FR_TT07_CLEAN_02_bar3.png
+  - name: remastered/msn/gr/TT07_CLEAN_02.bar/GR_TT07_CLEAN_02_bar3.png
+  - name: remastered/msn/it/TT07_CLEAN_02.bar/IT_TT07_CLEAN_02_bar3.png
+  - name: remastered/msn/sp/TT07_CLEAN_02.bar/SP_TT07_CLEAN_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar3.png
+    type: internal
+- name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT07_CLEAN_02.bar/FR_TT07_CLEAN_02_bar4.png
+  - name: remastered/msn/gr/TT07_CLEAN_02.bar/GR_TT07_CLEAN_02_bar4.png
+  - name: remastered/msn/it/TT07_CLEAN_02.bar/IT_TT07_CLEAN_02_bar4.png
+  - name: remastered/msn/sp/TT07_CLEAN_02.bar/SP_TT07_CLEAN_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar4.png
+    type: internal
+- name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar5.png
+  multi:
+  - name: remastered/msn/fr/TT07_CLEAN_02.bar/FR_TT07_CLEAN_02_bar5.png
+  - name: remastered/msn/gr/TT07_CLEAN_02.bar/GR_TT07_CLEAN_02_bar5.png
+  - name: remastered/msn/it/TT07_CLEAN_02.bar/IT_TT07_CLEAN_02_bar5.png
+  - name: remastered/msn/sp/TT07_CLEAN_02.bar/SP_TT07_CLEAN_02_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_CLEAN_02.bar/US_TT07_CLEAN_02_bar5.png
+    type: internal
+#Prevent Warp to STT Day 2 (Poster Duty Roxas)
+- name: msn/jp/TT07_POSTER_01.bar
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_POSTER_01.bdscript
+- name: msn/us/TT07_POSTER_01.bar
+  multi:
+  - name: msn/fr/TT07_POSTER_01.bar
+  - name: msn/gr/TT07_POSTER_01.bar
+  - name: msn/it/TT07_POSTER_01.bar
+  - name: msn/sp/TT07_POSTER_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_POSTER_01.bdscript
+- name: remastered/msn/jp/TT07_POSTER_01.bar/JP_TT07_POSTER_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_POSTER_01.bar/JP_TT07_POSTER_01_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT07_POSTER_01.bar/JP_TT07_POSTER_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_POSTER_01.bar/JP_TT07_POSTER_01_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT07_POSTER_01.bar/JP_TT07_POSTER_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_POSTER_01.bar/JP_TT07_POSTER_01_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT07_POSTER_01.bar/JP_TT07_POSTER_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_POSTER_01.bar/JP_TT07_POSTER_01_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT07_POSTER_01.bar/JP_TT07_POSTER_01_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_POSTER_01.bar/JP_TT07_POSTER_01_bar4.png
+    type: internal
+- name: remastered/msn/us/TT07_POSTER_01.bar/US_TT07_POSTER_01_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT07_POSTER_01.bar/FR_TT07_POSTER_01_bar0.png
+  - name: remastered/msn/gr/TT07_POSTER_01.bar/GR_TT07_POSTER_01_bar0.png
+  - name: remastered/msn/it/TT07_POSTER_01.bar/IT_TT07_POSTER_01_bar0.png
+  - name: remastered/msn/sp/TT07_POSTER_01.bar/SP_TT07_POSTER_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_POSTER_01.bar/US_TT07_POSTER_01_bar0.png
+    type: internal
+- name: remastered/msn/us/TT07_POSTER_01.bar/US_TT07_POSTER_01_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT07_POSTER_01.bar/FR_TT07_POSTER_01_bar1.png
+  - name: remastered/msn/gr/TT07_POSTER_01.bar/GR_TT07_POSTER_01_bar1.png
+  - name: remastered/msn/it/TT07_POSTER_01.bar/IT_TT07_POSTER_01_bar1.png
+  - name: remastered/msn/sp/TT07_POSTER_01.bar/SP_TT07_POSTER_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_POSTER_01.bar/US_TT07_POSTER_01_bar1.png
+    type: internal
+- name: remastered/msn/us/TT07_POSTER_01.bar/US_TT07_POSTER_01_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT07_POSTER_01.bar/FR_TT07_POSTER_01_bar2.png
+  - name: remastered/msn/gr/TT07_POSTER_01.bar/GR_TT07_POSTER_01_bar2.png
+  - name: remastered/msn/it/TT07_POSTER_01.bar/IT_TT07_POSTER_01_bar2.png
+  - name: remastered/msn/sp/TT07_POSTER_01.bar/SP_TT07_POSTER_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_POSTER_01.bar/US_TT07_POSTER_01_bar2.png
+    type: internal
+- name: remastered/msn/us/TT07_POSTER_01.bar/US_TT07_POSTER_01_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT07_POSTER_01.bar/FR_TT07_POSTER_01_bar3.png
+  - name: remastered/msn/gr/TT07_POSTER_01.bar/GR_TT07_POSTER_01_bar3.png
+  - name: remastered/msn/it/TT07_POSTER_01.bar/IT_TT07_POSTER_01_bar3.png
+  - name: remastered/msn/sp/TT07_POSTER_01.bar/SP_TT07_POSTER_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_POSTER_01.bar/US_TT07_POSTER_01_bar3.png
+    type: internal
+- name: remastered/msn/us/TT07_POSTER_01.bar/US_TT07_POSTER_01_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT07_POSTER_01.bar/FR_TT07_POSTER_01_bar4.png
+  - name: remastered/msn/gr/TT07_POSTER_01.bar/GR_TT07_POSTER_01_bar4.png
+  - name: remastered/msn/it/TT07_POSTER_01.bar/IT_TT07_POSTER_01_bar4.png
+  - name: remastered/msn/sp/TT07_POSTER_01.bar/SP_TT07_POSTER_01_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_POSTER_01.bar/US_TT07_POSTER_01_bar4.png
+    type: internal
+#Prevent Warp to STT Day 2 (Poster Duty Sora)
+- name: msn/jp/TT07_POSTER_02.bar
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_POSTER_02.bdscript
+- name: msn/us/TT07_POSTER_02.bar
+  multi:
+  - name: msn/fr/TT07_POSTER_02.bar
+  - name: msn/gr/TT07_POSTER_02.bar
+  - name: msn/it/TT07_POSTER_02.bar
+  - name: msn/sp/TT07_POSTER_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_POSTER_02.bdscript
+- name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar4.png
+    type: internal
+- name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_POSTER_02.bar/JP_TT07_POSTER_02_bar5.png
+    type: internal
+- name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT07_POSTER_02.bar/FR_TT07_POSTER_02_bar0.png
+  - name: remastered/msn/gr/TT07_POSTER_02.bar/GR_TT07_POSTER_02_bar0.png
+  - name: remastered/msn/it/TT07_POSTER_02.bar/IT_TT07_POSTER_02_bar0.png
+  - name: remastered/msn/sp/TT07_POSTER_02.bar/SP_TT07_POSTER_02_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar0.png
+    type: internal
+- name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT07_POSTER_02.bar/FR_TT07_POSTER_02_bar1.png
+  - name: remastered/msn/gr/TT07_POSTER_02.bar/GR_TT07_POSTER_02_bar1.png
+  - name: remastered/msn/it/TT07_POSTER_02.bar/IT_TT07_POSTER_02_bar1.png
+  - name: remastered/msn/sp/TT07_POSTER_02.bar/SP_TT07_POSTER_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar1.png
+    type: internal
+- name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT07_POSTER_02.bar/FR_TT07_POSTER_02_bar2.png
+  - name: remastered/msn/gr/TT07_POSTER_02.bar/GR_TT07_POSTER_02_bar2.png
+  - name: remastered/msn/it/TT07_POSTER_02.bar/IT_TT07_POSTER_02_bar2.png
+  - name: remastered/msn/sp/TT07_POSTER_02.bar/SP_TT07_POSTER_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar2.png
+    type: internal
+- name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT07_POSTER_02.bar/FR_TT07_POSTER_02_bar3.png
+  - name: remastered/msn/gr/TT07_POSTER_02.bar/GR_TT07_POSTER_02_bar3.png
+  - name: remastered/msn/it/TT07_POSTER_02.bar/IT_TT07_POSTER_02_bar3.png
+  - name: remastered/msn/sp/TT07_POSTER_02.bar/SP_TT07_POSTER_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar3.png
+    type: internal
+- name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT07_POSTER_02.bar/FR_TT07_POSTER_02_bar4.png
+  - name: remastered/msn/gr/TT07_POSTER_02.bar/GR_TT07_POSTER_02_bar4.png
+  - name: remastered/msn/it/TT07_POSTER_02.bar/IT_TT07_POSTER_02_bar4.png
+  - name: remastered/msn/sp/TT07_POSTER_02.bar/SP_TT07_POSTER_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar4.png
+    type: internal
+- name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar5.png
+  multi:
+  - name: remastered/msn/fr/TT07_POSTER_02.bar/FR_TT07_POSTER_02_bar5.png
+  - name: remastered/msn/gr/TT07_POSTER_02.bar/GR_TT07_POSTER_02_bar5.png
+  - name: remastered/msn/it/TT07_POSTER_02.bar/IT_TT07_POSTER_02_bar5.png
+  - name: remastered/msn/sp/TT07_POSTER_02.bar/SP_TT07_POSTER_02_bar5.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_POSTER_02.bar/US_TT07_POSTER_02_bar5.png
+    type: internal
+#Prevent Warp to STT Day 2 (Bumble-Buster Roxas)
+- name: msn/jp/TT07_WORM_01.bar
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_WORM_01.bdscript
+- name: msn/us/TT07_WORM_01.bar
+  multi:
+  - name: msn/fr/TT07_WORM_01.bar
+  - name: msn/gr/TT07_WORM_01.bar
+  - name: msn/it/TT07_WORM_01.bar
+  - name: msn/sp/TT07_WORM_01.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_WORM_01.bdscript
+- name: remastered/msn/jp/TT07_WORM_01.bar/JP_TT07_WORM_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_WORM_01.bar/JP_TT07_WORM_01_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT07_WORM_01.bar/JP_TT07_WORM_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_WORM_01.bar/JP_TT07_WORM_01_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT07_WORM_01.bar/JP_TT07_WORM_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_WORM_01.bar/JP_TT07_WORM_01_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT07_WORM_01.bar/JP_TT07_WORM_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_WORM_01.bar/JP_TT07_WORM_01_bar3.png
+    type: internal
+- name: remastered/msn/us/TT07_WORM_01.bar/US_TT07_WORM_01_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT07_WORM_01.bar/FR_TT07_WORM_01_bar0.png
+  - name: remastered/msn/gr/TT07_WORM_01.bar/GR_TT07_WORM_01_bar0.png
+  - name: remastered/msn/it/TT07_WORM_01.bar/IT_TT07_WORM_01_bar0.png
+  - name: remastered/msn/sp/TT07_WORM_01.bar/SP_TT07_WORM_01_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_WORM_01.bar/US_TT07_WORM_01_bar0.png
+    type: internal
+- name: remastered/msn/us/TT07_WORM_01.bar/US_TT07_WORM_01_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT07_WORM_01.bar/FR_TT07_WORM_01_bar1.png
+  - name: remastered/msn/gr/TT07_WORM_01.bar/GR_TT07_WORM_01_bar1.png
+  - name: remastered/msn/it/TT07_WORM_01.bar/IT_TT07_WORM_01_bar1.png
+  - name: remastered/msn/sp/TT07_WORM_01.bar/SP_TT07_WORM_01_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_WORM_01.bar/US_TT07_WORM_01_bar1.png
+    type: internal
+- name: remastered/msn/us/TT07_WORM_01.bar/US_TT07_WORM_01_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT07_WORM_01.bar/FR_TT07_WORM_01_bar2.png
+  - name: remastered/msn/gr/TT07_WORM_01.bar/GR_TT07_WORM_01_bar2.png
+  - name: remastered/msn/it/TT07_WORM_01.bar/IT_TT07_WORM_01_bar2.png
+  - name: remastered/msn/sp/TT07_WORM_01.bar/SP_TT07_WORM_01_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_WORM_01.bar/US_TT07_WORM_01_bar2.png
+    type: internal
+- name: remastered/msn/us/TT07_WORM_01.bar/US_TT07_WORM_01_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT07_WORM_01.bar/FR_TT07_WORM_01_bar3.png
+  - name: remastered/msn/gr/TT07_WORM_01.bar/GR_TT07_WORM_01_bar3.png
+  - name: remastered/msn/it/TT07_WORM_01.bar/IT_TT07_WORM_01_bar3.png
+  - name: remastered/msn/sp/TT07_WORM_01.bar/SP_TT07_WORM_01_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_WORM_01.bar/US_TT07_WORM_01_bar3.png
+    type: internal
+#Prevent Warp to STT Day 2 (Bumble-Buster Sora)
+- name: msn/jp/TT07_WORM_02.bar
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_WORM_02.bdscript
+- name: msn/us/TT07_WORM_02.bar
+  multi:
+  - name: msn/fr/TT07_WORM_02.bar
+  - name: msn/gr/TT07_WORM_02.bar
+  - name: msn/it/TT07_WORM_02.bar
+  - name: msn/sp/TT07_WORM_02.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tt07
+    type: bdx
+    method: bdscript
+    source:
+    - name: ard/tt07/TT07_WORM_02.bdscript
+- name: remastered/msn/jp/TT07_WORM_02.bar/JP_TT07_WORM_02_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_WORM_02.bar/JP_TT07_WORM_02_bar0.png
+    type: internal
+- name: remastered/msn/jp/TT07_WORM_02.bar/JP_TT07_WORM_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_WORM_02.bar/JP_TT07_WORM_02_bar1.png
+    type: internal
+- name: remastered/msn/jp/TT07_WORM_02.bar/JP_TT07_WORM_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_WORM_02.bar/JP_TT07_WORM_02_bar2.png
+    type: internal
+- name: remastered/msn/jp/TT07_WORM_02.bar/JP_TT07_WORM_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_WORM_02.bar/JP_TT07_WORM_02_bar3.png
+    type: internal
+- name: remastered/msn/jp/TT07_WORM_02.bar/JP_TT07_WORM_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/jp/TT07_WORM_02.bar/JP_TT07_WORM_02_bar4.png
+    type: internal
+- name: remastered/msn/us/TT07_WORM_02.bar/US_TT07_WORM_02_bar0.png
+  multi:
+  - name: remastered/msn/fr/TT07_WORM_02.bar/FR_TT07_WORM_02_bar0.png
+  - name: remastered/msn/gr/TT07_WORM_02.bar/GR_TT07_WORM_02_bar0.png
+  - name: remastered/msn/it/TT07_WORM_02.bar/IT_TT07_WORM_02_bar0.png
+  - name: remastered/msn/sp/TT07_WORM_02.bar/SP_TT07_WORM_02_bar0.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_WORM_02.bar/US_TT07_WORM_02_bar0.png
+    type: internal
+- name: remastered/msn/us/TT07_WORM_02.bar/US_TT07_WORM_02_bar1.png
+  multi:
+  - name: remastered/msn/fr/TT07_WORM_02.bar/FR_TT07_WORM_02_bar1.png
+  - name: remastered/msn/gr/TT07_WORM_02.bar/GR_TT07_WORM_02_bar1.png
+  - name: remastered/msn/it/TT07_WORM_02.bar/IT_TT07_WORM_02_bar1.png
+  - name: remastered/msn/sp/TT07_WORM_02.bar/SP_TT07_WORM_02_bar1.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_WORM_02.bar/US_TT07_WORM_02_bar1.png
+    type: internal
+- name: remastered/msn/us/TT07_WORM_02.bar/US_TT07_WORM_02_bar2.png
+  multi:
+  - name: remastered/msn/fr/TT07_WORM_02.bar/FR_TT07_WORM_02_bar2.png
+  - name: remastered/msn/gr/TT07_WORM_02.bar/GR_TT07_WORM_02_bar2.png
+  - name: remastered/msn/it/TT07_WORM_02.bar/IT_TT07_WORM_02_bar2.png
+  - name: remastered/msn/sp/TT07_WORM_02.bar/SP_TT07_WORM_02_bar2.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_WORM_02.bar/US_TT07_WORM_02_bar2.png
+    type: internal
+- name: remastered/msn/us/TT07_WORM_02.bar/US_TT07_WORM_02_bar3.png
+  multi:
+  - name: remastered/msn/fr/TT07_WORM_02.bar/FR_TT07_WORM_02_bar3.png
+  - name: remastered/msn/gr/TT07_WORM_02.bar/GR_TT07_WORM_02_bar3.png
+  - name: remastered/msn/it/TT07_WORM_02.bar/IT_TT07_WORM_02_bar3.png
+  - name: remastered/msn/sp/TT07_WORM_02.bar/SP_TT07_WORM_02_bar3.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_WORM_02.bar/US_TT07_WORM_02_bar3.png
+    type: internal
+- name: remastered/msn/us/TT07_WORM_02.bar/US_TT07_WORM_02_bar4.png
+  multi:
+  - name: remastered/msn/fr/TT07_WORM_02.bar/FR_TT07_WORM_02_bar4.png
+  - name: remastered/msn/gr/TT07_WORM_02.bar/GR_TT07_WORM_02_bar4.png
+  - name: remastered/msn/it/TT07_WORM_02.bar/IT_TT07_WORM_02_bar4.png
+  - name: remastered/msn/sp/TT07_WORM_02.bar/SP_TT07_WORM_02_bar4.png
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/msn/us/TT07_WORM_02.bar/US_TT07_WORM_02_bar4.png
+    type: internal

@@ -4,14 +4,14 @@ StackSize: 512
 TempSize: 512
 Triggers:
 - Key: 2
-  Addr: TR2
+  Addr: UNIT_INIT
 Name: mu_get_ability
 
 ---
 ; codeLabels: 
 ; codeRevealer: 
  section .text
-TR2:
+UNIT_INIT:
  pushImm 6
  syscall 0, 61 ; trap_saveram_get_partram (1 in, 1 out)
  popToSp 0

@@ -1,0 +1,325 @@
+---
+WorkSize: 16
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 10
+  Addr: SIGNAL_CALLBACK
+- Key: 3
+  Addr: UNIT_MAIN
+Name: tt07_work_clean
+
+---
+; codeLabels: 
+; codeRevealer: -l 173 -l 448
+ section .text
+SIGNAL_CALLBACK:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ dup 
+ pushImm 82
+ sub 
+ jz L33
+ jmp L40
+L33:
+ pushImm 0
+ syscall 4, 6 ; trap_mission_increment_count (1 in, 0 out)
+ jmp L82
+L40:
+ dup 
+ pushImm 130
+ sub 
+ jz L49
+ jmp L56
+L49:
+ pushImm 1
+ syscall 4, 20 ; trap_mission_decrement_count (1 in, 0 out)
+ jmp L82
+L56:
+ dup 
+ pushImm 14
+ sub 
+ jz L65
+ jmp L82
+L65:
+ pushFromFSp 0
+ pushImm 1
+ sub 
+ eqz 
+ jz L80
+ pushFromPWp W0
+ gosub 4, L84
+ jmp L80
+L80:
+ jmp L82
+L82:
+ drop 
+ ret 
+L84:
+ popToSp 0
+ pushImm 0
+ syscall 4, 29 ; trap_mission_get_count (1 in, 1 out)
+ popToSp 4
+ pushFromFSp 4
+ pushImm 10
+ sub 
+ info 
+ jz L108
+ pushFromFSp 0
+ gosub 4, L128
+ jmp L127
+L108:
+ pushFromFSp 4
+ pushImm 15
+ sub 
+ info 
+ jz L123
+ pushFromFSp 0
+ gosub 4, L308
+ jmp L127
+L123:
+ pushFromFSp 0
+ gosub 4, L323
+L127:
+ ret 
+L128:
+ popToSp 0
+ pushImm 50
+ gosub 4, L143
+ pushFromFSp 0
+ pushImm 1
+ gosub 4, L285
+ ret 
+L143:
+ popToSp 0
+ pushImm 2256
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ jz L159
+ pushImm 30
+ popToSp 0
+ jmp L159
+L159:
+ pushFromFSp 0
+ syscall 1, 280 ; trap_sheet_add_munny (1 in, 1 out)
+ drop
+ jmp L284
+D173:
+L173:
+ jmp L175
+L175:
+ syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
+ pushImm 2000
+ sub 
+ msbi 
+ jz L191
+ pushImm 2271
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+ jmp L284
+L191:
+ syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
+ pushImm 1200
+ sub 
+ msbi 
+ jz L217
+ pushImm 2274
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ eqz 
+ jz L215
+ pushImm 2274
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+ jmp L215
+L215:
+ jmp L284
+L217:
+ syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
+ pushImm 800
+ sub 
+ msbi 
+ jz L243
+ pushImm 2273
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ eqz 
+ jz L241
+ pushImm 2273
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+ jmp L241
+L241:
+ jmp L284
+L243:
+ syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
+ pushImm 200
+ sub 
+ msbi 
+ jz L269
+ pushImm 2272
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ eqz 
+ jz L267
+ pushImm 2272
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+ jmp L267
+L267:
+ jmp L284
+L269:
+ pushImm 2269
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ eqz 
+ jz L284
+ pushImm 2269
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+ jmp L284
+L284:
+ ret 
+L285:
+ popToSp 4
+ popToSp 0
+ syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
+ eqz 
+ jz L307
+ pushImm 1
+ popToSpVal 0
+ pushFromFSp 4
+ popToSpVal 4
+ syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
+ jmp L307
+L307:
+ ret 
+L308:
+ popToSp 0
+ pushImm 30
+ gosub 4, L143
+ pushFromFSp 0
+ pushImm 2
+ gosub 4, L285
+ ret 
+L323:
+ popToSp 0
+ pushImm 10
+ gosub 4, L143
+ pushFromFSp 0
+ pushImm 3
+ gosub 4, L285
+ ret 
+UNIT_MAIN:
+ pushFromPWp W0
+ gosub 4, L343
+ ret 
+L343:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L422
+L349:
+ pushFromFSp 0
+ gosub 4, L435
+ jz L358
+ halt 
+ jmp L349
+L358:
+ pushFromFSpVal 0
+ dup 
+ pushImm 1
+ sub 
+ jz L369
+ jmp L375
+L369:
+ pushFromFSpVal 4
+ syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
+ jmp L418
+L375:
+ dup 
+ pushImm 2
+ sub 
+ jz L384
+ jmp L390
+L384:
+ pushFromFSpVal 4
+ syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
+ jmp L418
+L390:
+ dup 
+ pushImm 3
+ sub 
+ jz L399
+ jmp L403
+L399:
+ syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
+ jmp L418
+L403:
+ dup 
+ pushImm 4
+ sub 
+ jz L412
+ jmp L418
+L412:
+ pushFromFSpVal 4
+ syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
+ jmp L418
+L418:
+ drop 
+ gosub 4, L445
+ ret 
+L422:
+ popToSp 0
+ pushImm 0
+ popToSpVal 0
+ pushImm -1
+ popToSpVal 4
+ ret 
+L435:
+ popToSp 0
+ pushFromFSpVal 0
+ pushImm 0
+ sub 
+ eqz 
+ ret 
+L445:
+ halt 
+ jmp L445
+D448:
+L448:
+ ret 
+TXT449:
+ db 'mode_battle',0
+TXT455:
+ db 'rst_hard',0,0
+TXT460:
+ db 'rst_super_hard',0,0
+TXT468:
+ db 'btl_normal',0,0
+TXT474:
+ db 'jump start',0,0
+TXT480:
+ db 'btl_hard',0,0
+TXT485:
+ db 'jump end',0,0
+TXT490:
+ db 'btl_super_hard',0,0
+TXT498:
+ db 'btl_attack',0,0
+TXT504:
+ db 'near',0,0
+TXT507:
+ db 'btl_short',0
+TXT512:
+ db 'rvg_normal',0,0
+TXT518:
+ db 'btl_long',0,0
+TXT523:
+ db 'rvg_hard',0,0
+TXT528:
+ db 'rvg_super_hard',0,0
+TXT536:
+ db 'near_wait',0
+TXT541:
+ db 'rvg_short',0
+TXT546:
+ db 'leave',0
+TXT549:
+ db 'rvg_long',0,0
+TXT554:
+ db 'rst_normal',0,0
+
+ section .bss
+W0:
+ resb 16

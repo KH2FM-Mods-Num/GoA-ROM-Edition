@@ -106,6 +106,37 @@ Items:
   Picture: 271
   Icon1: 0
   Icon2: 25
+#Map -> Form Aesthetic
+- Id: 89 #Navigational Map -> Valor Form
+  Type: Map
+  Flag0: 1
+  Flag1: 0
+  Rank: C
+  StatEntry: 0
+  Name: 34370
+  Description: 34371
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 0
+  Slot: 7
+  Picture: 266
+  Icon1: 0
+  Icon2: 25
+- Id: 115 #Window of Time Map 2 -> Final Form
+  Type: Map
+  Flag0: 1
+  Flag1: 13
+  Rank: C
+  StatEntry: 0
+  Name: 34376
+  Description: 34377
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 0
+  Slot: 17
+  Picture: 269
+  Icon1: 0
+  Icon2: 25
 #DUMMY
 - Id: 470 #DUMMY 23 (HP)
   Type: Recipe

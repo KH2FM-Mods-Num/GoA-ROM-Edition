@@ -632,8 +632,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1991: #TR Hammer Staff -> Kingdom Key D
-  ObjectId: 1991
+3001: #Kingdom Key D
+  ObjectId: 3001
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -662,98 +662,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1992: #TR Victory Bell -> HT Pureblood
-  ObjectId: 1992
-  ObjectType: WEAPON
-  SubType: 0
-  DrawPriority: 0
-  WeaponJoint: 25
-  ModelName: W_EX010_X0_NM
-  AnimationName: ''
-  Flags: 0
-  ObjectTargetType: M
-  Padding: 0
-  NeoStatus: 0
-  NeoMoveset: 0
-  Weight: 0
-  SpawnLimiter: 0
-  Page: 17
-  ObjectShadowSize: SmallShadow
-  ObjectForm: Default
-  SpawnObject1: 0
-  SpawnObject2: 0
-  SpawnObject3: 0
-  SpawnObject4: 0
-  NoApdx: false
-  Before: false
-  FixColor: false
-  Fly: false
-  Scissoring: false
-  IsPirate: false
-  WallOcclusion: false
-  Hift: false
-1993: #TR Meteor Staff -> HT Alpha Weapon
-  ObjectId: 1993
-  ObjectType: WEAPON
-  SubType: 0
-  DrawPriority: 0
-  WeaponJoint: 25
-  ModelName: W_EX010_Y0_NM
-  AnimationName: ''
-  Flags: 0
-  ObjectTargetType: M
-  Padding: 0
-  NeoStatus: 0
-  NeoMoveset: 0
-  Weight: 0
-  SpawnLimiter: 0
-  Page: 17
-  ObjectShadowSize: SmallShadow
-  ObjectForm: Default
-  SpawnObject1: 0
-  SpawnObject2: 0
-  SpawnObject3: 0
-  SpawnObject4: 0
-  NoApdx: false
-  Before: false
-  FixColor: false
-  Fly: false
-  Scissoring: false
-  IsPirate: false
-  WallOcclusion: false
-  Hift: false
-1994: #TR Comet Staff -> HT Omega Weapon
-  ObjectId: 1994
-  ObjectType: WEAPON
-  SubType: 0
-  DrawPriority: 0
-  WeaponJoint: 25
-  ModelName: W_EX010_Z0_NM
-  AnimationName: ''
-  Flags: 0
-  ObjectTargetType: M
-  Padding: 0
-  NeoStatus: 0
-  NeoMoveset: 0
-  Weight: 0
-  SpawnLimiter: 0
-  Page: 17
-  ObjectShadowSize: SmallShadow
-  ObjectForm: Default
-  SpawnObject1: 0
-  SpawnObject2: 0
-  SpawnObject3: 0
-  SpawnObject4: 0
-  NoApdx: false
-  Before: false
-  FixColor: false
-  Fly: false
-  Scissoring: false
-  IsPirate: false
-  WallOcclusion: false
-  Hift: false
-1995: #TR Lord's Broom -> HT Kingdom Key D
-  ObjectId: 1995
+3002: #HT Kingdom Key D
+  ObjectId: 3002
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -782,13 +692,13 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1996: #TR Wisdom Wand -> SP Pureblood
-  ObjectId: 1996
+3003: #HT Alpha Weapon
+  ObjectId: 3003
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_X0_TR
+  ModelName: W_EX010_Y0_NM
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -812,13 +722,13 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1997: #TR Rising Dragon -> SP Alpha Weapon
-  ObjectId: 1997
+3004: #HT Omega Weapon
+  ObjectId: 3004
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_Y0_TR
+  ModelName: W_EX010_Z0_NM
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -842,13 +752,13 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1998: #TR Nobody Lance -> SP Omega Weapon
-  ObjectId: 1998
+3005: #HT Pureblood
+  ObjectId: 3005
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_Z0_TR
+  ModelName: W_EX010_X0_NM
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -872,8 +782,8 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-1999: #TR Shaman's Relic -> SP Kingdom Key D
-  ObjectId: 1999
+3006: #SP Kingdom Key D
+  ObjectId: 3006
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -902,13 +812,13 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2000: #TR Save the Queen -> HT Struggle Hammer
-  ObjectId: 2000
+3007: #SP Alpha Weapon
+  ObjectId: 3007
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_U0_NM
+  ModelName: W_EX010_Y0_TR
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -932,13 +842,13 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2013: #TR Adamant Shield -> HT Struggle Wand
-  ObjectId: 2013
+3008: #SP Omega Weapon
+  ObjectId: 3008
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_V0_NM
+  ModelName: W_EX010_Z0_TR
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -962,8 +872,38 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2014: #TR Chain Gear -> HT Struggle Sword
-  ObjectId: 2014
+3009: #SP Pureblood
+  ObjectId: 3009
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_X0_TR
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+3010: #HT Struggle Sword
+  ObjectId: 3010
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -992,13 +932,13 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2015: #TR Ogre Shield -> SP Struggle Hammer
-  ObjectId: 2015
+3011: #HT Struggle Wand
+  ObjectId: 3011
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_U0_TR
+  ModelName: W_EX010_V0_NM
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M
@@ -1022,8 +962,68 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2016: #TR Falling Star -> SP Struggle Wand
-  ObjectId: 2016
+3012: #HT Struggle Hammer
+  ObjectId: 3012
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_U0_NM
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+3013: #SP Struggle Sword
+  ObjectId: 3013
+  ObjectType: WEAPON
+  SubType: 0
+  DrawPriority: 0
+  WeaponJoint: 25
+  ModelName: W_EX010_W0_TR
+  AnimationName: ''
+  Flags: 0
+  ObjectTargetType: M
+  Padding: 0
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 0
+  SpawnLimiter: 0
+  Page: 17
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  SpawnObject1: 0
+  SpawnObject2: 0
+  SpawnObject3: 0
+  SpawnObject4: 0
+  NoApdx: false
+  Before: false
+  FixColor: false
+  Fly: false
+  Scissoring: false
+  IsPirate: false
+  WallOcclusion: false
+  Hift: false
+3014: #SP Struggle Wand
+  ObjectId: 3014
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
@@ -1052,13 +1052,13 @@
   IsPirate: false
   WallOcclusion: false
   Hift: false
-2017: #TR Dreamcloud -> SP Struggle Sword
-  ObjectId: 2017
+3015: #SP Struggle Hammer
+  ObjectId: 3015
   ObjectType: WEAPON
   SubType: 0
   DrawPriority: 0
   WeaponJoint: 25
-  ModelName: W_EX010_W0_TR
+  ModelName: W_EX010_U0_TR
   AnimationName: ''
   Flags: 0
   ObjectTargetType: M

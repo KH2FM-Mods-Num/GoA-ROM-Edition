@@ -4,20 +4,20 @@ StackSize: 512
 TempSize: 512
 Triggers:
 - Key: 9
-  Addr: TR9
+  Addr: GAMEOVER
 - Key: 8
-  Addr: TR8
+  Addr: PROGRESS_CALLBACK
 - Key: 7
-  Addr: TR7
+  Addr: NEWGAME
 Name: 00common
 
 ---
 ; codeLabels: 
 ; codeRevealer: 
  section .text
-TR9:
+GAMEOVER:
  ret 
-TR8:
+PROGRESS_CALLBACK:
  popToSp 0
  pushFromFSp 0
  gosub 4, L34
@@ -116,7 +116,7 @@ L181:
 L183:
  drop 
  ret 
-TR7:
+NEWGAME:
  pushImm 2048
  syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
  gosub 4, L193
