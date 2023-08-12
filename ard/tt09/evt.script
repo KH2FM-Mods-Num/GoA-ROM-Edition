@@ -12,3 +12,12 @@ Spawn "a71_"
 Spawn "b71_"
 Spawn "c71_"
 Spawn "971_"
+
+Program 0x76
+Party DEFAULT
+AreaSettings 0 -1
+	SetProgressFlag 0x89C
+	SetEvent "708" Type 2
+	SetJump Type 1 World TT Area 9 Entrance 0 LocalSet 0 FadeType 1
+	SetInventory 290 291 526
+	SetPartyMenu 0

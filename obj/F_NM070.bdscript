@@ -4,24 +4,24 @@ StackSize: 512
 TempSize: 512
 Triggers:
 - Key: 15
-  Addr: TR15
+  Addr: OBJ_ATTACK
 - Key: 10
-  Addr: TR10
+  Addr: SIGNAL_CALLBACK
 - Key: 11
-  Addr: TR11
+  Addr: REACTION_CALLBACK
 - Key: 6
-  Addr: TR6
+  Addr: OBJ_DAMAGE
 - Key: 1
-  Addr: TR1
+  Addr: OBJ_MAIN
 - Key: 0
-  Addr: TR0
+  Addr: OBJ_INIT
 Name: f_nm070
 
 ---
 ; codeLabels: 
 ; codeRevealer: -l 368 -l 1116 -l 1378 -l 1437 -l 1438 -l 1532 -l 1549 -l 1554 -l 1569 -l 1755 -l 1832 -l 1899 -l 2004 -l 2017 -l 2162 -l 2204 -l 2270 -l 2336 -l 2395 -l 2412 -l 2696 -l 2712 -l 2763
  section .text
-TR15:
+OBJ_ATTACK:
  popToSp 0
  popToSp 4
  pushFromFSp 4
@@ -56,7 +56,7 @@ L78:
  memcpy 0
  pushFromPSp 0
  ret 
-TR10:
+SIGNAL_CALLBACK:
  popToSp 0
  popToSp 4
  pushFromFSp 4
@@ -72,7 +72,7 @@ L105:
 L111:
  drop 
  ret 
-TR11:
+REACTION_CALLBACK:
  popToSp 0
  popToSp 4
  popToSp 8
@@ -144,7 +144,7 @@ L233:
  pushFromFSp 4
  popToSpVal 4
  ret 
-TR6:
+OBJ_DAMAGE:
  popToSp 0
  pushFromPWp W0
  pushFromFSp 0
@@ -200,7 +200,7 @@ L330:
  jmp L332
 L332:
  ret 
-TR1:
+OBJ_MAIN:
  pushFromPWp W0
  gosub 4, L338
  ret 
@@ -240,7 +240,7 @@ L369:
  jmp L393
 L393:
  ret 
-TR0:
+OBJ_INIT:
  popToSp 0
  pushFromPWp W0
  pushFromFSp 0

@@ -4,24 +4,24 @@ StackSize: 512
 TempSize: 512
 Triggers:
 - Key: 15
-  Addr: TR15
+  Addr: OBJ_ATTACK
 - Key: 11
-  Addr: TR11
+  Addr: REACTION_CALLBACK
 - Key: 6
-  Addr: TR6
+  Addr: OBJ_DAMAGE
 - Key: 13
-  Addr: TR13
+  Addr: OBJ_FALL
 - Key: 1
-  Addr: TR1
+  Addr: OBJ_MAIN
 - Key: 0
-  Addr: TR0
+  Addr: OBJ_INIT
 Name: n_cm000_btl
 
 ---
 ; codeLabels: 
 ; codeRevealer: -l 695 -l 1124 -l 1508 -l 3744 -l 3984 -l 4043 -l 4044 -l 4061 -l 4066 -l 4081 -l 4267 -l 4344 -l 4411 -l 4516 -l 4529 -l 4674 -l 4918 -l 5011 -l 5070 -l 5089 -l 5188 -l 5189 -l 5210 -l 5799 -l 5846 -l 6066 -l 6107 -l 6303 -l 7014 -l 7228 -l 7588 -l 7625 -l 7788 -l 8410 -l 8546 -l 8553 -l 8564 -l 8701 -l 8790 -l 8797 -l 8808 -l 8974 -l 9109 -l 9116 -l 9374 -l 9450 -l 9464 -l 10306 -l 10332 -l 10376 -l 10922 -l 10948 -l 10992 -l 11115 -l 11329 -l 11339 -l 11541 -l 11644 -l 11663 -l 11845 -l 11870 -l 11889 -l 11928 -l 12036 -l 12358 -l 12692 -l 13100 -l 13122 -l 13260 -l 13338 -l 13394 -l 13525 -l 13563 -l 13600 -l 13691 -l 13740 -l 14370 -l 14437 -l 14450 -l 14617 -l 14712 -l 14814 -l 14928 -l 14936 -l 14948 -l 14958 -l 15048 -l 15060 -l 15070 -l 15078 -l 15398 -l 15456 -l 16099 -l 16192 -l 16578 -l 16648 -l 16683 -l 16905 -l 17335 -l 18689 -l 18783 -l 18877 -l 18886
  section .text
-TR15:
+OBJ_ATTACK:
  popToSp 0
  popToSp 4
  pushFromFSp 4
@@ -248,7 +248,7 @@ L398:
  memcpy 0
  pushFromPSp 0
  ret 
-TR11:
+REACTION_CALLBACK:
  popToSp 0
  popToSp 4
  popToSp 8
@@ -662,7 +662,7 @@ L1124:
  gosub 4, L735
  drop 
  ret 
-TR6:
+OBJ_DAMAGE:
  popToSp 0
  pushFromPWp W152
  pushFromFSp 0
@@ -844,7 +844,7 @@ L1418:
  neqzv 
 L1446:
  ret 
-TR13:
+OBJ_FALL:
  pushFromPWp W152
  pushImmf 0
  syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
@@ -856,7 +856,7 @@ TR13:
  pushFromPWp W152
  syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)
  ret 
-TR1:
+OBJ_MAIN:
  pushFromPWp W152
  gosub 4, L1476
  ret 
@@ -883,7 +883,7 @@ L1505:
 D1508:
 L1508:
  ret 
-TR0:
+OBJ_INIT:
  popToSp 0
  pushFromPWp W152
  pushFromFSp 0

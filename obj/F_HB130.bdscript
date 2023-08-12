@@ -4,23 +4,23 @@ StackSize: 512
 TempSize: 512
 Triggers:
 - Key: 11
-  Addr: TR11
+  Addr: REACTION_CALLBACK
 - Key: 1
-  Addr: TR1
+  Addr: OBJ_MAIN
 - Key: 0
-  Addr: TR0
+  Addr: OBJ_INIT
 Name: f_hb130
 
 ---
 ; codeLabels: 
 ; codeRevealer: -l 39 -l 701 -l 975 -l 1034 -l 1035 -l 1129 -l 1146 -l 1151 -l 1166 -l 1243 -l 1440 -l 1496 -l 1512 -l 1617 -l 1630 -l 1775 -l 1817 -l 1883 -l 1949 -l 2008 -l 2020 -l 2459
  section .text
-TR11:
+REACTION_CALLBACK:
  popToSp 0
  popToSp 4
  popToSp 8
  ret 
-TR1:
+OBJ_MAIN:
  pushFromPWp W0
  gosub 4, L34
  ret 
@@ -32,7 +32,7 @@ L36:
 D39:
 L39:
  ret 
-TR0:
+OBJ_INIT:
  popToSp 0
  pushFromPWp W0
  pushFromFSp 0

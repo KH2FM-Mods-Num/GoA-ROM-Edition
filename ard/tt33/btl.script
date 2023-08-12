@@ -19,7 +19,7 @@ Unk06 0
 BattleLevel 99
 Unk1d 4
 AreaSettings 1 46
-	SetJump Type 1 World MU Area 6 Entrance 1 LocalSet 0 FadeType -1
+	SetJump Type 1 World MU Area 7 Entrance 1 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 1 70
@@ -34,7 +34,7 @@ Unk06 0
 BattleLevel 99
 Unk1d 4
 AreaSettings 1 46
-	SetJump Type 1 World BB Area 0 Entrance 4 LocalSet 0 FadeType -1
+	SetJump Type 1 World BB Area 4 Entrance 1 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 1 70
@@ -49,7 +49,7 @@ Unk06 0
 BattleLevel 99
 Unk1d 4
 AreaSettings 1 46
-	SetJump Type 1 World LK Area 2 Entrance 1 LocalSet 0 FadeType -1
+	SetJump Type 1 World LK Area 13 Entrance 1 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 1 70
@@ -95,7 +95,7 @@ Unk06 0
 BattleLevel 99
 Unk1d 4
 AreaSettings 1 46
-	SetJump Type 1 World CA Area 13 Entrance 1 LocalSet 0 FadeType -1
+	SetJump Type 1 World CA Area 10 Entrance 1 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 1 70
@@ -111,7 +111,7 @@ Unk1d 4
 BattleLevel 99
 Unk1d 4
 AreaSettings 1 46
-	SetJump Type 1 World TT Area 22 Entrance 1 LocalSet 0 FadeType -1
+	SetJump Type 1 World TT Area 23 Entrance 1 LocalSet 0 FadeType -1
 	SetPartyMenu 0
 
 AreaSettings 1 70

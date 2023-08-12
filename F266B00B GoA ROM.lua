@@ -1,5 +1,5 @@
 --ROM Version
---Last Update: JP shop assembly code & battle level rework
+--Last Update: BAR() function implementation
 --Todo: Maybe item-based progress flags
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
@@ -7,7 +7,8 @@ LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-print('GoA v1.53.4')
+print('GoA v1.53.5')
+GoAOffset = 0x7C
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
 	if ENGINE_VERSION < 3.0 then
 		print('LuaEngine is Outdated. Things might not work properly.')
@@ -15,16 +16,16 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	OnPC = false
 	Now = 0x032BAE0 --Current Location
 	Sve = 0x1D5A970 --Saved Location
-	BGM = 0x0347D34 --Background Music
 	Save = 0x032BB30 --Save File
-	Obj0 = 0x1C94100 --00objentry.bin
-	Sys3 = 0x1CCB300 --03system.bin
-	Btl0 = 0x1CE5D80 --00battle.bin
+	Obj0Pointer = 0x1D5BA10 --00objentry.bin Pointer Address
+	Sys3Pointer = 0x1C61AF8 --03system.bin Pointer Address
+	Btl0Pointer = 0x1C61AFC --00battle.bin Pointer Address
+	ARDPointer  = 0x034ECF4 --ARD Pointer Address
+	Music = 0x0347D34 --Background Music
 	Pause = 0x0347E08 --Ability to Pause
 	React = 0x1C5FF4E --Reaction Command
 	Cntrl = 0x1D48DB8 --Sora Controllable
 	Timer = 0x0349DE8
-	Combo = 0x1D49080
 	Songs = 0x035DAC4 --Atlantica Stuff
 	GScre = 0x1F8039C --Gummi Score
 	GMdal = 0x1F803C0 --Gummi Medal
@@ -38,8 +39,6 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	BtlEnd = 0x1D490C0 --Something about end-of-battle camera
 	TxtBox = 0x1D48D54 --Last Displayed Textbox
 	DemCln = 0x1D48DEC --Demyx Clone Status
-	ARDLoad  = 0x034ECF4 --ARD Pointer Address
-	MSNLoad  = 0x04FA440 --Base MSN Address
 	Slot1    = 0x1C6C750 --Unit Slot 1
 	NextSlot = 0x268
 	Point1   = 0x1D48EFC
@@ -55,11 +54,12 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	OnPC = true
 	Now = 0x0714DB8 - 0x56454E
 	Sve = 0x2A09C00 - 0x56450E
-	BGM = 0x0AB8504 - 0x56450E
 	Save = 0x09A7070 - 0x56450E
-	Obj0 = 0x2A22B90 - 0x56450E
-	Sys3 = 0x2A59DB0 - 0x56450E
-	Btl0 = 0x2A74840 - 0x56450E
+	Obj0Pointer = 0x2A22730 - 0x56454E
+	Sys3Pointer = 0x2AE3550 - 0x56454E
+	Btl0Pointer = 0x2AE3558 - 0x56454E
+	ARDPointer = 0x2A0CF28 - 0x56454E
+	Music = 0x0AB8504 - 0x56450E
 	Pause = 0x0AB9038 - 0x56450E
 	React = 0x2A0E822 - 0x56450E
 	Cntrl = 0x2A148A8 - 0x56450E
@@ -77,8 +77,6 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	BtlEnd = 0x2A0D3A0 - 0x56450E
 	TxtBox = 0x074BC70 - 0x56454E
 	DemCln = 0x2A0CF74 - 0x56450E
-	ARDLoad  = 0x2A0CEE8 - 0x56450E
-	MSNLoad  = 0x0BF08C0 - 0x56450E
 	Slot1    = 0x2A20C58 - 0x56450E
 	NextSlot = 0x278
 	Point1   = 0x2A0D108 - 0x56450E
@@ -88,7 +86,7 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	Menu1    = 0x2A0E7D0 - 0x56450E
 	NextMenu = 0x8
 end
-Slot2  = Slot1 - NextSlot
+--[[Slot2  = Slot1 - NextSlot
 Slot3  = Slot2 - NextSlot
 Slot4  = Slot3 - NextSlot
 Slot5  = Slot4 - NextSlot
@@ -102,10 +100,9 @@ Slot12 = Slot11 - NextSlot
 Point2 = Point1 + NxtPoint
 Point3 = Point2 + NxtPoint
 Gauge2 = Gauge1 + NxtGauge
-Gauge3 = Gauge2 + NxtGauge
+Gauge3 = Gauge2 + NxtGauge--]]
 Menu2  = Menu1 + NextMenu
-Menu3  = Menu2 + NextMenu
-pi     = math.pi
+--Menu3  = Menu2 + NextMenu
 end
 
 function Warp(W,R,D,M,B,E) --Warp into the appropriate World, Room, Door, Map, Btl, Evt
@@ -128,37 +125,20 @@ function Events(M,B,E) --Check for Map, Btl, and Evt
 return ((Map == M or not M) and (Btl == B or not B) and (Evt == E or not E))
 end
 
-function Spawn(Type,Subfile,Offset,Value)
-local Subpoint = ARD + 0x08 + 0x10*Subfile
+function BAR(File,Subfile,Offset) --Get address within a BAR file
+local Subpoint = File + 0x08 + 0x10*Subfile
 local Address
 --Detect errors
-if ReadInt(ARD,OnPC) ~= 0x01524142 then --Header mismatch
+if ReadInt(File,OnPC) ~= 0x01524142 then --Header mismatch
 	return
-elseif Subfile > ReadInt(ARD+4,OnPC) then --Subfile over count
+elseif Subfile > ReadInt(File+4,OnPC) then --Subfile over count
 	return
 elseif Offset >= ReadInt(Subpoint+4,OnPC) then --Offset exceed subfile length
 	return
 end
 --Get address
-if not OnPC then
-	Address = ReadInt(Subpoint) + Offset
-else
-	local x = ARD&0xFFFFFF000000 --Calculations are wrong if done in one step for some reason
-	local y = ReadInt(Subpoint,true)&0xFFFFFF
-	Address = x + y + Offset
-end
---Change value
-if Type == 'Read' then
-	ReadArray(Address,Value,OnPC)
-elseif Type == 'Short' then
-	WriteShort(Address,Value,OnPC)
-elseif Type == 'Float' then
-	WriteFloat(Address,Value,OnPC)
-elseif Type == 'Int' then
-	WriteInt(Address,Value,OnPC)
-elseif Type == 'String' then
-	WriteString(Address,Value,OnPC)
-end
+Address = File + (ReadInt(Subpoint,OnPC) - ReadInt(File+8,OnPC)) + Offset
+return Address
 end
 
 function BitOr(Address,Bit,Abs)
@@ -204,11 +184,23 @@ if true then --Define current values for common addresses
 	Btl    = ReadShort(Now+0x06)
 	Evt    = ReadShort(Now+0x08)
 	PrevPlace = ReadShort(Now+0x30)
-	MSN    = MSNLoad + (ReadInt(MSNLoad+4)+1) * 0x10
+	if Place == 0xFFFF or not MSN then
+		if not OnPC then
+			Obj0 = ReadInt(Obj0Pointer)
+			Sys3 = ReadInt(Sys3Pointer)
+			Btl0 = ReadInt(Btl0Pointer)
+			MSN = 0x04FA440
+		else
+			Obj0 = ReadLong(Obj0Pointer)
+			Sys3 = ReadLong(Sys3Pointer)
+			Btl0 = ReadLong(Btl0Pointer)
+			MSN = 0x0BF08C0 - 0x56450E
+		end
+	end
 	if not OnPC then
-		ARD = ReadInt(ARDLoad) --Base ARD Address
+		ARD = ReadInt(ARDPointer)
 	else
-		ARD = ReadLong(ARDLoad) --Base ARD Address
+		ARD = ReadLong(ARDPointer)
 	end
 end
 NewGame()
@@ -233,13 +225,13 @@ end
 
 function NewGame()
 --Before New Game
-if OnPC and ReadByte(Sys3+0x116DB) == 0x19 then --Change Form's Icons in PC from Analog Stick
-	WriteByte(Sys3+0x116DB,0xCE) --Valor
-	WriteByte(Sys3+0x116F3,0xCE) --Wisdom
-	WriteByte(Sys3+0x1170B,0xCE) --Limit
-	WriteByte(Sys3+0x11723,0xCE) --Master
-	WriteByte(Sys3+0x1173B,0xCE) --Final
-	WriteByte(Sys3+0x11753,0xCE) --Anti
+if OnPC and ReadByte(BAR(Sys3,0x6,0x0E5F),OnPC) == 0x19 then --Change Form's Icons in PC from Analog Stick
+	WriteByte(BAR(Sys3,0x6,0x0E5F),0xCE,OnPC) --Valor
+	WriteByte(BAR(Sys3,0x6,0x0E77),0xCE,OnPC) --Wisdom
+	WriteByte(BAR(Sys3,0x6,0x0E8F),0xCE,OnPC) --Limit
+	WriteByte(BAR(Sys3,0x6,0x0EA7),0xCE,OnPC) --Master
+	WriteByte(BAR(Sys3,0x6,0x0EBF),0xCE,OnPC) --Final
+	WriteByte(BAR(Sys3,0x6,0x0ED7),0xCE,OnPC) --Anti
 end
 --Start New Game
 if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
@@ -262,11 +254,11 @@ function GoA()
 if Place == 0x1A04 then
 	--Open Promise Charm Path
 	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 and ReadByte(Save+0x3694) > 0 then --All Proofs & Promise Charm
-		Spawn('Short',0x06,0x05C,0x77A) --Text
+		WriteShort(BAR(ARD,0x06,0x05C),0x77A,OnPC) --Text
 	end
 	--Demyx's Portal Text
 	if ReadByte(Save+0x1D2E) > 0 then --Hollow Bastion Cleared
-		Spawn('Short',0x05,0x25C,0x779) --Radiant Garden
+		WriteShort(BAR(ARD,0x05,0x25C),0x779,OnPC) --Radiant Garden
 	end
 end
 --World Map -> Garden of Assemblage
@@ -486,7 +478,7 @@ if true then
 	WriteInt(Save+0x3724,Bitmask)
 end
 --Fix Genie Crash
-if true then --No Valor, Wisdom, Master, or Final
+if ReadByte(Save+0x36C4)&0x10 == 0x10 then --If Lamp Charm is obtained
 	local CurSubmenu
 	if not OnPC then
 		CurSubmenu = ReadInt(Menu2)
@@ -561,11 +553,14 @@ for Slot = 0,68 do
 		WriteShort(Save+0x25D8,0x00C6)
 	end
 end
---Remove Growth Abilities
-if true then
+--Remove Growth Abilities from Forms
+if ReadByte(BAR(Btl0,0x10,0x41),0,OnPC) ~= 0 then
 	for i = 0,34 do
-		WriteByte(Btl0 + 0x344A5 + 0x8*i,0) --Remove Innate Growth Abilities
+		WriteByte(BAR(Btl0,0x10,0x41+0x8*i),0,OnPC) --Remove Innate Growth Abilities
 	end
+end
+--Growth Abilities during Forms
+if true then
 	local Growth = {0x805E,0x8062,0x8234,0x8066,0x806A}
 	for form = 0,4 do --Adjust Form Movement
 		local FormAddress = Save + 0x32F6 + 0x38*form
@@ -642,93 +637,93 @@ end
 --Donald's Staff Active Abilities
 if true then
 	local Staff   = ReadShort(Save+0x2604)
-	local Ability = {} --Offset for staff's ability within 03system.bar
-	Ability[0x04B] = 0x13F36 --Mage's Staff
-	Ability[0x094] = 0x13F46 --Hammer Staff
-	Ability[0x095] = 0x13F56 --Victory Bell
-	Ability[0x097] = 0x13F76 --Comet Staff
-	Ability[0x098] = 0x13F86 --Lord's Broom
-	Ability[0x099] = 0x13F96 --Wisdom Wand
-	Ability[0x096] = 0x13F66 --Meteor Staff
-	Ability[0x09A] = 0x13FA6 --Rising Dragon
-	Ability[0x09C] = 0x13FC6 --Shaman's Relic
-	Ability[0x258] = 0x14406 --Shaman's Relic+
-	Ability[0x09B] = 0x13FB6 --Nobody Lance
-	Ability[0x221] = 0x14316 --Centurion
-	Ability[0x222] = 0x14326 --Centurion+
-	Ability[0x1E2] = 0x14186 --Save the Queen
-	Ability[0x1F7] = 0x142D6 --Save the Queen+
-	Ability[0x223] = 0x14336 --Plain Mushroom
-	Ability[0x224] = 0x14346 --Plain Mushroom+
-	Ability[0x225] = 0x14356 --Precious Mushroom
-	Ability[0x226] = 0x14366 --Precious Mushroom+
-	Ability[0x227] = 0x14376 --Premium Mushroom
-	Ability[0x0A1] = 0x13FD6 --Detection Staff
+	local Ability = {} --Offset for staff's ability within 03system.bar's item
+	Ability[0x04B] = 0x36BA --Mage's Staff
+	Ability[0x094] = 0x36CA --Hammer Staff
+	Ability[0x095] = 0x36DA --Victory Bell
+	Ability[0x097] = 0x36FA --Comet Staff
+	Ability[0x098] = 0x370A --Lord's Broom
+	Ability[0x099] = 0x371A --Wisdom Wand
+	Ability[0x096] = 0x36EA --Meteor Staff
+	Ability[0x09A] = 0x372A --Rising Dragon
+	Ability[0x09C] = 0x374A --Shaman's Relic
+	Ability[0x258] = 0x3B8A --Shaman's Relic+
+	Ability[0x09B] = 0x373A --Nobody Lance
+	Ability[0x221] = 0x3A9A --Centurion
+	Ability[0x222] = 0x3AAA --Centurion+
+	Ability[0x1E2] = 0x390A --Save the Queen
+	Ability[0x1F7] = 0x3A5A --Save the Queen+
+	Ability[0x223] = 0x3ABA --Plain Mushroom
+	Ability[0x224] = 0x3ACA --Plain Mushroom+
+	Ability[0x225] = 0x3ADA --Precious Mushroom
+	Ability[0x226] = 0x3AEA --Precious Mushroom+
+	Ability[0x227] = 0x3AFA --Premium Mushroom
+	Ability[0x0A1] = 0x375A --Detection Staff
 	if Ability[Staff] ~= nil then
-		Ability = ReadShort(Sys3+Ability[Staff]) --Currently-equipped staff's ability
+		Ability = ReadShort(BAR(Sys3,0x6,Ability[Staff]),OnPC) --Currently-equipped staff's ability
 		if Ability == 0x0A5 then --Donald Fire
 			WriteShort(Save+0x26F6,0x80A5)
-			WriteByte(Sys3+0x11F0B,0)
+			WriteByte(BAR(Sys3,0x6,0x168F),0,OnPC)
 		elseif Ability == 0x0A6 then --Donald Blizzard
 			WriteShort(Save+0x26F6,0x80A6)
-			WriteByte(Sys3+0x11F23,0)
+			WriteByte(BAR(Sys3,0x6,0x16A7),0,OnPC)
 		elseif Ability == 0x0A7 then --Donald Thunder
 			WriteShort(Save+0x26F6,0x80A7)
-			WriteByte(Sys3+0x11F3B,0)
+			WriteByte(BAR(Sys3,0x6,0x16BF),0,OnPC)
 		elseif Ability == 0x0A8 then --Donald Cure
 			WriteShort(Save+0x26F6,0x80A8)
-			WriteByte(Sys3+0x11F53,0)
-		else
+			WriteByte(BAR(Sys3,0x6,0x16D7),0,OnPC)
+		elseif ReadShort(Save+0x26F6) ~= 0 then
 			WriteShort(Save+0x26F6,0) --Remove Ability Slot 80
-			WriteByte(Sys3+0x11F0B,2) --Restore Original AP Costs
-			WriteByte(Sys3+0x11F23,2)
-			WriteByte(Sys3+0x11F3B,2)
-			WriteByte(Sys3+0x11F53,3)
+			WriteByte(BAR(Sys3,0x6,0x168F),2,OnPC) --Restore Original AP Costs
+			WriteByte(BAR(Sys3,0x6,0x16A7),2,OnPC)
+			WriteByte(BAR(Sys3,0x6,0x16BF),2,OnPC)
+			WriteByte(BAR(Sys3,0x6,0x16D7),3,OnPC)
 		end
 	end
 end
 --Goofy's Shield Active Abilities
 if true then
 	local Shield  = ReadShort(Save+0x2718)
-	local Ability = {} --Offset for shield's ability within 03system.bar
-	Ability[0x031] = 0x13FE6 --Knight's Shield
-	Ability[0x08B] = 0x13FF6 --Adamant Shield
-	Ability[0x08C] = 0x14006 --Chain Gear
-	Ability[0x08E] = 0x14026 --Falling Star
-	Ability[0x08F] = 0x14036 --Dreamcloud
-	Ability[0x090] = 0x14046 --Knight Defender
-	Ability[0x08D] = 0x14016 --Ogre Shield
-	Ability[0x091] = 0x14056 --Genji Shield
-	Ability[0x092] = 0x14066 --Akashic Record
-	Ability[0x259] = 0x14416 --Akashic Record+
-	Ability[0x093] = 0x14076 --Nobody Guard
-	Ability[0x228] = 0x14386 --Frozen Pride
-	Ability[0x229] = 0x14396 --Frozen Pride+
-	Ability[0x1E3] = 0x14196 --Save the King
-	Ability[0x1F8] = 0x142E6 --Save the King+
-	Ability[0x22A] = 0x143A6 --Joyous Mushroom
-	Ability[0x22B] = 0x143B6 --Joyous Mushroom+
-	Ability[0x22C] = 0x143C6 --Majestic Mushroom
-	Ability[0x22D] = 0x143D6 --Majestic Mushroom+
-	Ability[0x22E] = 0x143E6 --Ultimate Mushroom
-	Ability[0x032] = 0x14086 --Detection Shield
-	Ability[0x033] = 0x14096 --Test the King
+	local Ability = {} --Offset for shield's ability within 03system.bar's item
+	Ability[0x031] = 0x376A --Knight's Shield
+	Ability[0x08B] = 0x377A --Adamant Shield
+	Ability[0x08C] = 0x378A --Chain Gear
+	Ability[0x08E] = 0x37AA --Falling Star
+	Ability[0x08F] = 0x37BA --Dreamcloud
+	Ability[0x090] = 0x37CA --Knight Defender
+	Ability[0x08D] = 0x379A --Ogre Shield
+	Ability[0x091] = 0x37DA --Genji Shield
+	Ability[0x092] = 0x37EA --Akashic Record
+	Ability[0x259] = 0x3B9A --Akashic Record+
+	Ability[0x093] = 0x37FA --Nobody Guard
+	Ability[0x228] = 0x3B0A --Frozen Pride
+	Ability[0x229] = 0x3B1A --Frozen Pride+
+	Ability[0x1E3] = 0x391A --Save the King
+	Ability[0x1F8] = 0x3A6A --Save the King+
+	Ability[0x22A] = 0x3B2A --Joyous Mushroom
+	Ability[0x22B] = 0x3B3A --Joyous Mushroom+
+	Ability[0x22C] = 0x3B4A --Majestic Mushroom
+	Ability[0x22D] = 0x3B5A --Majestic Mushroom+
+	Ability[0x22E] = 0x3B6A --Ultimate Mushroom
+	Ability[0x032] = 0x380A --Detection Shield
+	Ability[0x033] = 0x381A --Test the King
 	if Ability[Shield] ~= nil then
-		Ability = ReadShort(Sys3+Ability[Shield]) --Currently-equipped shield's ability
+		Ability = ReadShort(BAR(Sys3,0x6,Ability[Shield]),OnPC) --Currently-equipped shield's ability
 		if Ability == 0x1A7 then --Goofy Tornado
 			WriteShort(Save+0x280A,0x81A7)
-			WriteByte(Sys3+0x11F6B,0)
+			WriteByte(BAR(Sys3,0x6,0x16EF),0,OnPC)
 		elseif Ability == 0x1AD then --Goofy Bash
 			WriteShort(Save+0x280A,0x81AD)
-			WriteByte(Sys3+0x11F83,0)
+			WriteByte(BAR(Sys3,0x6,0x1707),0,OnPC)
 		elseif Ability == 0x1A9 then --Goofy Turbo
 			WriteShort(Save+0x280A,0x81A9)
-			WriteByte(Sys3+0x11F9B,0)
-		else
+			WriteByte(BAR(Sys3,0x6,0x171F),0,OnPC)
+		elseif ReadShort(Save+0x280A) ~= 0 then
 			WriteShort(Save+0x280A,0) --Remove Ability Slot 80
-			WriteByte(Sys3+0x11F6B,2) --Restore Original AP Costs
-			WriteByte(Sys3+0x11F83,2)
-			WriteByte(Sys3+0x11F9B,2)
+			WriteByte(BAR(Sys3,0x6,0x16EF),2,OnPC) --Restore Original AP Costs
+			WriteByte(BAR(Sys3,0x6,0x1707),2,OnPC)
+			WriteByte(BAR(Sys3,0x6,0x171F),2,OnPC)
 		end
 	end
 end
@@ -742,28 +737,36 @@ elseif ReadLong(0x2F9142-0x56454E) == 0x43B70F0D74D68541 then --JP
 end
 --Alternate Party Models (adding new UCM using MEMT causes problems when shopping)
 if World == 0x0C and Place ~= 0x070C then --Mage & Knight (KH I)
-	WriteString(Obj0+0x16F0,'P_EX020_DC\0')
-	WriteString(Obj0+0x1750,'P_EX030_DC\0')
-	WriteString(Obj0+0x3250,'P_EX020_DC_ANGRY_NPC\0')
-	WriteString(Obj0+0x40F0,'H_ZZ020_DC\0')
-	WriteString(Obj0+0x4150,'H_ZZ030_DC\0')
+	WriteString(Obj0+0x16F0,'P_EX020_DC\0',OnPC)
+	WriteString(Obj0+0x1750,'P_EX030_DC\0',OnPC)
+	WriteString(Obj0+0x3250,'P_EX020_DC_ANGRY_NPC\0',OnPC)
+	WriteString(Obj0+0x40F0,'H_ZZ020_DC\0',OnPC)
+	WriteString(Obj0+0x4150,'H_ZZ030_DC\0',OnPC)
 elseif Place == 0x2004 or Place == 0x2104 or Place == 0x2204 or Place == 0x2604 then --Casual (CoM)
-	WriteString(Obj0+0x16F0,'P_EX020_CM\0')
-	WriteString(Obj0+0x1750,'P_EX030_CM\0')
-else --Revert costume changes
-	WriteString(Obj0+0x16F0,'P_EX020\0')
-	WriteString(Obj0+0x1750,'P_EX030\0')
-	WriteString(Obj0+0x3250,'P_EX020_ANGRY_NPC\0')
-	WriteString(Obj0+0x40F0,'H_ZZ020\0')
-	WriteString(Obj0+0x4150,'H_ZZ030\0')
+	WriteString(Obj0+0x16F0,'P_EX020_CM\0',OnPC)
+	WriteString(Obj0+0x1750,'P_EX030_CM\0',OnPC)
+elseif ReadString(Obj0+0x16F0,8,OnPC) ~= 'P_EX020\0' then --Revert costume changes
+	WriteString(Obj0+0x16F0,'P_EX020\0',OnPC)
+	WriteString(Obj0+0x1750,'P_EX030\0',OnPC)
+	WriteString(Obj0+0x3250,'P_EX020_ANGRY_NPC\0',OnPC)
+	WriteString(Obj0+0x40F0,'H_ZZ020\0',OnPC)
+	WriteString(Obj0+0x4150,'H_ZZ030\0',OnPC)
+end
+--Navigational Map Unlocks Valor Form
+if ReadByte(Save+0x36C0)&0x80 == 0x80 then
+	BitOr(Save+0x36C0,0x02)
+end
+--Window of Time Map 2 Unlocks Final Form
+if ReadByte(Save+0x36C2)&0x02 == 0x02 then
+	BitOr(Save+0x36C0,0x10)
 end
 --[[Enable Anti Form Forcing
 if ReadByte(Save+0x3524) == 6 then --In Anti Form
 	BitOr(Save+0x36C0,0x20) --Unlocks Anti Form
 end--]]
 --Anti Form Costs Max Drive Instead of a Static 9.
-if ReadByte(Sys3+0x00500) >= 5 and ReadByte(Slot1+0x1B2) >= 5 then
-	WriteByte(Sys3+0x00500,ReadByte(Slot1+0x1B2))
+if ReadByte(BAR(Sys3,0x2,0x0264),OnPC) >= 5 and ReadByte(Slot1+0x1B2) >= 5 then
+	WriteByte(BAR(Sys3,0x2,0x0264),ReadByte(Slot1+0x1B2),OnPC)
 end
 end
 
@@ -800,7 +803,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 5 then --The Altar of Naught
 		WarpRoom = 0x12
 	end
-	Spawn('Short',0x0A,0x08C,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x010),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0412 and Events(Null,Null,0x02) then --The Path to the Castle
@@ -813,7 +816,7 @@ elseif Place == 0x1012 and Events(Null,Null,0x05) then --Back to His Old Self
 	WriteByte(Save+0x1EDF,4)
 elseif Place == 0x1212 and Events(Null,Null,0x03) then --The Door to Kingdom Hearts
 	WriteByte(Save+0x1EDE,5) --Post-Story Save
-elseif Place == 0x0001 and not Events(0x39,0x39,0x39) then --Post Xemnas II Cutscenes (except STT6)
+elseif Place == 0x0001 and ReadInt(Save+0x000C) == 0x631212 then --END
 	WriteInt(Save+0x000C,0x321A04) --Post-Game Save at Garden of Assemblage
 end
 --The World that Never Was Post-Story Save
@@ -833,14 +836,10 @@ end
 --Final Door Requirements
 if Place == 0x1212 then
 	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 then --All Proofs Obtained
-		Spawn('Short',0x05,0x060,0x13D) --Spawn Door RC
+		WriteShort(BAR(ARD,0x05,0x060),0x13D,OnPC) --Spawn Door RC
 	else
-		Spawn('Short',0x05,0x060,0x000) --Despawn Door RC
+		WriteShort(BAR(ARD,0x05,0x060),0x000,OnPC) --Despawn Door RC
 	end
-end
---Xemnas II Laser Dome Skip
-if Place == 0x1412 and ReadInt(Slot3) == 1 then
-	WriteInt(Slot3,0)
 end
 end
 
@@ -877,7 +876,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Throne Room
 		WarpRoom = 0x0B
 	end
-	Spawn('Short',0x0A,0x0AC,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x030),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0308 and Events(0x47,0x47,0x47) then --Mountain Climb
@@ -954,7 +953,7 @@ if Place == 0x1A04 then
 	elseif ReadByte(Save+0x1D3E) == 4 then --Beast's Room
 		WarpRoom = 0x03
 	end
-	Spawn('Short',0x0A,0x0CC,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x050),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0105 and Events(Null,Null,0x01) then --The Parlor Ambush
@@ -1041,7 +1040,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Santa's House
 		WarpRoom = 0x08
 	end
-	Spawn('Short',0x0A,0x0EC,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x070),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x010E and Events(Null,Null,0x01) then --The Professor's Experiment
@@ -1130,7 +1129,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 5 then --Ruined Chamber
 		WarpRoom = 0x0B
 	end
-	Spawn('Short',0x0A,0x10C,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x090),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0007 and Events(Null,Null,0x01) then --Turning Over a New Feather
@@ -1186,7 +1185,6 @@ if Place == 0x1A04 then
 	if PostSave == 0 then
 		if Progress == 0 then --1st Visit
 			WarpRoom = 0x00
-			Spawn('Short',0x0A,0x116,0x00)
 		elseif Progress == 1 then --[Before Helping Megara Up, Chasing after Demyx]
 			WarpRoom = 0x03
 		elseif Progress == 2 then --[Before Entering Valley of the Dead, Before Cerberus]
@@ -1223,7 +1221,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 4 then --Coliseum Gates
 		WarpRoom = 0x02
 	end
-	Spawn('Short',0x0A,0x12C,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x0B0),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0306 and Events(Null,Null,0x02) then --Megara
@@ -1270,38 +1268,38 @@ end
 --Enable Drive with Olympus Stone
 if ReadByte(Save+0x3644) > 0 then
 	if Place == 0x0306 then --Underworld Entrance
-		Spawn('Short',0x0F,0x01C,0) --BTL 0x16
+		WriteShort(BAR(ARD,0x0F,0x01C),0,OnPC) --BTL 0x16
 	elseif Place == 0x0506 then --Valley of the Dead
-		Spawn('Short',0x06,0x060,0) --BTL 0x01
-		Spawn('Short',0x06,0x08C,0) --BTL 0x02
-		Spawn('Short',0x06,0x10C,0) --BTL 0x6F (Hades Escape)
+		WriteShort(BAR(ARD,0x06,0x060),0,OnPC) --BTL 0x01
+		WriteShort(BAR(ARD,0x06,0x08C),0,OnPC) --BTL 0x02
+		WriteShort(BAR(ARD,0x06,0x10C),0,OnPC) --BTL 0x6F (Hades Escape)
 	elseif Place == 0x0606 then --Hades' Chamber
-		Spawn('Short',0x05,0x014,0) --BTL 0x16
-		Spawn('Short',0x05,0x064,0) --BTL 0x70 (Invincible Hades)
+		WriteShort(BAR(ARD,0x05,0x014),0,OnPC) --BTL 0x16
+		WriteShort(BAR(ARD,0x05,0x064),0,OnPC) --BTL 0x70 (Invincible Hades)
 	elseif Place == 0x0706 then --Cave of the Dead: Entrance
-		Spawn('Short',0x07,0x0B0,0) --BTL 0x01
-		Spawn('Short',0x07,0x10C,0) --BTL 0x02
-		Spawn('Short',0x07,0x1A0,0) --BTL 0x72 (Cerberus)
+		WriteShort(BAR(ARD,0x07,0x0B0),0,OnPC) --BTL 0x01
+		WriteShort(BAR(ARD,0x07,0x10C),0,OnPC) --BTL 0x02
+		WriteShort(BAR(ARD,0x07,0x1A0),0,OnPC) --BTL 0x72 (Cerberus)
 	elseif Place == 0x0A06 then --Cave of the Dead: Inner Chamber
-		Spawn('Short',0x0A,0x010,0) --BTL 0x16
+		WriteShort(BAR(ARD,0x0A,0x010),0,OnPC) --BTL 0x16
 	elseif Place == 0x0B06 then --Underworld Caverns: Entrance
-		Spawn('Short',0x09,0x044,0) --BTL 0x01
+		WriteShort(BAR(ARD,0x09,0x044),0,OnPC) --BTL 0x01
 	elseif Place == 0x0F06 then --Cave of the Dead: Passage
-		Spawn('Short',0x0B,0x0AC,0) --BTL 0x01
-		Spawn('Short',0x0B,0x0F4,0) --BTL 0x02
+		WriteShort(BAR(ARD,0x0B,0x0AC),0,OnPC) --BTL 0x01
+		WriteShort(BAR(ARD,0x0B,0x0F4),0,OnPC) --BTL 0x02
 	elseif Place == 0x1006 then --Underworld Caverns: The Lost Road
-		Spawn('Short',0x09,0x040,0) --BTL 0x01
+		WriteShort(BAR(ARD,0x09,0x040),0,OnPC) --BTL 0x01
 	elseif Place == 0x1106 then --Underworld Caverns: Atrium
-		Spawn('Short',0x08,0x034,0) --BTL 0x16
-		Spawn('Short',0x08,0x078,0) --BTL 0x7B (Demyx's Water Clones)
+		WriteShort(BAR(ARD,0x08,0x034),0,OnPC) --BTL 0x16
+		WriteShort(BAR(ARD,0x08,0x078),0,OnPC) --BTL 0x7B (Demyx's Water Clones)
 	end
 end
 --Softlock Prevention Without Cups Unlocked
 if Place == 0x0306 and ReadShort(Save+0x239C)&0x07BA == 0 then
-	Spawn('Short',0x2E,0x05C,0x0E4) --Before 2nd Visit Text
-	Spawn('Short',0x2E,0x060,0x01F) --Before 2nd Visit RC
-	Spawn('Short',0x30,0x05C,0x32B) --During 2nd Visit Text
-	Spawn('Short',0x30,0x060,0x01F) --During 2nd Visit RC
+	WriteShort(BAR(ARD,0x2E,0x05C),0x0E4,OnPC) --Before 2nd Visit Text
+	WriteShort(BAR(ARD,0x2E,0x060),0x01F,OnPC) --Before 2nd Visit RC
+	WriteShort(BAR(ARD,0x30,0x05C),0x32B,OnPC) --During 2nd Visit Text
+	WriteShort(BAR(ARD,0x30,0x060),0x01F,OnPC) --During 2nd Visit RC
 end
 --Unlock All Cups with Hades Cups Trophy
 if ReadByte(Save+0x3696) > 0 then
@@ -1358,7 +1356,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Stone Hollow
 		WarpRoom = 0x01
 	end
-	Spawn('Short',0x0A,0x14C,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x0D0),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x060A and Events(Null,Null,0x01) then --The Wild Kingdom
@@ -1418,7 +1416,7 @@ if Place == 0x1A04 then
 		elseif Progress == 6 then --Post 1st Visit
 			WarpRoom = 0x02
 		elseif Progress == 7 then --2nd Visit
-			Spawn('Short',0x0A,0x16A,0x12) --Start in TWtNW
+			WriteShort(BAR(ARD,0x0A,GoAOffset+0x0EE),0x12,OnPC) --Start in TWtNW
 			WarpRoom = 0x40
 		elseif Progress == 8 then --Before Sandlot Nobodies II
 			WarpRoom = 0x02
@@ -1453,10 +1451,10 @@ if Place == 0x1A04 then
 		WarpRoom = 0x1B
 	end
 	if WarpRoom <= 50 then
-		Spawn('Short',0x0A,0x16C,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0F0),WarpRoom,OnPC)
 	else
-		Spawn('Short',0x0A,0x168,0x02)
-		Spawn('Short',0x0A,0x170,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0EC),0x02,OnPC)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x0F4),WarpRoom,OnPC)
 	end
 end
 --World Progress
@@ -1589,18 +1587,14 @@ end
 --Save Points -> World Points (1st Visit)
 if ReadByte(Save+0x1CFF) == 8 and ReadByte(Save+0x3640) > 0 then --Trigger with Poster for now
 	if Place == 0x0202 then --The Usual Spot
-		Spawn('Short',0x06,0x034,0x239)
+		WriteShort(BAR(ARD,0x06,0x034),0x239,OnPC)
 	elseif Place == 0x0902 then --Central Station
-		Spawn('Short',0x11,0x034,0x239)
+		WriteShort(BAR(ARD,0x11,0x034),0x239,OnPC)
 	elseif Place == 0x1A02 then --Tower: Entryway
-		Spawn('Short',0x07,0x034,0x239)
+		WriteShort(BAR(ARD,0x07,0x034),0x239,OnPC)
 	elseif Place == 0x1B02 then --Tower: Sorcerer's Loft
-		Spawn('Short',0x09,0x034,0x239)
+		WriteShort(BAR(ARD,0x09,0x034),0x239,OnPC)
 	end
-end
---Station Plaza Nobodies with Trinity Limit End Softlock Fix
-if Place == 0x0802 and Events(0x6C,0x6C,0x6C) and ReadInt(Point1) == 98 then --Hit Counter Almost Reached
-	WriteInt(CutLen,1) --End Trinity Limit Early
 end
 end
 
@@ -1672,7 +1666,7 @@ if Place == 0x1A04 then
 		WarpRoom = 0x03
 		Visit = 5
 	end
-	Spawn('Short',0x0A,0x18C,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x110),WarpRoom,OnPC)
 	WriteByte(Save+0x3FFD,Visit)
 end
 --World Progress
@@ -1855,7 +1849,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 4 then --Ship Graveyard: The Interceptor's Hold
 		WarpRoom = 0x0B
 	end
-	Spawn('Short',0x0A,0x1AC,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x130),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x1710 and Events(0x4F,0x4F,0x4F) then --The Cursed Medallion
@@ -1925,10 +1919,10 @@ if Place == 0x1A04 then
 		WarpRoom = 0x05
 	end
 	if WarpRoom <= 50 then
-		Spawn('Short',0x0A,0x1CC,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x150),WarpRoom,OnPC)
 	else
-		Spawn('Short',0x0A,0x1C8,0x02)
-		Spawn('Short',0x0A,0x1D0,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x14C),0x02,OnPC)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x154),WarpRoom,OnPC)
 	end
 end
 --World Progress
@@ -1995,7 +1989,7 @@ if Place == 0x1A04 then
 	elseif PostSave == 3 then --Central Computer Mesa
 		WarpRoom = 0x08
 	end
-	Spawn('Short',0x0A,0x1EC,WarpRoom)
+	WriteShort(BAR(ARD,0x0A,GoAOffset+0x170),WarpRoom,OnPC)
 end
 --World Progress
 if Place == 0x0011 and Events(Null,Null,0x01) then --Tron
@@ -2094,10 +2088,10 @@ if Place == 0x1A04 then
 		WarpRoom = 0x15
 	end
 	if WarpRoom <= 50 then
-		Spawn('Short',0x0A,0x20C,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x190),WarpRoom,OnPC)
 	else
-		Spawn('Short',0x0A,0x208,0x02)
-		Spawn('Short',0x0A,0x210,WarpRoom)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x18C),0x02,OnPC)
+		WriteShort(BAR(ARD,0x0A,GoAOffset+0x194),WarpRoom,OnPC)
 	end
 end
 --World Progress
@@ -2225,55 +2219,55 @@ end
 if ReadByte(Save+0x1CFF) == 13 then
 	if Place == 0x0202 then --The Usual Spot
 		if Events(0x02,0x02,0x02) then --Forced Save Menu
-			Spawn('Short',0x06,0x034,0x23A)
+			WriteShort(BAR(ARD,0x06,0x034),0x23A,OnPC)
 		else
-			Spawn('Short',0x06,0x034,0x239)
+			WriteShort(BAR(ARD,0x06,0x034),0x239,OnPC)
 		end
 	elseif Place == 0x2002 then --Station of Serenity
-		Spawn('Short',0x04,0x034,0x239)
+		WriteShort(BAR(ARD,0x04,0x034),0x239,OnPC)
 	elseif Place == 0x0502 then --Sandlot (Day 4)
-		Spawn('Short',0x06,0x034,0x239)
+		WriteShort(BAR(ARD,0x06,0x034),0x239,OnPC)
 	elseif Place == 0x0B02 then --Sunset Station
-		Spawn('Short',0x09,0x034,0x239)
+		WriteShort(BAR(ARD,0x09,0x034),0x239,OnPC)
 	elseif Place == 0x0902 then --Central Station
-		Spawn('Short',0x11,0x034,0x239)
+		WriteShort(BAR(ARD,0x11,0x034),0x239,OnPC)
 	elseif Place == 0x1202 then --The White Room
-		Spawn('Short',0x06,0x034,0x239)
+		WriteShort(BAR(ARD,0x06,0x034),0x239,OnPC)
 	elseif Place == 0x1502 then --Computer Room
-		Spawn('Short',0x09,0x034,0x239)
+		WriteShort(BAR(ARD,0x09,0x034),0x239,OnPC)
 	end
 end
 --Simulated Twilight Town Adjustments
 if ReadByte(Save+0x1CFF) == 13 then --STT Removals
-	if ReadByte(Sys3+0x035E1) == 0xB7 then --Better STT disabled (value is 0x93 when enabled, address is Twilight Thorn RC flag)
+	if ReadByte(BAR(Sys3,0x2,0x3345),OnPC) == 0xB7 then --Better STT disabled (value is 0x93 when enabled, address is Twilight Thorn RC flag)
 		if ReadShort(Save+0x25D2)&0x8000 == 0x8000 then --Dodge Roll
 			BitNot(Save+0x25D3,0x80)
 			BitOr(Save+0x1CF1,0x01)
 		end
-		WriteShort(Sys3+0x009C6,0x00) --Fire
-		WriteShort(Sys3+0x009F6,0x00) --Thunder
-		WriteShort(Sys3+0x00A26,0x00) --Blizzard
-		WriteShort(Sys3+0x00A56,0x00) --Cure
-		WriteShort(Sys3+0x015C6,0x00) --Fira
-		WriteShort(Sys3+0x015F6,0x00) --Firaga
-		WriteShort(Sys3+0x01626,0x00) --Blizzara
-		WriteShort(Sys3+0x01656,0x00) --Blizzaga
-		WriteShort(Sys3+0x01686,0x00) --Thundara
-		WriteShort(Sys3+0x016B6,0x00) --Thundaga
-		WriteShort(Sys3+0x016E6,0x00) --Cura
-		WriteShort(Sys3+0x01716,0x00) --Curaga
-		WriteShort(Sys3+0x01F26,0x00) --Magnet
-		WriteShort(Sys3+0x01F56,0x00) --Magnera
-		WriteShort(Sys3+0x01F86,0x00) --Magnega
-		WriteShort(Sys3+0x01FB6,0x00) --Reflect
-		WriteShort(Sys3+0x01FE6,0x00) --Reflera
-		WriteShort(Sys3+0x02016,0x00) --Reflega
-		WriteShort(Sys3+0x07056,0x00) --Trinity (Solo)
+		WriteShort(BAR(Sys3,0x2,0x072A),0x00,OnPC) --Fire
+		WriteShort(BAR(Sys3,0x2,0x075A),0x00,OnPC) --Thunder
+		WriteShort(BAR(Sys3,0x2,0x078A),0x00,OnPC) --Blizzard
+		WriteShort(BAR(Sys3,0x2,0x07BA),0x00,OnPC) --Cure
+		WriteShort(BAR(Sys3,0x2,0x132A),0x00,OnPC) --Fira
+		WriteShort(BAR(Sys3,0x2,0x135A),0x00,OnPC) --Firaga
+		WriteShort(BAR(Sys3,0x2,0x138A),0x00,OnPC) --Blizzara
+		WriteShort(BAR(Sys3,0x2,0x13BA),0x00,OnPC) --Blizzaga
+		WriteShort(BAR(Sys3,0x2,0x13EA),0x00,OnPC) --Thundara
+		WriteShort(BAR(Sys3,0x2,0x141A),0x00,OnPC) --Thundaga
+		WriteShort(BAR(Sys3,0x2,0x144A),0x00,OnPC) --Cura
+		WriteShort(BAR(Sys3,0x2,0x147A),0x00,OnPC) --Curaga
+		WriteShort(BAR(Sys3,0x2,0x1C8A),0x00,OnPC) --Magnet
+		WriteShort(BAR(Sys3,0x2,0x1CBA),0x00,OnPC) --Magnera
+		WriteShort(BAR(Sys3,0x2,0x1CEA),0x00,OnPC) --Magnega
+		WriteShort(BAR(Sys3,0x2,0x1D1A),0x00,OnPC) --Reflect
+		WriteShort(BAR(Sys3,0x2,0x1D4A),0x00,OnPC) --Reflera
+		WriteShort(BAR(Sys3,0x2,0x1D7A),0x00,OnPC) --Reflega
+		WriteShort(BAR(Sys3,0x2,0x6DBA),0x00,OnPC) --Trinity (Solo)
 	else --Better STT enabled
 		if Events(0x5B,0x5B,0x5B) or Events(0xC0,0xC0,0xC0) then --Mail Delivery softlock fix
-			WriteString(Obj0+0x15030,'F_TT010_ROXAS.mset\0')
+			WriteString(Obj0+0x15030,'F_TT010_ROXAS.mset\0',OnPC)
 		else --Let Limit Form use skateboard
-			WriteString(Obj0+0x15030,'F_TT010.mset\0')
+			WriteString(Obj0+0x15030,'F_TT010.mset\0',OnPC)
 		end
 	end
 	local Equip = ReadShort(Save+0x24F0) --Currently equipped Keyblade
@@ -2319,30 +2313,30 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 			WriteShort(Save+0x24F0,Store) --Change Equipped Keyblade
 		end
 	end
-else --Restore Outside STT
+elseif ReadShort(Save+0x1CF9) ~= 0 then --Restore Outside STT
 	if ReadByte(Save+0x1CF1)&0x01 == 0x01 then --Dodge Roll
 		BitOr(Save+0x25D3,0x80)
 		BitNot(Save+0x1CF1,0x01)
 	end
-	WriteShort(Sys3+0x009C6,0x02) --Fire
-	WriteShort(Sys3+0x009F6,0x02) --Thunder
-	WriteShort(Sys3+0x00A26,0x02) --Blizzard
-	WriteShort(Sys3+0x00A56,0x02) --Cure
-	WriteShort(Sys3+0x015C6,0x02) --Fira
-	WriteShort(Sys3+0x015F6,0x02) --Firaga
-	WriteShort(Sys3+0x01626,0x02) --Blizzara
-	WriteShort(Sys3+0x01656,0x02) --Blizzaga
-	WriteShort(Sys3+0x01686,0x02) --Thundara
-	WriteShort(Sys3+0x016B6,0x02) --Thundaga
-	WriteShort(Sys3+0x016E6,0x02) --Cura
-	WriteShort(Sys3+0x01716,0x02) --Curaga
-	WriteShort(Sys3+0x01F26,0x02) --Magnet
-	WriteShort(Sys3+0x01F56,0x02) --Magnera
-	WriteShort(Sys3+0x01F86,0x02) --Magnega
-	WriteShort(Sys3+0x01FB6,0x02) --Reflect
-	WriteShort(Sys3+0x01FE6,0x02) --Reflera
-	WriteShort(Sys3+0x02016,0x02) --Reflega
-	WriteShort(Sys3+0x07056,0x51) --Trinity (Solo)
+	WriteShort(BAR(Sys3,0x2,0x072A),0x02,OnPC) --Fire
+	WriteShort(BAR(Sys3,0x2,0x075A),0x02,OnPC) --Thunder
+	WriteShort(BAR(Sys3,0x2,0x078A),0x02,OnPC) --Blizzard
+	WriteShort(BAR(Sys3,0x2,0x07BA),0x02,OnPC) --Cure
+	WriteShort(BAR(Sys3,0x2,0x132A),0x02,OnPC) --Fira
+	WriteShort(BAR(Sys3,0x2,0x135A),0x02,OnPC) --Firaga
+	WriteShort(BAR(Sys3,0x2,0x138A),0x02,OnPC) --Blizzara
+	WriteShort(BAR(Sys3,0x2,0x13BA),0x02,OnPC) --Blizzaga
+	WriteShort(BAR(Sys3,0x2,0x13EA),0x02,OnPC) --Thundara
+	WriteShort(BAR(Sys3,0x2,0x141A),0x02,OnPC) --Thundaga
+	WriteShort(BAR(Sys3,0x2,0x144A),0x02,OnPC) --Cura
+	WriteShort(BAR(Sys3,0x2,0x147A),0x02,OnPC) --Curaga
+	WriteShort(BAR(Sys3,0x2,0x1C8A),0x02,OnPC) --Magnet
+	WriteShort(BAR(Sys3,0x2,0x1CBA),0x02,OnPC) --Magnera
+	WriteShort(BAR(Sys3,0x2,0x1CEA),0x02,OnPC) --Magnega
+	WriteShort(BAR(Sys3,0x2,0x1D1A),0x02,OnPC) --Reflect
+	WriteShort(BAR(Sys3,0x2,0x1D4A),0x02,OnPC) --Reflera
+	WriteShort(BAR(Sys3,0x2,0x1D7A),0x02,OnPC) --Reflega
+	WriteShort(BAR(Sys3,0x2,0x6DBA),0x51,OnPC) --Trinity (Solo)
 	WriteShort(Save+0x1CF9,0) --Remove stored Keyblade
 end
 --Faster Twilight Thorn Reaction Commands
@@ -2435,25 +2429,25 @@ function Data()
 --Music Change - Final Fights
 if ReadShort(Save+0x03D6) == 0x02 then
 	if Place == 0x1B12 then --Part I
-		Spawn('Short',0x06,0x0A4,0x09C) --Guardando nel buio
-		Spawn('Short',0x06,0x0A6,0x09C)
+		WriteShort(BAR(ARD,0x06,0x0A4),0x09C,OnPC) --Guardando nel buio
+		WriteShort(BAR(ARD,0x06,0x0A6),0x09C,OnPC)
 	elseif Place == 0x1C12 then --Part II
-		Spawn('Short',0x07,0x008,0x09C)
-		Spawn('Short',0x07,0x00A,0x09C)
+		WriteShort(BAR(ARD,0x07,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C,OnPC)
 	elseif Place == 0x1A12 then --Cylinders
-		Spawn('Short',0x07,0x008,0x09C)
-		Spawn('Short',0x07,0x00A,0x09C)
+		WriteShort(BAR(ARD,0x07,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C,OnPC)
 	elseif Place == 0x1912 then --Core
-		Spawn('Short',0x07,0x008,0x09C)
-		Spawn('Short',0x07,0x00A,0x09C)
+		WriteShort(BAR(ARD,0x07,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C,OnPC)
 	elseif Place == 0x1812 then --Armor Xemnas I
-		Spawn('Short',0x06,0x008,0x09C)
-		Spawn('Short',0x06,0x00A,0x09C)
-		Spawn('Short',0x06,0x034,0x09C)
-		Spawn('Short',0x06,0x036,0x09C)
+		WriteShort(BAR(ARD,0x06,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x06,0x00A),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x06,0x034),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x06,0x036),0x09C,OnPC)
 	elseif Place == 0x1D12 then --Pre-Dragon Xemnas
-		Spawn('Short',0x03,0x010,0x09C)
-		Spawn('Short',0x03,0x012,0x09C)
+		WriteShort(BAR(ARD,0x03,0x010),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x03,0x012),0x09C,OnPC)
 	end
 end
 end

@@ -4,18 +4,18 @@ StackSize: 512
 TempSize: 512
 Triggers:
 - Key: 6
-  Addr: TR6
+  Addr: OBJ_DAMAGE
 - Key: 1
-  Addr: TR1
+  Addr: OBJ_MAIN
 - Key: 0
-  Addr: TR0
+  Addr: OBJ_INIT
 Name: f_bb040
 
 ---
 ; codeLabels: 
 ; codeRevealer: -l 147 -l 168 -l 905 -l 1179 -l 1235 -l 1329 -l 1346 -l 1423 -l 1620 -l 1676 -l 1692 -l 1797 -l 1810 -l 1955 -l 1997 -l 2063 -l 2129 -l 2188 -l 2193 -l 2387 -l 2415 -l 2502
  section .text
-TR6:
+OBJ_DAMAGE:
  popToSp 0
  pushFromPWp W144
  pushFromFSp 0
@@ -80,7 +80,7 @@ L107:
  jmp L128
 L128:
  ret 
-TR1:
+OBJ_MAIN:
  pushFromPWp W144
  gosub 4, L134
  ret 
@@ -133,7 +133,7 @@ L191:
  jmp L200
 L200:
  ret 
-TR0:
+OBJ_INIT:
  popToSp 0
  pushFromPWp W144
  pushFromFSp 0
