@@ -2,9 +2,9 @@
 --Last Update: BAR() function implementation
 --Todo: Maybe item-based progress flags
 
-LUAGUI_NAME = 'GoA ROM Non-Randomizer Build'
+LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
-LUAGUI_DESC = 'A GoA build for use without the Randomizer. Requires ROM patching.'
+LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
 print('GoA v1.53.5')
@@ -252,6 +252,10 @@ end
 function GoA()
 --Garden of Assemblage Rearrangement
 if Place == 0x1A04 then
+	--Open Promise Charm Path
+	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 and ReadByte(Save+0x3694) > 0 then --All Proofs & Promise Charm
+		WriteShort(BAR(ARD,0x06,0x05C),0x77A,OnPC) --Text
+	end
 	--Demyx's Portal Text
 	if ReadByte(Save+0x1D2E) > 0 then --Hollow Bastion Cleared
 		WriteShort(BAR(ARD,0x05,0x25C),0x779,OnPC) --Radiant Garden
@@ -295,22 +299,40 @@ if Place == 0x000F then
 end
 --Visits Unlock
 if true then
-	if true then --Automatically unlocks
+	if ReadByte(Save+0x364A) > 0 then --Picture
 		BitOr(Save+0x1C92,0x08) --ZZ_TT_CHECK_1_GOA
-		BitOr(Save+0x1C92,0x40) --ZZ_HB_CHECK_2_GOA
 	end
-	if ReadByte(Save+0x1CE7)&0x02 == 0x02 then --TT_SCENARIO_9_END
+	if ReadByte(Save+0x3649) > 0 then --Ice Cream
+		BitOr(Save+0x1C92,0x10) --ZZ_TT_CHECK_2_GOA
+	end
+	if ReadByte(Save+0x3643) > 0 then --Membership Card
 		BitOr(Save+0x1C92,0x20) --ZZ_HB_CHECK_1_GOA
 	end
-	if ReadByte(Save+0x1D1E)&0x40 == 0x40 then --HB_SCENARIO_4_END
-		BitOr(Save+0x1C92,0x10) --ZZ_TT_CHECK_2_GOA
+	if ReadByte(Save+0x35C1) > 0 or true then --Way to the Dawn (Currently unused)
+		BitOr(Save+0x1C92,0x40) --ZZ_HB_CHECK_2_GOA
+	end
+	if ReadByte(Save+0x35B3) > 0 then --Beast's Claw
 		BitOr(Save+0x1C92,0x80) --ZZ_BB_CHECK_GOA
+	end
+	if ReadByte(Save+0x35AE) > 0 then --Battlefields of War
 		BitOr(Save+0x1C93,0x01) --ZZ_HE_CHECK_GOA
+	end
+	if ReadByte(Save+0x35C0) > 0 then --Scimitar
 		BitOr(Save+0x1C93,0x02) --ZZ_AL_CHECK_GOA
+	end
+	if ReadByte(Save+0x35AF) > 0 then --Sword of the Ancestors
 		BitOr(Save+0x1C93,0x04) --ZZ_MU_CHECK_GOA
+	end
+	if ReadByte(Save+0x35B5) > 0 then --Proud Fang
 		BitOr(Save+0x1C94,0x01) --ZZ_LK_CHECK_GOA
+	end
+	if ReadByte(Save+0x35B4) > 0 then --Bone Fist
 		BitOr(Save+0x1C94,0x40) --ZZ_NM_CHECK_GOA
+	end
+	if ReadByte(Save+0x35B6) > 0 then --Skill and Crossbones
 		BitOr(Save+0x1C94,0x80) --ZZ_CA_CHECK_GOA
+	end
+	if ReadByte(Save+0x35C2) > 0 then --Identity Disk
 		BitOr(Save+0x1C95,0x01) --ZZ_TR_CHECK_GOA
 	end
 else --Remove the item requirements
@@ -813,7 +835,7 @@ if ReadByte(Save+0x1EDE) > 0 then
 end
 --Final Door Requirements
 if Place == 0x1212 then
-	if ReadByte(Save+0x1D1E)&0x80 == 0x80 and ReadByte(Save+0x1DB9)&0x02 == 0x02 and ReadByte(Save+0x1DF7)&0x20 == 0x20 then --All Worlds Cleared (HB_SCENARIO_5_END & PO_SCENARIO_5_END & LM_SCENARIO_5_END)
+	if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 then --All Proofs Obtained
 		WriteShort(BAR(ARD,0x05,0x060),0x13D,OnPC) --Spawn Door RC
 	else
 		WriteShort(BAR(ARD,0x05,0x060),0x000,OnPC) --Despawn Door RC
@@ -1915,7 +1937,7 @@ elseif Place == 0x000D and Events(Null,Null,0x07) then --Back to Their Own World
 elseif Place == 0x050C and Events(Null,Null,0x01) then --The Castle is Secure
 	WriteByte(Save+0x1E1E,3) --Post-Story Save
 elseif Place == 0x2604 and Events(0x7F,0x7F,0x7F) then --Marluxia Defeated
-elseif ReadByte(Save+0x3694) > 0 and ReadByte(Save+0x1E1E) > 0 and ReadShort(Save+0x1232) == 0x00 then --Proof of Connection, DC Cleared, Terra Locked
+elseif ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x1E1E) > 0 and ReadShort(Save+0x1232) == 0x00 then --Proof of Connection, DC Cleared, Terra Locked
 	WriteShort(Save+0x121A,0x11) --Library EVT
 	WriteShort(Save+0x1232,0x02) --Hall of the Cornerstone (Light) EVT
 	WriteShort(Save+0x1238,0x12) --Gummi Hangar EVT
@@ -2404,6 +2426,30 @@ function At()
 end
 
 function Data()
+--Music Change - Final Fights
+if ReadShort(Save+0x03D6) == 0x02 then
+	if Place == 0x1B12 then --Part I
+		WriteShort(BAR(ARD,0x06,0x0A4),0x09C,OnPC) --Guardando nel buio
+		WriteShort(BAR(ARD,0x06,0x0A6),0x09C,OnPC)
+	elseif Place == 0x1C12 then --Part II
+		WriteShort(BAR(ARD,0x07,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C,OnPC)
+	elseif Place == 0x1A12 then --Cylinders
+		WriteShort(BAR(ARD,0x07,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C,OnPC)
+	elseif Place == 0x1912 then --Core
+		WriteShort(BAR(ARD,0x07,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x07,0x00A),0x09C,OnPC)
+	elseif Place == 0x1812 then --Armor Xemnas I
+		WriteShort(BAR(ARD,0x06,0x008),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x06,0x00A),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x06,0x034),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x06,0x036),0x09C,OnPC)
+	elseif Place == 0x1D12 then --Pre-Dragon Xemnas
+		WriteShort(BAR(ARD,0x03,0x010),0x09C,OnPC)
+		WriteShort(BAR(ARD,0x03,0x012),0x09C,OnPC)
+	end
+end
 end
 
 --[[Unused Bytes Repurposed:
