@@ -232,6 +232,8 @@ if OnPC and ReadByte(BAR(Sys3,0x6,0x0E5F),OnPC) == 0x19 then --Change Form's Ico
 	WriteByte(BAR(Sys3,0x6,0x0EA7),0xCE,OnPC) --Master
 	WriteByte(BAR(Sys3,0x6,0x0EBF),0xCE,OnPC) --Final
 	WriteByte(BAR(Sys3,0x6,0x0ED7),0xCE,OnPC) --Anti
+	WriteByte(BAR(Sys3,0x6,0x253F),0xCE,OnPC) --Valor DUMMY (Navigational Map)
+	WriteByte(BAR(Sys3,0x6,0x265F),0xCE,OnPC) --Final DUMMY (Window of Time 2 Map)
 end
 --Start New Game
 if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
