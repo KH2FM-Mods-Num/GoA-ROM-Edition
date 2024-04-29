@@ -143,11 +143,11 @@ return Address
 end
 
 function BitOr(Address,Bit,Abs)
-WriteByte(Address,ReadByte(Address)|Bit,Abs and OnPC)
+WriteByte(Address, ReadByte(Address, Abs and OnPC)|Bit, Abs and OnPC)
 end
 
 function BitNot(Address,Bit,Abs)
-WriteByte(Address,ReadByte(Address)&~Bit,Abs and OnPC)
+WriteByte(Address, ReadByte(Address, Abs and OnPC)&~Bit, Abs and OnPC)
 end
 
 function Faster(Toggle)
