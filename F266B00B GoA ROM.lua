@@ -175,6 +175,15 @@ WriteShort(Save+0x211C,0) --The Old Mansion
 WriteShort(Save+0x2120,0) --Mansion Foyer
 end
 
+function VisitLock(ItemAddress, RequiredCount, Address, Bit)
+	local ItemCount = ReadByte(ItemAddress)
+	if ItemCount < RequiredCount then
+		BitNot(Address, Bit)
+	elseif ReadByte(Address) & Bit != Bit
+		BitOr(Address, Bit)
+	end
+end
+
 function _OnFrame()
 if true then --Define current values for common addresses
 	World  = ReadByte(Now+0x00)
@@ -313,57 +322,74 @@ if Place == 0x000F then
 		Warp(0x04,0x1A,WarpDoor)
 	end
 end
---Visits Unlock
+--Visit Locks
 if true then
-	if ReadByte(Save+0x364A) > 0 then --Picture
-		BitOr(Save+0x1C92,0x08) --ZZ_TT_CHECK_1_GOA
-	end
-	if ReadByte(Save+0x3649) > 0 then --Ice Cream
-		BitOr(Save+0x1C92,0x10) --ZZ_TT_CHECK_2_GOA
-	end
-	if ReadByte(Save+0x3643) > 0 then --Membership Card
-		BitOr(Save+0x1C92,0x20) --ZZ_HB_CHECK_1_GOA
-	end
-	if ReadByte(Save+0x35C1) > 0 or true then --Way to the Dawn (Currently unused)
-		BitOr(Save+0x1C92,0x40) --ZZ_HB_CHECK_2_GOA
-	end
-	if ReadByte(Save+0x35B3) > 0 then --Beast's Claw
-		BitOr(Save+0x1C92,0x80) --ZZ_BB_CHECK_GOA
-	end
-	if ReadByte(Save+0x35AE) > 0 then --Battlefields of War
-		BitOr(Save+0x1C93,0x01) --ZZ_HE_CHECK_GOA
-	end
-	if ReadByte(Save+0x35C0) > 0 then --Scimitar
-		BitOr(Save+0x1C93,0x02) --ZZ_AL_CHECK_GOA
-	end
-	if ReadByte(Save+0x35AF) > 0 then --Sword of the Ancestors
-		BitOr(Save+0x1C93,0x04) --ZZ_MU_CHECK_GOA
-	end
-	if ReadByte(Save+0x35B5) > 0 then --Proud Fang
-		BitOr(Save+0x1C94,0x01) --ZZ_LK_CHECK_GOA
-	end
-	if ReadByte(Save+0x35B4) > 0 then --Bone Fist
-		BitOr(Save+0x1C94,0x40) --ZZ_NM_CHECK_GOA
-	end
-	if ReadByte(Save+0x35B6) > 0 then --Skill and Crossbones
-		BitOr(Save+0x1C94,0x80) --ZZ_CA_CHECK_GOA
-	end
-	if ReadByte(Save+0x35C2) > 0 then --Identity Disk
-		BitOr(Save+0x1C95,0x01) --ZZ_TR_CHECK_GOA
-	end
+	--Ice Cream
+	VisitLock(Save+0x3649, 1, Save+0x1CD2, 0x10) --TT_INIT
+	VisitLock(Save+0x3649, 2, Save+0x1C92, 0x08) --ZZ_TT_CHECK_1_GOA
+	VisitLock(Save+0x3649, 3, Save+0x1C92, 0x10) --ZZ_TT_CHECK_2_GOA
+	--Membership Card
+	VisitLock(Save+0x3643, 1, Save+0x1D1B, 0x08) --HB_INIT
+	VisitLock(Save+0x3643, 2, Save+0x1C92, 0x20) --ZZ_HB_CHECK_1_GOA
+	VisitLock(Save+0x3643, 0, Save+0x1C92, 0x40) --ZZ_HB_CHECK_2_GOA
+	--Beast's Claw
+	VisitLock(Save+0x35B3, 1, Save+0x1D31, 0x08) --BB_INIT
+	VisitLock(Save+0x35B3, 2, Save+0x1C92, 0x80) --ZZ_BB_CHECK_GOA
+	--Battlefields of War
+	VisitLock(Save+0x35AE, 1, Save+0x1D53, 0x20) --HE_INIT
+	VisitLock(Save+0x35AE, 2, Save+0x1C93, 0x01) --ZZ_HE_CHECK_GOA
+	--Scimitar
+	VisitLock(Save+0x35C0, 1, Save+0x1D73, 0x02) --AL_INIT
+	VisitLock(Save+0x35C0, 2, Save+0x1C93, 0x02) --ZZ_AL_CHECK_GOA
+	--Sword of the Ancestors
+	VisitLock(Save+0x35AF, 1, Save+0x1D91, 0x01) --MU_INIT
+	VisitLock(Save+0x35AF, 2, Save+0x1C93, 0x04) --ZZ_MU_CHECK_GOA
+	--Proud Fang
+	VisitLock(Save+0x35B5, 1, Save+0x1DD5, 0x04) --LK_INIT
+	VisitLock(Save+0x35B5, 2, Save+0x1C94, 0x01) --ZZ_LK_CHECK_GOA
+	--Bone Fist
+	VisitLock(Save+0x35B4, 1, Save+0x1E56, 0x08) --NM_INIT
+	VisitLock(Save+0x35B4, 2, Save+0x1C94, 0x40) --ZZ_NM_CHECK_GOA
+	--Skill and Crossbones
+	VisitLock(Save+0x35B6, 1, Save+0x1E99, 0x04) --CA_INIT
+	VisitLock(Save+0x35B6, 2, Save+0x1C94, 0x80) --ZZ_CA_CHECK_GOA
+	--Identity Disk
+	VisitLock(Save+0x35C2, 1, Save+0x1EB5, 0x20) --TR_INIT
+	VisitLock(Save+0x35C2, 2, Save+0x1C95, 0x01) --ZZ_TR_CHECK_GOA
 else --Remove the item requirements
-	BitOr(Save+0x1C92,0x08) --ZZ_TT_CHECK_1_GOA
-	BitOr(Save+0x1C92,0x10) --ZZ_TT_CHECK_2_GOA
-	BitOr(Save+0x1C92,0x20) --ZZ_HB_CHECK_1_GOA
-	BitOr(Save+0x1C92,0x40) --ZZ_HB_CHECK_2_GOA
-	BitOr(Save+0x1C92,0x80) --ZZ_BB_CHECK_GOA
-	BitOr(Save+0x1C93,0x01) --ZZ_HE_CHECK_GOA
-	BitOr(Save+0x1C93,0x02) --ZZ_AL_CHECK_GOA
-	BitOr(Save+0x1C93,0x04) --ZZ_MU_CHECK_GOA
-	BitOr(Save+0x1C94,0x01) --ZZ_LK_CHECK_GOA
-	BitOr(Save+0x1C94,0x40) --ZZ_NM_CHECK_GOA
-	BitOr(Save+0x1C94,0x80) --ZZ_CA_CHECK_GOA
-	BitOr(Save+0x1C95,0x01) --ZZ_TR_CHECK_GOA
+	--Ice Cream
+	VisitLock(Save+0x3649, 0, Save+0x1CD2, 0x10) --TT_INIT
+	VisitLock(Save+0x3649, 0, Save+0x1C92, 0x08) --ZZ_TT_CHECK_1_GOA
+	VisitLock(Save+0x3649, 0, Save+0x1C92, 0x10) --ZZ_TT_CHECK_2_GOA
+	--Membership Card
+	VisitLock(Save+0x3643, 0, Save+0x1D1B, 0x08) --HB_INIT
+	VisitLock(Save+0x3643, 0, Save+0x1C92, 0x20) --ZZ_HB_CHECK_1_GOA
+	VisitLock(Save+0x3643, 0, Save+0x1C92, 0x40) --ZZ_HB_CHECK_2_GOA
+	--Beast's Claw
+	VisitLock(Save+0x35B3, 0, Save+0x1D31, 0x08) --BB_INIT
+	VisitLock(Save+0x35B3, 0, Save+0x1C92, 0x80) --ZZ_BB_CHECK_GOA
+	--Battlefields of War
+	VisitLock(Save+0x35AE, 0, Save+0x1D53, 0x20) --HE_INIT
+	VisitLock(Save+0x35AE, 0, Save+0x1C93, 0x01) --ZZ_HE_CHECK_GOA
+	--Scimitar
+	VisitLock(Save+0x35C0, 0, Save+0x1D73, 0x02) --AL_INIT
+	VisitLock(Save+0x35C0, 0, Save+0x1C93, 0x02) --ZZ_AL_CHECK_GOA
+	--Sword of the Ancestors
+	VisitLock(Save+0x35AF, 0, Save+0x1D91, 0x01) --MU_INIT
+	VisitLock(Save+0x35AF, 0, Save+0x1C93, 0x04) --ZZ_MU_CHECK_GOA
+	--Proud Fang
+	VisitLock(Save+0x35B5, 0, Save+0x1DD5, 0x04) --LK_INIT
+	VisitLock(Save+0x35B5, 0, Save+0x1C94, 0x01) --ZZ_LK_CHECK_GOA
+	--Bone Fist
+	VisitLock(Save+0x35B4, 0, Save+0x1E56, 0x08) --NM_INIT
+	VisitLock(Save+0x35B4, 0, Save+0x1C94, 0x40) --ZZ_NM_CHECK_GOA
+	--Skill and Crossbones
+	VisitLock(Save+0x35B6, 0, Save+0x1E99, 0x04) --CA_INIT
+	VisitLock(Save+0x35B6, 0, Save+0x1C94, 0x80) --ZZ_CA_CHECK_GOA
+	--Identity Disk
+	VisitLock(Save+0x35C2, 0, Save+0x1EB5, 0x20) --TR_INIT
+	VisitLock(Save+0x35C2, 0, Save+0x1C95, 0x01) --ZZ_TR_CHECK_GOA
+
 	--Disable GoA Visit Skip
 	--BitOr(Save+0x1CED,0x01) --TT_MISTERY_SKIP_GOA
 	--BitOr(Save+0x1D20,0x20) --HB_SCENARIO_5_SKIP_GOA
