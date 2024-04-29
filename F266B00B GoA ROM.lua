@@ -324,6 +324,8 @@ if Place == 0x000F then
 end
 --Visit Locks
 if true then
+	--Namine's Sketches
+	VisitLock(Save+0x3642, 1, Save+0x1CD0, 0x01) --TT_START_1
 	--Ice Cream
 	VisitLock(Save+0x3649, 1, Save+0x1CD2, 0x10) --TT_INIT
 	VisitLock(Save+0x3649, 2, Save+0x1C92, 0x08) --ZZ_TT_CHECK_1_GOA
@@ -357,6 +359,8 @@ if true then
 	VisitLock(Save+0x35C2, 1, Save+0x1EB5, 0x20) --TR_INIT
 	VisitLock(Save+0x35C2, 2, Save+0x1C95, 0x01) --ZZ_TR_CHECK_GOA
 else --Remove the item requirements
+	--Namine's Sketches
+	VisitLock(Save+0x3642, 0, Save+0x1CD0, 0x01) --TT_START_1
 	--Ice Cream
 	VisitLock(Save+0x3649, 0, Save+0x1CD2, 0x10) --TT_INIT
 	VisitLock(Save+0x3649, 0, Save+0x1C92, 0x08) --ZZ_TT_CHECK_1_GOA
