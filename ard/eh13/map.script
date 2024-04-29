@@ -1,0 +1,10 @@
+Program 0x04
+MapVisibility 0x000c054b 0x00000000
+Spawn "m_00"
+Spawn "m_10"
+Spawn "m_11"
+Spawn "m_12"
+Spawn "m_13"
+Spawn "m_20"
+Spawn "m_22"
+Spawn "m_80"
