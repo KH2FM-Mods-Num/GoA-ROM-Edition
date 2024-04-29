@@ -179,7 +179,7 @@ function VisitLock(ItemAddress, RequiredCount, Address, Bit)
 	local ItemCount = ReadByte(ItemAddress)
 	if ItemCount < RequiredCount then
 		BitNot(Address, Bit)
-	elseif ReadByte(Address) & Bit != Bit
+	elseif ReadByte(Address) & Bit != Bit then
 		BitOr(Address, Bit)
 	end
 end
