@@ -3692,26 +3692,6 @@ assets:
     method: areadatascript
     source:
     - name: ard/eh01/btl.script
-- name: ard/eh02.ard #Fragment Crossing (Visit Lock)
-  multi:
-  - name: ard/jp/eh02.ard
-  - name: ard/us/eh02.ard
-  - name: ard/fr/eh02.ard
-  - name: ard/gr/eh02.ard
-  - name: ard/it/eh02.ard
-  - name: ard/sp/eh02.ard
-  method: binarc
-  source:
-  - name: map
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/eh02/map.script
-  - name: m_12 #Loop to the other entrance
-    type: areadataspawn
-    method: spawnpoint
-    source:
-    - name: ard/eh02/m_12.yml
 - name: ard/eh10.ard #Hall of Empty Melodies (Lower Level) (Prevent OoB in Xigbar's Arena)
   multi:
   - name: ard/jp/eh10.ard
@@ -3727,21 +3707,6 @@ assets:
     method: areadatascript
     source:
     - name: ard/eh10/map.script
-- name: ard/eh13.ard #Proof of Existence (Visit Lock)
-  multi:
-  - name: ard/jp/eh13.ard
-  - name: ard/us/eh13.ard
-  - name: ard/fr/eh13.ard
-  - name: ard/gr/eh13.ard
-  - name: ard/it/eh13.ard
-  - name: ard/sp/eh13.ard
-  method: binarc
-  source:
-  - name: map
-    type: areadatascript
-    method: areadatascript
-    source:
-    - name: ard/eh13/map.script
 - name: ard/eh18.ard #The Altar of Naught (Data Warp)
   multi:
   - name: ard/jp/eh18.ard
