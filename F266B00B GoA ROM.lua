@@ -2009,6 +2009,12 @@ if ReadByte(Save+0x1E1E) > 0 then
 		WriteByte(Save+0x1E1E,3)
 	end
 end
+--Restore Royal Summons Taken by Moogles
+if ReadByte(Save+0x365D) > ReadByte(Save+0x1CF7) then --Obtained new copies
+	WriteByte(Save+0x1CF7, ReadByte(Save+0x365D)) --Store amount
+elseif ReadByte(Save+0x365D) < ReadByte(Save+0x1CF7) then --Taken in synth shop
+	WriteByte(Save+0x365D, ReadByte(Save+0x1CF7)) --Restore amount
+end
 end
 
 function SP()
@@ -2516,6 +2522,7 @@ end
 [Save+0x066A,Save+0x066F] Borough Spawn IDs
 Save+0x06B2 Genie Crash Fix
 Save+0x1CF1 STT Dodge Roll, Unknown Disk, Twilight Thorn
+Save+0x1CF7 Royal Summons
 Save+0x1CF8 STT Struggle Weapon
 [Save+0x1CF9,Save+0x1CFA] STT Keyblade
 Save+0x1CFD TT Post-Story Save
