@@ -1,5 +1,5 @@
 title: GoA ROM Edition v1.53.6
-description: GoA, but with a lot of stuff done through ROM editing to reduce workload on Lua. Credit to ニンニク for the Japanese translation.
+description: GoA, but with a lot of stuff done through ROM to reduce workload on Lua. Credit to ニンニク for the Japanese translation.
 assets:
 #Lua Script
 - name: scripts/F266B00B GoA ROM.lua
@@ -3626,6 +3626,11 @@ assets:
     method: areadatascript
     source:
     - name: ard/dc04/evt.script
+  - name: 0000
+    type: event
+    method: copy
+    source:
+    - name: ard/dc04/0000.bin
 - name: ard/dc05.ard #The Hall of the Cornerstone (Light) (GoA Warp & AS Warp)
   multi:
   - name: ard/jp/dc05.ard
