@@ -102,6 +102,12 @@
 - id: 0x3859
   jp: 集積の庭園にもどりますか?
   en: Return to the Garden of Assemblage?
+- id: 0x3D16
+  jp: FAKE
+  en: Royal Summons
+- id: 0x3D17
+  jp: ''
+  en: ''
 - id: 0x3D1A
   jp: アンノウンディスク
   en: Unknown Disk
