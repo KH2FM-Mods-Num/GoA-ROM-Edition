@@ -1,4 +1,19 @@
 Items:
+- Id: 239 #Report 14
+  Type: Report
+  Flag0: 1
+  Flag1: 14
+  Rank: C
+  StatEntry: 0
+  Name: 0x36D4
+  Description: 0x36D5
+  ShopBuy: 0
+  ShopSell: 0
+  Command: 0
+  Slot: 51
+  Picture: 241
+  Icon1: 0
+  Icon2: 2
 #Keyblades
 - Id: 41 #Kingdom Key
   Type: Keyblade
