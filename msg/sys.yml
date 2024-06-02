@@ -99,9 +99,27 @@
 - id: 0x0A82
   jp: 集積の庭園にもどりますか?
   en: Return to the Garden of Assemblage?
+- id: 0x36D4
+  jp: 裏アンセムレポート14
+  en: Secret Ansem Report 14
+- id: 0x36D5
+  jp: >-
+    賢者アンセムが残した裏レポートのようです
+    
+    ジミニーメモで確認できます
+  en: >-
+    A secret report written by Ansem.
+    
+    It can be viewed in Jiminy´s Journal.
 - id: 0x3859
   jp: 集積の庭園にもどりますか?
   en: Return to the Garden of Assemblage?
+- id: 0x3D16
+  jp: ロイヤルサモン
+  en: Royal Summons
+- id: 0x3D17
+  jp: ''
+  en: ''
 - id: 0x3D1A
   jp: アンノウンディスク
   en: Unknown Disk

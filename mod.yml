@@ -1,5 +1,5 @@
-title: GoA ROM Edition v1.53.5
-description: GoA, but with a lot of stuff done through ROM editing to reduce workload on Lua.
+title: GoA ROM Edition v1.54
+description: GoA, but with a lot of stuff done through ROM to reduce workload on Lua. Credit to ニンニク for the Japanese translation.
 assets:
 #Lua Script
 - name: scripts/F266B00B GoA ROM.lua
@@ -1747,6 +1747,10 @@ assets:
   method: imd
   source:
   - name: itempic/DUMMY 16 Item.png
+- name: itempic/item-091.imd #DUMMY 13 (Royal Summons)
+  method: copy
+  source:
+  - name: itempic/Royal Summons.imd
 - name: itempic/item-092.imd #Scimitar
   method: copy
   source:
@@ -1945,6 +1949,11 @@ assets:
   method: copy
   source:
   - name: remastered/itempic/DUMMY 16 Item.dds
+- name: remastered/itempic/item-091.imd/-0.dds #DUMMY 13 (Royal Summons)
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/itempic/Royal Summons.dds
 - name: remastered/itempic/item-092.imd/-0.dds #Scimitar
   platform: pc
   method: copy
@@ -3617,6 +3626,11 @@ assets:
     method: areadatascript
     source:
     - name: ard/dc04/evt.script
+  - name: 0000
+    type: event
+    method: copy
+    source:
+    - name: ard/dc04/0000.bin
 - name: ard/dc05.ard #The Hall of the Cornerstone (Light) (GoA Warp & AS Warp)
   multi:
   - name: ard/jp/dc05.ard
@@ -3692,6 +3706,26 @@ assets:
     method: areadatascript
     source:
     - name: ard/eh01/btl.script
+- name: ard/eh02.ard #Fragment Crossing (Visit Lock)
+  multi:
+  - name: ard/jp/eh02.ard
+  - name: ard/us/eh02.ard
+  - name: ard/fr/eh02.ard
+  - name: ard/gr/eh02.ard
+  - name: ard/it/eh02.ard
+  - name: ard/sp/eh02.ard
+  method: binarc
+  source:
+  - name: map
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh02/map.script
+  - name: m_12 #Loop to the other entrance
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/eh02/m_12.yml
 - name: ard/eh10.ard #Hall of Empty Melodies (Lower Level) (Prevent OoB in Xigbar's Arena)
   multi:
   - name: ard/jp/eh10.ard
@@ -3707,6 +3741,21 @@ assets:
     method: areadatascript
     source:
     - name: ard/eh10/map.script
+- name: ard/eh13.ard #Proof of Existence (Visit Lock)
+  multi:
+  - name: ard/jp/eh13.ard
+  - name: ard/us/eh13.ard
+  - name: ard/fr/eh13.ard
+  - name: ard/gr/eh13.ard
+  - name: ard/it/eh13.ard
+  - name: ard/sp/eh13.ard
+  method: binarc
+  source:
+  - name: map
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/eh13/map.script
 - name: ard/eh18.ard #The Altar of Naught (Data Warp)
   multi:
   - name: ard/jp/eh18.ard
