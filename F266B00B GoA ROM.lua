@@ -717,8 +717,9 @@ if true then
 	Ability[0x226] = 0x3AEA --Precious Mushroom+
 	Ability[0x227] = 0x3AFA --Premium Mushroom
 	Ability[0x0A1] = 0x375A --Detection Staff
+	local ItemOffset = 0x18 --Offsets for new items added
 	if Ability[Staff] ~= nil then
-		Ability = ReadShort(BAR(Sys3,0x6,Ability[Staff]),OnPC) --Currently-equipped staff's ability
+		Ability = ReadShort(BAR(Sys3,0x6,Ability[Staff]+ItemOffset),OnPC) --Currently-equipped staff's ability
 		if Ability == 0x0A5 then --Donald Fire
 			WriteShort(Save+0x26F6,0x80A5)
 			WriteByte(BAR(Sys3,0x6,0x168F),0,OnPC)
@@ -766,8 +767,9 @@ if true then
 	Ability[0x22E] = 0x3B6A --Ultimate Mushroom
 	Ability[0x032] = 0x380A --Detection Shield
 	Ability[0x033] = 0x381A --Test the King
+	local ItemOffset = 0x18 --Offsets for new items added
 	if Ability[Shield] ~= nil then
-		Ability = ReadShort(BAR(Sys3,0x6,Ability[Shield]),OnPC) --Currently-equipped shield's ability
+		Ability = ReadShort(BAR(Sys3,0x6,Ability[Shield]+ItemOffset),OnPC) --Currently-equipped shield's ability
 		if Ability == 0x1A7 then --Goofy Tornado
 			WriteShort(Save+0x280A,0x81A7)
 			WriteByte(BAR(Sys3,0x6,0x16EF),0,OnPC)
