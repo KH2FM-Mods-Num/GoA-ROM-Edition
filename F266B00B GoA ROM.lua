@@ -1,19 +1,22 @@
 --ROM Version
---Last Update: Objective rando compatibility
---Todo: Maybe item-based progress flags
+--Last Update: v1.0.0.9 Epic & Steam addresses
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-print('GoA v1.54')
+GameVersion = 0
+print('GoA v1.54.1')
 GoAOffset = 0x7C
+SeedCleared = false
+end
+
+function GetVersion() --Define anchor addresses
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
-	if ENGINE_VERSION < 3.0 then
-		print('LuaEngine is Outdated. Things might not work properly.')
-	end
 	OnPC = false
+	GameVersion = 1
+	print('GoA PS2 Version')
 	Now = 0x032BAE0 --Current Location
 	Sve = 0x1D5A970 --Saved Location
 	Save = 0x032BB30 --Save File
@@ -36,9 +39,9 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	CutLen = 0x035DE28 --Cutscene Length
 	CutSkp = 0x035DE08 --Cutscene Skip
 	BtlTyp = 0x1C61958 --Battle Status (Out-of-Battle, Regular, Forced)
-	BtlEnd = 0x1D490C0 --Something about end-of-battle camera
+	BtlEnd = 0x1D490C0 --End-of-Battle camera & signal
 	TxtBox = 0x1D48D54 --Last Displayed Textbox
-	DemCln = 0x1D48DEC --Demyx Clone Status
+	DemCln = 0x1D48DEC --Demyx Clone Status (might have to do with other mission status/signal?)
 	Slot1    = 0x1C6C750 --Unit Slot 1
 	NextSlot = 0x268
 	Point1   = 0x1D48EFC
@@ -47,63 +50,113 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	NxtGauge = 0x34
 	Menu1    = 0x1C5FF18 --Menu 1 (main command menu)
 	NextMenu = 0x4
+	Obj0 = ReadInt(Obj0Pointer)
+	Sys3 = ReadInt(Sys3Pointer)
+	Btl0 = ReadInt(Btl0Pointer)
+	MSN = 0x04FA440
 elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
-	if ENGINE_VERSION < 5.0 then
-		ConsolePrint('LuaBackend is Outdated. Things might not work properly.',2)
-	end
 	OnPC = true
-	Now = 0x0714DB8 - 0x56454E
-	Sve = 0x2A09C00 - 0x56450E
-	Save = 0x09A7070 - 0x56450E
-	Obj0Pointer = 0x2A22730 - 0x56454E
-	Sys3Pointer = 0x2AE3550 - 0x56454E
-	Btl0Pointer = 0x2AE3558 - 0x56454E
-	ARDPointer = 0x2A0CF28 - 0x56454E
-	Music = 0x0AB8504 - 0x56450E
-	Pause = 0x0AB9038 - 0x56450E
-	React = 0x2A0E822 - 0x56450E
-	Cntrl = 0x2A148A8 - 0x56450E
-	Timer = 0x0AB9010 - 0x56450E
-	Songs = 0x0B63534 - 0x56450E
-	GScre = 0x0728E90 - 0x56454E
-	GMdal = 0x0729024 - 0x56454E
-	GKill = 0x0AF4906 - 0x56450E
-	CamTyp = 0x0716A58 - 0x56454E
-	GamSpd = 0x07151D4 - 0x56454E
-	CutNow = 0x0B62758 - 0x56450E
-	CutLen = 0x0B62774 - 0x56450E
-	CutSkp = 0x0B6275C - 0x56450E
-	BtlTyp = 0x2A0EAC4 - 0x56450E
-	BtlEnd = 0x2A0D3A0 - 0x56450E
-	TxtBox = 0x074BC70 - 0x56454E
-	DemCln = 0x2A0CF74 - 0x56450E
-	Slot1    = 0x2A20C58 - 0x56450E
-	NextSlot = 0x278
-	Point1   = 0x2A0D108 - 0x56450E
-	NxtPoint = 0x50
-	Gauge1   = 0x2A0D1F8 - 0x56450E
-	NxtGauge = 0x48
-	Menu1    = 0x2A0E7D0 - 0x56450E
-	NextMenu = 0x8
+	if ReadString(0x09A92F0,4) == 'KH2J' then --EGS
+		GameVersion = 2
+		print('GoA Epic Version')
+		Now = 0x0716DF8
+		Sve = 0x2A0BF80
+		Save = 0x09A92F0
+		Obj0Pointer = 0x2A24A70
+		Sys3Pointer = 0x2AE5890
+		Btl0Pointer = 0x2AE5898
+		ARDPointer = 0x2A0F268
+		Music = 0x0ABA784
+		Pause = 0x0ABB2B8
+		React = 0x2A10BA2
+		Cntrl = 0x2A18EA8
+		Timer = 0x0ABB290
+		Songs = 0x0B657B4
+		GScre = 0x072AEB0
+		GMdal = 0x072B044
+		GKill = 0x0AF6B86
+		CamTyp = 0x0718A98
+		GamSpd = 0x0717214
+		CutNow = 0x0B649D8
+		CutLen = 0x0B649F4
+		CutSkp = 0x0B649DC
+		BtlTyp = 0x2A10E44
+		BtlEnd = 0x2A0F720
+		TxtBox = 0x074DCB0
+		DemCln = 0x2A0F2F4
+		Slot1    = 0x2A22FD8
+		NextSlot = 0x278
+		Point1   = 0x2A0F488
+		NxtPoint = 0x50
+		Gauge1   = 0x2A0F578
+		NxtGauge = 0x48
+		Menu1    = 0x2A10B50
+		NextMenu = 0x8
+		Obj0 = ReadLong(Obj0Pointer)
+		Sys3 = ReadLong(Sys3Pointer)
+		Btl0 = ReadLong(Btl0Pointer)
+		MSN = 0x0BF2C40
+	elseif ReadString(0x09A9830,4) == 'KH2J' then --Steam
+		GameVersion = 3
+		print('GoA Steam Version')
+		Now = 0x0717008
+		Sve = 0x2A0C4C0
+		Save = 0x09A9830
+		Obj0Pointer = 0x2A24FB0
+		Sys3Pointer = 0x2AE5DD0
+		Btl0Pointer = 0x2AE5DD8
+		ARDPointer = 0x2A0F7A8
+		Music = 0x0ABACC4
+		Pause = 0x0ABB7F8
+		React = 0x2A110E2
+		Cntrl = 0x2A17168
+		Timer = 0x0ABB7D0
+		Songs = 0x0B65CF4
+		GScre = 0x072B130
+		GMdal = 0x072B2C4
+		GKill = 0x0AF70C6
+		CamTyp = 0x0718CA8
+		GamSpd = 0x0717424
+		CutNow = 0x0B64F18
+		CutLen = 0x0B64F34
+		CutSkp = 0x0B64F1C
+		BtlTyp = 0x2A11384
+		BtlEnd = 0x2A0FC60
+		TxtBox = 0x074DF20
+		DemCln = 0x2A0F834
+		Slot1    = 0x2A23518
+		NextSlot = 0x278
+		Point1   = 0x2A0F9C8
+		NxtPoint = 0x50
+		Gauge1   = 0x2A0FAB8
+		NxtGauge = 0x48
+		Menu1    = 0x2A11090
+		NextMenu = 0x8
+		Obj0 = ReadLong(Obj0Pointer)
+		Sys3 = ReadLong(Sys3Pointer)
+		Btl0 = ReadLong(Btl0Pointer)
+		MSN = 0x0BF3340
+	end	
 end
-SeedCleared = false
---[[Slot2  = Slot1 - NextSlot
-Slot3  = Slot2 - NextSlot
-Slot4  = Slot3 - NextSlot
-Slot5  = Slot4 - NextSlot
-Slot6  = Slot5 - NextSlot
-Slot7  = Slot6 - NextSlot
-Slot8  = Slot7 - NextSlot
-Slot9  = Slot8 - NextSlot
-Slot10 = Slot9 - NextSlot
-Slot11 = Slot10 - NextSlot
-Slot12 = Slot11 - NextSlot
-Point2 = Point1 + NxtPoint
-Point3 = Point2 + NxtPoint
-Gauge2 = Gauge1 + NxtGauge
-Gauge3 = Gauge2 + NxtGauge--]]
-Menu2  = Menu1 + NextMenu
---Menu3  = Menu2 + NextMenu
+if GameVersion ~= 0 then
+	--[[Slot2  = Slot1 - NextSlot
+	Slot3  = Slot2 - NextSlot
+	Slot4  = Slot3 - NextSlot
+	Slot5  = Slot4 - NextSlot
+	Slot6  = Slot5 - NextSlot
+	Slot7  = Slot6 - NextSlot
+	Slot8  = Slot7 - NextSlot
+	Slot9  = Slot8 - NextSlot
+	Slot10 = Slot9 - NextSlot
+	Slot11 = Slot10 - NextSlot
+	Slot12 = Slot11 - NextSlot
+	Point2 = Point1 + NxtPoint
+	Point3 = Point2 + NxtPoint
+	Gauge2 = Gauge1 + NxtGauge
+	Gauge3 = Gauge2 + NxtGauge--]]
+	Menu2  = Menu1 + NextMenu
+	--Menu3  = Menu2 + NextMenu
+end
 end
 
 function Warp(W,R,D,M,B,E) --Warp into the appropriate World, Room, Door, Map, Btl, Evt
@@ -185,6 +238,10 @@ function VisitLock(ItemAddress, RequiredCount, Address, Bit)
 end
 
 function _OnFrame()
+if GameVersion == 0 then --Get anchor addresses
+	GetVersion()
+	return
+end
 if true then --Define current values for common addresses
 	World  = ReadByte(Now+0x00)
 	Room   = ReadByte(Now+0x01)
@@ -194,19 +251,6 @@ if true then --Define current values for common addresses
 	Btl    = ReadShort(Now+0x06)
 	Evt    = ReadShort(Now+0x08)
 	PrevPlace = ReadShort(Now+0x30)
-	if Place == 0xFFFF or not MSN then
-		if not OnPC then
-			Obj0 = ReadInt(Obj0Pointer)
-			Sys3 = ReadInt(Sys3Pointer)
-			Btl0 = ReadInt(Btl0Pointer)
-			MSN = 0x04FA440
-		else
-			Obj0 = ReadLong(Obj0Pointer)
-			Sys3 = ReadLong(Sys3Pointer)
-			Btl0 = ReadLong(Btl0Pointer)
-			MSN = 0x0BF08C0 - 0x56450E
-		end
-	end
 	if not OnPC then
 		ARD = ReadInt(ARDPointer)
 	else
@@ -790,10 +834,12 @@ end
 --Show all items in shops (ASSEMBLY edit)
 if not OnPC then
 	WriteInt(0x264250,0)
-elseif ReadLong(0x2F9302-0x56454E) == 0x43B70F0D74D68541 then --Global
-	WriteByte(0x2F9306 - 0x56454E,0)
-elseif ReadLong(0x2F9142-0x56454E) == 0x43B70F0D74D68541 then --JP
-	WriteByte(0x2F9146 - 0x56454E,0)
+elseif ReadLong(0x2FAA22) == 0x43B70F0D74D68541 then --Epic Global
+	WriteByte(0x2FAA26,0)
+--elseif ReadLong(0x2F9142-0x56454E) == 0x43B70F0D74D68541 then --JP
+	--WriteByte(0x2F9146 - 0x56454E,0)
+elseif ReadLong(0x2FB562) == 0x43B70F0D74D68541 then --Steam Global
+	WriteByte(0x2FB566,0)
 end
 --Alternate Party Models (adding new UCM using MEMT causes problems when shopping)
 if World == 0x0C and Place ~= 0x070C then --Mage & Knight (KH I)
