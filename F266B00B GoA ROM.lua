@@ -69,7 +69,7 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		Music = 0x0ABA784
 		Pause = 0x0ABB2B8
 		React = 0x2A10BA2
-		Cntrl = 0x2A18EA8
+		Cntrl = 0x2A16C28
 		Timer = 0x0ABB290
 		Songs = 0x0B657B4
 		GScre = 0x072AEB0
@@ -96,9 +96,9 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		Sys3 = ReadLong(Sys3Pointer)
 		Btl0 = ReadLong(Btl0Pointer)
 		MSN = 0x0BF2C40
-	elseif ReadString(0x09A9830,4) == 'KH2J' then --Steam
+	elseif ReadString(0x09A9830,4) == 'KH2J' then --Steam Global
 		GameVersion = 3
-		print('GoA Steam Version')
+		print('GoA Steam Global Version')
 		Now = 0x0717008
 		Sve = 0x2A0C4C0
 		Save = 0x09A9830
@@ -136,7 +136,47 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		Sys3 = ReadLong(Sys3Pointer)
 		Btl0 = ReadLong(Btl0Pointer)
 		MSN = 0x0BF3340
-	end	
+	elseif ReadString(0x09A8830,4) == 'KH2J' then --Steam JP
+		GameVersion = 4
+		print('GoA Steam JP Version')
+		Now = 0x0716008
+		Sve = 0x2A0B4C0
+		Save = 0x09A8830
+		Obj0Pointer = 0x2A23FB0
+		Sys3Pointer = 0x2AE4DD0
+		Btl0Pointer = 0x2AE4DD8
+		ARDPointer = 0x2A0E7A8
+		Music = 0x0AB9CC4
+		Pause = 0x0ABA7F8
+		React = 0x2A100E2
+		Cntrl = 0x2A16168
+		Timer = 0x0ABA7D0
+		Songs = 0x0B64CF4
+		GScre = 0x072A130
+		GMdal = 0x072A2C4
+		GKill = 0x0AF60C6
+		CamTyp = 0x0717CA8
+		GamSpd = 0x0716424
+		CutNow = 0x0B63F18
+		CutLen = 0x0B63F34
+		CutSkp = 0x0B63F1C
+		BtlTyp = 0x2A10384
+		BtlEnd = 0x2A0EC60
+		TxtBox = 0x074CF20
+		DemCln = 0x2A0E834
+		Slot1    = 0x2A22518
+		NextSlot = 0x278
+		Point1   = 0x2A0E9C8
+		NxtPoint = 0x50
+		Gauge1   = 0x2A0EAB8
+		NxtGauge = 0x48
+		Menu1    = 0x2A10090
+		NextMenu = 0x8
+		Obj0 = ReadLong(Obj0Pointer)
+		Sys3 = ReadLong(Sys3Pointer)
+		Btl0 = ReadLong(Btl0Pointer)
+		MSN = 0x0BF2340
+	end
 end
 if GameVersion ~= 0 then
 	--[[Slot2  = Slot1 - NextSlot
@@ -836,10 +876,12 @@ if not OnPC then
 	WriteInt(0x264250,0)
 elseif ReadLong(0x2FAA22) == 0x43B70F0D74D68541 then --Epic Global
 	WriteByte(0x2FAA26,0)
---elseif ReadLong(0x2F9142-0x56454E) == 0x43B70F0D74D68541 then --JP
-	--WriteByte(0x2F9146 - 0x56454E,0)
+elseif ReadLong(0x2FA682) == 0x43B70F0D74D68541 then --Epic JP
+	WriteByte(0x2FA686,0)
 elseif ReadLong(0x2FB562) == 0x43B70F0D74D68541 then --Steam Global
 	WriteByte(0x2FB566,0)
+elseif ReadLong(0x2FB2E2) == 0x43B70F0D74D68541 then --Steam JP
+	WriteByte(0x2FB2E6,0)
 end
 --Alternate Party Models (adding new UCM using MEMT causes problems when shopping)
 if World == 0x0C and Place ~= 0x070C then --Mage & Knight (KH I)
