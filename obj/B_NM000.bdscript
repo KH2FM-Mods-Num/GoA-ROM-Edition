@@ -1804,7 +1804,7 @@ L3590:
  add 
  pushImm 2 ;phase 3 attacks
  memcpy 0
- pushImm 2 ;phase 3 conveyor changes
+ pushImm 1 ;phase 2 conveyor changes
  gosub 4, L1520
  ret 
 L3657:
