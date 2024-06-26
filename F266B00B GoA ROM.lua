@@ -1,19 +1,22 @@
 --ROM Version
---Last Update: Objective rando compatibility
---Todo: Maybe item-based progress flags
+--Last Update: v1.0.0.9 Epic & Steam addresses
 
 LUAGUI_NAME = 'GoA ROM Randomizer Build'
 LUAGUI_AUTH = 'SonicShadowSilver2 (Ported by Num)'
 LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
-print('GoA v1.54')
+GameVersion = 0
+print('GoA v1.54.1')
 GoAOffset = 0x7C
+SeedCleared = false
+end
+
+function GetVersion() --Define anchor addresses
 if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" then --PCSX2
-	if ENGINE_VERSION < 3.0 then
-		print('LuaEngine is Outdated. Things might not work properly.')
-	end
 	OnPC = false
+	GameVersion = 1
+	print('GoA PS2 Version')
 	Now = 0x032BAE0 --Current Location
 	Sve = 0x1D5A970 --Saved Location
 	Save = 0x032BB30 --Save File
@@ -36,9 +39,9 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	CutLen = 0x035DE28 --Cutscene Length
 	CutSkp = 0x035DE08 --Cutscene Skip
 	BtlTyp = 0x1C61958 --Battle Status (Out-of-Battle, Regular, Forced)
-	BtlEnd = 0x1D490C0 --Something about end-of-battle camera
+	BtlEnd = 0x1D490C0 --End-of-Battle camera & signal
 	TxtBox = 0x1D48D54 --Last Displayed Textbox
-	DemCln = 0x1D48DEC --Demyx Clone Status
+	DemCln = 0x1D48DEC --Demyx Clone Status (might have to do with other mission status/signal?)
 	Slot1    = 0x1C6C750 --Unit Slot 1
 	NextSlot = 0x268
 	Point1   = 0x1D48EFC
@@ -47,63 +50,153 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	NxtGauge = 0x34
 	Menu1    = 0x1C5FF18 --Menu 1 (main command menu)
 	NextMenu = 0x4
+	Obj0 = ReadInt(Obj0Pointer)
+	Sys3 = ReadInt(Sys3Pointer)
+	Btl0 = ReadInt(Btl0Pointer)
+	MSN = 0x04FA440
 elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
-	if ENGINE_VERSION < 5.0 then
-		ConsolePrint('LuaBackend is Outdated. Things might not work properly.',2)
-	end
 	OnPC = true
-	Now = 0x0714DB8 - 0x56454E
-	Sve = 0x2A09C00 - 0x56450E
-	Save = 0x09A7070 - 0x56450E
-	Obj0Pointer = 0x2A22730 - 0x56454E
-	Sys3Pointer = 0x2AE3550 - 0x56454E
-	Btl0Pointer = 0x2AE3558 - 0x56454E
-	ARDPointer = 0x2A0CF28 - 0x56454E
-	Music = 0x0AB8504 - 0x56450E
-	Pause = 0x0AB9038 - 0x56450E
-	React = 0x2A0E822 - 0x56450E
-	Cntrl = 0x2A148A8 - 0x56450E
-	Timer = 0x0AB9010 - 0x56450E
-	Songs = 0x0B63534 - 0x56450E
-	GScre = 0x0728E90 - 0x56454E
-	GMdal = 0x0729024 - 0x56454E
-	GKill = 0x0AF4906 - 0x56450E
-	CamTyp = 0x0716A58 - 0x56454E
-	GamSpd = 0x07151D4 - 0x56454E
-	CutNow = 0x0B62758 - 0x56450E
-	CutLen = 0x0B62774 - 0x56450E
-	CutSkp = 0x0B6275C - 0x56450E
-	BtlTyp = 0x2A0EAC4 - 0x56450E
-	BtlEnd = 0x2A0D3A0 - 0x56450E
-	TxtBox = 0x074BC70 - 0x56454E
-	DemCln = 0x2A0CF74 - 0x56450E
-	Slot1    = 0x2A20C58 - 0x56450E
-	NextSlot = 0x278
-	Point1   = 0x2A0D108 - 0x56450E
-	NxtPoint = 0x50
-	Gauge1   = 0x2A0D1F8 - 0x56450E
-	NxtGauge = 0x48
-	Menu1    = 0x2A0E7D0 - 0x56450E
-	NextMenu = 0x8
+	if ReadString(0x09A92F0,4) == 'KH2J' then --EGS
+		GameVersion = 2
+		print('GoA Epic Version')
+		Now = 0x0716DF8
+		Sve = 0x2A0BF80
+		Save = 0x09A92F0
+		Obj0Pointer = 0x2A24A70
+		Sys3Pointer = 0x2AE5890
+		Btl0Pointer = 0x2AE5898
+		ARDPointer = 0x2A0F268
+		Music = 0x0ABA784
+		Pause = 0x0ABB2B8
+		React = 0x2A10BA2
+		Cntrl = 0x2A16C28
+		Timer = 0x0ABB290
+		Songs = 0x0B657B4
+		GScre = 0x072AEB0
+		GMdal = 0x072B044
+		GKill = 0x0AF6B86
+		CamTyp = 0x0718A98
+		GamSpd = 0x0717214
+		CutNow = 0x0B649D8
+		CutLen = 0x0B649F4
+		CutSkp = 0x0B649DC
+		BtlTyp = 0x2A10E44
+		BtlEnd = 0x2A0F720
+		TxtBox = 0x074DCB0
+		DemCln = 0x2A0F2F4
+		Slot1    = 0x2A22FD8
+		NextSlot = 0x278
+		Point1   = 0x2A0F488
+		NxtPoint = 0x50
+		Gauge1   = 0x2A0F578
+		NxtGauge = 0x48
+		Menu1    = 0x2A10B50
+		NextMenu = 0x8
+		Obj0 = ReadLong(Obj0Pointer)
+		Sys3 = ReadLong(Sys3Pointer)
+		Btl0 = ReadLong(Btl0Pointer)
+		MSN = 0x0BF2C40
+	elseif ReadString(0x09A9830,4) == 'KH2J' then --Steam Global
+		GameVersion = 3
+		print('GoA Steam Global Version')
+		Now = 0x0717008
+		Sve = 0x2A0C4C0
+		Save = 0x09A9830
+		Obj0Pointer = 0x2A24FB0
+		Sys3Pointer = 0x2AE5DD0
+		Btl0Pointer = 0x2AE5DD8
+		ARDPointer = 0x2A0F7A8
+		Music = 0x0ABACC4
+		Pause = 0x0ABB7F8
+		React = 0x2A110E2
+		Cntrl = 0x2A17168
+		Timer = 0x0ABB7D0
+		Songs = 0x0B65CF4
+		GScre = 0x072B130
+		GMdal = 0x072B2C4
+		GKill = 0x0AF70C6
+		CamTyp = 0x0718CA8
+		GamSpd = 0x0717424
+		CutNow = 0x0B64F18
+		CutLen = 0x0B64F34
+		CutSkp = 0x0B64F1C
+		BtlTyp = 0x2A11384
+		BtlEnd = 0x2A0FC60
+		TxtBox = 0x074DF20
+		DemCln = 0x2A0F834
+		Slot1    = 0x2A23518
+		NextSlot = 0x278
+		Point1   = 0x2A0F9C8
+		NxtPoint = 0x50
+		Gauge1   = 0x2A0FAB8
+		NxtGauge = 0x48
+		Menu1    = 0x2A11090
+		NextMenu = 0x8
+		Obj0 = ReadLong(Obj0Pointer)
+		Sys3 = ReadLong(Sys3Pointer)
+		Btl0 = ReadLong(Btl0Pointer)
+		MSN = 0x0BF3340
+	elseif ReadString(0x09A8830,4) == 'KH2J' then --Steam JP
+		GameVersion = 4
+		print('GoA Steam JP Version')
+		Now = 0x0716008
+		Sve = 0x2A0B4C0
+		Save = 0x09A8830
+		Obj0Pointer = 0x2A23FB0
+		Sys3Pointer = 0x2AE4DD0
+		Btl0Pointer = 0x2AE4DD8
+		ARDPointer = 0x2A0E7A8
+		Music = 0x0AB9CC4
+		Pause = 0x0ABA7F8
+		React = 0x2A100E2
+		Cntrl = 0x2A16168
+		Timer = 0x0ABA7D0
+		Songs = 0x0B64CF4
+		GScre = 0x072A130
+		GMdal = 0x072A2C4
+		GKill = 0x0AF60C6
+		CamTyp = 0x0717CA8
+		GamSpd = 0x0716424
+		CutNow = 0x0B63F18
+		CutLen = 0x0B63F34
+		CutSkp = 0x0B63F1C
+		BtlTyp = 0x2A10384
+		BtlEnd = 0x2A0EC60
+		TxtBox = 0x074CF20
+		DemCln = 0x2A0E834
+		Slot1    = 0x2A22518
+		NextSlot = 0x278
+		Point1   = 0x2A0E9C8
+		NxtPoint = 0x50
+		Gauge1   = 0x2A0EAB8
+		NxtGauge = 0x48
+		Menu1    = 0x2A10090
+		NextMenu = 0x8
+		Obj0 = ReadLong(Obj0Pointer)
+		Sys3 = ReadLong(Sys3Pointer)
+		Btl0 = ReadLong(Btl0Pointer)
+		MSN = 0x0BF2340
+	end
 end
-SeedCleared = false
---[[Slot2  = Slot1 - NextSlot
-Slot3  = Slot2 - NextSlot
-Slot4  = Slot3 - NextSlot
-Slot5  = Slot4 - NextSlot
-Slot6  = Slot5 - NextSlot
-Slot7  = Slot6 - NextSlot
-Slot8  = Slot7 - NextSlot
-Slot9  = Slot8 - NextSlot
-Slot10 = Slot9 - NextSlot
-Slot11 = Slot10 - NextSlot
-Slot12 = Slot11 - NextSlot
-Point2 = Point1 + NxtPoint
-Point3 = Point2 + NxtPoint
-Gauge2 = Gauge1 + NxtGauge
-Gauge3 = Gauge2 + NxtGauge--]]
-Menu2  = Menu1 + NextMenu
---Menu3  = Menu2 + NextMenu
+if GameVersion ~= 0 then
+	--[[Slot2  = Slot1 - NextSlot
+	Slot3  = Slot2 - NextSlot
+	Slot4  = Slot3 - NextSlot
+	Slot5  = Slot4 - NextSlot
+	Slot6  = Slot5 - NextSlot
+	Slot7  = Slot6 - NextSlot
+	Slot8  = Slot7 - NextSlot
+	Slot9  = Slot8 - NextSlot
+	Slot10 = Slot9 - NextSlot
+	Slot11 = Slot10 - NextSlot
+	Slot12 = Slot11 - NextSlot
+	Point2 = Point1 + NxtPoint
+	Point3 = Point2 + NxtPoint
+	Gauge2 = Gauge1 + NxtGauge
+	Gauge3 = Gauge2 + NxtGauge--]]
+	Menu2  = Menu1 + NextMenu
+	--Menu3  = Menu2 + NextMenu
+end
 end
 
 function Warp(W,R,D,M,B,E) --Warp into the appropriate World, Room, Door, Map, Btl, Evt
@@ -185,6 +278,10 @@ function VisitLock(ItemAddress, RequiredCount, Address, Bit)
 end
 
 function _OnFrame()
+if GameVersion == 0 then --Get anchor addresses
+	GetVersion()
+	return
+end
 if true then --Define current values for common addresses
 	World  = ReadByte(Now+0x00)
 	Room   = ReadByte(Now+0x01)
@@ -194,19 +291,6 @@ if true then --Define current values for common addresses
 	Btl    = ReadShort(Now+0x06)
 	Evt    = ReadShort(Now+0x08)
 	PrevPlace = ReadShort(Now+0x30)
-	if Place == 0xFFFF or not MSN then
-		if not OnPC then
-			Obj0 = ReadInt(Obj0Pointer)
-			Sys3 = ReadInt(Sys3Pointer)
-			Btl0 = ReadInt(Btl0Pointer)
-			MSN = 0x04FA440
-		else
-			Obj0 = ReadLong(Obj0Pointer)
-			Sys3 = ReadLong(Sys3Pointer)
-			Btl0 = ReadLong(Btl0Pointer)
-			MSN = 0x0BF08C0 - 0x56450E
-		end
-	end
 	if not OnPC then
 		ARD = ReadInt(ARDPointer)
 	else
@@ -696,30 +780,30 @@ end
 if true then
 	local Staff   = ReadShort(Save+0x2604)
 	local Ability = {} --Offset for staff's ability within 03system.bar's item
-	Ability[0x04B] = 0x36BA --Mage's Staff
-	Ability[0x094] = 0x36CA --Hammer Staff
-	Ability[0x095] = 0x36DA --Victory Bell
-	Ability[0x097] = 0x36FA --Comet Staff
-	Ability[0x098] = 0x370A --Lord's Broom
-	Ability[0x099] = 0x371A --Wisdom Wand
-	Ability[0x096] = 0x36EA --Meteor Staff
-	Ability[0x09A] = 0x372A --Rising Dragon
-	Ability[0x09C] = 0x374A --Shaman's Relic
-	Ability[0x258] = 0x3B8A --Shaman's Relic+
-	Ability[0x09B] = 0x373A --Nobody Lance
-	Ability[0x221] = 0x3A9A --Centurion
-	Ability[0x222] = 0x3AAA --Centurion+
-	Ability[0x1E2] = 0x390A --Save the Queen
-	Ability[0x1F7] = 0x3A5A --Save the Queen+
-	Ability[0x223] = 0x3ABA --Plain Mushroom
-	Ability[0x224] = 0x3ACA --Plain Mushroom+
-	Ability[0x225] = 0x3ADA --Precious Mushroom
-	Ability[0x226] = 0x3AEA --Precious Mushroom+
-	Ability[0x227] = 0x3AFA --Premium Mushroom
-	Ability[0x0A1] = 0x375A --Detection Staff
-	local ItemOffset = 0x18 --Offsets for new items added
+	Ability[0x04B] = 0x48A --Mage's Staff
+	Ability[0x094] = 0x49A --Hammer Staff
+	Ability[0x095] = 0x4AA --Victory Bell
+	Ability[0x097] = 0x4CA --Comet Staff
+	Ability[0x098] = 0x4DA --Lord's Broom
+	Ability[0x099] = 0x4EA --Wisdom Wand
+	Ability[0x096] = 0x4BA --Meteor Staff
+	Ability[0x09A] = 0x4FA --Rising Dragon
+	Ability[0x09C] = 0x51A --Shaman's Relic
+	Ability[0x258] = 0x95A --Shaman's Relic+
+	Ability[0x09B] = 0x50A --Nobody Lance
+	Ability[0x221] = 0x86A --Centurion
+	Ability[0x222] = 0x87A --Centurion+
+	Ability[0x1E2] = 0x6DA --Save the Queen
+	Ability[0x1F7] = 0x82A --Save the Queen+
+	Ability[0x223] = 0x88A --Plain Mushroom
+	Ability[0x224] = 0x89A --Plain Mushroom+
+	Ability[0x225] = 0x8AA --Precious Mushroom
+	Ability[0x226] = 0x8BA --Precious Mushroom+
+	Ability[0x227] = 0x8CA --Premium Mushroom
+	Ability[0x0A1] = 0x52A --Detection Staff
 	if Ability[Staff] ~= nil then
-		Ability = ReadShort(BAR(Sys3,0x6,Ability[Staff]+ItemOffset),OnPC) --Currently-equipped staff's ability
+		local StatOffset = 0x8 + ReadInt(BAR(Sys3,0x6,4),OnPC) * 0x18
+		Ability = ReadShort(BAR(Sys3,0x6,StatOffset+Ability[Staff]),OnPC) --Currently-equipped staff's ability
 		if Ability == 0x0A5 then --Donald Fire
 			WriteShort(Save+0x26F6,0x80A5)
 			WriteByte(BAR(Sys3,0x6,0x168F),0,OnPC)
@@ -745,31 +829,31 @@ end
 if true then
 	local Shield  = ReadShort(Save+0x2718)
 	local Ability = {} --Offset for shield's ability within 03system.bar's item
-	Ability[0x031] = 0x376A --Knight's Shield
-	Ability[0x08B] = 0x377A --Adamant Shield
-	Ability[0x08C] = 0x378A --Chain Gear
-	Ability[0x08E] = 0x37AA --Falling Star
-	Ability[0x08F] = 0x37BA --Dreamcloud
-	Ability[0x090] = 0x37CA --Knight Defender
-	Ability[0x08D] = 0x379A --Ogre Shield
-	Ability[0x091] = 0x37DA --Genji Shield
-	Ability[0x092] = 0x37EA --Akashic Record
-	Ability[0x259] = 0x3B9A --Akashic Record+
-	Ability[0x093] = 0x37FA --Nobody Guard
-	Ability[0x228] = 0x3B0A --Frozen Pride
-	Ability[0x229] = 0x3B1A --Frozen Pride+
-	Ability[0x1E3] = 0x391A --Save the King
-	Ability[0x1F8] = 0x3A6A --Save the King+
-	Ability[0x22A] = 0x3B2A --Joyous Mushroom
-	Ability[0x22B] = 0x3B3A --Joyous Mushroom+
-	Ability[0x22C] = 0x3B4A --Majestic Mushroom
-	Ability[0x22D] = 0x3B5A --Majestic Mushroom+
-	Ability[0x22E] = 0x3B6A --Ultimate Mushroom
-	Ability[0x032] = 0x380A --Detection Shield
-	Ability[0x033] = 0x381A --Test the King
-	local ItemOffset = 0x18 --Offsets for new items added
+	Ability[0x031] = 0x53A --Knight's Shield
+	Ability[0x08B] = 0x54A --Adamant Shield
+	Ability[0x08C] = 0x55A --Chain Gear
+	Ability[0x08E] = 0x57A --Falling Star
+	Ability[0x08F] = 0x58A --Dreamcloud
+	Ability[0x090] = 0x59A --Knight Defender
+	Ability[0x08D] = 0x56A --Ogre Shield
+	Ability[0x091] = 0x5AA --Genji Shield
+	Ability[0x092] = 0x5BA --Akashic Record
+	Ability[0x259] = 0x96A --Akashic Record+
+	Ability[0x093] = 0x5CA --Nobody Guard
+	Ability[0x228] = 0x8DA --Frozen Pride
+	Ability[0x229] = 0x8EA --Frozen Pride+
+	Ability[0x1E3] = 0x6EA --Save the King
+	Ability[0x1F8] = 0x83A --Save the King+
+	Ability[0x22A] = 0x8FA --Joyous Mushroom
+	Ability[0x22B] = 0x90A --Joyous Mushroom+
+	Ability[0x22C] = 0x91A --Majestic Mushroom
+	Ability[0x22D] = 0x92A --Majestic Mushroom+
+	Ability[0x22E] = 0x93A --Ultimate Mushroom
+	Ability[0x032] = 0x5DA --Detection Shield
+	Ability[0x033] = 0x5EA --Test the King
 	if Ability[Shield] ~= nil then
-		Ability = ReadShort(BAR(Sys3,0x6,Ability[Shield]+ItemOffset),OnPC) --Currently-equipped shield's ability
+		local StatOffset = 0x8 + ReadInt(BAR(Sys3,0x6,4),OnPC) * 0x18
+		Ability = ReadShort(BAR(Sys3,0x6,StatOffset+Ability[Shield]),OnPC) --Currently-equipped shield's ability
 		if Ability == 0x1A7 then --Goofy Tornado
 			WriteShort(Save+0x280A,0x81A7)
 			WriteByte(BAR(Sys3,0x6,0x16EF),0,OnPC)
@@ -790,10 +874,14 @@ end
 --Show all items in shops (ASSEMBLY edit)
 if not OnPC then
 	WriteInt(0x264250,0)
-elseif ReadLong(0x2F9302-0x56454E) == 0x43B70F0D74D68541 then --Global
-	WriteByte(0x2F9306 - 0x56454E,0)
-elseif ReadLong(0x2F9142-0x56454E) == 0x43B70F0D74D68541 then --JP
-	WriteByte(0x2F9146 - 0x56454E,0)
+elseif ReadLong(0x2FAA22) == 0x43B70F0D74D68541 then --Epic Global
+	WriteByte(0x2FAA26,0)
+elseif ReadLong(0x2FA682) == 0x43B70F0D74D68541 then --Epic JP
+	WriteByte(0x2FA686,0)
+elseif ReadLong(0x2FB562) == 0x43B70F0D74D68541 then --Steam Global
+	WriteByte(0x2FB566,0)
+elseif ReadLong(0x2FB2E2) == 0x43B70F0D74D68541 then --Steam JP
+	WriteByte(0x2FB2E6,0)
 end
 --Alternate Party Models (adding new UCM using MEMT causes problems when shopping)
 if World == 0x0C and Place ~= 0x070C then --Mage & Knight (KH I)
