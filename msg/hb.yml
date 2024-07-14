@@ -15,6 +15,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A1 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce a...
+
+    El Mundo Inexistente.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A1 00}¡Allá vamos!
 - id: 0x4ECE
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -32,6 +40,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A2 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce a...
+
+    Tierra de Dragones.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A2 00}¡Allá vamos!
 - id: 0x4ECF
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -49,6 +65,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A3 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce al...
+
+    Castillo de Bestia.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A3 00}¡Allá vamos!
 - id: 0x4ED0
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -66,6 +90,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A4 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce a...
+
+    Ciudad de Halloween.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A4 00}¡Allá vamos!
 - id: 0x4ED1
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -83,6 +115,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A5 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce a...
+
+    Agrabah.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A5 00}¡Allá vamos!
 - id: 0x4ED2
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -100,6 +140,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A6 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce al...
+
+    Coliseo del Olimpo.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A6 00}¡Allá vamos!
 - id: 0x4ED3
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -117,6 +165,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A7 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce a...
+
+    Tierras del Reino.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A7 00}¡Allá vamos!
 - id: 0x4ED4
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -134,6 +190,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A8 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce a...
+
+    Villa Crepúsculo.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A8 00}¡Allá vamos!
 - id: 0x4ED5
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -151,6 +215,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A9 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce a...
+
+    Bastión Hueco.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A9 00}¡Allá vamos!
 - id: 0x4ED6
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -168,6 +240,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay AA 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce a...
+
+    Port Royal.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay AA 00}¡Allá vamos!
 - id: 0x4ED7
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -185,6 +265,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay AB 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce al...
+
+    Castillo Disney.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay AB 00}¡Allá vamos!
 - id: 0x4ED8
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -202,6 +290,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay AC 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce a...
+
+    Espacio Paranoico.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay AC 00}¡Allá vamos!
 - id: 0x4ED9
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -219,6 +315,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay AD 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce a...
+
+    Villa Crepúsculo de Datos.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay AD 00}¡Allá vamos!
 - id: 0x4EDA
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -236,6 +340,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A9 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce a...
+
+    Vergel Radiante.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A9 00}¡Allá vamos!
 - id: 0x4F0E
   je: >-
     {:unk08 02 00 06}このポータルは--
@@ -253,6 +365,14 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay AE 00}Visit!
+  sp: >-
+    {:unk08 02 00 06}Este portal conduce al...
+
+    Mundo de la Nada.
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay AE 00}¡Allá vamos!
 - id: 0x4F0F
   je: >-
     ASSEMBLAGE MOD
@@ -262,3 +382,7 @@
     Welcome to the Garden
     
     of Assemblage Mod!
+  sp: >-
+    ¡Bienvenidos al Mod del
+    
+    Edén de la Convergencia!
