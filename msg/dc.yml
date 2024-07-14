@@ -15,6 +15,14 @@
     {:chardelay 33 00}Who cares?
 
     {:chardelay A2 00}Let's check it out!
+  sp: >-
+    {:unk08 02 00 06}Una Esencia intangible, un ente
+
+    oscuro ligado a un arma.
+
+    {:chardelay 33 00}Mejor no arriesgarse.
+
+    {:chardelay A2 00}¡Habrá que examinarla!
 - id: 0x4F71
   je: >-
     {:unk08 02 00 06}マールーシャとの戦闘を再現できる。
@@ -32,4 +40,12 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A2 00}I'm ready for a fight!
+  sp: >-
+    {:unk08 02 00 06}¿Quieres enfrentarte a una versión más
+
+    fuerte de Marluxia a partir de sus datos?
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A2 00}¡A batirse tocan!
     
