@@ -1,6 +1,5 @@
 - id: 0x01E9
   en: Anti Form
-  sp: Anti-Forma
 - id: 0x05C8
   jp: アルファウェポン
   en: Alpha Weapon
@@ -198,22 +197,21 @@
     los códigos para acceder a la {:color #F0F00080}Fábrica de Sincorazón{:reset}.
 - id: 0x4E83
   en: Dodge Roll LV1
-  sp: Voltereta 1
 - id: 0x4E85
   en: Dodge Roll LV2
-  sp: Voltereta 2
 - id: 0x4E87
   en: Dodge Roll LV3
-  sp: Voltereta 3
 - id: 0x4E8D
   en: Sonic Blade
   sp: Estocada veloz
 - id: 0x4E8F
   en: Ars Arcanum
-  sp: Arcano
+  sp: Último arcano
+- id: 0x4E91
+  sp: Tiro mortífero
 - id: 0x4E93
   en: Ragnarok
-  sp: Infinidad
+  sp: Ragnarok
 - id: 0x4EA0
   en: >-
     Limit Form Status.
@@ -229,10 +227,12 @@
     {:color #F0F00080}Puntos de Fusión consumidos: 4{:reset}
 - id: 0x4EF6
   en: Ragnarok
-  sp: Infinidad
+  sp: Ragnarok
 - id: 0x4EFE
   en: Sonic Blade
-  sp: Estocada sónica
+  sp: Estocada veloz
 - id: 0x4F01
   en: Ars Arcanum
-  sp: Arcano
+  sp: Último arcano
+- id: 0x4F04
+  sp: Tiro mortífero
