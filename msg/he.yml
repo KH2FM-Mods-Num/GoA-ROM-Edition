@@ -15,3 +15,11 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A2 00}I'm ready for a fight!
+  sp: >-
+    {:unk08 02 00 06}¿Quieres enfrentarte a una versión más
+
+    fuerte de Zexion a partir de sus datos?
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A2 00}¡A batirse tocan!

@@ -3,6 +3,7 @@
 - id: 0x05C8
   jp: アルファウェポン
   en: Alpha Weapon
+  sp: Arma Alfa
 - id: 0x05C9
   jp: >-
     なつかしさを感じる思い出のつまった
@@ -16,9 +17,16 @@
     the past. Increases MP restoration
 
     by {:color #F0F00080}50%{:reset} when recharging MP.
+  sp: >-
+    Imbuida con memorias nostálgicas del
+
+    pasado, incrementa la recuperación de PM
+
+    en un {:color #F0F00080}50%{:reset} durante la Recarga PM.
 - id: 0x05CA
   jp: オメガウェポン
   en: Omega Weapon
+  sp: Arma Omega
 - id: 0x05CB
   jp: >-
     きたるべきみらいのビジョンに満ちている
@@ -32,9 +40,16 @@
     future. Increases damage of aerial
 
     finishers relative to combo length.
+  sp: >-
+    Colmada de visiones proféticas del futuro.
+
+    Aumenta el daño de los ataques finales en el
+
+    aire, en proporción al número de golpes del combo.
 - id: 0x05CC
   jp: ピュアブラッド
   en: Pureblood
+  sp: Purasangre
 - id: 0x05CD
   jp: >-
     闇に満ちた不吉なキーブレード
@@ -48,9 +63,16 @@
     darkness. Restores drive relative
 
     to the amount of damage taken.
+  sp: >-
+    Una llave espada premonitoria rebosante de
+
+    oscuridad. Devuelve Fusión en relación
+
+    proporcional al daño que recibes.
 - id: 0x05E4
   jp: キングダムチェーンD
   en: Kingdom Key D
+  sp: Cadena del Reino D
 - id: 0x05E5
   jp: >-
     王様が使っている闇の世界のキーブレード
@@ -62,6 +84,12 @@
     the Realm of Darkness. Increases
 
     defense by {:color #F0F00080}3{:reset} in critical moments.
+  sp: >-
+    La Llave Espada del Rey, moradora del
+
+    Reino de la Oscuridad. Aumenta la
+
+    defensa en {:color #F0F00080}3{:reset} en momentos críticos.
 - id: 0x0649
   jp: >-
     キーブレードの真の力を解放して
@@ -75,8 +103,15 @@
     use the Drive Command to change
     
     into Final Form.
+  sp: >-
+    Gracias al verdadero poder de la Llave
+
+    Espada, usa el Comando de Fusión
+
+    para cambiar a la Forma Final.
 - id: 0x064A
   en: Anti Form
+  sp: Anti-Forma
 - id: 0x064B
   jp: >-
     ソラの心の闇を利用して
@@ -90,18 +125,30 @@
     use the Drive Command to change
     
     into Anti Form.
+  sp: >-
+    Gracias a la oscuridad del corazón de
+
+    Sora, usa el Comando de Fusión
+
+    para cambiar a la Anti-Forma.
+- id: 0x0AE4
+  sp: ¡Indicador de Fusión +1!
 - id: 0x0A71
   jp: 集積の庭園
   en: Garden
+  sp: Edén
 - id: 0x0A80
   jp: 集積の庭園
   en: Garden
+  sp: Edén
 - id: 0x0A82
   jp: 集積の庭園にもどりますか?
   en: Return to the Garden of Assemblage?
+  sp: ¿Ir al Edén de la Convergencia?
 - id: 0x36D4
   jp: 裏アンセムレポート14
   en: Secret Ansem Report 14
+  sp: Informe Ansem 14
 - id: 0x36D5
   jp: >-
     賢者アンセムが残した裏レポートのようです
@@ -111,18 +158,28 @@
     A secret report written by Ansem.
     
     It can be viewed in Jiminy´s Journal.
+  sp: >-
+    Un informe secreto escrito por
+
+    Ansem. Lo puedes ver en el Diario
+
+    de Pepito.
 - id: 0x3859
   jp: 集積の庭園にもどりますか?
   en: Return to the Garden of Assemblage?
+  sp: ¿Ir al Edén de la Convergencia?
 - id: 0x3D16
   jp: ロイヤルサモン
   en: Royal Summons
+  sp: Llamamiento Real
 - id: 0x3D17
   jp: ''
   en: ''
+  sp: ''
 - id: 0x3D1A
   jp: アンノウンディスク
   en: Unknown Disk
+  sp: Disco Desconocido
 - id: 0x3D1B
   jp: >-
     謎のデータディスク
@@ -134,6 +191,10 @@
     A mysterious data disk containing 
     
     access codes to the {:color #F0F00080}Heartless Manufactory{:reset}.
+  sp: >-
+    Un disco de datos misterioso que contiene
+    
+    los códigos para acceder a la {:color #F0F00080}Fábrica de Sincorazón{:reset}.
 - id: 0x4E83
   en: Dodge Roll LV1
 - id: 0x4E85
@@ -142,10 +203,15 @@
   en: Dodge Roll LV3
 - id: 0x4E8D
   en: Sonic Blade
+  sp: Estocada veloz
 - id: 0x4E8F
   en: Ars Arcanum
+  sp: Último arcano
+- id: 0x4E91
+  sp: Tiro mortífero
 - id: 0x4E93
   en: Ragnarok
+  sp: Ragnarok
 - id: 0x4EA0
   en: >-
     Limit Form Status.
@@ -153,9 +219,20 @@
     A form specializing in Limit attacks.
     
     {:color #F0F00080}Drive points consumed: 4{:reset}
+  sp: >-
+    Condición de Forma Suma.
+    
+    Una Forma especial basada en el uso de límites.
+    
+    {:color #F0F00080}Puntos de Fusión consumidos: 4{:reset}
 - id: 0x4EF6
   en: Ragnarok
+  sp: Ragnarok
 - id: 0x4EFE
   en: Sonic Blade
+  sp: Estocada veloz
 - id: 0x4F01
   en: Ars Arcanum
+  sp: Último arcano
+- id: 0x4F04
+  sp: Tiro mortífero

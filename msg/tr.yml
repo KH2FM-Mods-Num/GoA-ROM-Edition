@@ -1,6 +1,7 @@
 - id: 0x0433
   jp: シュウセキノテイエン
   en: Garden
+  sp: Edén
 - id: 0x0437
   jp: >-
     セツゾクチュウノ ユーザーヲ
@@ -12,6 +13,10 @@
     Transports current user to
     
     the Garden of Assemblage.
+  sp: >-
+    Transporta al usuario al
+
+    Edén de la Convergencia.
 - id: 0x0443
   je: >-
     {:unk08 02 00 06}武器に焼きついた存在の影
@@ -29,6 +34,14 @@
     {:chardelay 33 00}Who cares?
 
     {:chardelay A1 00}Let's check it out!
+  sp: >-
+    {:unk08 02 00 06}Una Esencia intangible, un ente
+
+    oscuro ligado a un arma.
+
+    {:chardelay 33 00}Mejor no arriesgarse.
+
+    {:chardelay A1 00}¡Habrá que examinarla!
 - id: 0x0444
   je: >-
     {:unk08 02 00 06}ラクシーヌとの戦闘を再現できる。
@@ -46,4 +59,12 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A1 00}I'm ready for a fight!
+  sp: >-
+    {:unk08 02 00 06}¿Quieres enfrentarte a una versión más
+
+    fuerte de Larxene a partir de sus datos?
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A1 00}¡A batirse tocan!
     
