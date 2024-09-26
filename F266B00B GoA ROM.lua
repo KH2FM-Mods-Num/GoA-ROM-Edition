@@ -56,130 +56,9 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	MSN = 0x04FA440
 elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	OnPC = true
-	if ReadString(0x09A92F0,4) == 'KH2J' then --EGS 1.0.0.9
+	if ReadString(0x9A9330,4) == 'KH2J' then --EGS
 		GameVersion = 2
-		print('GoA Epic Version (1.0.0.9)')
-		Now = 0x0716DF8
-		Sve = 0x2A0BF80
-		Save = 0x09A92F0
-		Obj0Pointer = 0x2A24A70
-		Sys3Pointer = 0x2AE5890
-		Btl0Pointer = 0x2AE5898
-		ARDPointer = 0x2A0F268
-		Music = 0x0ABA784
-		Pause = 0x0ABB2B8
-		React = 0x2A10BA2
-		Cntrl = 0x2A16C28
-		Timer = 0x0ABB290
-		Songs = 0x0B657B4
-		GScre = 0x072AEB0
-		GMdal = 0x072B044
-		GKill = 0x0AF6B86
-		CamTyp = 0x0718A98
-		GamSpd = 0x0717214
-		CutNow = 0x0B649D8
-		CutLen = 0x0B649F4
-		CutSkp = 0x0B649DC
-		BtlTyp = 0x2A10E44
-		BtlEnd = 0x2A0F720
-		TxtBox = 0x074DCB0
-		DemCln = 0x2A0F2F4
-		Slot1    = 0x2A22FD8
-		NextSlot = 0x278
-		Point1   = 0x2A0F488
-		NxtPoint = 0x50
-		Gauge1   = 0x2A0F578
-		NxtGauge = 0x48
-		Menu1    = 0x2A10B50
-		NextMenu = 0x8
-		Obj0 = ReadLong(Obj0Pointer)
-		Sys3 = ReadLong(Sys3Pointer)
-		Btl0 = ReadLong(Btl0Pointer)
-		MSN = 0x0BF2C40
-	elseif ReadString(0x09A9830,4) == 'KH2J' then --Steam Global 1.0.0.9
-		GameVersion = 3
-		print('GoA Steam Global Version (1.0.0.9)')
-		Now = 0x0717008
-		Sve = 0x2A0C4C0
-		Save = 0x09A9830
-		Obj0Pointer = 0x2A24FB0
-		Sys3Pointer = 0x2AE5DD0
-		Btl0Pointer = 0x2AE5DD8
-		ARDPointer = 0x2A0F7A8
-		Music = 0x0ABACC4
-		Pause = 0x0ABB7F8
-		React = 0x2A110E2
-		Cntrl = 0x2A17168
-		Timer = 0x0ABB7D0
-		Songs = 0x0B65CF4
-		GScre = 0x072B130
-		GMdal = 0x072B2C4
-		GKill = 0x0AF70C6
-		CamTyp = 0x0718CA8
-		GamSpd = 0x0717424
-		CutNow = 0x0B64F18
-		CutLen = 0x0B64F34
-		CutSkp = 0x0B64F1C
-		BtlTyp = 0x2A11384
-		BtlEnd = 0x2A0FC60
-		TxtBox = 0x074DF20
-		DemCln = 0x2A0F834
-		Slot1    = 0x2A23518
-		NextSlot = 0x278
-		Point1   = 0x2A0F9C8
-		NxtPoint = 0x50
-		Gauge1   = 0x2A0FAB8
-		NxtGauge = 0x48
-		Menu1    = 0x2A11090
-		NextMenu = 0x8
-		Obj0 = ReadLong(Obj0Pointer)
-		Sys3 = ReadLong(Sys3Pointer)
-		Btl0 = ReadLong(Btl0Pointer)
-		MSN = 0x0BF3340
-	elseif ReadString(0x09A8830,4) == 'KH2J' then --Steam JP 1.0.0.9
-		GameVersion = 4
-		print('GoA Steam JP Version (1.0.0.9)')
-		Now = 0x0716008
-		Sve = 0x2A0B4C0
-		Save = 0x09A8830
-		Obj0Pointer = 0x2A23FB0
-		Sys3Pointer = 0x2AE4DD0
-		Btl0Pointer = 0x2AE4DD8
-		ARDPointer = 0x2A0E7A8
-		Music = 0x0AB9CC4
-		Pause = 0x0ABA7F8
-		React = 0x2A100E2
-		Cntrl = 0x2A16168
-		Timer = 0x0ABA7D0
-		Songs = 0x0B64CF4
-		GScre = 0x072A130
-		GMdal = 0x072A2C4
-		GKill = 0x0AF60C6
-		CamTyp = 0x0717CA8
-		GamSpd = 0x0716424
-		CutNow = 0x0B63F18
-		CutLen = 0x0B63F34
-		CutSkp = 0x0B63F1C
-		BtlTyp = 0x2A10384
-		BtlEnd = 0x2A0EC60
-		TxtBox = 0x074CF20
-		DemCln = 0x2A0E834
-		Slot1    = 0x2A22518
-		NextSlot = 0x278
-		Point1   = 0x2A0E9C8
-		NxtPoint = 0x50
-		Gauge1   = 0x2A0EAB8
-		NxtGauge = 0x48
-		Menu1    = 0x2A10090
-		NextMenu = 0x8
-		Obj0 = ReadLong(Obj0Pointer)
-		Sys3 = ReadLong(Sys3Pointer)
-		Btl0 = ReadLong(Btl0Pointer)
-		MSN = 0x0BF2340
-		------------------------------------------------------------------------------
-	elseif ReadString(0x9A9330,4) == 'KH2J' then --EGS 1.0.0.10
-		GameVersion = 5
-		print('GoA Epic Version (1.0.0.10)')
+		print('GoA Epic Version')
 		Now = 0x716DF8
 		Sve = 0x2A0BFC0
 		Save = 0x9A9330
@@ -217,9 +96,9 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		Sys3 = ReadLong(Sys3Pointer)
 		Btl0 = ReadLong(Btl0Pointer)
 		MSN = 0xBF2C80
-	elseif ReadString(0x9A98B0,4) == 'KH2J' then --Steam 1.0.0.10
-		GameVersion = 6
-		print('GoA Steam Version (1.0.0.10)')
+	elseif ReadString(0x9A98B0,4) == 'KH2J' then --Steam
+		GameVersion = 3
+		print('GoA Steam Version')
 		Now = 0x0717008
 		Sve = 0x2A0C540
 		Save = 0x9A98B0
