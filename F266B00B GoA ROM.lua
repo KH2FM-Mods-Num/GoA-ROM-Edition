@@ -876,8 +876,8 @@ if not OnPC then
 	WriteInt(0x264250,0)
 elseif ReadLong(0x2FAD62) == 0x43B70F0D74D68541 then --Epic Global
 	WriteByte(0x2FAD66,0)
-elseif ReadLong(0x2FA9C2) == 0x43B70F0D74D68541 then --Epic JP (UNTESTED!!!)
-	WriteByte(0x2FA9C6,0)
+elseif ReadLong(0x2FABA2) == 0x43B70F0D74D68541 then --Epic JP
+	WriteByte(0x2FABA6,0)
 elseif ReadLong(0x2FB8A2) == 0x43B70F0D74D68541 then --Steam Global
 	WriteByte(0x2FB8A6,0)
 elseif ReadLong(0x2FB622) == 0x43B70F0D74D68541 then --Steam JP
