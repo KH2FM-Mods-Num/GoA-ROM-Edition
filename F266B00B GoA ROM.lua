@@ -7,7 +7,7 @@ LUAGUI_DESC = 'A GoA build for use with the Randomizer. Requires ROM patching.'
 
 function _OnInit()
 GameVersion = 0
-print('GoA v1.54.1')
+print('GoA v1.54.2')
 GoAOffset = 0x7C
 SeedCleared = false
 end
@@ -60,122 +60,122 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		GameVersion = 2
 		print('GoA Epic Version')
 		Now = 0x0716DF8
-		Sve = 0x2A0BF80
-		Save = 0x09A92F0
-		Obj0Pointer = 0x2A24A70
-		Sys3Pointer = 0x2AE5890
-		Btl0Pointer = 0x2AE5898
-		ARDPointer = 0x2A0F268
-		Music = 0x0ABA784
-		Pause = 0x0ABB2B8
-		React = 0x2A10BA2
-		Cntrl = 0x2A16C28
-		Timer = 0x0ABB290
-		Songs = 0x0B657B4
+		Sve = 0x2A0BFC0
+		Save = 0x09A9330
+		Obj0Pointer = 0x2A24AB0
+		Sys3Pointer = 0x2AE58D0
+		Btl0Pointer = 0x2AE58D8
+		ARDPointer = 0x2A0F2A8
+		Music = 0x0ABA7C4
+		Pause = 0x0ABB2F8
+		React = 0x2A10BE2
+		Cntrl = 0x2A16C68
+		Timer = 0x0ABB2D0
+		Songs = 0x0B657F4
 		GScre = 0x072AEB0
 		GMdal = 0x072B044
-		GKill = 0x0AF6B86
+		GKill = 0x0AF6BC6
 		CamTyp = 0x0718A98
 		GamSpd = 0x0717214
-		CutNow = 0x0B649D8
-		CutLen = 0x0B649F4
-		CutSkp = 0x0B649DC
-		BtlTyp = 0x2A10E44
-		BtlEnd = 0x2A0F720
+		CutNow = 0x0B64A18
+		CutLen = 0x0B64A34
+		CutSkp = 0x0B64A1C
+		BtlTyp = 0x2A10E84
+		BtlEnd = 0x2A0F760
 		TxtBox = 0x074DCB0
-		DemCln = 0x2A0F2F4
-		Slot1    = 0x2A22FD8
+		DemCln = 0x2A0F334
+		Slot1    = 0x2A22318
 		NextSlot = 0x278
-		Point1   = 0x2A0F488
+		Point1   = 0x2A0F4C8
 		NxtPoint = 0x50
-		Gauge1   = 0x2A0F578
+		Gauge1   = 0x2A0F5B8
 		NxtGauge = 0x48
-		Menu1    = 0x2A10B50
+		Menu1    = 0x2A10B90
 		NextMenu = 0x8
 		Obj0 = ReadLong(Obj0Pointer)
 		Sys3 = ReadLong(Sys3Pointer)
 		Btl0 = ReadLong(Btl0Pointer)
-		MSN = 0x0BF2C40
+		MSN = 0x0BF2C80
 	elseif ReadString(0x09A9830,4) == 'KH2J' then --Steam Global
 		GameVersion = 3
 		print('GoA Steam Global Version')
 		Now = 0x0717008
-		Sve = 0x2A0C4C0
-		Save = 0x09A9830
-		Obj0Pointer = 0x2A24FB0
-		Sys3Pointer = 0x2AE5DD0
-		Btl0Pointer = 0x2AE5DD8
-		ARDPointer = 0x2A0F7A8
-		Music = 0x0ABACC4
-		Pause = 0x0ABB7F8
-		React = 0x2A110E2
-		Cntrl = 0x2A17168
-		Timer = 0x0ABB7D0
-		Songs = 0x0B65CF4
+		Sve = 0x2A0C540
+		Save = 0x09A98B0
+		Obj0Pointer = 0x2A25030
+		Sys3Pointer = 0x2AE5E50
+		Btl0Pointer = 0x2AE5E58
+		ARDPointer = 0x2A0F828
+		Music = 0x0ABAD44
+		Pause = 0x0ABB828
+		React = 0x2A11162
+		Cntrl = 0x2A171E8
+		Timer = 0x0ABB850
+		Songs = 0x0B65D44
 		GScre = 0x072B130
 		GMdal = 0x072B2C4
-		GKill = 0x0AF70C6
+		GKill = 0x0AF7146
 		CamTyp = 0x0718CA8
 		GamSpd = 0x0717424
-		CutNow = 0x0B64F18
-		CutLen = 0x0B64F34
-		CutSkp = 0x0B64F1C
-		BtlTyp = 0x2A11384
-		BtlEnd = 0x2A0FC60
+		CutNow = 0x0B64F98
+		CutLen = 0x0B64FB4
+		CutSkp = 0x0B64F9C
+		BtlTyp = 0x2A11404
+		BtlEnd = 0x2A0FCE0
 		TxtBox = 0x074DF20
-		DemCln = 0x2A0F834
-		Slot1    = 0x2A23518
+		DemCln = 0x2A0F8B4
+		Slot1    = 0x2A23598
 		NextSlot = 0x278
-		Point1   = 0x2A0F9C8
+		Point1   = 0x2A0FA48
 		NxtPoint = 0x50
-		Gauge1   = 0x2A0FAB8
+		Gauge1   = 0x2A0FB38
 		NxtGauge = 0x48
-		Menu1    = 0x2A11090
+		Menu1    = 0x2A11110
 		NextMenu = 0x8
 		Obj0 = ReadLong(Obj0Pointer)
 		Sys3 = ReadLong(Sys3Pointer)
 		Btl0 = ReadLong(Btl0Pointer)
-		MSN = 0x0BF3340
+		MSN = 0x0BF33C0
 	elseif ReadString(0x09A8830,4) == 'KH2J' then --Steam JP
 		GameVersion = 4
 		print('GoA Steam JP Version')
-		Now = 0x0716008
-		Sve = 0x2A0B4C0
-		Save = 0x09A8830
-		Obj0Pointer = 0x2A23FB0
-		Sys3Pointer = 0x2AE4DD0
-		Btl0Pointer = 0x2AE4DD8
-		ARDPointer = 0x2A0E7A8
-		Music = 0x0AB9CC4
-		Pause = 0x0ABA7F8
-		React = 0x2A100E2
-		Cntrl = 0x2A16168
-		Timer = 0x0ABA7D0
-		Songs = 0x0B64CF4
-		GScre = 0x072A130
-		GMdal = 0x072A2C4
-		GKill = 0x0AF60C6
-		CamTyp = 0x0717CA8
-		GamSpd = 0x0716424
-		CutNow = 0x0B63F18
-		CutLen = 0x0B63F34
-		CutSkp = 0x0B63F1C
-		BtlTyp = 0x2A10384
-		BtlEnd = 0x2A0EC60
-		TxtBox = 0x074CF20
-		DemCln = 0x2A0E834
-		Slot1    = 0x2A22518
+		Now = 0x0717008
+		Sve = 0x2A0C540
+		Save = 0x09A98B0
+		Obj0Pointer = 0x2A25030
+		Sys3Pointer = 0x2AE5E50
+		Btl0Pointer = 0x2AE5E58
+		ARDPointer = 0x2A0F828
+		Music = 0x0ABAD44
+		Pause = 0x0ABB878
+		React = 0x2A11162
+		Cntrl = 0x2A171E8
+		Timer = 0x0ABB850
+		Songs = 0x0B65D74
+		GScre = 0x072B130
+		GMdal = 0x072B2C4
+		GKill = 0x0AF7146
+		CamTyp = 0x0718CA8
+		GamSpd = 0x0717424
+		CutNow = 0x0B64F98
+		CutLen = 0x0B64FB4
+		CutSkp = 0x0B64F9C
+		BtlTyp = 0x2A11404
+		BtlEnd = 0x2A0FCE0
+		TxtBox = 0x074DF20
+		DemCln = 0x2A0F8B4
+		Slot1    = 0x2A23598
 		NextSlot = 0x278
-		Point1   = 0x2A0E9C8
+		Point1   = 0x2A0FA48
 		NxtPoint = 0x50
-		Gauge1   = 0x2A0EAB8
+		Gauge1   = 0x2A0FB38
 		NxtGauge = 0x48
-		Menu1    = 0x2A10090
+		Menu1    = 0x2A11110
 		NextMenu = 0x8
 		Obj0 = ReadLong(Obj0Pointer)
 		Sys3 = ReadLong(Sys3Pointer)
 		Btl0 = ReadLong(Btl0Pointer)
-		MSN = 0x0BF2340
+		MSN = 0x0BF33C0
 	end
 end
 if GameVersion ~= 0 then
@@ -874,14 +874,14 @@ end
 --Show all items in shops (ASSEMBLY edit)
 if not OnPC then
 	WriteInt(0x264250,0)
-elseif ReadLong(0x2FAA22) == 0x43B70F0D74D68541 then --Epic Global
-	WriteByte(0x2FAA26,0)
-elseif ReadLong(0x2FA682) == 0x43B70F0D74D68541 then --Epic JP
-	WriteByte(0x2FA686,0)
-elseif ReadLong(0x2FB562) == 0x43B70F0D74D68541 then --Steam Global
-	WriteByte(0x2FB566,0)
-elseif ReadLong(0x2FB2E2) == 0x43B70F0D74D68541 then --Steam JP
-	WriteByte(0x2FB2E6,0)
+elseif ReadLong(0x2FAD62) == 0x43B70F0D74D68541 then --Epic Global
+	WriteByte(0x2FAD66,0)
+elseif ReadLong(0x2FA9C2) == 0x43B70F0D74D68541 then --Epic JP (UNTESTED!!!)
+	WriteByte(0x2FA9C6,0)
+elseif ReadLong(0x2FB8A2) == 0x43B70F0D74D68541 then --Steam Global
+	WriteByte(0x2FB8A6,0)
+elseif ReadLong(0x2FB622) == 0x43B70F0D74D68541 then --Steam JP
+	WriteByte(0x2FB626,0)
 end
 --Alternate Party Models (adding new UCM using MEMT causes problems when shopping)
 if World == 0x0C and Place ~= 0x070C then --Mage & Knight (KH I)
