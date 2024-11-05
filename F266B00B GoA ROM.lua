@@ -56,7 +56,7 @@ if (GAME_ID == 0xF266B00B or GAME_ID == 0xFAF99301) and ENGINE_TYPE == "ENGINE" 
 	MSN = 0x04FA440
 elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 	OnPC = true
-	if ReadString(0x09A92F0,4) == 'KH2J' then --EGS
+	if ReadString(0x9A92F0,4) == 'KH2J' then --EGS
 		GameVersion = 2
 		print('GoA Epic Version')
 		Now = 0x0716DF8
@@ -96,7 +96,7 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		Sys3 = ReadLong(Sys3Pointer)
 		Btl0 = ReadLong(Btl0Pointer)
 		MSN = 0x0BF2C80
-	elseif ReadString(0x09A9830,4) == 'KH2J' then --Steam Global
+	elseif ReadString(0x9A9830,4) == 'KH2J' then --Steam Global
 		GameVersion = 3
 		print('GoA Steam Global Version')
 		Now = 0x0717008
@@ -136,7 +136,7 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		Sys3 = ReadLong(Sys3Pointer)
 		Btl0 = ReadLong(Btl0Pointer)
 		MSN = 0x0BF33C0
-	elseif ReadString(0x09A8830,4) == 'KH2J' then --Steam JP
+	elseif ReadString(0x9A8830,4) == 'KH2J' then --Steam JP
 		GameVersion = 4
 		print('GoA Steam JP Version')
 		Now = 0x0717008
@@ -176,6 +176,15 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		Sys3 = ReadLong(Sys3Pointer)
 		Btl0 = ReadLong(Btl0Pointer)
 		MSN = 0x0BF33C0
+	elseif ReadString(0x9A7070,4) == "KH2J" or ReadString(0x9A70B0,4) == "KH2J" or ReadString(0x9A92F0,4) == "KH2J" then
+		GameVersion = -1
+		print("Epic Version is outdated. Please update the game.")
+	elseif ReadString(0x9A9830,4) == "KH2J" then
+		GameVersion = -1
+		print("Steam Global Version is outdated. Please update the game.")
+	elseif ReadString(0x9A8830,4) == "KH2J" then
+		GameVersion = -1
+		print("Steam JP Version is outdated. Please update the game.")
 	end
 end
 if GameVersion ~= 0 then
@@ -280,6 +289,8 @@ end
 function _OnFrame()
 if GameVersion == 0 then --Get anchor addresses
 	GetVersion()
+	return
+else if GameVersion < 0 then --Incompatible version
 	return
 end
 if true then --Define current values for common addresses
