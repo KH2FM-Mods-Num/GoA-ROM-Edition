@@ -107,7 +107,7 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		Btl0Pointer = 0x2AE5E58
 		ARDPointer = 0x2A0F828
 		Music = 0x0ABAD44
-		Pause = 0x0ABB828
+		Pause = 0x0ABB878
 		React = 0x2A11162
 		Cntrl = 0x2A171E8
 		Timer = 0x0ABB850
