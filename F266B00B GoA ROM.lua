@@ -290,7 +290,7 @@ function _OnFrame()
 if GameVersion == 0 then --Get anchor addresses
 	GetVersion()
 	return
-else if GameVersion < 0 then --Incompatible version
+elseif GameVersion < 0 then --Incompatible version
 	return
 end
 if true then --Define current values for common addresses
