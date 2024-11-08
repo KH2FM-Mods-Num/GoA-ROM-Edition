@@ -84,7 +84,7 @@ elseif GAME_ID == 0x431219CC and ENGINE_TYPE == 'BACKEND' then --PC
 		BtlEnd = 0x2A0F760
 		TxtBox = 0x074DCB0
 		DemCln = 0x2A0F334
-		Slot1    = 0x2A22318
+		Slot1    = 0x2A23018
 		NextSlot = 0x278
 		Point1   = 0x2A0F4C8
 		NxtPoint = 0x50
