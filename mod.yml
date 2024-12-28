@@ -5026,6 +5026,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt41/evt.script
+#MSN Editing
 #Fast Hyenas II
 - name: msn/jp/LK05_MS201.bar
   method: binarc
