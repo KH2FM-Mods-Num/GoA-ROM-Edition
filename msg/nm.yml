@@ -15,6 +15,14 @@
     {:chardelay 33 00}Who cares?
 
     {:chardelay A1 00}Let's check it out!
+  sp: >-
+    {:unk08 02 00 06}Una Esencia intangible, un ente
+
+    oscuro ligado a un arma.
+
+    {:chardelay 33 00}Mejor no arriesgarse.
+
+    {:chardelay A1 00}¡Habrá que examinarla!
 - id: 0x49E7
   je: >-
     {:unk08 02 00 06}ヴィクセンとの戦闘を再現できる。
@@ -32,4 +40,12 @@
     {:chardelay 33 00}Not right now.
 
     {:chardelay A1 00}I'm ready for a fight!
+  sp: >-
+    {:unk08 02 00 06}¿Quieres enfrentarte a una versión más
+
+    fuerte de Vexen a partir de sus datos?
+
+    {:chardelay 33 00}Ahora no.
+
+    {:chardelay A1 00}¡A batirse tocan!
     

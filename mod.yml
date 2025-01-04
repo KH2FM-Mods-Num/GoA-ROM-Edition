@@ -1,5 +1,5 @@
 title: GoA ROM Edition v1.54.2
-description: GoA, but with a lot of stuff done through ROM to reduce workload on Lua. Credit to ニンニク for the Japanese translation.
+description: GoA, but with a lot of stuff done through ROM to reduce workload on Lua. Credit to ニンニク for the Japanese translation, and to Svenchu for the Spanish translation.
 assets:
 #Lua Script
 - name: scripts/F266B00B GoA ROM.lua
@@ -3044,7 +3044,6 @@ assets:
   - name: msg/fr/sys.bar
   - name: msg/gr/sys.bar
   - name: msg/it/sys.bar
-  - name: msg/sp/sys.bar
   method: binarc
   source:
   - name: sys
@@ -3058,7 +3057,6 @@ assets:
   - name: msg/fr/al.bar
   - name: msg/gr/al.bar
   - name: msg/it/al.bar
-  - name: msg/sp/al.bar
   method: binarc
   source:
   - name: al
@@ -3072,7 +3070,6 @@ assets:
   - name: msg/fr/dc.bar
   - name: msg/gr/dc.bar
   - name: msg/it/dc.bar
-  - name: msg/sp/dc.bar
   method: binarc
   source:
   - name: dc
@@ -3086,7 +3083,6 @@ assets:
   - name: msg/fr/hb.bar
   - name: msg/gr/hb.bar
   - name: msg/it/hb.bar
-  - name: msg/sp/hb.bar
   method: binarc
   source:
   - name: hb
@@ -3100,7 +3096,6 @@ assets:
   - name: msg/fr/he.bar
   - name: msg/gr/he.bar
   - name: msg/it/he.bar
-  - name: msg/sp/he.bar
   method: binarc
   source:
   - name: he
@@ -3114,7 +3109,6 @@ assets:
   - name: msg/fr/nm.bar
   - name: msg/gr/nm.bar
   - name: msg/it/nm.bar
-  - name: msg/sp/nm.bar
   method: binarc
   source:
   - name: nm
@@ -3128,7 +3122,6 @@ assets:
   - name: msg/fr/tr.bar
   - name: msg/gr/tr.bar
   - name: msg/it/tr.bar
-  - name: msg/sp/tr.bar
   method: binarc
   source:
   - name: tr
@@ -3137,6 +3130,76 @@ assets:
     source:
     - name: msg/tr.yml
       language: en
+- name: msg/sp/sys.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: sys
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/sys.yml
+      language: sp
+- name: msg/sp/al.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: al
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/al.yml
+      language: sp
+- name: msg/sp/dc.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: dc
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/dc.yml
+      language: sp
+- name: msg/sp/hb.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: hb
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/hb.yml
+      language: sp
+- name: msg/sp/he.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: he
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/he.yml
+      language: sp
+- name: msg/sp/nm.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: nm
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/nm.yml
+      language: sp
+- name: msg/sp/tr.bar
+  platform: pc
+  method: binarc
+  source:
+  - name: tr
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/tr.yml
+      language: sp
 - name: remastered/msg/us/al.bar/US_al_bar0.png
   multi:
   - name: remastered/msg/fr/al.bar/FR_al_bar0.png
