@@ -1,4 +1,4 @@
-title: GoA ROM Edition v1.54.1
+title: GoA ROM Edition v1.54.2
 description: GoA, but with a lot of stuff done through ROM to reduce workload on Lua. Credit to ニンニク for the Japanese translation, and to Svenchu for the Spanish translation.
 assets:
 #Lua Script
@@ -5089,6 +5089,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/tt41/evt.script
+#MSN Editing
 #Fast Hyenas II
 - name: msn/jp/LK05_MS201.bar
   method: binarc
