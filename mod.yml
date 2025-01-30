@@ -1,4 +1,4 @@
-title: GoA ROM Edition v1.54.2
+title: GoA ROM Edition v1.54.3
 description: GoA, but with a lot of stuff done through ROM to reduce workload on Lua. Credit to ニンニク for the Japanese translation, and to Svenchu for the Spanish translation.
 assets:
 #Lua Script
@@ -1578,6 +1578,51 @@ assets:
   source:
   - name: remastered/obj/N_CM000_BTL.mdlx/-4.dds
     type: internal
+#Vexen death wail restoration
+- name: obj/N_CM040_BTL.mdlx
+  method: binarc
+  source:
+  - name: n_cm
+    type: bdx
+    method: bdscript
+    source:
+    - name: obj/N_CM040_BTL.bdscript
+- name: remastered/obj/N_CM040_BTL.mdlx/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/N_CM040_BTL.mdlx/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/N_CM040_BTL.mdlx/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/N_CM040_BTL.mdlx/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-5.dds
+    type: internal
+- name: remastered/obj/N_CM040_BTL.mdlx/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-3.dds
+    type: internal
+- name: remastered/obj/N_CM040_BTL.mdlx/-5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/N_CM040_BTL.mdlx/-4.dds
+    type: internal
 #GoA Data Portal New Flag Requirements
 - name: obj/F_HB130.mdlx
   method: binarc
@@ -1708,45 +1753,45 @@ assets:
     type: internal
 #Item Pictures
 - name: itempic/item-000.imd #Unused Items
-  method: imd
+  method: copy
   source:
-  - name: itempic/Unused.png
+  - name: itempic/Unused.imd
 - name: itempic/item-012.imd #Action Ability
-  method: imd
+  method: copy
   source:
-  - name: itempic/Action.png
+  - name: itempic/Action.imd
 - name: itempic/item-013.imd #Growth Ability
-  method: imd
+  method: copy
   source:
-  - name: itempic/Growth.png
+  - name: itempic/Growth.imd
 - name: itempic/item-014.imd #Support Ability
-  method: imd
+  method: copy
   source:
-  - name: itempic/Support.png
+  - name: itempic/Support.imd
 - name: itempic/item-015.imd #DUMMY 23 (HP Up)
-  method: imd
+  method: copy
   source:
-  - name: itempic/DUMMY 23 HP.png
+  - name: itempic/DUMMY 23 HP.imd
 - name: itempic/item-016.imd #DUMMY 24 (MP Up)
-  method: imd
+  method: copy
   source:
-  - name: itempic/DUMMY 24 MP.png
+  - name: itempic/DUMMY 24 MP.imd
 - name: itempic/item-017.imd #DUMMY 25 (Drive Up)
-  method: imd
+  method: copy
   source:
-  - name: itempic/DUMMY 25 Drive.png
+  - name: itempic/DUMMY 25 Drive.imd
 - name: itempic/item-018.imd #DUMMY 26 (Armor Up)
-  method: imd
+  method: copy
   source:
-  - name: itempic/DUMMY 26 Armor.png
+  - name: itempic/DUMMY 26 Armor.imd
 - name: itempic/item-019.imd #DUMMY 27 (Accessory Up)
-  method: imd
+  method: copy
   source:
-  - name: itempic/DUMMY 27 Accessory.png
+  - name: itempic/DUMMY 27 Accessory.imd
 - name: itempic/item-020.imd #DUMMY 16 (Item Up)
-  method: imd
+  method: copy
   source:
-  - name: itempic/DUMMY 16 Item.png
+  - name: itempic/DUMMY 16 Item.imd
 - name: itempic/item-091.imd #DUMMY 13 (Royal Summons)
   method: copy
   source:
@@ -1876,29 +1921,29 @@ assets:
   source:
   - name: itempic/Proof of Peace.imd
 - name: itempic/item-324.imd #Fire
-  method: imd
+  method: copy
   source:
-  - name: itempic/Fire.png
+  - name: itempic/Fire.imd
 - name: itempic/item-325.imd #Blizzard
-  method: imd
+  method: copy
   source:
-  - name: itempic/Blizzard.png
+  - name: itempic/Blizzard.imd
 - name: itempic/item-326.imd #Thunder
-  method: imd
+  method: copy
   source:
-  - name: itempic/Thunder.png
+  - name: itempic/Thunder.imd
 - name: itempic/item-327.imd #Cure
-  method: imd
+  method: copy
   source:
-  - name: itempic/Cure.png
+  - name: itempic/Cure.imd
 - name: itempic/item-328.imd #Magnet
-  method: imd
+  method: copy
   source:
-  - name: itempic/Magnet.png
+  - name: itempic/Magnet.imd
 - name: itempic/item-329.imd #Reflect
-  method: imd
+  method: copy
   source:
-  - name: itempic/Reflect.png
+  - name: itempic/Reflect.imd
 - name: remastered/itempic/item-000.imd/-0.dds #Unused Items
   platform: pc
   method: copy
@@ -2874,6 +2919,17 @@ assets:
   source:
   - name: remastered/map/hb26.map/-128.dds
     type: internal
+#Wedding Ship Error MSG
+- name: remastered/map/us/lm10.bar/US_lm10_bar0.dds
+  multi:
+  - name: remastered/map/fr/lm10.bar/US_lm10_bar0.dds
+  - name: remastered/map/gr/lm10.bar/GR_lm10_bar0.dds
+  - name: remastered/map/it/lm10.bar/IT_lm10_bar0.dds
+  - name: remastered/map/sp/lm10.bar/SP_lm10_bar0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/lm10.map/XX_lm10_bar0.dds
 #GoA Picture in SP Terminal
 - name: file/jp/tr_tm.2ld
   method: binarc
