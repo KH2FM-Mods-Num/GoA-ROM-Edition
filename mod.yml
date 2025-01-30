@@ -1,4 +1,4 @@
-title: GoA ROM Edition v1.54.3
+title: GoA ROM Edition v1.54.2
 description: GoA, but with a lot of stuff done through ROM to reduce workload on Lua. Credit to ニンニク for the Japanese translation, and to Svenchu for the Spanish translation.
 assets:
 #Lua Script
@@ -1708,45 +1708,45 @@ assets:
     type: internal
 #Item Pictures
 - name: itempic/item-000.imd #Unused Items
-  method: copy
+  method: imd
   source:
-  - name: itempic/Unused.imd
+  - name: itempic/Unused.png
 - name: itempic/item-012.imd #Action Ability
-  method: copy
+  method: imd
   source:
-  - name: itempic/Action.imd
+  - name: itempic/Action.png
 - name: itempic/item-013.imd #Growth Ability
-  method: copy
+  method: imd
   source:
-  - name: itempic/Growth.imd
+  - name: itempic/Growth.png
 - name: itempic/item-014.imd #Support Ability
-  method: copy
+  method: imd
   source:
-  - name: itempic/Support.imd
+  - name: itempic/Support.png
 - name: itempic/item-015.imd #DUMMY 23 (HP Up)
-  method: copy
+  method: imd
   source:
-  - name: itempic/DUMMY 23 HP.imd
+  - name: itempic/DUMMY 23 HP.png
 - name: itempic/item-016.imd #DUMMY 24 (MP Up)
-  method: copy
+  method: imd
   source:
-  - name: itempic/DUMMY 24 MP.imd
+  - name: itempic/DUMMY 24 MP.png
 - name: itempic/item-017.imd #DUMMY 25 (Drive Up)
-  method: copy
+  method: imd
   source:
-  - name: itempic/DUMMY 25 Drive.imd
+  - name: itempic/DUMMY 25 Drive.png
 - name: itempic/item-018.imd #DUMMY 26 (Armor Up)
-  method: copy
+  method: imd
   source:
-  - name: itempic/DUMMY 26 Armor.imd
+  - name: itempic/DUMMY 26 Armor.png
 - name: itempic/item-019.imd #DUMMY 27 (Accessory Up)
-  method: copy
+  method: imd
   source:
-  - name: itempic/DUMMY 27 Accessory.imd
+  - name: itempic/DUMMY 27 Accessory.png
 - name: itempic/item-020.imd #DUMMY 16 (Item Up)
-  method: copy
+  method: imd
   source:
-  - name: itempic/DUMMY 16 Item.imd
+  - name: itempic/DUMMY 16 Item.png
 - name: itempic/item-091.imd #DUMMY 13 (Royal Summons)
   method: copy
   source:
@@ -1876,29 +1876,29 @@ assets:
   source:
   - name: itempic/Proof of Peace.imd
 - name: itempic/item-324.imd #Fire
-  method: copy
+  method: imd
   source:
-  - name: itempic/Fire.imd
+  - name: itempic/Fire.png
 - name: itempic/item-325.imd #Blizzard
-  method: copy
+  method: imd
   source:
-  - name: itempic/Blizzard.imd
+  - name: itempic/Blizzard.png
 - name: itempic/item-326.imd #Thunder
-  method: copy
+  method: imd
   source:
-  - name: itempic/Thunder.imd
+  - name: itempic/Thunder.png
 - name: itempic/item-327.imd #Cure
-  method: copy
+  method: imd
   source:
-  - name: itempic/Cure.imd
+  - name: itempic/Cure.png
 - name: itempic/item-328.imd #Magnet
-  method: copy
+  method: imd
   source:
-  - name: itempic/Magnet.imd
+  - name: itempic/Magnet.png
 - name: itempic/item-329.imd #Reflect
-  method: copy
+  method: imd
   source:
-  - name: itempic/Reflect.imd
+  - name: itempic/Reflect.png
 - name: remastered/itempic/item-000.imd/-0.dds #Unused Items
   platform: pc
   method: copy
@@ -2874,6 +2874,17 @@ assets:
   source:
   - name: remastered/map/hb26.map/-128.dds
     type: internal
+#Wedding Ship Error MSG
+- name: remastered/map/us/lm10.bar/US_lm10_bar0.dds
+  multi:
+  - name: remastered/map/fr/lm10.bar/US_lm10_bar0.dds
+  - name: remastered/map/gr/lm10.bar/GR_lm10_bar0.dds
+  - name: remastered/map/it/lm10.bar/IT_lm10_bar0.dds
+  - name: remastered/map/sp/lm10.bar/SP_lm10_bar0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/lm10.map/XX_lm10_bar0.dds
 #GoA Picture in SP Terminal
 - name: file/jp/tr_tm.2ld
   method: binarc
