@@ -354,9 +354,11 @@ if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	WriteShort(Save+0x4274,0x1FF) --Status Form & Summon Seen Flags
 	BitOr(Save+0x49F0,0x03) --Shop Tutorial Prompt Flags (1=Big Shops, 2=Small Shops)
 	--Fix for a softlock added on purpose for debugging purposes
-	--It'll warp you to Wedding Ship if Lua isn't running; this code will warp you properly to GoA)
-	WriteShort(BAR(ARD,0x0A,0xD6),0x04,OnPC)
-	WriteShort(BAR(ARD,0x0A,0xD8),0x1A,OnPC)
+	if ReadShort(BAR(ARD,0x0A,0xD6),OnPC) == 0x0B and ReadShort(BAR(ARD,0x0A,0xD8),OnPC) == 0x0A then
+		--It'll warp you to Wedding Ship if Lua isn't running; this code will warp you properly to GoA)
+		WriteShort(BAR(ARD,0x0A,0xD6),0x04,OnPC)
+		WriteShort(BAR(ARD,0x0A,0xD8),0x1A,OnPC)
+	end
 end
 end
 
