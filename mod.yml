@@ -2922,7 +2922,7 @@ assets:
 #Wedding Ship Error MSG
 - name: remastered/map/us/lm10.bar/US_lm10_bar0.dds
   multi:
-  - name: remastered/map/fr/lm10.bar/US_lm10_bar0.dds
+  - name: remastered/map/fr/lm10.bar/FR_lm10_bar0.dds
   - name: remastered/map/gr/lm10.bar/GR_lm10_bar0.dds
   - name: remastered/map/it/lm10.bar/IT_lm10_bar0.dds
   - name: remastered/map/sp/lm10.bar/SP_lm10_bar0.dds
