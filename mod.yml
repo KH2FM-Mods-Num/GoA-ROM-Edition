@@ -1464,7 +1464,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_EX170_LAST.mdlx/-6.dds
+  - name: remastered/obj/B_EX170_LAST.mdlx/-4.dds
     type: internal
 - name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
   multi:
@@ -1472,7 +1472,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_EX170_LAST.mdlx/-4.dds
+  - name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
     type: internal
 - name: remastered/obj/B_EX170_LAST.mdlx/-6.dds
   multi:
@@ -1480,7 +1480,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
+  - name: remastered/obj/B_EX170_LAST.mdlx/-6.dds
     type: internal
 #Proper Fast Oogie Boogie
 - name: obj/B_NM000.mdlx
@@ -1501,19 +1501,19 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_NM000.mdlx/-3.dds
+  - name: remastered/obj/B_NM000.mdlx/-1.dds
     type: internal
 - name: remastered/obj/B_NM000.mdlx/-2.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_NM000.mdlx/-1.dds
+  - name: remastered/obj/B_NM000.mdlx/-2.dds
     type: internal
 - name: remastered/obj/B_NM000.mdlx/-3.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_NM000.mdlx/-2.dds
+  - name: remastered/obj/B_NM000.mdlx/-3.dds
     type: internal
 - name: remastered/obj/B_NM000.mdlx/-4.dds
   platform: pc
