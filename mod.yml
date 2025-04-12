@@ -1,4 +1,4 @@
-title: GoA ROM Edition v1.54.3
+title: GoA ROM Edition v1.54.4
 description: GoA, but with a lot of stuff done through ROM to reduce workload on Lua. Credit to ニンニク for the Japanese translation, and to Svenchu for the Spanish translation.
 assets:
 #Lua Script
@@ -1470,7 +1470,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_EX170_LAST.mdlx/-6.dds
+  - name: remastered/obj/B_EX170_LAST.mdlx/-4.dds
     type: internal
 - name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
   multi:
@@ -1478,7 +1478,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_EX170_LAST.mdlx/-4.dds
+  - name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
     type: internal
 - name: remastered/obj/B_EX170_LAST.mdlx/-6.dds
   multi:
@@ -1486,7 +1486,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
+  - name: remastered/obj/B_EX170_LAST.mdlx/-6.dds
     type: internal
 #Proper Fast Oogie Boogie
 - name: obj/B_NM000.mdlx
@@ -1507,19 +1507,19 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_NM000.mdlx/-3.dds
+  - name: remastered/obj/B_NM000.mdlx/-1.dds
     type: internal
 - name: remastered/obj/B_NM000.mdlx/-2.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_NM000.mdlx/-1.dds
+  - name: remastered/obj/B_NM000.mdlx/-2.dds
     type: internal
 - name: remastered/obj/B_NM000.mdlx/-3.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_NM000.mdlx/-2.dds
+  - name: remastered/obj/B_NM000.mdlx/-3.dds
     type: internal
 - name: remastered/obj/B_NM000.mdlx/-4.dds
   platform: pc
@@ -1558,25 +1558,25 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/N_CM000_BTL.mdlx/-5.dds
+  - name: remastered/obj/N_CM000_BTL.mdlx/-3.dds
     type: internal
 - name: remastered/obj/N_CM000_BTL.mdlx/-4.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/N_CM000_BTL.mdlx/-6.dds
+  - name: remastered/obj/N_CM000_BTL.mdlx/-4.dds
     type: internal
 - name: remastered/obj/N_CM000_BTL.mdlx/-5.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/N_CM000_BTL.mdlx/-3.dds
+  - name: remastered/obj/N_CM000_BTL.mdlx/-5.dds
     type: internal
 - name: remastered/obj/N_CM000_BTL.mdlx/-6.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/N_CM000_BTL.mdlx/-4.dds
+  - name: remastered/obj/N_CM000_BTL.mdlx/-6.dds
     type: internal
 #Vexen death wail restoration
 - name: obj/N_CM040_BTL.mdlx
@@ -1609,19 +1609,19 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/N_CM040_BTL.mdlx/-5.dds
+  - name: remastered/obj/N_CM040_BTL.mdlx/-3.dds
     type: internal
 - name: remastered/obj/N_CM040_BTL.mdlx/-4.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/N_CM040_BTL.mdlx/-3.dds
+  - name: remastered/obj/N_CM040_BTL.mdlx/-4.dds
     type: internal
 - name: remastered/obj/N_CM040_BTL.mdlx/-5.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/N_CM040_BTL.mdlx/-4.dds
+  - name: remastered/obj/N_CM040_BTL.mdlx/-5.dds
     type: internal
 #GoA Data Portal New Flag Requirements
 - name: obj/F_HB130.mdlx
