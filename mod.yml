@@ -1486,7 +1486,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/B_EX170_LAST.mdlx/-5.dds
+  - name: remastered/obj/B_EX170_LAST.mdlx/-6.dds
     type: internal
 #Proper Fast Oogie Boogie
 - name: obj/B_NM000.mdlx
