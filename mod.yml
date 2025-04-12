@@ -1,4 +1,4 @@
-title: GoA ROM Edition v1.54.4
+title: GoA ROM Edition v1.54.3
 description: GoA, but with a lot of stuff done through ROM to reduce workload on Lua. Credit to ニンニク for the Japanese translation, and to Svenchu for the Spanish translation.
 assets:
 #Lua Script
@@ -619,19 +619,24 @@ assets:
   multi:
   - name: remastered/obj/W_EX010_X0_NM.a.fm/-1.dds
   - name: remastered/obj/W_EX010_X0_TR.a.fm/-1.dds
-  - name: remastered/obj/W_EX010_X0.a.fm/-2.dds
-  - name: remastered/obj/W_EX010_X0_NM.a.fm/-2.dds
-  - name: remastered/obj/W_EX010_X0_TR.a.fm/-2.dds
   - name: remastered/obj/W_EX010_X0.a.us/-1.dds
   - name: remastered/obj/W_EX010_X0_NM.a.us/-1.dds
   - name: remastered/obj/W_EX010_X0_TR.a.us/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/obj/W_EX010_X0.a.us/-1.dds
+- name: remastered/obj/W_EX010_X0.a.fm/-2.dds
+  multi:
+  - name: remastered/obj/W_EX010_X0_NM.a.fm/-2.dds
+  - name: remastered/obj/W_EX010_X0_TR.a.fm/-2.dds
   - name: remastered/obj/W_EX010_X0.a.us/-2.dds
   - name: remastered/obj/W_EX010_X0_NM.a.us/-2.dds
   - name: remastered/obj/W_EX010_X0_TR.a.us/-2.dds
   platform: pc
   method: copy
   source:
-  - name: remastered/obj/W_EX010_X0.a.us/-1.dds
+  - name: remastered/obj/W_EX010_X0.a.us/-2.dds
 - name: remastered/obj/W_EX010_X0.a.fm/-3.dds
   multi:
   - name: remastered/obj/W_EX010_X0_NM.a.fm/-3.dds
@@ -665,17 +670,6 @@ assets:
   method: copy
   source:
   - name: remastered/obj/W_EX010_X0.a.us/-5.dds
-- name: remastered/obj/W_EX010_X0.a.fm/-6.dds
-  multi:
-  - name: remastered/obj/W_EX010_X0_NM.a.fm/-6.dds
-  - name: remastered/obj/W_EX010_X0_TR.a.fm/-6.dds
-  - name: remastered/obj/W_EX010_X0.a.us/-6.dds
-  - name: remastered/obj/W_EX010_X0_NM.a.us/-6.dds
-  - name: remastered/obj/W_EX010_X0_TR.a.us/-6.dds
-  platform: pc
-  method: copy
-  source:
-  - name: remastered/obj/W_EX010_X0.a.us/-6.dds
 - name: remastered/obj/W_EX010_X0.a.fm/se/obj/se503
   multi:
   - name: remastered/obj/W_EX010_X0_NM.a.fm/se/obj/se503
