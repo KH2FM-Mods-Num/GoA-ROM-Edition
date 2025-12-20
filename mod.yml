@@ -1416,6 +1416,198 @@ assets:
     method: bdscript
     source:
     - name: limit/jack.bdscript
+- name: remastered/limit/fm/jack.bar/-0.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-0.dds
+  - name: remastered/limit/fr/jack.bar/-0.dds
+  - name: remastered/limit/gr/jack.bar/-0.dds
+  - name: remastered/limit/it/jack.bar/-0.dds
+  - name: remastered/limit/sp/jack.bar/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-0.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-1.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-1.dds
+  - name: remastered/limit/fr/jack.bar/-1.dds
+  - name: remastered/limit/gr/jack.bar/-1.dds
+  - name: remastered/limit/it/jack.bar/-1.dds
+  - name: remastered/limit/sp/jack.bar/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-1.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-2.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-2.dds
+  - name: remastered/limit/fr/jack.bar/-2.dds
+  - name: remastered/limit/gr/jack.bar/-2.dds
+  - name: remastered/limit/it/jack.bar/-2.dds
+  - name: remastered/limit/sp/jack.bar/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-2.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-3.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-3.dds
+  - name: remastered/limit/fr/jack.bar/-3.dds
+  - name: remastered/limit/gr/jack.bar/-3.dds
+  - name: remastered/limit/it/jack.bar/-3.dds
+  - name: remastered/limit/sp/jack.bar/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-3.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-4.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-4.dds
+  - name: remastered/limit/fr/jack.bar/-4.dds
+  - name: remastered/limit/gr/jack.bar/-4.dds
+  - name: remastered/limit/it/jack.bar/-4.dds
+  - name: remastered/limit/sp/jack.bar/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-4.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-5.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-5.dds
+  - name: remastered/limit/fr/jack.bar/-5.dds
+  - name: remastered/limit/gr/jack.bar/-5.dds
+  - name: remastered/limit/it/jack.bar/-5.dds
+  - name: remastered/limit/sp/jack.bar/-5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-5.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-6.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-6.dds
+  - name: remastered/limit/fr/jack.bar/-6.dds
+  - name: remastered/limit/gr/jack.bar/-6.dds
+  - name: remastered/limit/it/jack.bar/-6.dds
+  - name: remastered/limit/sp/jack.bar/-6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-6.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-7.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-7.dds
+  - name: remastered/limit/fr/jack.bar/-7.dds
+  - name: remastered/limit/gr/jack.bar/-7.dds
+  - name: remastered/limit/it/jack.bar/-7.dds
+  - name: remastered/limit/sp/jack.bar/-7.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-7.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-8.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-8.dds
+  - name: remastered/limit/fr/jack.bar/-8.dds
+  - name: remastered/limit/gr/jack.bar/-8.dds
+  - name: remastered/limit/it/jack.bar/-8.dds
+  - name: remastered/limit/sp/jack.bar/-8.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-8.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-9.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-9.dds
+  - name: remastered/limit/fr/jack.bar/-9.dds
+  - name: remastered/limit/gr/jack.bar/-9.dds
+  - name: remastered/limit/it/jack.bar/-9.dds
+  - name: remastered/limit/sp/jack.bar/-9.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-9.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-10.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-10.dds
+  - name: remastered/limit/fr/jack.bar/-10.dds
+  - name: remastered/limit/gr/jack.bar/-10.dds
+  - name: remastered/limit/it/jack.bar/-10.dds
+  - name: remastered/limit/sp/jack.bar/-10.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-10.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-11.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-11.dds
+  - name: remastered/limit/fr/jack.bar/-11.dds
+  - name: remastered/limit/gr/jack.bar/-11.dds
+  - name: remastered/limit/it/jack.bar/-11.dds
+  - name: remastered/limit/sp/jack.bar/-11.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-11.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-12.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-12.dds
+  - name: remastered/limit/fr/jack.bar/-12.dds
+  - name: remastered/limit/gr/jack.bar/-12.dds
+  - name: remastered/limit/it/jack.bar/-12.dds
+  - name: remastered/limit/sp/jack.bar/-12.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-12.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-13.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-13.dds
+  - name: remastered/limit/fr/jack.bar/-13.dds
+  - name: remastered/limit/gr/jack.bar/-13.dds
+  - name: remastered/limit/it/jack.bar/-13.dds
+  - name: remastered/limit/sp/jack.bar/-13.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-13.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/-14.dds
+  multi:
+  - name: remastered/limit/us/jack.bar/-14.dds
+  - name: remastered/limit/fr/jack.bar/-14.dds
+  - name: remastered/limit/gr/jack.bar/-14.dds
+  - name: remastered/limit/it/jack.bar/-14.dds
+  - name: remastered/limit/sp/jack.bar/-14.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/-14.dds
+    type: internal
+- name: remastered/limit/fm/jack.bar/se/limit/se407
+  multi:
+  - name: remastered/limit/us/jack.bar/se/limit/se407
+  - name: remastered/limit/fr/jack.bar/se/limit/se407
+  - name: remastered/limit/gr/jack.bar/se/limit/se407
+  - name: remastered/limit/it/jack.bar/se/limit/se407
+  - name: remastered/limit/sp/jack.bar/se/limit/se407
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/limit/fm/jack.bar/se/limit/se407
+    type: internal
 #Proper Xemnas II Dome Skip
 - name: obj/B_EX170_LAST.mdlx
   method: binarc
