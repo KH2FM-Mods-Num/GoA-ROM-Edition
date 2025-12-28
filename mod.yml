@@ -1426,7 +1426,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-0.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar0.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-1.dds
   multi:
@@ -1438,7 +1438,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-1.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar1.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-2.dds
   multi:
@@ -1450,7 +1450,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-2.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar2.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-3.dds
   multi:
@@ -1462,7 +1462,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-3.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar3.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-4.dds
   multi:
@@ -1474,7 +1474,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-4.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar4.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-5.dds
   multi:
@@ -1486,7 +1486,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-5.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar5.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-6.dds
   multi:
@@ -1498,7 +1498,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-6.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar6.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-7.dds
   multi:
@@ -1510,7 +1510,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-7.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar7.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-8.dds
   multi:
@@ -1522,7 +1522,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-8.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar9.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-9.dds
   multi:
@@ -1534,7 +1534,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-9.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar8.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-10.dds
   multi:
@@ -1546,7 +1546,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-10.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar10.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-11.dds
   multi:
@@ -1558,7 +1558,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-11.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar11.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-12.dds
   multi:
@@ -1570,7 +1570,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-12.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar12.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-13.dds
   multi:
@@ -1582,7 +1582,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-13.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar13.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/-14.dds
   multi:
@@ -1594,7 +1594,7 @@ assets:
   platform: pc
   method: copy
   source:
-  - name: remastered/limit/fm/jack.bar/-14.dds
+  - name: remastered/limit/fm/jack.bar/US_jack_bar14.dds
     type: internal
 - name: remastered/limit/fm/jack.bar/se/limit/se407
   multi:
